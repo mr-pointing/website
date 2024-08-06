@@ -2,7 +2,7 @@
 aliases:
   - flask
   - apache
-draft: true
+draft: false
 tags:
   - computerscience
   - flask

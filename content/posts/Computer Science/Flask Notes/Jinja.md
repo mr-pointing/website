@@ -1,7 +1,7 @@
 ---
 aliases:
   - jinja
-draft: true
+draft: false
 tags:
   - computerscience
   - documentation

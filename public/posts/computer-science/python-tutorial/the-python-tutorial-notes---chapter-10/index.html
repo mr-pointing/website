@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 19 2024
+A Brief Tour of the Standard Library 7/4/2024
+10.1 Operating System Interface The os module provides functions for interacting with operating systems:
+&amp;gt;&amp;gt;&amp;gt; import os &amp;gt;&amp;gt;&amp;gt; os.getcwd() # returns the working directory &amp;#39;C:\\Python312&amp;#39; &amp;gt;&amp;gt;&amp;gt; os.chdir(&amp;#39;/server/accesslogs&amp;#39;) # change working directory &amp;gt;&amp;gt;&amp;gt; os.system(&amp;#39;mkdir today&amp;#39;) # run the command mkdir in the system shell 0 Never use from os import *. It&amp;rsquo;s not good practice to not do this regardless, but it will specifically keep os." />
+<meta name="keywords" content="homepage, blog, computerscience, python, documentation, standardlibrary, modules" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/" />
+
+
+    <title>
+        
+            The Python Tutorial Notes - Chapter 10 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="The Python Tutorial Notes - Chapter 10">
+  <meta itemprop="description" content="Modified: July 19 2024
+A Brief Tour of the Standard Library 7/4/2024
+10.1 Operating System Interface The os module provides functions for interacting with operating systems:
+&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.">
+  <meta itemprop="datePublished" content="2024-07-04T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-04T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1450">
+  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Standardlibrary,Modules">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Python Tutorial Notes - Chapter 10">
+  <meta name="twitter:description" content="Modified: July 19 2024
+A Brief Tour of the Standard Library 7/4/2024
+10.1 Operating System Interface The os module provides functions for interacting with operating systems:
+&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="The Python Tutorial Notes - Chapter 10">
+  <meta property="og:description" content="Modified: July 19 2024
+A Brief Tour of the Standard Library 7/4/2024
+10.1 Operating System Interface The os module provides functions for interacting with operating systems:
+&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-04T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Standardlibrary">
+    <meta property="article:tag" content="Modules">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-04 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        7 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/">The Python Tutorial Notes - Chapter 10</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: July 19 2024</p>
+<hr>
+<h2 id="a-brief-tour-of-the-standard-library"><strong>A Brief Tour of the Standard Library</strong></h2>
+<p>7/4/2024</p>
+<h3 id="101-operating-system-interface"><strong>10.1 Operating System Interface</strong></h3>
+<p>The <code>os</code> module provides functions for interacting with operating systems:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> os<span style="color:#f92672">.</span>getcwd()     <span style="color:#75715e"># returns the working directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">Python312&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> os<span style="color:#f92672">.</span>chdir(<span style="color:#e6db74">&#39;/server/accesslogs&#39;</span>)     <span style="color:#75715e"># change working directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#39;mkdir today&#39;</span>)     <span style="color:#75715e"># run the command mkdir in the system shell</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><p>Never use <code>from os import *</code>. It&rsquo;s not good practice to not  do this regardless, but it will specifically keep <code>os.open()</code> from shadowing the built-in <code>open()</code> function which operators for opening files.</p>
+<p>Below, we can see examples pf the <code>dir()</code> and <code>help()</code> functions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> dir(os)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>returns a list of all module functions<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> help(os)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>returns an extensive manual page created <span style="color:#f92672">from</span> the module<span style="color:#e6db74">&#39;s docstring&gt;</span>
+</span></span></code></pre></div><p>For daily file and directory management tasks, the <code>shutil</code> module provides a higher level interface that is easier to use.</p>
+<p><code>copyfile(source, dist)</code> copies the contents of the file <code>source</code> to the file <code>dist</code> and returns <code>dist</code> in the most efficient way possible. <code>move(source, dist)</code> recursively move a file or directory, <code>source</code>, to another location and return the destination, <code>dist</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> shutil
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> shutil<span style="color:#f92672">.</span>copyfile(<span style="color:#e6db74">&#39;data.db&#39;</span>, <span style="color:#e6db74">&#39;archive.db&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;archive.db&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> shutil<span style="color:#f92672">.</span>move(<span style="color:#e6db74">&#39;/build/executables&#39;</span>, <span style="color:#e6db74">&#39;installdir&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;installdir&#39;</span>
+</span></span></code></pre></div><h3 id="102-file-wildcards"><strong>10.2 File Wildcards</strong></h3>
+<p><code>glob</code> is a module that provides a function for making file lists from directory wildcard searches:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> glob
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> glob<span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#39;*.py&#39;</span>)
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;primes.py&#39;</span>, <span style="color:#e6db74">&#39;random.py&#39;</span>, <span style="color:#e6db74">&#39;quote.py&#39;</span>]
+</span></span></code></pre></div><h3 id="103-command-line-arguments"><strong>10.3 Command Line Arguments</strong></h3>
+<p>Common utility scripts often need to process command line arguments. These arguments are stored in <code>sys</code> module&rsquo;s <em>argv</em> attribute as a list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># file is demo.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(sys<span style="color:#f92672">.</span>argv)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># here is the output from running python demo.py one two three</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;demo.py&#39;</span>, <span style="color:#e6db74">&#39;one&#39;</span>, <span style="color:#e6db74">&#39;two&#39;</span>, <span style="color:#e6db74">&#39;three&#39;</span>]
+</span></span></code></pre></div><p>The <code>argparse</code> module provides a more sophisticated mechanism to process command line arguments. The following example extracts one or more filenames and an optional number of lines to be displayed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> argparse
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser(
+</span></span><span style="display:flex;"><span>	prog<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;top&#39;</span>,
+</span></span><span style="display:flex;"><span>	description<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Show top lines from each file&#39;</span>)
+</span></span><span style="display:flex;"><span>parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#39;filenames&#39;</span>, nargs<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;+&#39;</span>)
+</span></span><span style="display:flex;"><span>parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#39;-1&#39;</span>, <span style="color:#e6db74">&#39;--lines&#39;</span>, type<span style="color:#f92672">=</span>int, default<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>args <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span>parse_args()
+</span></span><span style="display:flex;"><span>print(args)
+</span></span></code></pre></div><p>If you run the above example with the command <code>python top.py --lines=5 alpha.txt beta.txt</code>, the script will set <code>args.lines</code> to 5 and <code>args.filenames</code> to <code>['alpha.txt', 'beta.txt']</code>.</p>
+<h3 id="104-error-output-redirection-and-program-termination"><strong>10.4 Error Output Redirection and Program Termination</strong></h3>
+<p><code>sys</code> also has attributes for <em>stdin</em>, <em>stdout</em>, and <em>stderr</em>. The latter is useful for emitting warnings and error messages even when <em>stdout</em> has been redirected.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> sys<span style="color:#f92672">.</span>stderr<span style="color:#f92672">.</span>wrtie(<span style="color:#e6db74">&#34;Warning, log file not found starting a new one</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Warning</span>, log file <span style="color:#f92672">not</span> found starting a new one
+</span></span></code></pre></div><p>The most direct way to terminate any script is to use <code>sys.exit()</code>.</p>
+<h3 id="105-string-pattern-matching"><strong>10.5 String Pattern Matching</strong></h3>
+<p><code>re</code> is a module that provides regular expression tools (regex) for advanced string processing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> re<span style="color:#f92672">.</span>findall(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\bf[a-z]*&#39;</span>, <span style="color:#e6db74">&#39;which foot or hand fell fastest&#39;</span>)
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;foot&#39;</span>, <span style="color:#e6db74">&#39;fell&#39;</span>, <span style="color:#e6db74">&#39;fastest&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\b[a-z]+) \1&#39;</span>, <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\1&#39;</span>, <span style="color:#e6db74">&#39;cat in the hat&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;cat in the hat&#39;</span>
+</span></span></code></pre></div><p>For basic and simple tasks, string methods are preferred because they are easier to both read and debug.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;tea for too&#39;</span><span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;too&#39;</span>, <span style="color:#e6db74">&#39;two&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;tea for two&#39;</span>
+</span></span></code></pre></div><h3 id="106-mathematics"><strong>10.6 Mathematics</strong></h3>
+<p><code>math</code> module gives access to the underlying C library functions for floating point math.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> math<span style="color:#f92672">.</span>cos(math<span style="color:#f92672">.</span>pi <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.70710678118654757</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> math<span style="color:#f92672">.</span>log(<span style="color:#ae81ff">1024</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">10.0</span>
+</span></span></code></pre></div><p><code>random</code> module provides tools for random selections.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> random
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> random<span style="color:#f92672">.</span>choice([<span style="color:#e6db74">&#39;apple&#39;</span>, <span style="color:#e6db74">&#39;pear&#39;</span>, <span style="color:#e6db74">&#39;banana&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;apple&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> random<span style="color:#f92672">.</span>sample(range(<span style="color:#ae81ff">100</span>), <span style="color:#ae81ff">10</span>)     <span style="color:#75715e"># sampling without replacement</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">83</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">81</span>, <span style="color:#ae81ff">41</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">33</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> random<span style="color:#f92672">.</span>random()     <span style="color:#75715e"># random float</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.179239851380</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> random<span style="color:#f92672">.</span>randrange(<span style="color:#ae81ff">6</span>)     <span style="color:#75715e"># random integer chosen from range(6)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>
+</span></span></code></pre></div><p><code>statistics</code> module calculates basic statistical properties (the mean, median, variance, etc.) of numeric data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> statistics
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> data <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2.75</span>, <span style="color:#ae81ff">1.75</span>, <span style="color:#ae81ff">1.25</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">1.25</span>, <span style="color:#ae81ff">3.5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> statistics<span style="color:#f92672">.</span>mean(data)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1.60714292348</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> statistics<span style="color:#f92672">.</span>median(data)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1.25</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> statistics<span style="color:#f92672">.</span>variance(data)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1.3789436579</span>
+</span></span></code></pre></div><p><strong>10.7 Internet Access</strong></p>
+<p>There are a few modules that can access the internet and process internet protocols.</p>
+<p>Two we can look at are <code>urllib.request</code> to retrieve URLs and <code>smtplib</code> for sending mail. For sending mail, we would need to have a mail server running on <code>localhost</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> urllib.request <span style="color:#f92672">import</span> urlopen
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">with</span> urlopen(<span style="color:#e6db74">&#39;http://worldtimeapi.org/api/timezone/etc/UTC.txt&#39;</span>) <span style="color:#66d9ef">as</span> response:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>      <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> response:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>         line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>decode()    <span style="color:#75715e"># converts bytes to a str</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>         <span style="color:#66d9ef">if</span> line<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#39;datetime&#39;</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>              print(line<span style="color:#f92672">.</span>rstrip())     <span style="color:#75715e"># removes trailing newline</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>datetime: <span style="color:#ae81ff">2022</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span>T01:<span style="color:#ae81ff">36</span>:<span style="color:#ae81ff">47.6923847239</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> smtplib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> server <span style="color:#f92672">=</span> smtplib<span style="color:#f92672">.</span>SMTP(<span style="color:#e6db74">&#39;localhost&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> server<span style="color:#f92672">.</span>sendmail(<span style="color:#e6db74">&#39;soothsayer@example.org&#39;</span>, <span style="color:#e6db74">&#39;rpointing@example.org&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span> <span style="color:#e6db74">&#34;&#34;&#34;To: rpointing@example.org
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">... From: soothsayer@example.org
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">...
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">... Beware the Ides of March.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">... &#34;&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> server<span style="color:#f92672">.</span>quit()
+</span></span></code></pre></div><p><strong>10.8 Dates and Times</strong></p>
+<p><code>datetime</code> module supplies classes for manipulating dates and times in both simple and complex manners.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> now <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>today()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(now)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2024</span><span style="color:#f92672">-</span><span style="color:#ae81ff">07</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%y</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %b %Y is a %A on the </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> day of %B&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">07</span><span style="color:#f92672">/</span><span style="color:#ae81ff">05</span><span style="color:#f92672">/</span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">05</span> Jul <span style="color:#ae81ff">2024</span> <span style="color:#f92672">is</span> a Friday on the <span style="color:#ae81ff">05</span> day of July
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> birthday <span style="color:#f92672">=</span> date(<span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> age <span style="color:#f92672">=</span> now <span style="color:#f92672">-</span> birthday
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> age<span style="color:#f92672">.</span>days
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9927</span>
+</span></span></code></pre></div><p><strong>10.9 Data Compression</strong></p>
+<p>Common data archiving/compression formats are directly supported by modules like <code>zlib</code>, <code>gzip</code>, <code>bz2</code>, <code>lzma</code>, <code>zipfile</code>, and <code>tarfile</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> zlib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> s <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;witch which has which witches wrist watch&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> len(s)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">41</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t <span style="color:#f92672">=</span> zlib<span style="color:#f92672">.</span>compress(s)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> len(t)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">37</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> zlib<span style="color:#f92672">.</span>decompress(t)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;witch which has which witches wrist watch&#39;</span>
+</span></span></code></pre></div><p>7/6/2024</p>
+<p><strong>10.10 Performance Measurement</strong></p>
+<p>Python has a built-in tool for measuring performance. <code>timeit</code> is one module that can show that:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> timit <span style="color:#f92672">import</span> Timer
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> Timer(<span style="color:#e6db74">&#39;t=a; a=b; b=t&#39;</span>, <span style="color:#e6db74">&#39;a=1;b=2&#39;</span>)<span style="color:#f92672">.</span>timeit()
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.1351344</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> Timer(<span style="color:#e6db74">&#39;a, b = b, a&#39;</span>, <span style="color:#e6db74">&#39;a=1; b=2&#39;</span>)<span style="color:#f92672">.</span>timeit()
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.05585979999999996</span>
+</span></span></code></pre></div><p><strong>10.11 Quality Control</strong></p>
+<p>In order to make sure your code is up-to-stuff, or of a higher quality, you can write tests that can be run throughout the development of the project.</p>
+<p>If you use the <code>doctest</code> module, and include a use case in your module&rsquo;s docstring, it can very easily run the tests.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> doctest  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">average</span>(values):  
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Computes the arithmetic mean of a list of numbers  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; print(average([20, 30, 70]))  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    40.0    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sum(values) <span style="color:#f92672">/</span> len(values)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>doctest<span style="color:#f92672">.</span>testmod()
+</span></span></code></pre></div><p>In the above example, if you change the answer to something else, making it fail the test case, the compiler should show you exactly what went wrong.</p>
+<p>There is also the <code>unittest</code> module, that is more complicated that <code>doctest</code> so it will obviously be a bit more comprehensive as a testing feature.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> unittest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestStatisticalFunctions</span>(unittest<span style="color:#f92672">.</span>TestCase):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_average</span>(self):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>assertEqual(average([<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">70</span>]), <span style="color:#ae81ff">40.0</span>)
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>assertEqual(round(average([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>]), <span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">4.3</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">with</span> self<span style="color:#f92672">.</span>assertRaises(<span style="color:#a6e22e">ZeroDivisionError</span>):
+</span></span><span style="display:flex;"><span>			average([])
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">with</span> self<span style="color:#f92672">.</span>assertRaises(<span style="color:#a6e22e">TypeError</span>):
+</span></span><span style="display:flex;"><span>			average(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">70</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>unittest<span style="color:#f92672">.</span>main()
+</span></span></code></pre></div><h3 id="107-internet-access"><strong>10.7 Internet Access</strong></h3>
+<p>There are a few modules that can access the internet and process internet protocols.</p>
+<p>Two we can look at are <code>urllib.request</code> to retrieve URLs and <code>smtplib</code> for sending mail. For sending mail, we would need to have a mail server running on <code>localhost</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> urllib.request <span style="color:#f92672">import</span> urlopen
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">with</span> urlopen(<span style="color:#e6db74">&#39;http://worldtimeapi.org/api/timezone/etc/UTC.txt&#39;</span>) <span style="color:#66d9ef">as</span> response:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>      <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> response:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>         line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>decode()    <span style="color:#75715e"># converts bytes to a str</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>         <span style="color:#66d9ef">if</span> line<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#39;datetime&#39;</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>              print(line<span style="color:#f92672">.</span>rstrip())     <span style="color:#75715e"># removes trailing newline</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>datetime: <span style="color:#ae81ff">2022</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span>T01:<span style="color:#ae81ff">36</span>:<span style="color:#ae81ff">47.6923847239</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> smtplib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> server <span style="color:#f92672">=</span> smtplib<span style="color:#f92672">.</span>SMTP(<span style="color:#e6db74">&#39;localhost&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> server<span style="color:#f92672">.</span>sendmail(<span style="color:#e6db74">&#39;soothsayer@example.org&#39;</span>, <span style="color:#e6db74">&#39;rpointing@example.org&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span> <span style="color:#e6db74">&#34;&#34;&#34;To: rpointing@example.org
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">... From: soothsayer@example.org
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">...
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">... Beware the Ides of March.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">... &#34;&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> server<span style="color:#f92672">.</span>quit()
+</span></span></code></pre></div><h3 id="108-dates-and-times"><strong>10.8 Dates and Times</strong></h3>
+<p><code>datetime</code> module supplies classes for manipulating dates and times in both simple and complex manners.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> now <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>today()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(now)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2024</span><span style="color:#f92672">-</span><span style="color:#ae81ff">07</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%y</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %b %Y is a %A on the </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> day of %B&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">07</span><span style="color:#f92672">/</span><span style="color:#ae81ff">05</span><span style="color:#f92672">/</span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">05</span> Jul <span style="color:#ae81ff">2024</span> <span style="color:#f92672">is</span> a Friday on the <span style="color:#ae81ff">05</span> day of July
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> birthday <span style="color:#f92672">=</span> date(<span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> age <span style="color:#f92672">=</span> now <span style="color:#f92672">-</span> birthday
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> age<span style="color:#f92672">.</span>days
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9927</span>
+</span></span></code></pre></div><h3 id="109-data-compression"><strong>10.9 Data Compression</strong></h3>
+<p>Common data archiving/compression formats are directly supported by modules like <code>zlib</code>, <code>gzip</code>, <code>bz2</code>, <code>lzma</code>, <code>zipfile</code>, and <code>tarfile</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> zlib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> s <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;witch which has which witches wrist watch&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> len(s)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">41</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t <span style="color:#f92672">=</span> zlib<span style="color:#f92672">.</span>compress(s)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> len(t)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">37</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> zlib<span style="color:#f92672">.</span>decompress(t)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;witch which has which witches wrist watch&#39;</span>
+</span></span></code></pre></div><p>7/6/2024</p>
+<h3 id="1010-performance-measurement"><strong>10.10 Performance Measurement</strong></h3>
+<p>Python has a built-in tool for measuring performance. <code>timeit</code> is one module that can show that:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> timit <span style="color:#f92672">import</span> Timer
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> Timer(<span style="color:#e6db74">&#39;t=a; a=b; b=t&#39;</span>, <span style="color:#e6db74">&#39;a=1;b=2&#39;</span>)<span style="color:#f92672">.</span>timeit()
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.1351344</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> Timer(<span style="color:#e6db74">&#39;a, b = b, a&#39;</span>, <span style="color:#e6db74">&#39;a=1; b=2&#39;</span>)<span style="color:#f92672">.</span>timeit()
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.05585979999999996</span>
+</span></span></code></pre></div><h3 id="1011-quality-control"><strong>10.11 Quality Control</strong></h3>
+<p>In order to make sure your code is up-to-stuff, or of a higher quality, you can write tests that can be run throughout the development of the project.</p>
+<p>If you use the <code>doctest</code> module, and include a use case in your module&rsquo;s docstring, it can very easily run the tests.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> doctest  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">average</span>(values):  
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Computes the arithmetic mean of a list of numbers  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; print(average([20, 30, 70]))  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    40.0    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sum(values) <span style="color:#f92672">/</span> len(values)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>doctest<span style="color:#f92672">.</span>testmod()
+</span></span></code></pre></div><p>In the above example, if you change the answer to something else, making it fail the test case, the compiler should show you exactly what went wrong.</p>
+<p>There is also the <code>unittest</code> module, that is more complicated that <code>doctest</code> so it will obviously be a bit more comprehensive as a testing feature.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> unittest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestStatisticalFunctions</span>(unittest<span style="color:#f92672">.</span>TestCase):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_average</span>(self):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>assertEqual(average([<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">70</span>]), <span style="color:#ae81ff">40.0</span>)
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>assertEqual(round(average([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>]), <span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">4.3</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">with</span> self<span style="color:#f92672">.</span>assertRaises(<span style="color:#a6e22e">ZeroDivisionError</span>):
+</span></span><span style="display:flex;"><span>			average([])
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">with</span> self<span style="color:#f92672">.</span>assertRaises(<span style="color:#a6e22e">TypeError</span>):
+</span></span><span style="display:flex;"><span>			average(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">70</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>unittest<span style="color:#f92672">.</span>main()
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/">Chapter 11</a></p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/standardlibrary/">standardlibrary</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/modules/">modules</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1450 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-07-03 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+            <span class="button previous">
+                <a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">The Python Tutorial Notes - Chapter 11</span>
+                </a>
+            </span>
+            
+
+            
+            <span class="button next">
+                <a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/">
+                    <span class="button__text">The Python Tutorial Notes - Chapter 9</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

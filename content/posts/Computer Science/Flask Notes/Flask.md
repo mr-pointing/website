@@ -1,7 +1,7 @@
 ---
 aliases:
   - flask
-draft: true
+draft: false
 tags:
   - computerscience
   - flask

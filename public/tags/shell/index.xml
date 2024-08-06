@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/shell/</link>
+    <description>Recent content in Shell on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Start a Homelab for $0</title>
+      <link>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
+      <description>Modified: July 19 2024&#xA;Link to video.&#xA;Building a Homelab is easier and more affordable than ever before.&#xA;You can start homelabbing with extra tech or cloud options.&#xA;Clustering, through something like Kubernetes, you can start small. One small machine, and expand as you grow. All you need is a command line and 2gb of RAM.&#xA;Self hosting might need something more stable.&#xA;One way to start is with an old laptop.</description>
+    </item>
+    <item>
+      <title>Become a Shell Wizard in ~12 Minutes</title>
+      <link>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
+      <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
+      <description>Modified: July 19 2024&#xA;Link to video.&#xA;The Basics Shell, terminal, console, command line, all are essentially the same thing.&#xA;Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn&amp;rsquo;t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I&amp;rsquo;d love to go through is note taking manual pages for all these commands.</description>
+    </item>
+  </channel>
+</rss>

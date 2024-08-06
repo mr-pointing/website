@@ -1,7 +1,7 @@
 ---
 aliases:
   - naruto
-draft: true
+draft: false
 tags:
   - manga
   - shonen

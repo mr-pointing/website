@@ -2,7 +2,7 @@
 aliases:
   - python
   - numpy
-draft: true
+draft: false
 tags:
   - computerscience
   - documentation

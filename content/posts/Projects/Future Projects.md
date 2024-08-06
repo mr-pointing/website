@@ -1,7 +1,7 @@
 ---
 aliases:
   - future projects
-draft: true
+draft: false
 tags:
   - computerscience
   - project

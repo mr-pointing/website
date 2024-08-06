@@ -1,7 +1,7 @@
 ---
 aliases:
   - about
-draft: true
+draft: false
 tags:
   - me
 title: Mr. Pointing

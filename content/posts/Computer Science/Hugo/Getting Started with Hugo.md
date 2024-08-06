@@ -1,7 +1,7 @@
 ---
 aliases:
   - hugo
-draft: true
+draft: false
 tags:
   - computerscience
   - website

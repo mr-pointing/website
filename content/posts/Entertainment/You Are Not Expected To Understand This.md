@@ -1,7 +1,7 @@
 ---
 aliases:
   - essays
-draft: true
+draft: false
 tags:
   - computerscience
   - essays

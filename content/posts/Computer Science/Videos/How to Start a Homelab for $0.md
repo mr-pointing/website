@@ -1,7 +1,7 @@
 ---
 aliases:
   - homelab
-draft: true
+draft: false
 tags:
   - computerscience
   - youtube

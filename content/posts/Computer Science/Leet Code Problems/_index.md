@@ -1,7 +1,7 @@
 ---
 aliases:
   - indexpage
-draft: true
+draft: false
 tags:
   - computerscience
 title: Leet Code Problems

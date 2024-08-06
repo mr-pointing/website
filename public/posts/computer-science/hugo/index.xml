@@ -1,0 +1,202 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo Notes on Mr. Pointing</title>
+        <link>http://localhost:1313/posts/computer-science/hugo/</link>
+        <description>Recent content in Hugo Notes on Mr. Pointing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
+        <atom:link href="http://localhost:1313/posts/computer-science/hugo/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Getting Started with Hugo</title>
+            <link>http://localhost:1313/posts/computer-science/hugo/getting-started-with-hugo/</link>
+            <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+            
+            <guid>http://localhost:1313/posts/computer-science/hugo/getting-started-with-hugo/</guid>
+            <description>Last Modified: August 01 2024
+Quick Start It&amp;rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.
+To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.
+You also need to have Git installed.
+Once both are done, you can run the following commands:
+hugo new site quicksite This creates a new directory that will become our new website.</description>
+            <content type="html"><![CDATA[<p>Last Modified: August 01 2024</p>
+<hr>
+<h2 id="quick-start">Quick Start</h2>
+<p>It&rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.</p>
+<p>To start, we need to use <a href="https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4">PowerShell</a> instead of Windows PowerShell. Apparently, they are different.</p>
+<p>You also need to have Git installed.</p>
+<p>Once both are done, you can run the following commands:</p>
+<ol>
+<li><code>hugo new site quicksite</code>
+<ul>
+<li>This creates a new directory that will become our new website. <code>quicksite</code> is the name of your directory.</li>
+</ul>
+</li>
+<li><code>cd quicksite</code>
+<ul>
+<li>Change directory to our new website</li>
+</ul>
+</li>
+<li><code>git init</code>
+<ul>
+<li>Initialize a new git repository</li>
+</ul>
+</li>
+<li><code>git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng</code>
+<ul>
+<li>Adds a new submodule, for a theme called Hello Friend, cloning the GitHub page into a new directory called <code>themes</code></li>
+</ul>
+</li>
+<li><code>echo &quot;theme = 'hello-friend-ng'&quot; &gt;&gt; hugo.toml</code>
+<ul>
+<li>Appends the phrase <code>theme = 'hello-friend-ng'</code> into the <code>hugo.toml</code> file, which allows for the theme to be applied.</li>
+</ul>
+</li>
+<li><code>hugo server</code>
+<ul>
+<li>Starts running the server for our new website!</li>
+</ul>
+</li>
+</ol>
+<p>We can set up our content, or the pages for our site, by creating it directly on the command line.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo new content content.posts/first-time-post.md
+</span></span></code></pre></div><p>This alone will just create the page. When opened, you&rsquo;ll just see the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">title</span> = &#39;First Time Post&#39;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">date</span> = &#39;somedate&#39;
+</span></span><span style="display:flex;"><span>draft = &#39;True&#39;
+</span></span><span style="display:flex;"><span>+++
+</span></span></code></pre></div><p><code>date</code> will obviously be filled in and <code>draft</code> is set to <code>True</code>, in order to prevent anything from being published without your saying so. If you want to view it while still in draft mode, you can just add <code>-D</code> to the server run command.</p>
+<p>You can start editing your file with whatever text editor you&rsquo;d like, and see it change as the file is saved in real-time without having to restart the server constantly. Pretty cool.</p>
+<h2 id="configuring-the-site">Configuring the Site</h2>
+<p>You can edit your sites configuration through the site&rsquo;s <code>hugo.toml</code> file. By default It should have three, <code>baseURL</code>, <code>languageCode</code>, and <code>title</code>. If you&rsquo;re following this exactly, you&rsquo;ll also have a <code>theme</code> from the command ran before.</p>
+<p>To get the site running, you&rsquo;ll have to set the base URL to your own production site and change the title.</p>
+<p>That just configures it. We still have to publish and deploy it. When publishing, Hugo takes the entirety of your site stored through the <code>/public</code> directory. Publishing is a very simple command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p><a href="http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/">Hosting Hugo Using Cloudflare</a></p>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>As most command line interfaces (CLI) have, you can use <code>hugo help</code> to get more directed information.</p>
+<p>The next section describes front matter and how it&rsquo;s used (Obsidian Properties) so I stopped for a bit and did some research. Properties/front matter is just the meta data of the page; the important information necessary (according to the author).</p>
+<p>The most important properties for me right now seem to be aliases since they make searching easier and faster apparently, as well as moving the tags into there, and using <code>draft</code> with Hugo. This page is the first to have that applied.</p>
+<h3 id="draft-future-and-expired-content">Draft, future, and expired content</h3>
+<p>There are a few instances in which Hugo won&rsquo;t publish your content:</p>
+<ul>
+<li><code>draft</code> is <code>true</code></li>
+<li><code>date</code> is some future date</li>
+<li><code>publishDate</code> is some future date</li>
+<li><code>expiryDate</code> is some past date</li>
+</ul>
+<p>You can override the first three with the following commands when running <code>hugo</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo --buildDrafts  # or -D
+</span></span><span style="display:flex;"><span>hugo --buildExpired  # or -E
+</span></span><span style="display:flex;"><span>hugo --buildFuture  # or -F
+</span></span></code></pre></div><p>It is common practice to manually clear the contents of your public directory before each build to remove draft, expired, and future content.</p>
+<h2 id="directory-structure">Directory Structure</h2>
+<p>Let&rsquo;s go over the directory/subdirectory structure.</p>
+<h3 id="site-skeleton">Site Skeleton</h3>
+<p>When you make a project using <code>hugo new site quicksite</code> will make this structure:</p>
+<pre tabindex="0"><code>my-site/ 
+├── archetypes/ 
+│ └── default.md 
+├── assets/ 
+├── content/ 
+├── data/ 
+├── i18n/ 
+├── layouts/ 
+├── static/
+├── themes/
+└── hugo.toml &lt;-- site configuration
+</code></pre><p>You could also make a subdirectory for it which they bring up:</p>
+<pre tabindex="0"><code>my-site/ 
+├── archetypes/ 
+│ └── default.md 
+├── assets/ 
+├── config/           &lt;-- site configuration
+│ └── _default/
+|     └── hugo.toml
+├── content/ 
+├── data/ 
+├── i18n/ 
+├── layouts/ 
+├── static/
+├── themes/
+</code></pre><p>Then, once built, it&rsquo;ll add a <code>public/</code> and <code>resources/</code> directory.</p>
+<h3 id="directories">Directories</h3>
+<ul>
+<li><code>archetypes/</code>: templates for new content.</li>
+<li><code>assets/</code>: has global resources passed through some asset pipeline. Images, CSS, JavaScript, and TypeScript.</li>
+<li><code>config/</code>: contains site configuration. For projects that need minimal configuration or don&rsquo;t need to behave differently in different environments, subdirectories likely aren&rsquo;t necessary.</li>
+<li><code>content/</code>: contains the markup/markdown files and page resources.</li>
+<li><code>data/</code>: contains data files (JSON, TOML, YAML, or XML) that modify the content or configuration of the site.</li>
+<li><code>i18n/</code>: contains translation tables for multilingual sites.</li>
+<li><code>layouts/</code>: contains templates to transform content, data, and resources into one website.</li>
+<li><code>public/</code>: contains the published website</li>
+<li><code>resources/</code>: contains cached output from Hugo&rsquo;s asset pipelines, which are generated whenever you run the <code>hugo</code> or <code>hugo server</code> commands.</li>
+<li><code>static/</code>: contains the files that will be copied to the public directory when the site is built.</li>
+<li><code>themes/</code>: contains one or more themes</li>
+</ul>
+<h3 id="union-file-system">Union File System</h3>
+<p>I read this like three times but I don&rsquo;t really understand? It&rsquo;s a way to break up and have multiple directories in your content directory.</p>
+<p>Let&rsquo;s say you have the following structure:</p>
+<pre tabindex="0"><code>home/ 
+└── user/
+  ├── my-site/
+  │ ├── content/ 
+  │ │ ├── books/ 
+  │ │ │ ├── _index.md 
+  │ │ │ ├── book-1.md
+  │ │ │ └── book-2.md
+  │ │ └── _index.md
+  │ ├── themes/
+  │ │ └── my-theme/
+  │ └── hugo.toml
+  └── shared-content/
+  └── films/
+   ├── _index.md 
+   ├── film-1.md 
+   └── film-2.md
+</code></pre><p>You can use the following <code>yaml</code> configuration to mount the <code>films</code> directory into <code>content</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">module</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mounts</span>:
+</span></span><span style="display:flex;"><span>   - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">content</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">target</span>: <span style="color:#ae81ff">content</span>
+</span></span><span style="display:flex;"><span>   - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">/home/user/shared-content</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">target</span>: <span style="color:#ae81ff">content</span>
+</span></span></code></pre></div><p>Once mounted, it will become:</p>
+<pre tabindex="0"><code>home/ 
+└── user/
+  └──  my-site/
+   ├── content/ 
+   │ ├── books/ 
+   │ │ ├── _index.md 
+   │ │ ├── book-1.md
+   │ │ └── book-2.md
+   | └── films/
+   | | ├── _index.md 
+   | | ├── film-1.md 
+   | | └── film-2.md
+   │ └── _index.md
+   │ ├── themes/
+   │ │ └── my-theme/
+   │ └── hugo.toml
+</code></pre>]]></content>
+        </item>
+        
+        <item>
+            <title>Hosting Hugo Using Cloudflare\</title>
+            <link>http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</link>
+            <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+            
+            <guid>http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</guid>
+            <description>Last Modified: August 02 2024
+Link to the documentation</description>
+            <content type="html"><![CDATA[<p>Last Modified: August 02 2024</p>
+<p><a href="https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/">Link</a> to the documentation</p>
+<hr>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

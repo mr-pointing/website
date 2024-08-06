@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 19 2024
+Modules 6/15/2024
+Obviously, using local instances are not viable for long time development is not realistic. This is why we write scripts.
+Python has the ability to writes scripts, or another method called modules. Definitions from modules can be imported into your instance of Python.
+Main is also given a definition here: the collection of variables that you have access to in a script executed at the top level and in calculator mode." />
+<meta name="keywords" content="homepage, blog, computerscience, python, documentation, modules" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/" />
+
+
+    <title>
+        
+            The Python Tutorial Notes - Chapter 6 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="The Python Tutorial Notes - Chapter 6">
+  <meta itemprop="description" content="Modified: July 19 2024
+Modules 6/15/2024
+Obviously, using local instances are not viable for long time development is not realistic. This is why we write scripts.
+Python has the ability to writes scripts, or another method called modules. Definitions from modules can be imported into your instance of Python.
+Main is also given a definition here: the collection of variables that you have access to in a script executed at the top level and in calculator mode.">
+  <meta itemprop="datePublished" content="2024-06-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="840">
+  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Modules">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Python Tutorial Notes - Chapter 6">
+  <meta name="twitter:description" content="Modified: July 19 2024
+Modules 6/15/2024
+Obviously, using local instances are not viable for long time development is not realistic. This is why we write scripts.
+Python has the ability to writes scripts, or another method called modules. Definitions from modules can be imported into your instance of Python.
+Main is also given a definition here: the collection of variables that you have access to in a script executed at the top level and in calculator mode.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="The Python Tutorial Notes - Chapter 6">
+  <meta property="og:description" content="Modified: July 19 2024
+Modules 6/15/2024
+Obviously, using local instances are not viable for long time development is not realistic. This is why we write scripts.
+Python has the ability to writes scripts, or another method called modules. Definitions from modules can be imported into your instance of Python.
+Main is also given a definition here: the collection of variables that you have access to in a script executed at the top level and in calculator mode.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-15T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Modules">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-06-15 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/">The Python Tutorial Notes - Chapter 6</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: July 19 2024</p>
+<hr>
+<h2 id="modules"><strong>Modules</strong></h2>
+<p>6/15/2024</p>
+<p>Obviously, using local instances are not viable for long time development is not realistic. This is why we write <em>scripts</em>.</p>
+<p>Python has the ability to writes scripts, or another method called modules. Definitions from modules can be imported into your instance of Python.</p>
+<p>Main is also given a definition here: the collection of variables that you have access to in a script executed at the top level and in calculator mode.</p>
+<p>You can write local modules by defining some basic functions on a <code>.py</code> file, then importing that file and calling them directly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># file named intro.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_intro</span>(name):
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Welcome to the game </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">!&#39;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> intro
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;What is your name? &#39;</span>)
+</span></span><span style="display:flex;"><span>intro<span style="color:#f92672">.</span>print_intro(username)
+</span></span></code></pre></div><p>6/16/2024</p>
+<h3 id="61-more-on-modules"><strong>6.1 More on Modules</strong></h3>
+<p>Modules can contain executable statements and function definitions.</p>
+<p>Statements are ran the <em>first</em> time they are encountered from an <code>import</code>.</p>
+<p>Modules have their own private namespace, which is used as the global namespace by all functions defined in said module (<code>modname.itemname</code>).</p>
+<p>Modules can import other modules.</p>
+<p>It is customary to always use <code>import</code> at the beginning of a file. When placed, they are added to the modules global namespace.</p>
+<p>You can vary the way you use an <code>import</code> to allow for selecting just a few functions, or all of them explicitly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># specific call</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> intro <span style="color:#f92672">import</span> print_intro
+</span></span><span style="display:flex;"><span>print_intro()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># all items</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> intro <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>         <span style="color:#75715e"># looked down upon due to low readability</span>
+</span></span><span style="display:flex;"><span>print_intro()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># using a name using as</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> intro <span style="color:#66d9ef">as</span> ir
+</span></span><span style="display:flex;"><span>ir<span style="color:#f92672">.</span>print_intro()
+</span></span></code></pre></div><p>If you want to ensure your code your module can run as a script, you can do the following;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>	username <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;What is your name? &#39;</span>)
+</span></span><span style="display:flex;"><span>	print_intro(username)
+</span></span></code></pre></div><p>This makes it usable as a script and an importable module, since the code that parse the command line only runs if the modules is executed as the &ldquo;main&rdquo; file.</p>
+<p>6/17/2024</p>
+<p>When importing modules, the built-in modules are separate from the ones you bring into the environment. Let&rsquo;s say we have a module named <code>spam</code>. When we import <code>spam</code>, the interpreter first searches that list of built-in modules (that list is stored in <code>sys.builtin_module_names</code>). If not found, it will search for a <code>spam.py</code> in a list of directories given by <code>sys.path</code>:</p>
+<ul>
+<li>The directory containing the input script (the current directory if not specified)</li>
+<li><a href="https://docs.python.org/3.12/using/cmdline.html#envvar-PYTHONPATH"><code>PYTHONPATH</code></a> (a list of directory names)</li>
+<li>The installation-dependent default</li>
+</ul>
+<h3 id="62-standard-modules"><strong>6.2 Standard Modules</strong></h3>
+<p>Python comes with it&rsquo;s own standard library with useful functions. These are described in the Python Library Reference, which I have back in the first note for this series.</p>
+<p>One thing they bring up is <code>sys</code>. You can edit path by using <code>sys.path</code> like so,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> sys<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#39;/ufs/guido/lib/python&#39;</span>)
+</span></span></code></pre></div><h3 id="63-the-dir-function"><strong>6.3 The <code>dir()</code> Function</strong></h3>
+<p><code>dir()</code> is used to find out which names a module defines.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> intro
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> dir(intro)
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;__name__&#39;</span>, <span style="color:#e6db74">&#39;print_intro&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> dir()
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;__builtins__&#39;</span>, <span style="color:#e6db74">&#39;__name__&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;intro&#39;</span>]
+</span></span></code></pre></div><p>It ends up listing out all types of things, like variables modules, and functions.</p>
+<p>To see the built-in functions and variables, you can use <code>dir(builtins)</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> import(builtins)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> dir(builtins)
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;ArithmeticError&#39;</span>, <span style="color:#e6db74">&#39;AssertionError&#39;</span>, <span style="color:#e6db74">&#39;AttributeError&#39;</span>, <span style="color:#e6db74">&#39;BaseException&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;BlockingIOError&#39;</span>, <span style="color:#e6db74">&#39;BrokenPipeError&#39;</span>, <span style="color:#e6db74">&#39;BufferError&#39;</span>, <span style="color:#e6db74">&#39;BytesWarning&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;ChildProcessError&#39;</span>, <span style="color:#e6db74">&#39;ConnectionAbortedError&#39;</span>, <span style="color:#e6db74">&#39;ConnectionError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;ConnectionRefusedError&#39;</span>, <span style="color:#e6db74">&#39;ConnectionResetError&#39;</span>, <span style="color:#e6db74">&#39;DeprecationWarning&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;EOFError&#39;</span>, <span style="color:#e6db74">&#39;Ellipsis&#39;</span>, <span style="color:#e6db74">&#39;EnvironmentError&#39;</span>, <span style="color:#e6db74">&#39;Exception&#39;</span>, <span style="color:#e6db74">&#39;False&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;FileExistsError&#39;</span>, <span style="color:#e6db74">&#39;FileNotFoundError&#39;</span>, <span style="color:#e6db74">&#39;FloatingPointError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;FutureWarning&#39;</span>, <span style="color:#e6db74">&#39;GeneratorExit&#39;</span>, <span style="color:#e6db74">&#39;IOError&#39;</span>, <span style="color:#e6db74">&#39;ImportError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;ImportWarning&#39;</span>, <span style="color:#e6db74">&#39;IndentationError&#39;</span>, <span style="color:#e6db74">&#39;IndexError&#39;</span>, <span style="color:#e6db74">&#39;InterruptedError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;IsADirectoryError&#39;</span>, <span style="color:#e6db74">&#39;KeyError&#39;</span>, <span style="color:#e6db74">&#39;KeyboardInterrupt&#39;</span>, <span style="color:#e6db74">&#39;LookupError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;MemoryError&#39;</span>, <span style="color:#e6db74">&#39;NameError&#39;</span>, <span style="color:#e6db74">&#39;None&#39;</span>, <span style="color:#e6db74">&#39;NotADirectoryError&#39;</span>, <span style="color:#e6db74">&#39;NotImplemented&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;NotImplementedError&#39;</span>, <span style="color:#e6db74">&#39;OSError&#39;</span>, <span style="color:#e6db74">&#39;OverflowError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;PendingDeprecationWarning&#39;</span>, <span style="color:#e6db74">&#39;PermissionError&#39;</span>, <span style="color:#e6db74">&#39;ProcessLookupError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;ReferenceError&#39;</span>, <span style="color:#e6db74">&#39;ResourceWarning&#39;</span>, <span style="color:#e6db74">&#39;RuntimeError&#39;</span>, <span style="color:#e6db74">&#39;RuntimeWarning&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;StopIteration&#39;</span>, <span style="color:#e6db74">&#39;SyntaxError&#39;</span>, <span style="color:#e6db74">&#39;SyntaxWarning&#39;</span>, <span style="color:#e6db74">&#39;SystemError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;SystemExit&#39;</span>, <span style="color:#e6db74">&#39;TabError&#39;</span>, <span style="color:#e6db74">&#39;TimeoutError&#39;</span>, <span style="color:#e6db74">&#39;True&#39;</span>, <span style="color:#e6db74">&#39;TypeError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;UnboundLocalError&#39;</span>, <span style="color:#e6db74">&#39;UnicodeDecodeError&#39;</span>, <span style="color:#e6db74">&#39;UnicodeEncodeError&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;UnicodeError&#39;</span>, <span style="color:#e6db74">&#39;UnicodeTranslateError&#39;</span>, <span style="color:#e6db74">&#39;UnicodeWarning&#39;</span>, <span style="color:#e6db74">&#39;UserWarning&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;ValueError&#39;</span>, <span style="color:#e6db74">&#39;Warning&#39;</span>, <span style="color:#e6db74">&#39;ZeroDivisionError&#39;</span>, <span style="color:#e6db74">&#39;_&#39;</span>, <span style="color:#e6db74">&#39;__build_class__&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;__debug__&#39;</span>, <span style="color:#e6db74">&#39;__doc__&#39;</span>, <span style="color:#e6db74">&#39;__import__&#39;</span>, <span style="color:#e6db74">&#39;__name__&#39;</span>, <span style="color:#e6db74">&#39;__package__&#39;</span>, <span style="color:#e6db74">&#39;abs&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;all&#39;</span>, <span style="color:#e6db74">&#39;any&#39;</span>, <span style="color:#e6db74">&#39;ascii&#39;</span>, <span style="color:#e6db74">&#39;bin&#39;</span>, <span style="color:#e6db74">&#39;bool&#39;</span>, <span style="color:#e6db74">&#39;bytearray&#39;</span>, <span style="color:#e6db74">&#39;bytes&#39;</span>, <span style="color:#e6db74">&#39;callable&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;chr&#39;</span>, <span style="color:#e6db74">&#39;classmethod&#39;</span>, <span style="color:#e6db74">&#39;compile&#39;</span>, <span style="color:#e6db74">&#39;complex&#39;</span>, <span style="color:#e6db74">&#39;copyright&#39;</span>, <span style="color:#e6db74">&#39;credits&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;delattr&#39;</span>, <span style="color:#e6db74">&#39;dict&#39;</span>, <span style="color:#e6db74">&#39;dir&#39;</span>, <span style="color:#e6db74">&#39;divmod&#39;</span>, <span style="color:#e6db74">&#39;enumerate&#39;</span>, <span style="color:#e6db74">&#39;eval&#39;</span>, <span style="color:#e6db74">&#39;exec&#39;</span>, <span style="color:#e6db74">&#39;exit&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;filter&#39;</span>, <span style="color:#e6db74">&#39;float&#39;</span>, <span style="color:#e6db74">&#39;format&#39;</span>, <span style="color:#e6db74">&#39;frozenset&#39;</span>, <span style="color:#e6db74">&#39;getattr&#39;</span>, <span style="color:#e6db74">&#39;globals&#39;</span>, <span style="color:#e6db74">&#39;hasattr&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;hash&#39;</span>, <span style="color:#e6db74">&#39;help&#39;</span>, <span style="color:#e6db74">&#39;hex&#39;</span>, <span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;input&#39;</span>, <span style="color:#e6db74">&#39;int&#39;</span>, <span style="color:#e6db74">&#39;isinstance&#39;</span>, <span style="color:#e6db74">&#39;issubclass&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;iter&#39;</span>, <span style="color:#e6db74">&#39;len&#39;</span>, <span style="color:#e6db74">&#39;license&#39;</span>, <span style="color:#e6db74">&#39;list&#39;</span>, <span style="color:#e6db74">&#39;locals&#39;</span>, <span style="color:#e6db74">&#39;map&#39;</span>, <span style="color:#e6db74">&#39;max&#39;</span>, <span style="color:#e6db74">&#39;memoryview&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;min&#39;</span>, <span style="color:#e6db74">&#39;next&#39;</span>, <span style="color:#e6db74">&#39;object&#39;</span>, <span style="color:#e6db74">&#39;oct&#39;</span>, <span style="color:#e6db74">&#39;open&#39;</span>, <span style="color:#e6db74">&#39;ord&#39;</span>, <span style="color:#e6db74">&#39;pow&#39;</span>, <span style="color:#e6db74">&#39;print&#39;</span>, <span style="color:#e6db74">&#39;property&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;quit&#39;</span>, <span style="color:#e6db74">&#39;range&#39;</span>, <span style="color:#e6db74">&#39;repr&#39;</span>, <span style="color:#e6db74">&#39;reversed&#39;</span>, <span style="color:#e6db74">&#39;round&#39;</span>, <span style="color:#e6db74">&#39;set&#39;</span>, <span style="color:#e6db74">&#39;setattr&#39;</span>, <span style="color:#e6db74">&#39;slice&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;sorted&#39;</span>, <span style="color:#e6db74">&#39;staticmethod&#39;</span>, <span style="color:#e6db74">&#39;str&#39;</span>, <span style="color:#e6db74">&#39;sum&#39;</span>, <span style="color:#e6db74">&#39;super&#39;</span>, <span style="color:#e6db74">&#39;tuple&#39;</span>, <span style="color:#e6db74">&#39;type&#39;</span>, <span style="color:#e6db74">&#39;vars&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;zip&#39;</span>]
+</span></span></code></pre></div><h3 id="64-packages"><strong>6.4 Packages</strong></h3>
+<p>Packages are structures that contain nested modules. You use the dot operator to access modules through subfolders. The following structure if you wanted to design your own package for uniform handling of sound files and sound data; there are many different sound files and types so they all have different utilities.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sound<span style="color:#f92672">/</span>                          Top<span style="color:#f92672">-</span>level package
+</span></span><span style="display:flex;"><span>      __init__<span style="color:#f92672">.</span>py               Initialize the sound package
+</span></span><span style="display:flex;"><span>      formats<span style="color:#f92672">/</span>                  Subpackage <span style="color:#66d9ef">for</span> file format conversions
+</span></span><span style="display:flex;"><span>              __init__<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              wavread<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              wavwrite<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              aiffread<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              aiffwrite<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              auread<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              auwrite<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>      effects<span style="color:#f92672">/</span>                  Subpackage <span style="color:#66d9ef">for</span> sound effects
+</span></span><span style="display:flex;"><span>              __init__<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              echo<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              surround<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              reverse<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>      filters<span style="color:#f92672">/</span>                  Subpackage <span style="color:#66d9ef">for</span> filters
+</span></span><span style="display:flex;"><span>              __init__<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              equalizer<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              vocoder<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              karaoke<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>If you only wanted to access a certain module from the package, you could use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sound.effects.echo
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sound<span style="color:#f92672">.</span>effects<span style="color:#f92672">.</span>echo<span style="color:#f92672">.</span>echofilter(input, output, delay<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>, atten<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span></code></pre></div><p>You could also do it like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sound.effects <span style="color:#f92672">import</span> echo
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo<span style="color:#f92672">.</span>echofilter(input, output, delay<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>, atten<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span></code></pre></div><p>or even like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sound.effets.echo <span style="color:#f92672">import</span> echofilter
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echofilter(input, output, delay<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>, atten<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span></code></pre></div><p>Each item in the dot operator context, each item must be a package except for the last item. The last item can be a module or a package but not a class or function or variable.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/">Chapter 7</a></p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/modules/">modules</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        840 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-06-14 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+            <span class="button previous">
+                <a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">The Python Tutorial Notes - Chapter 7</span>
+                </a>
+            </span>
+            
+
+            
+            <span class="button next">
+                <a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/">
+                    <span class="button__text">The Python Tutorial Notes - Chapter 5</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

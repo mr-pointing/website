@@ -2,7 +2,7 @@
 aliases:
   - python
   - IDE
-draft: true
+draft: false
 tags:
   - computerscience
   - python

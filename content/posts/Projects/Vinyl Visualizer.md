@@ -1,7 +1,7 @@
 ---
 aliases:
   - vinyl
-draft: true
+draft: false
 tags:
   - computerscience
   - project

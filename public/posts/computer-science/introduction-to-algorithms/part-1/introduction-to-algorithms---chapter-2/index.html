@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: August 02 2024
+Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.
+2.1 Insertion Sort Solves a sorting problem (obviously).
+The numbers to be sorted are known as keys.
+The input comes in the form of an array with $n$ elements.
+A reason to sort is often because those keys are associated with other data, Satellite data.
+Key &#43; Satellite = Record" />
+<meta name="keywords" content="homepage, blog, computerscience, algorithms, textbook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/" />
+
+
+    <title>
+        
+            Introduction to Algorithms - Chapter 2 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Introduction to Algorithms - Chapter 2">
+  <meta itemprop="description" content="Modified: August 02 2024
+Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.
+2.1 Insertion Sort Solves a sorting problem (obviously).
+The numbers to be sorted are known as keys.
+The input comes in the form of an array with $n$ elements.
+A reason to sort is often because those keys are associated with other data, Satellite data.
+Key &#43; Satellite = Record">
+  <meta itemprop="datePublished" content="2024-07-24T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-24T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1396">
+  <meta itemprop="keywords" content="Computerscience,Algorithms,Textbook">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Introduction to Algorithms - Chapter 2">
+  <meta name="twitter:description" content="Modified: August 02 2024
+Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.
+2.1 Insertion Sort Solves a sorting problem (obviously).
+The numbers to be sorted are known as keys.
+The input comes in the form of an array with $n$ elements.
+A reason to sort is often because those keys are associated with other data, Satellite data.
+Key &#43; Satellite = Record">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Introduction to Algorithms - Chapter 2">
+  <meta property="og:description" content="Modified: August 02 2024
+Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.
+2.1 Insertion Sort Solves a sorting problem (obviously).
+The numbers to be sorted are known as keys.
+The input comes in the form of an array with $n$ elements.
+A reason to sort is often because those keys are associated with other data, Satellite data.
+Key &#43; Satellite = Record">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-24T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Textbook">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-24 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        7 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/">Introduction to Algorithms - Chapter 2</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: August 02 2024</p>
+<hr>
+<h2 id="getting-sorted">Getting Sorted</h2>
+<p>This chapter is meant to familiarize yourself with the framework used throughout the book.</p>
+<h2 id="21-insertion-sort">2.1 Insertion Sort</h2>
+<p>Solves a sorting problem (obviously).</p>
+<p>The numbers to be sorted are known as <em>keys</em>.</p>
+<p>The input comes in the form of an array with $n$ elements.</p>
+<p>A reason to sort is often because those keys are associated with other data, <em>Satellite data</em>.</p>
+<p>Key + Satellite = <em>Record</em></p>
+<p>We can think of a spreadsheet, with student records having many pieces of data. Any piece can be the key; whatever the key is, is how the record is sorted.</p>
+<p>They offer the code into pseudocode, and I turned it into Python.</p>
+<p><strong>Pseudocode</strong>:</p>
+<p>Where A is an array and $n$ is the # of values.</p>
+<p>$Insertion-Sort(A, n)$</p>
+<ol>
+<li>$for\  i = 2 \ to \ n$</li>
+<li>
+<pre><code> $key = A[i]$
+</code></pre>
+</li>
+<li>
+<pre><code> $j = i - 1$
+</code></pre>
+</li>
+<li>
+<pre><code> $while\ j &gt; 0\ and\ A[j] &gt; key$
+</code></pre>
+</li>
+<li>
+<pre><code>      $A[j+1] = A[j]$
+</code></pre>
+</li>
+<li>
+<pre><code>      $j = j - 1$
+</code></pre>
+</li>
+<li>
+<pre><code> $A[j+1] = key$
+</code></pre>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">insertion_sort</span>(nums:list) <span style="color:#f92672">-&gt;</span> list:  
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;&#34;Sort a list using insertion-sort algorithm.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    max_len <span style="color:#f92672">=</span> len(nums)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, max_len):  
+</span></span><span style="display:flex;"><span>        key <span style="color:#f92672">=</span> nums[i]  
+</span></span><span style="display:flex;"><span>        j <span style="color:#f92672">=</span> i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> j <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> nums[j] <span style="color:#f92672">&gt;</span> key:  
+</span></span><span style="display:flex;"><span>            nums[j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> nums[j]  
+</span></span><span style="display:flex;"><span>            j <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>  
+</span></span><span style="display:flex;"><span>        nums[j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> key  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> nums  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>number_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>print(insertion_sort(number_list))
+</span></span></code></pre></div><p>Let&rsquo;s think of this like a deck of cards. In the example, at the beginning of each iteration of our for loop, indexed by $i$, the subarray consisting of elements $A[1:i-1]$ constitutes the currently sorted hand, and the remaining sub array $A[i+1:n]$ corresponds to the pile of cards still on the table.</p>
+<p>We state these properties of $A[1:i-1]$ formally as a <em>loop invariant</em>:</p>
+<pre tabindex="0"><code class="language-ad-note" data-lang="ad-note">At the start of each iteration of the **for** loop, of lines 1 - 8, the subarray of $A[1:i-1]$ consists of the elements originally in $A[1:i-1]$, but in sorted order.
+</code></pre><p>Loop invariants help us understand why an algorithm is correct. We need to show three things:</p>
+<ol>
+<li><strong>Initialization:</strong> It&rsquo;s true prior to the first iteration of the loop.</li>
+<li><strong>Maintenance:</strong> If it was true before, it remains true before the next iteration.</li>
+<li><strong>Termination:</strong> The loop terminates, and when it does, the invariant - usually along with the reason that the loop was terminated = gives us a useful property that helps show that the algorithm is correct.</li>
+</ol>
+<p>When the first two hold true, the loop invariant is true prior to every iteration of the loop.</p>
+<p>A loop invariant proof is a form of mathematical induction (prove a base case, then an inductive step).</p>
+<p>The third property might be the most important since it proves correctness.</p>
+<p>Unlike mathematical induction, where the inductive step infinitely, in the loop invariant the &ldquo;induction&rdquo; stops when the loop terminates.</p>
+<p>Let&rsquo;s review how the induction proves each of the three points:</p>
+<ol>
+<li><strong>Initialization:</strong> We start by showing it holds before the loop begins, when $i$ is 2, since logically there is only one element that <strong>has</strong> to be sorted (obviously).</li>
+<li><strong>Maintenance:</strong> Using the logic of the for loop, and that it <em>increments</em> up by one each turn, we preserve the loop invariant (we&rsquo;ll talk about the while loop later).</li>
+<li><strong>Termination:</strong> Due to the condition, $i$ being greater than $n$ or $i = n + 1$, it will end, and it has $A[1:n]$ sorted, so the algorithm holds correct.</li>
+</ol>
+<p>Some Pseudocode Conventions:</p>
+<ul>
+<li>Indentation indicates block structure.</li>
+<li>Looping constructs while, for, repeat-until, and if-else work just like they do in C, C++, Java, and Python.
+<ul>
+<li>The for loop&rsquo;s counter retains the value that broke the loops bound.</li>
+</ul>
+</li>
+<li>// denotes a comment.</li>
+<li>Variables $i$, $j$, $key$, etc. are always local unless specified.</li>
+<li>In Python specifically, $for\ i = 1\ to\ n$ is equivalent to <code>for i in range(1, n+1)</code>.
+<ul>
+<li>Also in Python, the loop counter retains $n$, not $n+1$ because lists may contain a non-numeric.</li>
+</ul>
+</li>
+<li>Indexing lists/arrays works similarly to Python, except this book uses 1-origin over 0-origin slicing <code>:</code> indicates a subarray.</li>
+<li>Data objects will often exist, and it&rsquo;s attributes are access via dot method.</li>
+<li>The book treats variable representing an array or object as a pointer to the data representing the array/object.
+<ul>
+<li>If you set $y=x$, and change $x.f$ to 3, $y.f$ is also 3 now.</li>
+</ul>
+</li>
+<li>Parameters are passed by value, instead of by reference.
+<ul>
+<li>The procedure receives its own copy of the parameters, and if it assigns a value to a parameter, the change is not seen by the calling procedure.</li>
+</ul>
+</li>
+<li>Return statements return control back to the point of call &amp; often can return values. Often, the book will contain a few return values, which is unconventional for most languages.</li>
+<li><em>Short-circuiting</em> is when you use $and$ and $or$ to bypass quick conditionals.
+<ul>
+<li>With $and$, if $x$ and $y$, and $x=false$, $y$ is not checked.</li>
+<li>With $or$, if $x$ and $y$, and $x=false$, $y$ has to be checked.</li>
+</ul>
+</li>
+<li>Error is an error.</li>
+</ul>
+<h3 id="exercises-21">Exercises 2.1</h3>
+<ol>
+<li>Using Figure 2.2 (insertion sort diagram), illustrate the operation of insertion sort on an array containing the sequence (31, 41, 59, 26, 41, 58).</li>
+</ol>
+<p>{{ $image := .Resources.GetMatch &ldquo;Insertion Sort Diagram.jpeg&rdquo; }}
+{{ with $image }}
+<!-- raw HTML omitted -->
+{{ end }}</p>
+<ol start="2">
+<li>Consider the following procedure, Sum-Array. It computes the sum of the $n$ numbers in array $A[1:n]$. State a loop invariant for this procedure, and use it&rsquo;s initialization, maintenance, and termination properties to show that the Sum-Array procedure returns the sum of numbers in $A[1:n]$.</li>
+</ol>
+<p>$Sum-Array(A, n)$</p>
+<ol>
+<li>$sum = 0$</li>
+<li>$for\ i = 1\ to\ n$</li>
+<li>
+<pre><code> $sum = sum + A[i]$
+</code></pre>
+</li>
+<li>$return\ sum$</li>
+</ol>
+<p><strong>Invariant:</strong> After the initial start of each iteration of the <strong>for</strong> loop of lines 2 &amp; 3, the variable sum sill contain the running sum of $A[1:i-1]$.</p>
+<p><strong>Initialization:</strong> Sum is 0, then after the first loop, always equal to $A[1:i-1]$.</p>
+<p><strong>Maintenance:</strong> For loop moves from first element to $n$ (max size).</p>
+<p><strong>Termination:</strong> Returns $sum$ after loop completes.</p>
+<ol start="3">
+<li>Rewrite the insertion-sort procedure to sort into decreasing order instead of increasing order.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">insertion_sort</span>(nums:list) <span style="color:#f92672">-&gt;</span> list:  
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;&#34;Just change &gt; to &lt; keys&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    max_len <span style="color:#f92672">=</span> len(nums)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, max_len):  
+</span></span><span style="display:flex;"><span>        key <span style="color:#f92672">=</span> nums[i]  
+</span></span><span style="display:flex;"><span>        j <span style="color:#f92672">=</span> i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> j <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> nums[j] <span style="color:#f92672">&lt;</span> key:  
+</span></span><span style="display:flex;"><span>            nums[j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> nums[j]  
+</span></span><span style="display:flex;"><span>            j <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>  
+</span></span><span style="display:flex;"><span>        nums[j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> key  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> nums  
+</span></span></code></pre></div><p>7/31/24</p>
+<ol start="4">
+<li>Consider the following searching problem, and write pseudocode for linear search, which scans through the array from beginning to end, looking for $x$. Using a loop invariant, prove that your algorithm is correct.</li>
+</ol>
+<p><strong>Input:</strong> A sequence of $n$ numbers ($a_1,a_2,&hellip;,a_n$) stored in an array $A[1:n]$ and a value, $x$.</p>
+<p><strong>Output:</strong> An index $i$ such that $x$ equals $A[i]$ or the special value $NIL$ is $x$ does not appear in $A$.</p>
+<p>$Linear-Sort(A, x)$</p>
+<ol>
+<li>$n =\  length\ of\ A$</li>
+<li>$for\ i = 1\ to\ n$</li>
+<li>
+<pre><code> $if\ A[i]\ =\ x$
+</code></pre>
+</li>
+<li>
+<pre><code>      $return\ i$
+</code></pre>
+</li>
+<li>$return\ NIL$</li>
+</ol>
+<p><strong>Loop Invariant:</strong> For each iteration of the for loop on lines 2, 3, and 4, each value of $A$ is compared to $x$. If any value is, the index $i$ is returned. If no value is found, $NIL$ is returned.</p>
+<p><strong>Initialization:</strong> $n$ creates our bound, so we don&rsquo;t go over and get an index error.</p>
+<p><strong>Maintenance:</strong> Unless the condition is met, no changes are made, except for loop iteration.</p>
+<p><strong>Termination:</strong> The last command is returning $NIL$, ensuring closure.</p>
+<h2 id="22-analyzing-algorithms">2.2 Analyzing Algorithms</h2>
+<p><em>Analysis</em> is the method of predicting the output of an algorithm based on numerous factors. Energy, time, space, etc.</p>
+<p>In order to analyze properly, you need to first understand the environment, limitations &amp; specifications, etc.</p>
+<p>The book uses the <em>Random Access Memory (RAM)</em> method:</p>
+<ul>
+<li>Everything is stored in the same fashion (think of arrays, allocating the same space for each element).</li>
+<li>Each command requires the same time (instruction or data processing).</li>
+<li>Each instruction happens one after another with no congruency</li>
+<li>Some pre-built instructions:
+<ul>
+<li>Arithmetic (add, subtract, multiply, etc.)</li>
+<li>Data movement (load, copy, store)</li>
+<li>Control (conditional/unconditional branch, return)</li>
+</ul>
+</li>
+<li>Data types are:
+<ul>
+<li>Integers (Booleans are just integer checks for <code>0=false</code> and <code>1=true</code>)</li>
+<li>Floats</li>
+<li>Characters</li>
+</ul>
+</li>
+</ul>
+<h3 id="analyzing-insertion-sort">Analyzing Insertion Sort</h3>
+<p>You could run it on your computer given the code above. You could time it, but that wouldn&rsquo;t tell you much.</p>
+<p>The reason is that every computer environment is different, along with different input factors that make comparing directly difficult.</p>
+<p>Instead, we can analyze the algorithm used itself, or, how long each instruction takes to complete.</p>
+<p>We&rsquo;ll do this in two steps:</p>
+<ol>
+<li>Come up with a formula for running time.</li>
+<li>Use the important parts of the formula in an easy to read notation.</li>
+</ol>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1396 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-07-23 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+
+            
+            <span class="button next">
+                <a href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/">
+                    <span class="button__text">Introduction to Algorithms - Chapter 1</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

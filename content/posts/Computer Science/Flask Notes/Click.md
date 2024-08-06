@@ -1,7 +1,7 @@
 ---
 aliases:
   - click
-draft: true
+draft: false
 tags:
   - computerscience
   - api

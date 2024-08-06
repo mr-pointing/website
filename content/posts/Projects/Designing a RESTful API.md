@@ -2,7 +2,7 @@
 aliases:
   - REST
   - RESTful
-draft: true
+draft: false
 tags:
   - computerscience
   - api

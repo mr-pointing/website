@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/internet/</link>
+    <description>Recent content in Internet on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Documentation</title>
+      <link>http://localhost:1313/posts/computer-science/apache-documentation/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/apache-documentation/</guid>
+      <description>Modified: August 02 2024&#xA;Link to documentation.</description>
+    </item>
+    <item>
+      <title>Cookies</title>
+      <link>http://localhost:1313/posts/computer-science/cookies/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/cookies/</guid>
+      <description>Modified: August 02 2024&#xA;Link to Cloudflare, super helpful resource.&#xA;A cookie is a piece of data sent from a web server to a web browser filled with information about the client and session, created when the request was sent from the client to the server.&#xA;The three main reasons why you&amp;rsquo;d want to use cookies would be:&#xA;Session Info: Storing the session info in the cookie allows you to do things like refresh the page or link to another page without having to retype in your user information.</description>
+    </item>
+    <item>
+      <title>Khan Academy - AP Computer Science Principles - Unit 1</title>
+      <link>http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/</guid>
+      <description>Modified: August 02 2024&#xA;Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&amp;rsquo;ll be looking forward to stealing their ideas.&#xA;Bits and bytes How do computers represent data? All computers understand is Binary, 0&amp;rsquo;s and 1&amp;rsquo;s.&#xA;The video explains the example of using one single wire to transfer electricity through it; on or off.</description>
+    </item>
+    <item>
+      <title>Browsers HTTP and You!</title>
+      <link>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</guid>
+      <description>Modified: July 19 2024&#xA;Link to video.&#xA;Request/Response Cycle It&amp;rsquo;s like a conversation. Client and server advertise capabilities and supported formats to one another.&#xA;HTTP is stateless, but the implementation will do state like things like caching. You need to see both sides of the conversation.&#xA;Anatomy of a request GET / HTTP/1.1 Host: localhost:8001 Request body. Anatomy of a response HTTP/1.0 200 OK X-Headers: Here Response body. Request headers Sent automatically&amp;hellip;when not doing Ajax</description>
+    </item>
+    <item>
+      <title>Werkzeug</title>
+      <link>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</link>
+      <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</guid>
+      <description>Modified: July 31 2024&#xA;Link to documentation.&#xA;First of all, what is WSGI?&#xA;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description>
+    </item>
+    <item>
+      <title>HTTP Semantics</title>
+      <link>http://localhost:1313/posts/computer-science/http-semantics/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/http-semantics/</guid>
+      <description>Modified: June 20 2024&#xA;Following this documentation.</description>
+    </item>
+    <item>
+      <title>Deploying a Flask Application via Apache</title>
+      <link>http://localhost:1313/posts/projects/deploying-a-flask-application-via-apache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/projects/deploying-a-flask-application-via-apache/</guid>
+      <description>Created: August 01 2024 Modified: August 02 2024&#xA;Link to the project website.</description>
+    </item>
+    <item>
+      <title>Designing a RESTful API</title>
+      <link>http://localhost:1313/posts/projects/designing-a-restful-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/projects/designing-a-restful-api/</guid>
+      <description>Created: June 20 2024 Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards.</description>
+    </item>
+    <item>
+      <title>Raspberry Pi NAS</title>
+      <link>http://localhost:1313/posts/projects/raspberry-pi-nas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/projects/raspberry-pi-nas/</guid>
+      <description>Created: July 06 2024 Modified: July 14 2024&#xA;Link</description>
+    </item>
+  </channel>
+</rss>

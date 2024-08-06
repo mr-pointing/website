@@ -1,7 +1,7 @@
 ---
 aliases:
   - templater
-draft: true
+draft: false
 tags:
   - obsidian
   - formatting

@@ -1,7 +1,7 @@
 ---
 aliases:
   - internet
-draft: true
+draft: false
 tags:
   - computerscience
   - internet

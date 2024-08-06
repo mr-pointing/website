@@ -1,7 +1,7 @@
 ---
 aliases:
   - the road
-draft: true
+draft: false
 tags:
   - book
   - sciencefiction

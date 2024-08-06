@@ -1,7 +1,7 @@
 ---
 aliases:
   - lython
-draft: true
+draft: false
 tags:
   - computerscience
   - ptoject

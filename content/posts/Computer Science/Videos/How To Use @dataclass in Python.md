@@ -1,7 +1,7 @@
 ---
 aliases:
   - python
-draft: true
+draft: false
 tags:
   - computerscience
   - youtube

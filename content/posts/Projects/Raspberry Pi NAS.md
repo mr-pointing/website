@@ -1,6 +1,6 @@
 ---
 aliases: 
-draft: true
+draft: false
 tags:
   - computerscience
   - project

@@ -2,7 +2,7 @@
 aliases:
   - python
   - functions
-draft: true
+draft: false
 tags:
   - computerscience
   - youtube

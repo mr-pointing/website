@@ -1,7 +1,7 @@
 ---
 aliases:
   - indexpage
-draft: true
+draft: false
 tags:
   - me
 title: Flask Notes

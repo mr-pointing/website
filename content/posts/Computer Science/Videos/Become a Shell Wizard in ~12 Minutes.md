@@ -2,7 +2,7 @@
 aliases:
   - shell
   - bash
-draft: true
+draft: false
 tags:
   - computerscience
   - youtube

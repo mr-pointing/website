@@ -1,7 +1,7 @@
 ---
 aliases:
   - formatting
-draft: true
+draft: false
 tags:
   - computerscience
   - python

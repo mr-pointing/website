@@ -2,7 +2,7 @@
 aliases:
   - cookies
   - cookie
-draft: true
+draft: false
 tags:
   - computerscience
   - internet

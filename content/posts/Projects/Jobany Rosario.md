@@ -1,7 +1,7 @@
 ---
 aliases:
   - jobany
-draft: true
+draft: false
 tags:
   - project
   - wix

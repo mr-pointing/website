@@ -1,7 +1,7 @@
 ---
 aliases:
   - interests
-draft: true
+draft: false
 tags:
   - computerscience
 title: Topics I'm Interested In

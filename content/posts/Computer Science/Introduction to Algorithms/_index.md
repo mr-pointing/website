@@ -1,7 +1,7 @@
 ---
 aliases:
   - algorithms
-draft: true
+draft: false
 tags:
   - computerscience
   - algorithms

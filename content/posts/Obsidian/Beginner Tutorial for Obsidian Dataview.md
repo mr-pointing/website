@@ -1,7 +1,7 @@
 ---
 aliases:
   - obsidian
-draft: true
+draft: false
 tags:
   - obsidian
   - formatting

@@ -1,7 +1,7 @@
 ---
 aliases:
   - words of radiance
-draft: true
+draft: false
 tags:
   - book
   - fantasy

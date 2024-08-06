@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machinelearning on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/machinelearning/</link>
+    <description>Recent content in Machinelearning on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Engineer Roadmap</title>
+      <link>http://localhost:1313/posts/computer-science/ai-engineer-roadmap/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computer-science/ai-engineer-roadmap/</guid>
+      <description>A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject. I think I can handle a khan academy course and going through the entire Python documentation in two weeks.</description>
+    </item>
+  </channel>
+</rss>
