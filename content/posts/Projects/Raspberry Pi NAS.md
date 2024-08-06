@@ -7,8 +7,8 @@ tags:
   - internet
   - python
 title: Raspberry Pi NAS
+date: 2024-07-06
 ---
-Created: July 06 2024
 Modified: July 14 2024 
 
 [Link](https://www.youtube.com/watch?v=gyMpI8csWis&t=122s)

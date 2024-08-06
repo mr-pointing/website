@@ -12,8 +12,8 @@ tags:
   - internet
   - flask
 title: Designing a RESTful API
+date: 2024-06-20
 ---
-Created: June 20 2024
 Modified: August 02 2024
 
 -------------------------------------------------------------------------------

@@ -8,8 +8,8 @@ tags:
   - audio
   - python
 title: Vinyl Visualizer
+date: 2024-06-15
 ---
-Created: June 15 2024
 Modified: June 22 2024 
 
 -------------------------------------------------------------------------------
