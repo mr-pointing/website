@@ -1,25 +1,7 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khan Academy on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/computer-science/khan-academy/</link>
-        <description>Recent content in Khan Academy on Mr. Pointing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/computer-science/khan-academy/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Khan Academy - AP Computer Science Principles - Unit 1</title>
-            <link>http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/</link>
-            <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/</guid>
-            <description>Modified: August 02 2024
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Khan Academy on Mr. Pointing</title><link>http://localhost:1313/posts/computer-science/khan-academy/</link><description>Recent content in Khan Academy on Mr. Pointing</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/computer-science/khan-academy/index.xml" rel="self" type="application/rss+xml"/><item><title>Khan Academy - AP Computer Science Principles - Unit 1</title><link>http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/</link><pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/</guid><description>Modified: August 02 2024
 Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&amp;rsquo;ll be looking forward to stealing their ideas.
 Bits and bytes How do computers represent data? All computers understand is Binary, 0&amp;rsquo;s and 1&amp;rsquo;s.
-The video explains the example of using one single wire to transfer electricity through it; on or off.</description>
-            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
+The video explains the example of using one single wire to transfer electricity through it; on or off.</description><content type="html"><![CDATA[<p>Modified: August 02 2024</p>
 <hr>
 <p>Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&rsquo;ll be looking forward to stealing their ideas.</p>
 <h2 id="bits-and-bytes">Bits and bytes</h2>
@@ -67,8 +49,4 @@ The video explains the example of using one single wire to transfer electricity 
 <p>Modern 64 bit systems use 1 bit for the sign, 11 bits for the exponent, and 52 bits for the number in the front.</p>
 <h3 id="roundoff-errors">Roundoff errors</h3>
 <p>There are still some issues since there are some numbers that can&rsquo;t be easily represented. $.3^-$ (repeating) is an infinitely repeating sequence that can&rsquo;t be stored in any device. The computer will eventually have to round at some point. A <em>roundoff error</em> is when we get an unexpected error due to the computers rounding of a complicated-to-represent number.</p>
-]]></content>
-        </item>
-        
-    </channel>
-</rss>
+]]></content></item></channel></rss>

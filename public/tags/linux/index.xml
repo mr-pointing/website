@@ -1,20 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Linux on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/linux/</link>
-    <description>Recent content in Linux on Mr. Pointing</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Start a Homelab for $0</title>
-      <link>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</link>
-      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
-      <description>Modified: July 19 2024&#xA;Link to video.&#xA;Building a Homelab is easier and more affordable than ever before.&#xA;You can start homelabbing with extra tech or cloud options.&#xA;Clustering, through something like Kubernetes, you can start small. One small machine, and expand as you grow. All you need is a command line and 2gb of RAM.&#xA;Self hosting might need something more stable.&#xA;One way to start is with an old laptop.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Mr. Pointing</title><link>http://localhost:1313/tags/linux/</link><description>Recent content in Linux on Mr. Pointing</description><generator>Hugo</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Start a Homelab for $0</title><link>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</link><pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</guid><description>Modified: July 19 2024
+Link to video.
+Building a Homelab is easier and more affordable than ever before.
+You can start homelabbing with extra tech or cloud options.
+Clustering, through something like Kubernetes, you can start small. One small machine, and expand as you grow. All you need is a command line and 2gb of RAM.
+Self hosting might need something more stable.
+One way to start is with an old laptop.</description></item></channel></rss>

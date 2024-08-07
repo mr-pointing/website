@@ -1,423 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="">
-<meta name="description" content="Modified: July 19 2024
+<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content><meta name=description content="Modified: July 19 2024
 Link to source
 6/2/2024
 In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.
 Introduction What is Python?
-Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming." />
-<meta name="keywords" content="homepage, blog, computerscience, python, documentation, syntax, datatypes, formatting" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/" />
-
-
-    <title>
-        
-            The Python Tutorial Notes - Chapter 1, 2, and 3 :: Mr. Pointing  — Python Teacher
-        
-    </title>
-
-
-
-
-
-<link rel="stylesheet" href="/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css" integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN&#43;YNEKWYHs/MUFU=">
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="msapplication-TileColor" content="">
-
-
-
-  <meta itemprop="name" content="The Python Tutorial Notes - Chapter 1, 2, and 3">
-  <meta itemprop="description" content="Modified: July 19 2024
+Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming."><meta name=keywords content="homepage,blog,computerscience,python,documentation,syntax,datatypes,formatting"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/><title>The Python Tutorial Notes - Chapter 1, 2, and 3 :: Mr. Pointing — Python Teacher
+</title><link rel=stylesheet href=/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN+YNEKWYHs/MUFU="><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="The Python Tutorial Notes - Chapter 1, 2, and 3"><meta itemprop=description content="Modified: July 19 2024
 Link to source
 6/2/2024
 In order to get a better understanding of Python as a whole language, I’m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.
 Introduction What is Python?
-Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.">
-  <meta itemprop="datePublished" content="2024-06-02T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-02T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1233">
-  <meta itemprop="image" content="http://localhost:1313/">
-  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Syntax,Datatypes,Formatting">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
-  <meta name="twitter:title" content="The Python Tutorial Notes - Chapter 1, 2, and 3">
-  <meta name="twitter:description" content="Modified: July 19 2024
+Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming."><meta itemprop=datePublished content="2024-06-02T00:00:00+00:00"><meta itemprop=dateModified content="2024-06-02T00:00:00+00:00"><meta itemprop=wordCount content="1233"><meta itemprop=image content="http://localhost:1313/"><meta itemprop=keywords content="Computerscience,Python,Documentation,Syntax,Datatypes,Formatting"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/"><meta name=twitter:title content="The Python Tutorial Notes - Chapter 1, 2, and 3"><meta name=twitter:description content="Modified: July 19 2024
 Link to source
 6/2/2024
 In order to get a better understanding of Python as a whole language, I’m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.
 Introduction What is Python?
-Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.">
-
-
-
-    <meta property="og:url" content="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">
-  <meta property="og:site_name" content="Mr. Pointing">
-  <meta property="og:title" content="The Python Tutorial Notes - Chapter 1, 2, and 3">
-  <meta property="og:description" content="Modified: July 19 2024
+Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming."><meta property="og:url" content="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/"><meta property="og:site_name" content="Mr. Pointing"><meta property="og:title" content="The Python Tutorial Notes - Chapter 1, 2, and 3"><meta property="og:description" content="Modified: July 19 2024
 Link to source
 6/2/2024
 In order to get a better understanding of Python as a whole language, I’m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.
 Introduction What is Python?
-Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-06-02T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-02T00:00:00+00:00">
-    <meta property="article:tag" content="Computerscience">
-    <meta property="article:tag" content="Python">
-    <meta property="article:tag" content="Documentation">
-    <meta property="article:tag" content="Syntax">
-    <meta property="article:tag" content="Datatypes">
-    <meta property="article:tag" content="Formatting">
-    <meta property="og:image" content="http://localhost:1313/">
-
-
-
-
-
-
-    <meta property="article:published_time" content="2024-06-02 00:00:00 &#43;0000 UTC" />
-
-
-
-
-
-
-
-
-
-
-
-    </head>
-
-    
-        <body>
-    
-    
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="/" style="text-decoration: none;">
-    <div class="logo">
-        
-            <span class="logo__mark">></span>
-            <span class="logo__text ">
-                mr. pointing</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
-    </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li>
-    </ul>
-</nav>
-
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
-        </span>
-    </span>
-</header>
-
-
-            <div class="content">
-                
-  <main class="post">
-
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        6 minutes
-
-        
-      </p>
-    </div>
-
-    <article>
-      <h1 class="post-title">
-        <a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">The Python Tutorial Notes - Chapter 1, 2, and 3</a>
-      </h1>
-
-      
-
-      
-
-      
-
-      <div class="post-content">
-        <p>Modified: July 19 2024</p>
-<p><a href="https://docs.python.org/3/tutorial/index.html">Link to source</a></p>
-<hr>
-<p>6/2/2024</p>
-<p>In order to get a better understanding of Python as a whole language, I&rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.</p>
-<h2 id="introduction"><strong>Introduction</strong></h2>
-<p>What is Python?</p>
-<ol>
-<li>Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</li>
-<li>Ideal language for scripting and rapid application development</li>
-</ol>
-<p>Description of objects and modules are in <a href="https://docs.python.org/3/library/index.html#library-index">The Python Standard Library</a>. I&rsquo;ll probably go through this another day.</p>
-<p>Same goes for <a href="https://docs.python.org/3/reference/index.html#reference-index">The Python Language Reference</a>. This goes over the syntax are &ldquo;core semantics&rdquo; of the language.</p>
-<p><a href="https://docs.python.org/3/glossary.html#glossary">Python&rsquo;s Glossary</a></p>
-<h2 id="1-whetting-your-appetite"><strong>1. Whetting Your Appetite</strong></h2>
-<p>Python is a language well suited for small, quick, and useful applications</p>
-<p>Python is an interpreted language - saving time during program development due to not needing compilation and linking.</p>
-<p>Python enables programs to be written compactly and are easily readable; python programs are usually shorter than C++/Java programs for three main reasons:</p>
-<ol>
-<li>High-level data types allow you to express complex operations in single statements</li>
-<li>Statement grouping is done by indentation rather than beginning/end brackets</li>
-<li>No variable or argument declarations are necessary</li>
-</ol>
-<h2 id="2-using-the-python-interpreter"><strong>2. Using the Python Interpreter</strong></h2>
-<h3 id="21-invoking-the-interpreter">2.1 Invoking the Interpreter</h3>
-<p>Usually, when installed correctly, you can open up a shell/command line and run;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python3<span style="color:#ae81ff">.12</span>
-</span></span></code></pre></div><p>or</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>py
-</span></span></code></pre></div><p>You can stop typing at anytime using ctrl-z or <code>quit()</code>.</p>
-<p>Arguments are passed using square-bracket list format: turned into strings and saved as <code>argv</code> variable in the sys module.</p>
-<p>Interactive mode is the feature that lets you continue to write long statements on the command line, usually denoted by ellipses instead of the usual three greater than signs.</p>
-<h3 id="22-the-interpreter-and-its-environment">2.2 The Interpreter and Its Environment</h3>
-<p>Python source files are treated as encoded in UTF-8, where characters of most languages in the world can be used in string literals, identifies, and comments; the standard library only uses ASCII characters for identifies.</p>
-<p>To declare an encoding besides default, use</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># -*- coding: encoding -*-</span>
-</span></span></code></pre></div><p>where <em>encoding</em> is a valid <a href="https://docs.python.org/3/library/codecs.html#module-codecs">codec</a> supported by Python.</p>
-<h2 id="3-an-informal-introduction-to-python"><strong>3. An Informal Introduction to Python</strong></h2>
-<p>Comments are left usually with &lsquo;#&rsquo;;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># This is my super awesome comment</span>
-</span></span></code></pre></div><p>Number calculations are a breeze with Python. By default, Python acts as a standard calculator, following basic rules of arithmetic (PEMDAS, etc.)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">50</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">6</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">50</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">6</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">5</span>  <span style="color:#75715e"># division always returns a floating point number</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span> <span style="color:#f92672">//</span> <span style="color:#ae81ff">5</span> <span style="color:#75715e"># integer division truncates decimal *does not round up*</span>
-</span></span></code></pre></div><p>Modular division calculates the remainder of a division problem.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">17</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#75715e"># equals 2</span>
-</span></span></code></pre></div><p>Mod anything by 2, and you&rsquo;ll get either 0 or 1-even or odd respectively.</p>
-<p>Powers are shown with double star:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">5</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
-</span></span></code></pre></div><p>Data in Python is stored and separated into different data types. The most basic are <strong>int</strong> or integer data types (whole numbers), <strong>float</strong> or decimal point numbers, <strong>str</strong> or strings which hold anything in-between two quotation marks, and <strong>bool</strong> or Booleans, which return true or false.</p>
-<p>The equal sign is known as the assignment operator. It is used to place values into named, identifiable spaces to be called on later.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>width <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
-</span></span><span style="display:flex;"><span>height <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">9</span>
-</span></span><span style="display:flex;"><span>width <span style="color:#f92672">*</span> height <span style="color:#75715e"># returns 900</span>
-</span></span></code></pre></div><p>Variables must be assigned some value before being called/used.</p>
-<p>Expressions with mixed types (including floats) will return floats.</p>
-<p>In interactive mode, <code>_</code> acts as the last produced value.</p>
-<p>Python also supports <strong>Decimal</strong>, <strong>Fraction</strong>, and <strong>complex numbers</strong>.</p>
-<p>Strings can be used with single or double quotes, with the backslash acting as an escape character.</p>
-<p>In regular Python shell commands, the output doesn&rsquo;t account for any backslashes. The <code>print()</code> command will accomplish that</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;First line.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Second line.&#39;</span>  <span style="color:#75715e"># \n means newline</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> s  <span style="color:#75715e"># without print(), special characters are included in the string</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;First line.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Second line.&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(s)  <span style="color:#75715e"># with print(), special characters are interpreted, so \n produces new line</span>
-</span></span><span style="display:flex;"><span>First line<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span>Second line<span style="color:#f92672">.</span>
-</span></span></code></pre></div><p>Placing <code>r</code> before a string will output it as <em>raw</em> strings; special characters aren&rsquo;t account for.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">&#39;C:\some</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">ame&#39;</span>)
-</span></span><span style="display:flex;"><span>C:\some
-</span></span><span style="display:flex;"><span>ame
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;C:\some\name&#39;</span>)
-</span></span><span style="display:flex;"><span>C:\some\name
-</span></span></code></pre></div><p>Strings can also take up more than one line using the triple quotation mark notation: <code>&quot;&quot;&quot;...&quot;&quot;&quot;</code></p>
-<p>Strings can be concatenated using the <code>+</code> operator, and repeated with the <code>*</code> operator.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#e6db74">&#39;hi&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; there&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;hihihi there&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> prefix <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Py&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> prefix <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;thon&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;Python&#39;</span>
-</span></span></code></pre></div><p>Strings can be indexed, starting at 0 and the last character represented as -1:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> word <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello world!&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> word[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;H&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>word[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;!&#39;</span>
-</span></span></code></pre></div><p>Slicing is also supported:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> word[:<span style="color:#ae81ff">2</span>] <span style="color:#75715e"># characters from beginning to position 2 (excluding)</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;He&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> word [<span style="color:#ae81ff">2</span>:] <span style="color:#75715e"># characters from position 2 (included) to the end</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;llo world!&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> word[<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>:] <span style="color:#75715e"># characters from second to last position (including) to the end</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;d!&#39;</span>
-</span></span></code></pre></div><p>Here is a useful diagram to think about how index positions work in Python:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span> <span style="color:#f92672">+---+---+---+---+---+---+</span>
-</span></span><span style="display:flex;"><span> <span style="color:#f92672">|</span> P <span style="color:#f92672">|</span> y <span style="color:#f92672">|</span> t <span style="color:#f92672">|</span> h <span style="color:#f92672">|</span> o <span style="color:#f92672">|</span> n <span style="color:#f92672">|</span>
-</span></span><span style="display:flex;"><span> <span style="color:#f92672">+---+---+---+---+---+---+</span>
-</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">2</span>   <span style="color:#ae81ff">3</span>   <span style="color:#ae81ff">4</span>   <span style="color:#ae81ff">5</span>   <span style="color:#ae81ff">6</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span><span style="color:#ae81ff">6</span>  <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>  <span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>  <span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>  <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>  <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-</span></span></code></pre></div><p>Python strings are immutable, meaning they cannot be changed at the index level. You cannot reassign individual or sliced portions of a string. You can either make a new one or reassign the entire string&rsquo;s value at once.</p>
-<p>The built-in function <code>len()</code> returns the length of a string.</p>
-<p>All methods for strings can be found <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">here</a>.</p>
-<p>Python has multiple <em>compound</em> data types that hold values together. The most versatile is a <em>list</em>, which is commonly written as a group of elements separated by a comma surrounded by square brackets.</p>
-<p><em>Lists</em> can hold many different data types, but is usually confined to just one.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> squares <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">25</span>]
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> squares
-</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">25</span>]
-</span></span></code></pre></div><p>Like strings, lists can be indexed and sliced, as well as concatenated, and are fully mutable, meaning we can change the list at exact locations.</p>
-<p>You can add items to the end of the list using the <code>.append()</code> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> squares<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">36</span>)
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> squares<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">7</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> squares
-</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">36</span>, <span style="color:#ae81ff">45</span>]
-</span></span></code></pre></div><p>Simple assignment doesn&rsquo;t copy data; when you assign a list to a variable, the variable refers to the existing list. Any changes made to a list through one variable is seen through all other variables that refer to that same list.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> rgb <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#e6db74">&#34;Green&#34;</span>, <span style="color:#e6db74">&#34;Blue&#34;</span>]
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> rgba <span style="color:#f92672">=</span> rgb
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> id(rgb) <span style="color:#f92672">==</span> id(rgba) <span style="color:#75715e">#checking to see if they reference the same object</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">True</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> rgba<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#34;Alph&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> rgb
-</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#e6db74">&#34;Green&#34;</span>, <span style="color:#e6db74">&#34;Blue&#34;</span>, <span style="color:#e6db74">&#34;Alph&#34;</span>]
-</span></span></code></pre></div><p>Slices can also be reassigned. <code>len()</code> also applies to lists, counting the number of elements inside the list.</p>
-<p>Nested lists are also possible:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;C&#39;</span>]
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a_low <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>]
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> [a, a_low]
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x
-</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;C&#39;</span>], [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>]
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;C&#39;</span>]
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>]
-</span></span><span style="display:flex;"><span>B
-</span></span></code></pre></div><p>Next Steps: We can create a Fibonacci sequence.</p>
-<p>Fibonacci Sequence: a sequence in which each number is the sum of the two preceding ones. Numbers that are part of this sequence are known as Fibonacci numbers.</p>
-<p>I first tried making a Fibonacci sequence from scratch, but I failed to understand how the assignment should work so that a and b are updated without adding the wrong values. <a href="https://chatgpt.com/share/f43b22f2-7f7f-41bd-881f-72fc7ad92d25">I used ChatGPT to help facilitate my error</a>.</p>
-<hr>
-<p>Next:
-<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/">Chapter 4</a></p>
-
-      </div>
-    </article>
-
-    <hr />
-
-    <div class="post-info">
-      
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
-
-        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/syntax/">syntax</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/datatypes/">datatypes</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/formatting/">formatting</a></span>
-        
-    </p>
-
-      
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        1233 Words
-      </p>
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        
-          2024-06-01 20:00
-        
-
-         
-          
-        
-      </p>
-    </div>
-
-    
-    <div class="pagination">
-        
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">The Python Tutorial Notes - Chapter 4</span>
-                </a>
-            </span>
-            
-
-            
-        </div>
-    </div>
-
-
-    
-
-    
-
-    
-
-  </main>
-
-            </div>
-
-            
-                <footer class="footer">
-    
-    
-</footer>
-
-            
-        </div>
-
-        
-
-
-
-<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
-
-
-
-
-    </body>
-</html>
+Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-06-02T00:00:00+00:00"><meta property="article:modified_time" content="2024-06-02T00:00:00+00:00"><meta property="article:tag" content="Computerscience"><meta property="article:tag" content="Python"><meta property="article:tag" content="Documentation"><meta property="article:tag" content="Syntax"><meta property="article:tag" content="Datatypes"><meta property="article:tag" content="Formatting"><meta property="og:image" content="http://localhost:1313/"><meta property="article:published_time" content="2024-06-02 00:00:00 +0000 UTC"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
+<span class=logo__text>mr. pointing</span>
+<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Posts</a></li></ul></nav><span class=menu-trigger><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+6 minutes</p></div><article><h1 class=post-title><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/>The Python Tutorial Notes - Chapter 1, 2, and 3</a></h1><div class=post-content><p>Modified: July 19 2024</p><p><a href=https://docs.python.org/3/tutorial/index.html>Link to source</a></p><hr><p>6/2/2024</p><p>In order to get a better understanding of Python as a whole language, I&rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.</p><h2 id=introduction><strong>Introduction</strong></h2><p>What is Python?</p><ol><li>Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</li><li>Ideal language for scripting and rapid application development</li></ol><p>Description of objects and modules are in <a href=https://docs.python.org/3/library/index.html#library-index>The Python Standard Library</a>. I&rsquo;ll probably go through this another day.</p><p>Same goes for <a href=https://docs.python.org/3/reference/index.html#reference-index>The Python Language Reference</a>. This goes over the syntax are &ldquo;core semantics&rdquo; of the language.</p><p><a href=https://docs.python.org/3/glossary.html#glossary>Python&rsquo;s Glossary</a></p><h2 id=1-whetting-your-appetite><strong>1. Whetting Your Appetite</strong></h2><p>Python is a language well suited for small, quick, and useful applications</p><p>Python is an interpreted language - saving time during program development due to not needing compilation and linking.</p><p>Python enables programs to be written compactly and are easily readable; python programs are usually shorter than C++/Java programs for three main reasons:</p><ol><li>High-level data types allow you to express complex operations in single statements</li><li>Statement grouping is done by indentation rather than beginning/end brackets</li><li>No variable or argument declarations are necessary</li></ol><h2 id=2-using-the-python-interpreter><strong>2. Using the Python Interpreter</strong></h2><h3 id=21-invoking-the-interpreter>2.1 Invoking the Interpreter</h3><p>Usually, when installed correctly, you can open up a shell/command line and run;</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>python3<span style=color:#ae81ff>.12</span>
+</span></span></code></pre></div><p>or</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>py
+</span></span></code></pre></div><p>You can stop typing at anytime using ctrl-z or <code>quit()</code>.</p><p>Arguments are passed using square-bracket list format: turned into strings and saved as <code>argv</code> variable in the sys module.</p><p>Interactive mode is the feature that lets you continue to write long statements on the command line, usually denoted by ellipses instead of the usual three greater than signs.</p><h3 id=22-the-interpreter-and-its-environment>2.2 The Interpreter and Its Environment</h3><p>Python source files are treated as encoded in UTF-8, where characters of most languages in the world can be used in string literals, identifies, and comments; the standard library only uses ASCII characters for identifies.</p><p>To declare an encoding besides default, use</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># -*- coding: encoding -*-</span>
+</span></span></code></pre></div><p>where <em>encoding</em> is a valid <a href=https://docs.python.org/3/library/codecs.html#module-codecs>codec</a> supported by Python.</p><h2 id=3-an-informal-introduction-to-python><strong>3. An Informal Introduction to Python</strong></h2><p>Comments are left usually with &lsquo;#&rsquo;;</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># This is my super awesome comment</span>
+</span></span></code></pre></div><p>Number calculations are a breeze with Python. By default, Python acts as a standard calculator, following basic rules of arithmetic (PEMDAS, etc.)</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ae81ff>2</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>50</span> <span style=color:#f92672>-</span> <span style=color:#ae81ff>5</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>6</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>(<span style=color:#ae81ff>50</span> <span style=color:#f92672>-</span> <span style=color:#ae81ff>5</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>6</span>) <span style=color:#f92672>/</span> <span style=color:#ae81ff>4</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>8</span> <span style=color:#f92672>/</span> <span style=color:#ae81ff>5</span>  <span style=color:#75715e># division always returns a floating point number</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>8</span> <span style=color:#f92672>//</span> <span style=color:#ae81ff>5</span> <span style=color:#75715e># integer division truncates decimal *does not round up*</span>
+</span></span></code></pre></div><p>Modular division calculates the remainder of a division problem.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ae81ff>17</span> <span style=color:#f92672>%</span> <span style=color:#ae81ff>3</span> <span style=color:#75715e># equals 2</span>
+</span></span></code></pre></div><p>Mod anything by 2, and you&rsquo;ll get either 0 or 1-even or odd respectively.</p><p>Powers are shown with double star:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ae81ff>5</span> <span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span>
+</span></span></code></pre></div><p>Data in Python is stored and separated into different data types. The most basic are <strong>int</strong> or integer data types (whole numbers), <strong>float</strong> or decimal point numbers, <strong>str</strong> or strings which hold anything in-between two quotation marks, and <strong>bool</strong> or Booleans, which return true or false.</p><p>The equal sign is known as the assignment operator. It is used to place values into named, identifiable spaces to be called on later.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>width <span style=color:#f92672>=</span> <span style=color:#ae81ff>20</span>
+</span></span><span style=display:flex><span>height <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>9</span>
+</span></span><span style=display:flex><span>width <span style=color:#f92672>*</span> height <span style=color:#75715e># returns 900</span>
+</span></span></code></pre></div><p>Variables must be assigned some value before being called/used.</p><p>Expressions with mixed types (including floats) will return floats.</p><p>In interactive mode, <code>_</code> acts as the last produced value.</p><p>Python also supports <strong>Decimal</strong>, <strong>Fraction</strong>, and <strong>complex numbers</strong>.</p><p>Strings can be used with single or double quotes, with the backslash acting as an escape character.</p><p>In regular Python shell commands, the output doesn&rsquo;t account for any backslashes. The <code>print()</code> command will accomplish that</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> s <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;First line.</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Second line.&#39;</span>  <span style=color:#75715e># \n means newline</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> s  <span style=color:#75715e># without print(), special characters are included in the string</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;First line.</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Second line.&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(s)  <span style=color:#75715e># with print(), special characters are interpreted, so \n produces new line</span>
+</span></span><span style=display:flex><span>First line<span style=color:#f92672>.</span>
+</span></span><span style=display:flex><span>Second line<span style=color:#f92672>.</span>
+</span></span></code></pre></div><p>Placing <code>r</code> before a string will output it as <em>raw</em> strings; special characters aren&rsquo;t account for.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>&#39;C:\some</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>ame&#39;</span>)
+</span></span><span style=display:flex><span>C:\some
+</span></span><span style=display:flex><span>ame
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#39;C:\some\name&#39;</span>)
+</span></span><span style=display:flex><span>C:\some\name
+</span></span></code></pre></div><p>Strings can also take up more than one line using the triple quotation mark notation: <code>"""..."""</code></p><p>Strings can be concatenated using the <code>+</code> operator, and repeated with the <code>*</code> operator.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#ae81ff>3</span> <span style=color:#f92672>*</span> <span style=color:#e6db74>&#39;hi&#39;</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39; there&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;hihihi there&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> prefix <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Py&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> prefix <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;thon&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;Python&#39;</span>
+</span></span></code></pre></div><p>Strings can be indexed, starting at 0 and the last character represented as -1:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> word <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Hello world!&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> word[<span style=color:#ae81ff>0</span>]
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;H&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span>word[<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;!&#39;</span>
+</span></span></code></pre></div><p>Slicing is also supported:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> word[:<span style=color:#ae81ff>2</span>] <span style=color:#75715e># characters from beginning to position 2 (excluding)</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;He&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> word [<span style=color:#ae81ff>2</span>:] <span style=color:#75715e># characters from position 2 (included) to the end</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;llo world!&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> word[<span style=color:#f92672>-</span><span style=color:#ae81ff>2</span>:] <span style=color:#75715e># characters from second to last position (including) to the end</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;d!&#39;</span>
+</span></span></code></pre></div><p>Here is a useful diagram to think about how index positions work in Python:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span> <span style=color:#f92672>+---+---+---+---+---+---+</span>
+</span></span><span style=display:flex><span> <span style=color:#f92672>|</span> P <span style=color:#f92672>|</span> y <span style=color:#f92672>|</span> t <span style=color:#f92672>|</span> h <span style=color:#f92672>|</span> o <span style=color:#f92672>|</span> n <span style=color:#f92672>|</span>
+</span></span><span style=display:flex><span> <span style=color:#f92672>+---+---+---+---+---+---+</span>
+</span></span><span style=display:flex><span> <span style=color:#ae81ff>0</span>   <span style=color:#ae81ff>1</span>   <span style=color:#ae81ff>2</span>   <span style=color:#ae81ff>3</span>   <span style=color:#ae81ff>4</span>   <span style=color:#ae81ff>5</span>   <span style=color:#ae81ff>6</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span><span style=color:#ae81ff>6</span>  <span style=color:#f92672>-</span><span style=color:#ae81ff>5</span>  <span style=color:#f92672>-</span><span style=color:#ae81ff>4</span>  <span style=color:#f92672>-</span><span style=color:#ae81ff>3</span>  <span style=color:#f92672>-</span><span style=color:#ae81ff>2</span>  <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>
+</span></span></code></pre></div><p>Python strings are immutable, meaning they cannot be changed at the index level. You cannot reassign individual or sliced portions of a string. You can either make a new one or reassign the entire string&rsquo;s value at once.</p><p>The built-in function <code>len()</code> returns the length of a string.</p><p>All methods for strings can be found <a href=https://docs.python.org/3/library/stdtypes.html#string-methods>here</a>.</p><p>Python has multiple <em>compound</em> data types that hold values together. The most versatile is a <em>list</em>, which is commonly written as a group of elements separated by a comma surrounded by square brackets.</p><p><em>Lists</em> can hold many different data types, but is usually confined to just one.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> squares <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>9</span>, <span style=color:#ae81ff>16</span>, <span style=color:#ae81ff>25</span>]
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> squares
+</span></span><span style=display:flex><span>[<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>9</span>, <span style=color:#ae81ff>16</span>, <span style=color:#ae81ff>25</span>]
+</span></span></code></pre></div><p>Like strings, lists can be indexed and sliced, as well as concatenated, and are fully mutable, meaning we can change the list at exact locations.</p><p>You can add items to the end of the list using the <code>.append()</code> method:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> squares<span style=color:#f92672>.</span>append(<span style=color:#ae81ff>36</span>)
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> squares<span style=color:#f92672>.</span>append(<span style=color:#ae81ff>7</span> <span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> squares
+</span></span><span style=display:flex><span>[<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>9</span>, <span style=color:#ae81ff>16</span>, <span style=color:#ae81ff>25</span>, <span style=color:#ae81ff>36</span>, <span style=color:#ae81ff>45</span>]
+</span></span></code></pre></div><p>Simple assignment doesn&rsquo;t copy data; when you assign a list to a variable, the variable refers to the existing list. Any changes made to a list through one variable is seen through all other variables that refer to that same list.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> rgb <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;Red&#34;</span>, <span style=color:#e6db74>&#34;Green&#34;</span>, <span style=color:#e6db74>&#34;Blue&#34;</span>]
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> rgba <span style=color:#f92672>=</span> rgb
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> id(rgb) <span style=color:#f92672>==</span> id(rgba) <span style=color:#75715e>#checking to see if they reference the same object</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> rgba<span style=color:#f92672>.</span>append(<span style=color:#e6db74>&#34;Alph&#34;</span>)
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> rgb
+</span></span><span style=display:flex><span>[<span style=color:#e6db74>&#34;Red&#34;</span>, <span style=color:#e6db74>&#34;Green&#34;</span>, <span style=color:#e6db74>&#34;Blue&#34;</span>, <span style=color:#e6db74>&#34;Alph&#34;</span>]
+</span></span></code></pre></div><p>Slices can also be reassigned. <code>len()</code> also applies to lists, counting the number of elements inside the list.</p><p>Nested lists are also possible:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> a <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#39;A&#39;</span>, <span style=color:#e6db74>&#39;B&#39;</span>, <span style=color:#e6db74>&#39;C&#39;</span>]
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> a_low <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#39;a&#39;</span>, <span style=color:#e6db74>&#39;b&#39;</span>, <span style=color:#e6db74>&#39;c&#39;</span>]
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> x <span style=color:#f92672>=</span> [a, a_low]
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> x
+</span></span><span style=display:flex><span> [<span style=color:#e6db74>&#39;A&#39;</span>, <span style=color:#e6db74>&#39;B&#39;</span>, <span style=color:#e6db74>&#39;C&#39;</span>], [<span style=color:#e6db74>&#39;a&#39;</span>, <span style=color:#e6db74>&#39;b&#39;</span>, <span style=color:#e6db74>&#39;c&#39;</span>]
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> x[<span style=color:#ae81ff>0</span>]
+</span></span><span style=display:flex><span>[<span style=color:#e6db74>&#39;A&#39;</span>, <span style=color:#e6db74>&#39;B&#39;</span>, <span style=color:#e6db74>&#39;C&#39;</span>]
+</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> x[<span style=color:#ae81ff>0</span>][<span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>B
+</span></span></code></pre></div><p>Next Steps: We can create a Fibonacci sequence.</p><p>Fibonacci Sequence: a sequence in which each number is the sum of the two preceding ones. Numbers that are part of this sequence are known as Fibonacci numbers.</p><p>I first tried making a Fibonacci sequence from scratch, but I failed to understand how the assignment should work so that a and b are updated without adding the wrong values. <a href=https://chatgpt.com/share/f43b22f2-7f7f-41bd-881f-72fc7ad92d25>I used ChatGPT to help facilitate my error</a>.</p><hr><p>Next:
+<a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/>Chapter 4</a></p></div></article><hr><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
+<span class=tag><a href=http://localhost:1313/tags/computerscience/>computerscience</a></span>
+<span class=tag><a href=http://localhost:1313/tags/python/>python</a></span>
+<span class=tag><a href=http://localhost:1313/tags/documentation/>documentation</a></span>
+<span class=tag><a href=http://localhost:1313/tags/syntax/>syntax</a></span>
+<span class=tag><a href=http://localhost:1313/tags/datatypes/>datatypes</a></span>
+<span class=tag><a href=http://localhost:1313/tags/formatting/>formatting</a></span></p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+1233 Words</p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+2024-06-01 20:00</p></div><div class=pagination><div class=pagination__buttons><span class="button previous"><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/><span class=button__icon>←</span>
+<span class=button__text>The Python Tutorial Notes - Chapter 4</span></a></span></div></div></main></div><footer class=footer></footer></div><script type=text/javascript src=/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc+cxaJzDdCYbAW0X1G+DgZYvtKFXe6MBex8jUJ2JT25mQx+YjACIng=="></script></body></html>

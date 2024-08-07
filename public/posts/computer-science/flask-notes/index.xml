@@ -1,88 +1,30 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Flask Notes on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/computer-science/flask-notes/</link>
-        <description>Recent content in Flask Notes on Mr. Pointing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/computer-science/flask-notes/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Blinker</title>
-            <link>http://localhost:1313/posts/computer-science/flask-notes/blinker/</link>
-            <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/flask-notes/blinker/</guid>
-            <description>Modified: July 31 2024
-Link to documentation.</description>
-            <content type="html"><![CDATA[<p>Modified: July 31 2024</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flask Notes on Mr. Pointing</title><link>http://localhost:1313/posts/computer-science/flask-notes/</link><description>Recent content in Flask Notes on Mr. Pointing</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/computer-science/flask-notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Blinker</title><link>http://localhost:1313/posts/computer-science/flask-notes/blinker/</link><pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/flask-notes/blinker/</guid><description>Modified: July 31 2024
+Link to documentation.</description><content type="html"><![CDATA[<p>Modified: July 31 2024</p>
 <p><a href="https://blinker.readthedocs.io/en/stable/">Link</a> to documentation.</p>
 <hr>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Click</title>
-            <link>http://localhost:1313/posts/computer-science/flask-notes/click/</link>
-            <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/flask-notes/click/</guid>
-            <description>Modified: July 31 2024
-Link to the documentation.</description>
-            <content type="html"><![CDATA[<p>Modified: July 31 2024</p>
+]]></content></item><item><title>Click</title><link>http://localhost:1313/posts/computer-science/flask-notes/click/</link><pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/flask-notes/click/</guid><description>Modified: July 31 2024
+Link to the documentation.</description><content type="html"><![CDATA[<p>Modified: July 31 2024</p>
 <p><a href="https://click.palletsprojects.com/en/8.1.x/">Link</a> to the documentation.</p>
 <hr>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Jinja</title>
-            <link>http://localhost:1313/posts/computer-science/flask-notes/jinja/</link>
-            <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/flask-notes/jinja/</guid>
-            <description>Modified: July 31 2024
-Link to documentation.</description>
-            <content type="html"><![CDATA[<p>Modified: July 31 2024</p>
+]]></content></item><item><title>Jinja</title><link>http://localhost:1313/posts/computer-science/flask-notes/jinja/</link><pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/flask-notes/jinja/</guid><description>Modified: July 31 2024
+Link to documentation.</description><content type="html"><![CDATA[<p>Modified: July 31 2024</p>
 <p><a href="https://jinja.palletsprojects.com/en/3.1.x/">Link</a> to documentation.</p>
 <hr>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Werkzeug</title>
-            <link>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</link>
-            <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</guid>
-            <description>Modified: July 31 2024
+]]></content></item><item><title>Werkzeug</title><link>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</link><pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</guid><description>Modified: July 31 2024
 Link to documentation.
 First of all, what is WSGI?
-Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description>
-            <content type="html"><![CDATA[<p>Modified: July 31 2024</p>
+Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description><content type="html"><![CDATA[<p>Modified: July 31 2024</p>
 <p><a href="https://werkzeug.palletsprojects.com/en/3.0.x/">Link</a> to documentation.</p>
 <hr>
 <p>First of all, what is WSGI?</p>
 <p>Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Flask</title>
-            <link>http://localhost:1313/posts/computer-science/flask-notes/flask/</link>
-            <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/flask-notes/flask/</guid>
-            <description>Modified: August 02 2024
+]]></content></item><item><title>Flask</title><link>http://localhost:1313/posts/computer-science/flask-notes/flask/</link><pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/flask-notes/flask/</guid><description>Modified: August 02 2024
 Link to documentation.
 Flask is a framework to create applications via Python. It makes web based applications rather simple.
 Starting from the here, the installation page.
 Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.
 Dependencies The following are installed automatically when installing Flask:
-Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.</description>
-            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
+Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.</description><content type="html"><![CDATA[<p>Modified: August 02 2024</p>
 <p><a href="https://flask.palletsprojects.com/en/3.0.x/">Link</a> to documentation.</p>
 <hr>
 <p>Flask is a framework to create applications via Python. It makes web based applications rather simple.</p>
@@ -402,8 +344,4 @@ Werkzeug uses WSGI, the standard Python interface between applications and serve
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">users_api</span>():
 </span></span><span style="display:flex;"><span>	users <span style="color:#f92672">=</span> get_all_users()
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> [user<span style="color:#f92672">.</span>to_json() <span style="color:#66d9ef">for</span> user <span style="color:#f92672">in</span> users]
-</span></span></code></pre></div>]]></content>
-        </item>
-        
-    </channel>
-</rss>
+</span></span></code></pre></div>]]></content></item></channel></rss>

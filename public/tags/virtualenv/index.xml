@@ -1,20 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Virtualenv on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/virtualenv/</link>
-    <description>Recent content in Virtualenv on Mr. Pointing</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/virtualenv/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Python Tutorial Notes - Chapter 12</title>
-      <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
-      <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
-      <description>Modified: July 19 2024&#xA;Virtual Environments and Packages 12.1 Introduction Often, you&amp;rsquo;re going to need tools and modules that aren&amp;rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.&#xA;To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.&#xA;12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Virtualenv on Mr. Pointing</title><link>http://localhost:1313/tags/virtualenv/</link><description>Recent content in Virtualenv on Mr. Pointing</description><generator>Hugo</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/virtualenv/index.xml" rel="self" type="application/rss+xml"/><item><title>The Python Tutorial Notes - Chapter 12</title><link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</link><pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</guid><description>Modified: July 19 2024
+Virtual Environments and Packages 12.1 Introduction Often, you&amp;rsquo;re going to need tools and modules that aren&amp;rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.
+To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.
+12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment.</description></item></channel></rss>

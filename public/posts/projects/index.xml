@@ -1,24 +1,6 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Projects on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/projects/</link>
-        <description>Recent content in Projects on Mr. Pointing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/projects/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Mr. Pointing Website</title>
-            <link>http://localhost:1313/posts/projects/mr.-pointing-website/</link>
-            <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/projects/mr.-pointing-website/</guid>
-            <description>Modified: August 02 2024
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Mr. Pointing</title><link>http://localhost:1313/posts/projects/</link><description>Recent content in Projects on Mr. Pointing</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Mr. Pointing Website</title><link>http://localhost:1313/posts/projects/mr.-pointing-website/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/mr.-pointing-website/</guid><description>Modified: August 02 2024
 So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:
-Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Ignore Templates, re-route Excalidraw Get mr.pointing domain name Create README Update/Connect GitHub Start Hosting Hugo Using Cloudflare So some updates before I go to bed:</description>
-            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
+Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Ignore Templates, re-route Excalidraw Get mr.pointing domain name Create README Update/Connect GitHub Start Hosting Hugo Using Cloudflare So some updates before I go to bed:</description><content type="html"><![CDATA[<p>Modified: August 02 2024</p>
 <hr>
 <p>So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:</p>
 <ul>
@@ -160,69 +142,29 @@ paginate     = 10
 <p>I downloaded <a href="https://github.com/anvithks/hugo-embed-pdf-shortcode">an embed pdf shortcut</a> to help out, you can use it like this:</p>
 <p>The PDF embed didn’t work, I think it might be a linking issue.</p>
 <p>Need to fix the projects pages, need a date fix.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Deploying a Flask Application via Apache</title>
-            <link>http://localhost:1313/posts/projects/deploying-a-flask-application-via-apache/</link>
-            <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/projects/deploying-a-flask-application-via-apache/</guid>
-            <description>Modified: August 02 2024
-Link to the project website.</description>
-            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
+]]></content></item><item><title>Deploying a Flask Application via Apache</title><link>http://localhost:1313/posts/projects/deploying-a-flask-application-via-apache/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/deploying-a-flask-application-via-apache/</guid><description>Modified: August 02 2024
+Link to the project website.</description><content type="html"><![CDATA[<p>Modified: August 02 2024</p>
 <p><a href="https://www.opensourceforu.com/2023/03/deploying-a-flask-application-via-the-apache-server/">Link</a> to the project website.</p>
 <hr>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Lython</title>
-            <link>http://localhost:1313/posts/projects/lython/</link>
-            <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/projects/lython/</guid>
-            <description>Modified: July 19 2024
+]]></content></item><item><title>Lython</title><link>http://localhost:1313/posts/projects/lython/</link><pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/lython/</guid><description>Modified: July 19 2024
 Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.
 Github
-I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
-            <content type="html"><![CDATA[<p>Modified: July 19 2024</p>
+I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description><content type="html"><![CDATA[<p>Modified: July 19 2024</p>
 <hr>
 <p>Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.</p>
 <p><a href="https://github.com/mr-pointing/Lython_GCU">Github</a></p>
 <p>I&rsquo;d like to continue working on my project as an actual tool to use during class. I&rsquo;d like to be able to launch it to a production server, so my students can access it during class. That way, I can cut the websites to just Lython, and the website they need to submit their assignments on.</p>
 <p>So far, I was able to get it downloadable as a PyPI project. Previously I was happy with it being live on their Test server, being on production felt super cool.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Raspberry Pi NAS</title>
-            <link>http://localhost:1313/posts/projects/raspberry-pi-nas/</link>
-            <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/projects/raspberry-pi-nas/</guid>
-            <description>Modified: July 14 2024
-Link</description>
-            <content type="html"><![CDATA[<p>Modified: July 14 2024</p>
+]]></content></item><item><title>Raspberry Pi NAS</title><link>http://localhost:1313/posts/projects/raspberry-pi-nas/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/raspberry-pi-nas/</guid><description>Modified: July 14 2024
+Link</description><content type="html"><![CDATA[<p>Modified: July 14 2024</p>
 <p><a href="https://www.youtube.com/watch?v=gyMpI8csWis&t=122s">Link</a></p>
 <hr>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Jobany Rosario</title>
-            <link>http://localhost:1313/posts/projects/jobany-rosario/</link>
-            <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/projects/jobany-rosario/</guid>
-            <description>Modified: July 02 2024
+]]></content></item><item><title>Jobany Rosario</title><link>http://localhost:1313/posts/projects/jobany-rosario/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/jobany-rosario/</guid><description>Modified: July 02 2024
 New updated Schedule:
 Monday:
 Dojo 11am - 12pm 8pm - 9pm Wednesday:
 Dojo 11am - 12pm Clockwork 7:30pm - 8:30pm Tuesday/Thursday/Friday:
-Link to contact for privates </description>
-            <content type="html"><![CDATA[<p>Modified: July 02 2024</p>
+Link to contact for privates</description><content type="html"><![CDATA[<p>Modified: July 02 2024</p>
 <hr>
 <p>New updated Schedule:</p>
 <p>Monday:</p>
@@ -251,22 +193,12 @@ Link to contact for privates </description>
 <ul>
 <li>Link to contact for privates</li>
 </ul>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Designing a RESTful API</title>
-            <link>http://localhost:1313/posts/projects/designing-a-restful-api/</link>
-            <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/projects/designing-a-restful-api/</guid>
-            <description>Modified: August 02 2024
+]]></content></item><item><title>Designing a RESTful API</title><link>http://localhost:1313/posts/projects/designing-a-restful-api/</link><pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/designing-a-restful-api/</guid><description>Modified: August 02 2024
 Watched this video to take some notes on what REST is.
 API: Application Programming Interface, is how to computers can communicate with each other.
 Client sends a Request to the server, server sends a response back to the client.
 REST, or Representational State Transfer, is the most popular way to communicate with these web servers.
-REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
-            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
+REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description><content type="html"><![CDATA[<p>Modified: August 02 2024</p>
 <hr>
 <p>Watched <a href="https://www.youtube.com/watch?v=-mN3VyJuCjM">this</a> video to take some notes on what REST is.</p>
 <p>API: Application Programming Interface, is how to computers can communicate with each other.</p>
@@ -585,20 +517,10 @@ Server: Werkzeug/3.0.3 Python/3.9.13 Date: Sat, 29 Jun 2024 16:35:18 GMT Content
 </span></span><span style="display:flex;"><span>	app<span style="color:#f92672">.</span>logger<span style="color:#f92672">.</span>error(<span style="color:#e6db74">&#39;screaming bloody murder!&#39;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Check your logs!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>
-</span></span></code></pre></div>]]></content>
-        </item>
-        
-        <item>
-            <title>Future Projects</title>
-            <link>http://localhost:1313/posts/projects/future-projects/</link>
-            <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/projects/future-projects/</guid>
-            <description>Modified: June 20 2024
+</span></span></code></pre></div>]]></content></item><item><title>Future Projects</title><link>http://localhost:1313/posts/projects/future-projects/</link><pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/future-projects/</guid><description>Modified: June 20 2024
 Obsidian Related:
 Integrate an AI model into Obsidian as a plug-in LLM trained on my Obsidian data Obsidian plug-in that automates a bibliography from links Website related:
-Python script that automates adding .md to Excalidraw files after Obsidian to Hugo transfer. </description>
-            <content type="html"><![CDATA[<p>Modified: June 20 2024</p>
+Python script that automates adding .md to Excalidraw files after Obsidian to Hugo transfer.</description><content type="html"><![CDATA[<p>Modified: June 20 2024</p>
 <hr>
 <p>Obsidian Related:</p>
 <ul>
@@ -610,21 +532,11 @@ Python script that automates adding .md to Excalidraw files after Obsidian to Hu
 <ul>
 <li>Python script that automates adding <code>.md</code> to Excalidraw files after Obsidian to Hugo transfer.</li>
 </ul>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Vinyl Visualizer</title>
-            <link>http://localhost:1313/posts/projects/vinyl-visualizer/</link>
-            <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/projects/vinyl-visualizer/</guid>
-            <description>Modified: June 22 2024
+]]></content></item><item><title>Vinyl Visualizer</title><link>http://localhost:1313/posts/projects/vinyl-visualizer/</link><pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/vinyl-visualizer/</guid><description>Modified: June 22 2024
 A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.
 To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.
 I first asked ChatGPT 3.5 for advice.
-I also asked ChatGPT 4o and got a little better/pointed advice.</description>
-            <content type="html"><![CDATA[<p>Modified: June 22 2024</p>
+I also asked ChatGPT 4o and got a little better/pointed advice.</description><content type="html"><![CDATA[<p>Modified: June 22 2024</p>
 <hr>
 <p>A passion project I&rsquo;d like to make. It would be my first time using hardware and software together.</p>
 <p>To start, I&rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.</p>
@@ -638,8 +550,4 @@ I also asked ChatGPT 4o and got a little better/pointed advice.</description>
 <p><a href="https://audd.io/">AudD</a>, an API that should help collecting data</p>
 <p><a href="https://people.csail.mit.edu/hubert/pyaudio/docs/">PyAudio</a>, to help collect audio from the microphone</p>
 <p><a href="https://docs.python.org/3/library/tk.html">Python GUI</a> info</p>
-]]></content>
-        </item>
-        
-    </channel>
-</rss>
+]]></content></item></channel></rss>

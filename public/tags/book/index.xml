@@ -1,27 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Book on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/book/</link>
-    <description>Recent content in Book on Mr. Pointing</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/book/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Road</title>
-      <link>http://localhost:1313/posts/entertainment/the-road/</link>
-      <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/entertainment/the-road/</guid>
-      <description>Modified: July 14 2024&#xA;I finished The Road a few days ago and I&amp;rsquo;ve reflected fondly on the experience. Slow burn isn&amp;rsquo;t the word I&amp;rsquo;d use; perhaps a slow agonizing death. Because by the end, I was emotionally exhausted. It asks a lot of you. Sit through the gray, dim world that the story takes place in. Hope to some God the end is worth it. In my opinion, I think it was.</description>
-    </item>
-    <item>
-      <title>Words of Radiance</title>
-      <link>http://localhost:1313/posts/entertainment/words-of-radiance/</link>
-      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/entertainment/words-of-radiance/</guid>
-      <description>Modified: July 02 2024&#xA;I finished Words of Radiance two days ago, and it initially got a 4 out of 5. I loved the book. I really did, and was invested from start to finish.&#xA;It took me about 3 weeks (3 weeks and 3 days says Goodreads) and it really flew by. I enjoyed tackling such a huge tome of a novel.&#xA;The characters were awesome, even if I felt like the interlude characters could have been longer to make them a bit more memorable.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Book on Mr. Pointing</title><link>http://localhost:1313/tags/book/</link><description>Recent content in Book on Mr. Pointing</description><generator>Hugo</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/book/index.xml" rel="self" type="application/rss+xml"/><item><title>The Road</title><link>http://localhost:1313/posts/entertainment/the-road/</link><pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/entertainment/the-road/</guid><description>Modified: July 14 2024
+I finished The Road a few days ago and I&amp;rsquo;ve reflected fondly on the experience. Slow burn isn&amp;rsquo;t the word I&amp;rsquo;d use; perhaps a slow agonizing death. Because by the end, I was emotionally exhausted. It asks a lot of you. Sit through the gray, dim world that the story takes place in. Hope to some God the end is worth it. In my opinion, I think it was.</description></item><item><title>Words of Radiance</title><link>http://localhost:1313/posts/entertainment/words-of-radiance/</link><pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/entertainment/words-of-radiance/</guid><description>Modified: July 02 2024
+I finished Words of Radiance two days ago, and it initially got a 4 out of 5. I loved the book. I really did, and was invested from start to finish.
+It took me about 3 weeks (3 weeks and 3 days says Goodreads) and it really flew by. I enjoyed tackling such a huge tome of a novel.
+The characters were awesome, even if I felt like the interlude characters could have been longer to make them a bit more memorable.</description></item></channel></rss>

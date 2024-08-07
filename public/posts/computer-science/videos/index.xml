@@ -1,28 +1,10 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Videos on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/computer-science/videos/</link>
-        <description>Recent content in Videos on Mr. Pointing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/computer-science/videos/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>How to Start a Homelab for $0</title>
-            <link>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</link>
-            <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
-            <description>Modified: July 19 2024
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Videos on Mr. Pointing</title><link>http://localhost:1313/posts/computer-science/videos/</link><description>Recent content in Videos on Mr. Pointing</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/computer-science/videos/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Start a Homelab for $0</title><link>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</link><pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</guid><description>Modified: July 19 2024
 Link to video.
 Building a Homelab is easier and more affordable than ever before.
 You can start homelabbing with extra tech or cloud options.
 Clustering, through something like Kubernetes, you can start small. One small machine, and expand as you grow. All you need is a command line and 2gb of RAM.
 Self hosting might need something more stable.
-One way to start is with an old laptop.</description>
-            <content type="html"><![CDATA[<p>Modified: July 19 2024</p>
+One way to start is with an old laptop.</description><content type="html"><![CDATA[<p>Modified: July 19 2024</p>
 <p><a href="https://www.youtube.com/watch?v=upC8G5yFBsA">Link</a> to video.</p>
 <hr>
 <p>Building a Homelab is easier and more affordable than ever before.</p>
@@ -35,22 +17,12 @@ One way to start is with an old laptop.</description>
 <p>Oracle Free Tier has free cloud services. 32gb for free. Pretty much what I&rsquo;m doing but getting into the things mentioned previously.</p>
 <p>Microsoft Azure is also an option, apparently you get $200 worth of credit when you sign up with your card and you don&rsquo;t get charged.</p>
 <p>Plugged his community which is $29 a month&hellip;a little pricey if you ask me. I bet if I threw up one for $1 a month people would subscribe because he has over 250 people paying him (probably ~ $6000?).</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>How To Use @dataclass in Python</title>
-            <link>http://localhost:1313/posts/computer-science/videos/how-to-use-@dataclass-in-python/</link>
-            <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
-            <description>Modified: July 19 2024
+]]></content></item><item><title>How To Use @dataclass in Python</title><link>http://localhost:1313/posts/computer-science/videos/how-to-use-@dataclass-in-python/</link><pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/videos/how-to-use-@dataclass-in-python/</guid><description>Modified: July 19 2024
 Link to video.
 Can be faster than creating a regular class.
 How classes are typically written:
 class Fruit: def __init__(self, name: str, calories: float): self.name = name self.calories = calories banana = Fruit(&amp;#39;Banana&amp;#39;, 10) We can do the same with a dataclass:
-from dataclasses import dataclass @dataclass class Fruit: name: str calories: float banana = Fruit(&amp;#39;Banana&amp;#39;, 10) With the first example, we wouldn&amp;rsquo;t be able to print it nicely without writing a __str__ representation, but here, we can print out banana and get Fruit(name=&#39;Banana&#39;, calories=10), which looks much nicer.</description>
-            <content type="html"><![CDATA[<p>Modified: July 19 2024</p>
+from dataclasses import dataclass @dataclass class Fruit: name: str calories: float banana = Fruit(&amp;#39;Banana&amp;#39;, 10) With the first example, we wouldn&amp;rsquo;t be able to print it nicely without writing a __str__ representation, but here, we can print out banana and get Fruit(name='Banana', calories=10), which looks much nicer.</description><content type="html"><![CDATA[<p>Modified: July 19 2024</p>
 <p><a href="https://www.youtube.com/watch?v=mVea6Mu15l8">Link</a> to video.</p>
 <hr>
 <p>Can be faster than creating a regular class.</p>
@@ -108,21 +80,11 @@ Another way we could achieve this with regular classes is by writing an <code>__
 </span></span><span style="display:flex;"><span>	calories: float
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __str__(self):
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>calories<span style="color:#e6db74">}</span><span style="color:#e6db74"> calories&#39;</span>
-</span></span></code></pre></div>]]></content>
-        </item>
-        
-        <item>
-            <title>The Ultimate Guide to Writing Functions</title>
-            <link>http://localhost:1313/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</link>
-            <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</guid>
-            <description>Modified: July 23 2024
+</span></span></code></pre></div>]]></content></item><item><title>The Ultimate Guide to Writing Functions</title><link>http://localhost:1313/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</link><pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</guid><description>Modified: July 23 2024
 Link to video.
 Tip 1: Do one thing, and do it well A function should perform a single task.
 Think about the level of abstraction; the function should be on the same level of abstraction.
-He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison.</description>
-            <content type="html"><![CDATA[<p>Modified: July 23 2024</p>
+He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison.</description><content type="html"><![CDATA[<p>Modified: July 23 2024</p>
 <p><a href="https://www.youtube.com/watch?v=yatgY4NpZXE">Link</a> to video.</p>
 <hr>
 <h3 id="tip-1-do-one-thing-and-do-it-well">Tip 1: Do one thing, and do it well</h3>
@@ -143,21 +105,11 @@ He brings up two examples, one of a function that iterates through a collection,
 <p>Instead of making a dictionary in the person class, which was my first thought, he actually makes a separate class with the <code>Protocol</code> attribute. I need to learn what this does because I don&rsquo;t understand how Python knows to grab <code>number</code>, <code>exp_month</code>, and <code>exp_year</code> without being explicitly told it&rsquo;s a card type.</p>
 <p>He also goes over how to just remove the card information from the user all together, create a separate card class, and pass in a type <code>card</code> when you create the <code>person</code> class.</p>
 <p>The rest of the video was okay. I have a lot more work to understand about Python classes and functions, so for right now I think I&rsquo;m set.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Browsers HTTP and You!</title>
-            <link>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</link>
-            <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</guid>
-            <description>Modified: July 19 2024
+]]></content></item><item><title>Browsers HTTP and You!</title><link>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</link><pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</guid><description>Modified: July 19 2024
 Link to video.
 Request/Response Cycle It&amp;rsquo;s like a conversation. Client and server advertise capabilities and supported formats to one another.
 HTTP is stateless, but the implementation will do state like things like caching. You need to see both sides of the conversation.
-Anatomy of a request GET / HTTP/1.1 Host: localhost:8001 Request body. Anatomy of a response HTTP/1.0 200 OK X-Headers: Here Response body. Request headers Sent automatically&amp;hellip;when not doing Ajax</description>
-            <content type="html"><![CDATA[<p>Modified: July 19 2024</p>
+Anatomy of a request GET / HTTP/1.1 Host: localhost:8001 Request body. Anatomy of a response HTTP/1.0 200 OK X-Headers: Here Response body. Request headers Sent automatically&amp;hellip;when not doing Ajax</description><content type="html"><![CDATA[<p>Modified: July 19 2024</p>
 <p><a href="https://www.youtube.com/watch?v=ZazQd2BCA08&list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&index=36">Link</a> to video.</p>
 <hr>
 <h3 id="requestresponse-cycle">Request/Response Cycle</h3>
@@ -176,20 +128,10 @@ Anatomy of a request GET / HTTP/1.1 Host: localhost:8001 Request body. Anatomy o
 </span></span></code></pre></div><h3 id="request-headers">Request headers</h3>
 <p>Sent automatically&hellip;when not doing Ajax</p>
 <p>When sending <code>img</code>, <code>css</code>, or <code>script</code> requests, Cookies are sent.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>You Can Do Really Cool Things With Functions in Python</title>
-            <link>http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link>
-            <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</guid>
-            <description>Modified: July 15 2024
+]]></content></item><item><title>You Can Do Really Cool Things With Functions in Python</title><link>http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link><pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</guid><description>Modified: July 15 2024
 Link to video.
 This video goes over some uncommon ways to use functions in Python. It uses the following code as a base:
-&amp;#34;&amp;#34;&amp;#34; main.py &amp;#34;&amp;#34;&amp;#34; import statistics from dataclasses import dataclass from typing import Protocol from exchange import Exchange class TradingStrategy(Protocol): &amp;#34;&amp;#34;&amp;#34;Trading strategy that decides whether to buy or sell, given a list of prices&amp;#34;&amp;#34;&amp;#34; def should_buy(self, prices: list[int]) -&amp;gt; bool: raise NotImplementedError() def should_sell(self, prices: list[int]) -&amp;gt; bool: raise NotImplementedError() class AverageTradingStrategy: &amp;#34;&amp;#34;&amp;#34;Trading strategy based on price averages.</description>
-            <content type="html"><![CDATA[<p>Modified: July 15 2024</p>
+&amp;#34;&amp;#34;&amp;#34; main.py &amp;#34;&amp;#34;&amp;#34; import statistics from dataclasses import dataclass from typing import Protocol from exchange import Exchange class TradingStrategy(Protocol): &amp;#34;&amp;#34;&amp;#34;Trading strategy that decides whether to buy or sell, given a list of prices&amp;#34;&amp;#34;&amp;#34; def should_buy(self, prices: list[int]) -&amp;gt; bool: raise NotImplementedError() def should_sell(self, prices: list[int]) -&amp;gt; bool: raise NotImplementedError() class AverageTradingStrategy: &amp;#34;&amp;#34;&amp;#34;Trading strategy based on price averages.</description><content type="html"><![CDATA[<p>Modified: July 15 2024</p>
 <p><a href="https://www.youtube.com/watch?v=ph2HjBQuI8Y&list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&index=35">Link</a> to video.</p>
 <hr>
 <p>This video goes over some uncommon ways to use functions in Python. It uses the following code as a base:</p>
@@ -473,20 +415,10 @@ This video goes over some uncommon ways to use functions in Python. It uses the 
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:  
 </span></span><span style="display:flex;"><span>    main()
-</span></span></code></pre></div>]]></content>
-        </item>
-        
-        <item>
-            <title>Become a Shell Wizard in ~12 Minutes</title>
-            <link>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
-            <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
-            <description>Modified: July 19 2024
+</span></span></code></pre></div>]]></content></item><item><title>Become a Shell Wizard in ~12 Minutes</title><link>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link><pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid><description>Modified: July 19 2024
 Link to video.
 The Basics of Shell Shell, terminal, console, command line, all are essentially the same thing.
-Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn&amp;rsquo;t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I&amp;rsquo;d love to go through is note taking manual pages for all these commands.</description>
-            <content type="html"><![CDATA[<p>Modified: July 19 2024</p>
+Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn&amp;rsquo;t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I&amp;rsquo;d love to go through is note taking manual pages for all these commands.</description><content type="html"><![CDATA[<p>Modified: July 19 2024</p>
 <p><a href="https://www.y/woutube.comatch?v=IYZDIhfAUM0&list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&index=22">Link</a> to video.</p>
 <hr>
 <h2 id="the-basics-of-shell"><strong>The Basics of Shell</strong></h2>
@@ -599,8 +531,4 @@ Commands ls: lists out all items in the current (target) directory You can pass 
 <li>Use alias and scripts to save your work</li>
 <li>Use <code>fzf</code></li>
 </ol>
-]]></content>
-        </item>
-        
-    </channel>
-</rss>
+]]></content></item></channel></rss>
