@@ -1,7 +1,7 @@
 baseURL = 'https://mrpointing.com/'
 languageCode = 'en-us'
 title = 'mr.pointing'
-theme = ['hugo-embed-pdf-shortcode', 'hello-friend-ng']
+theme = ['hugo-embed-pdf-shortcode', 'mr-p-hello-friend-ng']
 enableInlineShortcodes = true
 paginate     = 10
 
