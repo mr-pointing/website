@@ -1,137 +1,434 @@
-<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content><meta name=description content="Modified: July 19 2024
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 19 2024
 Input and Output 6/18/2024
 There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.
-7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That&amp;rsquo;s an expression statement."><meta name=keywords content="homepage,blog,computerscience,python,documentation,input,output"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/><title>The Python Tutorial Notes - Chapter 7 :: Mr. Pointing — Python Teacher
-</title><link rel=stylesheet href=/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN+YNEKWYHs/MUFU="><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="The Python Tutorial Notes - Chapter 7"><meta itemprop=description content="Modified: July 19 2024
+7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That&amp;rsquo;s an expression statement." />
+<meta name="keywords" content="homepage, blog, computerscience, python, documentation, input, output" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/" />
+
+
+    <title>
+        
+            The Python Tutorial Notes - Chapter 7 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css" integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN&#43;YNEKWYHs/MUFU=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="The Python Tutorial Notes - Chapter 7">
+  <meta itemprop="description" content="Modified: July 19 2024
 Input and Output 6/18/2024
 There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.
-7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That’s an expression statement."><meta itemprop=datePublished content="2024-06-17T00:00:00+00:00"><meta itemprop=dateModified content="2024-06-17T00:00:00+00:00"><meta itemprop=wordCount content="1181"><meta itemprop=image content="http://localhost:1313/"><meta itemprop=keywords content="Computerscience,Python,Documentation,Input,Output"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/"><meta name=twitter:title content="The Python Tutorial Notes - Chapter 7"><meta name=twitter:description content="Modified: July 19 2024
+7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That’s an expression statement.">
+  <meta itemprop="datePublished" content="2024-06-17T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-17T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1181">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Input,Output">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="The Python Tutorial Notes - Chapter 7">
+  <meta name="twitter:description" content="Modified: July 19 2024
 Input and Output 6/18/2024
 There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.
-7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That’s an expression statement."><meta property="og:url" content="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/"><meta property="og:site_name" content="Mr. Pointing"><meta property="og:title" content="The Python Tutorial Notes - Chapter 7"><meta property="og:description" content="Modified: July 19 2024
+7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That’s an expression statement.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="The Python Tutorial Notes - Chapter 7">
+  <meta property="og:description" content="Modified: July 19 2024
 Input and Output 6/18/2024
 There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.
-7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That’s an expression statement."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-06-17T00:00:00+00:00"><meta property="article:modified_time" content="2024-06-17T00:00:00+00:00"><meta property="article:tag" content="Computerscience"><meta property="article:tag" content="Python"><meta property="article:tag" content="Documentation"><meta property="article:tag" content="Input"><meta property="article:tag" content="Output"><meta property="og:image" content="http://localhost:1313/"><meta property="article:published_time" content="2024-06-17 00:00:00 +0000 UTC"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
-<span class=logo__text>mr. pointing</span>
-<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Posts</a></li></ul></nav><span class=menu-trigger><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-6 minutes</p></div><article><h1 class=post-title><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/>The Python Tutorial Notes - Chapter 7</a></h1><div class=post-content><p>Modified: July 19 2024</p><hr><h2 id=input-and-output><strong>Input and Output</strong></h2><p>6/18/2024</p><p>There are three main ways to present output in Python; expression statements (not using <code>print()</code>), using <code>print()</code>, and using <code>write()</code> which writes something into an existing or new file.</p><h3 id=71-fancier-output-formatting><strong>7.1 Fancier Output Formatting</strong></h3><p>At any point in the command line, I can just send out some text without any <code>print()</code> commands and get back what I just sent in. That&rsquo;s an expression statement. Not super important.</p><p>The more important would be things we can do with <code>print()</code>, that we can also do with expression statements (but we don&rsquo;t care about those).</p><p>We can use formatted string literals:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> year <span style=color:#f92672>=</span> <span style=color:#ae81ff>2024</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;The year is </span><span style=color:#e6db74>{</span>year<span style=color:#e6db74>}</span><span style=color:#e6db74>&#39;</span>)
-</span></span><span style=display:flex><span>The year <span style=color:#f92672>is</span> <span style=color:#ae81ff>2024</span>
-</span></span></code></pre></div><p>We can also use the <code>str.format()</code> method:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> yes_votes <span style=color:#f92672>=</span> <span style=color:#ae81ff>42_572_654</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> total_votes <span style=color:#f92672>=</span> <span style=color:#ae81ff>85_705_149</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> percentage <span style=color:#f92672>=</span> yes_votes <span style=color:#f92672>/</span> total_votes
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#e6db74>&#39;</span><span style=color:#e6db74>{:-9}</span><span style=color:#e6db74> YES votes </span><span style=color:#e6db74>{:2.2%}</span><span style=color:#e6db74>&#39;</span><span style=color:#f92672>.</span>format(yes_votes, percentage)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39; 42572654 YES votes  49.67%&#39;</span>
-</span></span></code></pre></div><p>The spacing in the example is very deliberate; aside from using <code>str.format()</code>, we&rsquo;re using some format specification. You can mess around and play with the numbers to change the padding (space between objects) and the percentage.</p><p><code>repr()</code> sends out the full context of what a string is made up of:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> hello <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;world&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(hello)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;world&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> repr(hello)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#39;world&#39;&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> hello <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;world</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>.&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(hello)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;world</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> repr(hello)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#39;world</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>.&#39;&#34;</span>
+7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That’s an expression statement.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-17T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Input">
+    <meta property="article:tag" content="Output">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-06-17 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        6 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/">The Python Tutorial Notes - Chapter 7</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: July 19 2024</p>
+<hr>
+<h2 id="input-and-output"><strong>Input and Output</strong></h2>
+<p>6/18/2024</p>
+<p>There are three main ways to present output in Python; expression statements (not using <code>print()</code>), using <code>print()</code>, and using <code>write()</code> which writes something into an existing or new file.</p>
+<h3 id="71-fancier-output-formatting"><strong>7.1 Fancier Output Formatting</strong></h3>
+<p>At any point in the command line, I can just send out some text without any <code>print()</code> commands and get back what I just sent in. That&rsquo;s an expression statement. Not super important.</p>
+<p>The more important would be things we can do with <code>print()</code>, that we can also do with expression statements (but we don&rsquo;t care about those).</p>
+<p>We can use formatted string literals:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> year <span style="color:#f92672">=</span> <span style="color:#ae81ff">2024</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;The year is </span><span style="color:#e6db74">{</span>year<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>The year <span style="color:#f92672">is</span> <span style="color:#ae81ff">2024</span>
+</span></span></code></pre></div><p>We can also use the <code>str.format()</code> method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> yes_votes <span style="color:#f92672">=</span> <span style="color:#ae81ff">42_572_654</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> total_votes <span style="color:#f92672">=</span> <span style="color:#ae81ff">85_705_149</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> percentage <span style="color:#f92672">=</span> yes_votes <span style="color:#f92672">/</span> total_votes
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{:-9}</span><span style="color:#e6db74"> YES votes </span><span style="color:#e6db74">{:2.2%}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(yes_votes, percentage)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39; 42572654 YES votes  49.67%&#39;</span>
+</span></span></code></pre></div><p>The spacing in the example is very deliberate; aside from using <code>str.format()</code>, we&rsquo;re using some format specification. You can mess around and play with the numbers to change the padding (space between objects) and the percentage.</p>
+<p><code>repr()</code> sends out the full context of what a string is made up of:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> hello <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;world&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(hello)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;world&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> repr(hello)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#39;world&#39;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> hello <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;world</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(hello)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;world</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">.</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> repr(hello)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#39;world</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">.&#39;&#34;</span>
 </span></span></code></pre></div><p><strong>Formatted string literals</strong> let you include Python expressions inside a string by including <code>f</code> or <code>F</code>.
-If you place an integer after <code>:</code> will cause that output to be a minimum number of characters wide. This is helpful for formatting columns.</p><p>You can apply other modifiers after that will convert the value before formatted. <code>!a</code> can apply <code>ascii()</code>, and <code>!r</code> applies <code>repr()</code>. An equal sign expands the expression to include the variable name.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> animals <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;eels&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;This car is full of </span><span style=color:#e6db74>{</span>animals<span style=color:#e6db74>!r}</span><span style=color:#e6db74>.&#39;</span>)
-</span></span><span style=display:flex><span>This car <span style=color:#f92672>is</span> full of <span style=color:#e6db74>&#39;eels&#39;</span><span style=color:#f92672>.</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;Amounts: </span><span style=color:#e6db74>{</span>animals<span style=color:#e6db74>=}</span><span style=color:#e6db74>&#39;</span>)
-</span></span><span style=display:flex><span>Amounts: animals<span style=color:#f92672>=</span>eels
-</span></span></code></pre></div><p><strong>The <code>str.format()</code> method</strong> can be used with nothing in them, an index representation for how they appear in your call, and by keywords (you can also combine them).</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>{}</span><span style=color:#e6db74> </span><span style=color:#e6db74>{}</span><span style=color:#e6db74> DOOM&#39;</span><span style=color:#f92672>.</span>format(<span style=color:#e6db74>&#39;Metal&#39;</span>, <span style=color:#e6db74>&#39;Face&#39;</span>))
-</span></span><span style=display:flex><span>Metal Face DOOM
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>{0}</span><span style=color:#e6db74> </span><span style=color:#e6db74>{1}</span><span style=color:#e6db74> DOOM&#39;</span><span style=color:#f92672>.</span>format(<span style=color:#e6db74>&#39;Metal&#39;</span>, <span style=color:#e6db74>&#39;Face&#39;</span>))
-</span></span><span style=display:flex><span>Metal Face DOOM
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>{1}</span><span style=color:#e6db74> </span><span style=color:#e6db74>{0}</span><span style=color:#e6db74> DOOM&#39;</span><span style=color:#f92672>.</span>format(<span style=color:#e6db74>&#39;Metal&#39;</span>, <span style=color:#e6db74>&#39;Face&#39;</span>))
-</span></span><span style=display:flex><span>Face Metal DOOM
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>&#39;The </span><span style=color:#e6db74>{noun}</span><span style=color:#e6db74> is so </span><span style=color:#e6db74>{adjective}</span><span style=color:#e6db74>,&#39;</span><span style=color:#f92672>.</span>format(noun<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;beat&#34;</span>, adjective<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;butter&#34;</span>))
-</span></span><span style=display:flex><span>The beat <span style=color:#f92672>is</span> so butter,
-</span></span></code></pre></div><p>If you have a really long formatted string you don&rsquo;t want to break apart, you can pass a dict and using square brackets to access keys.</p><p>I thought this stuff might not be that important, but than I considered the memory factor. I compared looping over the table with a for loop, compared to just outputting them in a longer string format.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> time  
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> sys  
-</span></span><span style=display:flex><span>  
-</span></span><span style=display:flex><span>table <span style=color:#f92672>=</span> {  
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;MF DOOM&#39;</span>: <span style=color:#ae81ff>10</span>,  
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;KING GHEEDORAH&#39;</span>: <span style=color:#ae81ff>5</span>,  
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#39;MADVILLIAN&#39;</span>: <span style=color:#ae81ff>7</span>  
-</span></span><span style=display:flex><span>}  
-</span></span><span style=display:flex><span>  
-</span></span><span style=display:flex><span><span style=color:#75715e># Method 1: using str.format()  </span>
-</span></span><span style=display:flex><span>start_time <span style=color:#f92672>=</span> time<span style=color:#f92672>.</span>perf_counter()  
-</span></span><span style=display:flex><span>formatted_string <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;MF DOOM: </span><span style=color:#e6db74>{0[MF DOOM]:d}</span><span style=color:#e6db74>; KING GHEEDORAH: </span><span style=color:#e6db74>{0[KING GHEEDORAH]:d}</span><span style=color:#e6db74>; MADVILLIAN: </span><span style=color:#e6db74>{0[MADVILLIAN]:d}</span><span style=color:#e6db74>&#39;</span><span style=color:#f92672>.</span>format(table)  
-</span></span><span style=display:flex><span>print(formatted_string)  
-</span></span><span style=display:flex><span>end_time <span style=color:#f92672>=</span> time<span style=color:#f92672>.</span>perf_counter()  
-</span></span><span style=display:flex><span>method_1_time <span style=color:#f92672>=</span> end_time <span style=color:#f92672>-</span> start_time  
-</span></span><span style=display:flex><span>method_1_space <span style=color:#f92672>=</span> sys<span style=color:#f92672>.</span>getsizeof(formatted_string)  
-</span></span><span style=display:flex><span>  
-</span></span><span style=display:flex><span>  
-</span></span><span style=display:flex><span><span style=color:#75715e># Method 2: using f-string in a loop  </span>
-</span></span><span style=display:flex><span>start_time <span style=color:#f92672>=</span> time<span style=color:#f92672>.</span>perf_counter()  
-</span></span><span style=display:flex><span>formatted_strings <span style=color:#f92672>=</span> [<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>{</span>i<span style=color:#e6db74>}</span><span style=color:#e6db74>: </span><span style=color:#e6db74>{</span>j<span style=color:#e6db74>}</span><span style=color:#e6db74>&#39;</span> <span style=color:#66d9ef>for</span> i, j <span style=color:#f92672>in</span> table<span style=color:#f92672>.</span>items()]  
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> s <span style=color:#f92672>in</span> formatted_strings:  
-</span></span><span style=display:flex><span>    print(s, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39; &#39;</span>)  
-</span></span><span style=display:flex><span>end_time <span style=color:#f92672>=</span> time<span style=color:#f92672>.</span>perf_counter()  
-</span></span><span style=display:flex><span>method_2_time <span style=color:#f92672>=</span> end_time <span style=color:#f92672>-</span> start_time  
-</span></span><span style=display:flex><span>method_2_space <span style=color:#f92672>=</span> sum(sys<span style=color:#f92672>.</span>getsizeof(s) <span style=color:#66d9ef>for</span> s <span style=color:#f92672>in</span> formatted_strings)  
-</span></span><span style=display:flex><span>  
-</span></span><span style=display:flex><span><span style=color:#75715e># Output  </span>
-</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Method 1 time: </span><span style=color:#e6db74>{</span>method_1_time<span style=color:#e6db74>:</span><span style=color:#e6db74>.4f</span><span style=color:#e6db74>}</span><span style=color:#e6db74>; Method 2 time: </span><span style=color:#e6db74>{</span>method_2_time<span style=color:#e6db74>:</span><span style=color:#e6db74>.4f</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&#39;</span>)  
-</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;Method 1 space: </span><span style=color:#e6db74>{</span>method_1_space<span style=color:#e6db74>}</span><span style=color:#e6db74>; Method 2 space: </span><span style=color:#e6db74>{</span>method_2_space<span style=color:#e6db74>:</span><span style=color:#e6db74>.4f</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&#39;</span>)
-</span></span></code></pre></div><p>The metrics came out pretty expected: no visible difference in time, but the space of method 2 was twice the size. Maybe not the best way to test it, but I just asked AI how they would do it and this was their response.</p><p>I like this example they give on how to nicely format some columns:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#66d9ef>for</span> x <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>11</span>):
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> 	print(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>{0:2d}</span><span style=color:#e6db74> </span><span style=color:#e6db74>{1:3d}</span><span style=color:#e6db74> </span><span style=color:#e6db74>{2:4d}</span><span style=color:#e6db74>&#39;</span><span style=color:#f92672>.</span>format(x, x<span style=color:#f92672>*</span>x, x<span style=color:#f92672>*</span>x<span style=color:#f92672>*</span>x))
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>1</span>   <span style=color:#ae81ff>1</span>    <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>2</span>   <span style=color:#ae81ff>4</span>    <span style=color:#ae81ff>8</span>
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>3</span>   <span style=color:#ae81ff>9</span>   <span style=color:#ae81ff>27</span>
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>4</span>  <span style=color:#ae81ff>16</span>   <span style=color:#ae81ff>64</span>
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>5</span>  <span style=color:#ae81ff>25</span>  <span style=color:#ae81ff>125</span>
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>6</span>  <span style=color:#ae81ff>36</span>  <span style=color:#ae81ff>216</span>
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>7</span>  <span style=color:#ae81ff>49</span>  <span style=color:#ae81ff>343</span>
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>8</span>  <span style=color:#ae81ff>64</span>  <span style=color:#ae81ff>512</span>
-</span></span><span style=display:flex><span> <span style=color:#ae81ff>9</span>  <span style=color:#ae81ff>81</span>  <span style=color:#ae81ff>729</span>
-</span></span><span style=display:flex><span><span style=color:#ae81ff>10</span> <span style=color:#ae81ff>100</span> <span style=color:#ae81ff>1000</span>
-</span></span></code></pre></div><p>6/20/2024</p><h3 id=72-reading-and-writing-files><strong>7.2 Reading and Writing Files</strong></h3><p>Using <code>open()</code> will return a file object, commonly used with two positional arguments and one keyword argument; <code>open(filename, mode, encoding=None)</code></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> f <span style=color:#f92672>=</span> open(<span style=color:#e6db74>&#39;workfile&#39;</span>, <span style=color:#e6db74>&#39;w&#39;</span>, encoding<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;utf-8&#39;</span>)
-</span></span></code></pre></div><p>The first argument, obviously, is the filename. You could also use a path to get there if not local.</p><p>The second, mode, determines the way <code>open()</code> is connecting to the file.</p><ul><li><code>r</code> is for when the file is only to be read (the default if mode isn&rsquo;t in use)</li><li><code>w</code> is for writing only (any existing file of the same name will be erased)</li><li><code>a</code> opens the file for appending (adding data to the end of the file)</li><li><code>r+</code> opens the file for both reading and writing</li><li><code>b</code> opens the file in binary; encoding does not work with this</li></ul><p>Most encoding will be done in UTF-8, so unless otherwise specified, that&rsquo;s what we&rsquo;ll use.</p><p>It&rsquo;s good practice to use <code>with</code> when dealing with files, so the file is properly closed when done being used.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>with</span> open(<span style=color:#e6db74>&#39;workfile&#39;</span>, encoding<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;utf-8&#39;</span>) <span style=color:#66d9ef>as</span> f:
-</span></span><span style=display:flex><span>	read_data <span style=color:#f92672>=</span> f<span style=color:#f92672>.</span>read()
-</span></span></code></pre></div><p>If you&rsquo;re not using <code>with</code>, you&rsquo;ll have to call <code>f.close()</code> in order to close the file and free up memory.</p><p><strong>Methods of File Objects</strong></p><p>Assuming <code>f</code> is a file we are working with:</p><ul><li><code>f.read()</code>: reads some quantity of data and returns it as a string for text mode, and a bytes object for binary mode. <em>Size</em> is an optional argument to determine how much to read. If at the last line/end of file, an empty string will be returned instead.</li><li><code>f.readline()</code>: reads only a single line from the file. All lines end with a <code>\n</code> except for the last line; a nice convention for us to determine if it&rsquo;s the end of the file or a new line.</li><li><code>f.readlines()</code>: returns all lines in a file as a list</li><li><code>f.write(string)</code>: writes the contents of <em>string</em> into the file. Also returns the number of characters written.</li><li><code>f.tell()</code>: returns an integer giving the file object&rsquo;s current position in the file</li><li><code>f.seek(offset, whence)</code>: To change an object&rsquo;s position; position computed by adding offset to a reference point set by whence. 0 measures from the beginning of the file, 1 is the current position, and 2 uses the end of the file as a reference point.</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> f<span style=color:#f92672>.</span>read()
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;This is the entire file.</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> f<span style=color:#f92672>.</span>read()
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> f<span style=color:#f92672>.</span>readline()
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;This is the first line of the file.</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> f<span style=color:#f92672>.</span>readline()
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;Second line of the file</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> f<span style=color:#f92672>.</span>readline()
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># for when reading lines from a file</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#66d9ef>for</span> line <span style=color:#f92672>in</span> f:
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> 	print(line, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39; &#39;</span>)
-</span></span><span style=display:flex><span>This <span style=color:#f92672>is</span> the first line of the file<span style=color:#f92672>.</span>
-</span></span><span style=display:flex><span>Second line of the file
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> f<span style=color:#f92672>.</span>write(<span style=color:#e6db74>&#39;This is a test</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>)
-</span></span><span style=display:flex><span><span style=color:#ae81ff>15</span>
-</span></span></code></pre></div><p>You can also save structured data with JSON (JavaScript Object Notation). Because you can only read and write strings, numbers are difficult to process.</p><p>The module <code>json</code> can take Python structures and convert them into string representations, aka <strong>Serializing</strong>. The opposite, reconstructing data from the string representation is <strong>Deserializing</strong>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>import</span> json
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> x <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#e6db74>&#39;stupid&#39;</span>, <span style=color:#e6db74>&#39;list&#39;</span>]
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> json<span style=color:#f92672>.</span>dumps(x)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;[1, &#34;stupid&#34;, &#34;list&#34;]&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># or, we could use dump() to serialize to a text file, f</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> json<span style=color:#f92672>.</span>dump(x, f)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># and to decode back</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> x <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>load(f)
-</span></span></code></pre></div><hr><p>Next:
-<a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/>Chapter 8</a></p></div></article><hr><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
-<span class=tag><a href=http://localhost:1313/tags/computerscience/>computerscience</a></span>
-<span class=tag><a href=http://localhost:1313/tags/python/>python</a></span>
-<span class=tag><a href=http://localhost:1313/tags/documentation/>documentation</a></span>
-<span class=tag><a href=http://localhost:1313/tags/input/>input</a></span>
-<span class=tag><a href=http://localhost:1313/tags/output/>output</a></span></p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-1181 Words</p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-2024-06-16 20:00</p></div><div class=pagination><div class=pagination__buttons><span class="button previous"><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/><span class=button__icon>←</span>
-<span class=button__text>The Python Tutorial Notes - Chapter 8</span>
-</a></span><span class="button next"><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/><span class=button__text>The Python Tutorial Notes - Chapter 6</span>
-<span class=button__icon>→</span></a></span></div></div></main></div><footer class=footer></footer></div><script type=text/javascript src=/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc+cxaJzDdCYbAW0X1G+DgZYvtKFXe6MBex8jUJ2JT25mQx+YjACIng=="></script></body></html>
+If you place an integer after <code>:</code> will cause that output to be a minimum number of characters wide. This is helpful for formatting columns.</p>
+<p>You can apply other modifiers after that will convert the value before formatted. <code>!a</code> can apply <code>ascii()</code>, and <code>!r</code> applies <code>repr()</code>. An equal sign expands the expression to include the variable name.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> animals <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;eels&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;This car is full of </span><span style="color:#e6db74">{</span>animals<span style="color:#e6db74">!r}</span><span style="color:#e6db74">.&#39;</span>)
+</span></span><span style="display:flex;"><span>This car <span style="color:#f92672">is</span> full of <span style="color:#e6db74">&#39;eels&#39;</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Amounts: </span><span style="color:#e6db74">{</span>animals<span style="color:#e6db74">=}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>Amounts: animals<span style="color:#f92672">=</span>eels
+</span></span></code></pre></div><p><strong>The <code>str.format()</code> method</strong> can be used with nothing in them, an index representation for how they appear in your call, and by keywords (you can also combine them).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> DOOM&#39;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;Metal&#39;</span>, <span style="color:#e6db74">&#39;Face&#39;</span>))
+</span></span><span style="display:flex;"><span>Metal Face DOOM
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{0}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{1}</span><span style="color:#e6db74"> DOOM&#39;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;Metal&#39;</span>, <span style="color:#e6db74">&#39;Face&#39;</span>))
+</span></span><span style="display:flex;"><span>Metal Face DOOM
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{1}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{0}</span><span style="color:#e6db74"> DOOM&#39;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;Metal&#39;</span>, <span style="color:#e6db74">&#39;Face&#39;</span>))
+</span></span><span style="display:flex;"><span>Face Metal DOOM
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">&#39;The </span><span style="color:#e6db74">{noun}</span><span style="color:#e6db74"> is so </span><span style="color:#e6db74">{adjective}</span><span style="color:#e6db74">,&#39;</span><span style="color:#f92672">.</span>format(noun<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;beat&#34;</span>, adjective<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;butter&#34;</span>))
+</span></span><span style="display:flex;"><span>The beat <span style="color:#f92672">is</span> so butter,
+</span></span></code></pre></div><p>If you have a really long formatted string you don&rsquo;t want to break apart, you can pass a dict and using square brackets to access keys.</p>
+<p>I thought this stuff might not be that important, but than I considered the memory factor. I compared looping over the table with a for loop, compared to just outputting them in a longer string format.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> time  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>table <span style="color:#f92672">=</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;MF DOOM&#39;</span>: <span style="color:#ae81ff">10</span>,  
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;KING GHEEDORAH&#39;</span>: <span style="color:#ae81ff">5</span>,  
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;MADVILLIAN&#39;</span>: <span style="color:#ae81ff">7</span>  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Method 1: using str.format()  </span>
+</span></span><span style="display:flex;"><span>start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>perf_counter()  
+</span></span><span style="display:flex;"><span>formatted_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;MF DOOM: </span><span style="color:#e6db74">{0[MF DOOM]:d}</span><span style="color:#e6db74">; KING GHEEDORAH: </span><span style="color:#e6db74">{0[KING GHEEDORAH]:d}</span><span style="color:#e6db74">; MADVILLIAN: </span><span style="color:#e6db74">{0[MADVILLIAN]:d}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(table)  
+</span></span><span style="display:flex;"><span>print(formatted_string)  
+</span></span><span style="display:flex;"><span>end_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>perf_counter()  
+</span></span><span style="display:flex;"><span>method_1_time <span style="color:#f92672">=</span> end_time <span style="color:#f92672">-</span> start_time  
+</span></span><span style="display:flex;"><span>method_1_space <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>getsizeof(formatted_string)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Method 2: using f-string in a loop  </span>
+</span></span><span style="display:flex;"><span>start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>perf_counter()  
+</span></span><span style="display:flex;"><span>formatted_strings <span style="color:#f92672">=</span> [<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>j<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">for</span> i, j <span style="color:#f92672">in</span> table<span style="color:#f92672">.</span>items()]  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> formatted_strings:  
+</span></span><span style="display:flex;"><span>    print(s, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)  
+</span></span><span style="display:flex;"><span>end_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>perf_counter()  
+</span></span><span style="display:flex;"><span>method_2_time <span style="color:#f92672">=</span> end_time <span style="color:#f92672">-</span> start_time  
+</span></span><span style="display:flex;"><span>method_2_space <span style="color:#f92672">=</span> sum(sys<span style="color:#f92672">.</span>getsizeof(s) <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> formatted_strings)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output  </span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Method 1 time: </span><span style="color:#e6db74">{</span>method_1_time<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">; Method 2 time: </span><span style="color:#e6db74">{</span>method_2_time<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)  
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Method 1 space: </span><span style="color:#e6db74">{</span>method_1_space<span style="color:#e6db74">}</span><span style="color:#e6db74">; Method 2 space: </span><span style="color:#e6db74">{</span>method_2_space<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span></code></pre></div><p>The metrics came out pretty expected: no visible difference in time, but the space of method 2 was twice the size. Maybe not the best way to test it, but I just asked AI how they would do it and this was their response.</p>
+<p>I like this example they give on how to nicely format some columns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">11</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{0:2d}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{1:3d}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{2:4d}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(x, x<span style="color:#f92672">*</span>x, x<span style="color:#f92672">*</span>x<span style="color:#f92672">*</span>x))
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">1</span>    <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">2</span>   <span style="color:#ae81ff">4</span>    <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">3</span>   <span style="color:#ae81ff">9</span>   <span style="color:#ae81ff">27</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">16</span>   <span style="color:#ae81ff">64</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">5</span>  <span style="color:#ae81ff">25</span>  <span style="color:#ae81ff">125</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">36</span>  <span style="color:#ae81ff">216</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">7</span>  <span style="color:#ae81ff">49</span>  <span style="color:#ae81ff">343</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">8</span>  <span style="color:#ae81ff">64</span>  <span style="color:#ae81ff">512</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">9</span>  <span style="color:#ae81ff">81</span>  <span style="color:#ae81ff">729</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">10</span> <span style="color:#ae81ff">100</span> <span style="color:#ae81ff">1000</span>
+</span></span></code></pre></div><p>6/20/2024</p>
+<h3 id="72-reading-and-writing-files"><strong>7.2 Reading and Writing Files</strong></h3>
+<p>Using <code>open()</code> will return a file object, commonly used with two positional arguments and one keyword argument; <code>open(filename, mode, encoding=None)</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#39;workfile&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;utf-8&#39;</span>)
+</span></span></code></pre></div><p>The first argument, obviously, is the filename. You could also use a path to get there if not local.</p>
+<p>The second, mode, determines the way <code>open()</code> is connecting to the file.</p>
+<ul>
+<li><code>r</code> is for when the file is only to be read (the default if mode isn&rsquo;t in use)</li>
+<li><code>w</code> is for writing only (any existing file of the same name will be erased)</li>
+<li><code>a</code> opens the file for appending (adding data to the end of the file)</li>
+<li><code>r+</code> opens the file for both reading and writing</li>
+<li><code>b</code> opens the file in binary; encoding does not work with this</li>
+</ul>
+<p>Most encoding will be done in UTF-8, so unless otherwise specified, that&rsquo;s what we&rsquo;ll use.</p>
+<p>It&rsquo;s good practice to use <code>with</code> when dealing with files, so the file is properly closed when done being used.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;workfile&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;utf-8&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>	read_data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span></code></pre></div><p>If you&rsquo;re not using <code>with</code>, you&rsquo;ll have to call <code>f.close()</code> in order to close the file and free up memory.</p>
+<p><strong>Methods of File Objects</strong></p>
+<p>Assuming <code>f</code> is a file we are working with:</p>
+<ul>
+<li><code>f.read()</code>: reads some quantity of data and returns it as a string for text mode, and a bytes object for binary mode. <em>Size</em> is an optional argument to determine how much to read. If at the last line/end of file, an empty string will be returned instead.</li>
+<li><code>f.readline()</code>: reads only a single line from the file. All lines end with a <code>\n</code> except for the last line; a nice convention for us to determine if it&rsquo;s the end of the file or a new line.</li>
+<li><code>f.readlines()</code>: returns all lines in a file as a list</li>
+<li><code>f.write(string)</code>: writes the contents of <em>string</em> into the file. Also returns the number of characters written.</li>
+<li><code>f.tell()</code>: returns an integer giving the file object&rsquo;s current position in the file</li>
+<li><code>f.seek(offset, whence)</code>: To change an object&rsquo;s position; position computed by adding offset to a reference point set by whence. 0 measures from the beginning of the file, 1 is the current position, and 2 uses the end of the file as a reference point.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;This is the entire file.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f<span style="color:#f92672">.</span>readline()
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;This is the first line of the file.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f<span style="color:#f92672">.</span>readline()
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;Second line of the file</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f<span style="color:#f92672">.</span>readline()
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># for when reading lines from a file</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> f:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(line, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span>This <span style="color:#f92672">is</span> the first line of the file<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>Second line of the file
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#39;This is a test</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">15</span>
+</span></span></code></pre></div><p>You can also save structured data with JSON (JavaScript Object Notation). Because you can only read and write strings, numbers are difficult to process.</p>
+<p>The module <code>json</code> can take Python structures and convert them into string representations, aka <strong>Serializing</strong>. The opposite, reconstructing data from the string representation is <strong>Deserializing</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;stupid&#39;</span>, <span style="color:#e6db74">&#39;list&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> json<span style="color:#f92672">.</span>dumps(x)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;[1, &#34;stupid&#34;, &#34;list&#34;]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or, we could use dump() to serialize to a text file, f</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> json<span style="color:#f92672">.</span>dump(x, f)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># and to decode back</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(f)
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/">Chapter 8</a></p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/input/">input</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/output/">output</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1181 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-06-16 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+            <span class="button previous">
+                <a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">The Python Tutorial Notes - Chapter 8</span>
+                </a>
+            </span>
+            
+
+            
+            <span class="button next">
+                <a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/">
+                    <span class="button__text">The Python Tutorial Notes - Chapter 6</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -1,5 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Audio on Mr. Pointing</title><link>http://localhost:1313/tags/audio/</link><description>Recent content in Audio on Mr. Pointing</description><generator>Hugo</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/audio/index.xml" rel="self" type="application/rss+xml"/><item><title>Vinyl Visualizer</title><link>http://localhost:1313/posts/projects/vinyl-visualizer/</link><pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/projects/vinyl-visualizer/</guid><description>Modified: June 22 2024
-A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.
-To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.
-I first asked ChatGPT 3.5 for advice.
-I also asked ChatGPT 4o and got a little better/pointed advice.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audio on Mr. Pointing</title>
+    <link>https://mrpointing.com/tags/audio/</link>
+    <description>Recent content in Audio on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mrpointing.com/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vinyl Visualizer</title>
+      <link>https://mrpointing.com/projects/vinyl-visualizer/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/projects/vinyl-visualizer/</guid>
+      <description>Modified: June 22 2024&#xA;A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.&#xA;To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.&#xA;I first asked ChatGPT 3.5 for advice.&#xA;I also asked ChatGPT 4o and got a little better/pointed advice.</description>
+    </item>
+  </channel>
+</rss>

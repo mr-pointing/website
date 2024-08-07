@@ -1,196 +1,495 @@
-<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content><meta name=description content="Modified: July 19 2024
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 19 2024
 The Standard Library - Part 2 7/9/2024
 The second part here will go over more advanced, less common modules that nevertheless, exist.
 11.1 Output Formatting reprlib is an appropriately named library containing a version of repr() modified for abbreviated displays of large or deeply nested containers:
-&amp;gt;&amp;gt;&amp;gt; import reprlib &amp;gt;&amp;gt;&amp;gt; reprlib.repr(set(&amp;#39;supercalafragalisticexpialidocious&amp;#39;)) &amp;#34;{&amp;#39;a&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;,...&amp;#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects."><meta name=keywords content="homepage,blog,computerscience,python,documentation,standardlibrary,modules"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/><title>The Python Tutorial Notes - Chapter 11 :: Mr. Pointing — Python Teacher
-</title><link rel=stylesheet href=/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN+YNEKWYHs/MUFU="><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="The Python Tutorial Notes - Chapter 11"><meta itemprop=description content="Modified: July 19 2024
+&amp;gt;&amp;gt;&amp;gt; import reprlib &amp;gt;&amp;gt;&amp;gt; reprlib.repr(set(&amp;#39;supercalafragalisticexpialidocious&amp;#39;)) &amp;#34;{&amp;#39;a&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;,...&amp;#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects." />
+<meta name="keywords" content="homepage, blog, computerscience, python, documentation, standardlibrary, modules" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/" />
+
+
+    <title>
+        
+            The Python Tutorial Notes - Chapter 11 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css" integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN&#43;YNEKWYHs/MUFU=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="The Python Tutorial Notes - Chapter 11">
+  <meta itemprop="description" content="Modified: July 19 2024
 The Standard Library - Part 2 7/9/2024
 The second part here will go over more advanced, less common modules that nevertheless, exist.
 11.1 Output Formatting reprlib is an appropriately named library containing a version of repr() modified for abbreviated displays of large or deeply nested containers:
->>> import reprlib >>> reprlib.repr(set('supercalafragalisticexpialidocious')) &#34;{'a', 'c', 'd', 'e',...&#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects."><meta itemprop=datePublished content="2024-07-09T00:00:00+00:00"><meta itemprop=dateModified content="2024-07-09T00:00:00+00:00"><meta itemprop=wordCount content="1602"><meta itemprop=image content="http://localhost:1313/"><meta itemprop=keywords content="Computerscience,Python,Documentation,Standardlibrary,Modules"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/"><meta name=twitter:title content="The Python Tutorial Notes - Chapter 11"><meta name=twitter:description content="Modified: July 19 2024
+&gt;&gt;&gt; import reprlib &gt;&gt;&gt; reprlib.repr(set(&#39;supercalafragalisticexpialidocious&#39;)) &#34;{&#39;a&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;,...&#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects.">
+  <meta itemprop="datePublished" content="2024-07-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1602">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Standardlibrary,Modules">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="The Python Tutorial Notes - Chapter 11">
+  <meta name="twitter:description" content="Modified: July 19 2024
 The Standard Library - Part 2 7/9/2024
 The second part here will go over more advanced, less common modules that nevertheless, exist.
 11.1 Output Formatting reprlib is an appropriately named library containing a version of repr() modified for abbreviated displays of large or deeply nested containers:
->>> import reprlib >>> reprlib.repr(set('supercalafragalisticexpialidocious')) &#34;{'a', 'c', 'd', 'e',...&#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects."><meta property="og:url" content="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/"><meta property="og:site_name" content="Mr. Pointing"><meta property="og:title" content="The Python Tutorial Notes - Chapter 11"><meta property="og:description" content="Modified: July 19 2024
+&gt;&gt;&gt; import reprlib &gt;&gt;&gt; reprlib.repr(set(&#39;supercalafragalisticexpialidocious&#39;)) &#34;{&#39;a&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;,...&#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="The Python Tutorial Notes - Chapter 11">
+  <meta property="og:description" content="Modified: July 19 2024
 The Standard Library - Part 2 7/9/2024
 The second part here will go over more advanced, less common modules that nevertheless, exist.
 11.1 Output Formatting reprlib is an appropriately named library containing a version of repr() modified for abbreviated displays of large or deeply nested containers:
->>> import reprlib >>> reprlib.repr(set('supercalafragalisticexpialidocious')) &#34;{'a', 'c', 'd', 'e',...&#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-07-09T00:00:00+00:00"><meta property="article:modified_time" content="2024-07-09T00:00:00+00:00"><meta property="article:tag" content="Computerscience"><meta property="article:tag" content="Python"><meta property="article:tag" content="Documentation"><meta property="article:tag" content="Standardlibrary"><meta property="article:tag" content="Modules"><meta property="og:image" content="http://localhost:1313/"><meta property="article:published_time" content="2024-07-09 00:00:00 +0000 UTC"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
-<span class=logo__text>mr. pointing</span>
-<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Posts</a></li></ul></nav><span class=menu-trigger><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-8 minutes</p></div><article><h1 class=post-title><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/>The Python Tutorial Notes - Chapter 11</a></h1><div class=post-content><p>Modified: July 19 2024</p><hr><h2 id=the-standard-library---part-2><strong>The Standard Library - Part 2</strong></h2><p>7/9/2024</p><p>The second part here will go over more advanced, less common modules that nevertheless, exist.</p><h3 id=111-output-formatting><strong>11.1 Output Formatting</strong></h3><p><code>reprlib</code> is an appropriately named library containing a version of <code>repr()</code> modified for abbreviated displays of large or deeply nested containers:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>import</span> reprlib
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> reprlib<span style=color:#f92672>.</span>repr(set(<span style=color:#e6db74>&#39;supercalafragalisticexpialidocious&#39;</span>))
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;{&#39;a&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;,...&#34;</span>
-</span></span></code></pre></div><p><code>pprint</code> is a module with more sophisticated control over printing both built-in and user defined objects. Could also be called a &ldquo;pretty printer&rdquo;, it will add line breaks and indentation to more clearly reveal complex data structures.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>import</span> pprint
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> t <span style=color:#f92672>=</span> [[[<span style=color:#e6db74>&#39;black&#39;</span>, <span style=color:#e6db74>&#39;cyan&#39;</span>], <span style=color:#e6db74>&#39;white&#39;</span>, [<span style=color:#e6db74>&#39;green&#39;</span>, <span style=color:#e6db74>&#39;red&#39;</span>], [<span style=color:#e6db74>&#39;magenta&#39;</span>, <span style=color:#f92672>...</span>     <span style=color:#e6db74>&#39;yellow&#39;</span>], <span style=color:#e6db74>&#39;blue&#39;</span>]]
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> pprint<span style=color:#f92672>.</span>pprint(t, width<span style=color:#f92672>=</span><span style=color:#ae81ff>30</span>)
-</span></span><span style=display:flex><span>[[[[<span style=color:#e6db74>&#39;black&#39;</span>, <span style=color:#e6db74>&#39;cyan&#39;</span>],
-</span></span><span style=display:flex><span>   <span style=color:#e6db74>&#39;white&#39;</span>,
-</span></span><span style=display:flex><span>   [<span style=color:#e6db74>&#39;green&#39;</span>, <span style=color:#e6db74>&#39;red&#39;</span>]],
-</span></span><span style=display:flex><span>  [[<span style=color:#e6db74>&#39;magenta&#39;</span>, <span style=color:#e6db74>&#39;yellow&#39;</span>],
-</span></span><span style=display:flex><span>   <span style=color:#e6db74>&#39;blue&#39;</span>]]]
-</span></span></code></pre></div><p><code>textwrap</code> formats text to fit any given screen width.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>import</span> textwrap
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> some_text <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;&#34;Using wrap() is the same as using fill(), except for that it returns a list of strings instead of one big string filled with newlines to seperate wrapped lines&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(textwrap<span style=color:#f92672>.</span>fill(some_text, width<span style=color:#f92672>=</span><span style=color:#ae81ff>40</span>))
-</span></span><span style=display:flex><span>Using wrap() <span style=color:#f92672>is</span> the same <span style=color:#66d9ef>as</span> using
-</span></span><span style=display:flex><span>fill(), <span style=color:#66d9ef>except</span> <span style=color:#66d9ef>for</span> that it returns a
-</span></span><span style=display:flex><span>list of strings instead of one  big
-</span></span><span style=display:flex><span>string filled <span style=color:#66d9ef>with</span> newlines to seperate
-</span></span><span style=display:flex><span>wrapped lines
-</span></span></code></pre></div><p><code>locale</code> module helps with grabbing formats for specific parts of the world.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>import</span> locale
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> locale<span style=color:#f92672>.</span>setlocale(locale<span style=color:#f92672>.</span>LC_ALL, <span style=color:#e6db74>&#39;English_United States.1252&#39;</span>)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;English_United States.1252&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> conv <span style=color:#f92672>=</span> locale<span style=color:#f92672>.</span>localeconv() <span style=color:#75715e># grabs a mapping of conventions</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> x <span style=color:#f92672>=</span> <span style=color:#ae81ff>1234567.8</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> locale<span style=color:#f92672>.</span>format_string(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>%d</span><span style=color:#e6db74>&#34;</span>, x, grouping<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;1,234,567&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> locale<span style=color:#f92672>.</span>format_string(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>%s%.*f</span><span style=color:#e6db74>&#34;</span>, (conv[<span style=color:#e6db74>&#39;currency_symbol&#39;</span>],
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>    conv[<span style=color:#e6db74>&#39;frac_digits&#39;</span>], x), grouping<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;$1,234,567.80&#39;</span>
-</span></span></code></pre></div><h3 id=112-templating><strong>11.2 Templating</strong></h3><p>Within the <code>string</code> module, there exists a <code>Template</code> class that allows for a different method of string formatting. This is good particularly for end users, since they can customize their applications without having to alter them. Not sure why that differs much from collecting input in general but it works like so:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>from</span> string <span style=color:#f92672>import</span> Template
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> t <span style=color:#f92672>=</span> Template(<span style=color:#e6db74>&#39;$</span><span style=color:#e6db74>{village}</span><span style=color:#e6db74>folk send $$10 to $cause.&#39;</span>)
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> t<span style=color:#f92672>.</span>substitute(village<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Brooklyn&#39;</span>, cause<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Food Not Bombs&#39;</span>)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;Brooklynfolk send $10 to Food Not Bombs&#39;</span>
-</span></span></code></pre></div><p>We just need to use a <code>$</code> followed by a placeholder name. In order to use these placeholder next to names in text, we have to place the placeholder in curly braces, like with <code>village</code> above. If we want to use the <code>$</code> character in general, you need to use two instead of one.</p><p>The <code>substitute()</code> method raises a <code>KeyError</code> if a placeholder is not supplied in a dictionary or a keyword argument. If the placeholder exists as a key within one dictionary, only one dictionary needs to be passed. If you want to make sure it gets through regardless, you can use <code>safe_substitute()</code> instead.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> t <span style=color:#f92672>=</span> Template(<span style=color:#e6db74>&#39;Return the $item to the $owner&#39;</span>)
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> d <span style=color:#f92672>=</span> dict(item<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;broadsword&#39;</span>)  
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> x <span style=color:#f92672>=</span> {<span style=color:#e6db74>&#39;item&#39;</span>: <span style=color:#e6db74>&#39;keyblade&#39;</span>, <span style=color:#e6db74>&#39;owner&#39;</span>: <span style=color:#e6db74>&#39;cow&#39;</span>}
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> t<span style=color:#f92672>.</span>substitute(d)
-</span></span><span style=display:flex><span>Traceback (most recent call last):
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>KeyError</span>: <span style=color:#e6db74>&#39;owner&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> t<span style=color:#f92672>.</span>substitute(x)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;Return the keyblade to the cow&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> t<span style=color:#f92672>.</span>safe_substitute(d)
-</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;Return the broadsword to the $owner&#39;</span>
-</span></span></code></pre></div><p>7/10/2024</p><p>This next example took me a while to comprehend, but it was really worth it.</p><p>So, for templates, the delimiter can be customized to fit the input. In the following example, we want to use percent sign instead, in order to better format file names.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>import</span> time<span style=color:#f92672>,</span> os.path
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> photofiles <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#39;img_1074.jpg&#39;</span>, <span style=color:#e6db74>&#39;img_1011.jpg&#39;</span>, <span style=color:#e6db74>&#39;img_1183.jpg&#39;</span>]
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>BatchRename</span>(Template):
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>     delimiter <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;%&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> fmt <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#39;Enter rename style (</span><span style=color:#e6db74>%d</span><span style=color:#e6db74>-date %n-seqnum </span><span style=color:#e6db74>%f</span><span style=color:#e6db74>-format): &#39;</span>)
-</span></span><span style=display:flex><span>Enter rename style (<span style=color:#f92672>%</span>d<span style=color:#f92672>-</span>date <span style=color:#f92672>%</span>n<span style=color:#f92672>-</span>seqnum <span style=color:#f92672>%</span>f<span style=color:#f92672>-</span>format): Richie_<span style=color:#f92672>%</span>n<span style=color:#f92672>%</span>f
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> t <span style=color:#f92672>=</span> BatchRename(fmt)
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> date <span style=color:#f92672>=</span> time<span style=color:#f92672>.</span>strftime(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>%d</span><span style=color:#e6db74>%b%y&#39;</span>)
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#66d9ef>for</span> i, filename <span style=color:#f92672>in</span> enumerate(photofiles):
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>     base, ext <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>splitext(filename)
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>     newname <span style=color:#f92672>=</span> t<span style=color:#f92672>.</span>substitute(d<span style=color:#f92672>=</span>date, n<span style=color:#f92672>=</span>i, f<span style=color:#f92672>=</span>ext)
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>     print(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>{0}</span><span style=color:#e6db74> --&gt; </span><span style=color:#e6db74>{1}</span><span style=color:#e6db74>&#39;</span><span style=color:#f92672>.</span>format(filename, newname))
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>
-</span></span><span style=display:flex><span>img_1074<span style=color:#f92672>.</span>jpg <span style=color:#f92672>--&gt;</span> richie_0<span style=color:#f92672>.</span>jpg
-</span></span><span style=display:flex><span>img_1011<span style=color:#f92672>.</span>jpg <span style=color:#f92672>--&gt;</span> richie_1<span style=color:#f92672>.</span>jpg
-</span></span><span style=display:flex><span>img_1183<span style=color:#f92672>.</span>jpg <span style=color:#f92672>--&gt;</span> richie_2<span style=color:#f92672>.</span>jpg
-</span></span></code></pre></div><p>I personally think so far, this is one of the more interesting modules to learn about.</p><h3 id=113-working-with-binary-data-record-layouts><strong>11.3 Working with Binary Data Record Layouts</strong></h3><p>We can use the <code>struct</code> module to grab <code>pack()</code> and <code>unpack()</code>, which help when working with variable length binary record formats. IN the next example, we&rsquo;ll show how to loop through header information in a ZIP file without using the <code>zipfile</code> module. We&rsquo;ll see the use of two new conventions: <code>"H"</code> and <code>"I"</code> are representative and two and four bytes unassigned, respectively, as well as <code>"&lt;"</code> representing that they are standard size and in little-endian byte order.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> struct
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>with</span> open(<span style=color:#e6db74>&#39;myfile.zip&#39;</span>, <span style=color:#e6db74>&#39;rb&#39;</span>) <span style=color:#66d9ef>as</span> f:
-</span></span><span style=display:flex><span>	data <span style=color:#f92672>=</span> f<span style=color:#f92672>.</span>read()
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>start <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>):     <span style=color:#75715e># show the first 3 file headers</span>
-</span></span><span style=display:flex><span>	start <span style=color:#f92672>+=</span> <span style=color:#ae81ff>14</span>
-</span></span><span style=display:flex><span>	fields <span style=color:#f92672>=</span> struct<span style=color:#f92672>.</span>unpack(<span style=color:#e6db74>&#39;&lt;IIHH&#39;</span>, data[start:start<span style=color:#f92672>*</span><span style=color:#ae81ff>16</span>])
-</span></span><span style=display:flex><span>	crc32, comp_size, uncomp_size, filenamesize, extrasize <span style=color:#f92672>=</span> fields
-</span></span><span style=display:flex><span>	start <span style=color:#f92672>+=</span> <span style=color:#ae81ff>16</span>
-</span></span><span style=display:flex><span>	filename <span style=color:#f92672>=</span> data[start:start<span style=color:#f92672>*</span>filenamesize]
-</span></span><span style=display:flex><span>	start <span style=color:#f92672>+=</span> filenamesize
-</span></span><span style=display:flex><span>	extra <span style=color:#f92672>=</span> data[start:start<span style=color:#f92672>*</span>extra_size]
-</span></span><span style=display:flex><span>	print(filename, hex(crc32), comp_size, uncompsize)
-</span></span><span style=display:flex><span>	start <span style=color:#f92672>+=</span> extra_size <span style=color:#f92672>*</span> comp_size  <span style=color:#75715e># skip to next header</span>
-</span></span></code></pre></div><p>7/11/2024</p><h3 id=114-multi-threading><strong>11.4 Multi-threading</strong></h3><p>Threading can be defined as a technique for breaking down tasks that are not sequentially dependent. Threads advantages come from its ability to accept things like user input while background tasks are being processed.</p><p>In the following example, we&rsquo;ll call the <code>threading</code> module:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> threading<span style=color:#f92672>,</span> zipfile
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>AsyncZip</span>(threading<span style=color:#f92672>.</span>Thread):
-</span></span><span style=display:flex><span>	<span style=color:#66d9ef>def</span> __init__(self, infile, outfile):
-</span></span><span style=display:flex><span>		threading<span style=color:#f92672>.</span>Thread<span style=color:#f92672>.</span>__init__(self)
-</span></span><span style=display:flex><span>		self<span style=color:#f92672>.</span>infile <span style=color:#f92672>=</span> infile
-</span></span><span style=display:flex><span>		self<span style=color:#f92672>.</span>outfile <span style=color:#f92672>=</span> outfile
-</span></span><span style=display:flex><span>	<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>run</span>(self):
-</span></span><span style=display:flex><span>		f <span style=color:#f92672>=</span> zipfile<span style=color:#f92672>.</span>ZipFile(self<span style=color:#f92672>.</span>outfile, <span style=color:#e6db74>&#39;w&#39;</span>, zipfile<span style=color:#f92672>.</span>ZIP_DEFLATED)
-</span></span><span style=display:flex><span>		f<span style=color:#f92672>.</span>write(self<span style=color:#f92672>.</span>infile)
-</span></span><span style=display:flex><span>		f<span style=color:#f92672>.</span>close()
-</span></span><span style=display:flex><span>		print(<span style=color:#e6db74>&#39;Finished background zip of:&#39;</span>, self<span style=color:#f92672>.</span>infile)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>background <span style=color:#f92672>=</span> AsyncZip(<span style=color:#e6db74>&#39;mydata.txt&#39;</span>, <span style=color:#e6db74>&#39;myarchive.zip&#39;</span>)
-</span></span><span style=display:flex><span>background<span style=color:#f92672>.</span>start()
-</span></span><span style=display:flex><span>print(<span style=color:#e6db74>&#39;The main program continues to run in the foreground.&#39;</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>background<span style=color:#f92672>.</span>join()    <span style=color:#75715e># wait for background task to finish</span>
-</span></span><span style=display:flex><span>print(<span style=color:#e6db74>&#39;Main program waited until background was done.&#39;</span>)
-</span></span></code></pre></div><p>Even though there are a lot of available tools in the <code>threading</code> module, including locks, events, and more, sometimes it&rsquo;s easier to design an application that concentrates all access to a resource in one single thread, and use the <code>queue</code> module to feed that single thread requests from other threads. This is not only easier to design, but more readable and reliable.</p><h3 id=115-logging><strong>11.5 Logging</strong></h3><p><code>logging</code> is a module that offers a fully featured logging system, which are either sent to a specified file or <code>sys.stderr</code> by default.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> logging
-</span></span><span style=display:flex><span>logging<span style=color:#f92672>.</span>debug(<span style=color:#e6db74>&#39;Debugging Information&#39;</span>)
-</span></span><span style=display:flex><span>logging<span style=color:#f92672>.</span>info(<span style=color:#e6db74>&#39;Informational Message&#39;</span>)
-</span></span><span style=display:flex><span>logging<span style=color:#f92672>.</span>warning(<span style=color:#e6db74>&#39;Warning:config file </span><span style=color:#e6db74>%s</span><span style=color:#e6db74> not found&#39;</span>, <span style=color:#e6db74>&#39;server.conf&#39;</span>)
-</span></span><span style=display:flex><span>logging<span style=color:#f92672>.</span>error(<span style=color:#e6db74>&#39;Error occured&#39;</span>)
-</span></span><span style=display:flex><span>logging<span style=color:#f92672>.</span>critical(<span style=color:#e6db74>&#39;Critical error -- shutting down&#39;</span>)
-</span></span></code></pre></div><p>Will produce the following:</p><pre tabindex=0><code>WARNING:root:Warning:config file server.conf not found
+&gt;&gt;&gt; import reprlib &gt;&gt;&gt; reprlib.repr(set(&#39;supercalafragalisticexpialidocious&#39;)) &#34;{&#39;a&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;,...&#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-09T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Standardlibrary">
+    <meta property="article:tag" content="Modules">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        8 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/">The Python Tutorial Notes - Chapter 11</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: July 19 2024</p>
+<hr>
+<h2 id="the-standard-library---part-2"><strong>The Standard Library - Part 2</strong></h2>
+<p>7/9/2024</p>
+<p>The second part here will go over more advanced, less common modules that nevertheless, exist.</p>
+<h3 id="111-output-formatting"><strong>11.1 Output Formatting</strong></h3>
+<p><code>reprlib</code> is an appropriately named library containing a version of <code>repr()</code> modified for abbreviated displays of large or deeply nested containers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> reprlib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> reprlib<span style="color:#f92672">.</span>repr(set(<span style="color:#e6db74">&#39;supercalafragalisticexpialidocious&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;{&#39;a&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;,...&#34;</span>
+</span></span></code></pre></div><p><code>pprint</code> is a module with more sophisticated control over printing both built-in and user defined objects. Could also be called a &ldquo;pretty printer&rdquo;, it will add line breaks and indentation to more clearly reveal complex data structures.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> pprint
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t <span style="color:#f92672">=</span> [[[<span style="color:#e6db74">&#39;black&#39;</span>, <span style="color:#e6db74">&#39;cyan&#39;</span>], <span style="color:#e6db74">&#39;white&#39;</span>, [<span style="color:#e6db74">&#39;green&#39;</span>, <span style="color:#e6db74">&#39;red&#39;</span>], [<span style="color:#e6db74">&#39;magenta&#39;</span>, <span style="color:#f92672">...</span>     <span style="color:#e6db74">&#39;yellow&#39;</span>], <span style="color:#e6db74">&#39;blue&#39;</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> pprint<span style="color:#f92672">.</span>pprint(t, width<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
+</span></span><span style="display:flex;"><span>[[[[<span style="color:#e6db74">&#39;black&#39;</span>, <span style="color:#e6db74">&#39;cyan&#39;</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#39;white&#39;</span>,
+</span></span><span style="display:flex;"><span>   [<span style="color:#e6db74">&#39;green&#39;</span>, <span style="color:#e6db74">&#39;red&#39;</span>]],
+</span></span><span style="display:flex;"><span>  [[<span style="color:#e6db74">&#39;magenta&#39;</span>, <span style="color:#e6db74">&#39;yellow&#39;</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#39;blue&#39;</span>]]]
+</span></span></code></pre></div><p><code>textwrap</code> formats text to fit any given screen width.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> textwrap
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> some_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;Using wrap() is the same as using fill(), except for that it returns a list of strings instead of one big string filled with newlines to seperate wrapped lines&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(textwrap<span style="color:#f92672">.</span>fill(some_text, width<span style="color:#f92672">=</span><span style="color:#ae81ff">40</span>))
+</span></span><span style="display:flex;"><span>Using wrap() <span style="color:#f92672">is</span> the same <span style="color:#66d9ef">as</span> using
+</span></span><span style="display:flex;"><span>fill(), <span style="color:#66d9ef">except</span> <span style="color:#66d9ef">for</span> that it returns a
+</span></span><span style="display:flex;"><span>list of strings instead of one  big
+</span></span><span style="display:flex;"><span>string filled <span style="color:#66d9ef">with</span> newlines to seperate
+</span></span><span style="display:flex;"><span>wrapped lines
+</span></span></code></pre></div><p><code>locale</code> module helps with grabbing formats for specific parts of the world.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> locale
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> locale<span style="color:#f92672">.</span>setlocale(locale<span style="color:#f92672">.</span>LC_ALL, <span style="color:#e6db74">&#39;English_United States.1252&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;English_United States.1252&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> conv <span style="color:#f92672">=</span> locale<span style="color:#f92672">.</span>localeconv() <span style="color:#75715e"># grabs a mapping of conventions</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234567.8</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> locale<span style="color:#f92672">.</span>format_string(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>, x, grouping<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;1,234,567&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> locale<span style="color:#f92672">.</span>format_string(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s%.*f</span><span style="color:#e6db74">&#34;</span>, (conv[<span style="color:#e6db74">&#39;currency_symbol&#39;</span>],
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>    conv[<span style="color:#e6db74">&#39;frac_digits&#39;</span>], x), grouping<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;$1,234,567.80&#39;</span>
+</span></span></code></pre></div><h3 id="112-templating"><strong>11.2 Templating</strong></h3>
+<p>Within the <code>string</code> module, there exists a <code>Template</code> class that allows for a different method of string formatting. This is good particularly for end users, since they can customize their applications without having to alter them. Not sure why that differs much from collecting input in general but it works like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> string <span style="color:#f92672">import</span> Template
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t <span style="color:#f92672">=</span> Template(<span style="color:#e6db74">&#39;$</span><span style="color:#e6db74">{village}</span><span style="color:#e6db74">folk send $$10 to $cause.&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t<span style="color:#f92672">.</span>substitute(village<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Brooklyn&#39;</span>, cause<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Food Not Bombs&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;Brooklynfolk send $10 to Food Not Bombs&#39;</span>
+</span></span></code></pre></div><p>We just need to use a <code>$</code> followed by a placeholder name. In order to use these placeholder next to names in text, we have to place the placeholder in curly braces, like with <code>village</code> above. If we want to use the <code>$</code> character in general, you need to use two instead of one.</p>
+<p>The <code>substitute()</code> method raises a <code>KeyError</code> if a placeholder is not supplied in a dictionary or a keyword argument. If the placeholder exists as a key within one dictionary, only one dictionary needs to be passed. If you want to make sure it gets through regardless, you can use <code>safe_substitute()</code> instead.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t <span style="color:#f92672">=</span> Template(<span style="color:#e6db74">&#39;Return the $item to the $owner&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d <span style="color:#f92672">=</span> dict(item<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;broadsword&#39;</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;item&#39;</span>: <span style="color:#e6db74">&#39;keyblade&#39;</span>, <span style="color:#e6db74">&#39;owner&#39;</span>: <span style="color:#e6db74">&#39;cow&#39;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t<span style="color:#f92672">.</span>substitute(d)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">KeyError</span>: <span style="color:#e6db74">&#39;owner&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t<span style="color:#f92672">.</span>substitute(x)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;Return the keyblade to the cow&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t<span style="color:#f92672">.</span>safe_substitute(d)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;Return the broadsword to the $owner&#39;</span>
+</span></span></code></pre></div><p>7/10/2024</p>
+<p>This next example took me a while to comprehend, but it was really worth it.</p>
+<p>So, for templates, the delimiter  can be customized to fit the input. In the following example, we want to use percent sign instead, in order to better format file names.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> time<span style="color:#f92672">,</span> os.path
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> photofiles <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;img_1074.jpg&#39;</span>, <span style="color:#e6db74">&#39;img_1011.jpg&#39;</span>, <span style="color:#e6db74">&#39;img_1183.jpg&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BatchRename</span>(Template):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>     delimiter <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;%&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> fmt <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;Enter rename style (</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">-date %n-seqnum </span><span style="color:#e6db74">%f</span><span style="color:#e6db74">-format): &#39;</span>)
+</span></span><span style="display:flex;"><span>Enter rename style (<span style="color:#f92672">%</span>d<span style="color:#f92672">-</span>date <span style="color:#f92672">%</span>n<span style="color:#f92672">-</span>seqnum <span style="color:#f92672">%</span>f<span style="color:#f92672">-</span>format): Richie_<span style="color:#f92672">%</span>n<span style="color:#f92672">%</span>f
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t <span style="color:#f92672">=</span> BatchRename(fmt)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> date <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">%b%y&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> i, filename <span style="color:#f92672">in</span> enumerate(photofiles):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>     base, ext <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>splitext(filename)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>     newname <span style="color:#f92672">=</span> t<span style="color:#f92672">.</span>substitute(d<span style="color:#f92672">=</span>date, n<span style="color:#f92672">=</span>i, f<span style="color:#f92672">=</span>ext)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>     print(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{0}</span><span style="color:#e6db74"> --&gt; </span><span style="color:#e6db74">{1}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(filename, newname))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>img_1074<span style="color:#f92672">.</span>jpg <span style="color:#f92672">--&gt;</span> richie_0<span style="color:#f92672">.</span>jpg
+</span></span><span style="display:flex;"><span>img_1011<span style="color:#f92672">.</span>jpg <span style="color:#f92672">--&gt;</span> richie_1<span style="color:#f92672">.</span>jpg
+</span></span><span style="display:flex;"><span>img_1183<span style="color:#f92672">.</span>jpg <span style="color:#f92672">--&gt;</span> richie_2<span style="color:#f92672">.</span>jpg
+</span></span></code></pre></div><p>I personally think so far, this is one of the more interesting modules to learn about.</p>
+<h3 id="113-working-with-binary-data-record-layouts"><strong>11.3 Working with Binary Data Record Layouts</strong></h3>
+<p>We can use the <code>struct</code> module to grab <code>pack()</code> and <code>unpack()</code>, which help when working with variable length binary record formats. IN the next example, we&rsquo;ll show how to loop through header information in a ZIP file without using the <code>zipfile</code> module. We&rsquo;ll see the use of two new conventions: <code>&quot;H&quot;</code> and <code>&quot;I&quot;</code> are representative and two and four bytes unassigned, respectively, as well as <code>&quot;&lt;&quot;</code> representing that they are standard size and in little-endian byte order.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> struct
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;myfile.zip&#39;</span>, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>	data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):     <span style="color:#75715e"># show the first 3 file headers</span>
+</span></span><span style="display:flex;"><span>	start <span style="color:#f92672">+=</span> <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>	fields <span style="color:#f92672">=</span> struct<span style="color:#f92672">.</span>unpack(<span style="color:#e6db74">&#39;&lt;IIHH&#39;</span>, data[start:start<span style="color:#f92672">*</span><span style="color:#ae81ff">16</span>])
+</span></span><span style="display:flex;"><span>	crc32, comp_size, uncomp_size, filenamesize, extrasize <span style="color:#f92672">=</span> fields
+</span></span><span style="display:flex;"><span>	start <span style="color:#f92672">+=</span> <span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span>	filename <span style="color:#f92672">=</span> data[start:start<span style="color:#f92672">*</span>filenamesize]
+</span></span><span style="display:flex;"><span>	start <span style="color:#f92672">+=</span> filenamesize
+</span></span><span style="display:flex;"><span>	extra <span style="color:#f92672">=</span> data[start:start<span style="color:#f92672">*</span>extra_size]
+</span></span><span style="display:flex;"><span>	print(filename, hex(crc32), comp_size, uncompsize)
+</span></span><span style="display:flex;"><span>	start <span style="color:#f92672">+=</span> extra_size <span style="color:#f92672">*</span> comp_size  <span style="color:#75715e"># skip to next header</span>
+</span></span></code></pre></div><p>7/11/2024</p>
+<h3 id="114-multi-threading"><strong>11.4 Multi-threading</strong></h3>
+<p>Threading can be defined as a technique for breaking down tasks that are not sequentially dependent. Threads advantages come from its ability to accept things like user input while background tasks are being processed.</p>
+<p>In the following example, we&rsquo;ll call the <code>threading</code> module:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> threading<span style="color:#f92672">,</span> zipfile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AsyncZip</span>(threading<span style="color:#f92672">.</span>Thread):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, infile, outfile):
+</span></span><span style="display:flex;"><span>		threading<span style="color:#f92672">.</span>Thread<span style="color:#f92672">.</span>__init__(self)
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>infile <span style="color:#f92672">=</span> infile
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>outfile <span style="color:#f92672">=</span> outfile
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(self):
+</span></span><span style="display:flex;"><span>		f <span style="color:#f92672">=</span> zipfile<span style="color:#f92672">.</span>ZipFile(self<span style="color:#f92672">.</span>outfile, <span style="color:#e6db74">&#39;w&#39;</span>, zipfile<span style="color:#f92672">.</span>ZIP_DEFLATED)
+</span></span><span style="display:flex;"><span>		f<span style="color:#f92672">.</span>write(self<span style="color:#f92672">.</span>infile)
+</span></span><span style="display:flex;"><span>		f<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#39;Finished background zip of:&#39;</span>, self<span style="color:#f92672">.</span>infile)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>background <span style="color:#f92672">=</span> AsyncZip(<span style="color:#e6db74">&#39;mydata.txt&#39;</span>, <span style="color:#e6db74">&#39;myarchive.zip&#39;</span>)
+</span></span><span style="display:flex;"><span>background<span style="color:#f92672">.</span>start()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;The main program continues to run in the foreground.&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>background<span style="color:#f92672">.</span>join()    <span style="color:#75715e"># wait for background task to finish</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Main program waited until background was done.&#39;</span>)
+</span></span></code></pre></div><p>Even though there are a lot of available tools in the <code>threading</code> module, including locks, events, and more, sometimes it&rsquo;s easier to design an application that concentrates all access to a resource in one single thread, and use the <code>queue</code> module to feed that single thread requests from other threads. This is not only easier to design, but more readable and reliable.</p>
+<h3 id="115-logging"><strong>11.5 Logging</strong></h3>
+<p><code>logging</code> is a module that offers a fully featured logging system, which are either sent to a specified file or <code>sys.stderr</code> by default.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>debug(<span style="color:#e6db74">&#39;Debugging Information&#39;</span>)
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#39;Informational Message&#39;</span>)
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>warning(<span style="color:#e6db74">&#39;Warning:config file </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> not found&#39;</span>, <span style="color:#e6db74">&#39;server.conf&#39;</span>)
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>error(<span style="color:#e6db74">&#39;Error occured&#39;</span>)
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>critical(<span style="color:#e6db74">&#39;Critical error -- shutting down&#39;</span>)
+</span></span></code></pre></div><p>Will produce the following:</p>
+<pre tabindex="0"><code>WARNING:root:Warning:config file server.conf not found
 ERROR:root:Error occured
 CRITICAL:root:Critical error -- shutting down
-</code></pre><p>By default, informational and debugging messages are suppressed. You could also set up other output options, like using routing through email, datagrams, sockets, or even to an HTTP server. The way they appear in the example above is also their message priority.</p><h3 id=116-weak-references><strong>11.6 Weak References</strong></h3><p>Python does automatic memory management (which is why I&rsquo;m pretty sure it&rsquo;s slower than other languages). Memory is only opened after the last reference is eliminated.</p><p>In order to, let&rsquo;s say, track the movement of some process without wanting to be memory intensive, you can use the <code>weakref</code> module. It provides tools for tracking objects without creating a reference.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>import</span> weakref<span style=color:#f92672>,</span> gc
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>A</span>:
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>     <span style=color:#66d9ef>def</span> __init__(self, value):
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>          self<span style=color:#f92672>.</span>value <span style=color:#f92672>=</span> value
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>     <span style=color:#66d9ef>def</span> __repr__(self):
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>          <span style=color:#66d9ef>return</span> str(self<span style=color:#f92672>.</span>value)
-</span></span><span style=display:flex><span><span style=color:#f92672>...</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> a <span style=color:#f92672>=</span> A(<span style=color:#ae81ff>10</span>)     <span style=color:#75715e># create a reference</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> d <span style=color:#f92672>=</span> weakref<span style=color:#f92672>.</span>WeakValueDictionary()
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> d[<span style=color:#e6db74>&#39;primary&#39;</span>] <span style=color:#f92672>=</span> a     <span style=color:#75715e># does not create a reference</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> d[<span style=color:#e6db74>&#39;primary&#39;</span>]     <span style=color:#75715e># fetch the object if it is still alive</span>
-</span></span><span style=display:flex><span><span style=color:#ae81ff>10</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#66d9ef>del</span> a     <span style=color:#75715e># remove the one reference</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> gc<span style=color:#f92672>.</span>collect()     <span style=color:#75715e># run garbage collection</span>
-</span></span><span style=display:flex><span><span style=color:#ae81ff>0</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> d[<span style=color:#e6db74>&#39;primary&#39;</span>]     <span style=color:#75715e># entry was automatically removed </span>
-</span></span><span style=display:flex><span>Traceback (most recent call last):
-</span></span><span style=display:flex><span>  File <span style=color:#e6db74>&#34;&lt;stdin&gt;&#34;</span>, line <span style=color:#ae81ff>1</span>, <span style=color:#f92672>in</span> <span style=color:#f92672>&lt;</span>module<span style=color:#f92672>&gt;</span>
-</span></span><span style=display:flex><span>    d[<span style=color:#e6db74>&#39;primary&#39;</span>]               
-</span></span><span style=display:flex><span>  File <span style=color:#e6db74>&#34;C:/python312/lib/weakref.py&#34;</span>, line <span style=color:#ae81ff>46</span>, <span style=color:#f92672>in</span> __getitem__
-</span></span><span style=display:flex><span>    o <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>data[key]()
-</span></span><span style=display:flex><span><span style=color:#a6e22e>KeyError</span>: <span style=color:#e6db74>&#39;primary&#39;</span>
-</span></span></code></pre></div><h3 id=117-tools-for-working-with-lists><strong>11.7 Tools for Working with Lists</strong></h3><p>Python does have support for more advanced versions of lists.</p><p>The <code>array</code> module gives an <code>array</code> object type. The following example can set <code>array</code> objects to store 2 bytes per entry rather than 16 bytes per entry per a regular list of Python <code>int</code> objects using the <code>H</code> typecode.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>from</span> array <span style=color:#f92672>import</span> array
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> a <span style=color:#f92672>=</span> array(<span style=color:#e6db74>&#39;H&#39;</span>, [<span style=color:#ae81ff>4000</span>, <span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>700</span>, <span style=color:#ae81ff>22222</span>])
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> sum(a)
-</span></span><span style=display:flex><span><span style=color:#ae81ff>26932</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> a[<span style=color:#ae81ff>1</span>:<span style=color:#ae81ff>3</span>]
-</span></span><span style=display:flex><span>array(<span style=color:#e6db74>&#39;H&#39;</span>, [<span style=color:#ae81ff>10</span>,<span style=color:#ae81ff>700</span>])
-</span></span></code></pre></div><p>The <code>collections</code> module has a <code>deque</code> object that acts like a list but has faster appends and pops from the left side but has slower lookups for objects in the middle. <code>deque</code> objects are good for queues or breadth first search trees.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>from</span> collections <span style=color:#f92672>import</span> deque
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> d <span style=color:#f92672>=</span> deque([<span style=color:#e6db74>&#39;task1&#39;</span>, <span style=color:#e6db74>&#39;task2&#39;</span>, <span style=color:#e6db74>&#39;task3&#39;</span>])
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> d<span style=color:#f92672>.</span>append(<span style=color:#e6db74>&#39;task4&#39;</span>)
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> print(<span style=color:#e6db74>&#39;Handling&#39;</span>, d<span style=color:#f92672>.</span>popleft())
-</span></span><span style=display:flex><span>Handling task1
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>unsearched <span style=color:#f92672>=</span> deque([starting_node])
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>breadth_first_search</span>(unsearched):
-</span></span><span style=display:flex><span>	node <span style=color:#f92672>=</span> unsearched<span style=color:#f92672>.</span>popleft()
-</span></span><span style=display:flex><span>	<span style=color:#66d9ef>for</span> m <span style=color:#f92672>in</span> gen_moves(node):
-</span></span><span style=display:flex><span>		<span style=color:#66d9ef>if</span> is_goal(m):
-</span></span><span style=display:flex><span>			<span style=color:#66d9ef>return</span> m
-</span></span><span style=display:flex><span>		unsearched<span style=color:#f92672>.</span>append(m)
-</span></span></code></pre></div><p>There is also the <code>bisect</code> module, which takes advantage of using sorted lists:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>import</span> bisect
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> scores <span style=color:#f92672>=</span> [(<span style=color:#ae81ff>100</span>, <span style=color:#e6db74>&#39;perl&#39;</span>), (<span style=color:#ae81ff>200</span>,<span style=color:#e6db74>&#39;tcl&#39;</span>), (<span style=color:#ae81ff>400</span>, <span style=color:#e6db74>&#39;lua&#39;</span>), (<span style=color:#ae81ff>500</span>, <span style=color:#e6db74>&#39;python&#39;</span>)]
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> bisect<span style=color:#f92672>.</span>insort(scores, (<span style=color:#ae81ff>300</span>, <span style=color:#e6db74>&#39;ruby&#39;</span>))
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> scores
-</span></span><span style=display:flex><span>(<span style=color:#ae81ff>100</span>, <span style=color:#e6db74>&#39;perl&#39;</span>), (<span style=color:#ae81ff>200</span>,<span style=color:#e6db74>&#39;tcl&#39;</span>), (<span style=color:#ae81ff>300</span>, <span style=color:#e6db74>&#39;ruby&#39;</span>), (<span style=color:#ae81ff>400</span>, <span style=color:#e6db74>&#39;lua&#39;</span>), (<span style=color:#ae81ff>500</span>, <span style=color:#e6db74>&#39;python&#39;</span>)
-</span></span></code></pre></div><p><code>heapq</code> is a module that has functions for implementing heaps on regular lists. The lowest value entry is always kept at position zero, which is helpful for applications which need constant access to the smallest elements without resorting.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>from</span> heapq <span style=color:#f92672>import</span> heapify, heappop, heappush
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> data <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>7</span>, <span style=color:#ae81ff>9</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>6</span>, <span style=color:#ae81ff>8</span>, <span style=color:#ae81ff>0</span>]
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> heapify(data)     <span style=color:#75715e># rearrange the list into heap order</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> heappush(data, <span style=color:#f92672>-</span><span style=color:#ae81ff>5</span>)    <span style=color:#75715e># add a new entry</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> [heappop(data) <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>)]
-</span></span><span style=display:flex><span>[<span style=color:#f92672>-</span><span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>1</span>]
-</span></span></code></pre></div><h3 id=118-decimal-floating-point-arithmetic><strong>11.8 Decimal Floating Point Arithmetic</strong></h3><p>Instead of using Python&rsquo;s <code>float</code>, you can use the <code>decimal</code> modules <code>Decimal</code> datatype. The benefits of using this instead of <code>float</code> follows:</p><ul><li>Financial applications that require exact decimal representation</li><li>Control over precision</li><li>Control over rounding to meet legal or regulatory requirements</li><li>Tracking of significant decimal places</li><li>Applications where the user expects the results to match calculations done by hand</li></ul><p>We can look at calculating 5% sales tax on a 70 cent phone charge, and how the result will differ depending on if the answer is a decimal floating point or a binary floating point. If you round to the nearest cent, the difference becomes significant.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#f92672>from</span> decimal <span style=color:#f92672>import</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> round(Decimal(<span style=color:#e6db74>&#39;0.70&#39;</span>) <span style=color:#f92672>*</span> Decimal(<span style=color:#e6db74>&#39;1.05&#39;</span>), <span style=color:#ae81ff>2</span>)
-</span></span><span style=display:flex><span>Decimal(<span style=color:#e6db74>&#39;0.74&#39;</span>)
-</span></span><span style=display:flex><span><span style=color:#f92672>&gt;&gt;&gt;</span> round(<span style=color:#ae81ff>.70</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>1.05</span>, <span style=color:#ae81ff>2</span>)
-</span></span><span style=display:flex><span><span style=color:#ae81ff>0.73</span>
-</span></span></code></pre></div><hr><p>Next:
-<a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/>Chapter 12</a></p></div></article><hr><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
-<span class=tag><a href=http://localhost:1313/tags/computerscience/>computerscience</a></span>
-<span class=tag><a href=http://localhost:1313/tags/python/>python</a></span>
-<span class=tag><a href=http://localhost:1313/tags/documentation/>documentation</a></span>
-<span class=tag><a href=http://localhost:1313/tags/standardlibrary/>standardlibrary</a></span>
-<span class=tag><a href=http://localhost:1313/tags/modules/>modules</a></span></p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-1602 Words</p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-2024-07-08 20:00</p></div><div class=pagination><div class=pagination__buttons><span class="button previous"><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/><span class=button__icon>←</span>
-<span class=button__text>The Python Tutorial Notes - Chapter 12</span>
-</a></span><span class="button next"><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/><span class=button__text>The Python Tutorial Notes - Chapter 10</span>
-<span class=button__icon>→</span></a></span></div></div></main></div><footer class=footer></footer></div><script type=text/javascript src=/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc+cxaJzDdCYbAW0X1G+DgZYvtKFXe6MBex8jUJ2JT25mQx+YjACIng=="></script></body></html>
+</code></pre><p>By default, informational and debugging messages are suppressed. You could also set up other output options, like using routing through email, datagrams, sockets, or even to an HTTP server. The way they appear in the example above is also their message priority.</p>
+<h3 id="116-weak-references"><strong>11.6 Weak References</strong></h3>
+<p>Python does automatic memory management (which is why I&rsquo;m pretty sure it&rsquo;s slower than other languages). Memory is only opened after the last reference is eliminated.</p>
+<p>In order to, let&rsquo;s say, track the movement of some process without wanting to be memory intensive, you can use the <code>weakref</code> module. It provides tools for tracking objects without creating a reference.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> weakref<span style="color:#f92672">,</span> gc
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>     <span style="color:#66d9ef">def</span> __init__(self, value):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>          self<span style="color:#f92672">.</span>value <span style="color:#f92672">=</span> value
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>     <span style="color:#66d9ef">def</span> __repr__(self):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>          <span style="color:#66d9ef">return</span> str(self<span style="color:#f92672">.</span>value)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> A(<span style="color:#ae81ff">10</span>)     <span style="color:#75715e"># create a reference</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d <span style="color:#f92672">=</span> weakref<span style="color:#f92672">.</span>WeakValueDictionary()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d[<span style="color:#e6db74">&#39;primary&#39;</span>] <span style="color:#f92672">=</span> a     <span style="color:#75715e"># does not create a reference</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d[<span style="color:#e6db74">&#39;primary&#39;</span>]     <span style="color:#75715e"># fetch the object if it is still alive</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">del</span> a     <span style="color:#75715e"># remove the one reference</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> gc<span style="color:#f92672">.</span>collect()     <span style="color:#75715e"># run garbage collection</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d[<span style="color:#e6db74">&#39;primary&#39;</span>]     <span style="color:#75715e"># entry was automatically removed </span>
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    d[<span style="color:#e6db74">&#39;primary&#39;</span>]               
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;C:/python312/lib/weakref.py&#34;</span>, line <span style="color:#ae81ff">46</span>, <span style="color:#f92672">in</span> __getitem__
+</span></span><span style="display:flex;"><span>    o <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>data[key]()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">KeyError</span>: <span style="color:#e6db74">&#39;primary&#39;</span>
+</span></span></code></pre></div><h3 id="117-tools-for-working-with-lists"><strong>11.7 Tools for Working with Lists</strong></h3>
+<p>Python does have support for more advanced versions of lists.</p>
+<p>The <code>array</code> module gives an <code>array</code> object type. The following example can set <code>array</code> objects to store 2 bytes per entry rather than 16 bytes per entry per a regular list of Python <code>int</code> objects using the <code>H</code> typecode.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> array <span style="color:#f92672">import</span> array
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> array(<span style="color:#e6db74">&#39;H&#39;</span>, [<span style="color:#ae81ff">4000</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">700</span>, <span style="color:#ae81ff">22222</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> sum(a)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">26932</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>array(<span style="color:#e6db74">&#39;H&#39;</span>, [<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">700</span>])
+</span></span></code></pre></div><p>The <code>collections</code>  module has a <code>deque</code> object that acts like a list but has faster appends and pops from the left side but has slower lookups for objects in the middle. <code>deque</code> objects are good for queues or breadth first search trees.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> deque
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d <span style="color:#f92672">=</span> deque([<span style="color:#e6db74">&#39;task1&#39;</span>, <span style="color:#e6db74">&#39;task2&#39;</span>, <span style="color:#e6db74">&#39;task3&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#39;task4&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">&#39;Handling&#39;</span>, d<span style="color:#f92672">.</span>popleft())
+</span></span><span style="display:flex;"><span>Handling task1
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>unsearched <span style="color:#f92672">=</span> deque([starting_node])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">breadth_first_search</span>(unsearched):
+</span></span><span style="display:flex;"><span>	node <span style="color:#f92672">=</span> unsearched<span style="color:#f92672">.</span>popleft()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> m <span style="color:#f92672">in</span> gen_moves(node):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> is_goal(m):
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> m
+</span></span><span style="display:flex;"><span>		unsearched<span style="color:#f92672">.</span>append(m)
+</span></span></code></pre></div><p>There is also the <code>bisect</code> module, which takes advantage of using sorted lists:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> bisect
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> scores <span style="color:#f92672">=</span> [(<span style="color:#ae81ff">100</span>, <span style="color:#e6db74">&#39;perl&#39;</span>), (<span style="color:#ae81ff">200</span>,<span style="color:#e6db74">&#39;tcl&#39;</span>), (<span style="color:#ae81ff">400</span>, <span style="color:#e6db74">&#39;lua&#39;</span>), (<span style="color:#ae81ff">500</span>, <span style="color:#e6db74">&#39;python&#39;</span>)]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> bisect<span style="color:#f92672">.</span>insort(scores, (<span style="color:#ae81ff">300</span>, <span style="color:#e6db74">&#39;ruby&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> scores
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">100</span>, <span style="color:#e6db74">&#39;perl&#39;</span>), (<span style="color:#ae81ff">200</span>,<span style="color:#e6db74">&#39;tcl&#39;</span>), (<span style="color:#ae81ff">300</span>, <span style="color:#e6db74">&#39;ruby&#39;</span>), (<span style="color:#ae81ff">400</span>, <span style="color:#e6db74">&#39;lua&#39;</span>), (<span style="color:#ae81ff">500</span>, <span style="color:#e6db74">&#39;python&#39;</span>)
+</span></span></code></pre></div><p><code>heapq</code> is a module that has functions for implementing heaps on regular lists. The lowest value entry is always kept at position zero, which is helpful for applications which need constant access to the smallest elements without resorting.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> heapq <span style="color:#f92672">import</span> heapify, heappop, heappush
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> data <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> heapify(data)     <span style="color:#75715e"># rearrange the list into heap order</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> heappush(data, <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>)    <span style="color:#75715e"># add a new entry</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> [heappop(data) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>)]
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>]
+</span></span></code></pre></div><h3 id="118-decimal-floating-point-arithmetic"><strong>11.8 Decimal Floating Point Arithmetic</strong></h3>
+<p>Instead of using Python&rsquo;s <code>float</code>, you can use the <code>decimal</code> modules <code>Decimal</code> datatype. The benefits of using this instead of <code>float</code> follows:</p>
+<ul>
+<li>Financial applications that require exact decimal representation</li>
+<li>Control over precision</li>
+<li>Control over rounding to meet legal or regulatory requirements</li>
+<li>Tracking of significant decimal places</li>
+<li>Applications where the user expects the results to match calculations done by hand</li>
+</ul>
+<p>We can look at calculating 5% sales tax on a 70 cent phone charge, and how the result will differ depending on if the answer is a decimal floating point or a binary floating point. If you round to the nearest cent, the difference becomes significant.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> decimal <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> round(Decimal(<span style="color:#e6db74">&#39;0.70&#39;</span>) <span style="color:#f92672">*</span> Decimal(<span style="color:#e6db74">&#39;1.05&#39;</span>), <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>Decimal(<span style="color:#e6db74">&#39;0.74&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> round(<span style="color:#ae81ff">.70</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.05</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.73</span>
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/">Chapter 12</a></p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/standardlibrary/">standardlibrary</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/modules/">modules</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1602 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-07-08 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+            <span class="button previous">
+                <a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">The Python Tutorial Notes - Chapter 12</span>
+                </a>
+            </span>
+            
+
+            
+            <span class="button next">
+                <a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/">
+                    <span class="button__text">The Python Tutorial Notes - Chapter 10</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

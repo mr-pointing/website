@@ -1,3 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Manga on Mr. Pointing</title><link>http://localhost:1313/tags/manga/</link><description>Recent content in Manga on Mr. Pointing</description><generator>Hugo</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/manga/index.xml" rel="self" type="application/rss+xml"/><item><title>Naruto</title><link>http://localhost:1313/posts/entertainment/naruto/</link><pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/entertainment/naruto/</guid><description>Modified: August 02 2024
-by Masashi Kishimoto 1999 - 2014
-I finished Naruto today. I really enjoyed reading it; I nearly flew through it in just over or under 3 months. I had a blast-Kishimoto&amp;rsquo;s art was really fun and emotive and kept me wanting to see just how each page would grow in more detail and impact. I think it delivered in that respect. The last 100 chapters had many great panels-none screenshot worthy in my opinion like the beginning/middle of the series but regardless a lot of fun.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manga on Mr. Pointing</title>
+    <link>https://mrpointing.com/tags/manga/</link>
+    <description>Recent content in Manga on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mrpointing.com/tags/manga/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Naruto</title>
+      <link>https://mrpointing.com/posts/entertainment/naruto/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/posts/entertainment/naruto/</guid>
+      <description>Modified: August 02 2024&#xA;by Masashi Kishimoto 1999 - 2014&#xA;I finished Naruto today. I really enjoyed reading it; I nearly flew through it in just over or under 3 months. I had a blast-Kishimoto&amp;rsquo;s art was really fun and emotive and kept me wanting to see just how each page would grow in more detail and impact. I think it delivered in that respect. The last 100 chapters had many great panels-none screenshot worthy in my opinion like the beginning/middle of the series but regardless a lot of fun.</description>
+    </item>
+  </channel>
+</rss>

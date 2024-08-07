@@ -1,10 +1,28 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction to Algorithms - Part 1 on Mr. Pointing</title><link>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/</link><description>Recent content in Introduction to Algorithms - Part 1 on Mr. Pointing</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Wed, 17 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to Algorithms - Chapter 2</title><link>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid><description>Modified: August 02 2024
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Introduction to Algorithms - Part 1 on Mr. Pointing</title>
+        <link>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/</link>
+        <description>Recent content in Introduction to Algorithms - Part 1 on Mr. Pointing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Wed, 17 Jul 2024 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Introduction to Algorithms - Chapter 2</title>
+            <link>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
+            <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
+            <description>Modified: August 02 2024
 Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.
 2.1 Insertion Sort Solves a sorting problem (obviously).
 The numbers to be sorted are known as keys.
 The input comes in the form of an array with $n$ elements.
 A reason to sort is often because those keys are associated with other data, Satellite data.
-Key + Satellite = Record</description><content type="html"><![CDATA[<p>Modified: August 02 2024</p>
+Key + Satellite = Record</description>
+            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
 <hr>
 <h2 id="getting-sorted">Getting Sorted</h2>
 <p>This chapter is meant to familiarize yourself with the framework used throughout the book.</p>
@@ -211,10 +229,20 @@ Key + Satellite = Record</description><content type="html"><![CDATA[<p>Modified:
 <li>Come up with a formula for running time.</li>
 <li>Use the important parts of the formula in an easy to read notation.</li>
 </ol>
-]]></content></item><item><title>Introduction to Algorithms - Chapter 1</title><link>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link><pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid><description>Modified: August 02 2024
+]]></content>
+        </item>
+        
+        <item>
+            <title>Introduction to Algorithms - Chapter 1</title>
+            <link>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
+            <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
+            <description>Modified: August 02 2024
 The Role of Algorithms in Computing 1.1 Algorithms Algorithm: Any well defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.
 We often say algorithms help us solve computational problems.
-We can define a sorting algorithm like so: Input: A sequence of n numbers, ${a_1, a_2, &amp;hellip; a_n}$ Output: A permutation (reordering) ${a_1,a_2,&amp;hellip;a_n}$ of the input sequence such that $a_1 &amp;lt;= a_2 &amp;lt;= .</description><content type="html"><![CDATA[<p>Modified: August 02 2024</p>
+We can define a sorting algorithm like so: Input: A sequence of n numbers, ${a_1, a_2, &amp;hellip; a_n}$ Output: A permutation (reordering) ${a_1,a_2,&amp;hellip;a_n}$ of the input sequence such that $a_1 &amp;lt;= a_2 &amp;lt;= .</description>
+            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
 <hr>
 <h2 id="the-role-of-algorithms-in-computing">The Role of Algorithms in Computing</h2>
 <h2 id="11-algorithms">1.1 Algorithms</h2>
@@ -337,5 +365,9 @@ Distance: when j-walking</p>
 <p>Yup, the next lowest has B winning. So the smallest value A can be is 15.</p>
 <hr>
 <p>Next:
-<a href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/">Chapter 2</a></p>
-]]></content></item></channel></rss>
+<a href="https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/">Chapter 2</a></p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

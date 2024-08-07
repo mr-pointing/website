@@ -1,65 +1,318 @@
-<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content><meta name=description content="Modified: August 02 2024
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: August 02 2024
 Description:
 Given an array nums with n objects colored red, white, or blue, sort in-place so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.
 Example: Input: nums = [2,0,2,1,1,0] Output: [0,0,1,1,2,2]
 Basically, sort them in order without using the built-in sort function.
-So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make."><meta name=keywords content="homepage,blog,computerscience,sorting"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=http://localhost:1313/posts/computer-science/leet-code-problems/75.-sort-colors/><title>75. Sort Colors :: Mr. Pointing — Python Teacher
-</title><link rel=stylesheet href=/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN+YNEKWYHs/MUFU="><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="75. Sort Colors"><meta itemprop=description content="Modified: August 02 2024
+So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make." />
+<meta name="keywords" content="homepage, blog, computerscience, sorting" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/posts/computer-science/leet-code-problems/75.-sort-colors/" />
+
+
+    <title>
+        
+            75. Sort Colors :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css" integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN&#43;YNEKWYHs/MUFU=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="75. Sort Colors">
+  <meta itemprop="description" content="Modified: August 02 2024
 Description:
 Given an array nums with n objects colored red, white, or blue, sort in-place so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.
 Example: Input: nums = [2,0,2,1,1,0] Output: [0,0,1,1,2,2]
 Basically, sort them in order without using the built-in sort function.
-So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make."><meta itemprop=datePublished content="2024-06-12T00:00:00+00:00"><meta itemprop=dateModified content="2024-06-12T00:00:00+00:00"><meta itemprop=wordCount content="353"><meta itemprop=image content="http://localhost:1313/"><meta itemprop=keywords content="Computerscience,Sorting"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/"><meta name=twitter:title content="75. Sort Colors"><meta name=twitter:description content="Modified: August 02 2024
+So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make.">
+  <meta itemprop="datePublished" content="2024-06-12T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-12T00:00:00+00:00">
+  <meta itemprop="wordCount" content="353">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Sorting">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="75. Sort Colors">
+  <meta name="twitter:description" content="Modified: August 02 2024
 Description:
 Given an array nums with n objects colored red, white, or blue, sort in-place so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.
 Example: Input: nums = [2,0,2,1,1,0] Output: [0,0,1,1,2,2]
 Basically, sort them in order without using the built-in sort function.
-So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make."><meta property="og:url" content="http://localhost:1313/posts/computer-science/leet-code-problems/75.-sort-colors/"><meta property="og:site_name" content="Mr. Pointing"><meta property="og:title" content="75. Sort Colors"><meta property="og:description" content="Modified: August 02 2024
+So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/posts/computer-science/leet-code-problems/75.-sort-colors/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="75. Sort Colors">
+  <meta property="og:description" content="Modified: August 02 2024
 Description:
 Given an array nums with n objects colored red, white, or blue, sort in-place so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.
 Example: Input: nums = [2,0,2,1,1,0] Output: [0,0,1,1,2,2]
 Basically, sort them in order without using the built-in sort function.
-So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-06-12T00:00:00+00:00"><meta property="article:modified_time" content="2024-06-12T00:00:00+00:00"><meta property="article:tag" content="Computerscience"><meta property="article:tag" content="Sorting"><meta property="og:image" content="http://localhost:1313/"><meta property="article:published_time" content="2024-06-12 00:00:00 +0000 UTC"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
-<span class=logo__text>mr. pointing</span>
-<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Posts</a></li></ul></nav><span class=menu-trigger><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-2 minutes</p></div><article><h1 class=post-title><a href=http://localhost:1313/posts/computer-science/leet-code-problems/75.-sort-colors/><ol start=75><li>Sort Colors</li></ol></a></h1><div class=post-content><p>Modified: August 02 2024</p><hr><p><strong>Description:</strong></p><p>Given an array <code>nums</code> with n objects colored red, white, or blue, sort <em>in-place</em> so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.</p><p><em>Example:</em>
+So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-12T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Sorting">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-06-12 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://mrpointing.com/posts/computer-science/leet-code-problems/75.-sort-colors/"><ol start="75">
+<li>Sort Colors</li>
+</ol>
+</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: August 02 2024</p>
+<hr>
+<p><strong>Description:</strong></p>
+<p>Given an array <code>nums</code> with n objects colored red, white, or blue, sort <em>in-place</em> so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.</p>
+<p><em>Example:</em>
 <strong>Input:</strong> <code>nums = [2,0,2,1,1,0]</code>
-<strong>Output:</strong> <code>[0,0,1,1,2,2]</code></p><p>Basically, sort them in order without using the built-in sort function.</p><p>So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make. However, I was having issues with sorting. I tried on my own for a while, I will try to get the code from my school LeetCode account and paste it here. Otherwise, I had a decent idea of what to do. I used ChatGPT to ask why my sorting wasn&rsquo;t working, and it gave the best answer from LeetCode below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Solution</span>:
-</span></span><span style=display:flex><span>	<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>sortColors</span>(self, nums: List[int]) <span style=color:#f92672>-&gt;</span> <span style=color:#66d9ef>None</span>:
-</span></span><span style=display:flex><span>		low, mid, high <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, len(nums) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>		<span style=color:#66d9ef>while</span> mid <span style=color:#f92672>&lt;=</span> high:
-</span></span><span style=display:flex><span>			<span style=color:#66d9ef>if</span> nums[mid] <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-</span></span><span style=display:flex><span>				nums[low], nums[mid] <span style=color:#f92672>=</span> nums[mid], nums[low]
-</span></span><span style=display:flex><span>				low <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>				mid <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>			<span style=color:#66d9ef>elif</span> nums[mid] <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>:
-</span></span><span style=display:flex><span>				mid <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>			<span style=color:#66d9ef>else</span>:
-</span></span><span style=display:flex><span>				nums[mid], nums[high] <span style=color:#f92672>=</span> nums[high], nums[mid]
-</span></span><span style=display:flex><span>				high <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
-</span></span></code></pre></div><p>This is a true two pointer approach, and it only kind of makes sense to me. I followed the code with some test cases and understood it, but I think it would be hard to explain without looking at notes.</p><p>One approach I preferred from another source was from a commentor who used counting the amount of zeros and ones, indexing to fill those in, then placing the rest with 2&rsquo;s. Less efficient, but I think I prefer this way.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Solution</span>:
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>sortColors</span>(self, nums: List[int]) <span style=color:#f92672>-&gt;</span> <span style=color:#66d9ef>None</span>:
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Do not return anything, modify nums in-place instead.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>        zeros, ones, n <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, len(nums)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> num <span style=color:#f92672>in</span> nums:
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> num <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-</span></span><span style=display:flex><span>                zeros <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>elif</span> num <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>:
-</span></span><span style=display:flex><span>                ones <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>, zeros):
-</span></span><span style=display:flex><span>            nums[i] <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(zeros, zeros <span style=color:#f92672>+</span> ones):
-</span></span><span style=display:flex><span>            nums[i] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(zeros <span style=color:#f92672>+</span> ones, n):
-</span></span><span style=display:flex><span>            nums[i] <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>
-</span></span></code></pre></div></div></article><hr><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
-<span class=tag><a href=http://localhost:1313/tags/computerscience/>computerscience</a></span>
-<span class=tag><a href=http://localhost:1313/tags/sorting/>sorting</a></span></p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-353 Words</p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-2024-06-11 20:00</p></div><div class=pagination><div class=pagination__buttons><span class="button next"><a href=http://localhost:1313/posts/computer-science/leet-code-problems/1122.-relative-sort-array/><span class=button__text>1122. Relative Sort Array</span>
-<span class=button__icon>→</span></a></span></div></div></main></div><footer class=footer></footer></div><script type=text/javascript src=/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc+cxaJzDdCYbAW0X1G+DgZYvtKFXe6MBex8jUJ2JT25mQx+YjACIng=="></script></body></html>
+<strong>Output:</strong> <code>[0,0,1,1,2,2]</code></p>
+<p>Basically, sort them in order without using the built-in sort function.</p>
+<p>So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make. However, I was having issues with sorting. I tried on my own for a while, I will try to get the code from my school LeetCode account and paste it here. Otherwise, I had a decent idea of what to do. I used ChatGPT to ask why my sorting wasn&rsquo;t working, and it gave the best answer from LeetCode below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sortColors</span>(self, nums: List[int]) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>		low, mid, high <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, len(nums) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">while</span> mid <span style="color:#f92672">&lt;=</span> high:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>				nums[low], nums[mid] <span style="color:#f92672">=</span> nums[mid], nums[low]
+</span></span><span style="display:flex;"><span>				low <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>				mid <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">elif</span> nums[mid] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>				mid <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>				nums[mid], nums[high] <span style="color:#f92672">=</span> nums[high], nums[mid]
+</span></span><span style="display:flex;"><span>				high <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>This is a true two pointer approach, and it only kind of makes sense to me. I followed the code with some test cases and understood it, but I think it would be hard to explain without looking at notes.</p>
+<p>One approach I preferred from another source was from a commentor who used counting the amount of zeros and ones, indexing to fill those in, then placing the rest with 2&rsquo;s. Less efficient, but I think I prefer this way.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sortColors</span>(self, nums: List[int]) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Do not return anything, modify nums in-place instead.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        zeros, ones, n <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, len(nums)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> nums:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> num <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>                zeros <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> num <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>                ones <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, zeros):
+</span></span><span style="display:flex;"><span>            nums[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(zeros, zeros <span style="color:#f92672">+</span> ones):
+</span></span><span style="display:flex;"><span>            nums[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(zeros <span style="color:#f92672">+</span> ones, n):
+</span></span><span style="display:flex;"><span>            nums[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div>
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/sorting/">sorting</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        353 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-06-11 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+
+            
+            <span class="button next">
+                <a href="https://mrpointing.com/posts/computer-science/leet-code-problems/1122.-relative-sort-array/">
+                    <span class="button__text">1122. Relative Sort Array</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

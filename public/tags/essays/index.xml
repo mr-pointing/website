@@ -1,5 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Essays on Mr. Pointing</title><link>http://localhost:1313/tags/essays/</link><description>Recent content in Essays on Mr. Pointing</description><generator>Hugo</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/essays/index.xml" rel="self" type="application/rss+xml"/><item><title>You Are Not Expected To Understand This</title><link>http://localhost:1313/posts/entertainment/you-are-not-expected-to-understand-this/</link><pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/entertainment/you-are-not-expected-to-understand-this/</guid><description>Modified: July 26 2024
-26 short essays on the pieces/lines of code that shaped the modern understanding of computer science.
-6/3/24
-Halfway through, I think some of the stories are interesting. Some of the articles don&amp;rsquo;t go as deep as I think they could/should; some bring up gender/race for seemingly no reason&amp;hellip;others actually delve deeper into the politics of it encouragingly.
-I started Topics I&amp;rsquo;m Interested In because of this book pretty much.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essays on Mr. Pointing</title>
+    <link>https://mrpointing.com/tags/essays/</link>
+    <description>Recent content in Essays on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mrpointing.com/tags/essays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>You Are Not Expected To Understand This</title>
+      <link>https://mrpointing.com/posts/entertainment/you-are-not-expected-to-understand-this/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/posts/entertainment/you-are-not-expected-to-understand-this/</guid>
+      <description>Modified: July 26 2024&#xA;26 short essays on the pieces/lines of code that shaped the modern understanding of computer science.&#xA;6/3/24&#xA;Halfway through, I think some of the stories are interesting. Some of the articles don&amp;rsquo;t go as deep as I think they could/should; some bring up gender/race for seemingly no reason&amp;hellip;others actually delve deeper into the politics of it encouragingly.&#xA;I started Topics I&amp;rsquo;m Interested In because of this book pretty much.</description>
+    </item>
+  </channel>
+</rss>

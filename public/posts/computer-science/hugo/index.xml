@@ -1,9 +1,27 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo Notes on Mr. Pointing</title><link>http://localhost:1313/posts/computer-science/hugo/</link><description>Recent content in Hugo Notes on Mr. Pointing</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/computer-science/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started with Hugo</title><link>http://localhost:1313/posts/computer-science/hugo/getting-started-with-hugo/</link><pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/hugo/getting-started-with-hugo/</guid><description>Last Modified: August 01 2024
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo Notes on Mr. Pointing</title>
+        <link>https://mrpointing.com/posts/computer-science/hugo/</link>
+        <description>Recent content in Hugo Notes on Mr. Pointing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://mrpointing.com/posts/computer-science/hugo/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Getting Started with Hugo</title>
+            <link>https://mrpointing.com/posts/computer-science/hugo/getting-started-with-hugo/</link>
+            <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/computer-science/hugo/getting-started-with-hugo/</guid>
+            <description>Last Modified: August 01 2024
 Quick Start It&amp;rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.
 To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.
 You also need to have Git installed.
 Once both are done, you can run the following commands:
-hugo new site quicksite This creates a new directory that will become our new website.</description><content type="html"><![CDATA[<p>Last Modified: August 01 2024</p>
+hugo new site quicksite This creates a new directory that will become our new website.</description>
+            <content type="html"><![CDATA[<p>Last Modified: August 01 2024</p>
 <hr>
 <h2 id="quick-start">Quick Start</h2>
 <p>It&rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.</p>
@@ -57,7 +75,7 @@ hugo new site quicksite This creates a new directory that will become our new we
 <p>To get the site running, you&rsquo;ll have to set the base URL to your own production site and change the title.</p>
 <p>That just configures it. We still have to publish and deploy it. When publishing, Hugo takes the entirety of your site stored through the <code>/public</code> directory. Publishing is a very simple command:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo
-</span></span></code></pre></div><p><a href="http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/">Hosting Hugo Using Cloudflare</a></p>
+</span></span></code></pre></div><p><a href="https://mrpointing.com/posts/computer-science/hugo/hosting-hugo-using-cloudflare/">Hosting Hugo Using Cloudflare</a></p>
 <h2 id="basic-usage">Basic Usage</h2>
 <p>As most command line interfaces (CLI) have, you can use <code>hugo help</code> to get more directed information.</p>
 <p>The next section describes front matter and how it&rsquo;s used (Obsidian Properties) so I stopped for a bit and did some research. Properties/front matter is just the meta data of the page; the important information necessary (according to the author).</p>
@@ -163,8 +181,22 @@ hugo new site quicksite This creates a new directory that will become our new we
    │ ├── themes/
    │ │ └── my-theme/
    │ └── hugo.toml
-</code></pre>]]></content></item><item><title>Hosting Hugo Using Cloudflare\</title><link>http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</link><pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</guid><description>Last Modified: August 02 2024
-Link to the documentation</description><content type="html"><![CDATA[<p>Last Modified: August 02 2024</p>
+</code></pre>]]></content>
+        </item>
+        
+        <item>
+            <title>Hosting Hugo Using Cloudflare\</title>
+            <link>https://mrpointing.com/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</link>
+            <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</guid>
+            <description>Last Modified: August 02 2024
+Link to the documentation</description>
+            <content type="html"><![CDATA[<p>Last Modified: August 02 2024</p>
 <p><a href="https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/">Link</a> to the documentation</p>
 <hr>
-]]></content></item></channel></rss>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

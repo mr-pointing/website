@@ -1,34 +1,296 @@
-<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content><meta name=description content="Modified: July 19 2024
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 19 2024
 Virtual Environments and Packages 12.1 Introduction Often, you&amp;rsquo;re going to need tools and modules that aren&amp;rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.
 To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.
-12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment."><meta name=keywords content="homepage,blog,computerscience,python,documentation,virtualenv,packages"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/><title>The Python Tutorial Notes - Chapter 12 :: Mr. Pointing — Python Teacher
-</title><link rel=stylesheet href=/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN+YNEKWYHs/MUFU="><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="The Python Tutorial Notes - Chapter 12"><meta itemprop=description content="Modified: July 19 2024
+12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment." />
+<meta name="keywords" content="homepage, blog, computerscience, python, documentation, virtualenv, packages" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/" />
+
+
+    <title>
+        
+            The Python Tutorial Notes - Chapter 12 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css" integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN&#43;YNEKWYHs/MUFU=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="The Python Tutorial Notes - Chapter 12">
+  <meta itemprop="description" content="Modified: July 19 2024
 Virtual Environments and Packages 12.1 Introduction Often, you’re going to need tools and modules that aren’t included with Python by default, or in your standard library. One Python install might not suffice for most applications.
 To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.
-12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment."><meta itemprop=datePublished content="2024-07-13T00:00:00+00:00"><meta itemprop=dateModified content="2024-07-13T00:00:00+00:00"><meta itemprop=wordCount content="257"><meta itemprop=image content="http://localhost:1313/"><meta itemprop=keywords content="Computerscience,Python,Documentation,Virtualenv,Packages"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/"><meta name=twitter:title content="The Python Tutorial Notes - Chapter 12"><meta name=twitter:description content="Modified: July 19 2024
+12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment.">
+  <meta itemprop="datePublished" content="2024-07-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-13T00:00:00+00:00">
+  <meta itemprop="wordCount" content="257">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Virtualenv,Packages">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="The Python Tutorial Notes - Chapter 12">
+  <meta name="twitter:description" content="Modified: July 19 2024
 Virtual Environments and Packages 12.1 Introduction Often, you’re going to need tools and modules that aren’t included with Python by default, or in your standard library. One Python install might not suffice for most applications.
 To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.
-12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment."><meta property="og:url" content="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/"><meta property="og:site_name" content="Mr. Pointing"><meta property="og:title" content="The Python Tutorial Notes - Chapter 12"><meta property="og:description" content="Modified: July 19 2024
+12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="The Python Tutorial Notes - Chapter 12">
+  <meta property="og:description" content="Modified: July 19 2024
 Virtual Environments and Packages 12.1 Introduction Often, you’re going to need tools and modules that aren’t included with Python by default, or in your standard library. One Python install might not suffice for most applications.
 To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.
-12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-07-13T00:00:00+00:00"><meta property="article:modified_time" content="2024-07-13T00:00:00+00:00"><meta property="article:tag" content="Computerscience"><meta property="article:tag" content="Python"><meta property="article:tag" content="Documentation"><meta property="article:tag" content="Virtualenv"><meta property="article:tag" content="Packages"><meta property="og:image" content="http://localhost:1313/"><meta property="article:published_time" content="2024-07-13 00:00:00 +0000 UTC"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
-<span class=logo__text>mr. pointing</span>
-<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Posts</a></li></ul></nav><span class=menu-trigger><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-2 minutes</p></div><article><h1 class=post-title><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/>The Python Tutorial Notes - Chapter 12</a></h1><div class=post-content><p>Modified: July 19 2024</p><hr><h2 id=virtual-environments-and-packages><strong>Virtual Environments and Packages</strong></h2><h3 id=121-introduction><strong>12.1 Introduction</strong></h3><p>Often, you&rsquo;re going to need tools and modules that aren&rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.</p><p>To circumnavigate this, we create <em>virtual environments</em>, that act as self-contained directories with an installation of Python, and any number of packages.</p><h3 id=122-creating-virtual-environments><strong>12.2 Creating Virtual Environments</strong></h3><p>We can use the <code>venv</code> module to create and manage our own virtual environment.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>python -m venv tutorial-env
-</span></span></code></pre></div><p>If it doesn&rsquo;t already exist, this will create a <code>tutorial-env</code> virtual environment.</p><p>A common directory location for virtual environments is usually <code>.venv</code>, keeping the directory hidden in your shell and out of the way while giving it a name that explains why the directory exists. It also prevents clashing with <code>.env</code> variables definitions.</p><p>You can activate the environment with the following calls:</p><p>Windows:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>tutorial-env<span style=color:#ae81ff>\S</span>cripts<span style=color:#ae81ff>\a</span>ctivate
-</span></span></code></pre></div><p>Unix:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>source tutorial-env/bin/activate
-</span></span></code></pre></div><p>Once in, you should see in parenthesis your virtual environment, confirming your presence. Once done, you can simply type <code>deactivate</code> to exit the environment.</p><h3 id=123-managing-packages-with-pip><strong>12.3 Managing Packages with <code>pip</code></strong></h3><p><code>pip</code> is a tool to help install, upgrade, and remove packages in Python. <code>pip</code> grabs modules/packages from the <a href=https://pypi.org/>Python Package Index</a>.</p><p>From within your virtual environment, you can use <code>pip</code> like so:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#f92672>(</span>tutorial-env<span style=color:#f92672>)</span> $ python -m pip install novas
-</span></span><span style=display:flex><span>Collecting novas
-</span></span><span style=display:flex><span>  Downloading novas-3.1.1.3.tar.gz <span style=color:#f92672>(</span>136kB<span style=color:#f92672>)</span>
-</span></span><span style=display:flex><span>Installing collected packages: novas
-</span></span><span style=display:flex><span>  Running setup.py install <span style=color:#66d9ef>for</span> novas
-</span></span><span style=display:flex><span>Successfully installed novas-3.1.1.3
-</span></span></code></pre></div><p><code>pip show</code> will return information about a particular package. <code>pip list</code> will display all of the packages installed in your virtual environment.</p></div></article><hr><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
-<span class=tag><a href=http://localhost:1313/tags/computerscience/>computerscience</a></span>
-<span class=tag><a href=http://localhost:1313/tags/python/>python</a></span>
-<span class=tag><a href=http://localhost:1313/tags/documentation/>documentation</a></span>
-<span class=tag><a href=http://localhost:1313/tags/virtualenv/>virtualenv</a></span>
-<span class=tag><a href=http://localhost:1313/tags/packages/>packages</a></span></p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-257 Words</p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-2024-07-12 20:00</p></div><div class=pagination><div class=pagination__buttons><span class="button next"><a href=http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/><span class=button__text>The Python Tutorial Notes - Chapter 11</span>
-<span class=button__icon>→</span></a></span></div></div></main></div><footer class=footer></footer></div><script type=text/javascript src=/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc+cxaJzDdCYbAW0X1G+DgZYvtKFXe6MBex8jUJ2JT25mQx+YjACIng=="></script></body></html>
+12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-13T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Virtualenv">
+    <meta property="article:tag" content="Packages">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-13 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/">The Python Tutorial Notes - Chapter 12</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: July 19 2024</p>
+<hr>
+<h2 id="virtual-environments-and-packages"><strong>Virtual Environments and Packages</strong></h2>
+<h3 id="121-introduction"><strong>12.1 Introduction</strong></h3>
+<p>Often, you&rsquo;re going to need tools and modules that aren&rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.</p>
+<p>To circumnavigate this, we create <em>virtual environments</em>, that act as self-contained directories with an installation of Python, and any number of packages.</p>
+<h3 id="122-creating-virtual-environments"><strong>12.2 Creating Virtual Environments</strong></h3>
+<p>We can use the <code>venv</code> module to create and manage our own virtual environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>python -m venv tutorial-env
+</span></span></code></pre></div><p>If it doesn&rsquo;t already exist, this will create a <code>tutorial-env</code> virtual environment.</p>
+<p>A common directory location for virtual environments is usually <code>.venv</code>, keeping the directory hidden in your shell and out of the way while giving it a name that explains why the directory exists. It also prevents clashing with <code>.env</code> variables definitions.</p>
+<p>You can activate the environment with the following calls:</p>
+<p>Windows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>tutorial-env<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate
+</span></span></code></pre></div><p>Unix:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>source tutorial-env/bin/activate
+</span></span></code></pre></div><p>Once in, you should see in parenthesis your virtual environment, confirming your presence. Once done, you can simply type <code>deactivate</code> to exit the environment.</p>
+<h3 id="123-managing-packages-with-pip"><strong>12.3 Managing Packages with <code>pip</code></strong></h3>
+<p><code>pip</code> is a tool to help install, upgrade, and remove packages in Python. <code>pip</code> grabs modules/packages from the <a href="https://pypi.org/">Python Package Index</a>.</p>
+<p>From within your virtual environment, you can use <code>pip</code> like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">(</span>tutorial-env<span style="color:#f92672">)</span> $ python -m pip install novas
+</span></span><span style="display:flex;"><span>Collecting novas
+</span></span><span style="display:flex;"><span>  Downloading novas-3.1.1.3.tar.gz <span style="color:#f92672">(</span>136kB<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Installing collected packages: novas
+</span></span><span style="display:flex;"><span>  Running setup.py install <span style="color:#66d9ef">for</span> novas
+</span></span><span style="display:flex;"><span>Successfully installed novas-3.1.1.3
+</span></span></code></pre></div><p><code>pip show</code> will return information about a particular package. <code>pip list</code> will display all of the packages installed in your virtual environment.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/virtualenv/">virtualenv</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/packages/">packages</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        257 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-07-12 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+
+            
+            <span class="button next">
+                <a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/">
+                    <span class="button__text">The Python Tutorial Notes - Chapter 11</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -1,25 +1,378 @@
-<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content><meta name=description content="Modified: July 19 2024
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 19 2024
 Link to video.
 The Basics of Shell Shell, terminal, console, command line, all are essentially the same thing.
-Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn&amp;rsquo;t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I&amp;rsquo;d love to go through is note taking manual pages for all these commands."><meta name=keywords content="homepage,blog,computerscience,youtube,shell"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/><title>Become a Shell Wizard in ~12 Minutes :: Mr. Pointing — Python Teacher
-</title><link rel=stylesheet href=/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN+YNEKWYHs/MUFU="><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="Become a Shell Wizard in ~12 Minutes"><meta itemprop=description content="Modified: July 19 2024
+Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn&amp;rsquo;t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I&amp;rsquo;d love to go through is note taking manual pages for all these commands." />
+<meta name="keywords" content="homepage, blog, computerscience, youtube, shell" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/" />
+
+
+    <title>
+        
+            Become a Shell Wizard in ~12 Minutes :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css" integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN&#43;YNEKWYHs/MUFU=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Become a Shell Wizard in ~12 Minutes">
+  <meta itemprop="description" content="Modified: July 19 2024
 Link to video.
 The Basics of Shell Shell, terminal, console, command line, all are essentially the same thing.
-Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn’t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I’d love to go through is note taking manual pages for all these commands."><meta itemprop=datePublished content="2024-07-13T00:00:00+00:00"><meta itemprop=dateModified content="2024-07-13T00:00:00+00:00"><meta itemprop=wordCount content="768"><meta itemprop=image content="http://localhost:1313/"><meta itemprop=keywords content="Computerscience,Youtube,Shell"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/"><meta name=twitter:title content="Become a Shell Wizard in ~12 Minutes"><meta name=twitter:description content="Modified: July 19 2024
+Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn’t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I’d love to go through is note taking manual pages for all these commands.">
+  <meta itemprop="datePublished" content="2024-07-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-13T00:00:00+00:00">
+  <meta itemprop="wordCount" content="768">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Youtube,Shell">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Become a Shell Wizard in ~12 Minutes">
+  <meta name="twitter:description" content="Modified: July 19 2024
 Link to video.
 The Basics of Shell Shell, terminal, console, command line, all are essentially the same thing.
-Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn’t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I’d love to go through is note taking manual pages for all these commands."><meta property="og:url" content="http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/"><meta property="og:site_name" content="Mr. Pointing"><meta property="og:title" content="Become a Shell Wizard in ~12 Minutes"><meta property="og:description" content="Modified: July 19 2024
+Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn’t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I’d love to go through is note taking manual pages for all these commands.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Become a Shell Wizard in ~12 Minutes">
+  <meta property="og:description" content="Modified: July 19 2024
 Link to video.
 The Basics of Shell Shell, terminal, console, command line, all are essentially the same thing.
-Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn’t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I’d love to go through is note taking manual pages for all these commands."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-07-13T00:00:00+00:00"><meta property="article:modified_time" content="2024-07-13T00:00:00+00:00"><meta property="article:tag" content="Computerscience"><meta property="article:tag" content="Youtube"><meta property="article:tag" content="Shell"><meta property="og:image" content="http://localhost:1313/"><meta property="article:published_time" content="2024-07-13 00:00:00 +0000 UTC"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
-<span class=logo__text>mr. pointing</span>
-<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Posts</a></li></ul></nav><span class=menu-trigger><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-4 minutes</p></div><article><h1 class=post-title><a href=http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/>Become a Shell Wizard in ~12 Minutes</a></h1><div class=post-content><p>Modified: July 19 2024</p><p><a href="https://www.y/woutube.comatch?v=IYZDIhfAUM0&list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&index=22">Link</a> to video.</p><hr><h2 id=the-basics-of-shell><strong>The Basics of Shell</strong></h2><p>Shell, terminal, console, command line, all are essentially the same thing.</p><h3 id=commands><strong>Commands</strong></h3><ul><li><code>ls</code>: lists out all items in the current (target) directory<ul><li>You can pass some flags to change the output</li><li><code>-latrh</code> will produce long list format, all files, sorted by time, in reverse, with human readable file sizes</li><li>You can also use a path as an argument, as well as a combination of both flags and path</li></ul></li><li><code>cd</code>: change directory</li><li><code>pwd</code>: shows path to current work directory</li><li><code>echo</code>: lets you print some text</li><li><code>cat</code>: lets you print the content of a file</li><li><code>touch</code>: creates a file if it doesn&rsquo;t exist; changes the timestamp if it does</li><li><code>cp</code>: lets you copy a file or directory to a target destination</li><li><code>move</code>: like copy, but moves it instead</li><li><code>rm</code>: removes a file or directory<ul><li>Need to use <code>-r</code> to delete a directory</li><li>You can add <code>f</code> to forcefully delete it</li></ul></li><li><code>ln</code>: creates a symlink in a file to another location<ul><li>Similar to a reference object in programming</li></ul></li><li><code>less</code>: lets you view text content in a scrollable format<ul><li>Often more useful than <code>cat</code>, since you can search easily</li></ul></li><li><code>more</code>: less than less, but more on the screen and can only go forward</li><li><code>man</code>: shows the manual for the command you need<ul><li>Similar to using <code>--help</code> after a command</li><li>One documentation I&rsquo;d love to go through is note taking manual pages for all these commands.</li></ul></li><li><code>grep</code>: lets you pattern match against text content<ul><li>You can install <code>ripgrep</code> which is like <code>grep</code>, but faster</li></ul></li><li><code>find</code>: finds a file or directory<ul><li>Syntax can be weird, so might be better to install <code>fd</code>, a faster easier <code>find</code></li></ul></li><li><code>sed</code>: a stream editor, allowing you to make changes to an incoming stream of text<ul><li>Usually useful to find and replace text</li></ul></li><li><code>awk</code>: allows for programming logic<ul><li>Useful for one-liners, grabbing specific things from a file</li></ul></li><li><code>sort</code>: sorts text content</li><li><code>head</code>: lets you see the first few lines of a file</li><li><code>tail</code>: lets you see the last few lines of a file</li></ul><p>The pipe operator, <code>|</code>, allows you to chain commands into one another. The standard output from your first command will be fed into your second command, so on so forth.</p><ul><li><code>xargs</code>: takes the contents of whatever you pipe into it and splits it into different chunks<ul><li>For each chunk, it will pass it as an argument into whatever command specified</li></ul></li></ul><p>Subshell, or <code>$(command)</code>, injects the output of whatever command/pipeline you defined, placing it wherever you defined the subshell.</p><p>You can use the <code>></code> command, or redirection operator, sends the standard output of the source file into whatever file you choose. Two greater than signs will append, not overwrite, or creates it if it doesn&rsquo;t exist.</p><ul><li><code>fzf</code>: a fuzzy finder. Run it by itself and you can easily search for items.</li><li><code>compgen</code>: combine with <code>-c</code> to see all commands</li></ul><h2 id=fun-commands><strong>Fun Commands</strong></h2><p>Let&rsquo;s say we take the following command: <code>compgen -c | fzf | xargs man</code>. This will produce all available commands in a fuzzy finder, then anyone we choose will produce it&rsquo;s manual.</p><p>We can take this a step further. If we use <code>alias</code>, a method of generating our own commands, and call it something like <code>fman</code>, we can write the following statement to produce a new command:</p><pre tabindex=0><code>alias fman = &#39;compgen -c | fzf | xargs man&#39;
-</code></pre><p>Running <code>fman</code> from now on will execute the pipeline we described earlier. To make it easier, we can always make sure it&rsquo;s there by adding the above code to your <code>bash.bashrc</code> file, by adding the line at the end of the file.</p><p>In order to find the largest file in a directory, we can use:</p><pre tabindex=0><code>du -ah . | sort -hr | head -n 10
-</code></pre><p>Here, we are using <code>du</code> to get file sizes, with the <code>-ah</code> for aggregate view with human readable text. That is fed into a <code>sort</code> in reverse order, and finally, <code>head</code> to view with just 10 lines at a time.</p><p>Some helpful hotkeys:</p><ul><li><code>ctrl+c</code>: kill active process</li><li><code>ctrl+k</code>: exit shell</li><li><code>ctrl+l</code>: clear screen</li><li><code>ctrl+z</code>: put process in background</li><li><code>ctrl+a</code>: go to the front of the line</li><li><code>ctrl+e</code>: go to the end of the line</li><li><code>ctrl+b</code>: go back one character</li><li><code>ctrl+f</code>: go forward one character</li><li><code>alt+f</code>: go forward one word</li><li><code>alt+b</code>: go back one word</li><li><code>!!</code>: run previous command (also known as bang bang)</li><li><code>!&lt;cmd></code>: run previous matching command</li><li><code>ctr+x ctrl+e</code>: open line in $EDITOR</li></ul><h2 id=big-tips-for-success><strong>Big Tips for Success</strong></h2><ol><li>Use the <code>man</code> pages (or <code>tldr</code>)</li><li>Use the pipelines and subshells for a good time</li><li>Use alias and scripts to save your work</li><li>Use <code>fzf</code></li></ol></div></article><hr><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
-<span class=tag><a href=http://localhost:1313/tags/computerscience/>computerscience</a></span>
-<span class=tag><a href=http://localhost:1313/tags/youtube/>youtube</a></span>
-<span class=tag><a href=http://localhost:1313/tags/shell/>shell</a></span></p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-768 Words</p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-2024-07-12 20:00</p></div><div class=pagination><div class=pagination__buttons><span class="button previous"><a href=http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/><span class=button__icon>←</span>
-<span class=button__text>You Can Do Really Cool Things With Functions in Python</span></a></span></div></div></main></div><footer class=footer></footer></div><script type=text/javascript src=/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc+cxaJzDdCYbAW0X1G+DgZYvtKFXe6MBex8jUJ2JT25mQx+YjACIng=="></script></body></html>
+Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn’t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I’d love to go through is note taking manual pages for all these commands.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-13T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Youtube">
+    <meta property="article:tag" content="Shell">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-13 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/">Become a Shell Wizard in ~12 Minutes</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: July 19 2024</p>
+<p><a href="https://www.y/woutube.comatch?v=IYZDIhfAUM0&list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&index=22">Link</a> to video.</p>
+<hr>
+<h2 id="the-basics-of-shell"><strong>The Basics of Shell</strong></h2>
+<p>Shell, terminal, console, command line, all are essentially the same thing.</p>
+<h3 id="commands"><strong>Commands</strong></h3>
+<ul>
+<li><code>ls</code>: lists out all items in the current (target) directory
+<ul>
+<li>You can pass some flags to change the output</li>
+<li><code>-latrh</code> will produce long list format, all files, sorted by time, in reverse, with human readable file sizes</li>
+<li>You can also use a path as an argument, as well as a combination of both flags and path</li>
+</ul>
+</li>
+<li><code>cd</code>: change directory</li>
+<li><code>pwd</code>: shows path to current work directory</li>
+<li><code>echo</code>: lets you print some text</li>
+<li><code>cat</code>: lets you print the content of a file</li>
+<li><code>touch</code>: creates a file if it doesn&rsquo;t exist; changes the timestamp if it does</li>
+<li><code>cp</code>: lets you copy a file or directory to a target destination</li>
+<li><code>move</code>: like copy, but moves it instead</li>
+<li><code>rm</code>: removes a file or directory
+<ul>
+<li>Need to use <code>-r</code> to delete a directory</li>
+<li>You can add <code>f</code> to forcefully delete it</li>
+</ul>
+</li>
+<li><code>ln</code>: creates a symlink in a file to another location
+<ul>
+<li>Similar to a reference object in programming</li>
+</ul>
+</li>
+<li><code>less</code>: lets you view text content in a scrollable format
+<ul>
+<li>Often more useful than <code>cat</code>, since you can search easily</li>
+</ul>
+</li>
+<li><code>more</code>: less than less, but more on the screen and can only go forward</li>
+<li><code>man</code>: shows the manual for the command you need
+<ul>
+<li>Similar to using <code>--help</code> after a command</li>
+<li>One documentation I&rsquo;d love to go through is note taking manual pages for all these commands.</li>
+</ul>
+</li>
+<li><code>grep</code>: lets you pattern match against text content
+<ul>
+<li>You can install <code>ripgrep</code> which is like <code>grep</code>, but faster</li>
+</ul>
+</li>
+<li><code>find</code>: finds a file or directory
+<ul>
+<li>Syntax can be weird, so might be better to install <code>fd</code>, a faster easier <code>find</code></li>
+</ul>
+</li>
+<li><code>sed</code>: a stream editor, allowing you to make changes to an incoming stream of text
+<ul>
+<li>Usually useful to find and replace text</li>
+</ul>
+</li>
+<li><code>awk</code>: allows for programming logic
+<ul>
+<li>Useful for one-liners, grabbing specific things from a file</li>
+</ul>
+</li>
+<li><code>sort</code>: sorts text content</li>
+<li><code>head</code>: lets you see the first few lines of a file</li>
+<li><code>tail</code>: lets you see the last few lines of a file</li>
+</ul>
+<p>The pipe operator, <code>|</code>, allows you to chain commands into one another. The standard output from your first command will be fed into your second command, so on so forth.</p>
+<ul>
+<li><code>xargs</code>: takes the contents of whatever you pipe into it and splits it into different chunks
+<ul>
+<li>For each chunk, it will pass it as an argument into whatever command specified</li>
+</ul>
+</li>
+</ul>
+<p>Subshell, or <code>$(command)</code>, injects the output of whatever command/pipeline you defined, placing it wherever you defined the subshell.</p>
+<p>You can use the <code>&gt;</code> command, or redirection operator, sends the standard output of the source file into whatever file you choose. Two greater than signs will append, not overwrite, or creates it if it doesn&rsquo;t exist.</p>
+<ul>
+<li><code>fzf</code>: a fuzzy finder. Run it by itself and you can easily search for items.</li>
+<li><code>compgen</code>: combine with <code>-c</code> to see all commands</li>
+</ul>
+<h2 id="fun-commands"><strong>Fun Commands</strong></h2>
+<p>Let&rsquo;s say we take the following command: <code>compgen -c | fzf | xargs man</code>. This will produce all available commands in a fuzzy finder, then anyone we choose will produce it&rsquo;s manual.</p>
+<p>We can take this a step further. If we use <code>alias</code>, a method of generating our own commands, and call it something like <code>fman</code>, we can write the following statement to produce a new command:</p>
+<pre tabindex="0"><code>alias fman = &#39;compgen -c | fzf | xargs man&#39;
+</code></pre><p>Running <code>fman</code> from now on will execute the pipeline we described earlier. To make it easier, we can always make sure it&rsquo;s there by adding the above code to your <code>bash.bashrc</code> file, by adding the line at the end of the file.</p>
+<p>In order to find the largest file in a directory, we can use:</p>
+<pre tabindex="0"><code>du -ah . | sort -hr | head -n 10
+</code></pre><p>Here, we are using <code>du</code> to get file sizes, with the <code>-ah</code> for aggregate view with human readable text. That is fed into a <code>sort</code> in reverse order, and finally, <code>head</code> to view with just 10 lines at a time.</p>
+<p>Some helpful hotkeys:</p>
+<ul>
+<li><code>ctrl+c</code>: kill active process</li>
+<li><code>ctrl+k</code>: exit shell</li>
+<li><code>ctrl+l</code>: clear screen</li>
+<li><code>ctrl+z</code>: put process in background</li>
+<li><code>ctrl+a</code>: go to the front of the line</li>
+<li><code>ctrl+e</code>: go to the end of the line</li>
+<li><code>ctrl+b</code>: go back one character</li>
+<li><code>ctrl+f</code>: go forward one character</li>
+<li><code>alt+f</code>: go forward one word</li>
+<li><code>alt+b</code>: go back one word</li>
+<li><code>!!</code>: run previous command (also known as bang bang)</li>
+<li><code>!&lt;cmd&gt;</code>: run previous matching command</li>
+<li><code>ctr+x ctrl+e</code>: open line in $EDITOR</li>
+</ul>
+<h2 id="big-tips-for-success"><strong>Big Tips for Success</strong></h2>
+<ol>
+<li>Use the <code>man</code> pages (or <code>tldr</code>)</li>
+<li>Use the pipelines and subshells for a good time</li>
+<li>Use alias and scripts to save your work</li>
+<li>Use <code>fzf</code></li>
+</ol>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/youtube/">youtube</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/shell/">shell</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        768 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-07-12 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+            <span class="button previous">
+                <a href="https://mrpointing.com/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">You Can Do Really Cool Things With Functions in Python</span>
+                </a>
+            </span>
+            
+
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

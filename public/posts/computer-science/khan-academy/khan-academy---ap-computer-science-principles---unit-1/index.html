@@ -1,23 +1,294 @@
-<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content><meta name=description content="Modified: August 02 2024
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: August 02 2024
 Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&amp;rsquo;ll be looking forward to stealing their ideas.
 Bits and bytes How do computers represent data? All computers understand is Binary, 0&amp;rsquo;s and 1&amp;rsquo;s.
-The video explains the example of using one single wire to transfer electricity through it; on or off."><meta name=keywords content="homepage,blog,computerscience,internet"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/><title>Khan Academy - AP Computer Science Principles - Unit 1 :: Mr. Pointing — Python Teacher
-</title><link rel=stylesheet href=/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN+YNEKWYHs/MUFU="><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="Khan Academy - AP Computer Science Principles - Unit 1"><meta itemprop=description content="Modified: August 02 2024
+The video explains the example of using one single wire to transfer electricity through it; on or off." />
+<meta name="keywords" content="homepage, blog, computerscience, internet" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/" />
+
+
+    <title>
+        
+            Khan Academy - AP Computer Science Principles - Unit 1 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.9a8b2bfd3b57cf24918963cf5c8025ac2284e56ea037e60d10a5981ecfcc5055.css" integrity="sha256-mosr/TtXzySRiWPPXIAlrCKE5W6gN&#43;YNEKWYHs/MUFU=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Khan Academy - AP Computer Science Principles - Unit 1">
+  <meta itemprop="description" content="Modified: August 02 2024
 Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I’ll be looking forward to stealing their ideas.
 Bits and bytes How do computers represent data? All computers understand is Binary, 0’s and 1’s.
-The video explains the example of using one single wire to transfer electricity through it; on or off."><meta itemprop=datePublished content="2024-07-20T00:00:00+00:00"><meta itemprop=dateModified content="2024-07-20T00:00:00+00:00"><meta itemprop=wordCount content="823"><meta itemprop=image content="http://localhost:1313/"><meta itemprop=keywords content="Computerscience,Internet"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/"><meta name=twitter:title content="Khan Academy - AP Computer Science Principles - Unit 1"><meta name=twitter:description content="Modified: August 02 2024
+The video explains the example of using one single wire to transfer electricity through it; on or off.">
+  <meta itemprop="datePublished" content="2024-07-20T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-20T00:00:00+00:00">
+  <meta itemprop="wordCount" content="823">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Internet">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Khan Academy - AP Computer Science Principles - Unit 1">
+  <meta name="twitter:description" content="Modified: August 02 2024
 Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I’ll be looking forward to stealing their ideas.
 Bits and bytes How do computers represent data? All computers understand is Binary, 0’s and 1’s.
-The video explains the example of using one single wire to transfer electricity through it; on or off."><meta property="og:url" content="http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/"><meta property="og:site_name" content="Mr. Pointing"><meta property="og:title" content="Khan Academy - AP Computer Science Principles - Unit 1"><meta property="og:description" content="Modified: August 02 2024
+The video explains the example of using one single wire to transfer electricity through it; on or off.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Khan Academy - AP Computer Science Principles - Unit 1">
+  <meta property="og:description" content="Modified: August 02 2024
 Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I’ll be looking forward to stealing their ideas.
 Bits and bytes How do computers represent data? All computers understand is Binary, 0’s and 1’s.
-The video explains the example of using one single wire to transfer electricity through it; on or off."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-07-20T00:00:00+00:00"><meta property="article:modified_time" content="2024-07-20T00:00:00+00:00"><meta property="article:tag" content="Computerscience"><meta property="article:tag" content="Internet"><meta property="og:image" content="http://localhost:1313/"><meta property="article:published_time" content="2024-07-20 00:00:00 +0000 UTC"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
-<span class=logo__text>mr. pointing</span>
-<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Posts</a></li></ul></nav><span class=menu-trigger><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-4 minutes</p></div><article><h1 class=post-title><a href=http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/>Khan Academy - AP Computer Science Principles - Unit 1</a></h1><div class=post-content><p>Modified: August 02 2024</p><hr><p>Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&rsquo;ll be looking forward to stealing their ideas.</p><h2 id=bits-and-bytes>Bits and bytes</h2><h3 id=how-do-computers-represent-data>How do computers represent data?</h3><p>All computers understand is <strong>Binary</strong>, 0&rsquo;s and 1&rsquo;s.</p><p>The video explains the example of using one single wire to transfer electricity through it; on or off. This is the most fundamental understanding of how our computers function. This is just one single bit. Common machines use hundreds of thousands of bits to achieve their objective.</p><p>With text, it&rsquo;s easier to visualize. Every character has a value related to some makeup of a 0 and a 1. Images are harder, since they&rsquo;re made up of tiny pixels. Each pixel holds a color. Each color can thankfully be represented by a number. Think about videos, that are rendering 30 to 60 images per second.</p><p>Audio can also be broken down into numbers, usually by vibrations as a waveform, and that waveform as a number.</p><p>Bits hold only a single value, on or off. Generally only binary decisions are used by single bits.</p><p>Computers will use multiple bits to represent more complex data. The more bits, the more information deliverable.</p><p>We can see that a sequence of two bits can represent four ($2^2$) distinct values:</p><p>$00, 01, 10, 11$</p><p>While a sequence of three bits can represent eight ($2^3$) distinct values:</p><p>$000, 001, 010, 011, 100, 101, 110, 111$</p><p>While a bit is a single piece of information, a byte is a unit that consists of 8 bits.</p><p>The conversion is pretty simple: multiple by 8 to go from bits to bytes, and divide by 8 to go from bytes to bits.</p><h2 id=binary-numbers>Binary Numbers</h2><p>The binary number system works very similarly to how decimal numbers work.</p><p>In decimal numbers, you multiply each number by a different power of 10. You start in the ones&rsquo; place, the tens&rsquo; place, and the hundreds&rsquo; place. 234 is equal to $(2 * 100) + (3 * 10) + (4 * 1)$. Ones&rsquo; place is $10^0$, tens&rsquo; place is $10^1$, and hundreds&rsquo; place is $10^2$.</p><p>The binary number system multiplies to the power of 2 instead of 10.</p><p>The decimal number 1, can be represented in binary as 0001. That&rsquo;s the same as $(0 * 8) + (0 * 4) + (0 * 2) + (1 * 1)$, or $0 + 0 + 0 + 1$, which gives you 1.</p><p>The decimal number 10, in binary is 1010. We know this because of $(1 * 8) + (0 * 4) + (1 * 2) + (0 * 1)$, which is $8 + 0 + 2 + 0$, which equals 10.</p><h3 id=converting-decimal-to-binary>Converting decimal to binary</h3><p>{{ $image := .Resources.Get &ldquo;decimal_to_binary.png&rdquo; }}</p><h2 id=limitations-of-storing-numbers>Limitations of Storing Numbers</h2><h3 id=number-limits-overflow-and-roundoff>Number limits, overflow, and roundoff</h3><p>Storing numbers requires some work for binary representation. We run into issues with problems like <em>roundoff</em>, <em>overflow</em>, and <em>precision</em>. These issues are usually centered around memory issues.</p><h3 id=integer-representation>Integer representation</h3><p>An integer is any whole number: $1, 10, 230, -400$ are all integers. In order to store integers, for however many bits the number is stored in, the first indicates the sign, and the others contain the absolute value.</p><p>{{ $image2 := .Resources.Get &ldquo;Khan Academy - AP Computer Science Principles - Unit 1.png&rdquo; }}</p><h3 id=overflow>Overflow</h3><p>Let&rsquo;s suggest we only have 4-bits of memory to store our integers on a computer. That means we could only store up to the number 7. If we were to then try to go beyond it, like say with the following code:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>x <span style=color:#f92672>=</span> <span style=color:#ae81ff>7</span>
-</span></span><span style=display:flex><span>y <span style=color:#f92672>=</span> x <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>
-</span></span></code></pre></div><p><code>x</code> is easily able to be stored, but <code>y</code> would give us a problem since it goes beyond the capabilities of our systems memory. This type of error is called an <em>Overflow Error</em>. Some systems might throw this error, truncate it to 7, or wrap back to 1.</p><p>Thankfully, 64-bit is the common standard.</p><h3 id=floating-point-representation>Floating-point representation</h3><p>Floating-point numbers represent every number that isn&rsquo;t an integer-irrational, fractional, etc.</p><p>In floating-point representation, a number is multiplied by a base that&rsquo;s raised to some exponent.</p><p>In mathematics it often looks like this: $300=3*10^2$</p><p>Since computers use the binary system instead of the decimal system, it looks like this: $128=1*2^7$.</p><p>Numbers between the powers of 2 end up looking more so like this: $160=1.25<em>2^7$, or $0.25=1</em>2^-2$.</p><p>Modern 64 bit systems use 1 bit for the sign, 11 bits for the exponent, and 52 bits for the number in the front.</p><h3 id=roundoff-errors>Roundoff errors</h3><p>There are still some issues since there are some numbers that can&rsquo;t be easily represented. $.3^-$ (repeating) is an infinitely repeating sequence that can&rsquo;t be stored in any device. The computer will eventually have to round at some point. A <em>roundoff error</em> is when we get an unexpected error due to the computers rounding of a complicated-to-represent number.</p></div></article><hr><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
-<span class=tag><a href=http://localhost:1313/tags/computerscience/>computerscience</a></span>
-<span class=tag><a href=http://localhost:1313/tags/internet/>internet</a></span></p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-823 Words</p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-2024-07-19 20:00</p></div></main></div><footer class=footer></footer></div><script type=text/javascript src=/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc+cxaJzDdCYbAW0X1G+DgZYvtKFXe6MBex8jUJ2JT25mQx+YjACIng=="></script></body></html>
+The video explains the example of using one single wire to transfer electricity through it; on or off.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-20T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Internet">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-20 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://mrpointing.com/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/">Khan Academy - AP Computer Science Principles - Unit 1</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Modified: August 02 2024</p>
+<hr>
+<p>Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&rsquo;ll be looking forward to stealing their ideas.</p>
+<h2 id="bits-and-bytes">Bits and bytes</h2>
+<h3 id="how-do-computers-represent-data">How do computers represent data?</h3>
+<p>All computers understand is <strong>Binary</strong>, 0&rsquo;s and 1&rsquo;s.</p>
+<p>The video explains the example of using one single wire to transfer electricity through it; on or off. This is the most fundamental understanding of how our computers function. This is just one single bit. Common machines use hundreds of thousands of bits to achieve their objective.</p>
+<p>With text, it&rsquo;s easier to visualize. Every character has a value related to some makeup of a 0 and a 1. Images are harder, since they&rsquo;re made up of tiny pixels. Each pixel holds a color. Each color can thankfully be represented by a number. Think about videos, that are rendering 30 to 60 images per second.</p>
+<p>Audio can also be broken down into numbers, usually by vibrations as a waveform, and that waveform as a number.</p>
+<p>Bits hold only a single value, on or off. Generally only binary decisions are used by single bits.</p>
+<p>Computers will use multiple bits to represent more complex data. The more bits, the more information deliverable.</p>
+<p>We can see that a sequence of two bits can represent four ($2^2$) distinct values:</p>
+<p>$00, 01, 10, 11$</p>
+<p>While a sequence of three bits can represent eight ($2^3$) distinct values:</p>
+<p>$000, 001, 010, 011, 100, 101, 110, 111$</p>
+<p>While a bit is a single piece of information, a byte is a unit that consists of 8 bits.</p>
+<p>The conversion is pretty simple: multiple by 8 to go from bits to bytes, and divide by 8 to go from bytes to bits.</p>
+<h2 id="binary-numbers">Binary Numbers</h2>
+<p>The binary number system works very similarly to how decimal numbers work.</p>
+<p>In decimal numbers, you multiply each number by a different power of 10. You start in the ones&rsquo; place, the tens&rsquo; place, and the hundreds&rsquo; place. 234 is equal to $(2 * 100) + (3 * 10) + (4 * 1)$. Ones&rsquo; place is $10^0$, tens&rsquo; place is $10^1$, and hundreds&rsquo; place is $10^2$.</p>
+<p>The binary number system multiplies to the power of 2 instead of 10.</p>
+<p>The decimal number 1, can be represented in binary as 0001. That&rsquo;s the same as $(0 * 8) + (0 * 4) + (0 * 2) + (1 * 1)$, or $0 + 0 + 0 + 1$, which gives you 1.</p>
+<p>The decimal number 10, in binary is 1010. We know this because of $(1 * 8) + (0 * 4) + (1 * 2) + (0 * 1)$, which is $8 + 0 + 2 + 0$, which equals 10.</p>
+<h3 id="converting-decimal-to-binary">Converting decimal to binary</h3>
+<p>{{ $image := .Resources.Get &ldquo;decimal_to_binary.png&rdquo; }}
+<!-- raw HTML omitted --></p>
+<h2 id="limitations-of-storing-numbers">Limitations of Storing Numbers</h2>
+<h3 id="number-limits-overflow-and-roundoff">Number limits, overflow, and roundoff</h3>
+<p>Storing numbers requires some work for binary representation. We run into issues with problems like <em>roundoff</em>, <em>overflow</em>, and <em>precision</em>. These issues are usually centered around memory issues.</p>
+<h3 id="integer-representation">Integer representation</h3>
+<p>An integer is any whole number: $1, 10, 230, -400$ are all integers. In order to store integers, for however many bits the number is stored in, the first indicates the sign, and the others contain the absolute value.</p>
+<p>{{ $image2 := .Resources.Get &ldquo;Khan Academy - AP Computer Science Principles - Unit 1.png&rdquo; }}
+<!-- raw HTML omitted --></p>
+<h3 id="overflow">Overflow</h3>
+<p>Let&rsquo;s suggest we only have 4-bits of memory to store our integers on a computer. That means we could only store up to the number 7. If we were to then try to go beyond it, like say with the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p><code>x</code> is easily able to be stored, but <code>y</code> would give us a problem since it goes beyond the capabilities of our systems memory. This type of error is called an <em>Overflow Error</em>. Some systems might throw this error, truncate it to 7, or wrap back to 1.</p>
+<p>Thankfully, 64-bit is the common standard.</p>
+<h3 id="floating-point-representation">Floating-point representation</h3>
+<p>Floating-point numbers represent every number that isn&rsquo;t an integer-irrational, fractional, etc.</p>
+<p>In floating-point representation, a number is multiplied by a base that&rsquo;s raised to some exponent.</p>
+<p>In mathematics it often looks like this: $300=3*10^2$</p>
+<p>Since computers use the binary system instead of the decimal system, it looks like this: $128=1*2^7$.</p>
+<p>Numbers between the powers of 2 end up looking more so like this: $160=1.25<em>2^7$, or $0.25=1</em>2^-2$.</p>
+<p>Modern 64 bit systems use 1 bit for the sign, 11 bits for the exponent, and 52 bits for the number in the front.</p>
+<h3 id="roundoff-errors">Roundoff errors</h3>
+<p>There are still some issues since there are some numbers that can&rsquo;t be easily represented. $.3^-$ (repeating) is an infinitely repeating sequence that can&rsquo;t be stored in any device. The computer will eventually have to round at some point. A <em>roundoff error</em> is when we get an unexpected error due to the computers rounding of a complicated-to-represent number.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/internet/">internet</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        823 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-07-19 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
