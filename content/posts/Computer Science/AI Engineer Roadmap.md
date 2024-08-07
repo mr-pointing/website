@@ -1,7 +1,7 @@
 ---
 aliases:
   - AI
-draft: false
+draft: true
 tags:
   - computerscience
   - AI
@@ -9,8 +9,13 @@ tags:
 title: AI Engineer Roadmap
 date: 2024-06-03
 ---
+Modified: August 02 2024 
+
+
+---
 
 A resource by [Code Basics](https://youtube.com/code_basics)
+
 
 We'll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year. 
 
@@ -99,6 +104,6 @@ I think I'd like to keep the same objectives for the next two weeks.
 
 - [ ] Complete Flask documentation Notes
 - [ ] Finish Chapters 1-9 in Intro to Algorithms
-- [ ] Get website published using Hugo
+- [x] Get website published using Hugo
 - [ ] Complete PyCharm IDE Features
 - [ ] Complete Khan Academy Notes

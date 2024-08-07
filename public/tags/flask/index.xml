@@ -24,7 +24,7 @@
       <description>Modified: July 19 2024&#xA;Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
     </item>
     <item>
-      <title>Become a Shell Wizard in ~12 Minutes</title>
+      <title>Flask</title>
       <link>https://mrpointing.com/posts/computer-science/flask-notes/flask/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/posts/computer-science/flask-notes/flask/</guid>

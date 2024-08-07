@@ -87,6 +87,13 @@
       <description>Modified: June 20 2024&#xA;Following this documentation.</description>
     </item>
     <item>
+      <title>NumPy</title>
+      <link>https://mrpointing.com/posts/computer-science/numpy/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/posts/computer-science/numpy/</guid>
+      <description>Modified: June 20 2024&#xA;Link to documentation</description>
+    </item>
+    <item>
       <title>The Python Tutorial Notes - Chapter 7</title>
       <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
       <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
@@ -120,13 +127,6 @@
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
       <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
-    </item>
-    <item>
-      <title>NumPy</title>
-      <link>https://mrpointing.com/posts/computer-science/numpy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/computer-science/numpy/</guid>
-      <description>Created: June 20 2024 Modified: June 20 2024&#xA;Link to documentation</description>
     </item>
   </channel>
 </rss>

@@ -125,9 +125,6 @@
     <loc>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/posts/obsidian/templater-formatting-notes/</loc>
-    <lastmod>2024-07-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/</loc>
     <lastmod>2024-07-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -157,9 +154,6 @@
   </url><url>
     <loc>https://mrpointing.com/posts/computer-science/flask-notes/werkzeug/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</loc>
-    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/packages/</loc>
     <lastmod>2024-07-13T00:00:00+00:00</lastmod>
@@ -221,10 +215,16 @@
     <loc>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://mrpointing.com/tags/datastructures/</loc>
+    <lastmod>2024-06-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mrpointing.com/posts/projects/designing-a-restful-api/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/posts/computer-science/http-semantics/</loc>
+    <lastmod>2024-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/posts/computer-science/numpy/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/tutorialnotes/</loc>
@@ -263,9 +263,6 @@
     <loc>https://mrpointing.com/tags/arrays/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/datastructures/</loc>
-    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</loc>
     <lastmod>2024-06-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -275,13 +272,7 @@
     <loc>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</loc>
     <lastmod>2024-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/posts/computer-science/ai-engineer-roadmap/</loc>
-    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/tags/essays/</loc>
-    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/machinelearning/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/manga/</loc>
@@ -342,8 +333,6 @@
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/blog/</loc>
-  </url><url>
-    <loc>https://mrpointing.com/posts/computer-science/numpy/</loc>
   </url><url>
     <loc>https://mrpointing.com/series/</loc>
   </url>

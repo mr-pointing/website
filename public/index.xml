@@ -108,13 +108,6 @@
       <description>Modified: August 02 2024&#xA;The Role of Algorithms in Computing 1.1 Algorithms Algorithm: Any well defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.&#xA;We often say algorithms help us solve computational problems.&#xA;We can define a sorting algorithm like so: Input: A sequence of n numbers, ${a_1, a_2, &amp;hellip; a_n}$ Output: A permutation (reordering) ${a_1,a_2,&amp;hellip;a_n}$ of the input sequence such that $a_1 &amp;lt;= a_2 &amp;lt;= .</description>
     </item>
     <item>
-      <title>Templater Formatting Notes</title>
-      <link>https://mrpointing.com/posts/obsidian/templater-formatting-notes/</link>
-      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/obsidian/templater-formatting-notes/</guid>
-      <description>Modified: July 26 2024&#xA;{{ $image := .Resources.GetMatch &amp;ldquo;Date Formatting.png&amp;rdquo; }} {{ with $image }} {{ end }}&#xA;{{ $image := .Resources.GetMatch &amp;ldquo;Time Formatting.png&amp;rdquo; }} {{ with $image }} {{ end }}&#xA;Link to Templater Documentation.</description>
-    </item>
-    <item>
       <title>You Can Do Really Cool Things With Functions in Python</title>
       <link>https://mrpointing.com/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
@@ -155,13 +148,6 @@
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/posts/computer-science/flask-notes/werkzeug/</guid>
       <description>Modified: July 31 2024&#xA;Link to documentation.&#xA;First of all, what is WSGI?&#xA;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description>
-    </item>
-    <item>
-      <title>Become a Shell Wizard in ~12 Minutes</title>
-      <link>https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
-      <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
-      <description>Modified: July 19 2024&#xA;Link to video.&#xA;The Basics Shell, terminal, console, command line, all are essentially the same thing.&#xA;Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn&amp;rsquo;t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I&amp;rsquo;d love to go through is note taking manual pages for all these commands.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 12</title>
@@ -227,7 +213,7 @@
       <description>Modified: July 19 2024&#xA;Classes 6/28/2024&#xA;Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.&#xA;A class is made up of attributes and methods defined by the classes definition.&#xA;Python classes follow closely to other Object Oriented Programming languages classes in the following ways:</description>
     </item>
     <item>
-      <title>Become a Shell Wizard in ~12 Minutes</title>
+      <title>Flask</title>
       <link>https://mrpointing.com/posts/computer-science/flask-notes/flask/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/posts/computer-science/flask-notes/flask/</guid>
@@ -253,6 +239,13 @@
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/posts/computer-science/http-semantics/</guid>
       <description>Modified: June 20 2024&#xA;Following this documentation.</description>
+    </item>
+    <item>
+      <title>NumPy</title>
+      <link>https://mrpointing.com/posts/computer-science/numpy/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/posts/computer-science/numpy/</guid>
+      <description>Modified: June 20 2024&#xA;Link to documentation</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 7</title>
@@ -311,13 +304,6 @@
       <description>Modified: July 19 2024&#xA;Control Flow Tools 6/5/2024&#xA;The while loop was seen in the previous Fibonacci Sequence example.&#xA;4.1 if Statements &amp;gt;&amp;gt;&amp;gt; x = int(input(&amp;#34;Please enter an integer: &amp;#34;)) Please enter an integer: 42 &amp;gt;&amp;gt;&amp;gt; if x &amp;lt; 0: &amp;gt;&amp;gt;&amp;gt; x = 0 &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Negative so now it&amp;#39;s zero!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 0: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Zero!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 1: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;UNO!!!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; else: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Nice B)&amp;#34;) Nice B) Very basic; all you need is an if statement.</description>
     </item>
     <item>
-      <title>AI Engineer Roadmap</title>
-      <link>https://mrpointing.com/posts/computer-science/ai-engineer-roadmap/</link>
-      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/computer-science/ai-engineer-roadmap/</guid>
-      <description>A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject. I think I can handle a khan academy course and going through the entire Python documentation in two weeks.</description>
-    </item>
-    <item>
       <title>Naruto</title>
       <link>https://mrpointing.com/posts/entertainment/naruto/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
@@ -344,13 +330,6 @@
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
       <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
-    </item>
-    <item>
-      <title>NumPy</title>
-      <link>https://mrpointing.com/posts/computer-science/numpy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/computer-science/numpy/</guid>
-      <description>Created: June 20 2024 Modified: June 20 2024&#xA;Link to documentation</description>
     </item>
   </channel>
 </rss>

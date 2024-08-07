@@ -2,7 +2,7 @@
 aliases:
   - shell
   - bash
-draft: false
+draft: true
 tags:
   - computerscience
   - youtube
@@ -15,7 +15,7 @@ Modified: July 19 2024
 [Link](https://www.y/woutube.comatch?v=IYZDIhfAUM0&list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&index=22) to video.
 
 -------------------------------------------------------------------------------
-## **The Basics**
+## **The Basics of Shell** 
 
 Shell, terminal, console, command line, all are essentially the same thing.
 

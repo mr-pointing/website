@@ -6,7 +6,7 @@ tags:
   - computerscience
   - flask
   - python
-title: Become a Shell Wizard in ~12 Minutes
+title: Flask
 date: 2024-06-25
 ---
 Modified: August 02 2024

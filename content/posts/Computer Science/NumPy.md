@@ -10,8 +10,8 @@ tags:
   - datastructures
   - python
 title: NumPy
+date: 2024-06-20
 ---
-Created: June 20 2024
 Modified: June 20 2024 
 
 [Link](https://numpy.org/doc/stable/) to documentation
