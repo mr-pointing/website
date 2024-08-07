@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Projects on Mr. Pointing</title>
-        <link>https://mrpointing.com/posts/projects/</link>
+        <link>http://localhost:1313/posts/projects/</link>
         <description>Recent content in Projects on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://mrpointing.com/posts/projects/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/posts/projects/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Mr. Pointing Website</title>
-            <link>https://mrpointing.com/posts/projects/mr.-pointing-website/</link>
+            <link>http://localhost:1313/posts/projects/mr.-pointing-website/</link>
             <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/projects/mr.-pointing-website/</guid>
+            <guid>http://localhost:1313/posts/projects/mr.-pointing-website/</guid>
             <description>Modified: August 02 2024
 So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:
 Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Ignore Templates, re-route Excalidraw Get mr.pointing domain name Create README Update/Connect GitHub Start Hosting Hugo Using Cloudflare So some updates before I go to bed:</description>
@@ -29,7 +29,7 @@ Get pages formatted to look good on Hugo Add date property to all pages Get Exca
 <li><input checked="" disabled="" type="checkbox"> Get mr.pointing domain name</li>
 <li><input disabled="" type="checkbox"> Create README</li>
 <li><input checked="" disabled="" type="checkbox"> Update/Connect GitHub</li>
-<li><input checked="" disabled="" type="checkbox"> Start <a href="https://mrpointing.com/posts/computer-science/hugo/hosting-hugo-using-cloudflare/">Hosting Hugo Using Cloudflare</a></li>
+<li><input checked="" disabled="" type="checkbox"> Start <a href="http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/">Hosting Hugo Using Cloudflare</a></li>
 </ul>
 <p>So some updates before I go to bed:</p>
 <ul>
@@ -165,10 +165,10 @@ paginate     = 10
         
         <item>
             <title>Deploying a Flask Application via Apache</title>
-            <link>https://mrpointing.com/posts/projects/deploying-a-flask-application-via-apache/</link>
+            <link>http://localhost:1313/posts/projects/deploying-a-flask-application-via-apache/</link>
             <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/projects/deploying-a-flask-application-via-apache/</guid>
+            <guid>http://localhost:1313/posts/projects/deploying-a-flask-application-via-apache/</guid>
             <description>Modified: August 02 2024
 Link to the project website.</description>
             <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
@@ -179,10 +179,10 @@ Link to the project website.</description>
         
         <item>
             <title>Lython</title>
-            <link>https://mrpointing.com/posts/projects/lython/</link>
+            <link>http://localhost:1313/posts/projects/lython/</link>
             <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/projects/lython/</guid>
+            <guid>http://localhost:1313/posts/projects/lython/</guid>
             <description>Modified: July 19 2024
 Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.
 Github
@@ -198,10 +198,10 @@ I&amp;rsquo;d like to continue working on my project as an actual tool to use du
         
         <item>
             <title>Raspberry Pi NAS</title>
-            <link>https://mrpointing.com/posts/projects/raspberry-pi-nas/</link>
+            <link>http://localhost:1313/posts/projects/raspberry-pi-nas/</link>
             <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/projects/raspberry-pi-nas/</guid>
+            <guid>http://localhost:1313/posts/projects/raspberry-pi-nas/</guid>
             <description>Modified: July 14 2024
 Link</description>
             <content type="html"><![CDATA[<p>Modified: July 14 2024</p>
@@ -212,10 +212,10 @@ Link</description>
         
         <item>
             <title>Jobany Rosario</title>
-            <link>https://mrpointing.com/posts/projects/jobany-rosario/</link>
+            <link>http://localhost:1313/posts/projects/jobany-rosario/</link>
             <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/projects/jobany-rosario/</guid>
+            <guid>http://localhost:1313/posts/projects/jobany-rosario/</guid>
             <description>Modified: July 02 2024
 New updated Schedule:
 Monday:
@@ -256,10 +256,10 @@ Link to contact for privates </description>
         
         <item>
             <title>Designing a RESTful API</title>
-            <link>https://mrpointing.com/posts/projects/designing-a-restful-api/</link>
+            <link>http://localhost:1313/posts/projects/designing-a-restful-api/</link>
             <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/projects/designing-a-restful-api/</guid>
+            <guid>http://localhost:1313/posts/projects/designing-a-restful-api/</guid>
             <description>Modified: August 02 2024
 Watched this video to take some notes on what REST is.
 API: Application Programming Interface, is how to computers can communicate with each other.
@@ -590,10 +590,10 @@ Server: Werkzeug/3.0.3 Python/3.9.13 Date: Sat, 29 Jun 2024 16:35:18 GMT Content
         
         <item>
             <title>Future Projects</title>
-            <link>https://mrpointing.com/posts/projects/future-projects/</link>
+            <link>http://localhost:1313/posts/projects/future-projects/</link>
             <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/projects/future-projects/</guid>
+            <guid>http://localhost:1313/posts/projects/future-projects/</guid>
             <description>Modified: June 20 2024
 Obsidian Related:
 Integrate an AI model into Obsidian as a plug-in LLM trained on my Obsidian data Obsidian plug-in that automates a bibliography from links Website related:
@@ -615,10 +615,10 @@ Python script that automates adding .md to Excalidraw files after Obsidian to Hu
         
         <item>
             <title>Vinyl Visualizer</title>
-            <link>https://mrpointing.com/posts/projects/vinyl-visualizer/</link>
+            <link>http://localhost:1313/posts/projects/vinyl-visualizer/</link>
             <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/projects/vinyl-visualizer/</guid>
+            <guid>http://localhost:1313/posts/projects/vinyl-visualizer/</guid>
             <description>Modified: June 22 2024
 A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.
 To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ptoject on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/ptoject/</link>
+    <link>http://localhost:1313/tags/ptoject/</link>
     <description>Recent content in Ptoject on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/ptoject/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ptoject/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lython</title>
-      <link>https://mrpointing.com/posts/projects/lython/</link>
+      <link>http://localhost:1313/posts/projects/lython/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/projects/lython/</guid>
+      <guid>http://localhost:1313/posts/projects/lython/</guid>
       <description>Modified: July 19 2024&#xA;Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
     </item>
   </channel>

@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>The Python Tutorial on Mr. Pointing</title>
-        <link>https://mrpointing.com/posts/computer-science/python-tutorial/</link>
+        <link>http://localhost:1313/posts/computer-science/python-tutorial/</link>
         <description>Recent content in The Python Tutorial on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://mrpointing.com/posts/computer-science/python-tutorial/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/posts/computer-science/python-tutorial/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>The Python Tutorial Notes - Chapter 12</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
             <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
             <description>Modified: July 19 2024
 Virtual Environments and Packages 12.1 Introduction Often, you&amp;rsquo;re going to need tools and modules that aren&amp;rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.
 To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.
@@ -51,10 +51,10 @@ To circumnavigate this, we create virtual environments, that act as self-contain
         
         <item>
             <title>The Python Tutorial Notes - Chapter 11</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
             <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
             <description>Modified: July 19 2024
 The Standard Library - Part 2 7/9/2024
 The second part here will go over more advanced, less common modules that nevertheless, exist.
@@ -274,16 +274,16 @@ CRITICAL:root:Critical error -- shutting down
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.73</span>
 </span></span></code></pre></div><hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/">Chapter 12</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/">Chapter 12</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>The Python Tutorial Notes - Chapter 10</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
             <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
             <description>Modified: July 19 2024
 A Brief Tour of the Standard Library 7/4/2024
 10.1 Operating System Interface The os module provides functions for interacting with operating systems:
@@ -543,16 +543,16 @@ A Brief Tour of the Standard Library 7/4/2024
 </span></span><span style="display:flex;"><span>unittest<span style="color:#f92672">.</span>main()
 </span></span></code></pre></div><hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/">Chapter 11</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/">Chapter 11</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>The Python Tutorial Notes - Chapter 9</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
             <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
             <description>Modified: July 19 2024
 Classes 6/28/2024
 Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.
@@ -884,16 +884,16 @@ In global scope: global spam
 </span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;f&#39;</span>, <span style="color:#e6db74">&#39;l&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;g&#39;</span>]
 </span></span></code></pre></div><hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/">Chapter 10</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/">Chapter 10</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>The Python Tutorial Notes - Chapter 8</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
             <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
             <description>Modified: July 19 2024
 Errors and Exceptions 6/22/2024
 There are two distinguishable types of errors: syntax errors and exceptions.
@@ -1134,16 +1134,16 @@ There are two distinguishable types of errors: syntax errors and exceptions.
 </span></span><span style="display:flex;"><span>Something biffed it dude<span style="color:#960050;background-color:#1e0010">!</span>
 </span></span></code></pre></div><hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/">Chapter 9</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/">Chapter 9</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>The Python Tutorial Notes - Chapter 7</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
             <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
             <description>Modified: July 19 2024
 Input and Output 6/18/2024
 There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.
@@ -1305,16 +1305,16 @@ If you place an integer after <code>:</code> will cause that output to be a mini
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(f)
 </span></span></code></pre></div><hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/">Chapter 8</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/">Chapter 8</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>The Python Tutorial Notes - Chapter 6</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</link>
             <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</guid>
             <description>Modified: July 19 2024
 Modules 6/15/2024
 Obviously, using local instances are not viable for long time development is not realistic. This is why we write scripts.
@@ -1453,16 +1453,16 @@ Main is also given a definition here: the collection of variables that you have 
 </span></span></code></pre></div><p>Each item in the dot operator context, each item must be a package except for the last item. The last item can be a module or a package but not a class or function or variable.</p>
 <hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/">Chapter 7</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/">Chapter 7</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>The Python Tutorial Notes - Chapter 5</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
             <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
             <description>Modified: July 19 2024
 Data Structures 6/10/2024
 5.1 More on Lists Methods for Lists:
@@ -1736,16 +1736,16 @@ list.append(x) Adds an item to the end of the list Equivalent to a[len(a):] = [x
 <p>Sequence objects are usually only compared to other objects with the same sequence type. They are compared using <em>lexicographical</em> ordering; one item is compared directly against another, and so on until potential matches are exhausted.</p>
 <hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/">Chapter 6</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/">Chapter 6</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>The Python Tutorial Notes - Chapter 4</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
             <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
             <description>Modified: July 19 2024
 Control Flow Tools 6/5/2024
 The while loop was seen in the previous Fibonacci Sequence example.
@@ -2151,16 +2151,16 @@ I honestly don&rsquo;t understand this, so I&rsquo;ll need someone smarter than 
 </span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
 </span></span></code></pre></div><hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/">Chapter 5</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/">Chapter 5</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>The Python Tutorial Notes - Chapter 1, 2, and 3</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
             <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
             <description>Modified: July 19 2024
 Link to source
 6/2/2024
@@ -2310,7 +2310,7 @@ Python is an easy to learn, powerful programming language. Featuring efficient h
 <p>I first tried making a Fibonacci sequence from scratch, but I failed to understand how the assignment should work so that a and b are updated without adding the wrong values. <a href="https://chatgpt.com/share/f43b22f2-7f7f-41bd-881f-72fc7ad92d25">I used ChatGPT to help facilitate my error</a>.</p>
 <hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/">Chapter 4</a></p>
+<a href="http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/">Chapter 4</a></p>
 ]]></content>
         </item>
         

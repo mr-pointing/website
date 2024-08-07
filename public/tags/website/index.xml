@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Website on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/website/</link>
+    <link>http://localhost:1313/tags/website/</link>
     <description>Recent content in Website on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mr. Pointing Website</title>
-      <link>https://mrpointing.com/posts/projects/mr.-pointing-website/</link>
+      <link>http://localhost:1313/posts/projects/mr.-pointing-website/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/projects/mr.-pointing-website/</guid>
+      <guid>http://localhost:1313/posts/projects/mr.-pointing-website/</guid>
       <description>Modified: August 02 2024&#xA;So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:&#xA;Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Ignore Templates, re-route Excalidraw Get mr.pointing domain name Create README Update/Connect GitHub Start Hosting Hugo Using Cloudflare So some updates before I go to bed:</description>
     </item>
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://mrpointing.com/posts/computer-science/hugo/getting-started-with-hugo/</link>
+      <link>http://localhost:1313/posts/computer-science/hugo/getting-started-with-hugo/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/computer-science/hugo/getting-started-with-hugo/</guid>
+      <guid>http://localhost:1313/posts/computer-science/hugo/getting-started-with-hugo/</guid>
       <description>Last Modified: August 01 2024&#xA;Quick Start It&amp;rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.&#xA;To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.&#xA;You also need to have Git installed.&#xA;Once both are done, you can run the following commands:&#xA;hugo new site quicksite This creates a new directory that will become our new website.</description>
     </item>
     <item>
       <title>Hosting Hugo Using Cloudflare\</title>
-      <link>https://mrpointing.com/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</link>
+      <link>http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</guid>
+      <guid>http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</guid>
       <description>Last Modified: August 02 2024&#xA;Link to the documentation</description>
     </item>
     <item>
       <title>Jobany Rosario</title>
-      <link>https://mrpointing.com/posts/projects/jobany-rosario/</link>
+      <link>http://localhost:1313/posts/projects/jobany-rosario/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/projects/jobany-rosario/</guid>
+      <guid>http://localhost:1313/posts/projects/jobany-rosario/</guid>
       <description>Modified: July 02 2024&#xA;New updated Schedule:&#xA;Monday:&#xA;Dojo 11am - 12pm 8pm - 9pm Wednesday:&#xA;Dojo 11am - 12pm Clockwork 7:30pm - 8:30pm Tuesday/Thursday/Friday:&#xA;Link to contact for privates </description>
     </item>
   </channel>
