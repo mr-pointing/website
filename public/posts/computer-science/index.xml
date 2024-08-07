@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Computer Science on Mr. Pointing</title>
-        <link>https://mrpointing.com/posts/computer-science/</link>
+        <link>http://localhost:1313/posts/computer-science/</link>
         <description>Recent content in Computer Science on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://mrpointing.com/posts/computer-science/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/posts/computer-science/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Flask Notes</title>
-            <link>https://mrpointing.com/posts/computer-science/flask-notes/</link>
+            <link>http://localhost:1313/posts/computer-science/flask-notes/</link>
             <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/flask-notes/</guid>
+            <guid>http://localhost:1313/posts/computer-science/flask-notes/</guid>
             <description>Notes on Flask</description>
             <content type="html"><![CDATA[<p>Notes on Flask</p>
 ]]></content>
@@ -22,10 +22,10 @@
         
         <item>
             <title>Hugo Notes</title>
-            <link>https://mrpointing.com/posts/computer-science/hugo/</link>
+            <link>http://localhost:1313/posts/computer-science/hugo/</link>
             <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/hugo/</guid>
+            <guid>http://localhost:1313/posts/computer-science/hugo/</guid>
             <description>Notes on Hugo</description>
             <content type="html"><![CDATA[<p>Notes on Hugo</p>
 ]]></content>
@@ -33,10 +33,10 @@
         
         <item>
             <title>Apache Documentation</title>
-            <link>https://mrpointing.com/posts/computer-science/apache-documentation/</link>
+            <link>http://localhost:1313/posts/computer-science/apache-documentation/</link>
             <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/apache-documentation/</guid>
+            <guid>http://localhost:1313/posts/computer-science/apache-documentation/</guid>
             <description>Modified: August 02 2024
 Link to documentation.</description>
             <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
@@ -47,10 +47,10 @@ Link to documentation.</description>
         
         <item>
             <title>Cookies</title>
-            <link>https://mrpointing.com/posts/computer-science/cookies/</link>
+            <link>http://localhost:1313/posts/computer-science/cookies/</link>
             <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/cookies/</guid>
+            <guid>http://localhost:1313/posts/computer-science/cookies/</guid>
             <description>Modified: August 02 2024
 Link to Cloudflare, super helpful resource.
 A cookie is a piece of data sent from a web server to a web browser filled with information about the client and session, created when the request was sent from the client to the server.
@@ -79,10 +79,10 @@ Session Info: Storing the session info in the cookie allows you to do things lik
         
         <item>
             <title>Introduction to Algorithms - Preface</title>
-            <link>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/</link>
+            <link>http://localhost:1313/posts/computer-science/introduction-to-algorithms/</link>
             <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/</guid>
+            <guid>http://localhost:1313/posts/computer-science/introduction-to-algorithms/</guid>
             <description>Created: July 17 2024 Modified: August 02 2024
 Fourth Edition Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein Preface Algorithms are everywhere, apart of almost everything we do, and every decision we make. They are part of most if not all tech stacks used today.
 Each chapter in this book will present an algorithm, an application area for some algorithm, or some other related topic.
@@ -119,16 +119,16 @@ Modified: August 02 2024</p>
 </ul>
 <hr>
 <p>Next:
-<a href="https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/">Chapter 1</a></p>
+<a href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/">Chapter 1</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>PyCharm IDE Features</title>
-            <link>https://mrpointing.com/posts/computer-science/pycharm-ide-features/</link>
+            <link>http://localhost:1313/posts/computer-science/pycharm-ide-features/</link>
             <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/pycharm-ide-features/</guid>
+            <guid>http://localhost:1313/posts/computer-science/pycharm-ide-features/</guid>
             <description>Modified: July 23 2024
 Get Acquainted with PyCharm The project view is one of the main tool windows, containing the project directory, external libraries, and scratch files. You can also open it with Alt 1. The Python interpreter is easily viewable in the status bar in the bottom right. You can run, debug, or other option on the top right of the window. You can also press Shift F10. We got an unexpected error in our code, featured below.</description>
             <content type="html"><![CDATA[<p>Modified: July 23 2024</p>
@@ -205,10 +205,10 @@ Get Acquainted with PyCharm The project view is one of the main tool windows, co
         
         <item>
             <title>Formatting Percentages</title>
-            <link>https://mrpointing.com/posts/computer-science/formatting-percentages/</link>
+            <link>http://localhost:1313/posts/computer-science/formatting-percentages/</link>
             <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/formatting-percentages/</guid>
+            <guid>http://localhost:1313/posts/computer-science/formatting-percentages/</guid>
             <description>Modified: July 03 2024
 7/3/2024
 Taken from this article.
@@ -246,10 +246,10 @@ Rounding and Float/String Types: round() takes two parameters: a value and a num
         
         <item>
             <title>HTTP Semantics</title>
-            <link>https://mrpointing.com/posts/computer-science/http-semantics/</link>
+            <link>http://localhost:1313/posts/computer-science/http-semantics/</link>
             <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/http-semantics/</guid>
+            <guid>http://localhost:1313/posts/computer-science/http-semantics/</guid>
             <description>Modified: June 20 2024
 Following this documentation.</description>
             <content type="html"><![CDATA[<p>Modified: June 20 2024</p>
@@ -260,10 +260,10 @@ Following this documentation.</description>
         
         <item>
             <title>NumPy</title>
-            <link>https://mrpointing.com/posts/computer-science/numpy/</link>
+            <link>http://localhost:1313/posts/computer-science/numpy/</link>
             <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/numpy/</guid>
+            <guid>http://localhost:1313/posts/computer-science/numpy/</guid>
             <description>Modified: June 20 2024
 Link to documentation</description>
             <content type="html"><![CDATA[<p>Modified: June 20 2024</p>
@@ -274,10 +274,10 @@ Link to documentation</description>
         
         <item>
             <title>AI Engineer Roadmap</title>
-            <link>https://mrpointing.com/posts/computer-science/ai-engineer-roadmap/</link>
+            <link>http://localhost:1313/posts/computer-science/ai-engineer-roadmap/</link>
             <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/ai-engineer-roadmap/</guid>
+            <guid>http://localhost:1313/posts/computer-science/ai-engineer-roadmap/</guid>
             <description>Modified: August 02 2024
 A resource by Code Basics
 We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.
@@ -307,7 +307,7 @@ Another two weeks in. I definitely overshot myself, which isn&rsquo;t a bad thin
 <p><a href="https://www.youtube.com/watch?v=QdnxjYj1pS0">Compilers, How They Work, And Writing Them From Scratch</a></p>
 <p>I don&rsquo;t remember why but I saw this and thought it was super interesting.</p>
 <p><a href="https://www.youtube.com/watch?v=-mN3VyJuCjM&t=4s">What Is REST API? Examples And How To Use It: Crash Course System Design #3</a></p>
-<p>This really helped my understanding of REST and helped me understand that concepts I used in my <a href="https://mrpointing.com/projects/designing-a-restful-api/">Designing a RESTful API</a> note. The notes on the REST there.</p>
+<p>This really helped my understanding of REST and helped me understand that concepts I used in my <a href="http://localhost:1313/projects/designing-a-restful-api/">Designing a RESTful API</a> note. The notes on the REST there.</p>
 <p>On that note, I think a project a week is worth it.</p>
 <p>As far as the PDF goes, I&rsquo;m pretty much at where they expect.</p>
 <h2 id="week-5-and-6-73---717"><strong>Week 5 and 6 (7/3 - 7/17)</strong></h2>
@@ -323,9 +323,9 @@ Another two weeks in. I definitely overshot myself, which isn&rsquo;t a bad thin
 <p>I finished the Python documentation, but want more info on how to use Python as an object oriented language. I played around with a few examples but I’d like a structured walk through to turn into a lesson for my upperclassmen.</p>
 <p>I technically did finish 3 YouTube videos, but since I only did a write up on two of them, I’ll say it wasn’t accomplished.</p>
 <p>I’m going to keep up 4 objectives; I might reuse one or two.</p>
-<p><a href="https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/">Become a Shell Wizard in ~12 Minutes</a> was the first video which got me way more excited to learn DevOps stuff.</p>
-<p><a href="https://mrpointing.com/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/">You Can Do Really Cool Things With Functions in Python</a> also got me excited, and really pushed me to want to understand more complex Python. Again, more Object Oriented Concepts, mixed with Data classes.</p>
-<p>Starting the <a href="https://mrpointing.com/posts/computer-science/flask-notes/flask/">Flask</a> documentation also got me working on my capstone project again. I will have to make a note here to track all of that progress.</p>
+<p><a href="http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/">Become a Shell Wizard in ~12 Minutes</a> was the first video which got me way more excited to learn DevOps stuff.</p>
+<p><a href="http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/">You Can Do Really Cool Things With Functions in Python</a> also got me excited, and really pushed me to want to understand more complex Python. Again, more Object Oriented Concepts, mixed with Data classes.</p>
+<p>Starting the <a href="http://localhost:1313/posts/computer-science/flask-notes/flask/">Flask</a> documentation also got me working on my capstone project again. I will have to make a note here to track all of that progress.</p>
 <p>I’m also starting something new these next two weeks. The objective for the next week is to study algorithms; something I’m particularly bad at. In order to study harder, and hopefully retain more info, I’m going to take notes by hand, then transfer them to Obsidian. We’ll see how that works</p>
 <h2 id="week-7-and-8-718---81"><strong>Week 7 and 8 (7/18 - 8/1)</strong></h2>
 <ul>
@@ -333,9 +333,9 @@ Another two weeks in. I definitely overshot myself, which isn&rsquo;t a bad thin
 </ul>
 <p>8/2/2024</p>
 <p>I got a lot done, more so than I thought I was going to. Not only that, I&rsquo;ve really cleared out my projects list for the next few months. I want to prioritize my time to get my website up, so I can start some online presence. I definitely didn&rsquo;t get anywhere near close to finished with Chapters 1-9, but it&rsquo;s very dense text.</p>
-<p><a href="https://mrpointing.com/posts/computer-science/videos/browsers-http-and-you/">Browsers HTTP and You!</a> was pretty bunk, the video wasn&rsquo;t very popular and it seemed like it was one of his first videos because he didn&rsquo;t talk very confidently. I stopped after 5 minutes.</p>
-<p><a href="https://mrpointing.com/posts/computer-science/videos/how-to-start-a-homelab-for-0/">How to Start a Homelab for $0</a> is more of the same from this YouTuber. I&rsquo;ve been watching his videos following his influence on wanting to use Hugo to host my website. Homelab seems cool, but it&rsquo;s definitely lower on my list considering what else I&rsquo;d like to do right now.</p>
-<p><a href="https://mrpointing.com/posts/computer-science/videos/how-to-use-@dataclass-in-python/">How To Use @dataclass in Python</a> was really interesting, I want to start working on some projects and try to find ways to use data classes instead of regular classes.</p>
+<p><a href="http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/">Browsers HTTP and You!</a> was pretty bunk, the video wasn&rsquo;t very popular and it seemed like it was one of his first videos because he didn&rsquo;t talk very confidently. I stopped after 5 minutes.</p>
+<p><a href="http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/">How to Start a Homelab for $0</a> is more of the same from this YouTuber. I&rsquo;ve been watching his videos following his influence on wanting to use Hugo to host my website. Homelab seems cool, but it&rsquo;s definitely lower on my list considering what else I&rsquo;d like to do right now.</p>
+<p><a href="http://localhost:1313/posts/computer-science/videos/how-to-use-@dataclass-in-python/">How To Use @dataclass in Python</a> was really interesting, I want to start working on some projects and try to find ways to use data classes instead of regular classes.</p>
 <p>I think I&rsquo;d like to keep the same objectives for the next two weeks.</p>
 <h2 id="week-9-and-10-82---816"><strong>Week 9 and 10 (8/2 - 8/16)</strong></h2>
 <ul>
@@ -350,10 +350,10 @@ Another two weeks in. I definitely overshot myself, which isn&rsquo;t a bad thin
         
         <item>
             <title>Khan Academy</title>
-            <link>https://mrpointing.com/posts/computer-science/khan-academy/</link>
+            <link>http://localhost:1313/posts/computer-science/khan-academy/</link>
             <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/khan-academy/</guid>
+            <guid>http://localhost:1313/posts/computer-science/khan-academy/</guid>
             <description>Khan Academy Courses I&amp;rsquo;ve taken.</description>
             <content type="html"><![CDATA[<p>Khan Academy Courses I&rsquo;ve taken.</p>
 ]]></content>
@@ -361,10 +361,10 @@ Another two weeks in. I definitely overshot myself, which isn&rsquo;t a bad thin
         
         <item>
             <title>Leet Code Problems</title>
-            <link>https://mrpointing.com/posts/computer-science/leet-code-problems/</link>
+            <link>http://localhost:1313/posts/computer-science/leet-code-problems/</link>
             <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/leet-code-problems/</guid>
+            <guid>http://localhost:1313/posts/computer-science/leet-code-problems/</guid>
             <description>Leet Code Problems I&amp;rsquo;ve worked on.</description>
             <content type="html"><![CDATA[<p>Leet Code Problems I&rsquo;ve worked on.</p>
 ]]></content>
@@ -372,10 +372,10 @@ Another two weeks in. I definitely overshot myself, which isn&rsquo;t a bad thin
         
         <item>
             <title>The Python Tutorial</title>
-            <link>https://mrpointing.com/posts/computer-science/python-tutorial/</link>
+            <link>http://localhost:1313/posts/computer-science/python-tutorial/</link>
             <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/python-tutorial/</guid>
+            <guid>http://localhost:1313/posts/computer-science/python-tutorial/</guid>
             <description>Following the Python Documentation&amp;rsquo;s Tutorial.</description>
             <content type="html"><![CDATA[<p>Following the Python Documentation&rsquo;s Tutorial.</p>
 ]]></content>
@@ -383,10 +383,10 @@ Another two weeks in. I definitely overshot myself, which isn&rsquo;t a bad thin
         
         <item>
             <title>Videos</title>
-            <link>https://mrpointing.com/posts/computer-science/videos/</link>
+            <link>http://localhost:1313/posts/computer-science/videos/</link>
             <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/videos/</guid>
+            <guid>http://localhost:1313/posts/computer-science/videos/</guid>
             <description>Videos I&amp;rsquo;ve watched. Usually from YouTube.</description>
             <content type="html"><![CDATA[<p>Videos I&rsquo;ve watched. Usually from YouTube.</p>
 ]]></content>

@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Flask Notes on Mr. Pointing</title>
-        <link>https://mrpointing.com/posts/computer-science/flask-notes/</link>
+        <link>http://localhost:1313/posts/computer-science/flask-notes/</link>
         <description>Recent content in Flask Notes on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://mrpointing.com/posts/computer-science/flask-notes/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/posts/computer-science/flask-notes/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Blinker</title>
-            <link>https://mrpointing.com/posts/computer-science/flask-notes/blinker/</link>
+            <link>http://localhost:1313/posts/computer-science/flask-notes/blinker/</link>
             <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/flask-notes/blinker/</guid>
+            <guid>http://localhost:1313/posts/computer-science/flask-notes/blinker/</guid>
             <description>Modified: July 31 2024
 Link to documentation.</description>
             <content type="html"><![CDATA[<p>Modified: July 31 2024</p>
@@ -25,10 +25,10 @@ Link to documentation.</description>
         
         <item>
             <title>Click</title>
-            <link>https://mrpointing.com/posts/computer-science/flask-notes/click/</link>
+            <link>http://localhost:1313/posts/computer-science/flask-notes/click/</link>
             <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/flask-notes/click/</guid>
+            <guid>http://localhost:1313/posts/computer-science/flask-notes/click/</guid>
             <description>Modified: July 31 2024
 Link to the documentation.</description>
             <content type="html"><![CDATA[<p>Modified: July 31 2024</p>
@@ -39,10 +39,10 @@ Link to the documentation.</description>
         
         <item>
             <title>Jinja</title>
-            <link>https://mrpointing.com/posts/computer-science/flask-notes/jinja/</link>
+            <link>http://localhost:1313/posts/computer-science/flask-notes/jinja/</link>
             <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/flask-notes/jinja/</guid>
+            <guid>http://localhost:1313/posts/computer-science/flask-notes/jinja/</guid>
             <description>Modified: July 31 2024
 Link to documentation.</description>
             <content type="html"><![CDATA[<p>Modified: July 31 2024</p>
@@ -53,10 +53,10 @@ Link to documentation.</description>
         
         <item>
             <title>Werkzeug</title>
-            <link>https://mrpointing.com/posts/computer-science/flask-notes/werkzeug/</link>
+            <link>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</link>
             <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/flask-notes/werkzeug/</guid>
+            <guid>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</guid>
             <description>Modified: July 31 2024
 Link to documentation.
 First of all, what is WSGI?
@@ -71,10 +71,10 @@ Web Server Gateway Interface, a specification that describes how a web server co
         
         <item>
             <title>Flask</title>
-            <link>https://mrpointing.com/posts/computer-science/flask-notes/flask/</link>
+            <link>http://localhost:1313/posts/computer-science/flask-notes/flask/</link>
             <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/flask-notes/flask/</guid>
+            <guid>http://localhost:1313/posts/computer-science/flask-notes/flask/</guid>
             <description>Modified: August 02 2024
 Link to documentation.
 Flask is a framework to create applications via Python. It makes web based applications rather simple.
@@ -93,12 +93,12 @@ Werkzeug uses WSGI, the standard Python interface between applications and serve
 <h3 id="dependencies">Dependencies</h3>
 <p>The following are installed automatically when installing Flask:</p>
 <ul>
-<li><a href="https://mrpointing.com/posts/computer-science/flask-notes/werkzeug/">Werkzeug</a> uses WSGI, the standard Python interface between applications and servers.</li>
-<li><a href="https://mrpointing.com/posts/computer-science/flask-notes/jinja/">Jinja</a> is a template language that renders the pages your application serves.</li>
+<li><a href="http://localhost:1313/posts/computer-science/flask-notes/werkzeug/">Werkzeug</a> uses WSGI, the standard Python interface between applications and servers.</li>
+<li><a href="http://localhost:1313/posts/computer-science/flask-notes/jinja/">Jinja</a> is a template language that renders the pages your application serves.</li>
 <li><a href="https://palletsprojects.com/p/markupsafe/">MarkupSafe</a> comes packaged with Jinja, and is used to avoid injection attacks.</li>
 <li><a href="https://palletsprojects.com/p/itsdangerous/">ItsDangerous</a> signs data securely to ensure integrity to protect Flask&rsquo;s session cookie</li>
-<li><a href="https://mrpointing.com/posts/computer-science/flask-notes/click/">Click</a> is a framework that you use for writing command line applications. It allows the <code>flask</code> command and custom commands</li>
-<li><a href="https://mrpointing.com/posts/computer-science/flask-notes/blinker/">Blinker</a> provides support for Signals</li>
+<li><a href="http://localhost:1313/posts/computer-science/flask-notes/click/">Click</a> is a framework that you use for writing command line applications. It allows the <code>flask</code> command and custom commands</li>
+<li><a href="http://localhost:1313/posts/computer-science/flask-notes/blinker/">Blinker</a> provides support for Signals</li>
 </ul>
 <h3 id="virtual-environments">Virtual Environments</h3>
 <p>Flask promotes the use of a virtual environment to manage the dependencies of the project.</p>
@@ -224,7 +224,7 @@ Werkzeug uses WSGI, the standard Python interface between applications and serve
 <li>URL building handles escaping of special characters</li>
 <li>Generated paths are always absolute, avoiding unexpected behavior</li>
 </ol>
-<p>In my project, <a href="https://mrpointing.com/projects/lython/">Lython</a>, I would often use <code>url_for()</code> in order to redirect after authorization or moving pages.</p>
+<p>In my project, <a href="http://localhost:1313/projects/lython/">Lython</a>, I would often use <code>url_for()</code> in order to redirect after authorization or moving pages.</p>
 <p>Below, we can see an example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> url_for
 </span></span><span style="display:flex;"><span>
@@ -272,7 +272,7 @@ Werkzeug uses WSGI, the standard Python interface between applications and serve
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>url_for(<span style="color:#e6db74">&#39;static&#39;</span>, filename<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;style.css&#39;</span>)
 </span></span></code></pre></div><p>7/28/24</p>
 <h3 id="rendering-templates">Rendering Templates</h3>
-<p>The process of generating HTML from Python is a task that takes time, due to having to manually escape all of the HTML yourself. Flask uses <a href="https://mrpointing.com/posts/computer-science/flask-notes/jinja/">Jinja</a> to make that happen automatically.</p>
+<p>The process of generating HTML from Python is a task that takes time, due to having to manually escape all of the HTML yourself. Flask uses <a href="http://localhost:1313/posts/computer-science/flask-notes/jinja/">Jinja</a> to make that happen automatically.</p>
 <p>Templates aren&rsquo;t just HTML files; they can also be markdown or plain text. Flask will access all templates in it&rsquo;s own separate <code>templates</code> directory.</p>
 <p>Thankfully the syntax is simple:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> render_template
@@ -289,7 +289,7 @@ Werkzeug uses WSGI, the standard Python interface between applications and serve
 </span></span><span style="display:flex;"><span>{% else %}
 </span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">h1</span>&gt;Hello, world!&lt;/<span style="color:#f92672">h1</span>&gt;
 </span></span><span style="display:flex;"><span>{% endif %}
-</span></span></code></pre></div><p>Template inheritance is also possible, where a single template will feed itself into another. This is especially helpful when designing consistent looking pages. See <a href="https://mrpointing.com/projects/lython/">Lython</a> for example on how that ends up looking.</p>
+</span></span></code></pre></div><p>Template inheritance is also possible, where a single template will feed itself into another. This is especially helpful when designing consistent looking pages. See <a href="http://localhost:1313/projects/lython/">Lython</a> for example on how that ends up looking.</p>
 <h3 id="accessing-request-data">Accessing Request Data</h3>
 <p>Its extremely important that your application responds/reacts to whenever a client sends something to a server. The <code>request</code> object from Flask handles this task for us.</p>
 <h4 id="context-locals">Context Locals</h4>
@@ -333,7 +333,7 @@ Werkzeug uses WSGI, the standard Python interface between applications and serve
 </span></span></code></pre></div><p><a href="https://flask.palletsprojects.com/en/3.0.x/patterns/fileuploads/">Uploading Files</a> goes a bit more in-depth than this.</p>
 <p>7/31/24</p>
 <h4 id="cookies">Cookies</h4>
-<p>I needed a refresher on what a cookie was honestly, so see <a href="https://mrpointing.com/posts/computer-science/cookies/">Cookies</a> for that.</p>
+<p>I needed a refresher on what a cookie was honestly, so see <a href="http://localhost:1313/posts/computer-science/cookies/">Cookies</a> for that.</p>
 <p>Through <code>request</code>, we can access the <code>cookies</code> attribute. Within Flask, the <code>cookies</code> attribute exists as a dictionary, containing all of the cookies the client transmitted.</p>
 <p>For Session cookies, you can use Flask&rsquo;s built-in Session area below.</p>
 <p>Below are two examples on how to read in and store cookies:</p>

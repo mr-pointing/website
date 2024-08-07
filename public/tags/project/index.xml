@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/project/</link>
+    <link>http://localhost:1313/tags/project/</link>
     <description>Recent content in Project on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mr. Pointing Website</title>
-      <link>https://mrpointing.com/projects/mr.-pointing-website/</link>
+      <link>http://localhost:1313/projects/mr.-pointing-website/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/mr.-pointing-website/</guid>
+      <guid>http://localhost:1313/projects/mr.-pointing-website/</guid>
       <description>Modified: August 02 2024&#xA;So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:&#xA;Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Ignore Templates, re-route Excalidraw Get mr.pointing domain name Create README Update/Connect GitHub Start Hosting Hugo Using Cloudflare So some updates before I go to bed:</description>
     </item>
     <item>
       <title>Deploying a Flask Application via Apache</title>
-      <link>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</link>
+      <link>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</guid>
+      <guid>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</guid>
       <description>Modified: August 02 2024&#xA;Link to the project website.</description>
     </item>
     <item>
       <title>Raspberry Pi NAS</title>
-      <link>https://mrpointing.com/projects/raspberry-pi-nas/</link>
+      <link>http://localhost:1313/projects/raspberry-pi-nas/</link>
       <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/raspberry-pi-nas/</guid>
+      <guid>http://localhost:1313/projects/raspberry-pi-nas/</guid>
       <description>Modified: July 14 2024&#xA;Link</description>
     </item>
     <item>
       <title>Jobany Rosario</title>
-      <link>https://mrpointing.com/projects/jobany-rosario/</link>
+      <link>http://localhost:1313/projects/jobany-rosario/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/jobany-rosario/</guid>
+      <guid>http://localhost:1313/projects/jobany-rosario/</guid>
       <description>Modified: July 02 2024&#xA;New updated Schedule:&#xA;Monday:&#xA;Dojo 11am - 12pm 8pm - 9pm Wednesday:&#xA;Dojo 11am - 12pm Clockwork 7:30pm - 8:30pm Tuesday/Thursday/Friday:&#xA;Link to contact for privates </description>
     </item>
     <item>
       <title>Designing a RESTful API</title>
-      <link>https://mrpointing.com/projects/designing-a-restful-api/</link>
+      <link>http://localhost:1313/projects/designing-a-restful-api/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/designing-a-restful-api/</guid>
+      <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
       <description>Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
     </item>
     <item>
       <title>Future Projects</title>
-      <link>https://mrpointing.com/projects/future-projects/</link>
+      <link>http://localhost:1313/projects/future-projects/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/future-projects/</guid>
+      <guid>http://localhost:1313/projects/future-projects/</guid>
       <description>Modified: June 20 2024&#xA;Obsidian Related:&#xA;Integrate an AI model into Obsidian as a plug-in LLM trained on my Obsidian data Obsidian plug-in that automates a bibliography from links Website related:&#xA;Python script that automates adding .md to Excalidraw files after Obsidian to Hugo transfer. </description>
     </item>
     <item>
       <title>Vinyl Visualizer</title>
-      <link>https://mrpointing.com/projects/vinyl-visualizer/</link>
+      <link>http://localhost:1313/projects/vinyl-visualizer/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/vinyl-visualizer/</guid>
+      <guid>http://localhost:1313/projects/vinyl-visualizer/</guid>
       <description>Modified: June 22 2024&#xA;A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.&#xA;To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.&#xA;I first asked ChatGPT 3.5 for advice.&#xA;I also asked ChatGPT 4o and got a little better/pointed advice.</description>
     </item>
   </channel>
