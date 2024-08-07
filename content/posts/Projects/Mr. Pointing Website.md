@@ -1,7 +1,7 @@
 ---
 aliases:
   - website
-draft: true
+draft: false
 tags:
   - computerscience
   - website

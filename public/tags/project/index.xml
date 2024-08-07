@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mr. Pointing Website</title>
+      <link>https://mrpointing.com/posts/projects/mr.-pointing-website/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/posts/projects/mr.-pointing-website/</guid>
+      <description>Modified: August 02 2024&#xA;So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:&#xA;Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Ignore Templates, re-route Excalidraw Get mr.pointing domain name Create README Update/Connect GitHub Start Hosting Hugo Using Cloudflare So some updates before I go to bed:</description>
+    </item>
     <item>
       <title>Deploying a Flask Application via Apache</title>
       <link>https://mrpointing.com/posts/projects/deploying-a-flask-application-via-apache/</link>

@@ -16,5 +16,12 @@
       <guid>https://mrpointing.com/posts/projects/lython/</guid>
       <description>Modified: July 19 2024&#xA;Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
     </item>
+    <item>
+      <title>AI Engineer Roadmap</title>
+      <link>https://mrpointing.com/posts/computer-science/ai-engineer-roadmap/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/posts/computer-science/ai-engineer-roadmap/</guid>
+      <description>Modified: August 02 2024&#xA;A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject.</description>
+    </item>
   </channel>
 </rss>

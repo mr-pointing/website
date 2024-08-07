@@ -10,6 +10,160 @@
         <atom:link href="https://mrpointing.com/posts/projects/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Mr. Pointing Website</title>
+            <link>https://mrpointing.com/posts/projects/mr.-pointing-website/</link>
+            <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/projects/mr.-pointing-website/</guid>
+            <description>Modified: August 02 2024
+So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:
+Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Ignore Templates, re-route Excalidraw Get mr.pointing domain name Create README Update/Connect GitHub Start Hosting Hugo Using Cloudflare So some updates before I go to bed:</description>
+            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
+<hr>
+<p>So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Get pages formatted to look good on Hugo</li>
+<li><input disabled="" type="checkbox"> Add <code>date</code> property to all pages</li>
+<li><input disabled="" type="checkbox"> Get Excalidraw images linked</li>
+<li><input disabled="" type="checkbox"> Ignore Templates, re-route Excalidraw</li>
+<li><input checked="" disabled="" type="checkbox"> Get mr.pointing domain name</li>
+<li><input disabled="" type="checkbox"> Create README</li>
+<li><input checked="" disabled="" type="checkbox"> Update/Connect GitHub</li>
+<li><input checked="" disabled="" type="checkbox"> Start <a href="https://mrpointing.com/posts/computer-science/hugo/hosting-hugo-using-cloudflare/">Hosting Hugo Using Cloudflare</a></li>
+</ul>
+<p>So some updates before I go to bed:</p>
+<ul>
+<li>There&rsquo;s an issue where the images need to be told explicitly, when turned into Hugo Markdown files, that the Excalidraw files are actually markdown files. So those have to be edited manually.</li>
+<li>All attachments need to be rewritten to not point to a markdown file like obsidian uses, but using Hugo&rsquo;s image reference <code>{{ $image := resources.Get &quot;images/sunset.jpg&quot; }}</code></li>
+</ul>
+<p>Dates have to be in this format:</p>
+<pre tabindex="0"><code>YYYY-MM-DD
+</code></pre><p>Replace Text Script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pathlib <span style="color:#f92672">import</span> Path  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">read_file</span>(file_path):  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(file_path, <span style="color:#e6db74">&#39;r&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;utf-8&#39;</span>) <span style="color:#66d9ef">as</span> file:  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> file<span style="color:#f92672">.</span>read()  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">write_file</span>(file_path, content):  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(file_path, <span style="color:#e6db74">&#39;w&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;utf-8&#39;</span>) <span style="color:#66d9ef">as</span> file:  
+</span></span><span style="display:flex;"><span>        file<span style="color:#f92672">.</span>write(content)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">replace_text_in_content</span>(content, search_text, replacement_text):  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> re<span style="color:#f92672">.</span>sub(search_text, replacement_text, content)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_directory</span>(directory_path, search_text, replacement_text):  
+</span></span><span style="display:flex;"><span>    pathlist <span style="color:#f92672">=</span> Path(directory_path)<span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#39;**/*.md&#39;</span>)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> path <span style="color:#f92672">in</span> pathlist:  
+</span></span><span style="display:flex;"><span>        path_in_str <span style="color:#f92672">=</span> str(path)  
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Processing file: </span><span style="color:#e6db74">{</span>path_in_str<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>        content <span style="color:#f92672">=</span> read_file(path_in_str)  
+</span></span><span style="display:flex;"><span>        new_content <span style="color:#f92672">=</span> replace_text_in_content(content, search_text, replacement_text)  
+</span></span><span style="display:flex;"><span>        write_file(path_in_str, new_content)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():  
+</span></span><span style="display:flex;"><span>    directory_path <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter the directory path: &#34;</span>)  
+</span></span><span style="display:flex;"><span>    search_text <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter the text to search for: &#34;</span>)  
+</span></span><span style="display:flex;"><span>    replacement_text <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter the text to replace with: &#34;</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    process_directory(directory_path, search_text, replacement_text)  
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Text replacement completed.&#34;</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:  
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div><p>Obsidian to Hugo Script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> obsidian_to_hugo <span style="color:#f92672">import</span> ObsidianToHugo  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">filter_file</span>(file_contents: str, file_path: str) <span style="color:#f92672">-&gt;</span> bool:  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;draft: false&#39;</span> <span style="color:#f92672">in</span> file_contents:  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>obsidian_to_hugo <span style="color:#f92672">=</span> ObsidianToHugo(  
+</span></span><span style="display:flex;"><span>    obsidian_vault_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;C:/Users/rpoin/Documents/Main Brain&#34;</span>,  
+</span></span><span style="display:flex;"><span>    hugo_content_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;C:/Users/rpoin/quicksite/content&#34;</span>,  
+</span></span><span style="display:flex;"><span>    filters<span style="color:#f92672">=</span>[filter_file],  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>obsidian_to_hugo<span style="color:#f92672">.</span>run()
+</span></span></code></pre></div><p>My first initial <code>.toml</code> file:</p>
+<pre tabindex="0"><code>baseURL = &#39;https://example.org/&#39;
+languageCode = &#39;en-us&#39;
+title = &#39;mr.pointing&#39;
+theme = &#39;hello-friend-ng&#39;
+
+paginate     = 10
+
+[params]
+  dateform        = &#34;Jan 2, 2006&#34;
+  dateformShort   = &#34;Jan 2&#34;
+  dateformNum     = &#34;2006-01-02&#34;
+  dateformNumTime = &#34;2006-01-02 15:04&#34;
+
+  # Subtitle for home
+  homeSubtitle = &#34;Python Teacher&#34;
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = false
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = false
+
+  # Metadata mostly used in document&#39;s head
+  description = &#34;My new homepage or blog&#34;
+  keywords = &#34;homepage, blog&#34;
+  images = [&#34;&#34;]
+
+[taxonomies]
+    category = &#34;blog&#34;
+    tag      = &#34;tags&#34;
+    series   = &#34;series&#34;
+
+[languages]
+  [languages.en]
+    title = &#34;Mr. Pointing&#34;
+    keywords = &#34;&#34;
+    copyright = &#39;&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;&#39;
+    
+
+  [languages.en.params]
+    subtitle  = &#34;Python Teacher&#34;
+
+    [languages.en.params.logo]
+      logoText = &#34;mr. pointing&#34;
+      logoHomeLink = &#34;/&#34;
+    # or
+    #
+    # path = &#34;/img/your-example-logo.svg&#34;
+    # alt = &#34;Your example logo alt text&#34;
+
+  # And you can even create generic menu
+  [menu.main]
+    identifier = &#34;blog&#34;
+    name       = &#34;Posts&#34;
+    url        = &#34;/posts&#34;
+	
+  [menu.main]
+    identifier = &#34;about&#34;
+    name       = &#34;About&#34;
+    url        = &#34;/about&#34;
+</code></pre><p>Ask ChatGPT with a picture of the website to give it a color scheme in hex based off red instead of hex # fe5186.</p>
+<p>Images I think go in the metadata of the file?</p>
+<p>I downloaded <a href="https://github.com/anvithks/hugo-embed-pdf-shortcode">an embed pdf shortcut</a> to help out, you can use it like this:</p>
+<p>The PDF embed didn’t work, I think it might be a linking issue.</p>
+<p>Need to fix the projects pages, need a date fix.</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Deploying a Flask Application via Apache</title>
             <link>https://mrpointing.com/posts/projects/deploying-a-flask-application-via-apache/</link>
             <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>

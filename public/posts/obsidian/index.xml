@@ -23,5 +23,27 @@ Link to the video.</description>
 ]]></content>
         </item>
         
+        <item>
+            <title>Templater Formatting Notes</title>
+            <link>https://mrpointing.com/posts/obsidian/templater-formatting-notes/</link>
+            <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/obsidian/templater-formatting-notes/</guid>
+            <description>Modified: July 26 2024
+Link to Templater Documentation.</description>
+            <content type="html"><![CDATA[<p>Modified: July 26 2024</p>
+<hr>
+
+    <img src="/images/DateFormatting.png"  alt="DateFormatting"  class="center"  style="border-radius: 8px;"  />
+
+
+
+    <img src="/images/Time%20Formatting.png"  alt="Time Formatting"  class="center"  style="border-radius: 8px;"  />
+
+
+<p><a href="https://silentvoid13.github.io/Templater/introduction.html">Link</a> to Templater Documentation.</p>
+]]></content>
+        </item>
+        
     </channel>
 </rss>

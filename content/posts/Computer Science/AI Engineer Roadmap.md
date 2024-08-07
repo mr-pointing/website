@@ -1,7 +1,7 @@
 ---
 aliases:
   - AI
-draft: true
+draft: false
 tags:
   - computerscience
   - AI
