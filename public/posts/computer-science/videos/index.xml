@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Videos on Mr. Pointing</title>
-        <link>https://mrpointing.com/posts/computer-science/videos/</link>
+        <link>http://localhost:1313/posts/computer-science/videos/</link>
         <description>Recent content in Videos on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://mrpointing.com/posts/computer-science/videos/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/posts/computer-science/videos/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>How to Start a Homelab for $0</title>
-            <link>https://mrpointing.com/posts/computer-science/videos/how-to-start-a-homelab-for-0/</link>
+            <link>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</link>
             <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
+            <guid>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
             <description>Modified: July 19 2024
 Link to video.
 Building a Homelab is easier and more affordable than ever before.
@@ -31,7 +31,7 @@ One way to start is with an old laptop.</description>
 <p>Self hosting might need something more stable.</p>
 <p>One way to start is with an old laptop. The creator started with one with just 4gb of RAM.</p>
 <p>Linux runs almost anywhere with Ubuntu Server and Docker. I currently have ubuntu running on a virtual machine but haven&rsquo;t gotten very far other than basic command line instructional.</p>
-<p>Not really into this option at the moment, mostly because I&rsquo;m more interested in going the <a href="https://mrpointing.com/projects/raspberry-pi-nas/">Raspberry Pi NAS</a> route.</p>
+<p>Not really into this option at the moment, mostly because I&rsquo;m more interested in going the <a href="http://localhost:1313/projects/raspberry-pi-nas/">Raspberry Pi NAS</a> route.</p>
 <p>Oracle Free Tier has free cloud services. 32gb for free. Pretty much what I&rsquo;m doing but getting into the things mentioned previously.</p>
 <p>Microsoft Azure is also an option, apparently you get $200 worth of credit when you sign up with your card and you don&rsquo;t get charged.</p>
 <p>Plugged his community which is $29 a month&hellip;a little pricey if you ask me. I bet if I threw up one for $1 a month people would subscribe because he has over 250 people paying him (probably ~ $6000?).</p>
@@ -40,10 +40,10 @@ One way to start is with an old laptop.</description>
         
         <item>
             <title>How To Use @dataclass in Python</title>
-            <link>https://mrpointing.com/posts/computer-science/videos/how-to-use-@dataclass-in-python/</link>
+            <link>http://localhost:1313/posts/computer-science/videos/how-to-use-@dataclass-in-python/</link>
             <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
+            <guid>http://localhost:1313/posts/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
             <description>Modified: July 19 2024
 Link to video.
 Can be faster than creating a regular class.
@@ -113,10 +113,10 @@ Another way we could achieve this with regular classes is by writing an <code>__
         
         <item>
             <title>The Ultimate Guide to Writing Functions</title>
-            <link>https://mrpointing.com/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</link>
+            <link>http://localhost:1313/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</link>
             <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</guid>
+            <guid>http://localhost:1313/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</guid>
             <description>Modified: July 23 2024
 Link to video.
 Tip 1: Do one thing, and do it well A function should perform a single task.
@@ -148,10 +148,10 @@ He brings up two examples, one of a function that iterates through a collection,
         
         <item>
             <title>Browsers HTTP and You!</title>
-            <link>https://mrpointing.com/posts/computer-science/videos/browsers-http-and-you/</link>
+            <link>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</link>
             <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/videos/browsers-http-and-you/</guid>
+            <guid>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</guid>
             <description>Modified: July 19 2024
 Link to video.
 Request/Response Cycle It&amp;rsquo;s like a conversation. Client and server advertise capabilities and supported formats to one another.
@@ -181,10 +181,10 @@ Anatomy of a request GET / HTTP/1.1 Host: localhost:8001 Request body. Anatomy o
         
         <item>
             <title>You Can Do Really Cool Things With Functions in Python</title>
-            <link>https://mrpointing.com/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link>
+            <link>http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link>
             <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</guid>
+            <guid>http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</guid>
             <description>Modified: July 15 2024
 Link to video.
 This video goes over some uncommon ways to use functions in Python. It uses the following code as a base:
@@ -478,10 +478,10 @@ This video goes over some uncommon ways to use functions in Python. It uses the 
         
         <item>
             <title>Become a Shell Wizard in ~12 Minutes</title>
-            <link>https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
+            <link>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
             <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
+            <guid>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
             <description>Modified: July 19 2024
 Link to video.
 The Basics of Shell Shell, terminal, console, command line, all are essentially the same thing.

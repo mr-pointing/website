@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Mr. Pointing</title>
-        <link>https://mrpointing.com/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>Recent content in Posts on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Topics I&#39;m Interested In</title>
-            <link>https://mrpointing.com/posts/topics-im-interested-in/</link>
+            <link>http://localhost:1313/posts/topics-im-interested-in/</link>
             <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/topics-im-interested-in/</guid>
+            <guid>http://localhost:1313/posts/topics-im-interested-in/</guid>
             <description>This is an all-purpose note I&amp;rsquo;ll write down important links too, as well as connect to all sorts of things I want to learn more about.
 General Brazilian Jiu-Jitsu Jobany Rosario Wood working/building Computer Science Hardware Raspberry Pi NAS Circuit Playground Express Servers/server rooms Cyber security Encryption Algorithms Introduction to Algorithms BASIC Compression Email NAS/Home Server How to Start a Homelab for $0 Extras Link to Summer Job
 I found a pretty decent resource on Python and Machine learning.</description>
@@ -23,28 +23,28 @@ I found a pretty decent resource on Python and Machine learning.</description>
 <h2 id="general">General</h2>
 <h3 id="brazilian-jiu-jitsu">Brazilian Jiu-Jitsu</h3>
 <ul>
-<li><a href="https://mrpointing.com/projects/jobany-rosario/">Jobany Rosario</a></li>
+<li><a href="http://localhost:1313/projects/jobany-rosario/">Jobany Rosario</a></li>
 </ul>
 <h3 id="wood-workingbuilding">Wood working/building</h3>
 <h2 id="computer-science">Computer Science</h2>
 <h3 id="hardware">Hardware</h3>
 <ul>
-<li><a href="https://mrpointing.com/projects/raspberry-pi-nas/">Raspberry Pi NAS</a></li>
-<li><a href="https://mrpointing.com/projects/circuit-playground-express/">Circuit Playground Express</a></li>
+<li><a href="http://localhost:1313/projects/raspberry-pi-nas/">Raspberry Pi NAS</a></li>
+<li><a href="http://localhost:1313/projects/circuit-playground-express/">Circuit Playground Express</a></li>
 </ul>
 <h3 id="serversserver-rooms">Servers/server rooms</h3>
 <h3 id="cyber-security">Cyber security</h3>
 <h3 id="encryption">Encryption</h3>
 <h3 id="algorithms">Algorithms</h3>
 <ul>
-<li><a href="https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/">Introduction to Algorithms</a></li>
+<li><a href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/">Introduction to Algorithms</a></li>
 </ul>
 <h3 id="basic">BASIC</h3>
 <h3 id="compression">Compression</h3>
 <h3 id="email">Email</h3>
 <h3 id="nashome-server">NAS/Home Server</h3>
 <ul>
-<li><a href="https://mrpointing.com/posts/computer-science/videos/how-to-start-a-homelab-for-0/">How to Start a Homelab for $0</a></li>
+<li><a href="http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/">How to Start a Homelab for $0</a></li>
 </ul>
 <h2 id="extras">Extras</h2>
 <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP9zRgcbHiu8rpQM0b4eXzyVCd0BOHInZG8E-QA9APRFBlxQ/viewform">Link to Summer Job</a></p>
@@ -55,10 +55,10 @@ I found a pretty decent resource on Python and Machine learning.</description>
         
         <item>
             <title>Computer Science</title>
-            <link>https://mrpointing.com/posts/computer-science/</link>
+            <link>http://localhost:1313/posts/computer-science/</link>
             <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/computer-science/</guid>
+            <guid>http://localhost:1313/posts/computer-science/</guid>
             <description>I&amp;rsquo;m going back and writing down my notes as if I were a total computer science beginner.</description>
             <content type="html"><![CDATA[<p>I&rsquo;m going back and writing down my notes as if I were a total computer science beginner.</p>
 ]]></content>
@@ -66,10 +66,10 @@ I found a pretty decent resource on Python and Machine learning.</description>
         
         <item>
             <title>Entertainment</title>
-            <link>https://mrpointing.com/posts/entertainment/</link>
+            <link>http://localhost:1313/posts/entertainment/</link>
             <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/entertainment/</guid>
+            <guid>http://localhost:1313/posts/entertainment/</guid>
             <description>Reflections on books, movies, manga, or anything else fun.</description>
             <content type="html"><![CDATA[<p>Reflections on books, movies, manga, or anything else fun.</p>
 ]]></content>
@@ -77,10 +77,10 @@ I found a pretty decent resource on Python and Machine learning.</description>
         
         <item>
             <title>Obsidian</title>
-            <link>https://mrpointing.com/posts/obsidian/</link>
+            <link>http://localhost:1313/posts/obsidian/</link>
             <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/obsidian/</guid>
+            <guid>http://localhost:1313/posts/obsidian/</guid>
             <description>Notes on Obsidian related things.</description>
             <content type="html"><![CDATA[<p>Notes on Obsidian related things.</p>
 ]]></content>
