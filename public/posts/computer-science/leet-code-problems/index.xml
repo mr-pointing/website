@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Leet Code Problems on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/computer-science/leet-code-problems/</link>
+        <link>https://mrpointing.com/posts/computer-science/leet-code-problems/</link>
         <description>Recent content in Leet Code Problems on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/computer-science/leet-code-problems/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://mrpointing.com/posts/computer-science/leet-code-problems/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>75. Sort Colors</title>
-            <link>http://localhost:1313/posts/computer-science/leet-code-problems/75.-sort-colors/</link>
+            <link>https://mrpointing.com/posts/computer-science/leet-code-problems/75.-sort-colors/</link>
             <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/computer-science/leet-code-problems/75.-sort-colors/</guid>
+            <guid>https://mrpointing.com/posts/computer-science/leet-code-problems/75.-sort-colors/</guid>
             <description>Modified: August 02 2024
 Description:
 Given an array nums with n objects colored red, white, or blue, sort in-place so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.
@@ -70,10 +70,10 @@ So I worked on this at work, and I got to a certain point where I was using a ha
         
         <item>
             <title>1122. Relative Sort Array</title>
-            <link>http://localhost:1313/posts/computer-science/leet-code-problems/1122.-relative-sort-array/</link>
+            <link>https://mrpointing.com/posts/computer-science/leet-code-problems/1122.-relative-sort-array/</link>
             <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/computer-science/leet-code-problems/1122.-relative-sort-array/</guid>
+            <guid>https://mrpointing.com/posts/computer-science/leet-code-problems/1122.-relative-sort-array/</guid>
             <description>Modified: August 02 2024
 Description:
 Given two arrays, arr1 and arr2, where all elements in arr2 are distinct, as well as all elements in arr2 are in arr1.

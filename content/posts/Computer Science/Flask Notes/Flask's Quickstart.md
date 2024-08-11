@@ -6,11 +6,10 @@ tags:
   - computerscience
   - flask
   - python
-title: Flask
+title: Flask's Quickstart
 date: 2024-06-25
+updated: 2024-08-11T16:40
 ---
-Modified: August 02 2024
-
 [Link](https://flask.palletsprojects.com/en/3.0.x/) to documentation.
 
 -------------------------------------------------------------------------------
@@ -507,3 +506,50 @@ def users_api():
 	users = get_all_users()
 	return [user.to_json() for user in users]
 ```
+
+
+8/11/2024
+
+## Sessions
+
+Just like how `request` is an object, `session` is an object that contains user information pertaining to the specific instance of request. In order to get sessions working, you will need a secret key:
+
+```python
+from flask import session
+
+# Setting the secret key. Keep this safe!
+app.secret_key = 'some_secret_nonsense'
+
+@app.route('/')
+def index():
+	if 'username' in session:
+		return f'Logged in as {session['username']}'
+	return 'You are not logged in.'
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+	if request.method == 'POST':
+		session['username'] = request.form['username']
+		return redirect(url_for('index'))
+	return
+		"""form for logging in"""
+
+@app.route('/logout')
+def logout():
+	# Remove the username from session if it exists
+	session.pop('username', None)
+	return redirect(url_for('index'))
+```
+
+Flask gives you a nice and easy way to generate secret key:
+
+```bash
+$ python -c 'import secrets; print(secrets.token_hex())'
+'some_random_token'
+```
+
+
+## Message Flashing
+
+Flask emphasizes that good design stems from good feedback. You can quickly get error messages or user messages across with the `flash()` method. Flashing attaches a message to the end of a request that's accessed and displayed on the next request.
+

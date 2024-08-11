@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Entertainment on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/entertainment/</link>
+        <link>https://mrpointing.com/posts/entertainment/</link>
         <description>Recent content in Entertainment on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/entertainment/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://mrpointing.com/posts/entertainment/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>The Road</title>
-            <link>http://localhost:1313/posts/entertainment/the-road/</link>
+            <link>https://mrpointing.com/posts/entertainment/the-road/</link>
             <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/entertainment/the-road/</guid>
+            <guid>https://mrpointing.com/posts/entertainment/the-road/</guid>
             <description>Modified: July 14 2024
 I finished The Road a few days ago and I&amp;rsquo;ve reflected fondly on the experience. Slow burn isn&amp;rsquo;t the word I&amp;rsquo;d use; perhaps a slow agonizing death. Because by the end, I was emotionally exhausted. It asks a lot of you. Sit through the gray, dim world that the story takes place in. Hope to some God the end is worth it. In my opinion, I think it was.</description>
             <content type="html"><![CDATA[<p>Modified: July 14 2024</p>
@@ -27,10 +27,10 @@ I finished The Road a few days ago and I&amp;rsquo;ve reflected fondly on the ex
         
         <item>
             <title>Words of Radiance</title>
-            <link>http://localhost:1313/posts/entertainment/words-of-radiance/</link>
+            <link>https://mrpointing.com/posts/entertainment/words-of-radiance/</link>
             <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/entertainment/words-of-radiance/</guid>
+            <guid>https://mrpointing.com/posts/entertainment/words-of-radiance/</guid>
             <description>Modified: July 02 2024
 I finished Words of Radiance two days ago, and it initially got a 4 out of 5. I loved the book. I really did, and was invested from start to finish.
 It took me about 3 weeks (3 weeks and 3 days says Goodreads) and it really flew by. I enjoyed tackling such a huge tome of a novel.
@@ -48,10 +48,10 @@ The characters were awesome, even if I felt like the interlude characters could 
         
         <item>
             <title>Naruto</title>
-            <link>http://localhost:1313/posts/entertainment/naruto/</link>
+            <link>https://mrpointing.com/posts/entertainment/naruto/</link>
             <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/entertainment/naruto/</guid>
+            <guid>https://mrpointing.com/posts/entertainment/naruto/</guid>
             <description>Modified: August 02 2024
 by Masashi Kishimoto 1999 - 2014
 I finished Naruto today. I really enjoyed reading it; I nearly flew through it in just over or under 3 months. I had a blast-Kishimoto&amp;rsquo;s art was really fun and emotive and kept me wanting to see just how each page would grow in more detail and impact. I think it delivered in that respect. The last 100 chapters had many great panels-none screenshot worthy in my opinion like the beginning/middle of the series but regardless a lot of fun.</description>
@@ -69,10 +69,10 @@ I finished Naruto today. I really enjoyed reading it; I nearly flew through it i
         
         <item>
             <title>You Are Not Expected To Understand This</title>
-            <link>http://localhost:1313/posts/entertainment/you-are-not-expected-to-understand-this/</link>
+            <link>https://mrpointing.com/posts/entertainment/you-are-not-expected-to-understand-this/</link>
             <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/entertainment/you-are-not-expected-to-understand-this/</guid>
+            <guid>https://mrpointing.com/posts/entertainment/you-are-not-expected-to-understand-this/</guid>
             <description>Modified: July 26 2024
 26 short essays on the pieces/lines of code that shaped the modern understanding of computer science.
 6/3/24
@@ -83,7 +83,7 @@ I started Topics I&amp;rsquo;m Interested In because of this book pretty much.</
 <p>26 short essays on the pieces/lines of code that shaped the modern understanding of computer science.</p>
 <p>6/3/24</p>
 <p>Halfway through, I think some of the stories are interesting. Some of the articles don&rsquo;t go as deep as I think they could/should; some bring up gender/race for seemingly no reason&hellip;others actually delve deeper into the politics of it encouragingly.</p>
-<p>I started <a href="http://localhost:1313/posts/topics-im-interested-in/">Topics I&rsquo;m Interested In</a> because of this book pretty much.</p>
+<p>I started <a href="https://mrpointing.com/posts/topics-im-interested-in/">Topics I&rsquo;m Interested In</a> because of this book pretty much.</p>
 ]]></content>
         </item>
         

@@ -6,10 +6,11 @@ tags:
   - computerscience
   - website
   - documentation
+  - hugo
 title: Getting Started with Hugo
 date: 2024-07-26
+updated: 2024-08-08T21:48
 ---
-Last Modified: August 01 2024 
 
 -------------------------------------------------------------------------------
 

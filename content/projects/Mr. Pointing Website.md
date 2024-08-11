@@ -8,19 +8,26 @@ tags:
   - project
 title: Mr. Pointing Website
 date: 2024-08-02
+updated: 2024-08-11T16:18
 ---
-Modified: August 02 2024 
 
 -------------------------------------------------------------------------------
 
 So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:
 
 - [x] Get pages formatted to look good on Hugo
-- [ ] Add `date` property to all pages 
+- [x] Add `date` property to all pages 
 - [ ] Get Excalidraw images linked
-- [ ] Ignore Templates, re-route Excalidraw
+- [ ] Cloudflare Hugo Note Title Needs fixing
+- [ ] Need to create something to format for Hugo's scientific notation
+	- [ ] Intro to Algorithms
+	- [ ] Khan Academy
+- [x] Ignore Templates, re-route Excalidraw
 - [x] Get mr.pointing domain name
 - [ ] Create README
+- [ ] Create Now Page
+	- [ ] Reading/Listening/Watching
+	- [ ] Web scraper to get info from Discogs
 - [x] Update/Connect GitHub
 - [x] Start [Hosting Hugo Using Cloudflare]({{< ref "Hosting Hugo Using Cloudflare" >}})
 
@@ -29,6 +36,12 @@ So some updates before I go to bed:
 - There's an issue where the images need to be told explicitly, when turned into Hugo Markdown files, that the Excalidraw files are actually markdown files. So those have to be edited manually.
 - All attachments need to be rewritten to not point to a markdown file like obsidian uses, but using Hugo's image reference `{{ $image := resources.Get "images/sunset.jpg" }}`
 
+Find date and repalce with:
+
+
+```
+< image src="/images/DateFormatting.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >
+```
 
 Dates have to be in this format:
 
@@ -172,6 +185,17 @@ Images I think go in the metadata of the file?
 I downloaded [an embed pdf shortcut](https://github.com/anvithks/hugo-embed-pdf-shortcode) to help out, you can use it like this:
 
 
+
 The PDF embed didn’t work, I think it might be a linking issue.
 
 Need to fix the projects pages, need a date fix.
+
+Date issued fixed!
+
+Next issue is to get all the images working. Files that need it:
+- Fix Cloudflare Hugo Title!
+- Intro to Algo Chapter 1
+- Khan Academy
+
+
+

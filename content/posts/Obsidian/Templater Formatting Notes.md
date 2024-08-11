@@ -7,9 +7,8 @@ tags:
   - formatting
 title: Templater Formatting Notes
 date: 2024-07-18
+updated: 2024-08-11T16:17
 ---
-
-Modified: July 26 2024 
 
 -------------------------------------------------------------------------------
 

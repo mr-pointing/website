@@ -1,38 +1,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Obsidian on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/obsidian/</link>
+        <link>https://mrpointing.com/posts/obsidian/</link>
         <description>Recent content in Obsidian on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/obsidian/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://mrpointing.com/posts/obsidian/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Current Obsidian Plugins</title>
+            <link>https://mrpointing.com/posts/obsidian/current-obsidian-plugins/</link>
+            <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/obsidian/current-obsidian-plugins/</guid>
+            <description> </description>
+            <content type="html"><![CDATA[<hr>
+]]></content>
+        </item>
         
         <item>
             <title>Beginner Tutorial for Obsidian Dataview</title>
-            <link>http://localhost:1313/posts/obsidian/beginner-tutorial-for-obsidian-dataview/</link>
+            <link>https://mrpointing.com/posts/obsidian/beginner-tutorial-for-obsidian-dataview/</link>
             <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/obsidian/beginner-tutorial-for-obsidian-dataview/</guid>
-            <description>Modified: July 26 2024
-Link to the video.</description>
-            <content type="html"><![CDATA[<p>Modified: July 26 2024</p>
-<p><a href="https://www.youtube.com/watch?v=G8eOF61wmzI&t=669s">Link</a> to the video.</p>
+            <guid>https://mrpointing.com/posts/obsidian/beginner-tutorial-for-obsidian-dataview/</guid>
+            <description>Link to the video.</description>
+            <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=G8eOF61wmzI&t=669s">Link</a> to the video.</p>
 <hr>
 ]]></content>
         </item>
         
         <item>
             <title>Templater Formatting Notes</title>
-            <link>http://localhost:1313/posts/obsidian/templater-formatting-notes/</link>
+            <link>https://mrpointing.com/posts/obsidian/templater-formatting-notes/</link>
             <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/obsidian/templater-formatting-notes/</guid>
-            <description>Modified: July 26 2024
-Link to Templater Documentation.</description>
-            <content type="html"><![CDATA[<p>Modified: July 26 2024</p>
-<hr>
+            <guid>https://mrpointing.com/posts/obsidian/templater-formatting-notes/</guid>
+            <description>Link to Templater Documentation.</description>
+            <content type="html"><![CDATA[<hr>
 
     <img src="/images/DateFormatting.png"  alt="DateFormatting"  class="center"  style="border-radius: 8px;"  />
 

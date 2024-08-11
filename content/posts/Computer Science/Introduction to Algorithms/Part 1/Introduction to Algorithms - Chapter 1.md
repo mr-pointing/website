@@ -22,8 +22,10 @@ Modified: August 02 2024
 We often say algorithms help us solve computational problems.
 
 We can define a sorting algorithm like so:
-	**Input:** A sequence of *n* numbers, ${a_1, a_2, ... a_n}$
-	**Output:** A permutation (reordering) ${a`_1,a`_2,...a`_n}$ of the input sequence such that $a`_1 <= a`_2 <= ... <= a`n$ 
+
+**Input:** A sequence of *n* numbers, `{a_1, a_2, ... a_n}`
+
+**Output:** A permutation (reordering) `{a_1,a_2,...a_n}` of the input sequence such that `a_1 <= a_2 <= ... <= an`
 
 If given (7, 3, 12, 1, 5), the correct sorting algorithm, would return (1, 3, 5, 7, 12).
 
@@ -51,7 +53,8 @@ Problems that can be solved with Algorithms have two common characteristics:
 1) They have lots of candidate solutions, most which don't solve the problem, and finding the best is hard.
 2) They have practical applications
 
-A 7/23/24
+
+7/23/24
 
 Some problems are so complex, no algorithm can solve them in an appropriate amount of time. We call these types of problems *NP-Complete problems* (see Chapter 34).
 
@@ -108,19 +111,19 @@ You should choose algorithms that use the resources of time and space efficientl
 
 Let's consider two sorting methods:
 
-1. **Insertion Sort**: takes $C_1n^2$ to sort $n$ items, where $C_1$ is a constant, but we can just say it takes $n^2$
-2. **Merge Sort:** takes $C_2n lg n$, where $lgn$ stands for $log_2 n$ and $C_2$ is another constant
+1. **Insertion Sort**: takes `C_1n^2` to sort `n` items, where `C_1` is a constant, but we can just say it takes `n^2`
+2. **Merge Sort:** takes `C_2n lg n`, where `lgn` stands for `log_2 n` and `C_2` is another constant
 
-Insertion sort typically has a smaller constant factor than merge sort, so that $C_1 < C_2$. However, constant factors have far less of an impact on running time than the dependency of the input size.
+Insertion sort typically has a smaller constant factor than merge sort, so that `C_1 < C_2`. However, constant factors have far less of an impact on running time than the dependency of the input size.
 
 We can take the two above and explain their run times as so:
 
-- **Insertion:** $C_1*n*n$
-- **Merge:** $C_2*n*lgn$
+- **Insertion:** `C_1*n*n`
+- **Merge:** `C_2*n*lgn`
 
-For larger numbers, $lgn$ will always return smaller than $n$. 
+For larger numbers, `lgn` will always return smaller than `n`. 
 
-When $n=1000$, $lgn = 10$. When $n=1000000$, $lgn = 20$.
+When `n=1000`, `lgn = 10`. When `n=1000000`, `lgn = 20`.
 
 Basically, we should be using insertion sort for smaller input sizes, and merge for larger.
 
@@ -134,40 +137,37 @@ Having a solid base of algorithmic knowledge and technique is one characteristic
 
 Instagram is a really easy answer. The feed is literally called "the algorithm". It's based off many different factors. Said algorithm dictates your engagement to a certain extent.
 
-2. Suppose that for inputs of size $n$ on a particular computer, insertion sort runs in $8n^2$ steps and merge sort runs in $64nlogn$ steps. For which values of $n$ does insertion sort beat merge sort?
+2. Suppose that for inputs of size `n` on a particular computer, insertion sort runs in `8n^2` steps and merge sort runs in `64nlogn` steps. For which values of `n` does insertion sort beat merge sort?
 
-We can start by using an example of just 10 instructions, then incrementing up by increasing the exponent by 1 We'll be dividing by $10^7$, our virtual computer that can perform that many tasks per minute. Our answer will be returned in seconds. 
-
-{{ $image := .Resources.Get "Insertion_Merge_10.png" }}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+We can start by using an example of just 10 instructions, then incrementing up by increasing the exponent by 1 We'll be dividing by `10^7`, our virtual computer that can perform that many tasks per minute. Our answer will be returned in seconds. 
 
 
-Insertion sort is faster, so we keep going. Let's go up to the next interval, $10^2$ instructions. 
+{{< image src="/images/Insertion_Merge_10.png" alt="DateFormatting" position="center" style="border-radius: 8px;" >}} 
 
-{{ $image2 := .Resources.Get "Insertion_Merge_10_2.png" }}
-<img src="{{ $image2.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+
+Insertion sort is faster, so we keep going. Let's go up to the next interval, `10^2` instructions. 
+
+{{< image src="/images/Insertion_Merge_10_2.png" alt="DateFormatting" position="center" style="border-radius: 8px;" >}} 
 
 So, we see that somewhere between 10 and 100 commands, merge sort begins to beat out insertion. I also tried 50, which Merge sort still beat. I ended up testing until I found out the exact one which is a bit boring so the answer is 27.
 
-3. What is the smallest value of $n$ such that an algorithm whose running time is $100n^2$ runs faster than an algorithm whose running time is $2^n$ on the same machine?
+3. What is the smallest value of `n` such that an algorithm whose running time is `100n^2` runs faster than an algorithm whose running time is `2^n` on the same machine?
 
-We'll be using the same machine time ($10^7$) and starting at 10 instructions, and incrementing up. 
+We'll be using the same machine time (`10^7`) and starting at 10 instructions, and incrementing up. 
 
 
-{{ $image3 := .Resources.Get "a_and_b_problem.png" }}
-<img src="{{ $image3.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+
+{{< image src="/images/a_and_b_problem.png" alt="DateFormatting" position="center" style="border-radius: 8px;" >}} 
 
 B is faster, but not by so much, so let's only increment up a little, to lets say 15.
 
-{{ $image4 := .Resources.Get "a_and_b_problem_2.png" }}
-<img src="{{ $image4.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+{{< image src="/images/a_and_b_problem_2.png" alt="DateFormatting" position="center" style="border-radius: 8px;" >}} 
 
 
 A is faster! But is this the minimum value? Let's go down one to make sure.
 
 
-{{ $image5 := .Resources.Get "a_and_b_problem_3.png" }}
-<img src="{{ $image5.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+{{< image src="/images/a_and_b_problem_3.png" alt="DateFormatting" position="center" style="border-radius: 8px;" >}} 
 
 Yup, the next lowest has B winning. So the smallest value A can be is 15.
 

@@ -2,354 +2,354 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://mrpointing.com/tags/</link>
     <description>Recent content in Tags on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Me</title>
-      <link>http://localhost:1313/tags/me/</link>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/me/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mrpointing.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computerscience</title>
-      <link>http://localhost:1313/tags/computerscience/</link>
-      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/computerscience/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Project</title>
-      <link>http://localhost:1313/tags/project/</link>
-      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/project/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Website</title>
-      <link>http://localhost:1313/tags/website/</link>
-      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/website/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Apache</title>
-      <link>http://localhost:1313/tags/apache/</link>
-      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/apache/</guid>
+      <link>https://mrpointing.com/tags/computerscience/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/computerscience/</guid>
       <description></description>
     </item>
     <item>
       <title>Flask</title>
-      <link>http://localhost:1313/tags/flask/</link>
-      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/flask/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Internet</title>
-      <link>http://localhost:1313/tags/internet/</link>
-      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/internet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Documentation</title>
-      <link>http://localhost:1313/tags/documentation/</link>
-      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/documentation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Formatting</title>
-      <link>http://localhost:1313/tags/formatting/</link>
-      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/formatting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
-      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Obsidian</title>
-      <link>http://localhost:1313/tags/obsidian/</link>
-      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/obsidian/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Algorithms</title>
-      <link>http://localhost:1313/tags/algorithms/</link>
-      <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/algorithms/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Textbook</title>
-      <link>http://localhost:1313/tags/textbook/</link>
-      <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/textbook/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Classes</title>
-      <link>http://localhost:1313/tags/classes/</link>
-      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/classes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ptoject</title>
-      <link>http://localhost:1313/tags/ptoject/</link>
-      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ptoject/</guid>
+      <link>https://mrpointing.com/tags/flask/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/flask/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://mrpointing.com/tags/python/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obsidian</title>
+      <link>https://mrpointing.com/tags/obsidian/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Me</title>
+      <link>https://mrpointing.com/tags/me/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/me/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project</title>
+      <link>https://mrpointing.com/tags/project/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Website</title>
+      <link>https://mrpointing.com/tags/website/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/website/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apache</title>
+      <link>https://mrpointing.com/tags/apache/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/apache/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internet</title>
+      <link>https://mrpointing.com/tags/internet/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/internet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>https://mrpointing.com/tags/documentation/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/documentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Formatting</title>
+      <link>https://mrpointing.com/tags/formatting/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/formatting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://mrpointing.com/tags/hugo/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithms</title>
+      <link>https://mrpointing.com/tags/algorithms/</link>
+      <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Textbook</title>
+      <link>https://mrpointing.com/tags/textbook/</link>
+      <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/textbook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>https://mrpointing.com/tags/ai/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://mrpointing.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Classes</title>
+      <link>https://mrpointing.com/tags/classes/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/classes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://mrpointing.com/tags/linux/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ptoject</title>
+      <link>https://mrpointing.com/tags/ptoject/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/ptoject/</guid>
       <description></description>
     </item>
     <item>
       <title>Shell</title>
-      <link>http://localhost:1313/tags/shell/</link>
+      <link>https://mrpointing.com/tags/shell/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/shell/</guid>
+      <guid>https://mrpointing.com/tags/shell/</guid>
       <description></description>
     </item>
     <item>
       <title>Youtube</title>
-      <link>http://localhost:1313/tags/youtube/</link>
+      <link>https://mrpointing.com/tags/youtube/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/youtube/</guid>
+      <guid>https://mrpointing.com/tags/youtube/</guid>
       <description></description>
     </item>
     <item>
       <title>Api</title>
-      <link>http://localhost:1313/tags/api/</link>
+      <link>https://mrpointing.com/tags/api/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/api/</guid>
+      <guid>https://mrpointing.com/tags/api/</guid>
       <description></description>
     </item>
     <item>
       <title>Book</title>
-      <link>http://localhost:1313/tags/book/</link>
+      <link>https://mrpointing.com/tags/book/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/book/</guid>
+      <guid>https://mrpointing.com/tags/book/</guid>
       <description></description>
     </item>
     <item>
       <title>Sciencefiction</title>
-      <link>http://localhost:1313/tags/sciencefiction/</link>
+      <link>https://mrpointing.com/tags/sciencefiction/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sciencefiction/</guid>
+      <guid>https://mrpointing.com/tags/sciencefiction/</guid>
       <description></description>
     </item>
     <item>
       <title>Packages</title>
-      <link>http://localhost:1313/tags/packages/</link>
+      <link>https://mrpointing.com/tags/packages/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/packages/</guid>
+      <guid>https://mrpointing.com/tags/packages/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtualenv</title>
-      <link>http://localhost:1313/tags/virtualenv/</link>
+      <link>https://mrpointing.com/tags/virtualenv/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/virtualenv/</guid>
+      <guid>https://mrpointing.com/tags/virtualenv/</guid>
       <description></description>
     </item>
     <item>
       <title>IDE</title>
-      <link>http://localhost:1313/tags/ide/</link>
+      <link>https://mrpointing.com/tags/ide/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ide/</guid>
+      <guid>https://mrpointing.com/tags/ide/</guid>
       <description></description>
     </item>
     <item>
       <title>Modules</title>
-      <link>http://localhost:1313/tags/modules/</link>
+      <link>https://mrpointing.com/tags/modules/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/modules/</guid>
+      <guid>https://mrpointing.com/tags/modules/</guid>
       <description></description>
     </item>
     <item>
       <title>Standardlibrary</title>
-      <link>http://localhost:1313/tags/standardlibrary/</link>
+      <link>https://mrpointing.com/tags/standardlibrary/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/standardlibrary/</guid>
+      <guid>https://mrpointing.com/tags/standardlibrary/</guid>
       <description></description>
     </item>
     <item>
       <title>Fantasy</title>
-      <link>http://localhost:1313/tags/fantasy/</link>
+      <link>https://mrpointing.com/tags/fantasy/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fantasy/</guid>
+      <guid>https://mrpointing.com/tags/fantasy/</guid>
       <description></description>
     </item>
     <item>
       <title>Wix</title>
-      <link>http://localhost:1313/tags/wix/</link>
+      <link>https://mrpointing.com/tags/wix/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wix/</guid>
+      <guid>https://mrpointing.com/tags/wix/</guid>
       <description></description>
     </item>
     <item>
       <title>Errors</title>
-      <link>http://localhost:1313/tags/errors/</link>
+      <link>https://mrpointing.com/tags/errors/</link>
       <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/errors/</guid>
+      <guid>https://mrpointing.com/tags/errors/</guid>
       <description></description>
     </item>
     <item>
       <title>Exceptions</title>
-      <link>http://localhost:1313/tags/exceptions/</link>
+      <link>https://mrpointing.com/tags/exceptions/</link>
       <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/exceptions/</guid>
+      <guid>https://mrpointing.com/tags/exceptions/</guid>
       <description></description>
     </item>
     <item>
       <title>Datastructures</title>
-      <link>http://localhost:1313/tags/datastructures/</link>
+      <link>https://mrpointing.com/tags/datastructures/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/datastructures/</guid>
+      <guid>https://mrpointing.com/tags/datastructures/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorialnotes</title>
-      <link>http://localhost:1313/tags/tutorialnotes/</link>
+      <link>https://mrpointing.com/tags/tutorialnotes/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tutorialnotes/</guid>
+      <guid>https://mrpointing.com/tags/tutorialnotes/</guid>
       <description></description>
     </item>
     <item>
       <title>Input</title>
-      <link>http://localhost:1313/tags/input/</link>
+      <link>https://mrpointing.com/tags/input/</link>
       <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/input/</guid>
+      <guid>https://mrpointing.com/tags/input/</guid>
       <description></description>
     </item>
     <item>
       <title>Output</title>
-      <link>http://localhost:1313/tags/output/</link>
+      <link>https://mrpointing.com/tags/output/</link>
       <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/output/</guid>
+      <guid>https://mrpointing.com/tags/output/</guid>
       <description></description>
     </item>
     <item>
       <title>Audio</title>
-      <link>http://localhost:1313/tags/audio/</link>
+      <link>https://mrpointing.com/tags/audio/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/audio/</guid>
+      <guid>https://mrpointing.com/tags/audio/</guid>
       <description></description>
     </item>
     <item>
       <title>Sorting</title>
-      <link>http://localhost:1313/tags/sorting/</link>
+      <link>https://mrpointing.com/tags/sorting/</link>
       <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sorting/</guid>
+      <guid>https://mrpointing.com/tags/sorting/</guid>
       <description></description>
     </item>
     <item>
       <title>Arrays</title>
-      <link>http://localhost:1313/tags/arrays/</link>
+      <link>https://mrpointing.com/tags/arrays/</link>
       <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/arrays/</guid>
+      <guid>https://mrpointing.com/tags/arrays/</guid>
       <description></description>
     </item>
     <item>
       <title>Conditionals</title>
-      <link>http://localhost:1313/tags/conditionals/</link>
+      <link>https://mrpointing.com/tags/conditionals/</link>
       <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/conditionals/</guid>
+      <guid>https://mrpointing.com/tags/conditionals/</guid>
       <description></description>
     </item>
     <item>
       <title>Essays</title>
-      <link>http://localhost:1313/tags/essays/</link>
+      <link>https://mrpointing.com/tags/essays/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/essays/</guid>
+      <guid>https://mrpointing.com/tags/essays/</guid>
       <description></description>
     </item>
     <item>
       <title>Machinelearning</title>
-      <link>http://localhost:1313/tags/machinelearning/</link>
+      <link>https://mrpointing.com/tags/machinelearning/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/machinelearning/</guid>
+      <guid>https://mrpointing.com/tags/machinelearning/</guid>
       <description></description>
     </item>
     <item>
       <title>Manga</title>
-      <link>http://localhost:1313/tags/manga/</link>
+      <link>https://mrpointing.com/tags/manga/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/manga/</guid>
+      <guid>https://mrpointing.com/tags/manga/</guid>
       <description></description>
     </item>
     <item>
       <title>Shonen</title>
-      <link>http://localhost:1313/tags/shonen/</link>
+      <link>https://mrpointing.com/tags/shonen/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/shonen/</guid>
+      <guid>https://mrpointing.com/tags/shonen/</guid>
       <description></description>
     </item>
     <item>
       <title>Datatypes</title>
-      <link>http://localhost:1313/tags/datatypes/</link>
+      <link>https://mrpointing.com/tags/datatypes/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/datatypes/</guid>
+      <guid>https://mrpointing.com/tags/datatypes/</guid>
       <description></description>
     </item>
     <item>
       <title>Syntax</title>
-      <link>http://localhost:1313/tags/syntax/</link>
+      <link>https://mrpointing.com/tags/syntax/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/syntax/</guid>
+      <guid>https://mrpointing.com/tags/syntax/</guid>
       <description></description>
     </item>
     <item>
       <title>Entertainment</title>
-      <link>http://localhost:1313/tags/entertainment/</link>
+      <link>https://mrpointing.com/tags/entertainment/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/entertainment/</guid>
+      <guid>https://mrpointing.com/tags/entertainment/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/tags/projects/</link>
+      <link>https://mrpointing.com/tags/projects/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/projects/</guid>
+      <guid>https://mrpointing.com/tags/projects/</guid>
       <description></description>
     </item>
     <item>
       <title>Videos</title>
-      <link>http://localhost:1313/tags/videos/</link>
+      <link>https://mrpointing.com/tags/videos/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/videos/</guid>
+      <guid>https://mrpointing.com/tags/videos/</guid>
       <description></description>
     </item>
   </channel>

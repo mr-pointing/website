@@ -18,6 +18,7 @@ paginate     = 10
   keywords = "homepage, blog"
   images = [""]
   
+  
 
 [taxonomies]
     category = "blog"

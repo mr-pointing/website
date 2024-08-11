@@ -8,8 +8,8 @@ tags:
   - textbook
 title: Introduction to Algorithms - Chapter 2
 date: 2024-07-24
+updated: 2024-08-10T14:52
 ---
-Modified: August 02 2024
 
 -------------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ Solves a sorting problem (obviously).
 
 The numbers to be sorted are known as *keys*. 
 
-The input comes in the form of an array with $n$ elements. 
+The input comes in the form of an array with `n` elements. 
 
 A reason to sort is often because those keys are associated with other data, *Satellite data*.
 
@@ -35,16 +35,16 @@ They offer the code into pseudocode, and I turned it into Python.
 
 **Pseudocode**:
 
-Where A is an array and $n$ is the # of values.
+Where A is an array and `n` is the # of values.
 
-$Insertion-Sort(A, n)$
-1. $for\  i = 2 \ to \ n$
-2.      $key = A[i]$
-3.      $j = i - 1$
-4.      $while\ j > 0\ and\ A[j] > key$
-5.           $A[j+1] = A[j]$
-6.           $j = j - 1$
-7.      $A[j+1] = key$
+`Insertion-Sort(A, n)`
+1. `for  i = 2  to  n`
+2.      `key = A[i]`
+3.      `j = i - 1`
+4.      `while j > 0 and A[j] > key`
+5.           `A[j+1] = A[j]`
+6.           `j = j - 1`
+7.      `A[j+1] = key`
 
 ```python
 def insertion_sort(nums:list) -> list:  
@@ -64,12 +64,12 @@ number_list = [6, 3, 8, 1, 10, 2, 1]
 print(insertion_sort(number_list))
 ```
 
-Let's think of this like a deck of cards. In the example, at the beginning of each iteration of our for loop, indexed by $i$, the subarray consisting of elements $A[1:i-1]$ constitutes the currently sorted hand, and the remaining sub array $A[i+1:n]$ corresponds to the pile of cards still on the table.
+Let's think of this like a deck of cards. In the example, at the beginning of each iteration of our for loop, indexed by `i`, the subarray consisting of elements `A[1:i-1]` constitutes the currently sorted hand, and the remaining sub array `A[i+1:n]` corresponds to the pile of cards still on the table.
 
-We state these properties of $A[1:i-1]$ formally as a *loop invariant*:
+We state these properties of `A[1:i-1]` formally as a *loop invariant*:
 
 ```ad-note
-At the start of each iteration of the **for** loop, of lines 1 - 8, the subarray of $A[1:i-1]$ consists of the elements originally in $A[1:i-1]$, but in sorted order.
+At the start of each iteration of the **for** loop, of lines 1 - 8, the subarray of `A[1:i-1]` consists of the elements originally in `A[1:i-1]`, but in sorted order.
 ```
 
 Loop invariants help us understand why an algorithm is correct. We need to show three things:
@@ -88,9 +88,9 @@ Unlike mathematical induction, where the inductive step infinitely, in the loop 
 
 Let's review how the induction proves each of the three points:
 
-1. **Initialization:** We start by showing it holds before the loop begins, when $i$ is 2, since logically there is only one element that **has** to be sorted (obviously).
+1. **Initialization:** We start by showing it holds before the loop begins, when `i` is 2, since logically there is only one element that **has** to be sorted (obviously).
 2. **Maintenance:** Using the logic of the for loop, and that it *increments* up by one each turn, we preserve the loop invariant (we'll talk about the while loop later).
-3. **Termination:** Due to the condition, $i$ being greater than $n$ or $i = n + 1$, it will end, and it has $A[1:n]$ sorted, so the algorithm holds correct.
+3. **Termination:** Due to the condition, `i` being greater than `n` or `i = n + 1`, it will end, and it has `A[1:n]` sorted, so the algorithm holds correct.
 
 Some Pseudocode Conventions:
 
@@ -98,19 +98,19 @@ Some Pseudocode Conventions:
 - Looping constructs while, for, repeat-until, and if-else work just like they do in C, C++, Java, and Python.
 	- The for loop's counter retains the value that broke the loops bound.
 - // denotes a comment.
-- Variables $i$, $j$, $key$, etc. are always local unless specified.
-- In Python specifically, $for\ i = 1\ to\ n$ is equivalent to `for i in range(1, n+1)`.
-	- Also in Python, the loop counter retains $n$, not $n+1$ because lists may contain a non-numeric.
+- Variables `i`, `j`, `key`, etc. are always local unless specified.
+- In Python specifically, `for\ i = 1\ to\ n` is equivalent to `for i in range(1, n+1)`.
+	- Also in Python, the loop counter retains `n`, not `n+1` because lists may contain a non-numeric.
 - Indexing lists/arrays works similarly to Python, except this book uses 1-origin over 0-origin slicing `:` indicates a subarray.
 - Data objects will often exist, and it's attributes are access via dot method.
 - The book treats variable representing an array or object as a pointer to the data representing the array/object.
-	- If you set $y=x$, and change $x.f$ to 3, $y.f$ is also 3 now.
+	- If you set `y=x`, and change `x.f` to 3, `y.f` is also 3 now.
 - Parameters are passed by value, instead of by reference. 
 	- The procedure receives its own copy of the parameters, and if it assigns a value to a parameter, the change is not seen by the calling procedure.
 - Return statements return control back to the point of call & often can return values. Often, the book will contain a few return values, which is unconventional for most languages.
-- *Short-circuiting* is when you use $and$ and $or$ to bypass quick conditionals.
-	- With $and$, if $x$ and $y$, and $x=false$, $y$ is not checked.
-	- With $or$, if $x$ and $y$, and $x=false$, $y$ has to be checked.
+- *Short-circuiting* is when you use `and` and `or` to bypass quick conditionals.
+	- With `and`, if `x` and `y`, and `x=false`, `y` is not checked.
+	- With `or`, if `x` and `y`, and `x=false`, `y` has to be checked.
 - Error is an error.
 
 
@@ -118,29 +118,25 @@ Some Pseudocode Conventions:
 
 1. Using Figure 2.2 (insertion sort diagram), illustrate the operation of insertion sort on an array containing the sequence (31, 41, 59, 26, 41, 58).
 
-{{ $image := .Resources.GetMatch "Insertion Sort Diagram.jpeg" }}
-{{ with $image }}
-  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}
+{{< image src="/images/Insertion Sort Diagram.jpeg" alt="DateFormatting" position="center" style="border-radius: 8px;" >}} 
 
 
 
+2. Consider the following procedure, Sum-Array. It computes the sum of the `n` numbers in array `A[1:n]`. State a loop invariant for this procedure, and use it's initialization, maintenance, and termination properties to show that the Sum-Array procedure returns the sum of numbers in `A[1:n]`.
 
-2. Consider the following procedure, Sum-Array. It computes the sum of the $n$ numbers in array $A[1:n]$. State a loop invariant for this procedure, and use it's initialization, maintenance, and termination properties to show that the Sum-Array procedure returns the sum of numbers in $A[1:n]$.
+`Sum-Array(A, n)`
+1. `sum = 0`
+2. `for i = 1 to n`
+3.      `sum = sum + A[i]`
+4. `return sum`
 
-$Sum-Array(A, n)$
-1. $sum = 0$
-2. $for\ i = 1\ to\ n$
-3.      $sum = sum + A[i]$
-4. $return\ sum$
+**Invariant:** After the initial start of each iteration of the **for** loop of lines 2 & 3, the variable sum sill contain the running sum of `A[1:i-1]`.
 
-**Invariant:** After the initial start of each iteration of the **for** loop of lines 2 & 3, the variable sum sill contain the running sum of $A[1:i-1]$.
+**Initialization:** Sum is 0, then after the first loop, always equal to `A[1:i-1]`.
 
-**Initialization:** Sum is 0, then after the first loop, always equal to $A[1:i-1]$.
+**Maintenance:** For loop moves from first element to `n` (max size).
 
-**Maintenance:** For loop moves from first element to $n$ (max size).
-
-**Termination:** Returns $sum$ after loop completes.
+**Termination:** Returns `sum` after loop completes.
 
 3. Rewrite the insertion-sort procedure to sort into decreasing order instead of increasing order.
 
@@ -160,27 +156,27 @@ def insertion_sort(nums:list) -> list:
 
 7/31/24
 
-4. Consider the following searching problem, and write pseudocode for linear search, which scans through the array from beginning to end, looking for $x$. Using a loop invariant, prove that your algorithm is correct.
+4. Consider the following searching problem, and write pseudocode for linear search, which scans through the array from beginning to end, looking for `x`. Using a loop invariant, prove that your algorithm is correct.
 
 
-**Input:** A sequence of $n$ numbers ($a_1,a_2,...,a_n$) stored in an array $A[1:n]$ and a value, $x$.
+**Input:** A sequence of `n` numbers (`a_1,a_2,...,a_n`) stored in an array `A[1:n]` and a value, `x`.
 
-**Output:** An index $i$ such that $x$ equals $A[i]$ or the special value $NIL$ is $x$ does not appear in $A$.
+**Output:** An index `i` such that `x` equals `A[i]` or the special value `NIL` is `x` does not appear in `A`.
 
-$Linear-Sort(A, x)$
-1. $n =\  length\ of\ A$
-2. $for\ i = 1\ to\ n$
-3.      $if\ A[i]\ =\ x$
-4.           $return\ i$
-5. $return\ NIL$
+`Linear-Sort(A, x)`
+1. `n = length of A`
+2. `for i = 1 to n`
+3.      `if A[i] = x`
+4.           `return i`
+5. `return NIL`
 
-**Loop Invariant:** For each iteration of the for loop on lines 2, 3, and 4, each value of $A$ is compared to $x$. If any value is, the index $i$ is returned. If no value is found, $NIL$ is returned.
+**Loop Invariant:** For each iteration of the for loop on lines 2, 3, and 4, each value of `A` is compared to `x`. If any value is, the index `i` is returned. If no value is found, `NIL` is returned.
 
-**Initialization:** $n$ creates our bound, so we don't go over and get an index error.
+**Initialization:** `n` creates our bound, so we don't go over and get an index error.
 
 **Maintenance:** Unless the condition is met, no changes are made, except for loop iteration.
 
-**Termination:** The last command is returning $NIL$, ensuring closure.
+**Termination:** The last command is returning `NIL`, ensuring closure.
 
 
 ## 2.2 Analyzing Algorithms
@@ -217,3 +213,141 @@ We'll do this in two steps:
 2. Use the important parts of the formula in an easy to read notation.
 
 
+8/10/2024
+
+Likewise, there are two distinct factors we need to keep in mind: Running time and input size. They will affect our algorithm in different ways.
+
+**Input Size** as a notation is dependent on the problem. In some, like sorting, notation is the *number of items in the input*. For others, like multiplication, notation is the *number of bits needed to represent output*. 
+
+**Running time** is the number of instructions/data accesses executed.
+
+- In the following examples, so we can understand the execution of a line (since lines might take longer than others) that each execution of the `k`th line takes `C_k` time, where `C_k` is some constant. 
+
+Let's examine the Insertion sort method line by line:
+
+```
+Insertion-Sort(A, n)                  Cost             Times
+1. for i = 2 to n                      C1                n
+2.   key = A[i]                        C2                n-1
+3.   // Insert ''                       0                n-1
+4.   j = i - 1                         C4                n-1
+5.   while j > 0 and A[j] > key        C5       Summation(i=2, n) * ti
+6.     A[j + 1] = A[j]                 C6    Summation(i=2, n) * ti - 1
+7.     j = j - 1                       C7    Summation(i=2, n) * ti - 1
+8.   A[j + 1] = key                    C8                n-1
+```
+
+We can turn this into a formula, for which we can say:
+
+`T(n) = C_1n+C_2(n-1)+C_4(n-1)+C_5 \sum_{i=2}^{n}*t_i+` 
+   `C_6 \sum_{i=2}^{n}*(t_i-1)+C_7 \sum_{i=2}^{n}*(t_i-1)+C_8(n-1)`   
+ 
+
+In the best-case scenario, line 5 will never activate, and it becomes an entirely different formula:
+
+`T(n)=C_1n+C_2(n-1)+C_4(n-1)+C_5(n-1)+C_8(n-1)` 
+
+Which becomes:
+
+`T(n) = (C_1+C_2+C_4+C_5+C_8)n - (C_2+C_4+C_5+C_8)`
+
+From this equation, we can say the running time is a *linear function* of `n`, `(an+b)`.
+
+The best-case scenario is nice, but likely this will not be the case. Often in the world, we wouldn't need sorting algorithms if they were already sorted before we got there. 
+
+We need to account often for the worst-case scenario. 
+
+For insertion sort's case, the worse case would be if every number were in reverse order.
+
+- In this scenario, our while loop will have to compare each element with every number in the sorted array `A[1:i-1]`, so `t_i = i \ for \ i=2,3,...,n`.
+- This changes our notation slightly:
+	- `\sum_{i=2}^{n}*\ i` becomes `(\sum_{i=1}^{n} * \ i) - 1`  
+	- We can also use Appendix A, to simplify it even further:
+		- `(\sum_{i=1}^{n} * \ i) - 1` becomes `(n(n+1)/2) - 1`
+	- We can also keep simplifying our other terms
+		- `\sum_{i=2}^{n}*\ i-1` becomes `\sum_{i=1}^{n-1} * \ i`  becomes `n(n-1)/2` 
+
+Our worst case insertion sort running time formula becomes:
+
+`T(n) = C_1n+C_2(n-1)+C_4(n-1)+C_5((n(n+1)/2) - 1)+` 
+   `C_6(n(n-1)/2)+C_7(n(n-1)/2)+C_8(n-1)`  
+
+and can be simplified even further:
+
+`T(n) = ((C_5/2) + (C_6/2) + (C_7/2))n^2 + (C_1+C_2+C_4+(C_5/2)-(C_6/2)`
+  `-(C_7/2)+C_8)n-(C_2+C_4+C_5+C_8)`  
+
+From the above formula, we can express our worst-case running time as `an^2+bn+c` for constants `a, b, c`. Running time is a *quadratic function* of `n`.
+
+
+### Worst Case & Average Case Analysis
+
+3 reasons to consider worst case over best case:
+
+1. It acts as an upper-bound (the algorithm will never take longer than worst-case).
+2. For some algorithms, worst-case occurs often.
+3. The "Average" case is often as bad as worst-case.
+
+
+### Order of Growth
+
+We used levels of abstraction already (`C_k`, `an+b` ignoring `C_k`, etc.)
+
+We can abstract even further. It's the rate of growth/order of growth we can actually analyze our running times by.
+
+At large values of `n`, the low-cost terms mean almost nothing, so we can ignore them. We can also ignore constants, since they're less relevant for larger values of `n`.
+
+For insertion sort's worst case `an^2+bn+c`, we drop the `bn+c` since they're a lower term, and drop the constant `a`.
+
+Theta, `\Theta`, can represent this:
+
+- Worst-case running time of insertion sort is `\Theta(n^2)`.
+
+For right now, the definition is rather loos. We'll get a more precisie definition in the next Chapter. 
+
+An algorithm is known to be more efficient than another if it has a lower order of growth
+
+
+### Exercises 2.2
+
+1. Express the function `n^3/1000+100n^2-100n+3` in terms of `\Theta`-notation
+
+For `\Theta`-notation, since we can drop the lower terms & constant from the higest term, `\Theta(n^3)` is the notation.
+
+2. Consider sorting `n` numbers stored in array `A[1:n]` by first finding the smallest elements of `A[1:n]` and exchanging it with the element in `A[1]`. Then, find the smallest element of `A[2:n]`, and exchange it with `A[2]`. Then, find the smallest element of `A[3:n]`, and exchange it with `A[3]`. Continue in this manner for the first `n-1` elements of `A`. Write pseudocode for this algorithm, which is known as selection sort. What loop invariant does this algorithm maintain? Why does it need to run for only the first `n-1` elements, rather than for all `n` elements? Give the worst-case running time of selection sort in `\Theta`-notation. Is the best case any better?
+
+```
+Selection-Sort(A, n)                  Cost             Times
+1. for i = 1 to n-1                    C1               n-1
+2.   min_value = A[i]                  C2               n-1
+3.   for j = i + 1 to n                C3   Summation(i=0,n-2)*(n-i-1)
+                                            ^ this becomes (n(n-1)/2)
+4.     if A[j] < min_value             C4            (n(n-1)/2)
+5.       min_value, A[j] = A[j], min_value   C5      (n(n-1)/2)      
+6.   A[i] = min_value                  C6                n-1
+```
+
+I was having trouble getting started with how to view the times each line would run, so I asked [ChatGPT](https://chatgpt.com/c/0b0e1bac-1cd5-4547-99c4-64796ce8c409) for help. It definitely helped put the Times category into perspective.
+
+`\Theta(n^2)` is our simplified worst-case running time.
+
+**Loop Invariant:** For each iteration of the for loop on lines 3-5, the first element up to the last will be compared and switched with the larger number until the entire list is sorted.
+
+**Initialization:** `n` is the length of `A`, and `min_value` is always equal to `i`.
+
+**Maintenance:** First for loop moves through the whole list `A[1:n-1]`, while the second loop only goes from `A[j:n]`.
+
+**Termination:** We use up to `n-1` for the first loop, ensuring we never loop out of index/range, and stop.
+
+The best case scenario is not much better, since it also has a running time of `\Theta(n^2)`. It just doesn't have to make the switch, but it still has to make the comparison.
+
+
+3. Consider linear search again (Exercise 2.1 #4). How many elements of the input array need to be checked on the average, assuming that the element being searched for is equally likely to be any element in the array? How about in the worst-case? Give `\Theta`-notation for average and worst case.
+
+In the average case, the value to be found, `x`, could be any, but has a normal distribution of being in the middle. We could say, `\Theta(n/2)`.
+
+In the worst case, we would assume `x` is `A[n]`, the last element in the array. The being said, `\Theta(n)` would be it's notation.
+
+4. How can you modify any sorting algorithm to have a good best-case running time?
+
+I guessed, but by possibly eliminating any unnecessary comparisons?

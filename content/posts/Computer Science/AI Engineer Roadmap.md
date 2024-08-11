@@ -79,7 +79,7 @@ I’m going to keep up 4 objectives; I might reuse one or two.
 
 [You Can Do Really Cool Things With Functions in Python]({{< ref "You Can Do Really Cool Things With Functions in Python" >}}) also got me excited, and really pushed me to want to understand more complex Python. Again, more Object Oriented Concepts, mixed with Data classes.
 
-Starting the [Flask]({{< ref "Flask Notes/Flask.md" >}}) documentation also got me working on my capstone project again. I will have to make a note here to track all of that progress.
+Starting the [Flask's Quickstart]({{< ref "Flask's Quickstart" >}}) documentation also got me working on my capstone project again. I will have to make a note here to track all of that progress.
 
 I’m also starting something new these next two weeks. The objective for the next week is to study algorithms; something I’m particularly bad at. In order to study harder, and hopefully retain more info, I’m going to take notes by hand, then transfer them to Obsidian. We’ll see how that works
 

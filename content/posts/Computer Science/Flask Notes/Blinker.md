@@ -8,8 +8,9 @@ tags:
   - python
 title: Blinker
 date: 2024-07-14
+updated: 2024-08-08T21:48
 ---
-Modified: July 31 2024 
+
 
 [Link](https://blinker.readthedocs.io/en/stable/) to documentation.
 

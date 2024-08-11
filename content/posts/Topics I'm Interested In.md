@@ -6,8 +6,8 @@ tags:
   - computerscience
 title: Topics I'm Interested In
 date: 2024-06-03
+updated: 2024-08-11T16:45
 ---
-
 
 -------------------------------------------------------------------------------
 
@@ -21,6 +21,7 @@ This is an all-purpose note I'll write down important links too, as well as conn
 ## Computer Science
 ### Hardware
 - [Raspberry Pi NAS]({{< ref "Raspberry Pi NAS" >}})
+- [Circuit Playground Express]({{< ref "Circuit Playground Express" >}})
 ### Servers/server rooms
 ### Cyber security
 ### Encryption

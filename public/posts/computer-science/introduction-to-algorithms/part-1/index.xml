@@ -1,66 +1,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Introduction to Algorithms - Part 1 on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/</link>
+        <link>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/</link>
         <description>Recent content in Introduction to Algorithms - Part 1 on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Wed, 17 Jul 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Introduction to Algorithms - Chapter 2</title>
-            <link>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
+            <link>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
             <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
-            <description>Modified: August 02 2024
-Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.
+            <guid>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
+            <description>Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.
 2.1 Insertion Sort Solves a sorting problem (obviously).
 The numbers to be sorted are known as keys.
-The input comes in the form of an array with $n$ elements.
+The input comes in the form of an array with n elements.
 A reason to sort is often because those keys are associated with other data, Satellite data.
-Key + Satellite = Record</description>
-            <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
-<hr>
+Key + Satellite = Record
+We can think of a spreadsheet, with student records having many pieces of data.</description>
+            <content type="html"><![CDATA[<hr>
 <h2 id="getting-sorted">Getting Sorted</h2>
 <p>This chapter is meant to familiarize yourself with the framework used throughout the book.</p>
 <h2 id="21-insertion-sort">2.1 Insertion Sort</h2>
 <p>Solves a sorting problem (obviously).</p>
 <p>The numbers to be sorted are known as <em>keys</em>.</p>
-<p>The input comes in the form of an array with $n$ elements.</p>
+<p>The input comes in the form of an array with <code>n</code> elements.</p>
 <p>A reason to sort is often because those keys are associated with other data, <em>Satellite data</em>.</p>
 <p>Key + Satellite = <em>Record</em></p>
 <p>We can think of a spreadsheet, with student records having many pieces of data. Any piece can be the key; whatever the key is, is how the record is sorted.</p>
 <p>They offer the code into pseudocode, and I turned it into Python.</p>
 <p><strong>Pseudocode</strong>:</p>
-<p>Where A is an array and $n$ is the # of values.</p>
-<p>$Insertion-Sort(A, n)$</p>
+<p>Where A is an array and <code>n</code> is the # of values.</p>
+<p><code>Insertion-Sort(A, n)</code></p>
 <ol>
-<li>$for\  i = 2 \ to \ n$</li>
+<li><code>for  i = 2  to  n</code></li>
 <li>
-<pre><code> $key = A[i]$
+<pre><code> `key = A[i]`
 </code></pre>
 </li>
 <li>
-<pre><code> $j = i - 1$
+<pre><code> `j = i - 1`
 </code></pre>
 </li>
 <li>
-<pre><code> $while\ j &gt; 0\ and\ A[j] &gt; key$
+<pre><code> `while j &gt; 0 and A[j] &gt; key`
 </code></pre>
 </li>
 <li>
-<pre><code>      $A[j+1] = A[j]$
+<pre><code>      `A[j+1] = A[j]`
 </code></pre>
 </li>
 <li>
-<pre><code>      $j = j - 1$
+<pre><code>      `j = j - 1`
 </code></pre>
 </li>
 <li>
-<pre><code> $A[j+1] = key$
+<pre><code> `A[j+1] = key`
 </code></pre>
 </li>
 </ol>
@@ -79,9 +78,9 @@ Key + Satellite = Record</description>
 </span></span><span style="display:flex;"><span>number_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]  
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>print(insertion_sort(number_list))
-</span></span></code></pre></div><p>Let&rsquo;s think of this like a deck of cards. In the example, at the beginning of each iteration of our for loop, indexed by $i$, the subarray consisting of elements $A[1:i-1]$ constitutes the currently sorted hand, and the remaining sub array $A[i+1:n]$ corresponds to the pile of cards still on the table.</p>
-<p>We state these properties of $A[1:i-1]$ formally as a <em>loop invariant</em>:</p>
-<pre tabindex="0"><code class="language-ad-note" data-lang="ad-note">At the start of each iteration of the **for** loop, of lines 1 - 8, the subarray of $A[1:i-1]$ consists of the elements originally in $A[1:i-1]$, but in sorted order.
+</span></span></code></pre></div><p>Let&rsquo;s think of this like a deck of cards. In the example, at the beginning of each iteration of our for loop, indexed by <code>i</code>, the subarray consisting of elements <code>A[1:i-1]</code> constitutes the currently sorted hand, and the remaining sub array <code>A[i+1:n]</code> corresponds to the pile of cards still on the table.</p>
+<p>We state these properties of <code>A[1:i-1]</code> formally as a <em>loop invariant</em>:</p>
+<pre tabindex="0"><code class="language-ad-note" data-lang="ad-note">At the start of each iteration of the **for** loop, of lines 1 - 8, the subarray of `A[1:i-1]` consists of the elements originally in `A[1:i-1]`, but in sorted order.
 </code></pre><p>Loop invariants help us understand why an algorithm is correct. We need to show three things:</p>
 <ol>
 <li><strong>Initialization:</strong> It&rsquo;s true prior to the first iteration of the loop.</li>
@@ -94,9 +93,9 @@ Key + Satellite = Record</description>
 <p>Unlike mathematical induction, where the inductive step infinitely, in the loop invariant the &ldquo;induction&rdquo; stops when the loop terminates.</p>
 <p>Let&rsquo;s review how the induction proves each of the three points:</p>
 <ol>
-<li><strong>Initialization:</strong> We start by showing it holds before the loop begins, when $i$ is 2, since logically there is only one element that <strong>has</strong> to be sorted (obviously).</li>
+<li><strong>Initialization:</strong> We start by showing it holds before the loop begins, when <code>i</code> is 2, since logically there is only one element that <strong>has</strong> to be sorted (obviously).</li>
 <li><strong>Maintenance:</strong> Using the logic of the for loop, and that it <em>increments</em> up by one each turn, we preserve the loop invariant (we&rsquo;ll talk about the while loop later).</li>
-<li><strong>Termination:</strong> Due to the condition, $i$ being greater than $n$ or $i = n + 1$, it will end, and it has $A[1:n]$ sorted, so the algorithm holds correct.</li>
+<li><strong>Termination:</strong> Due to the condition, <code>i</code> being greater than <code>n</code> or <code>i = n + 1</code>, it will end, and it has <code>A[1:n]</code> sorted, so the algorithm holds correct.</li>
 </ol>
 <p>Some Pseudocode Conventions:</p>
 <ul>
@@ -107,17 +106,17 @@ Key + Satellite = Record</description>
 </ul>
 </li>
 <li>// denotes a comment.</li>
-<li>Variables $i$, $j$, $key$, etc. are always local unless specified.</li>
-<li>In Python specifically, $for\ i = 1\ to\ n$ is equivalent to <code>for i in range(1, n+1)</code>.
+<li>Variables <code>i</code>, <code>j</code>, <code>key</code>, etc. are always local unless specified.</li>
+<li>In Python specifically, <code>for\ i = 1\ to\ n</code> is equivalent to <code>for i in range(1, n+1)</code>.
 <ul>
-<li>Also in Python, the loop counter retains $n$, not $n+1$ because lists may contain a non-numeric.</li>
+<li>Also in Python, the loop counter retains <code>n</code>, not <code>n+1</code> because lists may contain a non-numeric.</li>
 </ul>
 </li>
 <li>Indexing lists/arrays works similarly to Python, except this book uses 1-origin over 0-origin slicing <code>:</code> indicates a subarray.</li>
 <li>Data objects will often exist, and it&rsquo;s attributes are access via dot method.</li>
 <li>The book treats variable representing an array or object as a pointer to the data representing the array/object.
 <ul>
-<li>If you set $y=x$, and change $x.f$ to 3, $y.f$ is also 3 now.</li>
+<li>If you set <code>y=x</code>, and change <code>x.f</code> to 3, <code>y.f</code> is also 3 now.</li>
 </ul>
 </li>
 <li>Parameters are passed by value, instead of by reference.
@@ -126,10 +125,10 @@ Key + Satellite = Record</description>
 </ul>
 </li>
 <li>Return statements return control back to the point of call &amp; often can return values. Often, the book will contain a few return values, which is unconventional for most languages.</li>
-<li><em>Short-circuiting</em> is when you use $and$ and $or$ to bypass quick conditionals.
+<li><em>Short-circuiting</em> is when you use <code>and</code> and <code>or</code> to bypass quick conditionals.
 <ul>
-<li>With $and$, if $x$ and $y$, and $x=false$, $y$ is not checked.</li>
-<li>With $or$, if $x$ and $y$, and $x=false$, $y$ has to be checked.</li>
+<li>With <code>and</code>, if <code>x</code> and <code>y</code>, and <code>x=false</code>, <code>y</code> is not checked.</li>
+<li>With <code>or</code>, if <code>x</code> and <code>y</code>, and <code>x=false</code>, <code>y</code> has to be checked.</li>
 </ul>
 </li>
 <li>Error is an error.</li>
@@ -138,27 +137,27 @@ Key + Satellite = Record</description>
 <ol>
 <li>Using Figure 2.2 (insertion sort diagram), illustrate the operation of insertion sort on an array containing the sequence (31, 41, 59, 26, 41, 58).</li>
 </ol>
-<p>{{ $image := .Resources.GetMatch &ldquo;Insertion Sort Diagram.jpeg&rdquo; }}
-{{ with $image }}
-<!-- raw HTML omitted -->
-{{ end }}</p>
+
+    <img src="/images/Insertion%20Sort%20Diagram.jpeg"  alt="DateFormatting"  class="center"  style="border-radius: 8px;"  />
+
+
 <ol start="2">
-<li>Consider the following procedure, Sum-Array. It computes the sum of the $n$ numbers in array $A[1:n]$. State a loop invariant for this procedure, and use it&rsquo;s initialization, maintenance, and termination properties to show that the Sum-Array procedure returns the sum of numbers in $A[1:n]$.</li>
+<li>Consider the following procedure, Sum-Array. It computes the sum of the <code>n</code> numbers in array <code>A[1:n]</code>. State a loop invariant for this procedure, and use it&rsquo;s initialization, maintenance, and termination properties to show that the Sum-Array procedure returns the sum of numbers in <code>A[1:n]</code>.</li>
 </ol>
-<p>$Sum-Array(A, n)$</p>
+<p><code>Sum-Array(A, n)</code></p>
 <ol>
-<li>$sum = 0$</li>
-<li>$for\ i = 1\ to\ n$</li>
+<li><code>sum = 0</code></li>
+<li><code>for i = 1 to n</code></li>
 <li>
-<pre><code> $sum = sum + A[i]$
+<pre><code> `sum = sum + A[i]`
 </code></pre>
 </li>
-<li>$return\ sum$</li>
+<li><code>return sum</code></li>
 </ol>
-<p><strong>Invariant:</strong> After the initial start of each iteration of the <strong>for</strong> loop of lines 2 &amp; 3, the variable sum sill contain the running sum of $A[1:i-1]$.</p>
-<p><strong>Initialization:</strong> Sum is 0, then after the first loop, always equal to $A[1:i-1]$.</p>
-<p><strong>Maintenance:</strong> For loop moves from first element to $n$ (max size).</p>
-<p><strong>Termination:</strong> Returns $sum$ after loop completes.</p>
+<p><strong>Invariant:</strong> After the initial start of each iteration of the <strong>for</strong> loop of lines 2 &amp; 3, the variable sum sill contain the running sum of <code>A[1:i-1]</code>.</p>
+<p><strong>Initialization:</strong> Sum is 0, then after the first loop, always equal to <code>A[1:i-1]</code>.</p>
+<p><strong>Maintenance:</strong> For loop moves from first element to <code>n</code> (max size).</p>
+<p><strong>Termination:</strong> Returns <code>sum</code> after loop completes.</p>
 <ol start="3">
 <li>Rewrite the insertion-sort procedure to sort into decreasing order instead of increasing order.</li>
 </ol>
@@ -175,28 +174,28 @@ Key + Satellite = Record</description>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> nums  
 </span></span></code></pre></div><p>7/31/24</p>
 <ol start="4">
-<li>Consider the following searching problem, and write pseudocode for linear search, which scans through the array from beginning to end, looking for $x$. Using a loop invariant, prove that your algorithm is correct.</li>
+<li>Consider the following searching problem, and write pseudocode for linear search, which scans through the array from beginning to end, looking for <code>x</code>. Using a loop invariant, prove that your algorithm is correct.</li>
 </ol>
-<p><strong>Input:</strong> A sequence of $n$ numbers ($a_1,a_2,&hellip;,a_n$) stored in an array $A[1:n]$ and a value, $x$.</p>
-<p><strong>Output:</strong> An index $i$ such that $x$ equals $A[i]$ or the special value $NIL$ is $x$ does not appear in $A$.</p>
-<p>$Linear-Sort(A, x)$</p>
+<p><strong>Input:</strong> A sequence of <code>n</code> numbers (<code>a_1,a_2,...,a_n</code>) stored in an array <code>A[1:n]</code> and a value, <code>x</code>.</p>
+<p><strong>Output:</strong> An index <code>i</code> such that <code>x</code> equals <code>A[i]</code> or the special value <code>NIL</code> is <code>x</code> does not appear in <code>A</code>.</p>
+<p><code>Linear-Sort(A, x)</code></p>
 <ol>
-<li>$n =\  length\ of\ A$</li>
-<li>$for\ i = 1\ to\ n$</li>
+<li><code>n = length of A</code></li>
+<li><code>for i = 1 to n</code></li>
 <li>
-<pre><code> $if\ A[i]\ =\ x$
+<pre><code> `if A[i] = x`
 </code></pre>
 </li>
 <li>
-<pre><code>      $return\ i$
+<pre><code>      `return i`
 </code></pre>
 </li>
-<li>$return\ NIL$</li>
+<li><code>return NIL</code></li>
 </ol>
-<p><strong>Loop Invariant:</strong> For each iteration of the for loop on lines 2, 3, and 4, each value of $A$ is compared to $x$. If any value is, the index $i$ is returned. If no value is found, $NIL$ is returned.</p>
-<p><strong>Initialization:</strong> $n$ creates our bound, so we don&rsquo;t go over and get an index error.</p>
+<p><strong>Loop Invariant:</strong> For each iteration of the for loop on lines 2, 3, and 4, each value of <code>A</code> is compared to <code>x</code>. If any value is, the index <code>i</code> is returned. If no value is found, <code>NIL</code> is returned.</p>
+<p><strong>Initialization:</strong> <code>n</code> creates our bound, so we don&rsquo;t go over and get an index error.</p>
 <p><strong>Maintenance:</strong> Unless the condition is met, no changes are made, except for loop iteration.</p>
-<p><strong>Termination:</strong> The last command is returning $NIL$, ensuring closure.</p>
+<p><strong>Termination:</strong> The last command is returning <code>NIL</code>, ensuring closure.</p>
 <h2 id="22-analyzing-algorithms">2.2 Analyzing Algorithms</h2>
 <p><em>Analysis</em> is the method of predicting the output of an algorithm based on numerous factors. Energy, time, space, etc.</p>
 <p>In order to analyze properly, you need to first understand the environment, limitations &amp; specifications, etc.</p>
@@ -229,28 +228,132 @@ Key + Satellite = Record</description>
 <li>Come up with a formula for running time.</li>
 <li>Use the important parts of the formula in an easy to read notation.</li>
 </ol>
+<p>8/10/2024</p>
+<p>Likewise, there are two distinct factors we need to keep in mind: Running time and input size. They will affect our algorithm in different ways.</p>
+<p><strong>Input Size</strong> as a notation is dependent on the problem. In some, like sorting, notation is the <em>number of items in the input</em>. For others, like multiplication, notation is the <em>number of bits needed to represent output</em>.</p>
+<p><strong>Running time</strong> is the number of instructions/data accesses executed.</p>
+<ul>
+<li>In the following examples, so we can understand the execution of a line (since lines might take longer than others) that each execution of the <code>k</code>th line takes <code>C_k</code> time, where <code>C_k</code> is some constant.</li>
+</ul>
+<p>Let&rsquo;s examine the Insertion sort method line by line:</p>
+<pre tabindex="0"><code>Insertion-Sort(A, n)                  Cost             Times
+1. for i = 2 to n                      C1                n
+2.   key = A[i]                        C2                n-1
+3.   // Insert &#39;&#39;                       0                n-1
+4.   j = i - 1                         C4                n-1
+5.   while j &gt; 0 and A[j] &gt; key        C5       Summation(i=2, n) * ti
+6.     A[j + 1] = A[j]                 C6    Summation(i=2, n) * ti - 1
+7.     j = j - 1                       C7    Summation(i=2, n) * ti - 1
+8.   A[j + 1] = key                    C8                n-1
+</code></pre><p>We can turn this into a formula, for which we can say:</p>
+<p><code>T(n) = C_1n+C_2(n-1)+C_4(n-1)+C_5 \sum_{i=2}^{n}*t_i+</code>
+<code>C_6 \sum_{i=2}^{n}*(t_i-1)+C_7 \sum_{i=2}^{n}*(t_i-1)+C_8(n-1)</code></p>
+<p>In the best-case scenario, line 5 will never activate, and it becomes an entirely different formula:</p>
+<p><code>T(n)=C_1n+C_2(n-1)+C_4(n-1)+C_5(n-1)+C_8(n-1)</code></p>
+<p>Which becomes:</p>
+<p><code>T(n) = (C_1+C_2+C_4+C_5+C_8)n - (C_2+C_4+C_5+C_8)</code></p>
+<p>From this equation, we can say the running time is a <em>linear function</em> of <code>n</code>, <code>(an+b)</code>.</p>
+<p>The best-case scenario is nice, but likely this will not be the case. Often in the world, we wouldn&rsquo;t need sorting algorithms if they were already sorted before we got there.</p>
+<p>We need to account often for the worst-case scenario.</p>
+<p>For insertion sort&rsquo;s case, the worse case would be if every number were in reverse order.</p>
+<ul>
+<li>In this scenario, our while loop will have to compare each element with every number in the sorted array <code>A[1:i-1]</code>, so <code>t_i = i \ for \ i=2,3,...,n</code>.</li>
+<li>This changes our notation slightly:
+<ul>
+<li><code>\sum_{i=2}^{n}*\ i</code> becomes <code>(\sum_{i=1}^{n} * \ i) - 1</code></li>
+<li>We can also use Appendix A, to simplify it even further:
+<ul>
+<li><code>(\sum_{i=1}^{n} * \ i) - 1</code> becomes <code>(n(n+1)/2) - 1</code></li>
+</ul>
+</li>
+<li>We can also keep simplifying our other terms
+<ul>
+<li><code>\sum_{i=2}^{n}*\ i-1</code> becomes <code>\sum_{i=1}^{n-1} * \ i</code>  becomes <code>n(n-1)/2</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Our worst case insertion sort running time formula becomes:</p>
+<p><code>T(n) = C_1n+C_2(n-1)+C_4(n-1)+C_5((n(n+1)/2) - 1)+</code>
+<code>C_6(n(n-1)/2)+C_7(n(n-1)/2)+C_8(n-1)</code></p>
+<p>and can be simplified even further:</p>
+<p><code>T(n) = ((C_5/2) + (C_6/2) + (C_7/2))n^2 + (C_1+C_2+C_4+(C_5/2)-(C_6/2)</code>
+<code>-(C_7/2)+C_8)n-(C_2+C_4+C_5+C_8)</code></p>
+<p>From the above formula, we can express our worst-case running time as <code>an^2+bn+c</code> for constants <code>a, b, c</code>. Running time is a <em>quadratic function</em> of <code>n</code>.</p>
+<h3 id="worst-case--average-case-analysis">Worst Case &amp; Average Case Analysis</h3>
+<p>3 reasons to consider worst case over best case:</p>
+<ol>
+<li>It acts as an upper-bound (the algorithm will never take longer than worst-case).</li>
+<li>For some algorithms, worst-case occurs often.</li>
+<li>The &ldquo;Average&rdquo; case is often as bad as worst-case.</li>
+</ol>
+<h3 id="order-of-growth">Order of Growth</h3>
+<p>We used levels of abstraction already (<code>C_k</code>, <code>an+b</code> ignoring <code>C_k</code>, etc.)</p>
+<p>We can abstract even further. It&rsquo;s the rate of growth/order of growth we can actually analyze our running times by.</p>
+<p>At large values of <code>n</code>, the low-cost terms mean almost nothing, so we can ignore them. We can also ignore constants, since they&rsquo;re less relevant for larger values of <code>n</code>.</p>
+<p>For insertion sort&rsquo;s worst case <code>an^2+bn+c</code>, we drop the <code>bn+c</code> since they&rsquo;re a lower term, and drop the constant <code>a</code>.</p>
+<p>Theta, <code>\Theta</code>, can represent this:</p>
+<ul>
+<li>Worst-case running time of insertion sort is <code>\Theta(n^2)</code>.</li>
+</ul>
+<p>For right now, the definition is rather loos. We&rsquo;ll get a more precisie definition in the next Chapter.</p>
+<p>An algorithm is known to be more efficient than another if it has a lower order of growth</p>
+<h3 id="exercises-22">Exercises 2.2</h3>
+<ol>
+<li>Express the function <code>n^3/1000+100n^2-100n+3</code> in terms of <code>\Theta</code>-notation</li>
+</ol>
+<p>For <code>\Theta</code>-notation, since we can drop the lower terms &amp; constant from the higest term, <code>\Theta(n^3)</code> is the notation.</p>
+<ol start="2">
+<li>Consider sorting <code>n</code> numbers stored in array <code>A[1:n]</code> by first finding the smallest elements of <code>A[1:n]</code> and exchanging it with the element in <code>A[1]</code>. Then, find the smallest element of <code>A[2:n]</code>, and exchange it with <code>A[2]</code>. Then, find the smallest element of <code>A[3:n]</code>, and exchange it with <code>A[3]</code>. Continue in this manner for the first <code>n-1</code> elements of <code>A</code>. Write pseudocode for this algorithm, which is known as selection sort. What loop invariant does this algorithm maintain? Why does it need to run for only the first <code>n-1</code> elements, rather than for all <code>n</code> elements? Give the worst-case running time of selection sort in <code>\Theta</code>-notation. Is the best case any better?</li>
+</ol>
+<pre tabindex="0"><code>Selection-Sort(A, n)                  Cost             Times
+1. for i = 1 to n-1                    C1               n-1
+2.   min_value = A[i]                  C2               n-1
+3.   for j = i + 1 to n                C3   Summation(i=0,n-2)*(n-i-1)
+                                            ^ this becomes (n(n-1)/2)
+4.     if A[j] &lt; min_value             C4            (n(n-1)/2)
+5.       min_value, A[j] = A[j], min_value   C5      (n(n-1)/2)      
+6.   A[i] = min_value                  C6                n-1
+</code></pre><p>I was having trouble getting started with how to view the times each line would run, so I asked <a href="https://chatgpt.com/c/0b0e1bac-1cd5-4547-99c4-64796ce8c409">ChatGPT</a> for help. It definitely helped put the Times category into perspective.</p>
+<p><code>\Theta(n^2)</code> is our simplified worst-case running time.</p>
+<p><strong>Loop Invariant:</strong> For each iteration of the for loop on lines 3-5, the first element up to the last will be compared and switched with the larger number until the entire list is sorted.</p>
+<p><strong>Initialization:</strong> <code>n</code> is the length of <code>A</code>, and <code>min_value</code> is always equal to <code>i</code>.</p>
+<p><strong>Maintenance:</strong> First for loop moves through the whole list <code>A[1:n-1]</code>, while the second loop only goes from <code>A[j:n]</code>.</p>
+<p><strong>Termination:</strong> We use up to <code>n-1</code> for the first loop, ensuring we never loop out of index/range, and stop.</p>
+<p>The best case scenario is not much better, since it also has a running time of <code>\Theta(n^2)</code>. It just doesn&rsquo;t have to make the switch, but it still has to make the comparison.</p>
+<ol start="3">
+<li>Consider linear search again (Exercise 2.1 #4). How many elements of the input array need to be checked on the average, assuming that the element being searched for is equally likely to be any element in the array? How about in the worst-case? Give <code>\Theta</code>-notation for average and worst case.</li>
+</ol>
+<p>In the average case, the value to be found, <code>x</code>, could be any, but has a normal distribution of being in the middle. We could say, <code>\Theta(n/2)</code>.</p>
+<p>In the worst case, we would assume <code>x</code> is <code>A[n]</code>, the last element in the array. The being said, <code>\Theta(n)</code> would be it&rsquo;s notation.</p>
+<ol start="4">
+<li>How can you modify any sorting algorithm to have a good best-case running time?</li>
+</ol>
+<p>I guessed, but by possibly eliminating any unnecessary comparisons?</p>
 ]]></content>
         </item>
         
         <item>
             <title>Introduction to Algorithms - Chapter 1</title>
-            <link>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
+            <link>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
             <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
+            <guid>https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
             <description>Modified: August 02 2024
 The Role of Algorithms in Computing 1.1 Algorithms Algorithm: Any well defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.
 We often say algorithms help us solve computational problems.
-We can define a sorting algorithm like so: Input: A sequence of n numbers, ${a_1, a_2, &amp;hellip; a_n}$ Output: A permutation (reordering) ${a_1,a_2,&amp;hellip;a_n}$ of the input sequence such that $a_1 &amp;lt;= a_2 &amp;lt;= .</description>
+We can define a sorting algorithm like so:
+Input: A sequence of n numbers, {a_1, a_2, ... a_n}</description>
             <content type="html"><![CDATA[<p>Modified: August 02 2024</p>
 <hr>
 <h2 id="the-role-of-algorithms-in-computing">The Role of Algorithms in Computing</h2>
 <h2 id="11-algorithms">1.1 Algorithms</h2>
 <p><strong>Algorithm:</strong> Any well defined computational procedure that takes some value, or set of values, as <em>input</em> and produces some value, or set of values, as <em>output</em> in a finite amount of time.</p>
 <p>We often say algorithms help us solve computational problems.</p>
-<p>We can define a sorting algorithm like so:
-<strong>Input:</strong> A sequence of <em>n</em> numbers, ${a_1, a_2, &hellip; a_n}$
-<strong>Output:</strong> A permutation (reordering) ${a<code>_1,a</code>_2,&hellip;a<code>_n}$ of the input sequence such that $a</code>_1 &lt;= a<code>_2 &lt;= ... &lt;= a</code>n$</p>
+<p>We can define a sorting algorithm like so:</p>
+<p><strong>Input:</strong> A sequence of <em>n</em> numbers, <code>{a_1, a_2, ... a_n}</code></p>
+<p><strong>Output:</strong> A permutation (reordering) <code>{a_1,a_2,...a_n}</code> of the input sequence such that <code>a_1 &lt;= a_2 &lt;= ... &lt;= an</code></p>
 <p>If given (7, 3, 12, 1, 5), the correct sorting algorithm, would return (1, 3, 5, 7, 12).</p>
 <p>The input sequence is called an <em>instance</em> of the sorting problem.</p>
 <p>The <em>instance of a problem</em> is an input sequence needed to compute a solution to said problem.</p>
@@ -274,7 +377,7 @@ We can define a sorting algorithm like so: Input: A sequence of n numbers, ${a_1
 <li>They have lots of candidate solutions, most which don&rsquo;t solve the problem, and finding the best is hard.</li>
 <li>They have practical applications</li>
 </ol>
-<p>A 7/23/24</p>
+<p>7/23/24</p>
 <p>Some problems are so complex, no algorithm can solve them in an appropriate amount of time. We call these types of problems <em>NP-Complete problems</em> (see Chapter 34).</p>
 <ol>
 <li>No one knows if efficient algorithms exist for NP-complete problems</li>
@@ -321,17 +424,17 @@ Distance: when j-walking</p>
 <h3 id="efficiency">Efficiency</h3>
 <p>Let&rsquo;s consider two sorting methods:</p>
 <ol>
-<li><strong>Insertion Sort</strong>: takes $C_1n^2$ to sort $n$ items, where $C_1$ is a constant, but we can just say it takes $n^2$</li>
-<li><strong>Merge Sort:</strong> takes $C_2n lg n$, where $lgn$ stands for $log_2 n$ and $C_2$ is another constant</li>
+<li><strong>Insertion Sort</strong>: takes <code>C_1n^2</code> to sort <code>n</code> items, where <code>C_1</code> is a constant, but we can just say it takes <code>n^2</code></li>
+<li><strong>Merge Sort:</strong> takes <code>C_2n lg n</code>, where <code>lgn</code> stands for <code>log_2 n</code> and <code>C_2</code> is another constant</li>
 </ol>
-<p>Insertion sort typically has a smaller constant factor than merge sort, so that $C_1 &lt; C_2$. However, constant factors have far less of an impact on running time than the dependency of the input size.</p>
+<p>Insertion sort typically has a smaller constant factor than merge sort, so that <code>C_1 &lt; C_2</code>. However, constant factors have far less of an impact on running time than the dependency of the input size.</p>
 <p>We can take the two above and explain their run times as so:</p>
 <ul>
-<li><strong>Insertion:</strong> $C_1<em>n</em>n$</li>
-<li><strong>Merge:</strong> $C_2<em>n</em>lgn$</li>
+<li><strong>Insertion:</strong> <code>C_1*n*n</code></li>
+<li><strong>Merge:</strong> <code>C_2*n*lgn</code></li>
 </ul>
-<p>For larger numbers, $lgn$ will always return smaller than $n$.</p>
-<p>When $n=1000$, $lgn = 10$. When $n=1000000$, $lgn = 20$.</p>
+<p>For larger numbers, <code>lgn</code> will always return smaller than <code>n</code>.</p>
+<p>When <code>n=1000</code>, <code>lgn = 10</code>. When <code>n=1000000</code>, <code>lgn = 20</code>.</p>
 <p>Basically, we should be using insertion sort for smaller input sizes, and merge for larger.</p>
 <p>Algorithms should be understood as a technology. Even though technology has advanced to abstraction being the primary objective of most software, everything regardless uses algorithms in some way.</p>
 <p>Having a solid base of algorithmic knowledge and technique is one characteristic of a good programmer.</p>
@@ -341,31 +444,41 @@ Distance: when j-walking</p>
 </ol>
 <p>Instagram is a really easy answer. The feed is literally called &ldquo;the algorithm&rdquo;. It&rsquo;s based off many different factors. Said algorithm dictates your engagement to a certain extent.</p>
 <ol start="2">
-<li>Suppose that for inputs of size $n$ on a particular computer, insertion sort runs in $8n^2$ steps and merge sort runs in $64nlogn$ steps. For which values of $n$ does insertion sort beat merge sort?</li>
+<li>Suppose that for inputs of size <code>n</code> on a particular computer, insertion sort runs in <code>8n^2</code> steps and merge sort runs in <code>64nlogn</code> steps. For which values of <code>n</code> does insertion sort beat merge sort?</li>
 </ol>
-<p>We can start by using an example of just 10 instructions, then incrementing up by increasing the exponent by 1 We&rsquo;ll be dividing by $10^7$, our virtual computer that can perform that many tasks per minute. Our answer will be returned in seconds.</p>
-<p>{{ $image := .Resources.Get &ldquo;Insertion_Merge_10.png&rdquo; }}
-<!-- raw HTML omitted --></p>
-<p>Insertion sort is faster, so we keep going. Let&rsquo;s go up to the next interval, $10^2$ instructions.</p>
-<p>{{ $image2 := .Resources.Get &ldquo;Insertion_Merge_10_2.png&rdquo; }}
-<!-- raw HTML omitted --></p>
+<p>We can start by using an example of just 10 instructions, then incrementing up by increasing the exponent by 1 We&rsquo;ll be dividing by <code>10^7</code>, our virtual computer that can perform that many tasks per minute. Our answer will be returned in seconds.</p>
+
+    <img src="/images/Insertion_Merge_10.png"  alt="DateFormatting"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Insertion sort is faster, so we keep going. Let&rsquo;s go up to the next interval, <code>10^2</code> instructions.</p>
+
+    <img src="/images/Insertion_Merge_10_2.png"  alt="DateFormatting"  class="center"  style="border-radius: 8px;"  />
+
+
 <p>So, we see that somewhere between 10 and 100 commands, merge sort begins to beat out insertion. I also tried 50, which Merge sort still beat. I ended up testing until I found out the exact one which is a bit boring so the answer is 27.</p>
 <ol start="3">
-<li>What is the smallest value of $n$ such that an algorithm whose running time is $100n^2$ runs faster than an algorithm whose running time is $2^n$ on the same machine?</li>
+<li>What is the smallest value of <code>n</code> such that an algorithm whose running time is <code>100n^2</code> runs faster than an algorithm whose running time is <code>2^n</code> on the same machine?</li>
 </ol>
-<p>We&rsquo;ll be using the same machine time ($10^7$) and starting at 10 instructions, and incrementing up.</p>
-<p>{{ $image3 := .Resources.Get &ldquo;a_and_b_problem.png&rdquo; }}
-<!-- raw HTML omitted --></p>
+<p>We&rsquo;ll be using the same machine time (<code>10^7</code>) and starting at 10 instructions, and incrementing up.</p>
+
+    <img src="/images/a_and_b_problem.png"  alt="DateFormatting"  class="center"  style="border-radius: 8px;"  />
+
+
 <p>B is faster, but not by so much, so let&rsquo;s only increment up a little, to lets say 15.</p>
-<p>{{ $image4 := .Resources.Get &ldquo;a_and_b_problem_2.png&rdquo; }}
-<!-- raw HTML omitted --></p>
+
+    <img src="/images/a_and_b_problem_2.png"  alt="DateFormatting"  class="center"  style="border-radius: 8px;"  />
+
+
 <p>A is faster! But is this the minimum value? Let&rsquo;s go down one to make sure.</p>
-<p>{{ $image5 := .Resources.Get &ldquo;a_and_b_problem_3.png&rdquo; }}
-<!-- raw HTML omitted --></p>
+
+    <img src="/images/a_and_b_problem_3.png"  alt="DateFormatting"  class="center"  style="border-radius: 8px;"  />
+
+
 <p>Yup, the next lowest has B winning. So the smallest value A can be is 15.</p>
 <hr>
 <p>Next:
-<a href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/">Chapter 2</a></p>
+<a href="https://mrpointing.com/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/">Chapter 2</a></p>
 ]]></content>
         </item>
         
