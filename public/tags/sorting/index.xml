@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sorting on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/sorting/</link>
+    <link>https://mrpointing.com/tags/sorting/</link>
     <description>Recent content in Sorting on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sorting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/sorting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>75. Sort Colors</title>
-      <link>http://localhost:1313/posts/computer-science/leet-code-problems/75.-sort-colors/</link>
+      <link>https://mrpointing.com/notes/computer-science/leet-code-problems/75.-sort-colors/</link>
       <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/computer-science/leet-code-problems/75.-sort-colors/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/leet-code-problems/75.-sort-colors/</guid>
       <description>Modified: August 02 2024&#xA;Description:&#xA;Given an array nums with n objects colored red, white, or blue, sort in-place so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.&#xA;Example: Input: nums = [2,0,2,1,1,0] Output: [0,0,1,1,2,2]&#xA;Basically, sort them in order without using the built-in sort function.&#xA;So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make.</description>
     </item>
     <item>
       <title>1122. Relative Sort Array</title>
-      <link>http://localhost:1313/posts/computer-science/leet-code-problems/1122.-relative-sort-array/</link>
+      <link>https://mrpointing.com/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</link>
       <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/computer-science/leet-code-problems/1122.-relative-sort-array/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</guid>
       <description>Modified: August 02 2024&#xA;Description:&#xA;Given two arrays, arr1 and arr2, where all elements in arr2 are distinct, as well as all elements in arr2 are in arr1.&#xA;Sort the elements of arr1 so that the ordering of items in arr1 is the same as arr2. Any element not in arr2 should be appended in ascending/increasing order at the end of the list.&#xA;Example: Input: arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6] Output: [2,2,2,1,4,3,3,9,6,7,19]</description>
     </item>
   </channel>

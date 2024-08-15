@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Link to documentation.
+Flask is a framework to create applications via Python. It makes web based applications rather simple.
+Starting from the here, the installation page.
+Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.
+Dependencies The following are installed automatically when installing Flask:
+Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves." />
+<meta name="keywords" content="homepage, blog, computerscience, flask, python" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/" />
+
+
+    <title>
+        
+            Flask&#39;s Quickstart :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.d33d495c40ce25e9dc5cf99bb32335a4168eab31ea674349cfd18f4e4a938bd8.css" integrity="sha256-0z1JXEDOJencXPmbsyM1pBaOqzHqZ0NJz9GPTkqTi9g=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Flask&#39;s Quickstart">
+  <meta itemprop="description" content="Link to documentation.
+Flask is a framework to create applications via Python. It makes web based applications rather simple.
+Starting from the here, the installation page.
+Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.
+Dependencies The following are installed automatically when installing Flask:
+Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.">
+  <meta itemprop="datePublished" content="2024-06-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2352">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Flask,Python">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Flask&#39;s Quickstart">
+  <meta name="twitter:description" content="Link to documentation.
+Flask is a framework to create applications via Python. It makes web based applications rather simple.
+Starting from the here, the installation page.
+Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.
+Dependencies The following are installed automatically when installing Flask:
+Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Flask&#39;s Quickstart">
+  <meta property="og:description" content="Link to documentation.
+Flask is a framework to create applications via Python. It makes web based applications rather simple.
+Starting from the here, the installation page.
+Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.
+Dependencies The following are installed automatically when installing Flask:
+Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-06-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-25T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Flask">
+    <meta property="article:tag" content="Python">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-06-25 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/">Flask&rsquo;s Quickstart</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p><a href="https://flask.palletsprojects.com/en/3.0.x/">Link</a> to documentation.</p>
+<hr>
+<p>Flask is a framework to create applications via Python. It makes web based applications rather simple.</p>
+<p>Starting from the <a href="https://flask.palletsprojects.com/en/3.0.x/installation/#python-version">here</a>, the installation page.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="python-version">Python Version</h3>
+<p>Python version should be up to date. Flask supports 3.8 and newer.</p>
+<h3 id="dependencies">Dependencies</h3>
+<p>The following are installed automatically when installing Flask:</p>
+<ul>
+<li><a href="https://mrpointing.com/notes/computer-science/flask-notes/werkzeug/">Werkzeug</a> uses WSGI, the standard Python interface between applications and servers.</li>
+<li><a href="https://mrpointing.com/notes/computer-science/flask-notes/jinja/">Jinja</a> is a template language that renders the pages your application serves.</li>
+<li><a href="https://palletsprojects.com/p/markupsafe/">MarkupSafe</a> comes packaged with Jinja, and is used to avoid injection attacks.</li>
+<li><a href="https://palletsprojects.com/p/itsdangerous/">ItsDangerous</a> signs data securely to ensure integrity to protect Flask&rsquo;s session cookie</li>
+<li><a href="https://mrpointing.com/notes/computer-science/flask-notes/click/">Click</a> is a framework that you use for writing command line applications. It allows the <code>flask</code> command and custom commands</li>
+<li><a href="https://mrpointing.com/notes/computer-science/flask-notes/blinker/">Blinker</a> provides support for Signals</li>
+</ul>
+<h3 id="virtual-environments">Virtual Environments</h3>
+<p>Flask promotes the use of a virtual environment to manage the dependencies of the project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># windows</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; mkdir myproject
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; cd myproject
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; python3 -m venv .venv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># linux/macOS</span>
+</span></span><span style="display:flex;"><span>$ mkdir myproject
+</span></span><span style="display:flex;"><span>$ cd myproject
+</span></span><span style="display:flex;"><span>$ python3 -m venv .venv
+</span></span></code></pre></div><p>Active the environment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># windows</span>
+</span></span><span style="display:flex;"><span>&gt; .venv<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># linux/macOS</span>
+</span></span><span style="display:flex;"><span>$ . .venv/bin/activate
+</span></span></code></pre></div><p>You can install Flash easily using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip install Flask
+</span></span></code></pre></div><h2 id="quickstart">Quickstart</h2>
+<p>This will be a good intro to Flask.</p>
+<h3 id="a-minimal-application">A Minimal Application</h3>
+<p>Super basic app is as simple as this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> Flask(__name__)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#34;/&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello_world</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&lt;p&gt;Hello, World!&lt;/p&gt;&#34;</span>
+</span></span></code></pre></div><p>Let&rsquo;s break this down:</p>
+<ol>
+<li>We import Flask.</li>
+<li>We create an instance of the Flask class. This instance is our WSGI application. The first argument is the name of the application&rsquo;s module or package. We use <code>__name__</code> as a convenient shortcut. We need to specify this so Flask understands where to look for templates and static files.</li>
+<li><code>route()</code> is a decorator to tell Flask what URL should trigger said function.</li>
+<li>The function we define, <code>hello_world()</code>, returns the message we want to display in the user&rsquo;s browser. Default content type is HTML.</li>
+</ol>
+<p>We can save as script as <code>hello.py</code> or anything other than <code>flask.py</code> in order to avoid conflicts.</p>
+<p>To actually run the application, we use the <code>flask</code> command in our virtual environment by combing it with the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ flask --app hello run
+</span></span><span style="display:flex;"><span>* Server Flask app <span style="color:#e6db74">&#39;hello&#39;</span>
+</span></span><span style="display:flex;"><span>* Running on http://127.0.0.1:5000 <span style="color:#f92672">(</span>Press CTRL+C to quit<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>To make your life a little easier, you can name your application <code>app.py</code> or <code>wsgi.py</code>, you can avoid using the <code>--app</code> portion.</p>
+<p>This works for testing and proof of concept, but isn&rsquo;t ideal for <a href="https://flask.palletsprojects.com/en/3.0.x/deploying/">production</a>. I need to follow a video on this, since I have yet to bring a project to production stage yet.</p>
+<p>The server is only accessible via the device you are running it from. If you trust the users on your network, you can make the server publicly available by simply adding <code>--host=0.0.0.0</code> to the command line like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ flask run --host<span style="color:#f92672">=</span>0.0.0.0
+</span></span></code></pre></div><h3 id="debug-mode">Debug Mode</h3>
+<p>Using <code>flask run</code> is more capable than just allowing the start of the development server; you can enable debug mode, which will automatically reload if code is changed. It will also show an interactive debugger in the browser if an error occurs during a request.</p>
+<p>Obviously, never run debug mode on production, to avoid tampering with code.</p>
+<p>In order to enable debug mode, just add it to your initial <code>run</code> command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ flask --app hello run --debug
+</span></span><span style="display:flex;"><span>* Serving Flask app <span style="color:#e6db74">&#39;hello&#39;</span>
+</span></span><span style="display:flex;"><span>* Debug mode: on
+</span></span><span style="display:flex;"><span>* Running on http://127.0.0.1:5000 <span style="color:#f92672">(</span>Press CTRL+C to quit<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>* Restarting with stat
+</span></span><span style="display:flex;"><span>* Debugger is active!
+</span></span><span style="display:flex;"><span>* Debugger PIN: nnn-nnn-nnn
+</span></span></code></pre></div><h3 id="html-escaping">HTML Escaping</h3>
+<p>Whenever you are returning HTML, which is the default response type in Flask, any user-provided values rendered in output must be escaped in order to prevent injection attacks. Thankfully, templates rendered with Jinja will do this for us automatically.</p>
+<p>If you want to achieve this manually however, it is possible. You can use the <code>escape()</code> command, show below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> markupsafe <span style="color:#f92672">import</span> escape
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&lt;name&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>(name):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hello, </span><span style="color:#e6db74">{</span>escape(name)<span style="color:#e6db74">}</span><span style="color:#e6db74">!&#34;</span>
+</span></span></code></pre></div><p>If we didn&rsquo;t use escape, and let&rsquo;s say someone wanted to attack us using the command <code>&lt;script&gt;alert('bad!')&lt;/script&gt;</code>, the text would be rendered as HTML and not plain text, running said script.</p>
+<h3 id="routing">Routing</h3>
+<p>Everyday web apps use meaningful URLS to help users navigate them easier. We can make our URLS meaningful using routing.</p>
+<p>We use the <code>route()</code> decorator to bind a function to a URL:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Index Page&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/hello&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Hello world!&#39;</span>
+</span></span></code></pre></div><p>7/20/2024</p>
+<h3 id="variable-rules">Variable Rules</h3>
+<p>Using the following syntax, <code>&lt;variable_name&gt;</code>, we can add any passed variable into apart of our URL.</p>
+<p>The function you use to get said variable should receive that variable via keyword argument. Or, you can specify further, with a converter to specify the type of argument:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> markupsafe <span style="color:#f92672">import</span> escape
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/user/&lt;username&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_user_profile</span>(username):
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># show the user profile for that user</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;User </span><span style="color:#e6db74">{</span>escape(username)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/post/&lt;int:post_id&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_post</span>(post_id):
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># show the post with the given id, the id being an int</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Post </span><span style="color:#e6db74">{</span>post_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/path/&lt;path:subpath&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_subpath</span>(subpath):
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># show the subpath after /path/</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Subpath </span><span style="color:#e6db74">{</span>escape(subpath)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span></code></pre></div><p>A list of converter types:</p>
+<ul>
+<li><code>string</code>: (default) accepts any text without a slash</li>
+<li><code>int</code>: accepts positive integers</li>
+<li><code>float</code>: accepts positive floating point values</li>
+<li><code>path</code>: like <code>string</code> but also accepts slashes</li>
+<li><code>uuid</code>: accepts UUID strings</li>
+</ul>
+<h3 id="unique-urls--redirection-behavior">Unique URLS / Redirection Behavior</h3>
+<p>There are two rules for trailing slashes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/projects/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">projects</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;The project page&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/about&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">about</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;The about page&#39;</span>
+</span></span></code></pre></div><p>For the first example, we have a trailing <code>/</code>. This will allow you to request the page with or without the trailing slash; the non-trailing slash will just redirect to the canonical URL with the trailing slash.</p>
+<p>For our second example, we have no trailing slash. In this example if we were to call the <code>about</code> page with a trailing slash, we would get a 404 not found error. The difference between the two allows for unique pages.</p>
+<h3 id="url-building">URL Building</h3>
+<p>To build out URL&rsquo;s for specific functions, we can use the <code>url_for()</code> function. It accepts the name of a function for it&rsquo;s first argument, and any number of keyword arguments afterword&rsquo;s (each one will correspond to a variable part of the URL rule). Any unknown variable parts are just appended to the URL as query parameters.</p>
+<p>Why use <code>url_for()</code> instead of hard-coding the path?</p>
+<ol>
+<li>Reversing is more descriptive than hard-coding</li>
+<li>Easier modification of the URLs</li>
+<li>URL building handles escaping of special characters</li>
+<li>Generated paths are always absolute, avoiding unexpected behavior</li>
+</ol>
+<p>In my project, <a href="https://mrpointing.com/projects/lython/">Lython</a>, I would often use <code>url_for()</code> in order to redirect after authorization or moving pages.</p>
+<p>Below, we can see an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> url_for
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;index&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/login&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;login&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/user/&lt;username&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">profile</span>(username):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>username<span style="color:#e6db74">}</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">s profile&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> app<span style="color:#f92672">.</span>test_request_context():
+</span></span><span style="display:flex;"><span>	print(url_for(<span style="color:#e6db74">&#39;index&#39;</span>))
+</span></span><span style="display:flex;"><span>	print(url_for(<span style="color:#e6db74">&#39;login&#39;</span>))
+</span></span><span style="display:flex;"><span>	print(url_for(<span style="color:#e6db74">&#39;login&#39;</span>, next<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/&#39;</span>))
+</span></span><span style="display:flex;"><span>	print(url_for(<span style="color:#e6db74">&#39;profile&#39;</span>, username<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;John Doe&#39;</span>))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">/</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">/</span>login
+</span></span><span style="display:flex;"><span><span style="color:#f92672">/</span>login<span style="color:#960050;background-color:#1e0010">?</span>next<span style="color:#f92672">=/</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">/</span>user<span style="color:#f92672">/</span>John<span style="color:#f92672">%</span>Doe
+</span></span></code></pre></div><h3 id="http-methods">HTTP Methods</h3>
+<p>Web apps use numerous HTTP methods when accessing URLs. By default, routes only handle <code>GET</code> requests. Using the <code>methods</code> argument, you can use additional HTTP methods.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> request
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/login&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> do_the_login()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> show_the_login_form()
+</span></span></code></pre></div><p>You&rsquo;re always able to separate views for different methods into different functions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.get</span>(<span style="color:#e6db74">&#39;/login&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login_get</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> show_the_login_form()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.post</span>(<span style="color:#e6db74">&#39;/login&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login_post</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> do_the_login()
+</span></span></code></pre></div><h3 id="static-files">Static Files</h3>
+<p>Static files are the CSS and JavaScript files that need to be included as a part of your site/application. Not much of note here, other than you have the option to generate URLs for your static files as well, using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>url_for(<span style="color:#e6db74">&#39;static&#39;</span>, filename<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;style.css&#39;</span>)
+</span></span></code></pre></div><p>7/28/24</p>
+<h3 id="rendering-templates">Rendering Templates</h3>
+<p>The process of generating HTML from Python is a task that takes time, due to having to manually escape all of the HTML yourself. Flask uses <a href="https://mrpointing.com/notes/computer-science/flask-notes/jinja/">Jinja</a> to make that happen automatically.</p>
+<p>Templates aren&rsquo;t just HTML files; they can also be markdown or plain text. Flask will access all templates in it&rsquo;s own separate <code>templates</code> directory.</p>
+<p>Thankfully the syntax is simple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> render_template
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/hello/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/hello/&lt;name&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>(name<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> render_tempalte(<span style="color:#e6db74">&#39;hello.html&#39;</span>, person<span style="color:#f92672">=</span>name)
+</span></span></code></pre></div><p>And this is what the Template usually looks like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">title</span>&gt;Hello from Mr. Pointing!&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>{% if person %}
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">h1</span>&gt;Hello {{ person }}!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>{% else %}
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">h1</span>&gt;Hello, world!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>{% endif %}
+</span></span></code></pre></div><p>Template inheritance is also possible, where a single template will feed itself into another. This is especially helpful when designing consistent looking pages. See <a href="https://mrpointing.com/projects/lython/">Lython</a> for example on how that ends up looking.</p>
+<h3 id="accessing-request-data">Accessing Request Data</h3>
+<p>Its extremely important that your application responds/reacts to whenever a client sends something to a server. The <code>request</code> object from Flask handles this task for us.</p>
+<h4 id="context-locals">Context Locals</h4>
+<p>There&rsquo;s a quick concept I want to illuminate, and that&rsquo;s the idea of safety. The <code>request</code> object is <code>global</code>, which could make the application unsafe. Flasks workaround for this is context locals.</p>
+<p>The <code>global</code> object is actually just a proxy to actual objects that are local to some specific context. Flask sets this up with a pretty high level of abstraction, so it&rsquo;s not super important.</p>
+<p>The only thing I&rsquo;d like to note is that this is a specific item for unit testing. So for the sake of moving on, I&rsquo;ll come back to this If I need help.</p>
+<h4 id="the-request-object">The Request Object</h4>
+<p><code>request</code> is gone over in the API section so it&rsquo;s not gone over too in-depth here, but we can look at a quick example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> request
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/login&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>, <span style="color:#e6db74">&#39;GET&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login</span>():
+</span></span><span style="display:flex;"><span>	error <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> valid_login(request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;username&#39;</span>],
+</span></span><span style="display:flex;"><span>		request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;password&#39;</span>]):
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> log_the_user_in(request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;username&#39;</span>])
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>			error <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Invalid username/password&#39;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># The next return only runs if the username/password was invalid or if the request method was GET</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;login.html&#39;</span>, error<span style="color:#f92672">=</span>error)
+</span></span></code></pre></div><p>Two uses of <code>request</code> here:</p>
+<ol>
+<li>We use <code>request.method</code> to grab the type of request (GET, POST, etc.)</li>
+<li>We use <code>request.form</code> to access form data (data sent from a POST or PUT request)</li>
+</ol>
+<p>We can also grab parameters sent via URL (the value in <code>?key=value</code>) using the <code>args</code> attribute:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>searchword <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>args<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;key&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)
+</span></span></code></pre></div><h4 id="file-uploads">File Uploads</h4>
+<p>Handling uploaded files with Flask is pretty simple.</p>
+<p>You have to enable <code>enctype=&quot;multipart/form-data&quot;</code> on your HTML form.</p>
+<p>The files uploaded exist in the <code>files</code> attribute of your <code>request</code> object, and each file exists within a dictionary.</p>
+<p>It works similarly to the <code>file</code> object built-into Python, but also has a <code>save()</code> method that directly stores the file on the filesystem of the server.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> request
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/upload&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#e6db74">&#34;POST&#34;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">upload_file</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
+</span></span><span style="display:flex;"><span>		f <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>files[<span style="color:#e6db74">&#39;the_file&#39;</span>]
+</span></span><span style="display:flex;"><span>		f<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;/var/www/uploads/uploaded_file.txt&#39;</span>)
+</span></span></code></pre></div><p><a href="https://flask.palletsprojects.com/en/3.0.x/patterns/fileuploads/">Uploading Files</a> goes a bit more in-depth than this.</p>
+<p>7/31/24</p>
+<h4 id="cookies">Cookies</h4>
+<p>I needed a refresher on what a cookie was honestly, so see <a href="https://mrpointing.com/notes/computer-science/cookies/">Cookies</a> for that.</p>
+<p>Through <code>request</code>, we can access the <code>cookies</code> attribute. Within Flask, the <code>cookies</code> attribute exists as a dictionary, containing all of the cookies the client transmitted.</p>
+<p>For Session cookies, you can use Flask&rsquo;s built-in Session area below.</p>
+<p>Below are two examples on how to read in and store cookies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> request
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+</span></span><span style="display:flex;"><span>	username <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>cookies<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;username&#39;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> make_response
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+</span></span><span style="display:flex;"><span>	resp <span style="color:#f92672">=</span> make_response(render_template(<span style="color:#f92672">...</span>))
+</span></span><span style="display:flex;"><span>	resp<span style="color:#f92672">.</span>set_cookie(<span style="color:#e6db74">&#39;username&#39;</span>, <span style="color:#e6db74">&#39;the username&#39;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> resp
+</span></span></code></pre></div><h3 id="redirects-and-errors">Redirects and Errors</h3>
+<p>If you want to send your user to another page, or provide context for any caught errors, you can use <code>redirect()</code> and <code>abort()</code> respectively.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> abort, redirect, url_for
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;login&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/login&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login</span>():
+</span></span><span style="display:flex;"><span>	abort(<span style="color:#ae81ff">401</span>)
+</span></span><span style="display:flex;"><span>	this_is_never_executed()
+</span></span></code></pre></div><p>Flask has a default error page for any unexpected exits. However, if you want to change this to something of your own design, you can use the <code>errorhandler()</code> decorator like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> render_template
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.errorhandler</span>(<span style="color:#ae81ff">404</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">page_not_found</span>(error):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;page_not_found.html&#39;</span>), <span style="color:#ae81ff">404</span>
+</span></span></code></pre></div><p>In the above example, we write over the error page for any 404 errors, or when a page is not found.</p>
+<h3 id="about-responses">About Responses</h3>
+<p>Anytime anything is returned from a view function, it is converted into a response object. The logic behind what type that object becomes is up to Flask, and it has a specific order it follows:</p>
+<ol>
+<li>If a response object of the correct type (meaning the return type is the same as the expected) is returned, it&rsquo;s just returned directly.</li>
+<li>If it&rsquo;s a string, object is created with said string data and default HTTP parameters (<code>200 OK</code> status code and text/html mimetype).</li>
+<li>If it&rsquo;s an iterator or generator returning strings or bytes, it is a streaming response.</li>
+<li>If it&rsquo;s a dictionary or a list, the response object is called using <code>jsonify()</code>.</li>
+<li>If it&rsquo;s a tuple, the items in the tuple usually provide extra info. They take a few basic forms, <code>(response, status)</code>, <code>(response, headers)</code> or <code>(response, status, headers)</code> are the most common. <code>status</code> will override any status code, and <code>headers</code> will take a list or dictionary to append any header values.</li>
+<li>If all else fails, Flask assumes the object is a WSGI application and convert it into a response object.</li>
+</ol>
+<p>You can naturally modify your resulting response object inside your view using <code>make_response()</code>.</p>
+<p>Let&rsquo;s grab our <code>page_not_found()</code> function from the section just above, and wrap it in a <code>make_response()</code> object type, add in new headers, then return it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> render_template, make_response
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.errorhandler</span>(<span style="color:#ae81ff">404</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">page_not_found</span>(error):
+</span></span><span style="display:flex;"><span>	resp <span style="color:#f92672">=</span> make_response(render_template(<span style="color:#e6db74">&#39;page_not_found.html&#39;</span>), <span style="color:#ae81ff">404</span>)
+</span></span><span style="display:flex;"><span>	resp<span style="color:#f92672">.</span>headers[<span style="color:#e6db74">&#39;Some heading&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Some value&#39;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> resp
+</span></span></code></pre></div><h3 id="apis-with-json">APIs with JSON</h3>
+<p>Whenever you&rsquo;re writing API&rsquo;s, you&rsquo;ll likely encounter responses sent back in JSON. Flask conveniently converts any dictionary or list returned from a view into JSON.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/me&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">me_api</span>():
+</span></span><span style="display:flex;"><span>	user <span style="color:#f92672">=</span> get_current_user()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#34;username&#34;</span>: user<span style="color:#f92672">.</span>username,
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#34;theme&#34;</span>: user<span style="color:#f92672">.</span>theme,
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#34;image&#34;</span>: url_for(<span style="color:#e6db74">&#39;user_image&#39;</span>, filename<span style="color:#f92672">=</span>user<span style="color:#f92672">.</span>image),
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/users&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">users_api</span>():
+</span></span><span style="display:flex;"><span>	users <span style="color:#f92672">=</span> get_all_users()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> [user<span style="color:#f92672">.</span>to_json() <span style="color:#66d9ef">for</span> user <span style="color:#f92672">in</span> users]
+</span></span></code></pre></div><p>8/11/2024</p>
+<h2 id="sessions">Sessions</h2>
+<p>Just like how <code>request</code> is an object, <code>session</code> is an object that contains user information pertaining to the specific instance of request. In order to get sessions working, you will need a secret key:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> session
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Setting the secret key. Keep this safe!</span>
+</span></span><span style="display:flex;"><span>app<span style="color:#f92672">.</span>secret_key <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;some_secret_nonsense&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;username&#39;</span> <span style="color:#f92672">in</span> session:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Logged in as </span><span style="color:#e6db74">{</span>session[<span style="color:#e6db74">&#39;username&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;You are not logged in.&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/login&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
+</span></span><span style="display:flex;"><span>		session[<span style="color:#e6db74">&#39;username&#39;</span>] <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;username&#39;</span>]
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;index&#39;</span>))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#34;&#34;&#34;form for logging in&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/logout&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">logout</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Remove the username from session if it exists</span>
+</span></span><span style="display:flex;"><span>	session<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#39;username&#39;</span>, <span style="color:#66d9ef">None</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;index&#39;</span>))
+</span></span></code></pre></div><p>Flask gives you a nice and easy way to generate secret key:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ python -c <span style="color:#e6db74">&#39;import secrets; print(secrets.token_hex())&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;some_random_token&#39;</span>
+</span></span></code></pre></div><h2 id="message-flashing">Message Flashing</h2>
+<p>Flask emphasizes that good design stems from good feedback. You can quickly get error messages or user messages across with the <code>flash()</code> method. Flashing attaches a message to the end of a request that&rsquo;s accessed and displayed on the next request.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/flask/">flask</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

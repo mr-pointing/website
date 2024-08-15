@@ -1,88 +1,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://mrpointing.com/posts/</link>
         <description>Recent content in Posts on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Topics I&#39;m Interested In</title>
-            <link>http://localhost:1313/posts/topics-im-interested-in/</link>
-            <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+            <title>Starting My Website</title>
+            <link>https://mrpointing.com/posts/starting-my-website/</link>
+            <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/topics-im-interested-in/</guid>
-            <description>This is an all-purpose note I&amp;rsquo;ll write down important links too, as well as connect to all sorts of things I want to learn more about.
-General Brazilian Jiu-Jitsu Jobany Rosario Wood working/building Computer Science Hardware Raspberry Pi NAS Circuit Playground Express Servers/server rooms Cyber security Encryption Algorithms Introduction to Algorithms BASIC Compression Email NAS/Home Server How to Start a Homelab for $0 Extras Link to Summer Job
-I found a pretty decent resource on Python and Machine learning.</description>
+            <guid>https://mrpointing.com/posts/starting-my-website/</guid>
+            <description>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
+Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.</description>
             <content type="html"><![CDATA[<hr>
-<p>This is an all-purpose note I&rsquo;ll write down important links too, as well as connect to all sorts of things I want to learn more about.</p>
-<h2 id="general">General</h2>
-<h3 id="brazilian-jiu-jitsu">Brazilian Jiu-Jitsu</h3>
+<p>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.</p>
+<h2 id="components">Components</h2>
 <ul>
-<li><a href="http://localhost:1313/projects/jobany-rosario/">Jobany Rosario</a></li>
+<li>Obsidian</li>
+<li><a href="https://github.com/mr-pointing/website">Git/GitHub</a></li>
+<li><a href="https://gohugo.io/">Hugo</a></li>
+<li>Cloudflare</li>
 </ul>
-<h3 id="wood-workingbuilding">Wood working/building</h3>
-<h2 id="computer-science">Computer Science</h2>
-<h3 id="hardware">Hardware</h3>
-<ul>
-<li><a href="http://localhost:1313/projects/raspberry-pi-nas/">Raspberry Pi NAS</a></li>
-<li><a href="http://localhost:1313/projects/circuit-playground-express/">Circuit Playground Express</a></li>
-</ul>
-<h3 id="serversserver-rooms">Servers/server rooms</h3>
-<h3 id="cyber-security">Cyber security</h3>
-<h3 id="encryption">Encryption</h3>
-<h3 id="algorithms">Algorithms</h3>
-<ul>
-<li><a href="http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/">Introduction to Algorithms</a></li>
-</ul>
-<h3 id="basic">BASIC</h3>
-<h3 id="compression">Compression</h3>
-<h3 id="email">Email</h3>
-<h3 id="nashome-server">NAS/Home Server</h3>
-<ul>
-<li><a href="http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/">How to Start a Homelab for $0</a></li>
-</ul>
-<h2 id="extras">Extras</h2>
-<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP9zRgcbHiu8rpQM0b4eXzyVCd0BOHInZG8E-QA9APRFBlxQ/viewform">Link to Summer Job</a></p>
-<p>I found a pretty decent <a href="https://pythonmldaily.com/">resource</a> on Python and Machine learning.</p>
-<p>The Odin Project: <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby">Ruby on Rails Course</a>.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Computer Science</title>
-            <link>http://localhost:1313/posts/computer-science/</link>
-            <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/computer-science/</guid>
-            <description>I&amp;rsquo;m going back and writing down my notes as if I were a total computer science beginner.</description>
-            <content type="html"><![CDATA[<p>I&rsquo;m going back and writing down my notes as if I were a total computer science beginner.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Entertainment</title>
-            <link>http://localhost:1313/posts/entertainment/</link>
-            <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/entertainment/</guid>
-            <description>Reflections on books, movies, manga, or anything else fun.</description>
-            <content type="html"><![CDATA[<p>Reflections on books, movies, manga, or anything else fun.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Obsidian</title>
-            <link>http://localhost:1313/posts/obsidian/</link>
-            <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-            
-            <guid>http://localhost:1313/posts/obsidian/</guid>
-            <description>Notes on Obsidian related things.</description>
-            <content type="html"><![CDATA[<p>Notes on Obsidian related things.</p>
+<h2 id="how-i-started">How I Started</h2>
+<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
+<p>Most tutorials I read online start at the beginning, and show how to start with a fresh blog. Assuming you understand Hugo (and if you don&rsquo;t you should read the articles in the footnotes), I&rsquo;m going to start right after where the quick-start leaves you.</p>
+<h2 id="making-a-blog-from-an-existing-vault">Making a Blog From an Existing Vault</h2>
+<p>So I tried the <a href="https://gohugo.io/getting-started/quick-start/">tutorial</a> on my laptop before bringing it over to my main machine, so I started on a good note.</p>
+<p>I set up my Hugo site to live in a directory named <code>/mr_pointing</code>, and started with the theme <a href="https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/">hello-friend-ng</a>. I decided to add it as a submodule, which will come back to haunt me.</p>
+<p>I dropped my first Obsidian file in, and&hellip;it looked terrible. A lot of my files contain code, math, images, etc. I was not prepared for it to look so different. And it was still just the first file!</p>
+<p>After some Googling I came across <a href="https://github.com/devidw/obsidian-to-hugo">Obsidian to Hugo</a>. This would help immensely, by taking my current markdown files and replacing the Obsidian specific syntax with Hugo syntax. Awesome, but this made me realize I had two issues to deal with.</p>
+<p>The first issue was simple, I had no frontmatter, or properties, so I had to add some to all of my existing 60 or so files. I used Templater, an Obsidian plugin, to create template headers with properties set, with <code>tags</code>, <code>title</code>, <code>date</code>, etc. Hugo uses the property <code>draft</code> to tell if something should be published or not. This is how I decided to start building my workflow, but we&rsquo;ll get back to that later.</p>
+<p>My second issue arose when I started making the properties; I couldn&rsquo;t nail how to get the date settings right. I was already having problems with using Templater&rsquo;s file dot method to grab the modified time and not updating (<code>&lt;$ tp.file.last_modified_date %&gt;</code>), which was getting frustrating. That eventually led me to using Update on Edit, another Obsidian Plugin, to add in a better last modified property. I already had <code>date</code> that works with my Theme&rsquo;s posting format, so I&rsquo;m happy.</p>
+<p>I should have all my problems solved right? Wrong.</p>
+<p>Running <code>hugo server -D</code> wouldn&rsquo;t even start the website. I had about 30-40 errors, that ranged in difficulty. I want to do a video that goes deeper in on that, so stay tuned for that. Going over all of the little instance cases are worth it, especially if your workflow looks similar to mine. Let&rsquo;s cut to the chase and point out the biggest issue - Obsidian to Hugo&rsquo;s formatting and how it&rsquo;s not perfect.</p>
+<p>I don&rsquo;t think this is the fault of the tool, my files weren&rsquo;t set up well to start with. So most of the issues came from it picking up references to notes that didn&rsquo;t exist, and images it couldn&rsquo;t reach. Turns out, the theme I&rsquo;m using gives you a way to call images in the docs (it took me way too long to find that&hellip;).</p>
+<p>After fixing all of the issues, it finally worked. I now have my site running on my local machine! Time to start on the hosting side. But first, Git.</p>
+<p>I made my first commit to my main <a href="https://github.com/mr-pointing/website">repository</a>.</p>
+<h2 id="footnotes">Footnotes</h2>
+<p><a href="https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/">Cloudflare Hugo Help Page</a>.</p>
+<p><a href="https://mischavandenburg.com/zet/articles/how-this-blog-is-created/">Mischa van der Berg</a>.</p>
+<p><a href="https://santacloud.dev/posts/creating-my-blog---a-developers-tale-of-over-engineering-using-obsidian-hugo-and-github-pages/">Reddit Thread</a>.</p>
 ]]></content>
         </item>
         

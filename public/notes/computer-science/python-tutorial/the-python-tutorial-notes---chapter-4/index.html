@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 19 2024
+Control Flow Tools 6/5/2024
+The while loop was seen in the previous Fibonacci Sequence example.
+4.1 if Statements &amp;gt;&amp;gt;&amp;gt; x = int(input(&amp;#34;Please enter an integer: &amp;#34;)) Please enter an integer: 42 &amp;gt;&amp;gt;&amp;gt; if x &amp;lt; 0: &amp;gt;&amp;gt;&amp;gt; x = 0 &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Negative so now it&amp;#39;s zero!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 0: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Zero!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 1: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;UNO!!!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; else: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Nice B)&amp;#34;) Nice B) Very basic; all you need is an if statement." />
+<meta name="keywords" content="homepage, blog, computerscience, python, documentation, conditionals" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/" />
+
+
+    <title>
+        
+            The Python Tutorial Notes - Chapter 4 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.d33d495c40ce25e9dc5cf99bb32335a4168eab31ea674349cfd18f4e4a938bd8.css" integrity="sha256-0z1JXEDOJencXPmbsyM1pBaOqzHqZ0NJz9GPTkqTi9g=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="The Python Tutorial Notes - Chapter 4">
+  <meta itemprop="description" content="Modified: July 19 2024
+Control Flow Tools 6/5/2024
+The while loop was seen in the previous Fibonacci Sequence example.
+4.1 if Statements &gt;&gt;&gt; x = int(input(&#34;Please enter an integer: &#34;)) Please enter an integer: 42 &gt;&gt;&gt; if x &lt; 0: &gt;&gt;&gt; x = 0 &gt;&gt;&gt; print(&#34;Negative so now it&#39;s zero!&#34;) &gt;&gt;&gt; elif x == 0: &gt;&gt;&gt; print(&#34;Zero!!!&#34;) &gt;&gt;&gt; elif x == 1: &gt;&gt;&gt; print(&#34;UNO!!!!!&#34;) &gt;&gt;&gt; else: &gt;&gt;&gt; print(&#34;Nice B)&#34;) Nice B) Very basic; all you need is an if statement.">
+  <meta itemprop="datePublished" content="2024-06-05T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-05T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2467">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Conditionals">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="The Python Tutorial Notes - Chapter 4">
+  <meta name="twitter:description" content="Modified: July 19 2024
+Control Flow Tools 6/5/2024
+The while loop was seen in the previous Fibonacci Sequence example.
+4.1 if Statements &gt;&gt;&gt; x = int(input(&#34;Please enter an integer: &#34;)) Please enter an integer: 42 &gt;&gt;&gt; if x &lt; 0: &gt;&gt;&gt; x = 0 &gt;&gt;&gt; print(&#34;Negative so now it&#39;s zero!&#34;) &gt;&gt;&gt; elif x == 0: &gt;&gt;&gt; print(&#34;Zero!!!&#34;) &gt;&gt;&gt; elif x == 1: &gt;&gt;&gt; print(&#34;UNO!!!!!&#34;) &gt;&gt;&gt; else: &gt;&gt;&gt; print(&#34;Nice B)&#34;) Nice B) Very basic; all you need is an if statement.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="The Python Tutorial Notes - Chapter 4">
+  <meta property="og:description" content="Modified: July 19 2024
+Control Flow Tools 6/5/2024
+The while loop was seen in the previous Fibonacci Sequence example.
+4.1 if Statements &gt;&gt;&gt; x = int(input(&#34;Please enter an integer: &#34;)) Please enter an integer: 42 &gt;&gt;&gt; if x &lt; 0: &gt;&gt;&gt; x = 0 &gt;&gt;&gt; print(&#34;Negative so now it&#39;s zero!&#34;) &gt;&gt;&gt; elif x == 0: &gt;&gt;&gt; print(&#34;Zero!!!&#34;) &gt;&gt;&gt; elif x == 1: &gt;&gt;&gt; print(&#34;UNO!!!!!&#34;) &gt;&gt;&gt; else: &gt;&gt;&gt; print(&#34;Nice B)&#34;) Nice B) Very basic; all you need is an if statement.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-06-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-05T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Conditionals">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-06-05 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/">The Python Tutorial Notes - Chapter 4</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>Modified: July 19 2024</p>
+<hr>
+<h2 id="control-flow-tools"><strong>Control Flow Tools</strong></h2>
+<p>6/5/2024</p>
+<p>The while loop was seen in the previous Fibonacci Sequence example.</p>
+<h3 id="41-if-statements"><strong>4.1 <code>if</code> Statements</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Please enter an integer: &#34;</span>))
+</span></span><span style="display:flex;"><span>Please enter an integer: <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#34;Negative so now it&#39;s zero!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">elif</span> x <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#34;Zero!!!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">elif</span> x <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#34;UNO!!!!!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#34;Nice B)&#34;</span>)
+</span></span><span style="display:flex;"><span>Nice B)
+</span></span></code></pre></div><p>Very basic; all you need is an if statement. Else is optional, and you can have many else if (<code>elif</code>) statements as you desire.</p>
+<p>Similar to the <code>switch</code> and <code>case</code> statements in other languages (which?)</p>
+<p>Also similar to <code>match</code> statements</p>
+<h3 id="42-for-statements"><strong>4.2 <code>for</code> Statements</strong></h3>
+<p>Unlike C++ where the user can define the iteration step and end conditions, Python&rsquo;s <code>for</code> statement iterates through an object (any sequence of data) in the order they appear, usually a list or a string.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> words <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#e6db74">&#34;binky&#34;</span>, <span style="color:#e6db74">&#34;aphrodite&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> w <span style="color:#f92672">in</span> words:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(w, len(w))
+</span></span><span style="display:flex;"><span>cat <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>binky <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>aphrodite <span style="color:#ae81ff">9</span>
+</span></span></code></pre></div><p>Pro-tip: if your loop modifies a sequence while iterating over it, it is best to make a copy or create a new collection</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Create sample dictionary</span>
+</span></span><span style="display:flex;"><span>users <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Richie&#39;</span>: <span style="color:#e6db74">&#39;active&#39;</span>, <span style="color:#e6db74">&#39;Sarah&#39;</span>: <span style="color:#e6db74">&#39;inactive&#39;</span>, <span style="color:#e6db74">&#39;Atticus&#39;</span>: <span style="color:#e6db74">&#39;active&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1st strat: Iterate over a copy</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> user, status <span style="color:#f92672">in</span> users<span style="color:#f92672">.</span>copy()<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> status <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;inactive&#39;</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">del</span> users[user]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2nd strat: Create a new dictionary</span>
+</span></span><span style="display:flex;"><span>active_users <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> user, status <span style="color:#f92672">in</span> user<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> status <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;active&#39;</span>:
+</span></span><span style="display:flex;"><span>		active_users[user] <span style="color:#f92672">=</span> status
+</span></span></code></pre></div><h3 id="43-the-range-function"><strong>4.3 The <code>range()</code> Function</strong></h3>
+<p>An easy way to iterate over a sequence of numbers is to use the <code>range()</code> function alongside a <code>for</code> loop. The number you use as the limit will never be reached; it has three basic parameters.</p>
+<p>With just one parameter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(i)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><p>With two parameters:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># range(start, step)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> <span style="color:#f92672">in</span> <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(i)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span>
+</span></span></code></pre></div><p>With three parameters:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># range(start, stop, step)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(i)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span>
+</span></span></code></pre></div><p>To iterate over the indices of a sequence, you can use <code>range()</code> and <code>len()</code> together, but you could also use <code>enumerate()</code> to get the same effect, which I will get into later I&rsquo;m sure.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> loughlin <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Let&#39;s&#34;</span>, <span style="color:#e6db74">&#34;go&#34;</span>, <span style="color:#e6db74">&#34;Lions!&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(loughlin)):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(i, a[i])
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span> Let<span style="color:#e6db74">&#39;s</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> go
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span> Lions<span style="color:#960050;background-color:#1e0010">!</span>
+</span></span></code></pre></div><p>The item returned by <code>range()</code> acts like a list but isn&rsquo;t; it just returns a sequence of desired numbers based on parameters. Since it&rsquo;s not a list it saves space.</p>
+<h3 id="44-break-and-continue-statements-and-else-clauses-on-loops"><strong>4.4 <code>break</code> and <code>continue</code> Statements, and <code>else</code> Clauses on Loops</strong></h3>
+<p>Both <code>for</code> and <code>while</code> loops can have an else clause. For a <code>for</code> loop, the else clause is executed after the loop reaches a final iteration. For the <code>while</code> loop, the else clause executes after the loop&rsquo;s condition becomes false.</p>
+<p>The <code>break</code> statement interrupts a <code>for</code> or <code>while</code> loop. If either loop has an <code>else</code> clause, the break statement will bypass the <code>else</code> so it doesn&rsquo;t execute. We can see the above ideas below when searching for prime numbers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, n):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>		<span style="color:#66d9ef">if</span> n <span style="color:#f92672">%</span> x <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>			print(n, <span style="color:#e6db74">&#39;equals&#39;</span>, x, <span style="color:#e6db74">&#39;*&#39;</span>, n<span style="color:#f92672">//</span>x)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>			<span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>	<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>		<span style="color:#75715e"># loop falls through without finding a factor</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>		print(n, <span style="color:#e6db74">&#39;is a prime number&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span> <span style="color:#f92672">is</span> a prime number
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span> <span style="color:#f92672">is</span> a prime number
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span> equals <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span> <span style="color:#f92672">is</span> a prime number
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span> equals <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span> <span style="color:#f92672">is</span> a prime number
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span> equals <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span> equals <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>
+</span></span></code></pre></div><p>When used with a loop, the <code>else</code> clause has more in common with the clause of a <code>try</code> statement than an <code>if</code> statement; a <code>try</code> statement&rsquo;s clause will run when no exception occurs while a loops clause will run when no <code>break</code> occurs</p>
+<p>The <code>continue</code> statement moves onto the next iteration of a loop:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#66d9ef">if</span> num <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 		print(<span style="color:#e6db74">&#34;Found an even number&#34;</span>, num)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 		<span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#34;Found an odd number&#34;</span>, num)
+</span></span><span style="display:flex;"><span>Found an even number <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>Found an odd number <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>Found an even number <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>Found an odd number <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>Found an even number <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>Found an odd number <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>Found an even number <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>Found an odd number <span style="color:#ae81ff">9</span>
+</span></span></code></pre></div><p>6/6/2024</p>
+<h3 id="45-pass-statements"><strong>4.5 <code>pass</code> Statements</strong></h3>
+<p>The <code>pass</code> statement does nothing really; just allows something to exist which doesn&rsquo;t necessarily need to do anything.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pass</span>    <span style="color:#75715e"># Waits for keyboard interrupt (Ctrl + c)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyEmptyClass</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pass</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">initlog</span>(<span style="color:#f92672">*</span>args):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pass</span>      <span style="color:#75715e"># Remember to implement this!</span>
+</span></span></code></pre></div><h3 id="46-match-statements"><strong>4.6 <code>match</code> Statements</strong></h3>
+<p>A <code>match</code> statement takes in an expression, and compares it to case blocks in some successive pattern. Only the first pattern found gets executed.</p>
+<p>A basic implementation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">http_error</span>(status):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">match</span> status:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#ae81ff">400</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Bad Request&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#ae81ff">404</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Not found&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#ae81ff">420</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Falcon Punch!&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Something&#39;s effed up with the net&#34;</span>
+</span></span></code></pre></div><p>In the above example, <code>_</code> acts like a wildcard, and will execute if no cases are matched. You can combine multiple literals in a single pattern using the Pipe operator <code>|</code> (&ldquo;or&rdquo;).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#ae81ff">401</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">402</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">403</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Not allowed&#34;</span>
+</span></span></code></pre></div><p>The pattern to be matched can be also used to unpack assignments, and can also bind variables:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># point is an (x, y) tuple</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">match</span> point:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> (<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>):
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;Origin&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> (<span style="color:#ae81ff">0</span>, y):
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Y=</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> (x, <span style="color:#ae81ff">0</span>):
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;X=</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> (x, y):
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;X=</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">, Y=</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;Not a point&#34;</span>)	
+</span></span></code></pre></div><p>In the above example, the first pattern uses literals, while the second and third combine literals and a variable (binding a value from the subject <em>point</em>), and the fourth pattern uses two values, which is conceptually similar to unpacking <code>(x, y) = point</code>.</p>
+<p>You can also use classes with patterns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Point</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, x, y):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>x <span style="color:#f92672">=</span> x
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>y <span style="color:#f92672">=</span> y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">where_is</span>(point):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">match</span> point:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> Point(x<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>):
+</span></span><span style="display:flex;"><span>			print(<span style="color:#e6db74">&#34;Origin&#34;</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> Point(x<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, y<span style="color:#f92672">=</span>y):
+</span></span><span style="display:flex;"><span>			print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Y=</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> Point(x<span style="color:#f92672">=</span>x, y<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>):
+</span></span><span style="display:flex;"><span>			print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;X=</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> Point(x<span style="color:#f92672">=</span>x, y<span style="color:#f92672">=</span>y):
+</span></span><span style="display:flex;"><span>			print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;X=</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">, Y=</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>			print(<span style="color:#e6db74">&#34;Not a point&#34;</span>)
+</span></span></code></pre></div><p>Positional parameters can be accounted for if order is required for attributes; you can also define specific positions for attributes in patterns by setting the <code>__match_args__</code> special attribute in user defined classes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># if we used __match_args__ = (&#39;x&#39;, &#39;y&#39;) in our class, these</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># would all be valid ways of writing cases and all assign y to the var variable</span>
+</span></span><span style="display:flex;"><span>Point(<span style="color:#ae81ff">1</span>, var)
+</span></span><span style="display:flex;"><span>Point(<span style="color:#ae81ff">1</span>, y<span style="color:#f92672">=</span>var)
+</span></span><span style="display:flex;"><span>Point(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, y<span style="color:#f92672">=</span>var)
+</span></span><span style="display:flex;"><span>Point(y<span style="color:#f92672">=</span>var, x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>They say, &ldquo;A recommended way to read patterns is to look at them as an extended form of what you would put on the left of an assignment, to understand which variables would be set to what.&rdquo;
+I honestly don&rsquo;t understand this, so I&rsquo;ll need someone smarter than me to clarify this further for me.</p>
+<p>You can nest patterns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Point</span>:
+</span></span><span style="display:flex;"><span>	__match_args__ <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;x&#39;</span>, <span style="color:#e6db74">&#39;y&#39;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, x, y):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>x <span style="color:#f92672">=</span> x
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>y <span style="color:#f92672">=</span> y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">match</span> points:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> []:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;No points&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> [Point(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)]:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;The origin&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> [Point(x, y)]:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Single point </span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> [Point(<span style="color:#ae81ff">0</span>, y1), Point(<span style="color:#ae81ff">0</span>, y2)]:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Two on the y axis at </span><span style="color:#e6db74">{</span>y1<span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">{</span>y2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;Something else&#34;</span>)
+</span></span></code></pre></div><p>We can also add an <code>if</code> clause to a pattern, known as a guard. If the guard is false, the <code>match</code> goes onto the next case block:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">match</span> point:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> Point(x, y) <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> y:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Y=X at </span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> Point(x, y):
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Not on the diagnol&#34;</span>)
+</span></span></code></pre></div><p>More key features about <code>match</code> statements:</p>
+<ul>
+<li>Tuple and list patterns have the same meaning and match arbitrary sequences. An exception is they don&rsquo;t match iterators or strings.</li>
+<li>Sequence patterns support extended unpacking: <code>[x, y, *rest]</code> and <code>(x, y, *rest)</code> work like unpacking assignments. You can also use <code>_</code> after the <code>*</code>, so you can match a sequence of two items without binding the remaining items.</li>
+<li>Literals are compared by equality; singletons compared by identity.</li>
+<li>Patterns can be named constants; must be dotted names so they aren&rsquo;t interpreted as capture variables:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> enum <span style="color:#f92672">import</span> Enum
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Color</span>(Enum):
+</span></span><span style="display:flex;"><span>	RED <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;red&#39;</span>
+</span></span><span style="display:flex;"><span>	GREEN <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;green&#39;</span>
+</span></span><span style="display:flex;"><span>	BLUE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;blue&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>color <span style="color:#f92672">=</span> Color(input(<span style="color:#e6db74">&#34;Enter your choice of red, blue, or green: &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">match</span> color:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> Color<span style="color:#f92672">.</span>RED:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;I see red!&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> Color<span style="color:#f92672">.</span>GREEN:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;I see green!&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> Color<span style="color:#f92672">.</span>BLUE:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;I see blue!&#34;</span>)
+</span></span></code></pre></div><p>A tutorial on how to better use <code>match</code> is <a href="https://peps.python.org/pep-0636/">here</a>.</p>
+<h3 id="47-defining-functions"><strong>4.7 Defining Functions</strong></h3>
+<p>We can create a function for that Fibonacci sequence from earlier:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fib</span>(n):      <span style="color:#75715e"># write a Fibonacci series up to n</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#e6db74">&#34;&#34;&#34;Print a Fibonacci series up to n.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	a, b <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#66d9ef">while</span> a <span style="color:#f92672">&lt;</span> n:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 		print(a, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 		a, b <span style="color:#f92672">=</span> b, a<span style="color:#f92672">+</span>b
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> fib(<span style="color:#ae81ff">2000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">13</span> <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">34</span> <span style="color:#ae81ff">55</span> <span style="color:#ae81ff">89</span> <span style="color:#ae81ff">144</span> <span style="color:#ae81ff">233</span> <span style="color:#ae81ff">377</span> <span style="color:#ae81ff">610</span> <span style="color:#ae81ff">987</span> <span style="color:#ae81ff">1597</span>
+</span></span></code></pre></div><p>The <code>def</code> keyword for <em>definition</em> defines the function, with the name directly following and parenthesis to house the formal parameters, followed by a colon. The instructions follow underneath indented.</p>
+<p>The first line of a function has the option to create a <em>docstring</em> using three quotation marks, seen above. More for accessibility, it&rsquo;s good practice to use them.</p>
+<p>6/8/2024</p>
+<p>The scope of variables within a function are local and are in a separate table than variables outside; they will not be able to directly modify/update out of scope variables. We can circumnavigate this by using the <code>global</code> call for a variable inside a function.</p>
+<p>The parameters of a function are  introduced in that separate variable table specifically for that function; this means parameters are passed using <em>call by value</em> (value passed is a reference, not the value of the object).</p>
+<p>Other languages might assume since a function doesn&rsquo;t return anything it&rsquo;s a procedure; in Python, if there is no <code>return</code> specified, it returns <code>None</code>.</p>
+<p>We can rewrite the above Fibonacci Series with a return statement instead of print:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fib2</span>(n):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#e6db74">&#34;&#34;&#34;Return a list containing a Fibonacci Series up to n.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	result <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	a, b <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#66d9ef">while</span> a <span style="color:#f92672">&lt;</span> n:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 		result<span style="color:#f92672">.</span>append(a)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 		a, b <span style="color:#f92672">=</span> b, a <span style="color:#f92672">+</span> b
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#66d9ef">return</span> result
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f100 <span style="color:#f92672">=</span> fib2(<span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f100
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">21</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">55</span>, <span style="color:#ae81ff">89</span>]
+</span></span></code></pre></div><h3 id="48-more-on-defining-functions"><strong>4.8 More on Defining Functions</strong></h3>
+<p>Three forms of defining functions with a variable number of arguments;</p>
+<ol>
+<li>Default Argument Values
+<ol>
+<li>Very useful; allows for leaving out parameters not needed.</li>
+<li>We could call the function below in a few ways:
+<ol>
+<li>Only the mandatory argument: <code>ask_ok(&quot;Do you really want to quit?&quot;)</code></li>
+<li>Giving optional arguments: <code>ask_ok(&quot;OK to overwrite the file?&quot;, 2)</code></li>
+<li>All arguments: <code>ask_ok(&quot;OK to overwrite file?&quot;, 2, &quot;Only yes or no buster!&quot;)</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ask_of</span>(prompt, retries<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, reminder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Please try again!&#34;</span>):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>		reply <span style="color:#f92672">=</span> input(propt)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> reply <span style="color:#f92672">in</span> {<span style="color:#e6db74">&#39;y&#39;</span>, <span style="color:#e6db74">&#39;ye&#39;</span>, <span style="color:#e6db74">&#39;yes&#39;</span>}:        <span style="color:#75715e"># tests whether or not a sequence                    return True                        # contains a certain value</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> reply <span style="color:#f92672">in</span> {<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;no&#39;</span>, <span style="color:#e6db74">&#39;nop&#39;</span>, <span style="color:#e6db74">&#39;nope&#39;</span>}:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>		retries <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> retries <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#39;invalid user response&#39;</span>)
+</span></span><span style="display:flex;"><span>		print(reminder)
+</span></span></code></pre></div><ol start="2">
+<li>Keyword Arguments
+<ol>
+<li>Functions can be called using keyword arguments, <code>kwarg=value</code>.
+<ol>
+<li>In the code below, the function requires one parameter <code>voltage</code> and three optional parameters <code>state</code>, <code>action</code>, and <code>type</code> .</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parrot</span>(voltage, state<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;a stiff&#39;</span>, action<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;voom&#39;</span>, type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Norwegian Blue&#39;</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>	print(<span style="color:#e6db74">&#34;-- This parrot wouldn&#39;t&#34;</span>, action, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>	print(<span style="color:#e6db74">&#34;If you put&#34;</span>, voltage, <span style="color:#e6db74">&#34;volts to it.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>	print(<span style="color:#e6db74">&#34;-- Lovely plumage, the&#34;</span>, type)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>	print(<span style="color:#e6db74">&#34;-- It&#39;s&#34;</span>, state,<span style="color:#e6db74">&#34;!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#75715e"># Valid Calls</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(voltage<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(voltage<span style="color:#f92672">=</span><span style="color:#ae81ff">10000</span>, action<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;VMOOM&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(action<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;VMOOOM&#34;</span>, voltage<span style="color:#f92672">=</span><span style="color:#ae81ff">10000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(<span style="color:#e6db74">&#39;a million&#39;</span>, <span style="color:#e6db74">&#39;bereft of life&#39;</span>, <span style="color:#e6db74">&#39;jump&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(<span style="color:#e6db74">&#39;a thousand&#39;</span>, state<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;pushin up daises&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#75715e"># Invalid Calls</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot()                       <span style="color:#75715e"># required argument missing</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(voltage<span style="color:#f92672">=</span><span style="color:#ae81ff">5.0</span>, <span style="color:#e6db74">&#39;dead&#39;</span>)    <span style="color:#75715e"># non-keyword assignment after keyword assignment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(<span style="color:#ae81ff">110</span>, voltage<span style="color:#f92672">=</span><span style="color:#ae81ff">220</span>)       <span style="color:#75715e"># duplicate value for the same argument</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> parrot(actor<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;John Cleese&#39;</span>)    <span style="color:#75715e"># unknown keyword argument</span>
+</span></span></code></pre></div><ol start="2">
+<li>When the final formal parameter is in the syntax <code>**name</code>, it receives a dictionary with all keyword arguments except for those corresponding to a formal parameter. This is usually combined with a formal parameter of syntax <code>*name</code> which receives a tuple containing the positional arguments beyond the formal parameter list. <code>*name</code> must go before <code>**name</code>, obviously. We can write the following:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">donut_shop</span>(flavor, <span style="color:#f92672">*</span>arguments, <span style="color:#f92672">**</span>keywords):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#34;-- Do you have any&#34;</span>, flavor, <span style="color:#e6db74">&#34;?&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#34;-- I&#39;m sorry, we&#39;re all out of &#34;</span>, flavor)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#66d9ef">for</span> arg <span style="color:#f92672">in</span> arguments:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 		print(arg)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(<span style="color:#e6db74">&#34;-&#34;</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">40</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	<span style="color:#66d9ef">for</span> kw <span style="color:#f92672">in</span> keywords:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 		print(kw, <span style="color:#e6db74">&#34;:&#34;</span>, keywords[kw])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> donut_shop(<span style="color:#e6db74">&#34;Red Velvet&#34;</span>, <span style="color:#e6db74">&#34;We have no Donuts...&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 			<span style="color:#e6db74">&#34;We have...no...DONUTS????&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 			vanilla<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Out of Stock&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 			chocolate<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Out of Stock&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 			oreo<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Out of Stock&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">--</span> Do you have any Red Velvet<span style="color:#960050;background-color:#1e0010">?</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">--</span> I<span style="color:#e6db74">&#39;m sorry, we&#39;</span>re all out of Red Velvet
+</span></span><span style="display:flex;"><span>We have no Donuts<span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>We have<span style="color:#f92672">...</span>no<span style="color:#f92672">...</span>DONUTS<span style="color:#960050;background-color:#1e0010">???</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">------------------------------------------</span>
+</span></span><span style="display:flex;"><span>vanilla : Out of Stock
+</span></span><span style="display:flex;"><span>chocolate : Out of Stock
+</span></span><span style="display:flex;"><span>oreo : Out of Stock
+</span></span></code></pre></div><ol start="3">
+<li>Special Parameters
+<ol>
+<li>By default, arguments passed to a Python function by position or keyword. TO increase readability and performance, you should restrict the way arguments are passed so a developer can just look at a function definition to determine if items are passed via position, position or keyword, or by keyword.</li>
+<li>Function notation for this looks like the following:
+<ol>
+<li><code>def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):</code></li>
+<li><code>/</code> and <code>*</code> are optional, when used they indicate the kind of parameter by how the arguments may be passed to the function.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>6/10/2024</p>
+<p>Examples of Function Calls:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">standard_arg</span>(arg)L
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(arg)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pos_only_arg</span>(arg, <span style="color:#f92672">/</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(arg)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">kwd_only_arg</span>(<span style="color:#f92672">*</span>, arg):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(arg)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">combined_example</span>(post_only, <span style="color:#f92672">/</span>, standard, <span style="color:#f92672">*</span>, kwd_only):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 	print(pos_only, standard, kwd_only)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> standard_arg(<span style="color:#ae81ff">2</span>)             
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>                             <span style="color:#75715e"># first function takes either</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> standard_arg(arg<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> pos_only_arg(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> pos_only_arg(arg<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TypeError</span>: pos_only_arg() got some positional<span style="color:#f92672">-</span>only arguments passed <span style="color:#66d9ef">as</span> keyword arguments: <span style="color:#e6db74">&#39;arg&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> kwd_only_arg(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TypeError</span>: kwd_only_arg() takes <span style="color:#ae81ff">0</span> positional arguments but <span style="color:#ae81ff">1</span> was given
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> kwd_only_arg(arg<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> combined_example(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TypeError</span>: combined_example() takes <span style="color:#ae81ff">2</span> positional arguments but <span style="color:#ae81ff">3</span> were given
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> combined_example(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, kwd_only<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> combine_example(<span style="color:#ae81ff">1</span>, standard<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, kwd_only<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> combine_example(pos_only<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, standard<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, kwd_only<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TypeError</span>: combined_example() got some positional<span style="color:#f92672">-</span>only arguments passed <span style="color:#66d9ef">as</span> keyword arguments: <span style="color:#e6db74">&#39;pos_only&#39;</span>
+</span></span></code></pre></div><p><strong>Recap:</strong></p>
+<ul>
+<li>Positional-only if you want the name of the parameters to not be available to the users, or if they are arbitrary/have no meaning.</li>
+<li>Keyword-only when names have meaning and function definition is more understandable.</li>
+<li>For API, use positional-only to prevent breaking API changes if the parameters name is modified</li>
+</ul>
+<p>Another less frequently used option is to specify that your function can be called with any amount of arguments. Arguments are wrapped as a tuple. Zero or more normal arguments may go before the <code>*args</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrote_multiple_items</span>(file, seperator, <span style="color:#f92672">*</span>args):
+</span></span><span style="display:flex;"><span>	file<span style="color:#f92672">.</span>write(separator<span style="color:#f92672">.</span>join(args))
+</span></span></code></pre></div><p>We can do the reverse of this situation if there is a list with values already:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> list(range(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>))
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> args <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> list(range(<span style="color:#f92672">*</span>args))
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/">Chapter 5</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/conditionals/">conditionals</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

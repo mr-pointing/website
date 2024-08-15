@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
+Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students." />
+<meta name="keywords" content="homepage, blog, computerscience, hugo, obsidian, website" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/posts/starting-my-website/" />
+
+
+    <title>
+        
+            Starting My Website :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.d33d495c40ce25e9dc5cf99bb32335a4168eab31ea674349cfd18f4e4a938bd8.css" integrity="sha256-0z1JXEDOJencXPmbsyM1pBaOqzHqZ0NJz9GPTkqTi9g=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Starting My Website">
+  <meta itemprop="description" content="As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
+Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.">
+  <meta itemprop="datePublished" content="2024-08-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-08-11T00:00:00+00:00">
+  <meta itemprop="wordCount" content="666">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Hugo,Obsidian,Website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Starting My Website">
+  <meta name="twitter:description" content="As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
+Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/posts/starting-my-website/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Starting My Website">
+  <meta property="og:description" content="As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
+Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-11T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Obsidian">
+    <meta property="article:tag" content="Website">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-08-11 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://mrpointing.com/posts/starting-my-website/">Starting My Website</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <hr>
+<p>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.</p>
+<h2 id="components">Components</h2>
+<ul>
+<li>Obsidian</li>
+<li><a href="https://github.com/mr-pointing/website">Git/GitHub</a></li>
+<li><a href="https://gohugo.io/">Hugo</a></li>
+<li>Cloudflare</li>
+</ul>
+<h2 id="how-i-started">How I Started</h2>
+<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
+<p>Most tutorials I read online start at the beginning, and show how to start with a fresh blog. Assuming you understand Hugo (and if you don&rsquo;t you should read the articles in the footnotes), I&rsquo;m going to start right after where the quick-start leaves you.</p>
+<h2 id="making-a-blog-from-an-existing-vault">Making a Blog From an Existing Vault</h2>
+<p>So I tried the <a href="https://gohugo.io/getting-started/quick-start/">tutorial</a> on my laptop before bringing it over to my main machine, so I started on a good note.</p>
+<p>I set up my Hugo site to live in a directory named <code>/mr_pointing</code>, and started with the theme <a href="https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/">hello-friend-ng</a>. I decided to add it as a submodule, which will come back to haunt me.</p>
+<p>I dropped my first Obsidian file in, and&hellip;it looked terrible. A lot of my files contain code, math, images, etc. I was not prepared for it to look so different. And it was still just the first file!</p>
+<p>After some Googling I came across <a href="https://github.com/devidw/obsidian-to-hugo">Obsidian to Hugo</a>. This would help immensely, by taking my current markdown files and replacing the Obsidian specific syntax with Hugo syntax. Awesome, but this made me realize I had two issues to deal with.</p>
+<p>The first issue was simple, I had no frontmatter, or properties, so I had to add some to all of my existing 60 or so files. I used Templater, an Obsidian plugin, to create template headers with properties set, with <code>tags</code>, <code>title</code>, <code>date</code>, etc. Hugo uses the property <code>draft</code> to tell if something should be published or not. This is how I decided to start building my workflow, but we&rsquo;ll get back to that later.</p>
+<p>My second issue arose when I started making the properties; I couldn&rsquo;t nail how to get the date settings right. I was already having problems with using Templater&rsquo;s file dot method to grab the modified time and not updating (<code>&lt;$ tp.file.last_modified_date %&gt;</code>), which was getting frustrating. That eventually led me to using Update on Edit, another Obsidian Plugin, to add in a better last modified property. I already had <code>date</code> that works with my Theme&rsquo;s posting format, so I&rsquo;m happy.</p>
+<p>I should have all my problems solved right? Wrong.</p>
+<p>Running <code>hugo server -D</code> wouldn&rsquo;t even start the website. I had about 30-40 errors, that ranged in difficulty. I want to do a video that goes deeper in on that, so stay tuned for that. Going over all of the little instance cases are worth it, especially if your workflow looks similar to mine. Let&rsquo;s cut to the chase and point out the biggest issue - Obsidian to Hugo&rsquo;s formatting and how it&rsquo;s not perfect.</p>
+<p>I don&rsquo;t think this is the fault of the tool, my files weren&rsquo;t set up well to start with. So most of the issues came from it picking up references to notes that didn&rsquo;t exist, and images it couldn&rsquo;t reach. Turns out, the theme I&rsquo;m using gives you a way to call images in the docs (it took me way too long to find that&hellip;).</p>
+<p>After fixing all of the issues, it finally worked. I now have my site running on my local machine! Time to start on the hosting side. But first, Git.</p>
+<p>I made my first commit to my main <a href="https://github.com/mr-pointing/website">repository</a>.</p>
+<h2 id="footnotes">Footnotes</h2>
+<p><a href="https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/">Cloudflare Hugo Help Page</a>.</p>
+<p><a href="https://mischavandenburg.com/zet/articles/how-this-blog-is-created/">Mischa van der Berg</a>.</p>
+<p><a href="https://santacloud.dev/posts/creating-my-blog---a-developers-tale-of-over-engineering-using-obsidian-hugo-and-github-pages/">Reddit Thread</a>.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/hugo/">hugo</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/obsidian/">obsidian</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/website/">website</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        666 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-08-10 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

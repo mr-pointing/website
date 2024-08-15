@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Unit 1: Digital Information Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&amp;rsquo;ll be looking forward to stealing their ideas.
+Bits and bytes How do computers represent data? All computers understand is Binary, 0&amp;rsquo;s and 1&amp;rsquo;s.
+The video explains the example of using one single wire to transfer electricity through it; on or off." />
+<meta name="keywords" content="homepage, blog, computerscience, internet" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/" />
+
+
+    <title>
+        
+            AP Computer Science Principles - Unit 1 :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.d33d495c40ce25e9dc5cf99bb32335a4168eab31ea674349cfd18f4e4a938bd8.css" integrity="sha256-0z1JXEDOJencXPmbsyM1pBaOqzHqZ0NJz9GPTkqTi9g=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="AP Computer Science Principles - Unit 1">
+  <meta itemprop="description" content="Unit 1: Digital Information Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I’ll be looking forward to stealing their ideas.
+Bits and bytes How do computers represent data? All computers understand is Binary, 0’s and 1’s.
+The video explains the example of using one single wire to transfer electricity through it; on or off.">
+  <meta itemprop="datePublished" content="2024-07-20T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-20T00:00:00+00:00">
+  <meta itemprop="wordCount" content="3059">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Internet">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="AP Computer Science Principles - Unit 1">
+  <meta name="twitter:description" content="Unit 1: Digital Information Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I’ll be looking forward to stealing their ideas.
+Bits and bytes How do computers represent data? All computers understand is Binary, 0’s and 1’s.
+The video explains the example of using one single wire to transfer electricity through it; on or off.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="AP Computer Science Principles - Unit 1">
+  <meta property="og:description" content="Unit 1: Digital Information Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I’ll be looking forward to stealing their ideas.
+Bits and bytes How do computers represent data? All computers understand is Binary, 0’s and 1’s.
+The video explains the example of using one single wire to transfer electricity through it; on or off.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-07-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-20T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Internet">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-20 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/">AP Computer Science Principles - Unit 1</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="unit-1-digital-information">Unit 1: Digital Information</h1>
+<p>Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&rsquo;ll be looking forward to stealing their ideas.</p>
+<h2 id="bits-and-bytes">Bits and bytes</h2>
+<h3 id="how-do-computers-represent-data">How do computers represent data?</h3>
+<p>All computers understand is <strong>Binary</strong>, 0&rsquo;s and 1&rsquo;s.</p>
+<p>The video explains the example of using one single wire to transfer electricity through it; on or off. This is the most fundamental understanding of how our computers function. This is just one single bit. Common machines use hundreds of thousands of bits to achieve their objective.</p>
+<p>With text, it&rsquo;s easier to visualize. Every character has a value related to some makeup of a 0 and a 1. Images are harder, since they&rsquo;re made up of tiny pixels. Each pixel holds a color. Each color can thankfully be represented by a number. Think about videos, that are rendering 30 to 60 images per second.</p>
+<p>Audio can also be broken down into numbers, usually by vibrations as a waveform, and that waveform as a number.</p>
+<p>Bits hold only a single value, on or off. Generally only binary decisions are used by single bits.</p>
+<p>Computers will use multiple bits to represent more complex data. The more bits, the more information deliverable.</p>
+<p>We can see that a sequence of two bits can represent four (<code>2^2</code>) distinct values:</p>
+<p><code>00, 01, 10, 11</code></p>
+<p>While a sequence of three bits can represent eight (<code>2^3</code>) distinct values:</p>
+<p><code>000, 001, 010, 011, 100, 101, 110, 111</code></p>
+<p>While a bit is a single piece of information, a byte is a unit that consists of 8 bits.</p>
+<p>The conversion is pretty simple: multiple by 8 to go from bits to bytes, and divide by 8 to go from bytes to bits.</p>
+<h2 id="binary-numbers">Binary Numbers</h2>
+<p>The binary number system works very similarly to how decimal numbers work.</p>
+<p>In decimal numbers, you multiply each number by a different power of 10. You start in the ones&rsquo; place, the tens&rsquo; place, and the hundreds&rsquo; place. 234 is equal to <code>(2 * 100) + (3 * 10) + (4 * 1)</code>. Ones&rsquo; place is <code>10^0</code>, tens&rsquo; place is <code>10^1</code>, and hundreds&rsquo; place is <code>10^2</code>.</p>
+<p>The binary number system multiplies to the power of 2 instead of 10.</p>
+<p>The decimal number 1, can be represented in binary as 0001. That&rsquo;s the same as <code>(0 * 8) + (0 * 4) + (0 * 2) + (1 * 1)</code>, or <code>0 + 0 + 0 + 1</code>, which gives you 1.</p>
+<p>The decimal number 10, in binary is 1010. We know this because of <code>(1 * 8) + (0 * 4) + (1 * 2) + (0 * 1)</code>, which is <code>8 + 0 + 2 + 0</code>, which equals 10.</p>
+<h3 id="converting-decimal-to-binary">Converting decimal to binary</h3>
+
+    <img src="/images/decimal_to_binary.png"  alt="Decimal to Binary"  class="center"  style="border-radius: 8px;"  />
+
+
+<h2 id="limitations-of-storing-numbers">Limitations of Storing Numbers</h2>
+<h3 id="number-limits-overflow-and-roundoff">Number limits, overflow, and roundoff</h3>
+<p>Storing numbers requires some work for binary representation. We run into issues with problems like <em>roundoff</em>, <em>overflow</em>, and <em>precision</em>. These issues are usually centered around memory issues.</p>
+<h3 id="integer-representation">Integer representation</h3>
+<p>An integer is any whole number: <code>1, 10, 230, -400</code> are all integers. In order to store integers, for however many bits the number is stored in, the first indicates the sign, and the others contain the absolute value.</p>
+
+    <img src="/images/4_bit_binary_diagram.png"  alt="Decimal to Binary"  class="center"  style="border-radius: 8px;"  />
+
+
+<h3 id="overflow">Overflow</h3>
+<p>Let&rsquo;s suggest we only have 4-bits of memory to store our integers on a computer. That means we could only store up to the number 7. If we were to then try to go beyond it, like say with the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p><code>x</code> is easily able to be stored, but <code>y</code> would give us a problem since it goes beyond the capabilities of our systems memory. This type of error is called an <em>Overflow Error</em>. Some systems might throw this error, truncate it to 7, or wrap back to 1.</p>
+<p>Thankfully, 64-bit is the common standard.</p>
+<h3 id="floating-point-representation">Floating-point representation</h3>
+<p>Floating-point numbers represent every number that isn&rsquo;t an integer-irrational, fractional, etc.</p>
+<p>In floating-point representation, a number is multiplied by a base that&rsquo;s raised to some exponent.</p>
+<p>In mathematics it often looks like this: <code>300=3*10^2</code></p>
+<p>Since computers use the binary system instead of the decimal system, it looks like this: <code>128=1*2^7</code>.</p>
+<p>Numbers between the powers of 2 end up looking more so like this: <code>160=1.25*2^7</code>, or <code>0.25=1*2^-2</code>.</p>
+<p>Modern 64 bit systems use 1 bit for the sign, 11 bits for the exponent, and 52 bits for the number in the front.</p>
+<h3 id="roundoff-errors">Roundoff errors</h3>
+<p>There are still some issues since there are some numbers that can&rsquo;t be easily represented. <code>.3^-</code> (repeating) is an infinitely repeating sequence that can&rsquo;t be stored in any device. The computer will eventually have to round at some point. A <em>roundoff error</em> is when we get an unexpected error due to the computers rounding of a complicated-to-represent number.</p>
+<p>8/10/2024</p>
+<h2 id="storing-text-in-binary">Storing Text in Binary</h2>
+<p>Obviously, computers can do more than just store numbers. For example, we often use emojis. These icons, or symbols, are agreed upon and referenced under an <em>encoding</em> system.</p>
+<p>Encoding systems all have names to make it easier to discern what they&rsquo;re used for. If we assign a peace sign to the value 10, and and heart to the value 01, we could say 0110 would be a heart then a peace sign. But, the computer just has to store the values, instead of having to find a way to store those icons in binary.</p>
+<p><strong>ASCII Encoding</strong> is a common encoding standard that is still used today. It&rsquo;s encoded using 7-bit binary, meaning it can only have 128 permutations. Many of the codes are for actions, like line return or space. While the letters have both upper and lowercase variations, as well as numbers.</p>
+<p>ASCII&rsquo;s problems stem from it&rsquo;s lack of scalability. ASCII can only account for words written in plain English: any accent marks or foreign letters won&rsquo;t work. Same goes for any Chinese or Japanese kanji.</p>
+<p>Since ASCII is also 7-bit, and Computers store things in parts of 8-bits, there&rsquo;s a small waste of memory.</p>
+<p>To solve these problems and make computers more accessible, programmers started with <strong>Unicode</strong>. Unicode is a character set that has a code point (stored in hexadecimal) for each of the world&rsquo;s language-characters. Currently, Unicode has over 130,000 characters represented.</p>
+<p>The encoding system used alongside Unicode is <strong>UTF-8</strong>, that works with both ASCII and Unicode. UTF-8 has the ability to represent any Unicode character using ASCII code, while only using 1 to 4 bytes.</p>
+<p>UTF-8 works pretty interestingly to define how many bytes are used with it&rsquo;s binary representation: if there are no <code>1</code>&rsquo;s in the prefix, that means the character a single byte and can be represented using ASCII. If there are two <code>1</code>&rsquo;s, there are two bytes, 3 <code>1</code>&rsquo;s means three bytes, and so on to four.</p>
+<h2 id="converting-analog-data-to-binary">Converting Analog Data to Binary</h2>
+<p>The real doesn&rsquo;t work in binary; it moves too fast and constant. This data is called <strong>Analog</strong> data.</p>
+<p>It&rsquo;s far too complicated to just take in and display, but we can do a few steps in order to get there. Let&rsquo;s start with a basic analog signal.</p>
+
+    <img src="/images/analog_signal.png"  alt="analog_signal"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We could grab a random point on the green line and define the analog information in terms of seconds long or volts used.</p>
+<p><strong>Sampling</strong> is the process of selecting points after a desired interval (every 1 second, every 30 milliseconds, etc.). If we were to grab a point from the above graph every 30 milliseconds:</p>
+
+    <img src="/images/analog_signal_2.png"  alt="analog_signal"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Each orange point would become a (x, y) coordinate. It could play these 9 orange points, and depending on the complexity of the sound, it could either be or not be enough to accurately display it.</p>
+<p>We call the <em>sampling rate</em> the number of samples taken in some unit of time. Given the above example, with a sampling interval of 30 milliseconds, it would take 33.33 samples per second.</p>
+<p>We can quantify a sufficient sampling rate by saying that the rate should be larger or equal to twice the highest frequency in said signal. This is where we get hertz from; frequency can be defined as the number of cycles per second, which get measured in Hz.</p>
+<p>If we say, have a signal with a max of 250 Hz, we should use a sampling rate of at least 500 Hz. The sampling rate for music is commonly 48 kHz.</p>
+<p>Since noise is constant and difficult to quantify still, we need to incorporate <strong>Quantization</strong>. Using our example from above, we can break it down to say that our signal has a range of about -100 to 100 volts. To make things simple, we can easily use intervals of 25 volts to take in data more uniformly:</p>
+
+    <img src="/images/analog_signal_3.png"  alt="analog_signal"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The blue points are our nicely formatted coordinates; they may not be exact, but they&rsquo;ll approximate.</p>
+<p>The last part of our encoding process is <em>binary encoding</em>. In situations where there aren&rsquo;t many quantized y-values, the computer does not need to store the actual value. These values get stored as a binary sequence.</p>
+<p>For a computer to understand that binary sequence, it also needs to have information on how it was sampled and encoded. We can use <em>bit depth</em> to represent bits per sample.</p>
+<p>Telephone calls have a bit depth of 8 bits (256 values) while YouTube music videos is 24 bits (over 16 million values).</p>
+<p>After all of these steps, we put them back together in a process called <em>Reconstruction</em>. The reconstruction will look very close to the original, but will mess some specific things up.</p>
+<p>8/14/2024</p>
+<h2 id="lossless-data-compression">Lossless Data Compression</h2>
+<p>Since everyone uses data, and data storage isn&rsquo;t free, we have to be conscious about the amount of data we are using when storing our documents, images, videos, etc. In order to make the collection of all of these formats easier, the concept of <em>compression</em> was implemented.</p>
+<p>To compress something is to reduce the amount of storage needed for a file. Depending on the file&rsquo;s type, different methods of compression exist.</p>
+<p><strong>Lossless</strong> compression algorithms are for when the information contained in the document is important enough so that when we reduce the size it doesn&rsquo;t take away any quality from the original file. Think of your word documents; how bad would it be to lose the third word in every sentence for the first 10 pages? Pretty detrimental.</p>
+<p><strong>Lossy</strong> compression algorithms on the other hand reduce the size of the file with less care; the file size being reduced a great amount is more important than what is in the file. When you for example compress an image, often the image will lose that term we call &ldquo;sharpness&rdquo; to the original image.</p>
+<h3 id="lossless-text-compression">Lossless Text Compression</h3>
+<p>Lossless text compression algorithms work similarly to how English text slang works. Shortening phrases like lol, ggwp, gitgud, and so on, take full English phrases and symbolize the full words. We recognize them (though I doubt a Victorian child would know what those words mean) and understand their meaning.</p>
+<p>Text compression will find repeatable phrases that occur often and will replace them with some symbol. If &ldquo;the&rdquo; appears 10,000 times in a document, likely it will be replaced with some representative symbol and translated back when sized back up for modifying.</p>
+<h3 id="lossless-image-compression">Lossless Image Compression</h3>
+<p>Slightly more complicated than text, but the concepts are similar. Before we dive in, let&rsquo;s explore how some basic images can be represented, aka <em>bitmaps</em>.</p>
+<p>As we should already know, images on screens are just pixels, every single image contains a color on the RGB scale. Bitmaps are images that can displayed with binary pixels, of <code>0</code> and <code>1</code>. Some know this style as pixel art. Usually it&rsquo;s black and white, but the system can work with any two colors.</p>
+<p>Now if we were to look at really basic example of a heart:</p>
+<pre tabindex="0"><code>0001100000110000
+0011110001111000
+0111111011111100
+1111111111111110
+1111111111111110
+1111111111111110
+1111111111111110
+1111111111111110
+0111111111111100
+0011111111111000
+0001111111110000
+0000111111100000
+0000011111000000
+0000001110000000
+0000000100000000
+</code></pre><p>It&rsquo;s a little hard to see but I promise, that&rsquo;s a heart. If we weren&rsquo;t sitting at nice computers and you wanted to describe this image to me so I could draw it in bitmap style, you probably would get tired of saying each number individually. You might start to tell me how many of each there are to save me time, like for example with row 3, &ldquo;one 0, six 1s, one 0, six 1s, two 0s&rdquo; all the way down and it would probably save your voice some unnecessary strain.</p>
+<p>Computers can use an algorithm called <strong>RLE compression</strong> that has a similar logic. Run-length encoding will replace a row with the first number of white pixels, then red, then white, and so on until the row is finished. The third row which is <code>0111111011111100</code> would become <code>1,6,1,6,2</code>.</p>
+<p>Funnily enough, since RLE always starts with the white pixel, a row like 4, <code>1111111111111110</code>, would be written as <code>0,15,1</code>.</p>
+<p>Since it has this &ldquo;map&rdquo; of every pixel, a perfect representation from decompression is possible.</p>
+<h3 id="compression-ratio">Compression Ratio</h3>
+<p>If we were to continuously make our image of a heart larger (ours is 16x16), the RLE algorithm would increasingly save us more time. It works so nicely because our heart has a lot of fill for one color; black (or red, or whatever). It can easily reduce the amount of pixels into one color, since there is so much fill without breaks or details.</p>
+<p>If we had more complicated images, say a crown or a lion, it would have so much detail the compression wouldn&rsquo;t save nearly as much space as the simple heart would. Regardless, space would be saved, and the image would lose 0 detail upon decompression.</p>
+<h3 id="limits-of-rle">Limits of RLE</h3>
+<p>RLE&rsquo;s use-case really ends once you leave perfectly representable images. Images that have a different color for every pixel wouldn&rsquo;t even be able to use RLE; there are no &ldquo;runs&rdquo; to be made! Regardless of how big or small the image is, there is no way to represent a complex image with 0s and 1s without massive quality loss. Sometimes though, that can be a look, so always experiment and have fun with it.</p>
+<p>RLE is used today, but mainly in Fax machines, where black and white are the only options.</p>
+<h2 id="lossy-compression">Lossy Compression</h2>
+<p>Now that we understand Lossless, let&rsquo;s examine lossy more closely. Like we defined earlier, there are certain files that don&rsquo;t need exact 1 to 1 representation. Often these files are large enough that a small trim off the top will barely be noticeable.</p>
+<p>Matter of fact, if I were to compress an image, most if not all people would not be able to tell the difference between the two.</p>
+<p>For images, lossy compression algorithms can do something rather interesting; they use brightness version of an image (just black and white) and doing a procedure called <em>chroma subsampling</em>. The chroma version of the image, or color version, is searched through for similar color values, then approximates them based on some average (usually some multiple of 2) to transform nearby pixels into one uniform color.</p>
+<p>For audio, because the limits of the human ear are well understood, there are aspects of sound that we never hear. When audio files are compressed, these inaudible sections of the file are dropped and not missed.</p>
+<h3 id="lossless-vs-lossy">Lossless vs. Lossy</h3>
+<p>Choosing between the two comes down to the objective and limitations of your project. Most things these days will end up using some lossy algorithm, but when they do we often have a choice of how much we want to retain. You can look no further than any image or video editing software out there; when finishing up any project and exporting, it will ask for quality, usually in a percentage format. The higher the quality, the more space it&rsquo;ll take.</p>
+<h2 id="digital-copyright">Digital Copyright</h2>
+<p>I was hesitant to go deeper into this, since it&rsquo;s not necessarily a topic I&rsquo;m interested in, but I should get the definitions down just to be safe.</p>
+<p>How <em>copyright</em> works in the states:</p>
+<p>Authors are able to copyright their creative ideas. Once published, Authors automatically have claim to their copyright, but should in order for Court proceedings.</p>
+<p>Authors have the right too:</p>
+<ul>
+<li>Reproduce their own work</li>
+<li>Create derivative works</li>
+<li>Distribute copies via sale/rental</li>
+<li>Publicly display visuals/perform audio works using said material</li>
+</ul>
+<p>Copyrights usually end ~70 years after the authors death, and enters the <em>public domain</em>.</p>
+<p>The term <em>fair use</em> is related to the act of using some copyrighted material, that isn&rsquo;t infringing on any of the rights that we listed up above. Often if for something small, non-profit, and local, can we use things like copyrighted material. Once we enter the profit sphere, or get larger using other people&rsquo;s material, do we break fair use.</p>
+<h3 id="drm-and-dmca">DRM and DMCA</h3>
+<p><em>Digital Rights Management</em>, or DRM, is the security providers will put on their digital media in order to prevent the breaking of fair use laws. For example, for e-readers like the Kindle, Amazon might but DRM on their eBook files that don&rsquo;t allow for non-kindle devices to be able to read their files; it would actually encrypt the file unless used through a Amazon device.</p>
+<p>Another example is Music; Spotify will use DRM on their sound files, so that if pirated and ripped onto a non-Spotify player, the audio will end up corrupted and non-playable.</p>
+<p><em>DMCA</em>, or the Digital Millennium Copyright Act, is used almost more as a verb today than known as the act. When someone is using copyrighted material, the person who owns the property could flag that person for using their material without permission, taking down whatever use case the situation started in. Streaming on Twitch and you used non-public domain music? You could get flagged, and the video could get taken down, which we would say, &ldquo;The VOD got DMCA&rsquo;d&rdquo;.</p>
+<h3 id="creative-commons-and-open-source">Creative Commons and Open Source</h3>
+<p>In order to streamline the process of Copyrighting online content, <em>Creative Commons</em> came about. CC offers licenses for sharing and how to use said online material. If material does have a CC it is usually displayed somewhere near the content, and can be searched and filtered relatively easily.</p>
+<p><em>Open Source</em> is a concept that says the material used to write the content (usually some code base) is free and available to use in order to make writing software more compatible and alike. Even some licenses can be open source- the MIT license allows you to label your code under it&rsquo;s umbrella, allowing for applications to be rapidly created and released.</p>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/">Unit 2</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/internet/">internet</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

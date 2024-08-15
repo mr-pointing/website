@@ -29,7 +29,7 @@ So, I want to make my website using Obsidian to write Markdown files, have Hugo 
 	- [ ] Reading/Listening/Watching
 	- [ ] Web scraper to get info from Discogs
 - [x] Update/Connect GitHub
-- [x] Start [Hosting Hugo Using Cloudflare]({{< ref "Hosting Hugo Using Cloudflare" >}})
+- [x] Start [Starting My Website]({{< ref "Starting My Website" >}})
 
 So some updates before I go to bed:
 

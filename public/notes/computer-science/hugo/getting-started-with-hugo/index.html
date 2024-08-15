@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Quick Start It&amp;rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.
+To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.
+You also need to have Git installed.
+Once both are done, you can run the following commands:
+hugo new site quicksite This creates a new directory that will become our new website." />
+<meta name="keywords" content="homepage, blog, computerscience, website, documentation, hugo" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/" />
+
+
+    <title>
+        
+            Getting Started with Hugo :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.d33d495c40ce25e9dc5cf99bb32335a4168eab31ea674349cfd18f4e4a938bd8.css" integrity="sha256-0z1JXEDOJencXPmbsyM1pBaOqzHqZ0NJz9GPTkqTi9g=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Getting Started with Hugo">
+  <meta itemprop="description" content="Quick Start It’s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.
+To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.
+You also need to have Git installed.
+Once both are done, you can run the following commands:
+hugo new site quicksite This creates a new directory that will become our new website.">
+  <meta itemprop="datePublished" content="2024-07-26T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-26T00:00:00+00:00">
+  <meta itemprop="wordCount" content="964">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Website,Documentation,Hugo">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Getting Started with Hugo">
+  <meta name="twitter:description" content="Quick Start It’s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.
+To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.
+You also need to have Git installed.
+Once both are done, you can run the following commands:
+hugo new site quicksite This creates a new directory that will become our new website.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Getting Started with Hugo">
+  <meta property="og:description" content="Quick Start It’s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.
+To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.
+You also need to have Git installed.
+Once both are done, you can run the following commands:
+hugo new site quicksite This creates a new directory that will become our new website.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-07-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-26T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Website">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Hugo">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-26 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/">Getting Started with Hugo</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h2 id="quick-start">Quick Start</h2>
+<p>It&rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.</p>
+<p>To start, we need to use <a href="https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4">PowerShell</a> instead of Windows PowerShell. Apparently, they are different.</p>
+<p>You also need to have Git installed.</p>
+<p>Once both are done, you can run the following commands:</p>
+<ol>
+<li><code>hugo new site quicksite</code>
+<ul>
+<li>This creates a new directory that will become our new website. <code>quicksite</code> is the name of your directory.</li>
+</ul>
+</li>
+<li><code>cd quicksite</code>
+<ul>
+<li>Change directory to our new website</li>
+</ul>
+</li>
+<li><code>git init</code>
+<ul>
+<li>Initialize a new git repository</li>
+</ul>
+</li>
+<li><code>git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng</code>
+<ul>
+<li>Adds a new submodule, for a theme called Hello Friend, cloning the GitHub page into a new directory called <code>themes</code></li>
+</ul>
+</li>
+<li><code>echo &quot;theme = 'hello-friend-ng'&quot; &gt;&gt; hugo.toml</code>
+<ul>
+<li>Appends the phrase <code>theme = 'hello-friend-ng'</code> into the <code>hugo.toml</code> file, which allows for the theme to be applied.</li>
+</ul>
+</li>
+<li><code>hugo server</code>
+<ul>
+<li>Starts running the server for our new website!</li>
+</ul>
+</li>
+</ol>
+<p>We can set up our content, or the pages for our site, by creating it directly on the command line.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo new content content.posts/first-time-post.md
+</span></span></code></pre></div><p>This alone will just create the page. When opened, you&rsquo;ll just see the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">title</span> = &#39;First Time Post&#39;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">date</span> = &#39;somedate&#39;
+</span></span><span style="display:flex;"><span>draft = &#39;True&#39;
+</span></span><span style="display:flex;"><span>+++
+</span></span></code></pre></div><p><code>date</code> will obviously be filled in and <code>draft</code> is set to <code>True</code>, in order to prevent anything from being published without your saying so. If you want to view it while still in draft mode, you can just add <code>-D</code> to the server run command.</p>
+<p>You can start editing your file with whatever text editor you&rsquo;d like, and see it change as the file is saved in real-time without having to restart the server constantly. Pretty cool.</p>
+<h2 id="configuring-the-site">Configuring the Site</h2>
+<p>You can edit your sites configuration through the site&rsquo;s <code>hugo.toml</code> file. By default It should have three, <code>baseURL</code>, <code>languageCode</code>, and <code>title</code>. If you&rsquo;re following this exactly, you&rsquo;ll also have a <code>theme</code> from the command ran before.</p>
+<p>To get the site running, you&rsquo;ll have to set the base URL to your own production site and change the title.</p>
+<p>That just configures it. We still have to publish and deploy it. When publishing, Hugo takes the entirety of your site stored through the <code>/public</code> directory. Publishing is a very simple command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><h2 id="basic-usage">Basic Usage</h2>
+<p>As most command line interfaces (CLI) have, you can use <code>hugo help</code> to get more directed information.</p>
+<p>The next section describes front matter and how it&rsquo;s used (Obsidian Properties) so I stopped for a bit and did some research. Properties/front matter is just the meta data of the page; the important information necessary (according to the author).</p>
+<p>The most important properties for me right now seem to be aliases since they make searching easier and faster apparently, as well as moving the tags into there, and using <code>draft</code> with Hugo. This page is the first to have that applied.</p>
+<h3 id="draft-future-and-expired-content">Draft, future, and expired content</h3>
+<p>There are a few instances in which Hugo won&rsquo;t publish your content:</p>
+<ul>
+<li><code>draft</code> is <code>true</code></li>
+<li><code>date</code> is some future date</li>
+<li><code>publishDate</code> is some future date</li>
+<li><code>expiryDate</code> is some past date</li>
+</ul>
+<p>You can override the first three with the following commands when running <code>hugo</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo --buildDrafts  # or -D
+</span></span><span style="display:flex;"><span>hugo --buildExpired  # or -E
+</span></span><span style="display:flex;"><span>hugo --buildFuture  # or -F
+</span></span></code></pre></div><p>It is common practice to manually clear the contents of your public directory before each build to remove draft, expired, and future content.</p>
+<h2 id="directory-structure">Directory Structure</h2>
+<p>Let&rsquo;s go over the directory/subdirectory structure.</p>
+<h3 id="site-skeleton">Site Skeleton</h3>
+<p>When you make a project using <code>hugo new site quicksite</code> will make this structure:</p>
+<pre tabindex="0"><code>my-site/ 
+├── archetypes/ 
+│ └── default.md 
+├── assets/ 
+├── content/ 
+├── data/ 
+├── i18n/ 
+├── layouts/ 
+├── static/
+├── themes/
+└── hugo.toml &lt;-- site configuration
+</code></pre><p>You could also make a subdirectory for it which they bring up:</p>
+<pre tabindex="0"><code>my-site/ 
+├── archetypes/ 
+│ └── default.md 
+├── assets/ 
+├── config/           &lt;-- site configuration
+│ └── _default/
+|     └── hugo.toml
+├── content/ 
+├── data/ 
+├── i18n/ 
+├── layouts/ 
+├── static/
+├── themes/
+</code></pre><p>Then, once built, it&rsquo;ll add a <code>public/</code> and <code>resources/</code> directory.</p>
+<h3 id="directories">Directories</h3>
+<ul>
+<li><code>archetypes/</code>: templates for new content.</li>
+<li><code>assets/</code>: has global resources passed through some asset pipeline. Images, CSS, JavaScript, and TypeScript.</li>
+<li><code>config/</code>: contains site configuration. For projects that need minimal configuration or don&rsquo;t need to behave differently in different environments, subdirectories likely aren&rsquo;t necessary.</li>
+<li><code>content/</code>: contains the markup/markdown files and page resources.</li>
+<li><code>data/</code>: contains data files (JSON, TOML, YAML, or XML) that modify the content or configuration of the site.</li>
+<li><code>i18n/</code>: contains translation tables for multilingual sites.</li>
+<li><code>layouts/</code>: contains templates to transform content, data, and resources into one website.</li>
+<li><code>public/</code>: contains the published website</li>
+<li><code>resources/</code>: contains cached output from Hugo&rsquo;s asset pipelines, which are generated whenever you run the <code>hugo</code> or <code>hugo server</code> commands.</li>
+<li><code>static/</code>: contains the files that will be copied to the public directory when the site is built.</li>
+<li><code>themes/</code>: contains one or more themes</li>
+</ul>
+<h3 id="union-file-system">Union File System</h3>
+<p>I read this like three times but I don&rsquo;t really understand? It&rsquo;s a way to break up and have multiple directories in your content directory.</p>
+<p>Let&rsquo;s say you have the following structure:</p>
+<pre tabindex="0"><code>home/ 
+└── user/
+  ├── my-site/
+  │ ├── content/ 
+  │ │ ├── books/ 
+  │ │ │ ├── _index.md 
+  │ │ │ ├── book-1.md
+  │ │ │ └── book-2.md
+  │ │ └── _index.md
+  │ ├── themes/
+  │ │ └── my-theme/
+  │ └── hugo.toml
+  └── shared-content/
+  └── films/
+   ├── _index.md 
+   ├── film-1.md 
+   └── film-2.md
+</code></pre><p>You can use the following <code>yaml</code> configuration to mount the <code>films</code> directory into <code>content</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">module</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mounts</span>:
+</span></span><span style="display:flex;"><span>   - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">content</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">target</span>: <span style="color:#ae81ff">content</span>
+</span></span><span style="display:flex;"><span>   - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">/home/user/shared-content</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">target</span>: <span style="color:#ae81ff">content</span>
+</span></span></code></pre></div><p>Once mounted, it will become:</p>
+<pre tabindex="0"><code>home/ 
+└── user/
+  └──  my-site/
+   ├── content/ 
+   │ ├── books/ 
+   │ │ ├── _index.md 
+   │ │ ├── book-1.md
+   │ │ └── book-2.md
+   | └── films/
+   | | ├── _index.md 
+   | | ├── film-1.md 
+   | | └── film-2.md
+   │ └── _index.md
+   │ ├── themes/
+   │ │ └── my-theme/
+   │ └── hugo.toml
+</code></pre>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/website/">website</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/hugo/">hugo</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -2,362 +2,371 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/computerscience/</loc>
+    <loc>https://mrpointing.com/tags/manga/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/entertainment/my-hero-academia/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/shonen/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/computerscience/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/flask/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/flask/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/flask-notes/flasks-templates/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/flask-notes/flasks-templates/</loc>
+    <loc>https://mrpointing.com/tags/hugo/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://mrpointing.com/tags/obsidian/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://mrpointing.com/posts/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://mrpointing.com/tags/python/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://mrpointing.com/posts/starting-my-website/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/obsidian/current-obsidian-plugins/</loc>
+    <loc>https://mrpointing.com/tags/website/</loc>
+    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/obsidian/current-obsidian-plugins/</loc>
     <lastmod>2024-08-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/obsidian/</loc>
-    <lastmod>2024-08-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/circuit-playground-express/</loc>
+    <loc>https://mrpointing.com/projects/circuit-playground-express/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/flask-notes/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/flask-notes/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/hugo/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/hugo/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/me/</loc>
+    <loc>https://mrpointing.com/tags/me/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://mrpointing.com/about/</loc>
     <lastmod>2024-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/mr.-pointing-website/</loc>
+    <loc>https://mrpointing.com/projects/mr.-pointing-website/</loc>
     <lastmod>2024-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/project/</loc>
+    <loc>https://mrpointing.com/tags/project/</loc>
     <lastmod>2024-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/website/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/apache/</loc>
+    <loc>https://mrpointing.com/tags/apache/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/apache-documentation/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/apache-documentation/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</loc>
+    <loc>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/internet/</loc>
+    <loc>https://mrpointing.com/tags/internet/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/cookies/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/cookies/</loc>
     <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/obsidian/beginner-tutorial-for-obsidian-dataview/</loc>
+    <loc>https://mrpointing.com/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/documentation/</loc>
+    <loc>https://mrpointing.com/tags/documentation/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/formatting/</loc>
+    <loc>https://mrpointing.com/tags/formatting/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/hugo/getting-started-with-hugo/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/hugo/hosting-hugo-using-cloudflare/</loc>
-    <lastmod>2024-07-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2024-07-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/algorithms/</loc>
+    <loc>https://mrpointing.com/tags/algorithms/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/introduction-to-algorithms/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/textbook/</loc>
+    <loc>https://mrpointing.com/tags/textbook/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/khan-academy/khan-academy---ap-computer-science-principles---unit-1/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>https://mrpointing.com/tags/ai/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/classes/</loc>
+    <loc>https://mrpointing.com/tags/classes/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/videos/how-to-start-a-homelab-for-0/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/videos/how-to-start-a-homelab-for-0/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/videos/how-to-use-@dataclass-in-python/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/videos/how-to-use-@dataclass-in-python/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://mrpointing.com/tags/linux/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/lython/</loc>
+    <loc>https://mrpointing.com/projects/lython/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ptoject/</loc>
+    <loc>https://mrpointing.com/tags/ptoject/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/shell/</loc>
+    <loc>https://mrpointing.com/tags/shell/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/videos/the-ultimate-guide-to-writing-functions/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/youtube/</loc>
+    <loc>https://mrpointing.com/tags/youtube/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/videos/browsers-http-and-you/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/videos/browsers-http-and-you/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/obsidian/templater-formatting-notes/</loc>
+    <loc>https://mrpointing.com/notes/obsidian/templater-formatting-notes/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/introduction-to-algorithms/part-1/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/</loc>
     <lastmod>2024-07-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</loc>
     <lastmod>2024-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/api/</loc>
+    <loc>https://mrpointing.com/tags/api/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/flask-notes/blinker/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/flask-notes/blinker/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/book/</loc>
+    <loc>https://mrpointing.com/tags/book/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/flask-notes/click/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/flask-notes/click/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/flask-notes/jinja/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/flask-notes/jinja/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sciencefiction/</loc>
+    <loc>https://mrpointing.com/tags/sciencefiction/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/entertainment/the-road/</loc>
+    <loc>https://mrpointing.com/notes/entertainment/the-road/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/flask-notes/werkzeug/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/flask-notes/werkzeug/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</loc>
     <lastmod>2024-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/packages/</loc>
+    <loc>https://mrpointing.com/tags/packages/</loc>
     <lastmod>2024-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</loc>
     <lastmod>2024-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/virtualenv/</loc>
+    <loc>https://mrpointing.com/tags/virtualenv/</loc>
     <lastmod>2024-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ide/</loc>
+    <loc>https://mrpointing.com/tags/ide/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/modules/</loc>
+    <loc>https://mrpointing.com/tags/modules/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/pycharm-ide-features/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/pycharm-ide-features/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/standardlibrary/</loc>
+    <loc>https://mrpointing.com/tags/standardlibrary/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/raspberry-pi-nas/</loc>
+    <loc>https://mrpointing.com/projects/raspberry-pi-nas/</loc>
     <lastmod>2024-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/formatting-percentages/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/formatting-percentages/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fantasy/</loc>
+    <loc>https://mrpointing.com/tags/fantasy/</loc>
     <lastmod>2024-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/entertainment/words-of-radiance/</loc>
+    <loc>https://mrpointing.com/notes/entertainment/words-of-radiance/</loc>
     <lastmod>2024-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/jobany-rosario/</loc>
+    <loc>https://mrpointing.com/projects/jobany-rosario/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/wix/</loc>
+    <loc>https://mrpointing.com/tags/wix/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</loc>
     <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/flask-notes/flasks-quickstart/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/errors/</loc>
+    <loc>https://mrpointing.com/tags/errors/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/exceptions/</loc>
+    <loc>https://mrpointing.com/tags/exceptions/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/datastructures/</loc>
+    <loc>https://mrpointing.com/tags/datastructures/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/designing-a-restful-api/</loc>
+    <loc>https://mrpointing.com/projects/designing-a-restful-api/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/http-semantics/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/http-semantics/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/numpy/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/numpy/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tutorialnotes/</loc>
+    <loc>https://mrpointing.com/tags/tutorialnotes/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/input/</loc>
+    <loc>https://mrpointing.com/tags/input/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/output/</loc>
+    <loc>https://mrpointing.com/tags/output/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/audio/</loc>
+    <loc>https://mrpointing.com/tags/audio/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/future-projects/</loc>
+    <loc>https://mrpointing.com/projects/future-projects/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/vinyl-visualizer/</loc>
+    <loc>https://mrpointing.com/projects/vinyl-visualizer/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/leet-code-problems/75.-sort-colors/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/leet-code-problems/75.-sort-colors/</loc>
     <lastmod>2024-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sorting/</loc>
+    <loc>https://mrpointing.com/tags/sorting/</loc>
     <lastmod>2024-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/leet-code-problems/1122.-relative-sort-array/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/arrays/</loc>
+    <loc>https://mrpointing.com/tags/arrays/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</loc>
     <lastmod>2024-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/conditionals/</loc>
+    <loc>https://mrpointing.com/tags/conditionals/</loc>
     <lastmod>2024-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</loc>
     <lastmod>2024-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/ai-engineer-roadmap/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/essays/</loc>
+    <loc>https://mrpointing.com/tags/essays/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machinelearning/</loc>
+    <loc>https://mrpointing.com/tags/machinelearning/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/manga/</loc>
+    <loc>https://mrpointing.com/notes/entertainment/naruto/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/entertainment/naruto/</loc>
+    <loc>https://mrpointing.com/notes/topics-im-interested-in/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/shonen/</loc>
+    <loc>https://mrpointing.com/notes/entertainment/you-are-not-expected-to-understand-this/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/topics-im-interested-in/</loc>
-    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/entertainment/you-are-not-expected-to-understand-this/</loc>
-    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/datatypes/</loc>
+    <loc>https://mrpointing.com/tags/datatypes/</loc>
     <lastmod>2024-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/syntax/</loc>
+    <loc>https://mrpointing.com/tags/syntax/</loc>
     <lastmod>2024-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</loc>
     <lastmod>2024-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/entertainment/</loc>
+    <loc>https://mrpointing.com/tags/entertainment/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/entertainment/</loc>
+    <loc>https://mrpointing.com/notes/entertainment/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/khan-academy/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/khan-academy/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/leet-code-problems/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/leet-code-problems/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/obsidian/</loc>
+    <loc>https://mrpointing.com/notes/obsidian/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/projects/</loc>
+    <loc>https://mrpointing.com/tags/projects/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://mrpointing.com/projects/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/python-tutorial/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/videos/</loc>
+    <loc>https://mrpointing.com/tags/videos/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/computer-science/videos/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/videos/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://mrpointing.com/blog/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://mrpointing.com/series/</loc>
   </url>
 </urlset>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Science on Mr. Pointing</title>
+    <link>https://mrpointing.com/notes/computer-science/</link>
+    <description>Recent content in Computer Science on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mrpointing.com/notes/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Documentation</title>
+      <link>https://mrpointing.com/notes/computer-science/apache-documentation/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/apache-documentation/</guid>
+      <description>Modified: August 02 2024&#xA;Link to documentation.</description>
+    </item>
+    <item>
+      <title>Cookies</title>
+      <link>https://mrpointing.com/notes/computer-science/cookies/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/cookies/</guid>
+      <description>Modified: August 02 2024&#xA;Link to Cloudflare, super helpful resource.&#xA;A cookie is a piece of data sent from a web server to a web browser filled with information about the client and session, created when the request was sent from the client to the server.&#xA;The three main reasons why you&amp;rsquo;d want to use cookies would be:&#xA;Session Info: Storing the session info in the cookie allows you to do things like refresh the page or link to another page without having to retype in your user information.</description>
+    </item>
+    <item>
+      <title>PyCharm IDE Features</title>
+      <link>https://mrpointing.com/notes/computer-science/pycharm-ide-features/</link>
+      <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/pycharm-ide-features/</guid>
+      <description>Get Acquainted with PyCharm The project view is one of the main tool windows, containing the project directory, external libraries, and scratch files. You can also open it with Alt 1. The Python interpreter is easily viewable in the status bar in the bottom right. You can run, debug, or other option on the top right of the window. You can also press Shift F10. We got an unexpected error in our code, featured below.</description>
+    </item>
+    <item>
+      <title>Formatting Percentages</title>
+      <link>https://mrpointing.com/notes/computer-science/formatting-percentages/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/formatting-percentages/</guid>
+      <description>Modified: July 03 2024&#xA;7/3/2024&#xA;Taken from this article.&#xA;Often in projects, we want to format our large float types as smaller percentages.&#xA;There are three main ways to do this:&#xA;Rounding and Float/String Types: round() takes two parameters: a value and a number to round too. Then, we can use a little complicated string statement.&#xA;&amp;gt;&amp;gt;&amp;gt; number = 0.8839133112 &amp;gt;&amp;gt;&amp;gt; n2 = round(number, 4) &amp;gt;&amp;gt;&amp;gt; print(n2) 0.886 &amp;gt;&amp;gt;&amp;gt; print(str(n2 * 100) + &amp;#39;%&amp;#39;) Format() Alternatively, if that seems a bit complicated, we can just format() instead.</description>
+    </item>
+    <item>
+      <title>HTTP Semantics</title>
+      <link>https://mrpointing.com/notes/computer-science/http-semantics/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/http-semantics/</guid>
+      <description>Modified: June 20 2024&#xA;Following this documentation.</description>
+    </item>
+    <item>
+      <title>NumPy</title>
+      <link>https://mrpointing.com/notes/computer-science/numpy/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/numpy/</guid>
+      <description>Modified: June 20 2024&#xA;Link to documentation</description>
+    </item>
+    <item>
+      <title>AI Engineer Roadmap</title>
+      <link>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</guid>
+      <description>Modified: August 02 2024&#xA;A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject.</description>
+    </item>
+  </channel>
+</rss>

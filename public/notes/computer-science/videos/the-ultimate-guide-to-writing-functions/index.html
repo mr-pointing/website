@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 23 2024
+Link to video.
+Tip 1: Do one thing, and do it well A function should perform a single task.
+Think about the level of abstraction; the function should be on the same level of abstraction.
+He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison." />
+<meta name="keywords" content="homepage, blog, computerscience, youtube, python" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/" />
+
+
+    <title>
+        
+            The Ultimate Guide to Writing Functions :: Mr. Pointing  — Python Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.d33d495c40ce25e9dc5cf99bb32335a4168eab31ea674349cfd18f4e4a938bd8.css" integrity="sha256-0z1JXEDOJencXPmbsyM1pBaOqzHqZ0NJz9GPTkqTi9g=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="The Ultimate Guide to Writing Functions">
+  <meta itemprop="description" content="Modified: July 23 2024
+Link to video.
+Tip 1: Do one thing, and do it well A function should perform a single task.
+Think about the level of abstraction; the function should be on the same level of abstraction.
+He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison.">
+  <meta itemprop="datePublished" content="2024-07-19T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-19T00:00:00+00:00">
+  <meta itemprop="wordCount" content="495">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Youtube,Python">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="The Ultimate Guide to Writing Functions">
+  <meta name="twitter:description" content="Modified: July 23 2024
+Link to video.
+Tip 1: Do one thing, and do it well A function should perform a single task.
+Think about the level of abstraction; the function should be on the same level of abstraction.
+He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="The Ultimate Guide to Writing Functions">
+  <meta property="og:description" content="Modified: July 23 2024
+Link to video.
+Tip 1: Do one thing, and do it well A function should perform a single task.
+Think about the level of abstraction; the function should be on the same level of abstraction.
+He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-07-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-19T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Youtube">
+    <meta property="article:tag" content="Python">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-19 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/">The Ultimate Guide to Writing Functions</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>Modified: July 23 2024</p>
+<p><a href="https://www.youtube.com/watch?v=yatgY4NpZXE">Link</a> to video.</p>
+<hr>
+<h3 id="tip-1-do-one-thing-and-do-it-well">Tip 1: Do one thing, and do it well</h3>
+<p>A function should perform a single task.</p>
+<p>Think about the level of abstraction; the function should be on the same level of abstraction.</p>
+<p>He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison.</p>
+<p>He then uses another function that does a Luhn Checksum, then validates the persons card if said checksum returns positive. He brings up that this is doing way too much, and actually decides to split this up. Mostly because the calculation does so many things in comparison to our first example with just two objectives.</p>
+<p>He then brings up that even the broken up second half, that uses the checksum as a separate function and calculates some other authorization, is doing two things at once, retrieving information and returning. This leads into the second tip.</p>
+<h3 id="tip-2-separate-commands-from-queries">Tip #2: Separate commands from queries</h3>
+<p>A function either does a query or does a command.</p>
+<p>He changes the second function, the validating card function, to not have it&rsquo;s own function to return a value, but just perform a return on some statement.</p>
+<h3 id="tip-3-only-request-information-you-actually-need">Tip #3: Only request information you actually need</h3>
+<p>Before, the function to validate the card would take in the entire person object, retrieving their name, home information, etc. This is hardly usable due to it taking up more space and not being as scalable.</p>
+<p>He updates it to take in just the persons credit card information. This also changes the call to validate, as you don&rsquo;t pass a person, but a persons credentials.</p>
+<p>He also brings up that you could make them passable as keywords if you wanted by changing the passing to start with <code>keyword=</code>, and putting <code>*,</code> at the beginning of the function definition you are calling with.</p>
+<h3 id="tip-4-keep-the-number-of-parameters-minimal">Tip #4: Keep the number of parameters minimal</h3>
+<p>With our new function that takes in the persons credit card number, expiry month and year, we now have a function that takes in three parameters. Even this looks more cluttered, and we can shorten this even further by implementing the credit card info as a class by itself.</p>
+<p>Instead of making a dictionary in the person class, which was my first thought, he actually makes a separate class with the <code>Protocol</code> attribute. I need to learn what this does because I don&rsquo;t understand how Python knows to grab <code>number</code>, <code>exp_month</code>, and <code>exp_year</code> without being explicitly told it&rsquo;s a card type.</p>
+<p>He also goes over how to just remove the card information from the user all together, create a separate card class, and pass in a type <code>card</code> when you create the <code>person</code> class.</p>
+<p>The rest of the video was okay. I have a lot more work to understand about Python classes and functions, so for right now I think I&rsquo;m set.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/youtube/">youtube</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
