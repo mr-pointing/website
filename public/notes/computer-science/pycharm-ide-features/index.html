@@ -15,7 +15,7 @@
 
     <title>
         
-            PyCharm IDE Features :: Mr. Pointing  — Python Teacher
+            PyCharm IDE Features :: Mr. Pointing  — Computer Science Teacher
         
     </title>
 
@@ -48,7 +48,7 @@
   <meta itemprop="description" content="Get Acquainted with PyCharm The project view is one of the main tool windows, containing the project directory, external libraries, and scratch files. You can also open it with Alt 1. The Python interpreter is easily viewable in the status bar in the bottom right. You can run, debug, or other option on the top right of the window. You can also press Shift F10. We got an unexpected error in our code, featured below.">
   <meta itemprop="datePublished" content="2024-07-09T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-07-09T00:00:00+00:00">
-  <meta itemprop="wordCount" content="758">
+  <meta itemprop="wordCount" content="1287">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Python,IDE,Documentation">
 
@@ -119,7 +119,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
     </ul>
 </nav>
 
@@ -236,6 +236,57 @@
 <p>Let&rsquo;s say you have a variable you just grabbed from a dictionary. If you know you&rsquo;re going to need that value for some statement, you can type <code>.if</code>, <code>.for</code>, or <code>.while</code> to throw it into a structure using the variable as the argument. I&rsquo;m sure there are more, but that&rsquo;s all I need to worry about for now.</p>
 <h3 id="f-string-completion">F-string Completion</h3>
 <p>Just like the other completions, when filling out an f-string variable, you can use auto-completion there as well.</p>
+<p>8/16/2024</p>
+<h2 id="refactoring">Refactoring</h2>
+<h3 id="the-refactoring-menu">The Refactoring Menu</h3>
+<p>The refactoring menu can be opened anytime using <code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>T</code>. One example they used was the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> random
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>(x, random):
+</span></span><span style="display:flex;"><span>	print(x <span style="color:#f92672">+</span> random)
+</span></span></code></pre></div><p>If I wanted to pass in the random module as a parameter instead of as the entire library, we can use our Refactoring Menu to chose option 5, or Introduce Parameter, to automatically create one for us. The above will become like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> random
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>(x, r<span style="color:#f92672">=</span>random):
+</span></span><span style="display:flex;"><span>	print(x <span style="color:#f92672">+</span> r)
+</span></span></code></pre></div><p>You have the option to leave it as r (probably will be the first letter in the name) or name it whatever you&rsquo;d like.</p>
+<h3 id="rename">Rename</h3>
+<p>When you need to rename a variable within a file, you can move your caret over the variable and press <code>Shift</code> <code>F6</code>.</p>
+<p>The renaming tool will let you type in what you want to replace it. If there are only one reference of the name, it&rsquo;ll pass through no issue. However if you have multiple references with the same name, say in different classes in the same file, PyCharm will warn you and ask to clarify what you want to refactor.</p>
+<h3 id="extract-variable">Extract Variable</h3>
+<p>There are often moments where we are using some value, like in the example below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nums <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">14</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> nums[i] <span style="color:#f92672">&gt;</span> nums[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>		nums[i], nums[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> nums[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>], nums[i]
+</span></span></code></pre></div><p>In this situation, <code>i+1</code> could become a variable. If we use <code>Ctrl</code> <code>Alt</code> <code>V</code> when our caret is over <code>i+1</code>, we are given an option to replace the instance or all occurrences of the pattern. The previous example will now look like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nums <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">14</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>	num_var <span style="color:#f92672">=</span> i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> nums[i] <span style="color:#f92672">&gt;</span> nums[num_var]:
+</span></span><span style="display:flex;"><span>		nums[i], nums[num_var] <span style="color:#f92672">=</span> nums[num_var], nums[i]
+</span></span></code></pre></div><p>You can do the same thing with methods instead of variables, using <code>Ctrl</code> <code>Alt</code> <code>M</code>, but for whatever reason the macro wouldn&rsquo;t work for me? I had to use my mouse to open it manually. Let&rsquo;s refactor the example above:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nums <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">14</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>	num_var <span style="color:#f92672">=</span> i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> nums[i] <span style="color:#f92672">&gt;</span> nums[num_var]:
+</span></span><span style="display:flex;"><span>		swap_vals(nums, i, num_var)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">swap_vals</span>(nums, i, num_var):
+</span></span><span style="display:flex;"><span>	nums[i], nums[num_var] <span style="color:#f92672">=</span> nums[num_var], nums[i]
+</span></span></code></pre></div><p>Not the best example, but for demonstration purposes it does the job.</p>
+<h3 id="quick-fix-refactoring">Quick-Fix Refactoring</h3>
+<p>Not much of an example here since it&rsquo;s a general tip, but we can use Quick-fix (<code>Alt</code> <code>Enter</code>) to help us with refactoring. Always remember to use quick-fix when we have yellow or red lines under our code.</p>
+<h3 id="in-place-refactoring">In-place Refactoring</h3>
+<p>Let&rsquo;s say you have the following example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>q <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;What is your name?&#34;</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter your name: &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Welcome to the world, </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74">!&#34;</span>)
+</span></span></code></pre></div><p>If you want to rename the use of <code>a</code> to become <code>answers</code>, you can just start typing the new name. PyCharm will pick up that you are renaming a used variable. When you are done typing the name, you hit <code>Alt</code> <code>Enter</code> to auto refactor all uses.</p>
+<h2 id="code-assistance">Code Assistance</h2>
+<h3 id="restoring-removed-code">Restoring Removed Code</h3>
+<p>Often we&rsquo;ll remove some piece of code, and end up finding out later or even in a few lines that we need that code chunk. Thankfully, PyCharm keeps all of your files changes locally. At any time, you can right-click and choose <code>Local History</code> -&gt; <code>Show History</code>.</p>
 
             </div>
         </article>

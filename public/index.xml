@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beautiful Soup</title>
+      <link>https://mrpointing.com/notes/computer-science/beautiful-soup/</link>
+      <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/beautiful-soup/</guid>
+      <description>Link to documentation.</description>
+    </item>
+    <item>
+      <title>Learning Git - Chapter 1</title>
+      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</link>
+      <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</guid>
+      <description>Git and the Command Line What is Git? Git is a version control system that keeps track of the changes done to a project or directory. When you edit a file, Git records what was added and removed. If files are added or removed, Git has it&amp;rsquo;s eyes on it (if you&amp;rsquo;re configuring it correctly).&#xA;Git was originally created by Linus Torvalds, the creator of Linux. Meant to be used at the command line, it is clearly more complex then a simply saving a file.</description>
+    </item>
     <item>
       <title>My Hero Academia</title>
       <link>https://mrpointing.com/notes/entertainment/my-hero-academia/</link>

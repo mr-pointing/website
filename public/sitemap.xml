@@ -2,28 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mrpointing.com/tags/manga/</loc>
-    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+    <loc>https://mrpointing.com/notes/computer-science/beautiful-soup/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/computerscience/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/git/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/html/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/me/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/now/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/python/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/textbook/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/learning-git/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/manga/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/entertainment/my-hero-academia/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/</loc>
-    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/tags/shonen/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/</loc>
-    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</loc>
-    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/computerscience/</loc>
     <lastmod>2024-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/flask/</loc>
@@ -39,9 +66,6 @@
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/posts/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/python/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/posts/starting-my-website/</loc>
@@ -60,9 +84,6 @@
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/hugo/</loc>
-    <lastmod>2024-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/me/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/about/</loc>
@@ -104,13 +125,10 @@
     <loc>https://mrpointing.com/tags/algorithms/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/textbook/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</loc>

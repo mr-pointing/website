@@ -102,8 +102,42 @@ I think I'd like to keep the same objectives for the next two weeks.
 
 ## **Week 9 and 10 (8/2 - 8/16)**
 
-- [ ] Complete Flask documentation Notes
-- [ ] Finish Chapters 1-9 in Intro to Algorithms
+- [x] Complete Flask documentation Notes
+- [x] Finish Chapters 1-9 in Intro to Algorithms
 - [x] Get website published using Hugo
+- [x] Complete PyCharm IDE Features
+- [x] Complete Khan Academy Notes
+
+8/11/2024
+
+Quick midweek update. Getting my website up and running took a huge chunk of my time. So much so that there are still things to do and errors to fix. 
+
+I got [Flask's Quickstart]({{< ref "Flask's Quickstart" >}}) finished, and want to take a little break from Flask for the time being. 
+
+
+8/17/2024
+
+For last weeks goals, I got three out of five which is better than I originally expected. I was also very generous with myself because my goals were pretty ambitious. 
+
+I already spoke on Flask, I'll likely come back to do a few random pages from there in and out throughout the next school year. 
+
+I also was able to launch my website, as well as get my first [post](https://mrpointing.com/posts/starting-my-website/) up. Separating my site into these really worked for me, I still have a little more to go.
+
+I was able to finish Unit One from Khan Academy. It is a pretty https://mrpointing.com/posts/starting-my-website/comprehensive course, and I will absolutely be referencing my notes when lesson planning this year.
+
+I got about halfway through PyCharm's IDE features, so definitely want to get the next half next block. I also will likely make a small cheat-sheet filled with macros that are useful. 
+
+I only got about 2 chapters into Intro to Algorithms, so I have to readjust my expectations on how fast I'll be going through it. Especially as I understand that it is more academic, it will likely take much longer.
+
+I also want to put a few easy goals on my list, mostly because I had them elsewhere but since they weren't here, I slacked on them a bit.
+
+## **Week 11 and 12 (8/17 - 8/31)**
+
+- [ ] Finish Chapters 2, 3, and 4 in Intro to Algorithms
 - [ ] Complete PyCharm IDE Features
-- [ ] Complete Khan Academy Notes
+- [ ] Finish Chapters 1 and 2 of Learning Git
+- [x] Make README for Website
+- [ ] Get Obsidian Git set up
+- [ ] Work on Obsidian Plugins Post
+- [ ] Work on Next Obsidian to Hugo Workflow Post
+- [x] Create Now Page for Website

@@ -10,7 +10,7 @@ tags:
   - documentation
 title: PyCharm IDE Features
 date: 2024-07-09
-updated: 2024-08-12T16:35
+updated: 2024-08-16T19:10
 ---
 
 
@@ -114,4 +114,103 @@ Let's say you have a variable you just grabbed from a dictionary. If you know yo
 ### F-string Completion
 
 Just like the other completions, when filling out an f-string variable, you can use auto-completion there as well.
+
+
+8/16/2024
+
+## Refactoring
+
+
+### The Refactoring Menu
+
+The refactoring menu can be opened anytime using `Ctrl` `Alt` `Shift` `T`. One example they used was the following:
+
+```python
+import random
+
+def foo(x, random):
+	print(x + random)
+```
+
+If I wanted to pass in the random module as a parameter instead of as the entire library, we can use our Refactoring Menu to chose option 5, or Introduce Parameter, to automatically create one for us. The above will become like so:
+
+```python
+import random
+
+def foo(x, r=random):
+	print(x + r)
+```
+
+You have the option to leave it as r (probably will be the first letter in the name) or name it whatever you'd like.
+
+
+### Rename
+
+When you need to rename a variable within a file, you can move your caret over the variable and press `Shift` `F6`.
+
+The renaming tool will let you type in what you want to replace it. If there are only one reference of the name, it'll pass through no issue. However if you have multiple references with the same name, say in different classes in the same file, PyCharm will warn you and ask to clarify what you want to refactor.
+
+
+### Extract Variable
+
+There are often moments where we are using some value, like in the example below:
+
+```python
+nums = [10,2,14,3,5]
+for i in range(0, 10):
+	if nums[i] > nums[i+1]:
+		nums[i], nums[i+1] = nums[i+1], nums[i]
+```
+
+In this situation, `i+1` could become a variable. If we use `Ctrl` `Alt` `V` when our caret is over `i+1`, we are given an option to replace the instance or all occurrences of the pattern. The previous example will now look like:
+
+```python
+nums = [10,2,14,3,5]
+for i in range(0, 10):
+	num_var = i+1
+	if nums[i] > nums[num_var]:
+		nums[i], nums[num_var] = nums[num_var], nums[i]
+```
+
+You can do the same thing with methods instead of variables, using `Ctrl` `Alt` `M`, but for whatever reason the macro wouldn't work for me? I had to use my mouse to open it manually. Let's refactor the example above:
+
+```python
+nums = [10,2,14,3,5]
+for i in range(0, 10):
+	num_var = i+1
+	if nums[i] > nums[num_var]:
+		swap_vals(nums, i, num_var)
+
+def swap_vals(nums, i, num_var):
+	nums[i], nums[num_var] = nums[num_var], nums[i]
+```
+
+Not the best example, but for demonstration purposes it does the job.
+
+
+### Quick-Fix Refactoring
+
+Not much of an example here since it's a general tip, but we can use Quick-fix (`Alt` `Enter`) to help us with refactoring. Always remember to use quick-fix when we have yellow or red lines under our code.
+
+
+### In-place Refactoring
+
+Let's say you have the following example:
+
+```python
+q = "What is your name?"
+a = input("Enter your name: ")
+
+print(f"Welcome to the world, {a}!")
+``` 
+
+If you want to rename the use of `a` to become `answers`, you can just start typing the new name. PyCharm will pick up that you are renaming a used variable. When you are done typing the name, you hit `Alt` `Enter` to auto refactor all uses.
+
+
+## Code Assistance
+
+### Restoring Removed Code
+
+Often we'll remove some piece of code, and end up finding out later or even in a few lines that we need that code chunk. Thankfully, PyCharm keeps all of your files changes locally. At any time, you can right-click and choose `Local History` -> `Show History`.
+
 

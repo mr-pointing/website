@@ -6,7 +6,7 @@ tags:
   - computerscience
   - algorithms
   - textbook
-title: Introduction to Algorithms - Preface
+title: Introduction to Algorithms
 ---
 Created: July 17 2024
 Modified: August 02 2024 
