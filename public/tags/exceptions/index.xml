@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exceptions on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/exceptions/</link>
+    <link>http://localhost:1313/tags/exceptions/</link>
     <description>Recent content in Exceptions on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 22 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/exceptions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/exceptions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Python Tutorial Notes - Chapter 8</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
+      <link>http://localhost:1313/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
       <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
       <description>Modified: July 19 2024&#xA;Errors and Exceptions 6/22/2024&#xA;There are two distinguishable types of errors: syntax errors and exceptions.&#xA;8.1 Syntax Syntax errors (or parsing errors) are errors involving the actual use of the language.&#xA;&amp;gt;&amp;gt;&amp;gt; while True print(&amp;#39;Hello World&amp;#39;) File &amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;, line 1 while True print(&amp;#39;Hello world&amp;#39;) ^^^^^ SyntaxError: invalid syntax In the example above, the while statement is missing the : required to use it.&#xA;8.2 Exceptions Even if code is syntactically correct, an error may occur when attempting to execute it.</description>
     </item>
   </channel>

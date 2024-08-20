@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Mr. Pointing</title>
-        <link>https://mrpointing.com/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>Recent content in Posts on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Starting My Website</title>
-            <link>https://mrpointing.com/posts/starting-my-website/</link>
+            <link>http://localhost:1313/posts/starting-my-website/</link>
             <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://mrpointing.com/posts/starting-my-website/</guid>
+            <guid>http://localhost:1313/posts/starting-my-website/</guid>
             <description>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
 Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.</description>
             <content type="html"><![CDATA[<hr>
@@ -27,7 +27,7 @@ Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, 
 <li>Cloudflare</li>
 </ul>
 <h2 id="how-i-started">How I Started</h2>
-<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
+<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="http://localhost:1313/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
 <p>Most tutorials I read online start at the beginning, and show how to start with a fresh blog. Assuming you understand Hugo (and if you don&rsquo;t you should read the articles in the footnotes), I&rsquo;m going to start right after where the quick-start leaves you.</p>
 <h2 id="making-a-blog-from-an-existing-vault">Making a Blog From an Existing Vault</h2>
 <p>So I tried the <a href="https://gohugo.io/getting-started/quick-start/">tutorial</a> on my laptop before bringing it over to my main machine, so I started on a good note.</p>

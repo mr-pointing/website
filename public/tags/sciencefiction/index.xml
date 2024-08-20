@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sciencefiction on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/sciencefiction/</link>
+    <link>http://localhost:1313/tags/sciencefiction/</link>
     <description>Recent content in Sciencefiction on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/sciencefiction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sciencefiction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Road</title>
-      <link>https://mrpointing.com/notes/entertainment/the-road/</link>
+      <link>http://localhost:1313/notes/entertainment/the-road/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/entertainment/the-road/</guid>
+      <guid>http://localhost:1313/notes/entertainment/the-road/</guid>
       <description>Modified: July 14 2024&#xA;I finished The Road a few days ago and I&amp;rsquo;ve reflected fondly on the experience. Slow burn isn&amp;rsquo;t the word I&amp;rsquo;d use; perhaps a slow agonizing death. Because by the end, I was emotionally exhausted. It asks a lot of you. Sit through the gray, dim world that the story takes place in. Hope to some God the end is worth it. In my opinion, I think it was.</description>
     </item>
   </channel>

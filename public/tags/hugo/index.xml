@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/hugo/</link>
+    <link>http://localhost:1313/tags/hugo/</link>
     <description>Recent content in Hugo on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting My Website</title>
-      <link>https://mrpointing.com/posts/starting-my-website/</link>
+      <link>http://localhost:1313/posts/starting-my-website/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/posts/starting-my-website/</guid>
+      <guid>http://localhost:1313/posts/starting-my-website/</guid>
       <description>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.&#xA;Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.</description>
     </item>
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/</link>
+      <link>http://localhost:1313/notes/computer-science/hugo/getting-started-with-hugo/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/</guid>
+      <guid>http://localhost:1313/notes/computer-science/hugo/getting-started-with-hugo/</guid>
       <description>Quick Start It&amp;rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.&#xA;To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.&#xA;You also need to have Git installed.&#xA;Once both are done, you can run the following commands:&#xA;hugo new site quicksite This creates a new directory that will become our new website.</description>
     </item>
   </channel>

@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Textbook on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/textbook/</link>
+    <link>http://localhost:1313/tags/textbook/</link>
     <description>Recent content in Textbook on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning Git - Chapter 1</title>
-      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</link>
+      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-1/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</guid>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-1/</guid>
       <description>Git and the Command Line What is Git? Git is a version control system that keeps track of the changes done to a project or directory. When you edit a file, Git records what was added and removed. If files are added or removed, Git has it&amp;rsquo;s eyes on it (if you&amp;rsquo;re configuring it correctly).&#xA;Git was originally created by Linus Torvalds, the creator of Linux. Meant to be used at the command line, it is clearly more complex then a simply saving a file.</description>
     </item>
     <item>
       <title>Learning Git</title>
-      <link>https://mrpointing.com/notes/computer-science/learning-git/</link>
+      <link>http://localhost:1313/notes/computer-science/learning-git/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/learning-git/</guid>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/</guid>
       <description>First Edition Anna Skoulikari&#xA;I got this textbook as a part of a DevOps Humble Bundle for a ridiculous price.&#xA;I have been using Git more seriously this year, so it makes sense to go through this first. It also is apart of the AI Engineer Roadmap, so even more of a reason to start.&#xA;Who the Textbook is For Anyone who wants to learn Git, and geared towards individuals who have basic technical skills, or those who need to work alongside those who use Git.</description>
     </item>
     <item>
       <title>Introduction to Algorithms</title>
-      <link>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/</link>
+      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</link>
       <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/</guid>
+      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</guid>
       <description>Created: July 17 2024 Modified: August 02 2024&#xA;Fourth Edition Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein Preface Algorithms are everywhere, apart of almost everything we do, and every decision we make. They are part of most if not all tech stacks used today.&#xA;Each chapter in this book will present an algorithm, an application area for some algorithm, or some other related topic.&#xA;For teaching purposes The less complex the audience, the less complex chapters you need.</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 2</title>
-      <link>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
+      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
       <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
+      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
       <description>Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.&#xA;2.1 Insertion Sort Solves a sorting problem (obviously).&#xA;The numbers to be sorted are known as keys.&#xA;The input comes in the form of an array with n elements.&#xA;A reason to sort is often because those keys are associated with other data, Satellite data.&#xA;Key + Satellite = Record&#xA;We can think of a spreadsheet, with student records having many pieces of data.</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 1</title>
-      <link>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
+      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
+      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
       <description>Modified: August 02 2024&#xA;The Role of Algorithms in Computing 1.1 Algorithms Algorithm: Any well defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.&#xA;We often say algorithms help us solve computational problems.&#xA;We can define a sorting algorithm like so:&#xA;Input: A sequence of n numbers, {a_1, a_2, ... a_n}</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Part 1</title>
-      <link>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/</link>
+      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/</link>
       <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/</guid>
+      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/</guid>
       <description>Modified: August 02 2024&#xA;Notes on Part 1.</description>
     </item>
   </channel>

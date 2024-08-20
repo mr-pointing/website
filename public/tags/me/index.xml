@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Me on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/me/</link>
+    <link>http://localhost:1313/tags/me/</link>
     <description>Recent content in Me on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Now</title>
-      <link>https://mrpointing.com/now/</link>
+      <link>http://localhost:1313/now/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/now/</guid>
+      <guid>http://localhost:1313/now/</guid>
       <description>What is a Now Page? Learn about why you need a Now page here.&#xA;Listening I keep one main playlist that constantly add too every few years. My current playlist can be found here.&#xA;You can also find a link to my Discogs here.&#xA;Reading Currently Reading:&#xA;Oathbringer by Brandon Sanderson Edgedancer by Brandon Sanderson You can find my Goodreads here.&#xA;Watching Currently Watching:&#xA;Sister Wives Monster You can find my IMDb here.</description>
     </item>
     <item>
       <title>Flask Notes</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/</link>
+      <link>http://localhost:1313/notes/computer-science/flask-notes/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/</guid>
+      <guid>http://localhost:1313/notes/computer-science/flask-notes/</guid>
       <description>Notes on Flask</description>
     </item>
     <item>
       <title>Hugo Notes</title>
-      <link>https://mrpointing.com/notes/computer-science/hugo/</link>
+      <link>http://localhost:1313/notes/computer-science/hugo/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/hugo/</guid>
+      <guid>http://localhost:1313/notes/computer-science/hugo/</guid>
       <description>Notes on Hugo</description>
     </item>
     <item>
       <title>Mr. Pointing</title>
-      <link>https://mrpointing.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>Who I Am My name is Richard Pointing, a computer science teacher based in Brooklyn, New York. I recently graduated with a Masters in Computer Science, with a focus in Machine Learning and AI.&#xA;My focus is in Python, but I&amp;rsquo;ve recently been trying to dip my feet in Bash and getting comfortable in Linux. This website is a test to see if I can start doing more things myself (choosing to use Hugo instead of Obsidian Publish).</description>
     </item>
     <item>
       <title>Computer Science</title>
-      <link>https://mrpointing.com/notes/computer-science/</link>
+      <link>http://localhost:1313/notes/computer-science/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/</guid>
+      <guid>http://localhost:1313/notes/computer-science/</guid>
       <description>I&amp;rsquo;m going back and writing down my notes as if I were a total computer science beginner.</description>
     </item>
     <item>
       <title>The Python Tutorial</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/</link>
+      <link>http://localhost:1313/notes/computer-science/python-tutorial/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python-tutorial/</guid>
       <description>Following the Python Documentation&amp;rsquo;s Tutorial.</description>
     </item>
   </channel>
