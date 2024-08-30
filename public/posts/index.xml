@@ -1,20 +1,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://mrpointing.com/posts/</link>
         <description>Recent content in Posts on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Tue, 27 Aug 2024 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Explaining my Obsidian to Hugo Workflow</title>
+            <link>https://mrpointing.com/posts/explaining-my-obsidian-to-hugo-workflow/</link>
+            <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/explaining-my-obsidian-to-hugo-workflow/</guid>
+            <description>Where We Left Off I was just able to get my website viewable for the first time in Hugo&amp;rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&amp;rsquo;t compatible with, and everything is looking good.
+Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anything about Git, you can start by reading my analysis of a beginner Git textbook. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&amp;rsquo;re off to the races.</description>
+            <content type="html"><![CDATA[<hr>
+<h2 id="where-we-left-off">Where We Left Off</h2>
+<p>I was just able to get my <a href="https://mrpointing.com">website</a> viewable for the first time in Hugo&rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&rsquo;t compatible with, and everything is looking good.</p>
+<p>Implementing Git was also incredibly simple. If you don&rsquo;t know anything about Git, you can start by reading my analysis of a beginner <a href="https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/">Git textbook</a>. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&rsquo;re off to the races.</p>
+<p>What&rsquo;s going to determine what shows up on your site is what&rsquo;s committed to your GitHub repo, so it&rsquo;s a good idea to make sure your content looks good before you make your commit. Considering you have (and if you haven&rsquo;t, you should) read my quick dive into the structure of <a href="https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/">hugo</a>, you know that before committing anything to our repo, we clear out the <code>public</code> directory, call <code>hugo</code> to build our site, then use basic Git commands to push to your main branch.</p>
+<h2 id="fixing-my-problems">Fixing My Problems</h2>
+<p>I did have one major issue though; now that I had spent a few hours fixing and finding out all of the unique issues within my markdown files, did I want to do this procedure EVERYTIME I wanted to update my site? No thank you. Now that I&rsquo;m using GitHub, if I were to use Obsidian to Hugo it would end up writing over all of the syntax I just finished editing.</p>
+<p>The main problems were that:</p>
+<ol>
+<li>By default, Hugo doesn&rsquo;t support LaTeX inline math like Obsidian does, so using dollar signs to denote math doesn&rsquo;t work</li>
+<li>Images are usually Excalidraw files, which are also markdown files, so Obsidian to Hugo links them like normal markdown instead of images.</li>
+</ol>
+<p>I use both often enough to have this be a concern for me, So I ended up structuring my workflow like so:</p>
+
+    <img src="/images/mr_pointing_workflow.png"  alt="mr_pointing_workflow"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Like I mentioned in my last post, using <code>draft</code> is not only essential to using Hugo, but overall using it as an Obsidian property relieved the headache that was starting to develop. <code>draft</code> became a small check-box on the top of all of my Obsidian notes; if I know I&rsquo;m going to edit it and want to post it later I&rsquo;ll check it to be <code>True</code>, or leave it unchecked as <code>False</code> if I don&rsquo;t want to transfer it over.</p>
+<p>Since Obsidian to Hugo allows for filters, I added a filter to only grab markdown files in my vault where <code>draft: True</code> (I also added a basic <code>print</code> statement to give myself a convenient list of all the files it picked up so I don&rsquo;t miss any). Now I don&rsquo;t have to keep a running list of all the files I need to update before pushing to production, I can just let the drafts pile up, collect them at the end of the week, test, then deploy.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Starting My Website</title>
-            <link>http://localhost:1313/posts/starting-my-website/</link>
+            <link>https://mrpointing.com/posts/starting-my-website/</link>
             <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/starting-my-website/</guid>
+            <guid>https://mrpointing.com/posts/starting-my-website/</guid>
             <description>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
 Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.</description>
             <content type="html"><![CDATA[<hr>
@@ -27,7 +57,7 @@ Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, 
 <li>Cloudflare</li>
 </ul>
 <h2 id="how-i-started">How I Started</h2>
-<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="http://localhost:1313/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
+<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
 <p>Most tutorials I read online start at the beginning, and show how to start with a fresh blog. Assuming you understand Hugo (and if you don&rsquo;t you should read the articles in the footnotes), I&rsquo;m going to start right after where the quick-start leaves you.</p>
 <h2 id="making-a-blog-from-an-existing-vault">Making a Blog From an Existing Vault</h2>
 <p>So I tried the <a href="https://gohugo.io/getting-started/quick-start/">tutorial</a> on my laptop before bringing it over to my main machine, so I started on a good note.</p>

@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Formatting on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/formatting/</link>
+    <link>https://mrpointing.com/tags/formatting/</link>
     <description>Recent content in Formatting on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 26 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/formatting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/formatting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beginner Tutorial for Obsidian Dataview</title>
-      <link>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</link>
+      <link>https://mrpointing.com/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</guid>
       <description>Link to the video.</description>
     </item>
     <item>
       <title>Templater Formatting Notes</title>
-      <link>http://localhost:1313/notes/obsidian/templater-formatting-notes/</link>
+      <link>https://mrpointing.com/notes/obsidian/templater-formatting-notes/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/templater-formatting-notes/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/templater-formatting-notes/</guid>
       <description>Link to Templater Documentation.</description>
     </item>
     <item>
       <title>Jinja</title>
-      <link>http://localhost:1313/notes/computer-science/flask-notes/jinja/</link>
+      <link>https://mrpointing.com/notes/computer-science/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/flask-notes/jinja/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/flask-notes/jinja/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Formatting Percentages</title>
-      <link>http://localhost:1313/notes/computer-science/formatting-percentages/</link>
+      <link>https://mrpointing.com/notes/computer-science/formatting-percentages/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/formatting-percentages/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/formatting-percentages/</guid>
       <description>Modified: July 03 2024&#xA;7/3/2024&#xA;Taken from this article.&#xA;Often in projects, we want to format our large float types as smaller percentages.&#xA;There are three main ways to do this:&#xA;Rounding and Float/String Types: round() takes two parameters: a value and a number to round too. Then, we can use a little complicated string statement.&#xA;&amp;gt;&amp;gt;&amp;gt; number = 0.8839133112 &amp;gt;&amp;gt;&amp;gt; n2 = round(number, 4) &amp;gt;&amp;gt;&amp;gt; print(n2) 0.886 &amp;gt;&amp;gt;&amp;gt; print(str(n2 * 100) + &amp;#39;%&amp;#39;) Format() Alternatively, if that seems a bit complicated, we can just format() instead.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 1, 2, and 3</title>
-      <link>http://localhost:1313/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
       <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
     </item>
   </channel>

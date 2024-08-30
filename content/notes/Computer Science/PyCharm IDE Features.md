@@ -10,7 +10,7 @@ tags:
   - documentation
 title: PyCharm IDE Features
 date: 2024-07-09
-updated: 2024-08-16T19:10
+updated: 2024-08-28T20:31
 ---
 
 
@@ -212,5 +212,55 @@ If you want to rename the use of `a` to become `answers`, you can just start typ
 ### Restoring Removed Code
 
 Often we'll remove some piece of code, and end up finding out later or even in a few lines that we need that code chunk. Thankfully, PyCharm keeps all of your files changes locally. At any time, you can right-click and choose `Local History` -> `Show History`.
+
+
+8/27/2024
+
+### Code Formatting
+
+I cannot stress this enough, that code is increasingly more difficult to read the more out of sorts it looks. To keep your code looking nice and neat, you can use `Ctrl` `Alt` `L` to "lint" the file. This will format the code to have consistent line and character spacing, and even give you some more advanced options like *Optimizing Imports*.
+
+
+### Parameter Info
+
+This is super small, but so so helpful. I can't wait to use this feature when doing projects of my own. Regardless, if your caret is in a method's parenthesis, you can hit `Ctrl` `P` to view the method's signature, or *required parameters*. When just learning a programming language, it can be difficult to remember how many arguments each function takes. I definitely want to implement this in my lesson planning this year.
+
+
+### Quick Popups
+
+One new addition to writing functions I want to start with this year is using a documentation string at the beginning of a function, like so:
+
+```python
+def print_three_times(value):
+	"""
+	Prints given thing three times.
+	"""
+	...
+```
+
+Getting used to this will help, since if you use your caret over the call of `print_three_times()`, and hit `Ctrl` `Q`, you'll get a little popup showing a nice representation of the documentation string. `Ctrl` `Shift` `I` will show you the entire definition rather than just the doc string.
+
+
+### Editor Assistance Workflow
+
+Like we've already seen, we can do a lot with `Alt` `Enter`. We can also get deeper dives into error messages by using `Ctrl` `F1`, which will tell us more than one line of detail. The best way to navigate through your errors is not by using the mouse, but hitting `F2` to move from error to error.
+
+
+## Navigation
+
+### Search Everywhere
+
+At any point during a project, you can hit `Shift` twice to open up the **Search Everywhere** tool. If you need to find something, type what you're looking for, use the arrow keys to navigate to what you need, and hit enter to get there.
+
+Sometimes though, we want to search for specific things. In this case, we can use `Ctrl` `N` to search for classes. We'll explore some more as we go.
+
+
+### Find and Replace in Files
+
+Find and Replace seems useless until you really need it. When you have a large enough project, sometimes the changed variable name isn't an easy couple lines of edits. Missing one or two will cause unneeded frustration.
+
+`Ctrl` `Shift` `F` will open the **Find in Files** window. It's actually a really neat feature that is more complex than it seems. The tutorial has a great example; let's say we want to search for a string like `apple`, but since `pineapple` has `apple` in it, that will also get picked up. To avoid that, we can hit `Alt` `W`, or click `W` in the window, to strictly search for only the word `apple`.
+
+Once you know what you want to replace, you can hit `Ctrl` `Shift` `R` to open up the **Replace** window (just an add on to the Find In one) and type whatever you'd like to replace your text with. You can also determine the scope of your changes; if you want to change all occurrences in a file, directory, project, etc.
 
 

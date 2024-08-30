@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/ai/</link>
+    <link>https://mrpointing.com/tags/ai/</link>
     <description>Recent content in AI on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lython</title>
-      <link>http://localhost:1313/projects/lython/</link>
+      <link>https://mrpointing.com/projects/lython/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/lython/</guid>
-      <description>Modified: July 19 2024&#xA;Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
+      <guid>https://mrpointing.com/projects/lython/</guid>
+      <description>Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
     </item>
     <item>
       <title>AI Engineer Roadmap</title>
-      <link>http://localhost:1313/notes/computer-science/ai-engineer-roadmap/</link>
+      <link>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/ai-engineer-roadmap/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</guid>
       <description>Modified: August 02 2024&#xA;A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject.</description>
     </item>
   </channel>

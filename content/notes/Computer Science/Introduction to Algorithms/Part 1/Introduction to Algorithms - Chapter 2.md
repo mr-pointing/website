@@ -8,7 +8,7 @@ tags:
   - textbook
 title: Introduction to Algorithms - Chapter 2
 date: 2024-07-24
-updated: 2024-08-10T14:52
+updated: 2024-08-28T15:53
 ---
 
 -------------------------------------------------------------------------------
@@ -333,6 +333,13 @@ I was having trouble getting started with how to view the times each line would 
 
 **Loop Invariant:** For each iteration of the for loop on lines 3-5, the first element up to the last will be compared and switched with the larger number until the entire list is sorted.
 
+---
+***UPDATE:*** After comparing our answers, it appears that the structure for these answers follow a similar pattern:
+
+1) State the current status: (there algo is different, so doesn't directly apply) "...at the start of each iteration of the outer **for** loop, the sub array `A[1:i-1]` consists of the `i-1` smallest elements in the array `A[1:n]`"
+2) After, then state what changes will be made for proof: "After the first `n-1` elements, the sub array `A[1:n-1]` contains the smallest `n-1` elements, sorted, and therefore element `A[n]` must be the largest element."
+---
+
 **Initialization:** `n` is the length of `A`, and `min_value` is always equal to `i`.
 
 **Maintenance:** First for loop moves through the whole list `A[1:n-1]`, while the second loop only goes from `A[j:n]`.
@@ -351,3 +358,67 @@ In the worst case, we would assume `x` is `A[n]`, the last element in the array.
 4. How can you modify any sorting algorithm to have a good best-case running time?
 
 I guessed, but by possibly eliminating any unnecessary comparisons?
+
+---
+
+***UPDATE:*** You can edit the algorithm so it checks if the input array is already sorted before performing any operations. That way if it is, no steps are made.
+
+---
+
+8/26/2024
+
+## 2.3 Designing Algorithms
+
+Insertion Sort uses an incremental approach. We're going to see a few that use other methods.
+
+Divide and Conquer is a method we'll look more closely at in chapter 4, but it's importantly another methodology to use rather than an incremental approach.
+
+### Divide and Conquer Method
+
+**Recursion** and Divide and Conquer go hand & hand. Recursion is when an algorithm will call itself one or more times to solve some problem.
+
+Divide and Conquer problems will usually recursively break down the large problem into smaller sub problems to solve.
+
+There are two usual cases for Divide and Conquer:
+
+1) *Small problems* don't need recursion, we just solve them (we're going to call this the base case).
+2) *Large Problems* work in this order:
+	1) **Divide** the problem into smaller sub problems
+	2) **Conquer** the sub problem recursively.
+	3) **Combine** the sub problem solutions to solve the original solution
+
+
+Merge sort follows Divide and Conquer methodology, starting with `A[1:n]`:
+
+1) **Divide** the sub-array `A[p:r]` to be sorted into two adjacent sub arrays, each half the size
+	1) To do this, you can find the midpoint, `q`, (Average of `p` and `r`) and take `A[p:r]` into `A[p:q]` and `A[q+1:r]`.
+2) **Conquer** by sorting the two sub arrays using merge sort
+3) **Combine** by merging the sorted two sub arrays back into `A[p:r]`.
+
+
+We say recursion ends, or "bottoms out", reaching the base case, when the sorted sub array only has one element.
+
+We can use a card example to understand the Merge Procedure:
+
+1) If you have a deck of cards, let's say 52.
+2) In Merge Sort, you have `Merge(A,p,q,r)`, where `A` is the deck of cards, and `p,q,r` are some indexes where `p<=q<r`. We assume adjacent sub arrays.
+3) In our example, our one 52 card stack becomes two 26 card stacks. (Merge also assumes each stack is sorted)
+4) We look at each top card and compare which of the two is smaller. Importantly, *this is what we call the first step*. The smaller goes to an output pule, and is replaced by another card. This is done until one card is left, which by default should be our highest order card.
+5) The best case is where since both sub stacks are sorted, only `n/2` steps are taken. 26 steps, since there is no comparing the second pile.
+6) The worst case is where you need to compare every card, so at most `n` steps. 52 steps (technically 51, since after 51 steps, one pile is empty).
+7) Since we analyze algorithms for worst case, we could say the running time is `\Theta(n)`. 
+
+
+Let's start by first laying out the pseudo code:
+
+```
+Merge(A, p, q, r)
+1. nL = q - p + 1        // length of A[p:q]
+2. nR = r -q         // length of A[q+1:r]
+3. let L[0:nL-1] and R[0:nR-1]
+4. for i = 0 to nL - 1      // copy A[p:q] into L[0:nL-1]
+5.      L[i] = A[p+i]
+6. for j = 0 to nR - 1     // copy A[q+1:r] into R[0:nL-1]
+7.      R[i] = A[p+i]
+8. 
+```
