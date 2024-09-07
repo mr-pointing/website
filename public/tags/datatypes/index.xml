@@ -11,9 +11,9 @@
     <atom:link href="https://mrpointing.com/tags/datatypes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Python Tutorial Notes - Chapter 1, 2, and 3</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
       <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
     </item>
   </channel>

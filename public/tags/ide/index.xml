@@ -11,9 +11,9 @@
     <atom:link href="https://mrpointing.com/tags/ide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PyCharm IDE Features</title>
-      <link>https://mrpointing.com/notes/computer-science/pycharm-ide-features/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/pycharm-ide-features/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/</guid>
       <description>Get Acquainted with PyCharm The project view is one of the main tool windows, containing the project directory, external libraries, and scratch files. You can also open it with Alt 1. The Python interpreter is easily viewable in the status bar in the bottom right. You can run, debug, or other option on the top right of the window. You can also press Shift F10. We got an unexpected error in our code, featured below.</description>
     </item>
   </channel>

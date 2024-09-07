@@ -11,16 +11,16 @@
     <atom:link href="https://mrpointing.com/tags/standardlibrary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Python Tutorial Notes - Chapter 11</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
       <description>Modified: July 19 2024&#xA;The Standard Library - Part 2 7/9/2024&#xA;The second part here will go over more advanced, less common modules that nevertheless, exist.&#xA;11.1 Output Formatting reprlib is an appropriately named library containing a version of repr() modified for abbreviated displays of large or deeply nested containers:&#xA;&amp;gt;&amp;gt;&amp;gt; import reprlib &amp;gt;&amp;gt;&amp;gt; reprlib.repr(set(&amp;#39;supercalafragalisticexpialidocious&amp;#39;)) &amp;#34;{&amp;#39;a&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;,...&amp;#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 10</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
       <description>Modified: July 19 2024&#xA;A Brief Tour of the Standard Library 7/4/2024&#xA;10.1 Operating System Interface The os module provides functions for interacting with operating systems:&#xA;&amp;gt;&amp;gt;&amp;gt; import os &amp;gt;&amp;gt;&amp;gt; os.getcwd() # returns the working directory &amp;#39;C:\\Python312&amp;#39; &amp;gt;&amp;gt;&amp;gt; os.chdir(&amp;#39;/server/accesslogs&amp;#39;) # change working directory &amp;gt;&amp;gt;&amp;gt; os.system(&amp;#39;mkdir today&amp;#39;) # run the command mkdir in the system shell 0 Never use from os import *. It&amp;rsquo;s not good practice to not do this regardless, but it will specifically keep os.</description>
     </item>
   </channel>

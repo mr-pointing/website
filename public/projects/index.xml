@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Private GPT</title>
+      <link>https://mrpointing.com/projects/private-gpt/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/projects/private-gpt/</guid>
+      <description>Link to the project.&#xA;This really tested my time and patience. What should have taken me an hour took me closer to a day, but it was extremely worth the time investment. No mind blowing innovation going on, and certainly nothing I haven&amp;rsquo;t seen before, nevertheless gratifying to bring together.&#xA;The most frustrating issue was that the configuration for running setting up the llama model in Poetry was either wrong on the tutorial or my machine is weird.</description>
+    </item>
     <item>
       <title>Circuit Playground Express</title>
       <link>https://mrpointing.com/projects/circuit-playground-express/</link>

@@ -25,23 +25,23 @@
     </item>
     <item>
       <title>Jinja</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/jinja/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/jinja/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Formatting Percentages</title>
-      <link>https://mrpointing.com/notes/computer-science/formatting-percentages/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/formatting-percentages/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/formatting-percentages/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/formatting-percentages/</guid>
       <description>Modified: July 03 2024&#xA;7/3/2024&#xA;Taken from this article.&#xA;Often in projects, we want to format our large float types as smaller percentages.&#xA;There are three main ways to do this:&#xA;Rounding and Float/String Types: round() takes two parameters: a value and a number to round too. Then, we can use a little complicated string statement.&#xA;&amp;gt;&amp;gt;&amp;gt; number = 0.8839133112 &amp;gt;&amp;gt;&amp;gt; n2 = round(number, 4) &amp;gt;&amp;gt;&amp;gt; print(n2) 0.886 &amp;gt;&amp;gt;&amp;gt; print(str(n2 * 100) + &amp;#39;%&amp;#39;) Format() Alternatively, if that seems a bit complicated, we can just format() instead.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 1, 2, and 3</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
       <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
     </item>
   </channel>

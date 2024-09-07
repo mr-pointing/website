@@ -11,16 +11,16 @@
     <atom:link href="https://mrpointing.com/tags/datastructures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NumPy</title>
-      <link>https://mrpointing.com/notes/computer-science/numpy/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/numpy/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/numpy/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/numpy/</guid>
       <description>Modified: June 20 2024&#xA;Link to documentation</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 5</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
       <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
       <description>Modified: July 19 2024&#xA;Data Structures 6/10/2024&#xA;5.1 More on Lists Methods for Lists:&#xA;list.append(x) Adds an item to the end of the list Equivalent to a[len(a):] = [x] list.extend(iterable) Extend the list by appending all items from an iterable list.insert(i, x) Insert an item into a given position, where i is the index location and x is the value list.remove(x) Remove the first item from the list whose value is equal to x, ValueError if no such item list.</description>
     </item>
   </channel>

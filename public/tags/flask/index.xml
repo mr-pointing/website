@@ -11,9 +11,9 @@
     <atom:link href="https://mrpointing.com/tags/flask/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flask&#39;s Templates</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/flasks-templates/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/flasks-templates/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
@@ -32,9 +32,9 @@
     </item>
     <item>
       <title>Flask&#39;s Quickstart</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
       <description>Link to documentation.&#xA;Flask is a framework to create applications via Python. It makes web based applications rather simple.&#xA;Starting from the here, the installation page.&#xA;Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.&#xA;Dependencies The following are installed automatically when installing Flask:&#xA;Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.</description>
     </item>
     <item>

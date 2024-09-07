@@ -8,10 +8,8 @@ tags:
   - machinelearning
 title: AI Engineer Roadmap
 date: 2024-06-03
+updated: 2024-09-03T18:38
 ---
-Modified: August 02 2024 
-
-
 ---
 
 A resource by [Code Basics](https://youtube.com/code_basics)
@@ -141,3 +139,26 @@ I also want to put a few easy goals on my list, mostly because I had them elsewh
 - [ ] Work on Obsidian Plugins Post
 - [ ] Work on Next Obsidian to Hugo Workflow Post
 - [x] Create Now Page for Website
+
+
+9/1/2024
+
+September is here. I've been using Obsidian for 3 months now officially, and I can say it has definitely motivated me to continue learning and actually do something with the knowledge I've accumulated throughout my life. I'm excited to continue and eventually finish this roadmap, and really visualize the progress.
+
+Now that September has come so has my job. Which means I'm going to be prioritizing lesson planning and such over taking personal notes. That doesn't mean I want to stop; quite the opposite. I'd actually like to ramp up and start integrating my work notes and such into Obsidian. I also plan to teach my students how to create their own Vault and note-taking tips.
+
+As far as my personal note-taking progress has gone for the last two weeks, I feel like I both accomplished a lot and left a lot undone. First and foremost-the Introduction to Algorithms textbook is hard. Matter of fact, I think it's harder to read now than when I was in class during my undergrad nearly 10 years ago. It's really kicking my ass, but after reading online about professionals opinion on the book, it's a pretty universal opinion that the book is beyond dense. I'll likely get the Grokking Algorithms book soon in order to supplement my reading, but as far as Algorithms go, I'm not going to stress it too hard.
+
+I completed some more of those Python questions from the Roadmap, but haven't completed them fully. I'll definitely add those onto the list for this week. I got A LOT done for the website (made it dark mode only, made two posts, got the README done, now page, etc.). I found that since I'm already paying for sync and I have the site, using Obsidian Git wasn't very worthwhile for me. 
+
+For this next two week sprint, I want to start tackling some of the existing notes in here (aka my ghost notes). I'm also a bit behind on the roadmap so I have to play a little catch-up. I'll feel comfortable once I can read the entire PDF, and not have any questions or feel okay answering a question on all of the topics mentioned (or at least have them available as a resource.)
+
+## **Week 13 and 14 (9/1 - 9/15)**
+
+- [ ] Finish Chapter 3 in Intro to Algorithms
+- [ ] Finish PyCharm IDE Features
+- [ ] Finish Chapters 3, 4, and 5 in Learning Git
+- [ ] Work on Obsidian Plugins Post
+- [ ] Review SQL
+- [ ] Work on NumPy and Pandas notes
+- [x] Work on one passion project (LLM at home with Llama?)

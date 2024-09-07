@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Modified: July 19 2024
+Classes 6/28/2024
+Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.
+A class is made up of attributes and methods defined by the classes definition.
+Python classes follow closely to other Object Oriented Programming languages classes in the following ways:" />
+<meta name="keywords" content="homepage, blog, computerscience, python, documentation, classes" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/" />
+
+
+    <title>
+        
+            The Python Tutorial Notes - Chapter 9 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="The Python Tutorial Notes - Chapter 9">
+  <meta itemprop="description" content="Modified: July 19 2024
+Classes 6/28/2024
+Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.
+A class is made up of attributes and methods defined by the classes definition.
+Python classes follow closely to other Object Oriented Programming languages classes in the following ways:">
+  <meta itemprop="datePublished" content="2024-06-28T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-28T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2606">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Classes">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="The Python Tutorial Notes - Chapter 9">
+  <meta name="twitter:description" content="Modified: July 19 2024
+Classes 6/28/2024
+Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.
+A class is made up of attributes and methods defined by the classes definition.
+Python classes follow closely to other Object Oriented Programming languages classes in the following ways:">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="The Python Tutorial Notes - Chapter 9">
+  <meta property="og:description" content="Modified: July 19 2024
+Classes 6/28/2024
+Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.
+A class is made up of attributes and methods defined by the classes definition.
+Python classes follow closely to other Object Oriented Programming languages classes in the following ways:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-06-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-28T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Classes">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-06-28 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/">The Python Tutorial Notes - Chapter 9</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>Modified: July 19 2024</p>
+<hr>
+<h2 id="classes"><strong>Classes</strong></h2>
+<p>6/28/2024</p>
+<p>Classes combine data storage and functionality into one package. When you make a new class, you are making a new <em>type</em> of object. A new <em>instance</em>, or occurrence of that type are able to be made using function call of the class.</p>
+<p>A class is made up of attributes and methods defined by the classes definition.</p>
+<p>Python classes follow closely to other Object Oriented Programming languages classes in the following ways:</p>
+<ul>
+<li>Class inheritance allows multiple base classes</li>
+<li>Derived classes can override any methods of its base class or classes</li>
+<li>Methods can call the method of a base class with the same name</li>
+</ul>
+<p>Classes follow the dynamic nature of Python: created at runtime, and can be modified further after initialization.</p>
+<h3 id="91-a-word-on-names-and-objects"><strong>9.1 A Word on Names and Objects</strong></h3>
+<p>Objects have individuality, and have multiple names across multiple scopes that can be bound to the same object, otherwise known as aliasing in other languages.</p>
+<h3 id="92-python-scopes-and-namespaces"><strong>9.2 Python Scopes and Namespaces</strong></h3>
+<p><em>Namespace</em> is the mapping from names to objects. Within Python they are stored as dictionaries. The most important thing to understand is that there is no relation between names in a different namespace; two different modules can define a function called <code>maximize</code>, but since you have to use a prefix to call which <code>maximize</code> you&rsquo;d like, there is no confusion.</p>
+<p>Going forward, <em>attribute</em> is going to be used to define anything belonging to that class that would following a dot operator. That would be any value or method. There is a direct mapping between the module&rsquo;s attributes and the global names defined in the module; they share the same namespace.</p>
+<p>Attributes are read-only or writable. Assignment is possible:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> modname<span style="color:#f92672">.</span>the_answer <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(modname<span style="color:#f92672">.</span>the_answer)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">del</span> modname<span style="color:#f92672">.</span>the_answer
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(modname<span style="color:#f92672">.</span>the_answer)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">4</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">AttributeError</span>: <span style="color:#e6db74">&#39;modname&#39;</span> object has no attribute <span style="color:#e6db74">&#39;the_answer&#39;</span>
+</span></span></code></pre></div><p>Namespaces are generally created at different points and have different lifespans. The namespace for built-in names is created when the interpreter starts for example, and as we know the namespace for a module starts when the line is executed.</p>
+<p>Global namespaces and module namespaces last until the end of the program. For more local instances like a function, the local namespace is created when the function is called, and eventually deleted when the function returns or raises and exception not handled by the function.</p>
+<p>We can define a <em>scope</em> as the textual region of a program where a namespace is directly accessible; basically, you can access something without having to use a prefix for another namespace.</p>
+<p>When searching for an object, the scopes are used dynamically: Namespaces are searched for in this order:</p>
+<ol>
+<li>The innermost scope, which is searched first, containing local names</li>
+<li>The scopes of any enclosing functions, which are searched starting with the nearest enclosing scope that contains non-local, but also non-global names</li>
+<li>The next-to-last scope contains the current module&rsquo;s global names</li>
+<li>The outermost scope is the namespace containing built-in names</li>
+</ol>
+<p>If a name is declared as global, it joins the outermost scope. We can use the <code>nonlocal</code> statement to rebind variables found outside of the innermost scope.</p>
+<p>We say local scope references local names of the current function. Outside functions, the local scope references the same namespace as the global scape: the module&rsquo;s namespace.</p>
+<p>If there is no <code>global</code> or <code>nonlocal</code> statement, assignments default to the innermost scope. Assignments don&rsquo;t copy data, they bind names to objects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">scope_test</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_local</span>():
+</span></span><span style="display:flex;"><span>		spam <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;local spam&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_nonlocal</span>():
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">nonlocal</span> spam
+</span></span><span style="display:flex;"><span>		spam <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;nonlocal spam&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_global</span>():
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">global</span> spam
+</span></span><span style="display:flex;"><span>		spam <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;global spam&#34;</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	spam <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;test spam&#34;</span>
+</span></span><span style="display:flex;"><span>	do_local()
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;After local assignment:&#34;</span>, spam)
+</span></span><span style="display:flex;"><span>	do_nonlocal()
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;After nonlocal assignment:&#34;</span>, spam)
+</span></span><span style="display:flex;"><span>	do_global()
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;After global assignment:&#34;</span>, spam)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>scope_test()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;In global scope:&#34;</span>, spam)
+</span></span></code></pre></div><p>will result in the following output:</p>
+<pre tabindex="0"><code>After local assignment: test spam
+After nonlocal assignment: nonlocal spam
+After global assignment: nonlocal spam
+In global scope: global spam
+</code></pre><p>\</p>
+<h3 id="93-a-first-look-at-classes"><strong>9.3 A First Look at Classes</strong></h3>
+<p>A basic class definition can look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClassName</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span>statement<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span>statement<span style="color:#f92672">-</span>N<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>Just like functions, they should obviously be defined before they are used.</p>
+<p>When a new class definition is entered, a new namespace is created, and used as the classes local scope. All assignments to local variables go into this new namespace.</p>
+<p>A class object is essentially a wrapper around the contents of the namespace created by the class definition.</p>
+<p>7/1/2024</p>
+<p>Objects in classes support two kinds of operations: attribute references and instantiation.</p>
+<p>Attribute reference is similar to other objects in Python as far as syntax: <code>obj.name</code>. Whatever names were used in the classes definition are considered these attribute references:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;&#34;A simple example class&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	i <span style="color:#f92672">=</span> <span style="color:#ae81ff">12345</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(self):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;no justice! no peace!&#39;</span>
+</span></span></code></pre></div><p>In the above example, <code>MyClass.i</code> and <code>MyClass.f</code> are valid attribute references, returning an integer and a function object, respectively. I swear, I type some of this out, then read it, and it&rsquo;s the same thing.</p>
+<p>Class attributes can be assigned to, so something like the following is legal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>MyClass<span style="color:#f92672">.</span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span></code></pre></div><p>The triple quotes sets the <code>__doc__</code> attribute for the class, and is also good practice to use it for explaining function processes.</p>
+<p>Class instantiation, or creating the instance of a class, uses function notation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> MyClass()
+</span></span></code></pre></div><p>This will create an empty object, of type <code>MyClass</code>.  In order to specify how we want our instance object to act when created, we can use the <code>__init__()</code> method in our class definition:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> __init__(self):
+</span></span><span style="display:flex;"><span>	self<span style="color:#f92672">.</span>data <span style="color:#f92672">=</span> []
+</span></span></code></pre></div><p>When we use this <code>__init__</code> statement, we can start to make our class objects more complex, see below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Complex</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span> 	<span style="color:#66d9ef">def</span> __init__(self, realpart, imagpart):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span> 		self<span style="color:#f92672">.</span>r <span style="color:#f92672">=</span> realpart
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span> 		self<span style="color:#f92672">.</span>i <span style="color:#f92672">=</span> imagpart
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> Complex(<span style="color:#ae81ff">3.0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">4.5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x<span style="color:#f92672">.</span>r, x<span style="color:#f92672">.</span>i
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">3.0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">4.5</span>)
+</span></span></code></pre></div><p>With instance objects, the only operations understood are by attribute references. Two major kinds of valid attribute names: data attributes and methods.</p>
+<p>Data attributes are like local variables, they don&rsquo;t need to be declared prior. They come into existence when assigned too. We can create whole new variables in those instances, without worrying about them having to exist inside the class. For example, using the <code>x</code> object we instantiated in the prior example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x<span style="color:#f92672">.</span>counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> x<span style="color:#f92672">.</span>counter <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>	x<span style="color:#f92672">.</span>counter <span style="color:#f92672">=</span> x<span style="color:#f92672">.</span>counter <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>print(x<span style="color:#f92672">.</span>counter)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">del</span> x<span style="color:#f92672">.</span>counter
+</span></span></code></pre></div><p>This will print 16 without any issue.</p>
+<p>The other instance attribute reference is a method. A method is just a function that &ldquo;belongs to&rdquo; an object.</p>
+<p>Here&rsquo;s a deeper dive look; <code>x.f</code> is a valid method reference, since <code>MyClass.f</code> is a function. <code>x.i</code> is not, since <code>MyClass.i</code> is not. However, <code>x.f</code> is not the same thing as <code>MyClass.f</code>, it is a method object, not a function object.</p>
+<p>7/2/2024</p>
+<p>Quick note about method objects: they are usually just used, but can also be stored. In the example below, we can see using a regular class method as well as storing it inside a variable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> x<span style="color:#f92672">.</span>f()
+</span></span><span style="display:flex;"><span>no justice<span style="color:#960050;background-color:#1e0010">!</span> no peace<span style="color:#960050;background-color:#1e0010">!</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> xf <span style="color:#f92672">=</span> f()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>     print(xf())	
+</span></span><span style="display:flex;"><span>no justice<span style="color:#960050;background-color:#1e0010">!</span> no peace<span style="color:#960050;background-color:#1e0010">!</span>
+</span></span><span style="display:flex;"><span>no justice<span style="color:#960050;background-color:#1e0010">!</span> no peace<span style="color:#960050;background-color:#1e0010">!</span>
+</span></span><span style="display:flex;"><span>no justice<span style="color:#960050;background-color:#1e0010">!</span> no peace<span style="color:#960050;background-color:#1e0010">!</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># repeats forever</span>
+</span></span></code></pre></div><p>Even though in the above syntax for defining the <code>f()</code> method, we use the word <code>self</code> which might make you think we should have passed a parameter when we used it. Actually, what <code>self</code> is referring too is the specific instance in which you are using the method: the above call <code>x.f()</code> is equivalent to <code>MyClass.f(x)</code>.</p>
+<p>The above scenario can be explained as so, that I&rsquo;m both paraphrasing and quoting from the doc: When a method is called from an instance usage, the class is searched for that function object. If found, it packages references to the function object and the instance object as a new method object. When this method object is called with an argument list, a brand new argument list is made from the instance object and the original argument list, and the function object is called with that new argument list.</p>
+<p>Kind of confusing, but also shouldn&rsquo;t be so complicated when you draw it out.</p>
+<p><em>Class variables</em> are variables that are shared by all instances of a class, while <em>instance variables</em> are variables that only exist within the instance of that individual class.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span>:
+</span></span><span style="display:flex;"><span>	kind <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;canine&#39;</span>                  <span style="color:#75715e"># class variable</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, name):        
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name             <span style="color:#75715e"># instance variable</span>
+</span></span></code></pre></div><p>In the above example, something like a dictionary that holds the tricks a dog can do, lets call it <code>tricks</code>, shouldn&rsquo;t be shared by all dogs, since not all dogs know the same tricks.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, name):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>tricks <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_trick</span>(self, trick):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>tricks<span style="color:#f92672">.</span>append(trick)
+</span></span></code></pre></div><p>In the above example, we don&rsquo;t need to pass tricks as a parameter since we can just make an empty list and set it in the initialization of the instance. We also made a function that can add whatever tricks that dogs know into it, letting us access it. Notice how the function needs to pass itself in order to ensure it can be accessed by each independent instance of the class.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> Dog(<span style="color:#e6db74">&#39;Buddy&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> p <span style="color:#f92672">=</span> Dog(<span style="color:#e6db74">&#39;Pugsley&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b<span style="color:#f92672">.</span>add_trick(<span style="color:#e6db74">&#39;play dead&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> p<span style="color:#f92672">.</span>add_trick(<span style="color:#e6db74">&#39;sit&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b<span style="color:#f92672">.</span>tricks
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;play dead&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> p<span style="color:#f92672">.</span>tricks
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;sit&#39;</span>]
+</span></span></code></pre></div><h3 id="94-random-remarks"><strong>9.4 Random Remarks</strong></h3>
+<p>If the same name is reference in both the instance and the class, the attribute lookup will prioritize the instance of it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span> 	kind <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;canine&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> cat <span style="color:#f92672">=</span> Dog()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(cat<span style="color:#f92672">.</span>kind)
+</span></span><span style="display:flex;"><span>canine
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> cat<span style="color:#f92672">.</span>kind <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;feline&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(cat<span style="color:#f92672">.</span>kind)
+</span></span><span style="display:flex;"><span>feline
+</span></span></code></pre></div><p>Data attributes may be reference by methods as well as by clients of an object.</p>
+<p>Clients should always use data attributes with care, since they could mess up invariants.</p>
+<p>There is no shorthand for referencing data attributes from within methods. In the below example, <code>counter</code> exists twice: as a class variable, an instance variable.</p>
+<p>We also see that methods can call other methods just by using the <code>self</code> argument.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>:
+</span></span><span style="display:flex;"><span>	counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">adder</span>(self):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>counter <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>		MyClass<span style="color:#f92672">.</span>counter <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">adder_again</span>(self):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>adder()
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>adder()
+</span></span></code></pre></div><p>Methods can reference global names in the same ways ordinary functions can. The global scope associated with a method is the module containing its definition.</p>
+<p>Each value is an object, and therefore has a class (or type). It is stored as <code>object.__class__</code>.</p>
+<h3 id="95-inheritance"><strong>9.5 Inheritance</strong></h3>
+<p>Like many other languages, classes accept inheritance. Essentially, the new class takes in all of the attributes of the base class. The syntax is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DerivedClassName</span>(BaseClassName):
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span>statement<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span>statement<span style="color:#f92672">-</span>n<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>If you need to use a class from another module, you can do it like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DerivedClassName</span>(modname<span style="color:#f92672">.</span>BaseClassName)
+</span></span></code></pre></div><p>7/3/2024</p>
+<p>When discussing attribute references, if a requested attribute is not found in the instantiated class, the search then goes to look in the base class. The rule is applied recursively if the base class is a derived class.</p>
+<p>Derived classes can override methods of the base class. An overriding method also might just want to extend the base classes method, rather than replace it. To use the original base class method, you can always just use <code>BaseClassName.methodname(self, arguments)</code>.</p>
+<p>Python has two built-in functions that work with inheritance:</p>
+<ol>
+<li><code>isinstance()</code>: checks an instances&rsquo; type:
+<ol>
+<li><code>isinstance(obj, int)</code> will only be <code>True</code> if <code>obj.__class__</code> is <code>int</code> or a class derived from <code>int</code>.</li>
+</ol>
+</li>
+<li><code>issubclass()</code>: checks class inheritance
+<ol>
+<li><code>issubclass(bool, int)</code> is <code>True</code> since <code>bool</code> is a subclass of <code>int</code>.</li>
+<li><code>issubclass(float, int)</code> is <code>False</code> since <code>float</code> is not a subclass of <code>int</code>.</li>
+</ol>
+</li>
+</ol>
+<p>You can use multiple inheritance as well in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DerivedClassName</span>(Base1, Base2, Base3):
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span>statement<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span>statement<span style="color:#f92672">-</span>N<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>The attribute search in this situation would search the derived class, then base 1, then recursively through base 1&rsquo;s base classes, then to each other base class.</p>
+<p>7/4/2024</p>
+<h3 id="96-private-variables"><strong>9.6 Private Variables</strong></h3>
+<p>The &ldquo;normal&rdquo; private variables other languages have, that exist in an instance and cannot be accessed except from inside that object don&rsquo;t exist within Python. There is a followed convention however, where you lead the private variable with an underscore and that variable should be treated as a non-public part of the API.</p>
+<p>You could also use two underscores before, which replaces the text from <code>__spam</code> to <code>_classname__spam</code> where <code>classname</code> is the current class name with leading underscores stripped. This is called <em>name mangling</em>. Name mangling can be helpful by letting subclasses override methods without breaking interclass method calls.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Mapping</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, iterable):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>items_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>__update(iterable)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update</span>(self, iterable):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> iterable:
+</span></span><span style="display:flex;"><span>			self<span style="color:#f92672">.</span>items_list<span style="color:#f92672">.</span>append(item)
+</span></span><span style="display:flex;"><span>	__update <span style="color:#f92672">=</span> update           <span style="color:#75715e"># private copy of the original update()                                    method</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MappingSubclass</span>(Mapping):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update</span>(self, keys, values):
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e"># provides new signature for update()</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e"># but does not break __init__()</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> zip(keys, values):
+</span></span><span style="display:flex;"><span>			self<span style="color:#f92672">.</span>items_list<span style="color:#f92672">.</span>append(item)	
+</span></span></code></pre></div><h3 id="97-odds-and-ends"><strong>9.7 Odds and Ends</strong></h3>
+<p>Similar to C&rsquo;s <code>struct</code>, Python has <code>dataclasses</code>, in order to bundle together a few named data items.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@dataclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Employee</span>:
+</span></span><span style="display:flex;"><span>	name: str
+</span></span><span style="display:flex;"><span>	dept: str
+</span></span><span style="display:flex;"><span>	salary: int
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> richie <span style="color:#f92672">=</span> Employee(<span style="color:#e6db74">&#39;richie&#39;</span>, <span style="color:#e6db74">&#39;computers&#39;</span>, <span style="color:#ae81ff">101</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> richie<span style="color:#f92672">.</span>dept
+</span></span><span style="display:flex;"><span>computers
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> richie<span style="color:#f92672">.</span>salary
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">101</span>
+</span></span></code></pre></div><p>Instance methods objects also have attributes. <code>m.__self__</code> is the instance object with the method <code>m()</code>, and <code>m.__func__</code> is the function object corresponding to the method.</p>
+<h3 id="98-iterators"><strong>9.8 Iterators</strong></h3>
+<p>Most container objects can be looped over using a <code>for</code> statement:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]:
+</span></span><span style="display:flex;"><span>	print(element)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>,):
+</span></span><span style="display:flex;"><span>	print(element)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> key <span style="color:#f92672">in</span> {<span style="color:#e6db74">&#39;one&#39;</span>:<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;two&#39;</span>:<span style="color:#ae81ff">2</span>}:
+</span></span><span style="display:flex;"><span>	print(key)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> char <span style="color:#f92672">in</span> <span style="color:#e6db74">&#39;123&#39;</span>:
+</span></span><span style="display:flex;"><span>	print(char)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#39;myfile.txt&#39;</span>):
+</span></span><span style="display:flex;"><span>	print(line, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span></code></pre></div><p>This is a prevalent structure in Python. Behind the scenes, <code>for</code> is calling the <code>iter()</code> method on the container object. That function returns an iterator object that defines the method <code>__next__()</code>, which accesses elements in the container one at a time. When there are no more elements,  <code>__next__()</code> raises a <code>StopIteration</code> exception which tells the <code>for</code> loop to terminate. The below code exemplifies this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;abc&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> it <span style="color:#f92672">=</span> iter(s)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> it
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>str_iterator object at <span style="color:#ae81ff">0x10c90e650</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> next(it)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;a&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> next(it)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;b&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> next(it)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;c&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> next(it)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>   next(it)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">StopIteration</span>
+</span></span></code></pre></div><p>You can even add your own iterator behavior to your own classes. If you define a <code>__iter__()</code> method, which will return an object with a <code>__next__()</code> method. If the class defines <code>__next__()</code>, then <code>__iter__()</code> can return <code>self</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Reverse</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;&#34;Iterator for looping over a sequence backwards&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, data):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>data <span style="color:#f92672">=</span> data
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>index <span style="color:#f92672">=</span> len(data)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __iter__(self):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> self
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __next__(self):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>index <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">StopIteration</span>
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>index <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>index <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>data[self<span style="color:#f92672">.</span>index]
+</span></span><span style="display:flex;"><span>	
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> rev <span style="color:#f92672">=</span> Reverse(<span style="color:#e6db74">&#39;spam&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> iter(rev)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>__main__<span style="color:#f92672">.</span>Reverse object at <span style="color:#ae81ff">0x09012498</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> char <span style="color:#f92672">in</span> rev:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>     print(char)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>m
+</span></span><span style="display:flex;"><span>a
+</span></span><span style="display:flex;"><span>p
+</span></span><span style="display:flex;"><span>s
+</span></span></code></pre></div><p>Printing the object <code>rev</code> would just print <code>spam</code> without any reversing. The reversing happens when iterating through the object.</p>
+<h3 id="99-generators"><strong>9.9 Generators</strong></h3>
+<p>Generators are simple tools to create iterators. The are written like regular functions except use the <code>yield</code> statement to return data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverse</span>(data):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> index <span style="color:#f92672">in</span> range(len(data)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">yield</span> data[index]
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> char <span style="color:#f92672">in</span> reverse(<span style="color:#e6db74">&#39;golf&#39;</span>):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span> print(char)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>f
+</span></span><span style="display:flex;"><span>l
+</span></span><span style="display:flex;"><span>o
+</span></span><span style="display:flex;"><span>g
+</span></span></code></pre></div><p>Generators are basically the same as the iterator class we made with a built-in <code>__iter__()</code> and <code>__next__()</code> methods created automatically. Local variables and execution states are also automatically saved between calls, making the functions easier to write/read without instance variables like <code>self.index</code> and <code>self.data</code>.</p>
+<h3 id="910-generator-expressions"><strong>9.10 Generator Expressions</strong></h3>
+<p>Some generators can be made using a syntax similar to list comprehension but instead of square brackets, you use parentheses. They are more memory friendly but obviously, less versatile than full generator definitions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> sum(i<span style="color:#f92672">*</span>i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>))
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">285</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> xvec <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> yvec <span style="color:#f92672">=</span> [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> sum(x<span style="color:#f92672">*</span>y <span style="color:#66d9ef">for</span> x,y <span style="color:#f92672">in</span> zip(xvec, yvec))
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">260</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> unique_words <span style="color:#f92672">=</span> set(word <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> page <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> line<span style="color:#f92672">.</span>split())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> valedictorian <span style="color:#f92672">=</span> max((student<span style="color:#f92672">.</span>gpa, student<span style="color:#f92672">.</span>name) <span style="color:#66d9ef">for</span> student <span style="color:#f92672">in</span> graduates)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;golf&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> list(data[i] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(data)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;f&#39;</span>, <span style="color:#e6db74">&#39;l&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;g&#39;</span>]
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/">Chapter 10</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/classes/">classes</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -46,9 +46,9 @@
     </item>
     <item>
       <title>Werkzeug</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/werkzeug/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/werkzeug/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</guid>
       <description>Link to documentation.&#xA;First of all, what is WSGI?&#xA;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description>
     </item>
     <item>

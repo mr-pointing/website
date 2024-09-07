@@ -11,9 +11,9 @@
     <atom:link href="https://mrpointing.com/tags/output/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Python Tutorial Notes - Chapter 7</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
       <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
       <description>Modified: July 19 2024&#xA;Input and Output 6/18/2024&#xA;There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.&#xA;7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That&amp;rsquo;s an expression statement.</description>
     </item>
   </channel>

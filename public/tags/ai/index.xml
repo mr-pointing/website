@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Private GPT</title>
+      <link>https://mrpointing.com/projects/private-gpt/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/projects/private-gpt/</guid>
+      <description>Link to the project.&#xA;This really tested my time and patience. What should have taken me an hour took me closer to a day, but it was extremely worth the time investment. No mind blowing innovation going on, and certainly nothing I haven&amp;rsquo;t seen before, nevertheless gratifying to bring together.&#xA;The most frustrating issue was that the configuration for running setting up the llama model in Poetry was either wrong on the tutorial or my machine is weird.</description>
+    </item>
     <item>
       <title>Lython</title>
       <link>https://mrpointing.com/projects/lython/</link>
@@ -21,7 +28,7 @@
       <link>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</guid>
-      <description>Modified: August 02 2024&#xA;A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject.</description>
+      <description>A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject. I think I can handle a khan academy course and going through the entire Python documentation in two weeks.</description>
     </item>
   </channel>
 </rss>

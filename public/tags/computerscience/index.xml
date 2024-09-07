@@ -7,8 +7,43 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Teaching with Obsidian</title>
+      <link>https://mrpointing.com/posts/teaching-with-obsidian/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/posts/teaching-with-obsidian/</guid>
+      <description>I&amp;rsquo;m not sure if it&amp;rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.&#xA;This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&amp;rsquo;s a good place to store code from lessons and start to think about what&amp;rsquo;s really important.</description>
+    </item>
+    <item>
+      <title>Obsidian Help - User Interface</title>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---user-interface/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---user-interface/</guid>
+      <description>Appearance Before we go any further, we should go over the fun part. Making it your own. If your left bar isn&amp;rsquo;t already open, hit the button on the top left (it&amp;rsquo;s a little square with lines in it). Once open, you hit the cog on the bottom right of the left bar. Under the options bar, you hit &amp;ldquo;Appearance.&amp;rdquo;&#xA;By default you can make minor changes, but the big stuff comes from Themes.</description>
+    </item>
+    <item>
+      <title>Obsidian Help - Getting Started</title>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---getting-started/</link>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---getting-started/</guid>
+      <description>Downloading and Installing For the most part, you&amp;rsquo;ll have access to the computers at school all year long, so you can always get Obsidian through there. If however you want to get Obsidian going at home, look no further.&#xA;Install on Windows Click the link, then Universal and follow instructions.&#xA;Install on Mac Click the link, then Universal and follow instructions.&#xA;Install on Linux If you guys are using Linux, not only will I be super impressed, but jealous you&amp;rsquo;re starting so young.</description>
+    </item>
+    <item>
+      <title>Obsidian Help - Preface</title>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/</link>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/</guid>
+      <description>Link to Documentation.&#xA;What is Obsidian? Essentially, a note-taking tool. All it boils down too is the format in which your notes are placed (I just think Obsidian is neat). Obsidian uses a Markdown, a markup-language. Not really a programming language, more of an encoding language, but we don&amp;rsquo;t need to worry about that for right now.&#xA;For now, all we are going to focus on is the basics-you have something you want to take notes on, and you write down your notes inside.</description>
+    </item>
+    <item>
+      <title>Private GPT</title>
+      <link>https://mrpointing.com/projects/private-gpt/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/projects/private-gpt/</guid>
+      <description>Link to the project.&#xA;This really tested my time and patience. What should have taken me an hour took me closer to a day, but it was extremely worth the time investment. No mind blowing innovation going on, and certainly nothing I haven&amp;rsquo;t seen before, nevertheless gratifying to bring together.&#xA;The most frustrating issue was that the configuration for running setting up the llama model in Poetry was either wrong on the tutorial or my machine is weird.</description>
+    </item>
     <item>
       <title>Learning Git - Chapter 3</title>
       <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-3/</link>
@@ -39,9 +74,9 @@
     </item>
     <item>
       <title>Beautiful Soup</title>
-      <link>https://mrpointing.com/notes/computer-science/beautiful-soup/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/beautiful-soup/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/beautiful-soup/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/beautiful-soup/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
@@ -67,9 +102,9 @@
     </item>
     <item>
       <title>Flask&#39;s Templates</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/flasks-templates/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/flasks-templates/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
@@ -200,30 +235,30 @@
     </item>
     <item>
       <title>Blinker</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/blinker/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/blinker/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Click</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/click/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/click/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</guid>
       <description>Link to the documentation.</description>
     </item>
     <item>
       <title>Jinja</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/jinja/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/jinja/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Werkzeug</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/werkzeug/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/werkzeug/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</guid>
       <description>Link to documentation.&#xA;First of all, what is WSGI?&#xA;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description>
     </item>
     <item>
@@ -235,23 +270,23 @@
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 12</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
       <description>Modified: July 19 2024&#xA;Virtual Environments and Packages 12.1 Introduction Often, you&amp;rsquo;re going to need tools and modules that aren&amp;rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.&#xA;To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.&#xA;12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment.</description>
     </item>
     <item>
       <title>PyCharm IDE Features</title>
-      <link>https://mrpointing.com/notes/computer-science/pycharm-ide-features/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/pycharm-ide-features/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/</guid>
       <description>Get Acquainted with PyCharm The project view is one of the main tool windows, containing the project directory, external libraries, and scratch files. You can also open it with Alt 1. The Python interpreter is easily viewable in the status bar in the bottom right. You can run, debug, or other option on the top right of the window. You can also press Shift F10. We got an unexpected error in our code, featured below.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 11</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
       <description>Modified: July 19 2024&#xA;The Standard Library - Part 2 7/9/2024&#xA;The second part here will go over more advanced, less common modules that nevertheless, exist.&#xA;11.1 Output Formatting reprlib is an appropriately named library containing a version of repr() modified for abbreviated displays of large or deeply nested containers:&#xA;&amp;gt;&amp;gt;&amp;gt; import reprlib &amp;gt;&amp;gt;&amp;gt; reprlib.repr(set(&amp;#39;supercalafragalisticexpialidocious&amp;#39;)) &amp;#34;{&amp;#39;a&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;,...&amp;#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects.</description>
     </item>
     <item>
@@ -263,37 +298,37 @@
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 10</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
       <description>Modified: July 19 2024&#xA;A Brief Tour of the Standard Library 7/4/2024&#xA;10.1 Operating System Interface The os module provides functions for interacting with operating systems:&#xA;&amp;gt;&amp;gt;&amp;gt; import os &amp;gt;&amp;gt;&amp;gt; os.getcwd() # returns the working directory &amp;#39;C:\\Python312&amp;#39; &amp;gt;&amp;gt;&amp;gt; os.chdir(&amp;#39;/server/accesslogs&amp;#39;) # change working directory &amp;gt;&amp;gt;&amp;gt; os.system(&amp;#39;mkdir today&amp;#39;) # run the command mkdir in the system shell 0 Never use from os import *. It&amp;rsquo;s not good practice to not do this regardless, but it will specifically keep os.</description>
     </item>
     <item>
       <title>Formatting Percentages</title>
-      <link>https://mrpointing.com/notes/computer-science/formatting-percentages/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/formatting-percentages/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/formatting-percentages/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/formatting-percentages/</guid>
       <description>Modified: July 03 2024&#xA;7/3/2024&#xA;Taken from this article.&#xA;Often in projects, we want to format our large float types as smaller percentages.&#xA;There are three main ways to do this:&#xA;Rounding and Float/String Types: round() takes two parameters: a value and a number to round too. Then, we can use a little complicated string statement.&#xA;&amp;gt;&amp;gt;&amp;gt; number = 0.8839133112 &amp;gt;&amp;gt;&amp;gt; n2 = round(number, 4) &amp;gt;&amp;gt;&amp;gt; print(n2) 0.886 &amp;gt;&amp;gt;&amp;gt; print(str(n2 * 100) + &amp;#39;%&amp;#39;) Format() Alternatively, if that seems a bit complicated, we can just format() instead.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 9</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
       <description>Modified: July 19 2024&#xA;Classes 6/28/2024&#xA;Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.&#xA;A class is made up of attributes and methods defined by the classes definition.&#xA;Python classes follow closely to other Object Oriented Programming languages classes in the following ways:</description>
     </item>
     <item>
       <title>Flask&#39;s Quickstart</title>
-      <link>https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
       <description>Link to documentation.&#xA;Flask is a framework to create applications via Python. It makes web based applications rather simple.&#xA;Starting from the here, the installation page.&#xA;Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.&#xA;Dependencies The following are installed automatically when installing Flask:&#xA;Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 8</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
       <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
       <description>Modified: July 19 2024&#xA;Errors and Exceptions 6/22/2024&#xA;There are two distinguishable types of errors: syntax errors and exceptions.&#xA;8.1 Syntax Syntax errors (or parsing errors) are errors involving the actual use of the language.&#xA;&amp;gt;&amp;gt;&amp;gt; while True print(&amp;#39;Hello World&amp;#39;) File &amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;, line 1 while True print(&amp;#39;Hello world&amp;#39;) ^^^^^ SyntaxError: invalid syntax In the example above, the while statement is missing the : required to use it.&#xA;8.2 Exceptions Even if code is syntactically correct, an error may occur when attempting to execute it.</description>
     </item>
     <item>
@@ -312,16 +347,16 @@
     </item>
     <item>
       <title>NumPy</title>
-      <link>https://mrpointing.com/notes/computer-science/numpy/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/numpy/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/numpy/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/numpy/</guid>
       <description>Modified: June 20 2024&#xA;Link to documentation</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 7</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
       <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
       <description>Modified: July 19 2024&#xA;Input and Output 6/18/2024&#xA;There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.&#xA;7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That&amp;rsquo;s an expression statement.</description>
     </item>
     <item>
@@ -333,9 +368,9 @@
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 6</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</guid>
       <description>Modified: July 19 2024&#xA;Modules 6/15/2024&#xA;Obviously, using local instances are not viable for long time development is not realistic. This is why we write scripts.&#xA;Python has the ability to writes scripts, or another method called modules. Definitions from modules can be imported into your instance of Python.&#xA;Main is also given a definition here: the collection of variables that you have access to in a script executed at the top level and in calculator mode.</description>
     </item>
     <item>
@@ -361,16 +396,16 @@
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 5</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
       <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
       <description>Modified: July 19 2024&#xA;Data Structures 6/10/2024&#xA;5.1 More on Lists Methods for Lists:&#xA;list.append(x) Adds an item to the end of the list Equivalent to a[len(a):] = [x] list.extend(iterable) Extend the list by appending all items from an iterable list.insert(i, x) Insert an item into a given position, where i is the index location and x is the value list.remove(x) Remove the first item from the list whose value is equal to x, ValueError if no such item list.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 4</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
       <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
       <description>Modified: July 19 2024&#xA;Control Flow Tools 6/5/2024&#xA;The while loop was seen in the previous Fibonacci Sequence example.&#xA;4.1 if Statements &amp;gt;&amp;gt;&amp;gt; x = int(input(&amp;#34;Please enter an integer: &amp;#34;)) Please enter an integer: 42 &amp;gt;&amp;gt;&amp;gt; if x &amp;lt; 0: &amp;gt;&amp;gt;&amp;gt; x = 0 &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Negative so now it&amp;#39;s zero!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 0: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Zero!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 1: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;UNO!!!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; else: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Nice B)&amp;#34;) Nice B) Very basic; all you need is an if statement.</description>
     </item>
     <item>
@@ -378,7 +413,7 @@
       <link>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</guid>
-      <description>Modified: August 02 2024&#xA;A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject.</description>
+      <description>A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject. I think I can handle a khan academy course and going through the entire Python documentation in two weeks.</description>
     </item>
     <item>
       <title>Topics I&#39;m Interested In</title>
@@ -396,9 +431,9 @@
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 1, 2, and 3</title>
-      <link>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
       <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
     </item>
     <item>

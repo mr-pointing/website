@@ -36,7 +36,7 @@ You can find my Goodreads [here](https://www.goodreads.com/user/show/119117493).
 
 Currently Watching:
 - Sister Wives
-- Monster
+- JoJo's Bizarre Adventure: Part 5 (the best part)
 
 You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
 
@@ -44,4 +44,4 @@ You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
 
 Currently Playing:
 - Street Fighter 6 (Akuma Main!)
-- Devil May Cry 3 
+- No More Heroes

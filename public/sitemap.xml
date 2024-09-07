@@ -3,21 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mrpointing.com/tags/computerscience/</loc>
-    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/me/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/posts/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/school/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/posts/teaching-with-obsidian/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/documentation/</loc>
+    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/</loc>
+    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/obsidian/</loc>
+    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---user-interface/</loc>
+    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---getting-started/</loc>
+    <lastmod>2024-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/</loc>
+    <lastmod>2024-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/ai/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/projects/private-gpt/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/python/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/git/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-3/</loc>
-    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/</loc>
-    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/notes/</loc>
-    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/textbook/</loc>
@@ -27,12 +63,6 @@
     <lastmod>2024-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/hugo/</loc>
-    <lastmod>2024-08-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/obsidian/</loc>
-    <lastmod>2024-08-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/posts/</loc>
     <lastmod>2024-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/website/</loc>
@@ -47,7 +77,7 @@
     <loc>https://mrpointing.com/notes/computer-science/videos/linux-file-system-structure-explained/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/beautiful-soup/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/beautiful-soup/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/html/</loc>
@@ -56,13 +86,7 @@
     <loc>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/me/</loc>
-    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/now/</loc>
-    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/python/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/learning-git/</loc>
@@ -83,7 +107,7 @@
     <loc>https://mrpointing.com/tags/flask/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/flask-notes/flasks-templates/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/posts/starting-my-website/</loc>
@@ -95,7 +119,7 @@
     <loc>https://mrpointing.com/projects/circuit-playground-express/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/flask-notes/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/hugo/</loc>
@@ -128,9 +152,6 @@
     <loc>https://mrpointing.com/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/documentation/</loc>
-    <lastmod>2024-07-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/tags/formatting/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -148,9 +169,6 @@
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/ai/</loc>
-    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/classes/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
@@ -194,16 +212,16 @@
     <loc>https://mrpointing.com/tags/api/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/flask-notes/blinker/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/book/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/flask-notes/click/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/flask-notes/jinja/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/sciencefiction/</loc>
@@ -212,7 +230,7 @@
     <loc>https://mrpointing.com/notes/entertainment/the-road/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/flask-notes/werkzeug/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</loc>
@@ -221,7 +239,7 @@
     <loc>https://mrpointing.com/tags/packages/</loc>
     <lastmod>2024-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-12/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</loc>
     <lastmod>2024-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/virtualenv/</loc>
@@ -233,22 +251,22 @@
     <loc>https://mrpointing.com/tags/modules/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/pycharm-ide-features/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/standardlibrary/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-11/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/projects/raspberry-pi-nas/</loc>
     <lastmod>2024-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-10/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/formatting-percentages/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/formatting-percentages/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/fantasy/</loc>
@@ -263,10 +281,10 @@
     <loc>https://mrpointing.com/tags/wix/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-9/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</loc>
     <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/flask-notes/flasks-quickstart/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/errors/</loc>
@@ -275,7 +293,7 @@
     <loc>https://mrpointing.com/tags/exceptions/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-8/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</loc>
     <lastmod>2024-06-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/datastructures/</loc>
@@ -287,7 +305,7 @@
     <loc>https://mrpointing.com/notes/computer-science/http-semantics/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/numpy/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/numpy/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/tutorialnotes/</loc>
@@ -299,7 +317,7 @@
     <loc>https://mrpointing.com/tags/output/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-7/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/audio/</loc>
@@ -308,7 +326,7 @@
     <loc>https://mrpointing.com/projects/future-projects/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-6/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/projects/vinyl-visualizer/</loc>
@@ -326,13 +344,13 @@
     <loc>https://mrpointing.com/tags/arrays/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-5/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</loc>
     <lastmod>2024-06-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/conditionals/</loc>
     <lastmod>2024-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-4/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</loc>
     <lastmod>2024-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</loc>
@@ -359,7 +377,7 @@
     <loc>https://mrpointing.com/tags/syntax/</loc>
     <lastmod>2024-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</loc>
     <lastmod>2024-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/</loc>
@@ -380,13 +398,19 @@
     <loc>https://mrpointing.com/notes/obsidian/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://mrpointing.com/notes/obsidian/obsidian-help/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mrpointing.com/tags/projects/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/projects/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python-tutorial/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/python/python-tutorial/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/videos/</loc>

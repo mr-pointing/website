@@ -6,8 +6,24 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 27 Aug 2024 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
         <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Teaching with Obsidian</title>
+            <link>https://mrpointing.com/posts/teaching-with-obsidian/</link>
+            <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/teaching-with-obsidian/</guid>
+            <description>I&amp;rsquo;m not sure if it&amp;rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.
+This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&amp;rsquo;s a good place to store code from lessons and start to think about what&amp;rsquo;s really important.</description>
+            <content type="html"><![CDATA[<hr>
+<p>I&rsquo;m not sure if it&rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.</p>
+<p>This is a small band-aid fix, but I&rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&rsquo;s a good place to store code from lessons and start to think about what&rsquo;s really important.</p>
+<p>There is no bad way to take notes, but taking no notes at all is certainly a worse alternative. They should be having fun and be excited to try something new that&rsquo;s beneficial to them. I&rsquo;m also stepping away from letting my kids use PyCharm&rsquo;s code completion since they get too reliant on it, and will devote a few weeks on just getting more familiar with <a href="https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/">using an IDE</a>.</p>
+<p>I only just started, but I&rsquo;ve been working on going through the <a href="https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/">Obsidian help documentation</a>. It&rsquo;s a great way to structure a lesson plan and get&rsquo;s the kids writing right away. I don&rsquo;t know if I want to enforce a structure around note taking to get some grade to keep them doing it, or letting them just do there thing after the lessons are over and see if it sticks. Either way this year is looking to be a really exciting year!</p>
+]]></content>
+        </item>
         
         <item>
             <title>Explaining my Obsidian to Hugo Workflow</title>
@@ -57,7 +73,7 @@ Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, 
 <li>Cloudflare</li>
 </ul>
 <h2 id="how-i-started">How I Started</h2>
-<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="https://mrpointing.com/notes/computer-science/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
+<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
 <p>Most tutorials I read online start at the beginning, and show how to start with a fresh blog. Assuming you understand Hugo (and if you don&rsquo;t you should read the articles in the footnotes), I&rsquo;m going to start right after where the quick-start leaves you.</p>
 <h2 id="making-a-blog-from-an-existing-vault">Making a Blog From an Existing Vault</h2>
 <p>So I tried the <a href="https://gohugo.io/getting-started/quick-start/">tutorial</a> on my laptop before bringing it over to my main machine, so I started on a good note.</p>
