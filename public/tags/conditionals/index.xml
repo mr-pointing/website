@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conditionals on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/conditionals/</link>
+    <link>http://localhost:1313/tags/conditionals/</link>
     <description>Recent content in Conditionals on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/conditionals/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/conditionals/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Python Tutorial Notes - Chapter 4</title>
-      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
+      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
       <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
       <description>Modified: July 19 2024&#xA;Control Flow Tools 6/5/2024&#xA;The while loop was seen in the previous Fibonacci Sequence example.&#xA;4.1 if Statements &amp;gt;&amp;gt;&amp;gt; x = int(input(&amp;#34;Please enter an integer: &amp;#34;)) Please enter an integer: 42 &amp;gt;&amp;gt;&amp;gt; if x &amp;lt; 0: &amp;gt;&amp;gt;&amp;gt; x = 0 &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Negative so now it&amp;#39;s zero!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 0: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Zero!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 1: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;UNO!!!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; else: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Nice B)&amp;#34;) Nice B) Very basic; all you need is an if statement.</description>
     </item>
   </channel>

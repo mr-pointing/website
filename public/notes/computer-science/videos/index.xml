@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Videos on Mr. Pointing</title>
-    <link>https://mrpointing.com/notes/computer-science/videos/</link>
+    <link>http://localhost:1313/notes/computer-science/videos/</link>
     <description>Recent content in Videos on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/notes/computer-science/videos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/notes/computer-science/videos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux File System-Structure Explained!</title>
-      <link>https://mrpointing.com/notes/computer-science/videos/linux-file-system-structure-explained/</link>
+      <link>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/videos/linux-file-system-structure-explained/</guid>
+      <guid>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</guid>
       <description>Link to video.&#xA;Unlike Windows, the Linux file system is structured a lot differently.&#xA;/bin is the directory containing &amp;ldquo;binaries&amp;rdquo;, just another word for programs or applications. /bin contains programs like ls, grep, and all sorts of others.&#xA;/sbin</description>
     </item>
     <item>
       <title>How to Start a Homelab for $0</title>
-      <link>https://mrpointing.com/notes/computer-science/videos/how-to-start-a-homelab-for-0/</link>
+      <link>http://localhost:1313/notes/computer-science/videos/how-to-start-a-homelab-for-0/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
+      <guid>http://localhost:1313/notes/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;Building a Homelab is easier and more affordable than ever before.&#xA;You can start homelabbing with extra tech or cloud options.&#xA;Clustering, through something like Kubernetes, you can start small. One small machine, and expand as you grow. All you need is a command line and 2gb of RAM.&#xA;Self hosting might need something more stable.&#xA;One way to start is with an old laptop.</description>
     </item>
     <item>
       <title>How To Use @dataclass in Python</title>
-      <link>https://mrpointing.com/notes/computer-science/videos/how-to-use-@dataclass-in-python/</link>
+      <link>http://localhost:1313/notes/computer-science/videos/how-to-use-@dataclass-in-python/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
+      <guid>http://localhost:1313/notes/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;Can be faster than creating a regular class.&#xA;How classes are typically written:&#xA;class Fruit: def __init__(self, name: str, calories: float): self.name = name self.calories = calories banana = Fruit(&amp;#39;Banana&amp;#39;, 10) We can do the same with a dataclass:&#xA;from dataclasses import dataclass @dataclass class Fruit: name: str calories: float banana = Fruit(&amp;#39;Banana&amp;#39;, 10) With the first example, we wouldn&amp;rsquo;t be able to print it nicely without writing a __str__ representation, but here, we can print out banana and get Fruit(name=&#39;Banana&#39;, calories=10), which looks much nicer.</description>
     </item>
     <item>
       <title>The Ultimate Guide to Writing Functions</title>
-      <link>https://mrpointing.com/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</link>
+      <link>http://localhost:1313/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</guid>
+      <guid>http://localhost:1313/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</guid>
       <description>Modified: July 23 2024&#xA;Link to video.&#xA;Tip 1: Do one thing, and do it well A function should perform a single task.&#xA;Think about the level of abstraction; the function should be on the same level of abstraction.&#xA;He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison.</description>
     </item>
     <item>
       <title>Browsers HTTP and You!</title>
-      <link>https://mrpointing.com/notes/computer-science/videos/browsers-http-and-you/</link>
+      <link>http://localhost:1313/notes/computer-science/videos/browsers-http-and-you/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/videos/browsers-http-and-you/</guid>
+      <guid>http://localhost:1313/notes/computer-science/videos/browsers-http-and-you/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;Request/Response Cycle It&amp;rsquo;s like a conversation. Client and server advertise capabilities and supported formats to one another.&#xA;HTTP is stateless, but the implementation will do state like things like caching. You need to see both sides of the conversation.&#xA;Anatomy of a request GET / HTTP/1.1 Host: localhost:8001 Request body. Anatomy of a response HTTP/1.0 200 OK X-Headers: Here Response body. Request headers Sent automatically&amp;hellip;when not doing Ajax</description>
     </item>
     <item>
       <title>You Can Do Really Cool Things With Functions in Python</title>
-      <link>https://mrpointing.com/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link>
+      <link>http://localhost:1313/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</guid>
+      <guid>http://localhost:1313/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</guid>
       <description>Modified: July 15 2024&#xA;Link to video.&#xA;This video goes over some uncommon ways to use functions in Python. It uses the following code as a base:&#xA;&amp;#34;&amp;#34;&amp;#34; main.py &amp;#34;&amp;#34;&amp;#34; import statistics from dataclasses import dataclass from typing import Protocol from exchange import Exchange class TradingStrategy(Protocol): &amp;#34;&amp;#34;&amp;#34;Trading strategy that decides whether to buy or sell, given a list of prices&amp;#34;&amp;#34;&amp;#34; def should_buy(self, prices: list[int]) -&amp;gt; bool: raise NotImplementedError() def should_sell(self, prices: list[int]) -&amp;gt; bool: raise NotImplementedError() class AverageTradingStrategy: &amp;#34;&amp;#34;&amp;#34;Trading strategy based on price averages.</description>
     </item>
     <item>
       <title>Become a Shell Wizard in ~12 Minutes</title>
-      <link>https://mrpointing.com/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
+      <link>http://localhost:1313/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
+      <guid>http://localhost:1313/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;The Basics of Shell Shell, terminal, console, command line, all are essentially the same thing.&#xA;Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn&amp;rsquo;t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I&amp;rsquo;d love to go through is note taking manual pages for all these commands.</description>
     </item>
   </channel>

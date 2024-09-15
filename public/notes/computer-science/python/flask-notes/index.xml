@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flask Notes on Mr. Pointing</title>
-    <link>https://mrpointing.com/notes/computer-science/python/flask-notes/</link>
+    <link>http://localhost:1313/notes/computer-science/python/flask-notes/</link>
     <description>Recent content in Flask Notes on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/notes/computer-science/python/flask-notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/notes/computer-science/python/flask-notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flask&#39;s Templates</title>
-      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</link>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Blinker</title>
-      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</link>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Click</title>
-      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</link>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/click/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/click/</guid>
       <description>Link to the documentation.</description>
     </item>
     <item>
       <title>Jinja</title>
-      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</link>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Werkzeug</title>
-      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</link>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</guid>
       <description>Link to documentation.&#xA;First of all, what is WSGI?&#xA;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description>
     </item>
     <item>
       <title>Flask&#39;s Quickstart</title>
-      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
       <description>Link to documentation.&#xA;Flask is a framework to create applications via Python. It makes web based applications rather simple.&#xA;Starting from the here, the installation page.&#xA;Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.&#xA;Dependencies The following are installed automatically when installing Flask:&#xA;Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.</description>
     </item>
   </channel>

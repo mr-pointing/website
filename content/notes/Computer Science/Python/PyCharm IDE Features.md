@@ -10,7 +10,7 @@ tags:
   - documentation
 title: PyCharm IDE Features
 date: 2024-07-09
-updated: 2024-09-01T10:14
+updated: 2024-09-15T14:22
 ---
 
 
@@ -277,10 +277,35 @@ If you want a more detailed view on your usages and declarations, you can use `A
 If you want too, you can pin that view to your window by right clicking the header of the view, then choosing pin. At anytime you want to hide the view, you can hit `Shift` `Escape`. Since this view is apart of the `Find` view, we can just use `Alt` `3` to open it back up.
 
 
-9/1/2024
+9/15/2024
 
 ### File Structure
 
-the structure of our code is obviously very important. Sometimes, when working on larger projects, you'll want to take a quick look at the entirety of said structure for any number of reasons. One of the most 
+The structure of our code is obviously very important. Sometimes, when working on larger projects, you'll want to take a quick look at the entirety of said structure for any number of reasons. 
+
+Two ways we can do this;
+
+1. Use `Ctrl`+`F12` and search for what you want by the name
+2. Use `Alt`+`7` to open the file structure as a secondary window in the bottom left.
 
 
+### Recent Files and Locations
+
+When your cursor is on a method, you can use `Ctrl`+`B` to move to it's declaration.
+
+Often when visiting methods and moving between numerous files, it can be really confusing and easy to get lost. Thankfully we can use `Ctrl`+`E` and navigate amongst recently opened files. We could start typing to find a file if we have a view, or use `Ctrl`+`Shift`+`E` to search through code within recently opened files.
+
+
+## Run and Debug
+
+
+### Run Configuration
+
+At any point, you can run your project using the green arrow on top, or using `Shift`+`F10`.
+
+
+### Debug Workflow
+
+It's not always completely obvious why the logic or flow of our code is breaking. To navigate errors, we can use a breakpoint and the debugger to help let us know. 
+
+When you get an exception or error, it will tell you what line caused the error. You can either click in the gutter of the line to set a breakpoint, or use `Ctrl`+`F8`. Then, run the debugger by either hitting the little bug icon or pressing `Shift`+`F9`.

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arrays on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/arrays/</link>
+    <link>http://localhost:1313/tags/arrays/</link>
     <description>Recent content in Arrays on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/arrays/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/arrays/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1122. Relative Sort Array</title>
-      <link>https://mrpointing.com/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</link>
+      <link>http://localhost:1313/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</link>
       <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</guid>
+      <guid>http://localhost:1313/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</guid>
       <description>Modified: August 02 2024&#xA;Description:&#xA;Given two arrays, arr1 and arr2, where all elements in arr2 are distinct, as well as all elements in arr2 are in arr1.&#xA;Sort the elements of arr1 so that the ordering of items in arr1 is the same as arr2. Any element not in arr2 should be appended in ascending/increasing order at the end of the list.&#xA;Example: Input: arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6] Output: [2,2,2,1,4,3,3,9,6,7,19]</description>
     </item>
   </channel>

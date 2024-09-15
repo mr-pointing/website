@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="This is a more general file for Python input and output for files. I feel like I constantly need to look up this stuff, so things I find I&amp;rsquo;ll write down here for reference.
+Reading in a CSV I was solving some Python Problems and needed to format easily from a CSV. I did a quick google and came across this article which reminded me Pandas has a easy CSV reader." />
+<meta name="keywords" content="homepage, blog, computerscience, python, output, input" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/python/reading-and-writing-files-with-python/" />
+
+
+    <title>
+        
+            Reading and Writing Python Files :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Reading and Writing Python Files">
+  <meta itemprop="description" content="This is a more general file for Python input and output for files. I feel like I constantly need to look up this stuff, so things I find I’ll write down here for reference.
+Reading in a CSV I was solving some Python Problems and needed to format easily from a CSV. I did a quick google and came across this article which reminded me Pandas has a easy CSV reader.">
+  <meta itemprop="datePublished" content="2024-09-14T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-14T00:00:00+00:00">
+  <meta itemprop="wordCount" content="269">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Python,Output,Input">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Reading and Writing Python Files">
+  <meta name="twitter:description" content="This is a more general file for Python input and output for files. I feel like I constantly need to look up this stuff, so things I find I’ll write down here for reference.
+Reading in a CSV I was solving some Python Problems and needed to format easily from a CSV. I did a quick google and came across this article which reminded me Pandas has a easy CSV reader.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/python/reading-and-writing-files-with-python/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Reading and Writing Python Files">
+  <meta property="og:description" content="This is a more general file for Python input and output for files. I feel like I constantly need to look up this stuff, so things I find I’ll write down here for reference.
+Reading in a CSV I was solving some Python Problems and needed to format easily from a CSV. I did a quick google and came across this article which reminded me Pandas has a easy CSV reader.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-09-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-14T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Output">
+    <meta property="article:tag" content="Input">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-09-14 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/python/reading-and-writing-files-with-python/">Reading and Writing Python Files</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p>This is a more general file for Python input and output for files. I feel like I constantly need to look up this stuff, so things I find I&rsquo;ll write down here for reference.</p>
+<h1 id="reading-in-a-csv">Reading in a CSV</h1>
+<p>I was solving some <a href="http://localhost:1313/notes/computer-science/python/python-problems/">Python Problems</a> and needed to format easily from a CSV. I did a quick google and came across this <a href="https://saturncloud.io/blog/how-to-convert-a-csv-file-to-a-dictionary-in-python-using-the-csv-and-pandas-modules/">article</a> which reminded me <a href="http://localhost:1313/notes/computer-science/python/pandas/">Pandas</a> has a easy CSV reader. The syntax is like so,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> stock_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;stocks.csv&#39;</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># to_dict() is a method of a pandas object, and orient is a parameter that tells  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># the object how to place the values in their dictionary  </span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> stock_dict <span style="color:#f92672">=</span> stock_data<span style="color:#f92672">.</span>to_dict(orient<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;records&#39;</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(stock_dict)
+</span></span></code></pre></div><p>There&rsquo;s also Python&rsquo;s built-in <code>csv</code> module.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># import csv</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># read csv file to a list of dictionaries</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;data.csv&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>    csv_reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DictReader(file)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>    data <span style="color:#f92672">=</span> [row <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> csv_reader]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(data)
+</span></span></code></pre></div><h1 id="writing-to-a-csv">Writing to a CSV</h1>
+<p>Just like reading in a CSV, <code>pandas</code> has a relatively easy option. Here&rsquo;s an example with writing a list of lists, using data frames;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#75715e"># some list of lists</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> my_df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(a)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> my_df<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#39;output.csv&#39;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, header<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span></code></pre></div><p>However, from what I gathered from some community posts, it seems like you should use built-in modules before relying on ones like <code>pandas</code>. In this case, Python&rsquo;s built in <code>csv</code> module can deal with this pretty easily;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#75715e"># some list of lists</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;output.csv&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>, newline<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>    writer <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>writer(f)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>    writer<span style="color:#f92672">.</span>write_rows(a)
+</span></span></code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/output/">output</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/input/">input</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

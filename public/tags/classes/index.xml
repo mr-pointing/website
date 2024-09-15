@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Classes on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/classes/</link>
+    <link>http://localhost:1313/tags/classes/</link>
     <description>Recent content in Classes on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/classes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/classes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To Use @dataclass in Python</title>
-      <link>https://mrpointing.com/notes/computer-science/videos/how-to-use-@dataclass-in-python/</link>
+      <link>http://localhost:1313/notes/computer-science/videos/how-to-use-@dataclass-in-python/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
+      <guid>http://localhost:1313/notes/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;Can be faster than creating a regular class.&#xA;How classes are typically written:&#xA;class Fruit: def __init__(self, name: str, calories: float): self.name = name self.calories = calories banana = Fruit(&amp;#39;Banana&amp;#39;, 10) We can do the same with a dataclass:&#xA;from dataclasses import dataclass @dataclass class Fruit: name: str calories: float banana = Fruit(&amp;#39;Banana&amp;#39;, 10) With the first example, we wouldn&amp;rsquo;t be able to print it nicely without writing a __str__ representation, but here, we can print out banana and get Fruit(name=&#39;Banana&#39;, calories=10), which looks much nicer.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 9</title>
-      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
+      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
       <description>Modified: July 19 2024&#xA;Classes 6/28/2024&#xA;Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.&#xA;A class is made up of attributes and methods defined by the classes definition.&#xA;Python classes follow closely to other Object Oriented Programming languages classes in the following ways:</description>
     </item>
   </channel>

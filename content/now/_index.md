@@ -5,7 +5,7 @@ tags:
   - me
 title: Now
 date: 2024-08-17
-updated: 2024-08-20T09:30
+updated: 2024-09-15T13:47
 ---
 
 -------------------------------------------------------------------------------
@@ -27,7 +27,6 @@ You can also find a link to my Discogs [here](https://www.discogs.com/user/binky
 
 Currently Reading: 
 - *Oathbringer* by **Brandon Sanderson**
-- *Edgedancer* by **Brandon Sanderson**
 
 You can find my Goodreads [here](https://www.goodreads.com/user/show/119117493).
 
@@ -44,4 +43,4 @@ You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
 
 Currently Playing:
 - Street Fighter 6 (Akuma Main!)
-- No More Heroes
+- No More Heroes 
