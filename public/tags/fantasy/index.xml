@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fantasy on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/fantasy/</link>
+    <link>https://mrpointing.com/tags/fantasy/</link>
     <description>Recent content in Fantasy on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/fantasy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/fantasy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Edgedancer</title>
-      <link>http://localhost:1313/notes/entertainment/edgedancer/</link>
+      <link>https://mrpointing.com/notes/entertainment/edgedancer/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/entertainment/edgedancer/</guid>
+      <guid>https://mrpointing.com/notes/entertainment/edgedancer/</guid>
       <description>Previous: Words of Radiance&#xA;Definitely a novella that took me too long to finish, and not really because I was enjoying it. More so because I didn&amp;rsquo;t love Lift as a character. I was actually going to say I didn&amp;rsquo;t hate their childish behavior, but typing that out I had a gut feeling I wasn&amp;rsquo;t being honest with myself.&#xA;I really didn&amp;rsquo;t like how childish Lift was. Maybe that was her point, but I didn&amp;rsquo;t seem to grasp onto the story.</description>
     </item>
     <item>
       <title>Oathbringer</title>
-      <link>http://localhost:1313/notes/entertainment/oathbringer/</link>
+      <link>https://mrpointing.com/notes/entertainment/oathbringer/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/entertainment/oathbringer/</guid>
+      <guid>https://mrpointing.com/notes/entertainment/oathbringer/</guid>
       <description> </description>
     </item>
     <item>
       <title>Words of Radiance</title>
-      <link>http://localhost:1313/notes/entertainment/words-of-radiance/</link>
+      <link>https://mrpointing.com/notes/entertainment/words-of-radiance/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/entertainment/words-of-radiance/</guid>
+      <guid>https://mrpointing.com/notes/entertainment/words-of-radiance/</guid>
       <description>Modified: July 02 2024&#xA;I finished Words of Radiance two days ago, and it initially got a 4 out of 5. I loved the book. I really did, and was invested from start to finish.&#xA;It took me about 3 weeks (3 weeks and 3 days says Goodreads) and it really flew by. I enjoyed tackling such a huge tome of a novel.&#xA;The characters were awesome, even if I felt like the interlude characters could have been longer to make them a bit more memorable.</description>
     </item>
   </channel>

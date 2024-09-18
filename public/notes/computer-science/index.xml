@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Science on Mr. Pointing</title>
-    <link>http://localhost:1313/notes/computer-science/</link>
+    <link>https://mrpointing.com/notes/computer-science/</link>
     <description>Recent content in Computer Science on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/notes/computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache Documentation</title>
-      <link>http://localhost:1313/notes/computer-science/apache-documentation/</link>
+      <link>https://mrpointing.com/notes/computer-science/apache-documentation/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/apache-documentation/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/apache-documentation/</guid>
       <description>Modified: August 02 2024&#xA;Link to documentation.</description>
     </item>
     <item>
       <title>Cookies</title>
-      <link>http://localhost:1313/notes/computer-science/cookies/</link>
+      <link>https://mrpointing.com/notes/computer-science/cookies/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/cookies/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/cookies/</guid>
       <description>Modified: August 02 2024&#xA;Link to Cloudflare, super helpful resource.&#xA;A cookie is a piece of data sent from a web server to a web browser filled with information about the client and session, created when the request was sent from the client to the server.&#xA;The three main reasons why you&amp;rsquo;d want to use cookies would be:&#xA;Session Info: Storing the session info in the cookie allows you to do things like refresh the page or link to another page without having to retype in your user information.</description>
     </item>
     <item>
       <title>HTTP Semantics</title>
-      <link>http://localhost:1313/notes/computer-science/http-semantics/</link>
+      <link>https://mrpointing.com/notes/computer-science/http-semantics/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/http-semantics/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/http-semantics/</guid>
       <description>Modified: June 20 2024&#xA;Following this documentation.</description>
     </item>
     <item>
       <title>AI Engineer Roadmap</title>
-      <link>http://localhost:1313/notes/computer-science/ai-engineer-roadmap/</link>
+      <link>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/ai-engineer-roadmap/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</guid>
       <description>A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject. I think I can handle a khan academy course and going through the entire Python documentation in two weeks.</description>
     </item>
   </channel>

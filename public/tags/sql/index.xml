@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/sql/</link>
+    <link>https://mrpointing.com/tags/sql/</link>
     <description>Recent content in SQL on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQLBolt - Introduction</title>
-      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</link>
+      <link>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</guid>
       <description>Link to lessons.&#xA;Introduction to SQL What is SQL? Structured Query Language is a language used to create, maintain, and use relational databases. Thousands of applications from simple projects to Microsoft products use SQL through various formats and configurations.&#xA;Some use SQLite, MySQL, Postgres, Oracle, or Microsoft SQL, to name a few. Each use SQL as base, and include features that garner appeal from different developers.&#xA;Relational Databases A relational database is a collection of 2D tables that are linked through some key value.</description>
     </item>
     <item>
       <title>SQLBolt - Lesson 1</title>
-      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</guid>
       <description> </description>
     </item>
   </channel>

@@ -2,529 +2,529 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computerscience on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/computerscience/</link>
+    <link>https://mrpointing.com/tags/computerscience/</link>
     <description>Recent content in Computerscience on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning Git - Chapter 5</title>
-      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-5/</link>
+      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-5/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-5/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-5/</guid>
       <description> </description>
     </item>
     <item>
       <title>Pandas</title>
-      <link>http://localhost:1313/notes/computer-science/python/pandas/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/pandas/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/pandas/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/pandas/</guid>
       <description> </description>
     </item>
     <item>
       <title>Python Problems</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-problems/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-problems/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-problems/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-problems/</guid>
       <description> </description>
     </item>
     <item>
       <title>SQL</title>
-      <link>http://localhost:1313/notes/computer-science/sql/</link>
+      <link>https://mrpointing.com/notes/computer-science/sql/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/sql/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/sql/</guid>
       <description>All my notes regarding SQL.</description>
     </item>
     <item>
       <title>SQLBolt</title>
-      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/</link>
+      <link>https://mrpointing.com/notes/computer-science/sql/sqlbolt/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/sql/sqlbolt/</guid>
       <description>All my notes regarding SQLBolt.</description>
     </item>
     <item>
       <title>SQLBolt - Introduction</title>
-      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</link>
+      <link>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</guid>
       <description>Link to lessons.&#xA;Introduction to SQL What is SQL? Structured Query Language is a language used to create, maintain, and use relational databases. Thousands of applications from simple projects to Microsoft products use SQL through various formats and configurations.&#xA;Some use SQLite, MySQL, Postgres, Oracle, or Microsoft SQL, to name a few. Each use SQL as base, and include features that garner appeal from different developers.&#xA;Relational Databases A relational database is a collection of 2D tables that are linked through some key value.</description>
     </item>
     <item>
       <title>SQLBolt - Lesson 1</title>
-      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</guid>
       <description> </description>
     </item>
     <item>
       <title>Reading and Writing Python Files</title>
-      <link>http://localhost:1313/notes/computer-science/python/reading-and-writing-files-with-python/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/reading-and-writing-files-with-python/</link>
       <pubDate>Sat, 14 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/reading-and-writing-files-with-python/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/reading-and-writing-files-with-python/</guid>
       <description>This is a more general file for Python input and output for files. I feel like I constantly need to look up this stuff, so things I find I&amp;rsquo;ll write down here for reference.&#xA;Reading in a CSV I was solving some Python Problems and needed to format easily from a CSV. I did a quick google and came across this article which reminded me Pandas has a easy CSV reader.</description>
     </item>
     <item>
       <title>Learning Git - Chapter 4</title>
-      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-4/</link>
+      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-4/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-4/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-4/</guid>
       <description>Branches We last left off with our first commit in our rainbow project. Remember, we can also use git status to get an update on the status of our repository. Before we get too deep into defining what a branch is, let&amp;rsquo;s explore why they&amp;rsquo;re used. That might make it a bit easier to understand.&#xA;Why Do We Use Branches? Branches help us differentiate changes in a given project. They can be made for an number of reasons, but can be boiled down to two main points:</description>
     </item>
     <item>
       <title>Obsidian Help - Plugins</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---plugins/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---plugins/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---plugins/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---plugins/</guid>
       <description>Core Plugins Out of the box, Obsidian has a plethora of usable features. Most you might never touch. Others will be ingrained in your workflow you&amp;rsquo;ll forget they&amp;rsquo;re plugins. This list is not extensive- like everything else, more detailed information can be found in their documentation.&#xA;Outgoing and Backlinks We already saw how powerful linking can be using Obsidian. Let&amp;rsquo;s define two specific types of links; outgoing links and backlinks.</description>
     </item>
     <item>
       <title>Obsidian Help - Editing and Formatting</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</guid>
       <description>Editing and Formatting Congratulations, after this year you&amp;rsquo;ll technically know two languages! Markdown, what we&amp;rsquo;re writing in, isn&amp;rsquo;t technically a programming language, but it is a useful format to understand and be able to read, just in case something isn&amp;rsquo;t rendered or just browsing files.&#xA;Basic Formatting Syntax A paragraph is just a block of text, separated by a newline. The paragraph for a literal example:&#xA;This is a paragraph.</description>
     </item>
     <item>
       <title>Teaching with Obsidian</title>
-      <link>http://localhost:1313/posts/teaching-with-obsidian/</link>
+      <link>https://mrpointing.com/posts/teaching-with-obsidian/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/teaching-with-obsidian/</guid>
+      <guid>https://mrpointing.com/posts/teaching-with-obsidian/</guid>
       <description>I&amp;rsquo;m not sure if it&amp;rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.&#xA;This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&amp;rsquo;s a good place to store code from lessons and start to think about what&amp;rsquo;s really important.</description>
     </item>
     <item>
       <title>Obsidian Help - User Interface</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---user-interface/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---user-interface/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---user-interface/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---user-interface/</guid>
       <description>User Interface A user interface, otherwise referred to as a UI, is the visual parts of a program you interact with when using it. For Obsidian, the UI is the entire window. Let&amp;rsquo;s break it down piece by piece.&#xA;Appearance Before we go any further, we should go over the fun part. Making it your own. If your left bar isn&amp;rsquo;t already open, hit the button on the top left (it&amp;rsquo;s a little square with lines in it).</description>
     </item>
     <item>
       <title>Obsidian Help - Getting Started</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---getting-started/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---getting-started/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---getting-started/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---getting-started/</guid>
       <description>Getting Started If you don&amp;rsquo;t know where to start, start here.&#xA;Downloading and Installing For the most part, you&amp;rsquo;ll have access to the computers at school all year long, so you can always get Obsidian through there. If however you want to get Obsidian going at home, look no further.&#xA;Install on Windows Click the link, then Universal and follow instructions.&#xA;Install on Mac Click the link, then Universal and follow instructions.</description>
     </item>
     <item>
       <title>Obsidian Help - Preface</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---preface/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---preface/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/</guid>
       <description>Link to Documentation.&#xA;What is Obsidian? Essentially, a note-taking tool. All it boils down too is the format in which your notes are placed (I just think Obsidian is neat). Obsidian uses a Markdown, a markup-language. Not really a programming language, more of an encoding language, but we don&amp;rsquo;t need to worry about that for right now.&#xA;For now, all we are going to focus on is the basics-you have something you want to take notes on, and you write down your notes inside.</description>
     </item>
     <item>
       <title>Private GPT</title>
-      <link>http://localhost:1313/projects/private-gpt/</link>
+      <link>https://mrpointing.com/projects/private-gpt/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/private-gpt/</guid>
+      <guid>https://mrpointing.com/projects/private-gpt/</guid>
       <description>Link to the project.&#xA;This really tested my time and patience. What should have taken me an hour took me closer to a day, but it was extremely worth the time investment. No mind blowing innovation going on, and certainly nothing I haven&amp;rsquo;t seen before, nevertheless gratifying to bring together.&#xA;The most frustrating issue was that the configuration for running setting up the llama model in Poetry was either wrong on the tutorial or my machine is weird.</description>
     </item>
     <item>
       <title>Learning Git - Chapter 3</title>
-      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-3/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-3/</guid>
       <description>Making a Commit We left off with our first text file in our working directory, our rainbowcolors.txt file. It has one sentence in it, and we can check that by either opening it or running cat rainbowcolors.txt in the working directory. We can see that we haven&amp;rsquo;t made any commits yet, and we only have one untracked file. You can run git status to gather all of this info.</description>
     </item>
     <item>
       <title>Explaining my Obsidian to Hugo Workflow</title>
-      <link>http://localhost:1313/posts/explaining-my-obsidian-to-hugo-workflow/</link>
+      <link>https://mrpointing.com/posts/explaining-my-obsidian-to-hugo-workflow/</link>
       <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/explaining-my-obsidian-to-hugo-workflow/</guid>
+      <guid>https://mrpointing.com/posts/explaining-my-obsidian-to-hugo-workflow/</guid>
       <description>Where We Left Off I was just able to get my website viewable for the first time in Hugo&amp;rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&amp;rsquo;t compatible with, and everything is looking good.&#xA;Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anything about Git, you can start by reading my analysis of a beginner Git textbook. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&amp;rsquo;re off to the races.</description>
     </item>
     <item>
       <title>Learning Git - Chapter 2</title>
-      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-2/</link>
+      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-2/</link>
       <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-2/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-2/</guid>
       <description>Local Repositories Introducing and Initializing a Local Repository A repository (or a repo) is the container of a project version controlled by Git. There are two; local and remote. Local is stored on your computer, while remote is obviously hosted remotely (someone else&amp;rsquo;s computer).&#xA;GitHub is one of the largest platforms and the one I&amp;rsquo;m most familiar with. GitLab and Bitbucket also exist, but I haven&amp;rsquo;t used them myself. Chapter 6 onward deals with this; for now, we can worry about it later.</description>
     </item>
     <item>
       <title>Linux File System-Structure Explained!</title>
-      <link>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/linux-file-system-structure-explained/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/linux-file-system-structure-explained/</guid>
       <description>Link to video.&#xA;Unlike Windows, the Linux file system is structured a lot differently.&#xA;/bin is the directory containing &amp;ldquo;binaries&amp;rdquo;, just another word for programs or applications. /bin contains programs like ls, grep, and all sorts of others.&#xA;/sbin</description>
     </item>
     <item>
       <title>Beautiful Soup</title>
-      <link>http://localhost:1313/notes/computer-science/python/beautiful-soup/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/beautiful-soup/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/beautiful-soup/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/beautiful-soup/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Learning Git - Chapter 1</title>
-      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</guid>
       <description>Git and the Command Line What is Git? Git is a version control system that keeps track of the changes done to a project or directory. When you edit a file, Git records what was added and removed. If files are added or removed, Git has it&amp;rsquo;s eyes on it (if you&amp;rsquo;re configuring it correctly).&#xA;Git was originally created by Linus Torvalds, the creator of Linux. Meant to be used at the command line, it is clearly more complex then a simply saving a file.</description>
     </item>
     <item>
       <title>Learning Git</title>
-      <link>http://localhost:1313/notes/computer-science/learning-git/</link>
+      <link>https://mrpointing.com/notes/computer-science/learning-git/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/learning-git/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/learning-git/</guid>
       <description>First Edition Anna Skoulikari&#xA;I got this textbook as a part of a DevOps Humble Bundle for a ridiculous price.&#xA;I have been using Git more seriously this year, so it makes sense to go through this first. It also is apart of the AI Engineer Roadmap, so even more of a reason to start.&#xA;Who the Textbook is For Anyone who wants to learn Git, and geared towards individuals who have basic technical skills, or those who need to work alongside those who use Git.</description>
     </item>
     <item>
       <title>AP Computer Science Principles - Unit 2</title>
-      <link>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</link>
+      <link>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</guid>
       <description> Unit 2: The Internet </description>
     </item>
     <item>
       <title>Flask&#39;s Templates</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Starting My Website</title>
-      <link>http://localhost:1313/posts/starting-my-website/</link>
+      <link>https://mrpointing.com/posts/starting-my-website/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/starting-my-website/</guid>
+      <guid>https://mrpointing.com/posts/starting-my-website/</guid>
       <description>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.&#xA;Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.</description>
     </item>
     <item>
       <title>Circuit Playground Express</title>
-      <link>http://localhost:1313/projects/circuit-playground-express/</link>
+      <link>https://mrpointing.com/projects/circuit-playground-express/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/circuit-playground-express/</guid>
+      <guid>https://mrpointing.com/projects/circuit-playground-express/</guid>
       <description>I was listening to a podcast from Real Python that mentioned getting your hands on a Circuit Playground Express. It was in passing and I probably wouldn&amp;rsquo;t have ordered one, had I not seen one for sale at Micro Center for only $30.&#xA;From my understanding, it&amp;rsquo;s a very basic introduction to using circuit boards, and I got it mostly because of something called Circuit Python, which is a version of Python meant to introduce students and beginners into controlling single board computers (SBC&amp;rsquo;s).</description>
     </item>
     <item>
       <title>Mr. Pointing Website</title>
-      <link>http://localhost:1313/projects/mr.-pointing-website/</link>
+      <link>https://mrpointing.com/projects/mr.-pointing-website/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/mr.-pointing-website/</guid>
+      <guid>https://mrpointing.com/projects/mr.-pointing-website/</guid>
       <description>So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:&#xA;Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Cloudflare Hugo Note Title Needs fixing Need to create something to format for Hugo&amp;rsquo;s scientific notation Intro to Algorithms Khan Academy Ignore Templates, re-route Excalidraw Get mr.</description>
     </item>
     <item>
       <title>Apache Documentation</title>
-      <link>http://localhost:1313/notes/computer-science/apache-documentation/</link>
+      <link>https://mrpointing.com/notes/computer-science/apache-documentation/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/apache-documentation/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/apache-documentation/</guid>
       <description>Modified: August 02 2024&#xA;Link to documentation.</description>
     </item>
     <item>
       <title>Deploying a Flask Application via Apache</title>
-      <link>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</link>
+      <link>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</guid>
+      <guid>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</guid>
       <description>Modified: August 02 2024&#xA;Link to the project website.</description>
     </item>
     <item>
       <title>Cookies</title>
-      <link>http://localhost:1313/notes/computer-science/cookies/</link>
+      <link>https://mrpointing.com/notes/computer-science/cookies/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/cookies/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/cookies/</guid>
       <description>Modified: August 02 2024&#xA;Link to Cloudflare, super helpful resource.&#xA;A cookie is a piece of data sent from a web server to a web browser filled with information about the client and session, created when the request was sent from the client to the server.&#xA;The three main reasons why you&amp;rsquo;d want to use cookies would be:&#xA;Session Info: Storing the session info in the cookie allows you to do things like refresh the page or link to another page without having to retype in your user information.</description>
     </item>
     <item>
       <title>Getting Started with Hugo</title>
-      <link>http://localhost:1313/notes/computer-science/hugo/getting-started-with-hugo/</link>
+      <link>https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/hugo/getting-started-with-hugo/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/</guid>
       <description>Quick Start It&amp;rsquo;s remarkably easy to start using Hugo. So much so it makes me want to start working on my portfolio immediately.&#xA;To start, we need to use PowerShell instead of Windows PowerShell. Apparently, they are different.&#xA;You also need to have Git installed.&#xA;Once both are done, you can run the following commands:&#xA;hugo new site quicksite This creates a new directory that will become our new website.</description>
     </item>
     <item>
       <title>Introduction to Algorithms</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</link>
+      <link>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/</link>
       <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/</guid>
       <description>Created: July 17 2024 Modified: August 02 2024&#xA;Fourth Edition Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein Preface Algorithms are everywhere, apart of almost everything we do, and every decision we make. They are part of most if not all tech stacks used today.&#xA;Each chapter in this book will present an algorithm, an application area for some algorithm, or some other related topic.&#xA;For teaching purposes The less complex the audience, the less complex chapters you need.</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 2</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
+      <link>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
       <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
       <description>Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.&#xA;2.1 Insertion Sort Solves a sorting problem (obviously).&#xA;The numbers to be sorted are known as keys.&#xA;The input comes in the form of an array with n elements.&#xA;A reason to sort is often because those keys are associated with other data, Satellite data.&#xA;Key + Satellite = Record&#xA;We can think of a spreadsheet, with student records having many pieces of data.</description>
     </item>
     <item>
       <title>AP Computer Science Principles - Unit 1</title>
-      <link>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</guid>
       <description>Unit 1: Digital Information Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&amp;rsquo;ll be looking forward to stealing their ideas.&#xA;Bits and bytes How do computers represent data? All computers understand is Binary, 0&amp;rsquo;s and 1&amp;rsquo;s.&#xA;The video explains the example of using one single wire to transfer electricity through it; on or off.</description>
     </item>
     <item>
       <title>How to Start a Homelab for $0</title>
-      <link>http://localhost:1313/notes/computer-science/videos/how-to-start-a-homelab-for-0/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/how-to-start-a-homelab-for-0/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;Building a Homelab is easier and more affordable than ever before.&#xA;You can start homelabbing with extra tech or cloud options.&#xA;Clustering, through something like Kubernetes, you can start small. One small machine, and expand as you grow. All you need is a command line and 2gb of RAM.&#xA;Self hosting might need something more stable.&#xA;One way to start is with an old laptop.</description>
     </item>
     <item>
       <title>How To Use @dataclass in Python</title>
-      <link>http://localhost:1313/notes/computer-science/videos/how-to-use-@dataclass-in-python/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/how-to-use-@dataclass-in-python/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/how-to-use-@dataclass-in-python/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;Can be faster than creating a regular class.&#xA;How classes are typically written:&#xA;class Fruit: def __init__(self, name: str, calories: float): self.name = name self.calories = calories banana = Fruit(&amp;#39;Banana&amp;#39;, 10) We can do the same with a dataclass:&#xA;from dataclasses import dataclass @dataclass class Fruit: name: str calories: float banana = Fruit(&amp;#39;Banana&amp;#39;, 10) With the first example, we wouldn&amp;rsquo;t be able to print it nicely without writing a __str__ representation, but here, we can print out banana and get Fruit(name=&#39;Banana&#39;, calories=10), which looks much nicer.</description>
     </item>
     <item>
       <title>Lython</title>
-      <link>http://localhost:1313/projects/lython/</link>
+      <link>https://mrpointing.com/projects/lython/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/lython/</guid>
+      <guid>https://mrpointing.com/projects/lython/</guid>
       <description>Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
     </item>
     <item>
       <title>The Ultimate Guide to Writing Functions</title>
-      <link>http://localhost:1313/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/the-ultimate-guide-to-writing-functions/</guid>
       <description>Modified: July 23 2024&#xA;Link to video.&#xA;Tip 1: Do one thing, and do it well A function should perform a single task.&#xA;Think about the level of abstraction; the function should be on the same level of abstraction.&#xA;He brings up two examples, one of a function that iterates through a collection, checking each value against a matcher to return if one exists. He says this has two levels of abstraction; the iteration, and the comparison.</description>
     </item>
     <item>
       <title>Browsers HTTP and You!</title>
-      <link>http://localhost:1313/notes/computer-science/videos/browsers-http-and-you/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/browsers-http-and-you/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/browsers-http-and-you/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/browsers-http-and-you/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;Request/Response Cycle It&amp;rsquo;s like a conversation. Client and server advertise capabilities and supported formats to one another.&#xA;HTTP is stateless, but the implementation will do state like things like caching. You need to see both sides of the conversation.&#xA;Anatomy of a request GET / HTTP/1.1 Host: localhost:8001 Request body. Anatomy of a response HTTP/1.0 200 OK X-Headers: Here Response body. Request headers Sent automatically&amp;hellip;when not doing Ajax</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 1</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
       <description>Modified: August 02 2024&#xA;The Role of Algorithms in Computing 1.1 Algorithms Algorithm: Any well defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.&#xA;We often say algorithms help us solve computational problems.&#xA;We can define a sorting algorithm like so:&#xA;Input: A sequence of n numbers, {a_1, a_2, ... a_n}</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Part 1</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/</link>
       <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/introduction-to-algorithms/part-1/</guid>
       <description>Modified: August 02 2024&#xA;Notes on Part 1.</description>
     </item>
     <item>
       <title>You Can Do Really Cool Things With Functions in Python</title>
-      <link>http://localhost:1313/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</guid>
       <description>Modified: July 15 2024&#xA;Link to video.&#xA;This video goes over some uncommon ways to use functions in Python. It uses the following code as a base:&#xA;&amp;#34;&amp;#34;&amp;#34; main.py &amp;#34;&amp;#34;&amp;#34; import statistics from dataclasses import dataclass from typing import Protocol from exchange import Exchange class TradingStrategy(Protocol): &amp;#34;&amp;#34;&amp;#34;Trading strategy that decides whether to buy or sell, given a list of prices&amp;#34;&amp;#34;&amp;#34; def should_buy(self, prices: list[int]) -&amp;gt; bool: raise NotImplementedError() def should_sell(self, prices: list[int]) -&amp;gt; bool: raise NotImplementedError() class AverageTradingStrategy: &amp;#34;&amp;#34;&amp;#34;Trading strategy based on price averages.</description>
     </item>
     <item>
       <title>Blinker</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Click</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/click/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/click/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</guid>
       <description>Link to the documentation.</description>
     </item>
     <item>
       <title>Jinja</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Werkzeug</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</guid>
       <description>Link to documentation.&#xA;First of all, what is WSGI?&#xA;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description>
     </item>
     <item>
       <title>Become a Shell Wizard in ~12 Minutes</title>
-      <link>http://localhost:1313/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/become-a-shell-wizard-in-~12-minutes/</guid>
       <description>Modified: July 19 2024&#xA;Link to video.&#xA;The Basics of Shell Shell, terminal, console, command line, all are essentially the same thing.&#xA;Commands ls: lists out all items in the current (target) directory You can pass some flags to change the output -latrh will produce long list format, all files, sorted by time, in reverse, with human readable file sizes You can also use a path as an argument, as well as a combination of both flags and path cd: change directory pwd: shows path to current work directory echo: lets you print some text cat: lets you print the content of a file touch: creates a file if it doesn&amp;rsquo;t exist; changes the timestamp if it does cp: lets you copy a file or directory to a target destination move: like copy, but moves it instead rm: removes a file or directory Need to use -r to delete a directory You can add f to forcefully delete it ln: creates a symlink in a file to another location Similar to a reference object in programming less: lets you view text content in a scrollable format Often more useful than cat, since you can search easily more: less than less, but more on the screen and can only go forward man: shows the manual for the command you need Similar to using --help after a command One documentation I&amp;rsquo;d love to go through is note taking manual pages for all these commands.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 12</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
       <description>Modified: July 19 2024&#xA;Virtual Environments and Packages 12.1 Introduction Often, you&amp;rsquo;re going to need tools and modules that aren&amp;rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.&#xA;To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.&#xA;12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment.</description>
     </item>
     <item>
       <title>PyCharm IDE Features</title>
-      <link>http://localhost:1313/notes/computer-science/python/pycharm-ide-features/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/pycharm-ide-features/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/</guid>
       <description>Get Acquainted with PyCharm The project view is one of the main tool windows, containing the project directory, external libraries, and scratch files. You can also open it with Alt 1. The Python interpreter is easily viewable in the status bar in the bottom right. You can run, debug, or other option on the top right of the window. You can also press Shift F10. We got an unexpected error in our code, featured below.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 11</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
       <description>Modified: July 19 2024&#xA;The Standard Library - Part 2 7/9/2024&#xA;The second part here will go over more advanced, less common modules that nevertheless, exist.&#xA;11.1 Output Formatting reprlib is an appropriately named library containing a version of repr() modified for abbreviated displays of large or deeply nested containers:&#xA;&amp;gt;&amp;gt;&amp;gt; import reprlib &amp;gt;&amp;gt;&amp;gt; reprlib.repr(set(&amp;#39;supercalafragalisticexpialidocious&amp;#39;)) &amp;#34;{&amp;#39;a&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;,...&amp;#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects.</description>
     </item>
     <item>
       <title>Raspberry Pi NAS</title>
-      <link>http://localhost:1313/projects/raspberry-pi-nas/</link>
+      <link>https://mrpointing.com/projects/raspberry-pi-nas/</link>
       <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/raspberry-pi-nas/</guid>
+      <guid>https://mrpointing.com/projects/raspberry-pi-nas/</guid>
       <description>Link</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 10</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
       <description>Modified: July 19 2024&#xA;A Brief Tour of the Standard Library 7/4/2024&#xA;10.1 Operating System Interface The os module provides functions for interacting with operating systems:&#xA;&amp;gt;&amp;gt;&amp;gt; import os &amp;gt;&amp;gt;&amp;gt; os.getcwd() # returns the working directory &amp;#39;C:\\Python312&amp;#39; &amp;gt;&amp;gt;&amp;gt; os.chdir(&amp;#39;/server/accesslogs&amp;#39;) # change working directory &amp;gt;&amp;gt;&amp;gt; os.system(&amp;#39;mkdir today&amp;#39;) # run the command mkdir in the system shell 0 Never use from os import *. It&amp;rsquo;s not good practice to not do this regardless, but it will specifically keep os.</description>
     </item>
     <item>
       <title>Formatting Percentages</title>
-      <link>http://localhost:1313/notes/computer-science/python/formatting-percentages/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/formatting-percentages/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/formatting-percentages/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/formatting-percentages/</guid>
       <description>Modified: July 03 2024&#xA;7/3/2024&#xA;Taken from this article.&#xA;Often in projects, we want to format our large float types as smaller percentages.&#xA;There are three main ways to do this:&#xA;Rounding and Float/String Types: round() takes two parameters: a value and a number to round too. Then, we can use a little complicated string statement.&#xA;&amp;gt;&amp;gt;&amp;gt; number = 0.8839133112 &amp;gt;&amp;gt;&amp;gt; n2 = round(number, 4) &amp;gt;&amp;gt;&amp;gt; print(n2) 0.886 &amp;gt;&amp;gt;&amp;gt; print(str(n2 * 100) + &amp;#39;%&amp;#39;) Format() Alternatively, if that seems a bit complicated, we can just format() instead.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 9</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
       <description>Modified: July 19 2024&#xA;Classes 6/28/2024&#xA;Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.&#xA;A class is made up of attributes and methods defined by the classes definition.&#xA;Python classes follow closely to other Object Oriented Programming languages classes in the following ways:</description>
     </item>
     <item>
       <title>Flask&#39;s Quickstart</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
       <description>Link to documentation.&#xA;Flask is a framework to create applications via Python. It makes web based applications rather simple.&#xA;Starting from the here, the installation page.&#xA;Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.&#xA;Dependencies The following are installed automatically when installing Flask:&#xA;Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 8</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
       <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
       <description>Modified: July 19 2024&#xA;Errors and Exceptions 6/22/2024&#xA;There are two distinguishable types of errors: syntax errors and exceptions.&#xA;8.1 Syntax Syntax errors (or parsing errors) are errors involving the actual use of the language.&#xA;&amp;gt;&amp;gt;&amp;gt; while True print(&amp;#39;Hello World&amp;#39;) File &amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;, line 1 while True print(&amp;#39;Hello world&amp;#39;) ^^^^^ SyntaxError: invalid syntax In the example above, the while statement is missing the : required to use it.&#xA;8.2 Exceptions Even if code is syntactically correct, an error may occur when attempting to execute it.</description>
     </item>
     <item>
       <title>Designing a RESTful API</title>
-      <link>http://localhost:1313/projects/designing-a-restful-api/</link>
+      <link>https://mrpointing.com/projects/designing-a-restful-api/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
+      <guid>https://mrpointing.com/projects/designing-a-restful-api/</guid>
       <description>Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
     </item>
     <item>
       <title>HTTP Semantics</title>
-      <link>http://localhost:1313/notes/computer-science/http-semantics/</link>
+      <link>https://mrpointing.com/notes/computer-science/http-semantics/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/http-semantics/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/http-semantics/</guid>
       <description>Modified: June 20 2024&#xA;Following this documentation.</description>
     </item>
     <item>
       <title>NumPy</title>
-      <link>http://localhost:1313/notes/computer-science/python/numpy/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/numpy/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/numpy/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/numpy/</guid>
       <description>Modified: June 20 2024&#xA;Link to documentation</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 7</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
       <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
       <description>Modified: July 19 2024&#xA;Input and Output 6/18/2024&#xA;There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.&#xA;7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That&amp;rsquo;s an expression statement.</description>
     </item>
     <item>
       <title>Future Projects</title>
-      <link>http://localhost:1313/projects/future-projects/</link>
+      <link>https://mrpointing.com/projects/future-projects/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/future-projects/</guid>
+      <guid>https://mrpointing.com/projects/future-projects/</guid>
       <description>Modified: June 20 2024&#xA;Obsidian Related:&#xA;Integrate an AI model into Obsidian as a plug-in LLM trained on my Obsidian data Obsidian plug-in that automates a bibliography from links Website related:&#xA;Python script that automates adding .md to Excalidraw files after Obsidian to Hugo transfer. </description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 6</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</guid>
       <description>Modified: July 19 2024&#xA;Modules 6/15/2024&#xA;Obviously, using local instances are not viable for long time development is not realistic. This is why we write scripts.&#xA;Python has the ability to writes scripts, or another method called modules. Definitions from modules can be imported into your instance of Python.&#xA;Main is also given a definition here: the collection of variables that you have access to in a script executed at the top level and in calculator mode.</description>
     </item>
     <item>
       <title>Vinyl Visualizer</title>
-      <link>http://localhost:1313/projects/vinyl-visualizer/</link>
+      <link>https://mrpointing.com/projects/vinyl-visualizer/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/vinyl-visualizer/</guid>
+      <guid>https://mrpointing.com/projects/vinyl-visualizer/</guid>
       <description>A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.&#xA;To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.&#xA;I first asked ChatGPT 3.5 for advice.&#xA;I also asked ChatGPT 4o and got a little better/pointed advice.</description>
     </item>
     <item>
       <title>75. Sort Colors</title>
-      <link>http://localhost:1313/notes/computer-science/leet-code-problems/75.-sort-colors/</link>
+      <link>https://mrpointing.com/notes/computer-science/leet-code-problems/75.-sort-colors/</link>
       <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/leet-code-problems/75.-sort-colors/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/leet-code-problems/75.-sort-colors/</guid>
       <description>Modified: August 02 2024&#xA;Description:&#xA;Given an array nums with n objects colored red, white, or blue, sort in-place so that objects of the same color are adjacent. Colors are integers 0, 1, and 2 respectively.&#xA;Example: Input: nums = [2,0,2,1,1,0] Output: [0,0,1,1,2,2]&#xA;Basically, sort them in order without using the built-in sort function.&#xA;So I worked on this at work, and I got to a certain point where I was using a hash map to count the amount of times they went through, which I was able to make.</description>
     </item>
     <item>
       <title>1122. Relative Sort Array</title>
-      <link>http://localhost:1313/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</link>
+      <link>https://mrpointing.com/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</link>
       <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/leet-code-problems/1122.-relative-sort-array/</guid>
       <description>Modified: August 02 2024&#xA;Description:&#xA;Given two arrays, arr1 and arr2, where all elements in arr2 are distinct, as well as all elements in arr2 are in arr1.&#xA;Sort the elements of arr1 so that the ordering of items in arr1 is the same as arr2. Any element not in arr2 should be appended in ascending/increasing order at the end of the list.&#xA;Example: Input: arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6] Output: [2,2,2,1,4,3,3,9,6,7,19]</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 5</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
       <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
       <description>Modified: July 19 2024&#xA;Data Structures 6/10/2024&#xA;5.1 More on Lists Methods for Lists:&#xA;list.append(x) Adds an item to the end of the list Equivalent to a[len(a):] = [x] list.extend(iterable) Extend the list by appending all items from an iterable list.insert(i, x) Insert an item into a given position, where i is the index location and x is the value list.remove(x) Remove the first item from the list whose value is equal to x, ValueError if no such item list.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 4</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
       <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
       <description>Modified: July 19 2024&#xA;Control Flow Tools 6/5/2024&#xA;The while loop was seen in the previous Fibonacci Sequence example.&#xA;4.1 if Statements &amp;gt;&amp;gt;&amp;gt; x = int(input(&amp;#34;Please enter an integer: &amp;#34;)) Please enter an integer: 42 &amp;gt;&amp;gt;&amp;gt; if x &amp;lt; 0: &amp;gt;&amp;gt;&amp;gt; x = 0 &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Negative so now it&amp;#39;s zero!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 0: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Zero!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 1: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;UNO!!!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; else: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Nice B)&amp;#34;) Nice B) Very basic; all you need is an if statement.</description>
     </item>
     <item>
       <title>AI Engineer Roadmap</title>
-      <link>http://localhost:1313/notes/computer-science/ai-engineer-roadmap/</link>
+      <link>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/ai-engineer-roadmap/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</guid>
       <description>A resource by Code Basics&#xA;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&#xA;Week 0 is stupid lol.&#xA;Week 1 and 2 (6/2 - 6/17) I have a masters degree in this subject. I think I can handle a khan academy course and going through the entire Python documentation in two weeks.</description>
     </item>
     <item>
       <title>Topics I&#39;m Interested In</title>
-      <link>http://localhost:1313/notes/topics-im-interested-in/</link>
+      <link>https://mrpointing.com/notes/topics-im-interested-in/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/topics-im-interested-in/</guid>
+      <guid>https://mrpointing.com/notes/topics-im-interested-in/</guid>
       <description>This is an all-purpose note I&amp;rsquo;ll write down important links too, as well as connect to all sorts of things I want to learn more about.&#xA;General Brazilian Jiu-Jitsu Jobany Rosario Wood working/building Computer Science Hardware Raspberry Pi NAS Circuit Playground Express Servers/server rooms Cyber security Encryption Algorithms Introduction to Algorithms BASIC Compression Email NAS/Home Server How to Start a Homelab for $0 Extras Link to Summer Job&#xA;I found a pretty decent resource on Python and Machine learning.</description>
     </item>
     <item>
       <title>You Are Not Expected To Understand This</title>
-      <link>http://localhost:1313/notes/entertainment/you-are-not-expected-to-understand-this/</link>
+      <link>https://mrpointing.com/notes/entertainment/you-are-not-expected-to-understand-this/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/entertainment/you-are-not-expected-to-understand-this/</guid>
+      <guid>https://mrpointing.com/notes/entertainment/you-are-not-expected-to-understand-this/</guid>
       <description>Modified: July 26 2024&#xA;26 short essays on the pieces/lines of code that shaped the modern understanding of computer science.&#xA;6/3/24&#xA;Halfway through, I think some of the stories are interesting. Some of the articles don&amp;rsquo;t go as deep as I think they could/should; some bring up gender/race for seemingly no reason&amp;hellip;others actually delve deeper into the politics of it encouragingly.&#xA;I started Topics I&amp;rsquo;m Interested In because of this book pretty much.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 1, 2, and 3</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
       <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
     </item>
     <item>
       <title>Khan Academy</title>
-      <link>http://localhost:1313/notes/computer-science/khan-academy/</link>
+      <link>https://mrpointing.com/notes/computer-science/khan-academy/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/khan-academy/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/khan-academy/</guid>
       <description>Khan Academy Courses I&amp;rsquo;ve taken.</description>
     </item>
     <item>
       <title>Leet Code Problems</title>
-      <link>http://localhost:1313/notes/computer-science/leet-code-problems/</link>
+      <link>https://mrpointing.com/notes/computer-science/leet-code-problems/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/leet-code-problems/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/leet-code-problems/</guid>
       <description>Leet Code Problems I&amp;rsquo;ve worked on.</description>
     </item>
   </channel>

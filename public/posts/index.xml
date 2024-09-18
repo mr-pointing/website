@@ -1,43 +1,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://mrpointing.com/posts/</link>
         <description>Recent content in Posts on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Teaching with Obsidian</title>
-            <link>http://localhost:1313/posts/teaching-with-obsidian/</link>
+            <link>https://mrpointing.com/posts/teaching-with-obsidian/</link>
             <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/teaching-with-obsidian/</guid>
+            <guid>https://mrpointing.com/posts/teaching-with-obsidian/</guid>
             <description>I&amp;rsquo;m not sure if it&amp;rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.
 This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&amp;rsquo;s a good place to store code from lessons and start to think about what&amp;rsquo;s really important.</description>
             <content type="html"><![CDATA[<hr>
 <p>I&rsquo;m not sure if it&rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.</p>
 <p>This is a small band-aid fix, but I&rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&rsquo;s a good place to store code from lessons and start to think about what&rsquo;s really important.</p>
-<p>There is no bad way to take notes, but taking no notes at all is certainly a worse alternative. They should be having fun and be excited to try something new that&rsquo;s beneficial to them. I&rsquo;m also stepping away from letting my kids use PyCharm&rsquo;s code completion since they get too reliant on it, and will devote a few weeks on just getting more familiar with <a href="http://localhost:1313/notes/computer-science/python/pycharm-ide-features/">using an IDE</a>.</p>
-<p>I only just started, but I&rsquo;ve been working on going through the <a href="http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---preface/">Obsidian help documentation</a>. It&rsquo;s a great way to structure a lesson plan and get&rsquo;s the kids writing right away. I don&rsquo;t know if I want to enforce a structure around note taking to get some grade to keep them doing it, or letting them just do there thing after the lessons are over and see if it sticks. Either way this year is looking to be a really exciting year!</p>
+<p>There is no bad way to take notes, but taking no notes at all is certainly a worse alternative. They should be having fun and be excited to try something new that&rsquo;s beneficial to them. I&rsquo;m also stepping away from letting my kids use PyCharm&rsquo;s code completion since they get too reliant on it, and will devote a few weeks on just getting more familiar with <a href="https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/">using an IDE</a>.</p>
+<p>I only just started, but I&rsquo;ve been working on going through the <a href="https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/">Obsidian help documentation</a>. It&rsquo;s a great way to structure a lesson plan and get&rsquo;s the kids writing right away. I don&rsquo;t know if I want to enforce a structure around note taking to get some grade to keep them doing it, or letting them just do there thing after the lessons are over and see if it sticks. Either way this year is looking to be a really exciting year!</p>
 ]]></content>
         </item>
         
         <item>
             <title>Explaining my Obsidian to Hugo Workflow</title>
-            <link>http://localhost:1313/posts/explaining-my-obsidian-to-hugo-workflow/</link>
+            <link>https://mrpointing.com/posts/explaining-my-obsidian-to-hugo-workflow/</link>
             <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/explaining-my-obsidian-to-hugo-workflow/</guid>
+            <guid>https://mrpointing.com/posts/explaining-my-obsidian-to-hugo-workflow/</guid>
             <description>Where We Left Off I was just able to get my website viewable for the first time in Hugo&amp;rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&amp;rsquo;t compatible with, and everything is looking good.
 Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anything about Git, you can start by reading my analysis of a beginner Git textbook. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&amp;rsquo;re off to the races.</description>
             <content type="html"><![CDATA[<hr>
 <h2 id="where-we-left-off">Where We Left Off</h2>
 <p>I was just able to get my <a href="https://mrpointing.com">website</a> viewable for the first time in Hugo&rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&rsquo;t compatible with, and everything is looking good.</p>
-<p>Implementing Git was also incredibly simple. If you don&rsquo;t know anything about Git, you can start by reading my analysis of a beginner <a href="http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-1/">Git textbook</a>. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&rsquo;re off to the races.</p>
-<p>What&rsquo;s going to determine what shows up on your site is what&rsquo;s committed to your GitHub repo, so it&rsquo;s a good idea to make sure your content looks good before you make your commit. Considering you have (and if you haven&rsquo;t, you should) read my quick dive into the structure of <a href="http://localhost:1313/notes/computer-science/hugo/getting-started-with-hugo/">hugo</a>, you know that before committing anything to our repo, we clear out the <code>public</code> directory, call <code>hugo</code> to build our site, then use basic Git commands to push to your main branch.</p>
+<p>Implementing Git was also incredibly simple. If you don&rsquo;t know anything about Git, you can start by reading my analysis of a beginner <a href="https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/">Git textbook</a>. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&rsquo;re off to the races.</p>
+<p>What&rsquo;s going to determine what shows up on your site is what&rsquo;s committed to your GitHub repo, so it&rsquo;s a good idea to make sure your content looks good before you make your commit. Considering you have (and if you haven&rsquo;t, you should) read my quick dive into the structure of <a href="https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/">hugo</a>, you know that before committing anything to our repo, we clear out the <code>public</code> directory, call <code>hugo</code> to build our site, then use basic Git commands to push to your main branch.</p>
 <h2 id="fixing-my-problems">Fixing My Problems</h2>
 <p>I did have one major issue though; now that I had spent a few hours fixing and finding out all of the unique issues within my markdown files, did I want to do this procedure EVERYTIME I wanted to update my site? No thank you. Now that I&rsquo;m using GitHub, if I were to use Obsidian to Hugo it would end up writing over all of the syntax I just finished editing.</p>
 <p>The main problems were that:</p>
@@ -57,10 +57,10 @@ Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anythin
         
         <item>
             <title>Starting My Website</title>
-            <link>http://localhost:1313/posts/starting-my-website/</link>
+            <link>https://mrpointing.com/posts/starting-my-website/</link>
             <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/starting-my-website/</guid>
+            <guid>https://mrpointing.com/posts/starting-my-website/</guid>
             <description>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
 Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.</description>
             <content type="html"><![CDATA[<hr>
@@ -73,7 +73,7 @@ Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, 
 <li>Cloudflare</li>
 </ul>
 <h2 id="how-i-started">How I Started</h2>
-<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
+<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
 <p>Most tutorials I read online start at the beginning, and show how to start with a fresh blog. Assuming you understand Hugo (and if you don&rsquo;t you should read the articles in the footnotes), I&rsquo;m going to start right after where the quick-start leaves you.</p>
 <h2 id="making-a-blog-from-an-existing-vault">Making a Blog From an Existing Vault</h2>
 <p>So I tried the <a href="https://gohugo.io/getting-started/quick-start/">tutorial</a> on my laptop before bringing it over to my main machine, so I started on a good note.</p>

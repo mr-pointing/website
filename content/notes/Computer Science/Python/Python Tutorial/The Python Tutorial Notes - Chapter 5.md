@@ -280,12 +280,12 @@ To loop over two or more sequences at the same time, you can use the `zip()` fun
 
 ```python
 >>> questions = ['name', 'purpose', 'motto']
->>> answers = ['lancelot', 'fuck bitches', 'get money']
+>>> answers = ['lancelot', 'slay dragons', 'get money']
 >>> for q, a in zip(questions, answers):
 >>> 	print('What is your {0}? It is{1}.'.format(q, a))
 >>
 What is your name? It is lancelot.
-What is your purpose? It is fuck bitches.
+What is your purpose? It is slay dragons.
 What is your motto? It is get money.
 ```
 

@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Python Tutorial on Mr. Pointing</title>
-    <link>http://localhost:1313/notes/computer-science/python/python-tutorial/</link>
+    <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/</link>
     <description>Recent content in The Python Tutorial on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/computer-science/python/python-tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/notes/computer-science/python/python-tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Python Tutorial Notes - Chapter 12</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-12/</guid>
       <description>Modified: July 19 2024&#xA;Virtual Environments and Packages 12.1 Introduction Often, you&amp;rsquo;re going to need tools and modules that aren&amp;rsquo;t included with Python by default, or in your standard library. One Python install might not suffice for most applications.&#xA;To circumnavigate this, we create virtual environments, that act as self-contained directories with an installation of Python, and any number of packages.&#xA;12.2 Creating Virtual Environments We can use the venv module to create and manage our own virtual environment.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 11</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-11/</guid>
       <description>Modified: July 19 2024&#xA;The Standard Library - Part 2 7/9/2024&#xA;The second part here will go over more advanced, less common modules that nevertheless, exist.&#xA;11.1 Output Formatting reprlib is an appropriately named library containing a version of repr() modified for abbreviated displays of large or deeply nested containers:&#xA;&amp;gt;&amp;gt;&amp;gt; import reprlib &amp;gt;&amp;gt;&amp;gt; reprlib.repr(set(&amp;#39;supercalafragalisticexpialidocious&amp;#39;)) &amp;#34;{&amp;#39;a&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;,...&amp;#34; pprint is a module with more sophisticated control over printing both built-in and user defined objects.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 10</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-10/</guid>
       <description>Modified: July 19 2024&#xA;A Brief Tour of the Standard Library 7/4/2024&#xA;10.1 Operating System Interface The os module provides functions for interacting with operating systems:&#xA;&amp;gt;&amp;gt;&amp;gt; import os &amp;gt;&amp;gt;&amp;gt; os.getcwd() # returns the working directory &amp;#39;C:\\Python312&amp;#39; &amp;gt;&amp;gt;&amp;gt; os.chdir(&amp;#39;/server/accesslogs&amp;#39;) # change working directory &amp;gt;&amp;gt;&amp;gt; os.system(&amp;#39;mkdir today&amp;#39;) # run the command mkdir in the system shell 0 Never use from os import *. It&amp;rsquo;s not good practice to not do this regardless, but it will specifically keep os.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 9</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-9/</guid>
       <description>Modified: July 19 2024&#xA;Classes 6/28/2024&#xA;Classes combine data storage and functionality into one package. When you make a new class, you are making a new type of object. A new instance, or occurrence of that type are able to be made using function call of the class.&#xA;A class is made up of attributes and methods defined by the classes definition.&#xA;Python classes follow closely to other Object Oriented Programming languages classes in the following ways:</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 8</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</link>
       <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/</guid>
       <description>Modified: July 19 2024&#xA;Errors and Exceptions 6/22/2024&#xA;There are two distinguishable types of errors: syntax errors and exceptions.&#xA;8.1 Syntax Syntax errors (or parsing errors) are errors involving the actual use of the language.&#xA;&amp;gt;&amp;gt;&amp;gt; while True print(&amp;#39;Hello World&amp;#39;) File &amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;, line 1 while True print(&amp;#39;Hello world&amp;#39;) ^^^^^ SyntaxError: invalid syntax In the example above, the while statement is missing the : required to use it.&#xA;8.2 Exceptions Even if code is syntactically correct, an error may occur when attempting to execute it.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 7</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
       <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
       <description>Modified: July 19 2024&#xA;Input and Output 6/18/2024&#xA;There are three main ways to present output in Python; expression statements (not using print()), using print(), and using write() which writes something into an existing or new file.&#xA;7.1 Fancier Output Formatting At any point in the command line, I can just send out some text without any print() commands and get back what I just sent in. That&amp;rsquo;s an expression statement.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 6</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-6/</guid>
       <description>Modified: July 19 2024&#xA;Modules 6/15/2024&#xA;Obviously, using local instances are not viable for long time development is not realistic. This is why we write scripts.&#xA;Python has the ability to writes scripts, or another method called modules. Definitions from modules can be imported into your instance of Python.&#xA;Main is also given a definition here: the collection of variables that you have access to in a script executed at the top level and in calculator mode.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 5</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</link>
       <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-5/</guid>
       <description>Modified: July 19 2024&#xA;Data Structures 6/10/2024&#xA;5.1 More on Lists Methods for Lists:&#xA;list.append(x) Adds an item to the end of the list Equivalent to a[len(a):] = [x] list.extend(iterable) Extend the list by appending all items from an iterable list.insert(i, x) Insert an item into a given position, where i is the index location and x is the value list.remove(x) Remove the first item from the list whose value is equal to x, ValueError if no such item list.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 4</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</link>
       <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-4/</guid>
       <description>Modified: July 19 2024&#xA;Control Flow Tools 6/5/2024&#xA;The while loop was seen in the previous Fibonacci Sequence example.&#xA;4.1 if Statements &amp;gt;&amp;gt;&amp;gt; x = int(input(&amp;#34;Please enter an integer: &amp;#34;)) Please enter an integer: 42 &amp;gt;&amp;gt;&amp;gt; if x &amp;lt; 0: &amp;gt;&amp;gt;&amp;gt; x = 0 &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Negative so now it&amp;#39;s zero!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 0: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Zero!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; elif x == 1: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;UNO!!!!!&amp;#34;) &amp;gt;&amp;gt;&amp;gt; else: &amp;gt;&amp;gt;&amp;gt; print(&amp;#34;Nice B)&amp;#34;) Nice B) Very basic; all you need is an if statement.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 1, 2, and 3</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
       <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
     </item>
   </channel>
