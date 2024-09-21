@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Mr. Pointing</title>
-    <link>https://mrpointing.com/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Private GPT</title>
-      <link>https://mrpointing.com/projects/private-gpt/</link>
+      <link>http://localhost:1313/projects/private-gpt/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/private-gpt/</guid>
+      <guid>http://localhost:1313/projects/private-gpt/</guid>
       <description>Link to the project.&#xA;This really tested my time and patience. What should have taken me an hour took me closer to a day, but it was extremely worth the time investment. No mind blowing innovation going on, and certainly nothing I haven&amp;rsquo;t seen before, nevertheless gratifying to bring together.&#xA;The most frustrating issue was that the configuration for running setting up the llama model in Poetry was either wrong on the tutorial or my machine is weird.</description>
     </item>
     <item>
       <title>Circuit Playground Express</title>
-      <link>https://mrpointing.com/projects/circuit-playground-express/</link>
+      <link>http://localhost:1313/projects/circuit-playground-express/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/circuit-playground-express/</guid>
+      <guid>http://localhost:1313/projects/circuit-playground-express/</guid>
       <description>I was listening to a podcast from Real Python that mentioned getting your hands on a Circuit Playground Express. It was in passing and I probably wouldn&amp;rsquo;t have ordered one, had I not seen one for sale at Micro Center for only $30.&#xA;From my understanding, it&amp;rsquo;s a very basic introduction to using circuit boards, and I got it mostly because of something called Circuit Python, which is a version of Python meant to introduce students and beginners into controlling single board computers (SBC&amp;rsquo;s).</description>
     </item>
     <item>
       <title>Mr. Pointing Website</title>
-      <link>https://mrpointing.com/projects/mr.-pointing-website/</link>
+      <link>http://localhost:1313/projects/mr.-pointing-website/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/mr.-pointing-website/</guid>
+      <guid>http://localhost:1313/projects/mr.-pointing-website/</guid>
       <description>So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:&#xA;Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Cloudflare Hugo Note Title Needs fixing Need to create something to format for Hugo&amp;rsquo;s scientific notation Intro to Algorithms Khan Academy Ignore Templates, re-route Excalidraw Get mr.</description>
     </item>
     <item>
       <title>Deploying a Flask Application via Apache</title>
-      <link>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</link>
+      <link>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</guid>
+      <guid>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</guid>
       <description>Modified: August 02 2024&#xA;Link to the project website.</description>
     </item>
     <item>
       <title>Lython</title>
-      <link>https://mrpointing.com/projects/lython/</link>
+      <link>http://localhost:1313/projects/lython/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/lython/</guid>
+      <guid>http://localhost:1313/projects/lython/</guid>
       <description>Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
     </item>
     <item>
       <title>Raspberry Pi NAS</title>
-      <link>https://mrpointing.com/projects/raspberry-pi-nas/</link>
+      <link>http://localhost:1313/projects/raspberry-pi-nas/</link>
       <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/raspberry-pi-nas/</guid>
+      <guid>http://localhost:1313/projects/raspberry-pi-nas/</guid>
       <description>Link</description>
     </item>
     <item>
       <title>Jobany Rosario</title>
-      <link>https://mrpointing.com/projects/jobany-rosario/</link>
+      <link>http://localhost:1313/projects/jobany-rosario/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/jobany-rosario/</guid>
+      <guid>http://localhost:1313/projects/jobany-rosario/</guid>
       <description> New updated Schedule:&#xA;Monday:&#xA;Dojo 11am - 12pm 8pm - 9pm Wednesday:&#xA;Dojo 11am - 12pm Clockwork 7:30pm - 8:30pm Tuesday/Thursday/Friday:&#xA;Link to contact for privates </description>
     </item>
     <item>
       <title>Designing a RESTful API</title>
-      <link>https://mrpointing.com/projects/designing-a-restful-api/</link>
+      <link>http://localhost:1313/projects/designing-a-restful-api/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/designing-a-restful-api/</guid>
+      <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
       <description>Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
     </item>
     <item>
       <title>Future Projects</title>
-      <link>https://mrpointing.com/projects/future-projects/</link>
+      <link>http://localhost:1313/projects/future-projects/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/future-projects/</guid>
+      <guid>http://localhost:1313/projects/future-projects/</guid>
       <description>Modified: June 20 2024&#xA;Obsidian Related:&#xA;Integrate an AI model into Obsidian as a plug-in LLM trained on my Obsidian data Obsidian plug-in that automates a bibliography from links Website related:&#xA;Python script that automates adding .md to Excalidraw files after Obsidian to Hugo transfer. </description>
     </item>
     <item>
       <title>Vinyl Visualizer</title>
-      <link>https://mrpointing.com/projects/vinyl-visualizer/</link>
+      <link>http://localhost:1313/projects/vinyl-visualizer/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/vinyl-visualizer/</guid>
+      <guid>http://localhost:1313/projects/vinyl-visualizer/</guid>
       <description>A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.&#xA;To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.&#xA;I first asked ChatGPT 3.5 for advice.&#xA;I also asked ChatGPT 4o and got a little better/pointed advice.</description>
     </item>
   </channel>

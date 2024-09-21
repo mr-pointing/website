@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flask on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/flask/</link>
+    <link>http://localhost:1313/tags/flask/</link>
     <description>Recent content in Flask on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/flask/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flask&#39;s Templates</title>
-      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</link>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</guid>
       <description>Link to documentation.</description>
     </item>
     <item>
       <title>Deploying a Flask Application via Apache</title>
-      <link>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</link>
+      <link>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/deploying-a-flask-application-via-apache/</guid>
+      <guid>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</guid>
       <description>Modified: August 02 2024&#xA;Link to the project website.</description>
     </item>
     <item>
       <title>Lython</title>
-      <link>https://mrpointing.com/projects/lython/</link>
+      <link>http://localhost:1313/projects/lython/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/lython/</guid>
+      <guid>http://localhost:1313/projects/lython/</guid>
       <description>Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
     </item>
     <item>
       <title>Flask&#39;s Quickstart</title>
-      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
       <description>Link to documentation.&#xA;Flask is a framework to create applications via Python. It makes web based applications rather simple.&#xA;Starting from the here, the installation page.&#xA;Installation Python Version Python version should be up to date. Flask supports 3.8 and newer.&#xA;Dependencies The following are installed automatically when installing Flask:&#xA;Werkzeug uses WSGI, the standard Python interface between applications and servers. Jinja is a template language that renders the pages your application serves.</description>
     </item>
     <item>
       <title>Designing a RESTful API</title>
-      <link>https://mrpointing.com/projects/designing-a-restful-api/</link>
+      <link>http://localhost:1313/projects/designing-a-restful-api/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/projects/designing-a-restful-api/</guid>
+      <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
       <description>Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
     </item>
   </channel>

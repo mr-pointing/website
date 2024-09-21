@@ -5,7 +5,7 @@ draft: false
 tags:
   - computerscience
 title: Leet Code Problems
-date: 2024-06-01
+date: 2024-09-21
 ---
 
-Leet Code Problems I've worked on.
+Leet and Neet Code Problems I've worked on.

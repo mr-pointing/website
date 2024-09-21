@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on Mr. Pointing</title>
-    <link>https://mrpointing.com/tags/git/</link>
+    <link>http://localhost:1313/tags/git/</link>
     <description>Recent content in Git on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 12 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning Git - Chapter 4</title>
-      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-4/</link>
+      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-4/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-4/</guid>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-4/</guid>
       <description>Branches We last left off with our first commit in our rainbow project. Remember, we can also use git status to get an update on the status of our repository. Before we get too deep into defining what a branch is, let&amp;rsquo;s explore why they&amp;rsquo;re used. That might make it a bit easier to understand.&#xA;Why Do We Use Branches? Branches help us differentiate changes in a given project. They can be made for an number of reasons, but can be boiled down to two main points:</description>
     </item>
     <item>
       <title>Learning Git - Chapter 3</title>
-      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-3/</link>
+      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-3/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-3/</guid>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-3/</guid>
       <description>Making a Commit We left off with our first text file in our working directory, our rainbowcolors.txt file. It has one sentence in it, and we can check that by either opening it or running cat rainbowcolors.txt in the working directory. We can see that we haven&amp;rsquo;t made any commits yet, and we only have one untracked file. You can run git status to gather all of this info.</description>
     </item>
     <item>
       <title>Learning Git - Chapter 2</title>
-      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-2/</link>
+      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-2/</link>
       <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-2/</guid>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-2/</guid>
       <description>Local Repositories Introducing and Initializing a Local Repository A repository (or a repo) is the container of a project version controlled by Git. There are two; local and remote. Local is stored on your computer, while remote is obviously hosted remotely (someone else&amp;rsquo;s computer).&#xA;GitHub is one of the largest platforms and the one I&amp;rsquo;m most familiar with. GitLab and Bitbucket also exist, but I haven&amp;rsquo;t used them myself. Chapter 6 onward deals with this; for now, we can worry about it later.</description>
     </item>
     <item>
       <title>Learning Git - Chapter 1</title>
-      <link>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</link>
+      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-1/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/learning-git/learning-git---chapter-1/</guid>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-1/</guid>
       <description>Git and the Command Line What is Git? Git is a version control system that keeps track of the changes done to a project or directory. When you edit a file, Git records what was added and removed. If files are added or removed, Git has it&amp;rsquo;s eyes on it (if you&amp;rsquo;re configuring it correctly).&#xA;Git was originally created by Linus Torvalds, the creator of Linux. Meant to be used at the command line, it is clearly more complex then a simply saving a file.</description>
     </item>
     <item>
       <title>Learning Git</title>
-      <link>https://mrpointing.com/notes/computer-science/learning-git/</link>
+      <link>http://localhost:1313/notes/computer-science/learning-git/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/learning-git/</guid>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/</guid>
       <description>First Edition Anna Skoulikari&#xA;I got this textbook as a part of a DevOps Humble Bundle for a ridiculous price.&#xA;I have been using Git more seriously this year, so it makes sense to go through this first. It also is apart of the AI Engineer Roadmap, so even more of a reason to start.&#xA;Who the Textbook is For Anyone who wants to learn Git, and geared towards individuals who have basic technical skills, or those who need to work alongside those who use Git.</description>
     </item>
   </channel>

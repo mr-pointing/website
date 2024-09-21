@@ -2,26 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQLBolt on Mr. Pointing</title>
-    <link>https://mrpointing.com/notes/computer-science/sql/sqlbolt/</link>
+    <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/</link>
     <description>Recent content in SQLBolt on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/notes/computer-science/sql/sqlbolt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/computer-science/sql/sqlbolt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLBolt - Lesson 2</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>SQLBolt - Introduction</title>
-      <link>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</link>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</guid>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---introduction/</guid>
       <description>Link to lessons.&#xA;Introduction to SQL What is SQL? Structured Query Language is a language used to create, maintain, and use relational databases. Thousands of applications from simple projects to Microsoft products use SQL through various formats and configurations.&#xA;Some use SQLite, MySQL, Postgres, Oracle, or Microsoft SQL, to name a few. Each use SQL as base, and include features that garner appeal from different developers.&#xA;Relational Databases A relational database is a collection of 2D tables that are linked through some key value.</description>
     </item>
     <item>
       <title>SQLBolt - Lesson 1</title>
-      <link>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</link>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</guid>
-      <description> </description>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-1/</guid>
+      <description>When we want to get information for a SQL table, we use the SELECT statement, or a query. Within a query is what data we want, where to get it from, and any additional formatting we want done before we get said data.&#xA;When selecting information from a table, we have to understand the make-up of a table. Let&amp;rsquo;s say we have a reptiles table. There might be different types of reptiles (snakes, lizards, turtles, crocodiles) but each reptile has characteristics that make it unique.</description>
     </item>
   </channel>
 </rss>

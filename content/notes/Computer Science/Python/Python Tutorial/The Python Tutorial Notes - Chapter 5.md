@@ -9,8 +9,9 @@ tags:
   - datastructures
 title: The Python Tutorial Notes - Chapter 5
 date: 2024-06-10
+updated: 2024-09-21T15:48
 ---
-Modified: July 19 2024 
+
 
 -------------------------------------------------------------------------------
 
@@ -131,13 +132,13 @@ You can add conditionals, and even complicated structures:
 To delete an item from a list based on it's index instead of it's value, we can use the `del` statement. Instead of `pop()` which returns a value, `del` can remove slices and even clear a list. It can also delete entire variables
 
 ```python
->>> a = [69, 420, 6969, 4200]
+>>> a = [1, 2, 3, 4]
 >>> del a[0]
 >>> a
-[420, 6969, 4200]
+[2, 3, 4]
 >>> del a[0:]
 >>> a
-[420]
+[2]
 >>> del a
 ```
 
@@ -147,14 +148,14 @@ To delete an item from a list based on it's index instead of it's value, we can 
 Tuples are a sequence type, along with list and range. Tuples consist of any number of values separated by a comma. They can be nested, and are *immutable*, which means they cannot be altered once made. They can however, contain items that are mutable. 
 
 ```python
->>> t = 123, '360 no scope', 420
+>>> t = 123, '360 no scope', 456
 >>> t[0]
 123
 >>> t
-(123, '360 no scope', 420)
->>> u = t, 69
+(123, '360 no scope', 456)
+>>> u = t, 789
 >>> u
->>> ((123, '360 no scope', 420), 69)
+>>> ((123, '360 no scope', 456), 789)
 >>> t[0] = 456
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>

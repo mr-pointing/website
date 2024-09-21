@@ -192,10 +192,9 @@ Need to fix the projects pages, need a date fix.
 
 Date issued fixed!
 
-Next issue is to get all the images working. Files that need it:
-- Fix Cloudflare Hugo Title!
-- Intro to Algo Chapter 1
-- Khan Academy
+So I was able to move notes into their own category, it wasn't complicated at all. The only thing I have left to do right now other than whats already on my main list:
+
+- [x] Fix Footer to have `Copyright Richard Pointing [CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/)` 
 
 
 

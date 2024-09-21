@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Mr. Pointing</title>
-    <link>https://mrpointing.com/notes/</link>
+    <link>http://localhost:1313/notes/</link>
     <description>Recent content in Notes on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrpointing.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Topics I&#39;m Interested In</title>
-      <link>https://mrpointing.com/notes/topics-im-interested-in/</link>
+      <link>http://localhost:1313/notes/topics-im-interested-in/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/topics-im-interested-in/</guid>
+      <guid>http://localhost:1313/notes/topics-im-interested-in/</guid>
       <description>This is an all-purpose note I&amp;rsquo;ll write down important links too, as well as connect to all sorts of things I want to learn more about.&#xA;General Brazilian Jiu-Jitsu Jobany Rosario Wood working/building Computer Science Hardware Raspberry Pi NAS Circuit Playground Express Servers/server rooms Cyber security Encryption Algorithms Introduction to Algorithms BASIC Compression Email NAS/Home Server How to Start a Homelab for $0 Extras Link to Summer Job&#xA;I found a pretty decent resource on Python and Machine learning.</description>
     </item>
   </channel>
