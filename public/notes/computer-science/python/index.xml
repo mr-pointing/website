@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/notes/computer-science/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploratory Data Analysis with Pandas</title>
+      <link>http://localhost:1313/notes/computer-science/python/exploratory-data-analysis-with-pandas/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/exploratory-data-analysis-with-pandas/</guid>
+      <description>Link to article</description>
+    </item>
     <item>
       <title>Pandas</title>
       <link>http://localhost:1313/notes/computer-science/python/pandas/</link>
@@ -50,13 +57,6 @@
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/formatting-percentages/</guid>
       <description>Modified: July 03 2024&#xA;7/3/2024&#xA;Taken from this article.&#xA;Often in projects, we want to format our large float types as smaller percentages.&#xA;There are three main ways to do this:&#xA;Rounding and Float/String Types: round() takes two parameters: a value and a number to round too. Then, we can use a little complicated string statement.&#xA;&amp;gt;&amp;gt;&amp;gt; number = 0.8839133112 &amp;gt;&amp;gt;&amp;gt; n2 = round(number, 4) &amp;gt;&amp;gt;&amp;gt; print(n2) 0.886 &amp;gt;&amp;gt;&amp;gt; print(str(n2 * 100) + &amp;#39;%&amp;#39;) Format() Alternatively, if that seems a bit complicated, we can just format() instead.</description>
-    </item>
-    <item>
-      <title>NumPy</title>
-      <link>http://localhost:1313/notes/computer-science/python/numpy/</link>
-      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/numpy/</guid>
-      <description>Modified: June 20 2024&#xA;Link to documentation</description>
     </item>
   </channel>
 </rss>

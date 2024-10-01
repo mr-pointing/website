@@ -7,14 +7,28 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>SQLBolt - Lesson 4</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-4/</link>
+      <pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-4/</guid>
+      <description>Filtering and Sorting Results One way to ensure we don&amp;rsquo;t get duplicate rows, we could use the DISTINCT keyword;&#xA;SELECT DISTINCT column, another_column, ... FROM mytable WHERE condition(s); This however is pretty indiscriminate, and we&amp;rsquo;ll look at how to specify duplicates with GROUP BY later.&#xA;Often in the real world, our data is not going to be ordered nice and neatly. Quite often, data is inserted without rhyme or reason, and purely based off when some events happened and collected rather than compared to the rest of the data in the data set.</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 6</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-6/</link>
+      <pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-6/</guid>
+      <description>Multi-table Queries with JOINs Unlike the database we&amp;rsquo;ve been using for most of these lessons, real world data is usually divided into different tables, often through a process we call normalization. Normalization is the procedure used to break down large tables into smaller more organic tables. This reduces duplicate data, and allows for a more natural growth of data within respective tables.&#xA;Due to our data being broken up, our queries will in turn have to become more complex to grab information over multiple tables.</description>
+    </item>
+    <item>
       <title>SQLBolt - Lesson 2</title>
-      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2/</link>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2--3/</link>
       <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2/</guid>
-      <description> </description>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2--3/</guid>
+      <description>Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn&amp;rsquo;t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.&#xA;That reason is why we have the ability to specify our results with conditional statements:&#xA;SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries.</description>
     </item>
     <item>
       <title>SQLBolt - Introduction</title>

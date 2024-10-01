@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Link to documentation.
+Prerequisites What should you know to get the most out of this lesson? At the very least, the fundamentals of Python. You should also refer to this to get a fundamental understanding of the reasons why we&amp;rsquo;d want to use ndarray in the first place.
+What are we doing this lesson then? We&amp;rsquo;re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on ndarray objects without for loops, and even more advanced things like what axis and shape properties are." />
+<meta name="keywords" content="homepage, blog, computerscience, python, documentation, datastructures" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/" />
+
+
+    <title>
+        
+            NumPy Quickstart :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="NumPy Quickstart">
+  <meta itemprop="description" content="Link to documentation.
+Prerequisites What should you know to get the most out of this lesson? At the very least, the fundamentals of Python. You should also refer to this to get a fundamental understanding of the reasons why we’d want to use ndarray in the first place.
+What are we doing this lesson then? We’re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on ndarray objects without for loops, and even more advanced things like what axis and shape properties are.">
+  <meta itemprop="datePublished" content="2024-09-30T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-30T00:00:00+00:00">
+  <meta itemprop="wordCount" content="550">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Python,Documentation,Datastructures">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="NumPy Quickstart">
+  <meta name="twitter:description" content="Link to documentation.
+Prerequisites What should you know to get the most out of this lesson? At the very least, the fundamentals of Python. You should also refer to this to get a fundamental understanding of the reasons why we’d want to use ndarray in the first place.
+What are we doing this lesson then? We’re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on ndarray objects without for loops, and even more advanced things like what axis and shape properties are.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="NumPy Quickstart">
+  <meta property="og:description" content="Link to documentation.
+Prerequisites What should you know to get the most out of this lesson? At the very least, the fundamentals of Python. You should also refer to this to get a fundamental understanding of the reasons why we’d want to use ndarray in the first place.
+What are we doing this lesson then? We’re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on ndarray objects without for loops, and even more advanced things like what axis and shape properties are.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-09-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-30T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Datastructures">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-09-30 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/">NumPy Quickstart</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p><a href="https://numpy.org/doc/stable/user/quickstart.html">Link</a> to documentation.</p>
+<hr>
+<h1 id="prerequisites">Prerequisites</h1>
+<p>What should you know to get the most out of this lesson? At the very least, the fundamentals of Python. You should also refer to <a href="http://localhost:1313/notes/computer-science/python/numpy-notes/what-is-numpy/">this</a> to get a fundamental understanding of the reasons why we&rsquo;d want to use <code>ndarray</code> in the first place.</p>
+<p>What are we doing this lesson then? We&rsquo;re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on <code>ndarray</code> objects <em>without</em> <code>for</code> loops, and even more advanced things like what axis and shape properties are.</p>
+<h1 id="basics">Basics</h1>
+<p>We know that the multidimensional array object, <code>ndarray</code>, is the core of NumPy. An alias it is just <code>array</code>, which might be confusing, so I&rsquo;ll try my best not to confuse them with Python&rsquo;s built-in <code>array</code> type.</p>
+<p><code>ndarray</code> has a few major attributes that we&rsquo;ll either look at directly or is commonly used:</p>
+<ul>
+<li><code>ndarray.ndim</code>: returns the number of <em>axes</em> or dimensions or the array</li>
+<li><code>ndarray.shape</code>: returns the dimensions of the array in tuple form indicating the size of the array in each dimension; where <code>n</code> are rows and <code>m</code> are columns, <code>shape</code> returns <code>(n,m)</code></li>
+<li><code>ndarray.dtype</code>: returns the type of elements in the array</li>
+<li><code>ndarray.itemsize</code>: returns the size (in bytes) of each element in the array</li>
+<li><code>ndarray.data</code>: contains the actual elements of the array but is rarely used due to array indexing</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">15</span>)<span style="color:#f92672">.</span>reshape(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># array of 0 to 14 in 3x5 array structure</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>shape
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>ndim
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>dtype<span style="color:#f92672">.</span>name
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;int64&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>itemsize
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>size
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> type(a)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">numpy</span><span style="color:#f92672">.</span>ndarray<span style="color:#e6db74">&#39;&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b
+</span></span><span style="display:flex;"><span>array([<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> type(b)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">numpy</span><span style="color:#f92672">.</span>ndarray<span style="color:#e6db74">&#39;&gt;</span>
+</span></span></code></pre></div><h2 id="array-creation">Array Creation</h2>
+<p>As we just saw in the example above, we were able to create an array in two different ways. The first, through <code>arange()</code>, and the second through <code>array()</code>.</p>
+<p>Our syntax for <code>arange()</code> is extremely similar to <code>range()</code>: <code>arange(start, stop, step)</code>. One method we also should know about is the <code>.reshape(x, y)</code> method, which reformats your array into an <code>x</code>x<code>y</code> dimensional array. When using <code>arange()</code>, you need to make sure you have a valid amount of data for the size of your array.</p>
+<p>You can also use <code>array(x)</code>, where <code>x</code> is a valid list or tuple. Below are some examples on how to use the creation in some creative ways:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>), (<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">9</span>)], dtype<span style="color:#f92672">=</span>float)
+</span></span></code></pre></div><p>Another way, for the sake of creating quick test arrays, you can easily make arrays filled with zeros or ones.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> c <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros((<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>ones((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>), dtype<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>int64)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>empty((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span></code></pre></div><h2 id="printing-arrays">Printing Arrays</h2>
+<p>Printing arrays is a breeze. There are some unique conventions that you can read about in the docs- the arrangement of the array isn&rsquo;t so relevant to work I do every day, so I don&rsquo;t feel so inclined to dive deeper.</p>
+<p>I&rsquo;d say experiment with using the <code>print()</code> statement with your arrays and see what you get. More often than not you&rsquo;ll retrieve the array in whichever dimensions you&rsquo;ve set it too, unless your array is large enough, in which case it will cut out the middle and return only the corners. You can turn this off however if you&rsquo;re dead set on getting the entire array.</p>
+<h2 id="basic-operations">Basic Operations</h2>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/datastructures/">datastructures</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

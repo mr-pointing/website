@@ -3,9 +3,10 @@ aliases:
 draft: false
 tags:
   - computerscience
+  - internet
 title: AP Computer Science Principles - Unit 2
 date: 2024-08-14
-updated: 2024-09-20T12:15
+updated: 2024-09-24T18:57
 ---
 
 -------------------------------------------------------------------------------
@@ -89,3 +90,56 @@ Instead of measuring how fast a system can transfer data, we can measure how lat
 The speed of our internet is made up of a combination of your bandwidth and latency. Computers communicate in a packet-exchange system; a computer cannot send another message until the first packet was received. Because of this, our bandwidth is only part of it, since latency will determine the speed of sending and receiving said packets. 
 
 We can also use the term *ping* to refer to latency. Upon running a [speed test](https://www.speedtest.net/) we will often see faster download than upload. This makes sense, since most users will need to download data more often than upload (think visiting sites and loading text, images, videos, etc.)
+
+## IP Addresses
+
+Meaning **Internet Protocol**, it's one of the most important protocols that comprise the internet. All online communication, addressing and routing, are done through here.
+
+*IP addresses* are the unique key that identify a device to the internet. When sending a request, or message to another computer, both the sender and the recipients IP addresses are sent. There are two main versions of addresses; IPv4 and IPv6. The first is the first type of address ever for the internet, and the later is a backwards-compatible successor.
+
+### IPv4
+
+This is a basic IP address: 74.125.20.113
+
+Wonder what it's for? Type it in your browser to visit it.
+
+As you can see, the syntax is four numbers between 0 and 255 separated by periods. As we know, this means it's really easy for the computer to store the address in 8 binary bits for each number. 
+
+### IPv6
+
+Here's a IPv6 address: 2001:0db8:0000:0042:0000:8a2e:0370:7334
+
+Since there can only be `2^32` IPv4 addresses, IPv6 are designed to include hexadecimal numbers, allowing for *way* more.
+
+
+### The Hierarchy of an Address
+
+Similar to a phone number, the IP address can be broken down to make it easier to send and route messages.
+
+The first sequence of bits represents the network used for the address, and the final bits identify the specific node in the network (almost exactly how phone numbers work).
+
+
+## Routing with Redundancy
+
+### IP Packets
+
+Since messages can be small as pings to large files and pages, there has to be a limit. In order to keep things manageable, networking protocols break down messages into digestible *packets*.
+
+Packets have two components, **headers**, which make up the information about data being sent as well as the IP addresses, and the actual **data**.
+
+First, packets are sent to a router. Once at the router, the router will look at the packets destination IP address, and consult it's *forwarding table*, which is a list of IP address prefixes that are common. The layout is hierarchical. It will try to send the packet to another router that's closer to the destination until it has finally reached it, going through a variable amount of routers along the way.
+
+### Redundancy & Fault Tolerance
+
+When accessing the internet, there are often many different paths a packet can take. In the event a path closes, usually there is another path that the packets of data can take. This concept is called *redundancy*, the redundancy of a network can be measured by the amount of network availability.
+
+We consider the internet **Fault Tolerant** because it can experience failure without having the entire system become unusable. To this day, no one has been able to completely break the internet, due to how interconnected it is around the world. A *point of failure* is any connection that would completely severe the network.
+
+
+### Transporting Packets
+
+Now that we can conceptualize how the internet works, it's a wonder anything gets done. There are lots of issues that can possibly occur; If a computer sends multiple messages, the computer has to keep track of which *packets* belong to which message. Packets often arrive *out of order*, or can be corrupted for whichever reason. Packets can even be lost; in certain messages, a single packet can mean the message is incomplete.
+
+To circumnavigate these issues, we can use protocols like TCP or UDP to keep track of our packets and handle errors.
+
+**UDP** or User Datagram Protocol is a lightweight data transportation 

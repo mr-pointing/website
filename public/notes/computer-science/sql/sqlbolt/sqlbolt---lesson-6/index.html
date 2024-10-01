@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Multi-table Queries with JOINs Unlike the database we&amp;rsquo;ve been using for most of these lessons, real world data is usually divided into different tables, often through a process we call normalization. Normalization is the procedure used to break down large tables into smaller more organic tables. This reduces duplicate data, and allows for a more natural growth of data within respective tables.
+Due to our data being broken up, our queries will in turn have to become more complex to grab information over multiple tables." />
+<meta name="keywords" content="homepage, blog, computerscience, documentation, SQL" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-6/" />
+
+
+    <title>
+        
+            SQLBolt - Lesson 6 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="SQLBolt - Lesson 6">
+  <meta itemprop="description" content="Multi-table Queries with JOINs Unlike the database we’ve been using for most of these lessons, real world data is usually divided into different tables, often through a process we call normalization. Normalization is the procedure used to break down large tables into smaller more organic tables. This reduces duplicate data, and allows for a more natural growth of data within respective tables.
+Due to our data being broken up, our queries will in turn have to become more complex to grab information over multiple tables.">
+  <meta itemprop="datePublished" content="2024-09-29T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-29T00:00:00+00:00">
+  <meta itemprop="wordCount" content="199">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Documentation,SQL">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="SQLBolt - Lesson 6">
+  <meta name="twitter:description" content="Multi-table Queries with JOINs Unlike the database we’ve been using for most of these lessons, real world data is usually divided into different tables, often through a process we call normalization. Normalization is the procedure used to break down large tables into smaller more organic tables. This reduces duplicate data, and allows for a more natural growth of data within respective tables.
+Due to our data being broken up, our queries will in turn have to become more complex to grab information over multiple tables.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-6/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="SQLBolt - Lesson 6">
+  <meta property="og:description" content="Multi-table Queries with JOINs Unlike the database we’ve been using for most of these lessons, real world data is usually divided into different tables, often through a process we call normalization. Normalization is the procedure used to break down large tables into smaller more organic tables. This reduces duplicate data, and allows for a more natural growth of data within respective tables.
+Due to our data being broken up, our queries will in turn have to become more complex to grab information over multiple tables.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-09-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-29T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="SQL">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-09-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-6/">SQLBolt - Lesson 6</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="multi-table-queries-with-joins">Multi-table Queries with JOINs</h1>
+<p>Unlike the database we&rsquo;ve been using for most of these lessons, real world data is usually divided into different tables, often through a process we call <strong>normalization</strong>. Normalization is the procedure used to break down large tables into smaller more organic tables. This reduces duplicate data, and allows for a more natural growth of data within respective tables.</p>
+<p>Due to our data being broken up, our queries will in turn have to become more complex to grab information over multiple tables. We can achieve this with a <code>JOIN</code>.</p>
+<p>Let&rsquo;s try to visualize this; since our data is being broken down through normalization, we are going to have to introduce some system so each entity is accurately represented across our normalized tables. We call this system a <em>primary key</em>, and is usually an ID in the form of a number or hashed string.</p>
+<p>The first type of join is an <code>INNER JOIN</code>. This join will take two tables and combine the information into a single row based off the tables primary key:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">column</span>, another_table_column, ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> mytable
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> another_table
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ON</span> mytable.id <span style="color:#f92672">=</span> another_table.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> condition(s)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">column</span>, ... <span style="color:#66d9ef">ASC</span><span style="color:#f92672">/</span><span style="color:#66d9ef">DESC</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">LIMIT</span> num_limit <span style="color:#66d9ef">OFFSET</span> num_offset;
+</span></span></code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/sql/">SQL</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

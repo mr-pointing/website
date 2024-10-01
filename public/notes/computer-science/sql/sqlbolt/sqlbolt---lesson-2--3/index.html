@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn&amp;rsquo;t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
+That reason is why we have the ability to specify our results with conditional statements:
+SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries." />
+<meta name="keywords" content="homepage, blog, computerscience, SQL, documentation" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2--3/" />
+
+
+    <title>
+        
+            SQLBolt - Lesson 2 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="SQLBolt - Lesson 2">
+  <meta itemprop="description" content="Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn’t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
+That reason is why we have the ability to specify our results with conditional statements:
+SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries.">
+  <meta itemprop="datePublished" content="2024-09-21T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-21T00:00:00+00:00">
+  <meta itemprop="wordCount" content="346">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,SQL,Documentation">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="SQLBolt - Lesson 2">
+  <meta name="twitter:description" content="Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn’t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
+That reason is why we have the ability to specify our results with conditional statements:
+SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2--3/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="SQLBolt - Lesson 2">
+  <meta property="og:description" content="Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn’t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
+That reason is why we have the ability to specify our results with conditional statements:
+SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-09-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-21T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="Documentation">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-09-21 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-2--3/">SQLBolt - Lesson 2</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="specifying-data-to-select-constraints">Specifying Data to Select (Constraints)</h1>
+<p>When our table has only a few rows, a <code>select *</code> query isn&rsquo;t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.</p>
+<p>That reason is why we have the ability to specify our results with conditional statements:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">column</span>, another_column, ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> mytable
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> condition
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">AND</span><span style="color:#f92672">/</span><span style="color:#66d9ef">OR</span> another_condition
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">AND</span><span style="color:#f92672">/</span><span style="color:#66d9ef">OR</span> ...;
+</span></span></code></pre></div><p>We can collect more complex results from building more complex queries. Say for example we wanted to collect reptiles who don&rsquo;t have teeth and are the color green, we could use a query like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> reptiles
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> skin_color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Green&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">AND</span> has_teeth <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><p>The different <em>logical operators</em> can be seen in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Condition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=, !=, &lt;, &lt;=, &gt;, &gt;=</td>
+<td>Standard numerical operations</td>
+<td><code>col_name != 10</code></td>
+</tr>
+<tr>
+<td><code>BETWEEN...AND...</code></td>
+<td>Number is within range of two values</td>
+<td><code>col_name BETWEEN 2.5 AND 7.5</code></td>
+</tr>
+<tr>
+<td><code>NOT BETWEEN...AND...</code></td>
+<td>Number is not within range of two values</td>
+<td><code>col_name NOT BETWEEN 2.5 AND 7.5</code></td>
+</tr>
+<tr>
+<td><code>IN (...)</code></td>
+<td>Value exists in a list</td>
+<td><code>col_name IN (&quot;Example1&quot;, &quot;Example2&quot;)</code></td>
+</tr>
+<tr>
+<td><code>NOT IN (...)</code></td>
+<td>Value does not exists in a list</td>
+<td><code>col_name NOT IN (&quot;Example1&quot;, &quot;Example2&quot;)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Both numbers and words can exist within a table. Just like Python, we can define the type of input like <code>INT</code> and <code>FLOAT</code> for numbers, and <code>VARCHAR</code> for words/mixed content. String content must be within quotes and does have some of it&rsquo;s own conventions for conditionals;</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Condition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>Case sensitive exact string comparison</td>
+<td><code>col_name = &quot;abc&quot;</code></td>
+</tr>
+<tr>
+<td>!= or &lt;&gt;</td>
+<td>Case sensitive exact inequality comparison</td>
+<td><code>col_name != &quot;abcd&quot;</code></td>
+</tr>
+<tr>
+<td><code>LIKE</code></td>
+<td>Case insensitive exact string comparision</td>
+<td><code>col_name LIKE &quot;ABC&quot;</code></td>
+</tr>
+<tr>
+<td><code>NOT LIKE</code></td>
+<td>Case insensitive exact string inequality comparison</td>
+<td><code>col_name NOT LIKE &quot;ABCD</code></td>
+</tr>
+<tr>
+<td>%</td>
+<td>Used anywhere in a string to match a sequence of zero or more characters (only with <code>LIKE</code> or <code>NOT LIKE</code>)</td>
+<td><code>col_name LIKE &quot;%AT%&quot;</code> (This will return AT, ATTIC, CAT, and BATS)</td>
+</tr>
+<tr>
+<td>_</td>
+<td>Used anywhere in a string to match a single character (only with <code>LIKE</code> or <code>NOT LIKE</code>)</td>
+<td><code>col_name LIKE &quot;AN_&quot;</code> (This matches AND, but not AN)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-4/">Lesson 4</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/sql/">SQL</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

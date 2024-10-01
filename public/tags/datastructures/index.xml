@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/datastructures/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>NumPy</title>
-      <link>http://localhost:1313/notes/computer-science/python/numpy/</link>
+      <title>NumPy Quickstart</title>
+      <link>http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/</link>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/</guid>
+      <description>Link to documentation.&#xA;Prerequisites What should you know to get the most out of this lesson? At the very least, the fundamentals of Python. You should also refer to this to get a fundamental understanding of the reasons why we&amp;rsquo;d want to use ndarray in the first place.&#xA;What are we doing this lesson then? We&amp;rsquo;re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on ndarray objects without for loops, and even more advanced things like what axis and shape properties are.</description>
+    </item>
+    <item>
+      <title>What is NumPy</title>
+      <link>http://localhost:1313/notes/computer-science/python/numpy-notes/what-is-numpy/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/numpy/</guid>
-      <description>Modified: June 20 2024&#xA;Link to documentation</description>
+      <guid>http://localhost:1313/notes/computer-science/python/numpy-notes/what-is-numpy/</guid>
+      <description>Link to documentation&#xA;What is NumPy? Python lists are great- easy to use, easy to understand, and perfect for quick one-and-done scenarios. However, there is a huge downside to lists. In most cases, since lists can accept any data type by default, this leaves lists open to unexpected data types you might not want around your list data.&#xA;NumPy is a solution to this issue, specifically in the realm of scientific computing.</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 5</title>

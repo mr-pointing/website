@@ -8,7 +8,7 @@ tags:
   - machinelearning
 title: AI Engineer Roadmap
 date: 2024-06-03
-updated: 2024-09-03T18:38
+updated: 2024-10-01T16:29
 ---
 ---
 
@@ -155,10 +155,65 @@ For this next two week sprint, I want to start tackling some of the existing not
 
 ## **Week 13 and 14 (9/1 - 9/15)**
 
-- [ ] Finish Chapter 3 in Intro to Algorithms
-- [ ] Finish PyCharm IDE Features
-- [ ] Finish Chapters 3, 4, and 5 in Learning Git
-- [ ] Work on Obsidian Plugins Post
-- [ ] Review SQL
-- [ ] Work on NumPy and Pandas notes
+- [x] Finish Chapter 3 in Intro to Algorithms
+- [x] Finish PyCharm IDE Features
+- [x] Finish Chapters 3, 4, and 5 in Learning Git
+- [x] Work on [Obsidian Plugins Post]({{< ref "Current Obsidian Plugins" >}})
+- [x] Review SQL
+- [x] Work on NumPy and Pandas notes
 - [x] Work on one passion project (LLM at home with Llama?)
+
+9/16/2024
+
+What an outrageous two weeks. I haven't been this busy in months. Even with school starting, I think I was able to make a nice dent into things I'd like to work on.
+
+I wasn't able to work on my Intro to Algorithms text *at all*, but I started keeping it at work. In this next two week sprint, I'd like to dedicate at least 10-15 minutes of my work day into reading and taking down notes from the text.
+
+I **finally** finished [PyCharm IDE Features]({{< ref "PyCharm IDE Features" >}}), and definitely plan to spend a few days of class going through it.
+
+I was able to complete chapters [3]({{< ref "Learning Git - Chapter 3" >}}) and [4]({{< ref "Learning Git - Chapter 4" >}}), but still need to finish [5]({{< ref "Learning Git - Chapter 5" >}}). Since 5 is a larger chapter than the previous, and I want to really make sure I complete all my objectives this next two week sprint, I'll keep it to just 5.
+
+I was able to make separate notes for [What is NumPy]({{< ref "What is NumPy" >}}) and Pandas but they might get their own folder eventually depending on how thoroughly I go through their documentation.
+
+I started going through [SQLBolt]({{< ref "SQLBolt - Introduction" >}}) as a way to refresh my knowledge of SQL. I eventually have to pick a platform to use for my students (most likely MySQL).
+
+Almost everyday, I've been practicing typing on my newer smaller keyboard. It's been really tough compared to my work keyboard, which is a full layout compared to my newer 65%. I've also started doing NeetCode problems, which has been fun.
+
+
+## **Week 15 and 16 (9/16 - 9/30)**
+
+- [x] Finish Chapter 3 in Intro to Algorithms
+- [x] Work on SQLBolt Lessons
+- [x] Work on [What is NumPy]({{< ref "What is NumPy" >}})
+- [x] Finish [Learning Git - Chapter 5]({{< ref "Learning Git - Chapter 5" >}})
+- [x] Finish [Python Problems]({{< ref "Python Problems" >}})
+
+
+10/1/2024
+
+What a tumultuous week. My job is becoming more of a burden than I'd like to admit. So much so it's really eaten at my motivation to continue going down this path. I find less and less time throughout my day to put into learning, and when I do I'm interrupted shortly after.
+
+I've hit a personal cross-roads. My current situation requires more than what I'm being both paid and recognized to do. I could sit back, relax, and collect my check, or really push and fight for  To put it into perspective, the current state of the establishment won't burn down without my active participation, but if there aren't foundational changes made soon, the structure will collapse in itself. 
+
+What I don't want is to be recognized by my peers as someone who just gives up when the going get's tough. It's not about winning an argument, or looking smart. It's about getting the job done. It's about doing what's right for those that deserve it. It's about not letting the standing position of "messed up" sit idly while we complain and complain and yet do nothing to see any change come. 
+
+I'm rambling too much for a note about my AI learning goals, but it's good to let yourself have fun once in a while. And letting it out is, in fact, very fun.
+
+Anyways, I was able to get almost everything done!
+
+As far as CLRS (the acronym most commonly used for the Introduction to Algorithms textbook) goes, it's insanely dense. I don't understand how I let myself think that just after getting another degree I'd be able to keep up with the insane amount of math and theory they throw at you. Call it hubris, cause I've never been more wrong in my life. Not only do I not understand the entirety of Chapter 3, I didn't understand it so badly that I bought an entirely DIFFERENT algorithms textbook just to make sure after I'm done reading this I can feel better about myself and actually be able to learn.
+
+I wasn't able to finish [Learning Git - Chapter 5]({{< ref "Learning Git - Chapter 5" >}}) but I came really close, so I'm going to shoot to finish 5 and 6 for the next two week sprint. 
+
+Week 17 is to go over Exploratory Data Analysis, which I've never heard of so I'm going to do a note on the link provided on the PDF.
+
+Week 18 is to start getting into Machine Learning territory, but I want to really move through Khan Academy's math courses before diving in.
+
+## **Week 17 and 18 (10/1 - 10/15)**
+
+- [ ] Finish [Learning Git - Chapter 5]({{< ref "Learning Git - Chapter 5" >}})
+- [ ] Finish [Learning Git - Chapter 6]({{< ref "Learning Git - Chapter 6" >}})
+- [ ] Finish Chapter 4 of CLRS
+- [ ] Finish SQLBolt Lessons
+- [ ] Start [Exploratory Data Analysis with Pandas]({{< ref "Exploratory Data Analysis with Pandas" >}})
+- [ ] Work on [NumPy Quickstart]({{< ref "NumPy Quickstart" >}})

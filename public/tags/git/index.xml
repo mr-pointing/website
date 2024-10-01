@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 12 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Git - Chapter 6</title>
+      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-6/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-6/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Learning Git - Chapter 5</title>
+      <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-5/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-5/</guid>
+      <description>Merging We last looked at how branches can help a team work on a project together, without losing or any conflicting progress. Now for the logical next step- combining the work together into one branch. We call this merging, or the combining of work from different branches.&#xA;The source branch is the merging branch, or where the work is coming from. The target branch is the branch you&amp;rsquo;re merging into.</description>
+    </item>
     <item>
       <title>Learning Git - Chapter 4</title>
       <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-4/</link>

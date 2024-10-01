@@ -9,7 +9,7 @@
 <meta name="description" content="Unit 2: The Internet The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.
 It&amp;rsquo;s an open system, meaning anyone can join given they follow the proper protocols. These include but aren&amp;rsquo;t limited too:
 IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp;amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these." />
-<meta name="keywords" content="homepage, blog, computerscience" />
+<meta name="keywords" content="homepage, blog, computerscience, internet" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/" />
@@ -52,9 +52,9 @@ It’s an open system, meaning anyone can join given they follow the proper prot
 IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these.">
   <meta itemprop="datePublished" content="2024-08-14T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-08-14T00:00:00+00:00">
-  <meta itemprop="wordCount" content="830">
+  <meta itemprop="wordCount" content="1402">
   <meta itemprop="image" content="http://localhost:1313/">
-  <meta itemprop="keywords" content="Computerscience">
+  <meta itemprop="keywords" content="Computerscience,Internet">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/">
@@ -77,6 +77,7 @@ IP: Protocol for identifying IP addresses with some routing strategy to send and
     <meta property="article:published_time" content="2024-08-14T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-08-14T00:00:00+00:00">
     <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Internet">
     <meta property="og:image" content="http://localhost:1313/">
 
 
@@ -229,6 +230,31 @@ IP: Protocol for identifying IP addresses with some routing strategy to send and
 <h3 id="internet-speed">Internet Speed</h3>
 <p>The speed of our internet is made up of a combination of your bandwidth and latency. Computers communicate in a packet-exchange system; a computer cannot send another message until the first packet was received. Because of this, our bandwidth is only part of it, since latency will determine the speed of sending and receiving said packets.</p>
 <p>We can also use the term <em>ping</em> to refer to latency. Upon running a <a href="https://www.speedtest.net/">speed test</a> we will often see faster download than upload. This makes sense, since most users will need to download data more often than upload (think visiting sites and loading text, images, videos, etc.)</p>
+<h2 id="ip-addresses">IP Addresses</h2>
+<p>Meaning <strong>Internet Protocol</strong>, it&rsquo;s one of the most important protocols that comprise the internet. All online communication, addressing and routing, are done through here.</p>
+<p><em>IP addresses</em> are the unique key that identify a device to the internet. When sending a request, or message to another computer, both the sender and the recipients IP addresses are sent. There are two main versions of addresses; IPv4 and IPv6. The first is the first type of address ever for the internet, and the later is a backwards-compatible successor.</p>
+<h3 id="ipv4">IPv4</h3>
+<p>This is a basic IP address: 74.125.20.113</p>
+<p>Wonder what it&rsquo;s for? Type it in your browser to visit it.</p>
+<p>As you can see, the syntax is four numbers between 0 and 255 separated by periods. As we know, this means it&rsquo;s really easy for the computer to store the address in 8 binary bits for each number.</p>
+<h3 id="ipv6">IPv6</h3>
+<p>Here&rsquo;s a IPv6 address: 2001:0db8:0000:0042:0000:8a2e:0370:7334</p>
+<p>Since there can only be <code>2^32</code> IPv4 addresses, IPv6 are designed to include hexadecimal numbers, allowing for <em>way</em> more.</p>
+<h3 id="the-hierarchy-of-an-address">The Hierarchy of an Address</h3>
+<p>Similar to a phone number, the IP address can be broken down to make it easier to send and route messages.</p>
+<p>The first sequence of bits represents the network used for the address, and the final bits identify the specific node in the network (almost exactly how phone numbers work).</p>
+<h2 id="routing-with-redundancy">Routing with Redundancy</h2>
+<h3 id="ip-packets">IP Packets</h3>
+<p>Since messages can be small as pings to large files and pages, there has to be a limit. In order to keep things manageable, networking protocols break down messages into digestible <em>packets</em>.</p>
+<p>Packets have two components, <strong>headers</strong>, which make up the information about data being sent as well as the IP addresses, and the actual <strong>data</strong>.</p>
+<p>First, packets are sent to a router. Once at the router, the router will look at the packets destination IP address, and consult it&rsquo;s <em>forwarding table</em>, which is a list of IP address prefixes that are common. The layout is hierarchical. It will try to send the packet to another router that&rsquo;s closer to the destination until it has finally reached it, going through a variable amount of routers along the way.</p>
+<h3 id="redundancy--fault-tolerance">Redundancy &amp; Fault Tolerance</h3>
+<p>When accessing the internet, there are often many different paths a packet can take. In the event a path closes, usually there is another path that the packets of data can take. This concept is called <em>redundancy</em>, the redundancy of a network can be measured by the amount of network availability.</p>
+<p>We consider the internet <strong>Fault Tolerant</strong> because it can experience failure without having the entire system become unusable. To this day, no one has been able to completely break the internet, due to how interconnected it is around the world. A <em>point of failure</em> is any connection that would completely severe the network.</p>
+<h3 id="transporting-packets">Transporting Packets</h3>
+<p>Now that we can conceptualize how the internet works, it&rsquo;s a wonder anything gets done. There are lots of issues that can possibly occur; If a computer sends multiple messages, the computer has to keep track of which <em>packets</em> belong to which message. Packets often arrive <em>out of order</em>, or can be corrupted for whichever reason. Packets can even be lost; in certain messages, a single packet can mean the message is incomplete.</p>
+<p>To circumnavigate these issues, we can use protocols like TCP or UDP to keep track of our packets and handle errors.</p>
+<p><strong>UDP</strong> or User Datagram Protocol is a lightweight data transportation</p>
 
             </div>
         </article>
@@ -241,6 +267,7 @@ IP: Protocol for identifying IP addresses with some routing strategy to send and
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
         <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/internet/">internet</a></span>
         
     </p>
 

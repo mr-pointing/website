@@ -3,11 +3,11 @@ aliases:
 draft: false
 tags:
   - computerscience
-  - SQL
-  - documentation
-title: SQLBolt - Lesson 2
-date: 2024-09-21
-updated: 2024-09-21T16:52
+  - git
+  - textbook
+title: Learning Git - Chapter 6
+date: 2024-10-01
+updated: 2024-10-01T16:29
 ---
 
 -------------------------------------------------------------------------------

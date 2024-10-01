@@ -35,4 +35,4 @@ Note that in both, we must end our query with a semicolon. The newline in-betwee
 
 ---------------------------------------------------------------
 Next: 
-[Lesson 2]({{< ref "SQLBolt - Lesson 2" >}}) 
+[Lesson 2 & 3]({{< ref "SQLBolt - Lesson 2 & 3" >}}) 

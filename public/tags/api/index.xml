@@ -44,12 +44,5 @@
       <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
       <description>Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
     </item>
-    <item>
-      <title>NumPy</title>
-      <link>http://localhost:1313/notes/computer-science/python/numpy/</link>
-      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/numpy/</guid>
-      <description>Modified: June 20 2024&#xA;Link to documentation</description>
-    </item>
   </channel>
 </rss>
