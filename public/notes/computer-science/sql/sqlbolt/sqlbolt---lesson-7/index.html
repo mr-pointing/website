@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN&amp;rsquo;s come into the picture.
+Our syntax for a standard expression doesn&amp;rsquo;t change, only get&amp;rsquo;s different options for our JOIN keyword.
+SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, ." />
+<meta name="keywords" content="homepage, blog, computerscience, documentation, SQL" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-7/" />
+
+
+    <title>
+        
+            SQLBolt - Lesson 7 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="SQLBolt - Lesson 7">
+  <meta itemprop="description" content="Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN’s come into the picture.
+Our syntax for a standard expression doesn’t change, only get’s different options for our JOIN keyword.
+SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, .">
+  <meta itemprop="datePublished" content="2024-10-07T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-07T00:00:00+00:00">
+  <meta itemprop="wordCount" content="144">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Documentation,SQL">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="SQLBolt - Lesson 7">
+  <meta name="twitter:description" content="Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN’s come into the picture.
+Our syntax for a standard expression doesn’t change, only get’s different options for our JOIN keyword.
+SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, .">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-7/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="SQLBolt - Lesson 7">
+  <meta property="og:description" content="Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN’s come into the picture.
+Our syntax for a standard expression doesn’t change, only get’s different options for our JOIN keyword.
+SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, .">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-10-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-07T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="SQL">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-10-07 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-7/">SQLBolt - Lesson 7</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="outer-joins-vs-inner-joins">Outer Joins vs. Inner Joins</h1>
+<p>Any table from an <code>INNER JOIN</code> will <em>only contain information that belongs in <strong>BOTH</strong> tables.</em> These can be limiting, which is where <code>LEFT</code>, <code>RIGHT</code>, and <code>FULL JOIN</code>&rsquo;s come into the picture.</p>
+<p>Our syntax for a standard expression doesn&rsquo;t change, only get&rsquo;s different options for our <code>JOIN</code> keyword.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">column</span>, another_table_column, ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> mytable
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">INNER</span><span style="color:#f92672">/</span><span style="color:#66d9ef">LEFT</span><span style="color:#f92672">/</span><span style="color:#66d9ef">RIGHT</span><span style="color:#f92672">/</span><span style="color:#66d9ef">FULL</span> <span style="color:#66d9ef">JOIN</span> another_table
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ON</span> mytable.id <span style="color:#f92672">=</span> another_table.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> condition(s)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">column</span>, ... <span style="color:#66d9ef">ASC</span><span style="color:#f92672">/</span><span style="color:#66d9ef">DESC</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">LIMIT</span> num_limit <span style="color:#66d9ef">OFFSET</span> num_offset;
+</span></span></code></pre></div><p>Let&rsquo;s say we have two tables, joining table A to table B. Doing a <code>LEFT JOIN</code> will include rows from A even if there isn&rsquo;t a match in B. Similarly, a <code>RIGHT JOIN</code> will return rows found in B even if there is no match in A. If we were to do a <code>FULL JOIN</code>, all rows are kept even if there is no match.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-8/">Lesson 8</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/sql/">SQL</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

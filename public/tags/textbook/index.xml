@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Appendix A</title>
+      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/appendix-a/</link>
+      <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/appendix-a/</guid>
+      <description>Summations As we know, we analyze algorithms by their running time. When algorithms use for or while loops (iterative structures), the running time is expressed as the sum of all the times spent on execution.&#xA;Summation Formulas and Properties Say we have $a_1,a_2,&amp;hellip;a_n$ numbers, what we call a sequence. While $n$ is a non-negative integer, we can say the sum of that set is $\sum_{k=1}^{n}a_k$.&#xA;If $n=0$, value is 0.</description>
+    </item>
+    <item>
+      <title>Introduction to Algorithms</title>
+      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</link>
+      <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</guid>
+      <description>Created: July 17 2024 Modified: August 02 2024&#xA;Fourth Edition Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein Preface Algorithms are everywhere, apart of almost everything we do, and every decision we make. They are part of most if not all tech stacks used today.&#xA;Each chapter in this book will present an algorithm, an application area for some algorithm, or some other related topic.&#xA;For teaching purposes The less complex the audience, the less complex chapters you need.</description>
+    </item>
+    <item>
+      <title>Introduction to Algorithms - Chapter 3</title>
+      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</link>
+      <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</guid>
+      <description>Characterizing Running Times As we saw in Chapter 2, order of growth gives us the ability to quantify the effectiveness of our algorithms, and compare them.&#xA;Us studying these algorithms at large enough input sizes is us studying the asymptotic efficiency of an algorithm. We can say an algorithm that is &amp;ldquo;more asymptotically efficient&amp;rdquo; is the better choice for most cases, save small inputs.&#xA;O-notation, $\Theta$-notation, and $\Omega$-notation We already met $\Theta$-notation in chapter 2; this is a type of asymptotic notation.</description>
+    </item>
     <item>
       <title>Learning Git - Chapter 6</title>
       <link>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-6/</link>
@@ -57,13 +78,6 @@
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/learning-git/</guid>
       <description>First Edition Anna Skoulikari&#xA;I got this textbook as a part of a DevOps Humble Bundle for a ridiculous price.&#xA;I have been using Git more seriously this year, so it makes sense to go through this first. It also is apart of the AI Engineer Roadmap, so even more of a reason to start.&#xA;Who the Textbook is For Anyone who wants to learn Git, and geared towards individuals who have basic technical skills, or those who need to work alongside those who use Git.</description>
-    </item>
-    <item>
-      <title>Introduction to Algorithms</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</link>
-      <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</guid>
-      <description>Created: July 17 2024 Modified: August 02 2024&#xA;Fourth Edition Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein Preface Algorithms are everywhere, apart of almost everything we do, and every decision we make. They are part of most if not all tech stacks used today.&#xA;Each chapter in this book will present an algorithm, an application area for some algorithm, or some other related topic.&#xA;For teaching purposes The less complex the audience, the less complex chapters you need.</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 2</title>

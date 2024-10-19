@@ -52,7 +52,7 @@ It’s an open system, meaning anyone can join given they follow the proper prot
 IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these.">
   <meta itemprop="datePublished" content="2024-08-14T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-08-14T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1402">
+  <meta itemprop="wordCount" content="2678">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Internet">
 
@@ -255,6 +255,86 @@ IP: Protocol for identifying IP addresses with some routing strategy to send and
 <p>Now that we can conceptualize how the internet works, it&rsquo;s a wonder anything gets done. There are lots of issues that can possibly occur; If a computer sends multiple messages, the computer has to keep track of which <em>packets</em> belong to which message. Packets often arrive <em>out of order</em>, or can be corrupted for whichever reason. Packets can even be lost; in certain messages, a single packet can mean the message is incomplete.</p>
 <p>To circumnavigate these issues, we can use protocols like TCP or UDP to keep track of our packets and handle errors.</p>
 <p><strong>UDP</strong> or User Datagram Protocol is a lightweight data transportation</p>
+<p>The layout of the IP packet is now reformatted as a UDP segment, made up of a header and data portion with the actual payload (data being delivered). The header is made up of the next four sections:</p>
+<ul>
+<li><strong>Port numbers:</strong> First four bytes of the header. Every networking device can receive messages via different pathways, or <em>virtual ports</em>. It stores the port numbers for the source and destination.</li>
+<li><strong>Segment Length:</strong> The next two bites; storing the length of the segment (maximum length is 65,535).</li>
+<li><strong>Checksum:</strong> The last two bites of the UDP that is an encoding of the data being transported. Used by the sender (computes a checksum on data in the segment, stores it) and by the receiver (computes checksum on received data, compares with stored; if not the same, data corrupted).</li>
+</ul>
+<h3 id="tcp">TCP</h3>
+<p><strong>TCP</strong> or <em>Transmission Control Protocol</em> is another layer that is used with IP, that&rsquo;s significantly more secure than UDP. It is the most common, and the stack used for the internet is commonly know as <em>TCP/IP</em>.</p>
+<p>TCP deals with packet loss, out or order packets, and even duplicate and corrupted packets.</p>
+<p>The same structure used in UDP is used here, the IP&rsquo;s data segment is reformatted into a TCP segment. However this time the TCP segment&rsquo;s header has all of the UDP (source and destination port number, checksum) and even more. The best way is to walk through each layer sequentially.</p>
+<h5 id="step-1-establish-connection">Step 1: Establish Connection</h5>
+<p>Before any information is sent anywhere, a <em>three-way handshake</em> is made between the source and destination.</p>
+<p>The source will send a packet with just a <code>SYN</code> bit set to 1. This is the first computer asking the second to <em>synchronize</em>. The second computer, upon receipt, sends back a packet with the <code>SYN</code> bit and an additional <code>ACK</code> bit set to 1, which indicates the second computers <em>acknowledgment</em>. Once the first computer gets these two back, it sends back an <code>ACK</code> bit in acceptance of the transfer.</p>
+<p>These <code>SYN</code> and <code>ACK</code> bits are actually part of the TCP header and don&rsquo;t actually contain any data.</p>
+<h5 id="step-2-send-packets-of-data">Step 2: Send Packets of Data</h5>
+<p>Anytime data is sent to a destination, that destination must send back a sign of acknowledgement.</p>
+<p>The way it does so is actually quite interesting. The data sent and split into packets will send over both the data and some sequence number. In order to properly acknowledge the data sent, the receiver will send back the <code>ACK</code> bit as well as an acknowledgement number increased by the length of the data sent.</p>
+<p>Both the <em>sequence number</em> and <em>acknowledgement number</em> are parts of the TCP header. We&rsquo;ll talk about how these help keep track of things in a minute.</p>
+<h5 id="step-3-close-the-connection">Step 3: Close the Connection</h5>
+<p>Very similar to the first step, we have another three-way handshake that instead of asking to use a <code>SYN</code> bit, we use a <code>FIN</code> bit set to 1, or <em>finish</em>.</p>
+<h4 id="detecting-lost-packets">Detecting Lost Packets</h4>
+<p>We would consider a packet lost if there was never an acknowledgement sent back from the second computer. To avoid this, TCP uses a timer system that will resend packets after a specific amount of time. In the event that the first packet wasn&rsquo;t lost and just taking a long time to finish, we can delete the duplicate packet.</p>
+<h4 id="handling-out-of-order-packets">Handling Out of Order Packets</h4>
+<p>Thankfully, since we have the sequence and acknowledgement numbers, we can successfully keep an accurate timeline of how our packets are supposed to be ordered. Even if we were to receive them out of order, they can be resorted using the sequence and acknowledgement numbers.</p>
+<p>When sent an out of order packet, the receiver will actually be able to acknowledge this, and sends back the <em>expected sequence number</em> in order to show that something is wrong. This will lead to the protocol to check and resort the sequence.</p>
+<h2 id="web-protocols">Web Protocols</h2>
+<p>What we understand as the <em>web</em> is just a huge interconnected network of web pages, files, and applications we define as the <strong>World Wide Web</strong> (this is where the <code>WWW</code> comes from in a URL).</p>
+<p>Since the web is clearly huge, it too needs some protocols in order to keep things together. Two we&rsquo;ll look at are <em>Domain Name System (DNS) protocol</em> and <em>HyperText Transfer Protocol (HTTP)</em>.</p>
+<p>There&rsquo;s also <em>Transport Layer Security (TLS) protocol</em> which we&rsquo;re going to look at later. For now, it&rsquo;s important to understand that these protocols are happening on top of the Internet Protocols. TCP/IP is used alongside HTTP requests.</p>
+<h3 id="dns">DNS</h3>
+<p>Obviously, no one wants to memorize IP addresses. To circumnavigate this inconvenience, <strong>DNS</strong> was invented. A <em>domain name</em> is just the address we use in place of the IP address</p>
+<p>They don&rsquo;t go into this in Khan Academy, but I was curious about who invented DNS. It was a guy named Paul Mockapetris, and the way the internet used to work is pretty interesting. Before the web as we know it today, every single name to an IP address was stored in a single table within a <em>single</em> text file called <code>HOSTS.TXT</code>. That means any changes or additions needed to be made by <em>hand</em>. Pretty nuts stuff.</p>
+<p>The anatomy of DNS is pretty straight forward:</p>
+<pre tabindex="0"><code>[third-level-domain].[second-level-domain].[top-level-domain]
+</code></pre><p>The top lever or TLD&rsquo;s are your <code>.com</code> or <code>.org</code>&rsquo;s, and the second level belongs to each individual who owns/runs the site (think <code>loughlin</code> or <code>mrpointing</code>). The third level can be called a sub-level, mostly because it will belong again to the individual who owns the site (some websites will start with <code>m.</code> to specify a mobile version).</p>
+<p>Now that we understand that, it&rsquo;s again, quite a wonder websites respond so fast. How is it that a computer stores every single domain to IP address relation? Well&hellip;it doesn&rsquo;t. There&rsquo;s a step by step process that happens every time you search for a URL:</p>
+<ol>
+<li><strong>Cache is Checked</strong>
+<ul>
+<li>Your browser keeps a list of all the recently visited websites in order to easily retrieve the IP addresses upon request. After a while though, they will eventually be replaced with other more frequented domain-to-IP pairs</li>
+</ul>
+</li>
+<li><strong>Ask the ISP cache</strong>
+<ul>
+<li>Your <em>internet service provider</em> or ISP will have their own local cache, so if you never visited a website but a local neighbor did, your browser would find it there</li>
+</ul>
+</li>
+<li><strong>Ask the Name Servers</strong>
+<ul>
+<li>There exist around the globe numerous servers that are just up and running for the sake of updating and keeping track of the millions of different domain names</li>
+<li>There are hierarchy for the servers: root name servers -&gt; TLD name servers -&gt; Host name servers
+<ol>
+<li>ISP asks the root name servers which name servers know about the TLD you&rsquo;re looking for, and sends back the IP address of the TLD name server for your TLD</li>
+<li>ISP asks that TLD name server which Host name servers know about the second level name you&rsquo;re looking for, and similarly returns that IP address of that specified name Host name server</li>
+<li>ISP asks the Host name server what the IP address is for the domain name you&rsquo;re looking for, and returns it</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="http">HTTP</h3>
+<p>HyperText Transfer Protocol is how your computer downloads and retrieves that page your computer so desperately sought out just a moment ago. Here&rsquo;s how it works:</p>
+<ol>
+<li>Direct Browser to URL
+<ul>
+<li><strong>URL</strong> or <em>uniform resource locator</em> is the link to the website you&rsquo;re trying to get</li>
+<li>The URL is made up of the domain name and the HTTP protocol signal, the <code>http://</code> part of the URL</li>
+</ul>
+</li>
+<li>Browser Looks Up IP
+<ul>
+<li>Does the process defined up above of finding the IP address</li>
+</ul>
+</li>
+<li>Browser Sends HTTP request
+<ul>
+<li>I have a note on this already, <a href="http://localhost:1313/projects/designing-a-restful-api/">Designing a RESTful API</a>. It talks about the basics of HTTP a bit more in depth</li>
+</ul>
+</li>
+</ol>
 
             </div>
         </article>

@@ -7,8 +7,71 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLBolt - Lesson 16</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-16/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-16/</guid>
+      <description>Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person&amp;rsquo;s collected data. It will often take a few minutes of &amp;ldquo;getting calibrated&amp;rdquo; to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.&#xA;The more complicated problems will end up needing some visualization tools which is something we&amp;rsquo;ll look at later, so for now let&amp;rsquo;s not think too big.</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 17 &amp; 18</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-17--18/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-17--18/</guid>
+      <description>Altering Tables If you need to include additional information not provided by the original tables creation statement, you can use an ALTER TABLE statement to manipulate and create columns.&#xA;Adding Columns Extremely similar to how we add in new rows, adding in a new column uses the following syntax:&#xA;ALTER TABLE mytable ADD column DataType OptionalTableConstraint DEFAULT default_value; We specify a table we want to add into, provide the column&amp;rsquo;s name and datatype, and we have the option for a table constraint and default value if needed.</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 13</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-13/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-13/</guid>
+      <description>Inserting Rows When we first started going over SQL databases, we just understood them as basic tables with columns of properties and rows of instances. The next step up is the Database Schema, which describes all tables in a database and the datatypes those rows can contain.&#xA;Because each row has defined types that are allowed, it keeps the database cleaner and easier to navigate.&#xA;Our first non-SELECT statement, we can start to insert data into our tables using the INSERT statement:</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 14 &amp; 15</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-14--15/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-14--15/</guid>
+      <description>Updating Rows If we can SELECT rows, and INSERT data into rows, we can most certainly UPDATE them as well.&#xA;UPDATE works similarly to INSERT, and needs a WHERE clause to specify which rows should be updated:&#xA;UPDATE mytable SET column = value_or_expression other_column = value_or_expression ... WHERE condition; Obviously, like INSERT, the values or expressions returned should match the data type of the expected column/property.&#xA;A helpful tip is to always try a SELECT statement out first to make sure you are grabbing all the rows you think you want before you make any changes.</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 10 &amp; 11</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-10--11/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-10--11/</guid>
+      <description>Queries with Aggregates Aggregates are analogous with built-in functions. They&amp;rsquo;re helpful pieces of code we can use to make writing our queries easier. The syntax is as follows:&#xA;SELECT AGG_FUNC(column_or_expression) AS agg_description FROM mytable WHERE constraint_expression; With the previous syntax, we would use said function over all rows and return a single result. Here are some functions we&amp;rsquo;ll use:&#xA;COUNT(column or *): returns the number of rows if no columns specified, otherwise returns number of non-NULL values in chosen column MIN(column): returns smallest numerical value for all rows in group MAX(column): returns largest numerical value for all rows in group AVG(column): returns average numerical value for all rows in group SUM(column): returns sum of all numerical values for all rows in the group There&amp;rsquo;s another concept we should look at called grouped aggregate functions, which instead of returning values for all rows, allows you to return multiple values based upon a specified delimiter or group.</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 12</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-12/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-12/</guid>
+      <description>Order of Execution The order of execution within queries is important to understand. When getting unexpected output one of the first things you should check is your syntax and be sure you 100% know what you&amp;rsquo;re saying/what you expect to get back. If you aren&amp;rsquo;t writing complete or correct sentences, you&amp;rsquo;ll never get correct responses.&#xA;The following syntax is the complete structure for a query and is executed sequentially (one after the other):</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 9</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-9/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-9/</guid>
+      <description>Queries with Expressions Now that we understand the basics of querying, we can really start to dive deeper by building more complex statements as expressions. These expressions can be mathematical or even basic string functions.&#xA;When writing expressions, we should use the AS keyword to create an alias for our expression, which makes our statements easier to read. This can be used on columns or tables.&#xA;The following statement is a great example of an expression:</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 7</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-7/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-7/</guid>
+      <description>Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN&amp;rsquo;s come into the picture.&#xA;Our syntax for a standard expression doesn&amp;rsquo;t change, only get&amp;rsquo;s different options for our JOIN keyword.&#xA;SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, .</description>
+    </item>
+    <item>
+      <title>SQLBolt - Lesson 8</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-8/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-8/</guid>
+      <description>NULL Values Unfortunately, working with data is an easy way to see that we don&amp;rsquo;t live in a perfect world. There are more than a few instances of there not being any data available to display, which can cause all sorts of issues with our queries. These values are what we call NULLS*, and can differ depending on your situation.&#xA;Most often at the start, we can leave them as NULL.</description>
+    </item>
     <item>
       <title>NumPy Quickstart</title>
       <link>http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/</link>

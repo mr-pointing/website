@@ -89,3 +89,75 @@ Date:   Thu Sep 12 15:59:22 2024 -0400
 
     red
 ```
+Here's an updated diagram of what our new directory looks like:
+
+{{< image src="/images/git_directory_diagram_v3.png" alt="git_directory_diagram_v3" position="center" style="border-radius: 8px;" >}} 
+
+An important thing to notice is even after the merge, we didn't get rid of the `feature` branch. Our `main` branch and `feature` branch are now both pointing at our `yellow` commit.
+
+## Checking Out Commits
+
+*Checking out* is a way to view a commit that no longer has a branch pointing to it. For example, let's say we wanted to go look at the state of our project at the `orange` commit. Right now, there are no available branches to switch too. In this case, we'd need to use the `git checkout` command. 
+
+The syntax is, `git checkout <commit_hash>`, where `commit_hash` is the hash of the commit you want to check out. Three things happen when you check out:
+
+1. `HEAD` points to the checked out commit
+2. Staging area is populated with the files and directories used at that commit
+3. Staging area get's copied into the working directory.
+
+Just like switching branches, the contents of the working directory actively change to look like they did when that commit was made. 
+
+Unlike when we switched branches however, `HEAD` doesn't point at any branches, *just* the commit. This is known as a *detached HEAD state*, and we should avoid making any changes/commits in this state. If we wanted too, we should first make new branch using `git switch -c <new-branch-name>`, then make some commits. Git will actually suggest this to you when you make a checkout;
+
+```bash
+>>> git checkout ae65b50098378ac6bf0cbe9ab92a9884b98db61b
+Note: switching to 'ae65b50098378ac6bf0cbe9ab92a9884b98db61b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at ae65b50 orange
+```
+
+Funnily enough, because we moved backwards, using `git log` will only show the `orange` and `red` commit. We would need to use `git log --all` to see where our `main` and `feature` branch.
+
+```bash
+>>> git log --all
+commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4 (main, feature)
+Author: mr-pointing <rpointing@blmhs.org>
+Date:   Sat Sep 14 16:57:14 2024 -0400
+
+    yellow
+
+commit ae65b50098378ac6bf0cbe9ab92a9884b98db61b (HEAD)
+Author: mr-pointing <rpointing@blmhs.org>
+Date:   Fri Sep 13 15:59:13 2024 -0400
+
+    orange
+
+commit f54fa770db92bbe31125032abb853f7dd6af414b
+Author: mr-pointing <rpointing@blmhs.org>
+Date:   Thu Sep 12 15:59:22 2024 -0400
+
+    red
+```
+
+
+Lastly, we just learned we can create and switch to a new branch using `git switch -c <new_branch_name>`. We can also do this using `git checkout -b <new_branch_name>`.
+
+
+---
+Next: 
+[Chapter 6]({{< ref "Learning Git - Chapter 6" >}}) 

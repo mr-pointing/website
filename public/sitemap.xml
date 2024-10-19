@@ -3,7 +3,76 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/computerscience/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/documentation/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sql/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-16/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-17--18/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/arrays/</loc>
+    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/products-of-array-not-including-self/</loc>
+    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-13/</loc>
+    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-14--15/</loc>
+    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-10--11/</loc>
+    <lastmod>2024-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-12/</loc>
+    <lastmod>2024-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-9/</loc>
+    <lastmod>2024-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-7/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-8/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/algorithms/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/appendix-a/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/textbook/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/exploratory-data-analysis-with-pandas/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
@@ -14,38 +83,17 @@
     <loc>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-6/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/numpy-notes/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pandas/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/textbook/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/datastructures/</loc>
-    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/documentation/</loc>
     <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/</loc>
     <lastmod>2024-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sql/</loc>
-    <lastmod>2024-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-4/</loc>
     <lastmod>2024-09-29T00:00:00+00:00</lastmod>
@@ -64,9 +112,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/obsidian/</loc>
     <lastmod>2024-09-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/arrays/</loc>
-    <lastmod>2024-09-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/contains-duplicate/</loc>
     <lastmod>2024-09-18T00:00:00+00:00</lastmod>
@@ -268,12 +313,6 @@
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/hugo/getting-started-with-hugo/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/algorithms/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>

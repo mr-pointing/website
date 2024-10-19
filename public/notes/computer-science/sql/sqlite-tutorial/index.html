@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="What is a Database? Essentially, a database is a place in which your data and tables exists, organized in a way described by the database schema.
+There are many database platforms that use SQL as their main language; MySQL, NoSQL, Microsoft SQL Server, just to name a few. The one we&amp;rsquo;re going to work with due to it&amp;rsquo;s ease of use and lightweight installation is SQLite (appropriately named).
+Creating Our First Database Connection We can actually use SQLite directly inside of PyCharm, our IDE." />
+<meta name="keywords" content="homepage, blog, computerscience, SQL, python" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/" />
+
+
+    <title>
+        
+            SQLite Tutorial :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="SQLite Tutorial">
+  <meta itemprop="description" content="What is a Database? Essentially, a database is a place in which your data and tables exists, organized in a way described by the database schema.
+There are many database platforms that use SQL as their main language; MySQL, NoSQL, Microsoft SQL Server, just to name a few. The one we’re going to work with due to it’s ease of use and lightweight installation is SQLite (appropriately named).
+Creating Our First Database Connection We can actually use SQLite directly inside of PyCharm, our IDE.">
+  <meta itemprop="datePublished" content="2024-10-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1198">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,SQL,Python">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="SQLite Tutorial">
+  <meta name="twitter:description" content="What is a Database? Essentially, a database is a place in which your data and tables exists, organized in a way described by the database schema.
+There are many database platforms that use SQL as their main language; MySQL, NoSQL, Microsoft SQL Server, just to name a few. The one we’re going to work with due to it’s ease of use and lightweight installation is SQLite (appropriately named).
+Creating Our First Database Connection We can actually use SQLite directly inside of PyCharm, our IDE.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="SQLite Tutorial">
+  <meta property="og:description" content="What is a Database? Essentially, a database is a place in which your data and tables exists, organized in a way described by the database schema.
+There are many database platforms that use SQL as their main language; MySQL, NoSQL, Microsoft SQL Server, just to name a few. The one we’re going to work with due to it’s ease of use and lightweight installation is SQLite (appropriately named).
+Creating Our First Database Connection We can actually use SQLite directly inside of PyCharm, our IDE.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-10-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-15T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="Python">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-10-15 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/">SQLite Tutorial</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="what-is-a-database">What is a Database?</h1>
+<p>Essentially, a database is a place in which your data and tables exists, organized in a way described by the <em>database schema</em>.</p>
+<p>There are many database platforms that use SQL as their main language; MySQL, NoSQL, Microsoft SQL Server, just to name a few. The one we&rsquo;re going to work with due to it&rsquo;s ease of use and lightweight installation is SQLite (appropriately named).</p>
+<h1 id="creating-our-first-database">Creating Our First Database</h1>
+<h2 id="connection">Connection</h2>
+<p>We can actually use SQLite directly inside of PyCharm, our IDE. Just like any other module, we can use <code>pip install sqlite3</code> to install SQLite in our project.</p>
+<p>Once installed, we can use an <code>import</code> statement to grab it and use it in our main Python file. Now we have to make a connection;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sqlite3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>conn <span style="color:#f92672">=</span> sqlite3<span style="color:#f92672">.</span>connect(<span style="color:#e6db74">&#39;movies.db&#39;</span>)
+</span></span></code></pre></div><p>The connection is an important resource. Like everything in Python, we have to be descriptive and tell Python exactly what we want to do. By establishing this connection, we are telling Python that the variable <code>conn</code> is our way to access SQLite functions we&rsquo;re trying to use.</p>
+<h2 id="cursor">Cursor</h2>
+<p>Now that we have a connection, we need a resource in which we can get information and make changes. For this, we can use something called a <em>cursor</em>. Think of a mouse cursor on your screen; you point at what you want, and click to move forward into whatever you&rsquo;re looking at. A SQLite cursor is similar in theory; we&rsquo;re going to use the cursor in order to actually run SQL commands.</p>
+<p>For now, let&rsquo;s just set up our structure before we focus on actually writing and queries. Here&rsquo;s a really basic way to write a cursor:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c <span style="color:#f92672">=</span> conn<span style="color:#f92672">.</span>cursor()
+</span></span></code></pre></div><p>Super simple, right? We are using our connection variable <code>conn</code> to make a cursor-type object. We&rsquo;ll come back to use it in a second. First, let&rsquo;s look at two more things our skeleton should have.</p>
+<h2 id="commit-and-close">Commit and Close</h2>
+<p>In order to actually make alterations and additions to our tables, we have to do something called committing our changes. Very similar to how you commit changes in Git, you need to tell Python to make that change.</p>
+<p>We also need to make sure that before we stop editing or selecting from a database, we should close our connection to the database. The reason why we do so isn&rsquo;t so important; if you are curious though, think about what happens if we leave the door open to a room we only want certain people to go in? All sorts of things can go wrong, so it&rsquo;s best practice to close your connection after connecting.</p>
+<p>We haven&rsquo;t made any changes or additions yet, so these will go naturally at the bottom of our code. Our code should now look something like this;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sqlite3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Connection to database</span>
+</span></span><span style="display:flex;"><span>conn <span style="color:#f92672">=</span> sqlite3<span style="color:#f92672">.</span>connect(<span style="color:#e6db74">&#39;movies.db&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cursor object</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">=</span> conn<span style="color:#f92672">.</span>cursor()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># SQL queries go here</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commit changes</span>
+</span></span><span style="display:flex;"><span>conn<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Close db</span>
+</span></span><span style="display:flex;"><span>conn<span style="color:#f92672">.</span>close()
+</span></span></code></pre></div><h2 id="create-a-table">Create a Table</h2>
+<p>Making a table seems like the logical next step. Right after we make our cursor, we can start writing a statement to actually use it; <code>c.execute()</code>. The parameter for the method is a SQL query, which we will become more familiar with as time goes on. For now, let&rsquo;s start by creating a table and adding a few rows of data. Feel free to copy and paste the code below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;&#34;&#34;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">CREATE TABLE IF NOT EXISTS movies (      
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    title TEXT NOT NULL,    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    year INTEGER NOT NULL,    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    director TEXT NOT NULL)  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>c<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;&#34;&#34;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">INSERT INTO movies (title, year, director)  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">VALUES (&#34;2001: A Space Odyssey&#34;, 1969, &#34;Stanley Kubrick&#34;), 
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (&#34;Super 8&#34;, 2011, &#34;JJ Abrams&#34;),  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (&#34;Howl&#39;s Moving Castle&#34;, 2004, &#34;Hayao Miyazaki&#34;);          &#34;&#34;&#34;</span>)
+</span></span></code></pre></div><p>This will give you a table called <code>movies</code> and a few of my favorite movies to populate it. We&rsquo;re going to use this as our primary platform for learning SQL. For exercises, I&rsquo;ll provide you with the database file (file type <code>.db</code>) and you are expected to be able to load it and run queries from it using PyCharm.</p>
+<h1 id="conventions">Conventions</h1>
+<p>SQLite has it&rsquo;s own way of doing things, just like other database management systems have their own. These are the <em>conventions</em> of the database. Let&rsquo;s go over a few different aspects of SQLite that make it unique.</p>
+<h2 id="datatypes">Datatypes</h2>
+<p>Unlike other databases with multiple different datatypes, SQLite has just <em>5</em>. This makes it super easy to dictate what types your columns should be:</p>
+<ol>
+<li><code>NULL</code></li>
+<li><code>INTEGER</code></li>
+<li><code>REAL</code></li>
+<li><code>TEXT</code></li>
+<li><code>BLOB</code></li>
+</ol>
+<p><code>NULL</code> or empty refers to an empty piece of memory, usually reserved for some purpose or left out unintentionally. <code>INTEGER</code> and <code>REAL</code> are our number types for whole and decimal respectively, while <code>TEXT</code> acts like a string type for anything and <code>BLOB</code> for binary/files (mp3 file, jpeg file, etc.).</p>
+<h2 id="inserting-many-records">Inserting Many Records</h2>
+<p>Inserting data into a table one record at a time would drive any common person nuts. To avoid insanity, we can use <code>c.executemany()</code> with placeholders to make our lives easier. Say we have the following information:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>many_movies <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>			   (<span style="color:#e6db74">&#34;Paths of Glory&#34;</span>, <span style="color:#ae81ff">1957</span>, <span style="color:#e6db74">&#34;Stanley Kubrick&#34;</span>),
+</span></span><span style="display:flex;"><span>			   (<span style="color:#e6db74">&#34;Cloverfield&#34;</span>, <span style="color:#ae81ff">2008</span>, <span style="color:#e6db74">&#34;JJ Abrams&#34;</span>),
+</span></span><span style="display:flex;"><span>			   (<span style="color:#e6db74">&#34;Porco Rosso&#34;</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#e6db74">&#34;Hayao Miyazaki&#34;</span>),
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p>We have this nice convenient list that contains tuples of movie data for us to insert into our movie table. We just have to change our execute statement slightly;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c<span style="color:#f92672">.</span>executemany(<span style="color:#e6db74">&#34;INSERT INTO movies VALUES (?,?,?)&#34;</span>, many_movies)
+</span></span></code></pre></div><p>The question marks act as a placeholder for the values provided by each tuple in our <code>many_movies</code> list.</p>
+<h2 id="selecting-and-formatting-data">Selecting and Formatting Data</h2>
+<p>Since we&rsquo;re using PyCharm, we can actually pull up a <em>terminal</em> of the database we created and use that to run all of our queries. But, it doesn&rsquo;t hurt to know how to do so using SQLite&rsquo;s format, just incase you need to do some work outside of PyCharm.</p>
+<p>When you want to select and print data to the screen in a script, you have to do two main things;</p>
+<ol>
+<li>Query the database</li>
+<li>Fetch the results</li>
+</ol>
+<p>Simple and easy to execute. Step one is a basic <code>c.execute()</code> with the select statement we want to use, and step two is a choice between three options:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;SELECT * FROM movies&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>c<span style="color:#f92672">.</span>fetchone()
+</span></span><span style="display:flex;"><span>c<span style="color:#f92672">.</span>fetchmany(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>c<span style="color:#f92672">.</span>fetchall()
+</span></span></code></pre></div><p>The different fetch requests are self explanatory, <code>fetchone()</code> returns the last record, <code>fetchmany(x)</code> will return <code>x</code> amount of records, and <code>fetchall()</code> will return all of the records.</p>
+<p>Getting them out to the screen is the more interesting part, and where formatting gets involved. Like all of the container objects in Python, when you retrieve a record it&rsquo;s going to come in parts, broken down by the columns. Printing just the record is going to look a bit ugly, so we can use a <code>for</code> loop to make it look a little nicer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;SELECT * FROM movies&#34;</span>)
+</span></span><span style="display:flex;"><span>movies <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>fetchall()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> movie <span style="color:#f92672">in</span> movies:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>movie[<span style="color:#ae81ff">0</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> directed by </span><span style="color:#e6db74">{</span>movie[<span style="color:#ae81ff">2</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> released in </span><span style="color:#e6db74">{</span>movie[<span style="color:#ae81ff">1</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><h2 id="primary-keys">Primary Keys</h2>
+<p>Small note to touch on; SQLite actually creates a primary key for your records in the background for you. When selecting, you can select <code>rowid</code> and will return the numbered unique integer for each record. Pretty useful stuff. It&rsquo;s also a good idea to use <code>rowid</code> when updating single records.</p>
+<h1 id="challenge">Challenge</h1>
+<p>Here&rsquo;s our challenge: we&rsquo;re going to make a few functions:</p>
+<ol>
+<li>Show all records</li>
+<li>Add a record</li>
+<li>Delete a record</li>
+<li>Add many records</li>
+<li>Where clause selecter</li>
+</ol>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/sql/">SQL</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

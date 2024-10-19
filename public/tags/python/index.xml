@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLite Tutorial</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/</guid>
+      <description>What is a Database? Essentially, a database is a place in which your data and tables exists, organized in a way described by the database schema.&#xA;There are many database platforms that use SQL as their main language; MySQL, NoSQL, Microsoft SQL Server, just to name a few. The one we&amp;rsquo;re going to work with due to it&amp;rsquo;s ease of use and lightweight installation is SQLite (appropriately named).&#xA;Creating Our First Database Connection We can actually use SQLite directly inside of PyCharm, our IDE.</description>
+    </item>
+    <item>
+      <title>Products of Array Not Including Self</title>
+      <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/products-of-array-not-including-self/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/products-of-array-not-including-self/</guid>
+      <description>Question: Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].&#xA;How to Solve: I originally thought I had an awesome solution, but it only passed with the first test case that didn&amp;rsquo;t have zeros:&#xA;def productExceptSelf(self, nums: List[int]) -&amp;gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &amp;lt; len(nums): total *= nums[i] i += 1 for num in nums: if num !</description>
+    </item>
     <item>
       <title>Exploratory Data Analysis with Pandas</title>
       <link>http://localhost:1313/notes/computer-science/python/exploratory-data-analysis-with-pandas/</link>

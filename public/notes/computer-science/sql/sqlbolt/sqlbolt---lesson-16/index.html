@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person&amp;rsquo;s collected data. It will often take a few minutes of &amp;ldquo;getting calibrated&amp;rdquo; to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
+The more complicated problems will end up needing some visualization tools which is something we&amp;rsquo;ll look at later, so for now let&amp;rsquo;s not think too big." />
+<meta name="keywords" content="homepage, blog, computerscience, SQL, documentation" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-16/" />
+
+
+    <title>
+        
+            SQLBolt - Lesson 16 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="SQLBolt - Lesson 16">
+  <meta itemprop="description" content="Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person’s collected data. It will often take a few minutes of “getting calibrated” to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
+The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big.">
+  <meta itemprop="datePublished" content="2024-10-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="443">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,SQL,Documentation">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="SQLBolt - Lesson 16">
+  <meta name="twitter:description" content="Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person’s collected data. It will often take a few minutes of “getting calibrated” to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
+The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-16/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="SQLBolt - Lesson 16">
+  <meta property="og:description" content="Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person’s collected data. It will often take a few minutes of “getting calibrated” to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
+The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-10-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-15T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="Documentation">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-10-15 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-16/">SQLBolt - Lesson 16</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="creating-tables">Creating Tables</h1>
+<p>One of the hardest things to do in data science (at least, to me) is pick up another person&rsquo;s collected data. It will often take a few minutes of &ldquo;getting calibrated&rdquo; to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.</p>
+<p>The more complicated problems will end up needing some visualization tools which is something we&rsquo;ll look at later, so for now let&rsquo;s not think too big. However, one of the best ways to become more familiar with a dataset is to build it from scratch. Since we&rsquo;re building it from scratch, that means we&rsquo;re going to need some tables to store the data in.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">EXISTS</span> mytable (
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">column</span> DataType TableConstraint <span style="color:#66d9ef">DEFAULT</span> default_value,
+</span></span><span style="display:flex;"><span>   another_column DataType TableConstraint <span style="color:#66d9ef">DEFAULT</span> d_v,
+</span></span><span style="display:flex;"><span>   ...
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>The syntax works like this; we start with a <code>IF NOT EXISTS</code> statement. This will prevent the creation of a duplicate table error, since two tables cannot exist with the same name. You can generally name your table whatever you want, but we like to stick to conventional naming practices; try to remember to use snake casing (<code>snake_case</code>) and be as descriptive as you can without being <em>too</em> descriptive (think <code>grade_table</code> vs. <code>grades_for_my_senior_year_2024_2025</code>).</p>
+<p>Inside parenthesis goes the <em>schema</em> for the table; the rows and the types expected for them. You can also use optional constraints on values being inserted or even a default value in the case of NULLS.</p>
+<p>Here&rsquo;s a really basic example;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> movies(
+</span></span><span style="display:flex;"><span>   id INTEGER <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>,
+</span></span><span style="display:flex;"><span>   title TEXT,
+</span></span><span style="display:flex;"><span>   director TEXT,
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">year</span> INTEGER,
+</span></span><span style="display:flex;"><span>   length_minutes INTEGER
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><h2 id="table-data-types">Table Data Types</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INTEGER</code>, <code>BOOLEAN</code></td>
+<td>Whole integer values, basic number or age. Bools will be represented as 0 or 1</td>
+</tr>
+<tr>
+<td><code>FLOAT</code>, <code>DOUBLE</code>, <code>REAL</code></td>
+<td>More precise decimal numbers. Used for measurements or fractions</td>
+</tr>
+<tr>
+<td><code>CHARACTER(num_chars)</code>, <code>VARCHAR(num_chars)</code>, <code>TEXT</code></td>
+<td>Text-based types, used to store any information in quotations. First two are used when more precise memory management is required</td>
+</tr>
+<tr>
+<td><code>DATE</code>, <code>DATETIME</code></td>
+<td>Date and date with time, respectively</td>
+</tr>
+<tr>
+<td><code>BLOB</code></td>
+<td>Binary data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-constraints">Table Constraints</h2>
+<p>Certainly not a comprehensive list, but a few that are common and useful.</p>
+<table>
+<thead>
+<tr>
+<th>Constraint</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PRIMARY KEY</code></td>
+<td>Values in this column are unique and are identifies for each individual row</td>
+</tr>
+<tr>
+<td><code>AUTOINCREMENT</code></td>
+<td>Integer value that goes up automatically as data is inserted</td>
+</tr>
+<tr>
+<td><code>UNIQUE</code></td>
+<td>Ensures no other row in the database has the same value for this specific column</td>
+</tr>
+<tr>
+<td><code>NOT NULL</code></td>
+<td>Cannot be empty or NULL</td>
+</tr>
+<tr>
+<td><code>CHECK (expression)</code></td>
+<td>Allows you to basically have a conditional statement checked before inserting data</td>
+</tr>
+<tr>
+<td><code>FOREIGN KEY</code></td>
+<td>Ensures that there exists a value in another table that corresponds to the newly inserted value</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-17--18/">Lesson 17 &amp; 18</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/sql/">SQL</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

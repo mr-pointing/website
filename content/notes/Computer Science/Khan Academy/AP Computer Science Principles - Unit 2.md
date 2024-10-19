@@ -6,7 +6,7 @@ tags:
   - internet
 title: AP Computer Science Principles - Unit 2
 date: 2024-08-14
-updated: 2024-09-24T18:57
+updated: 2024-10-09T18:11
 ---
 
 -------------------------------------------------------------------------------
@@ -143,3 +143,100 @@ Now that we can conceptualize how the internet works, it's a wonder anything get
 To circumnavigate these issues, we can use protocols like TCP or UDP to keep track of our packets and handle errors.
 
 **UDP** or User Datagram Protocol is a lightweight data transportation 
+
+The layout of the IP packet is now reformatted as a UDP segment, made up of a header and data portion with the actual payload (data being delivered). The header is made up of the next four sections:
+
+- **Port numbers:** First four bytes of the header. Every networking device can receive messages via different pathways, or *virtual ports*. It stores the port numbers for the source and destination.
+- **Segment Length:** The next two bites; storing the length of the segment (maximum length is 65,535).
+- **Checksum:** The last two bites of the UDP that is an encoding of the data being transported. Used by the sender (computes a checksum on data in the segment, stores it) and by the receiver (computes checksum on received data, compares with stored; if not the same, data corrupted).
+
+
+### TCP
+
+**TCP** or *Transmission Control Protocol* is another layer that is used with IP, that's significantly more secure than UDP. It is the most common, and the stack used for the internet is commonly know as *TCP/IP*.
+
+TCP deals with packet loss, out or order packets, and even duplicate and corrupted packets.
+
+The same structure used in UDP is used here, the IP's data segment is reformatted into a TCP segment. However this time the TCP segment's header has all of the UDP (source and destination port number, checksum) and even more. The best way is to walk through each layer sequentially.
+
+##### Step 1: Establish Connection
+
+Before any information is sent anywhere, a *three-way handshake* is made between the source and destination. 
+
+The source will send a packet with just a `SYN` bit set to 1. This is the first computer asking the second to *synchronize*. The second computer, upon receipt, sends back a packet with the `SYN` bit and an additional `ACK` bit set to 1, which indicates the second computers *acknowledgment*. Once the first computer gets these two back, it sends back an `ACK` bit in acceptance of the transfer.
+
+These `SYN` and `ACK` bits are actually part of the TCP header and don't actually contain any data. 
+
+##### Step 2: Send Packets of Data
+
+Anytime data is sent to a destination, that destination must send back a sign of acknowledgement. 
+
+The way it does so is actually quite interesting. The data sent and split into packets will send over both the data and some sequence number. In order to properly acknowledge the data sent, the receiver will send back the `ACK` bit as well as an acknowledgement number increased by the length of the data sent.
+
+Both the *sequence number* and *acknowledgement number* are parts of the TCP header. We'll talk about how these help keep track of things in a minute.
+
+##### Step 3: Close the Connection
+
+Very similar to the first step, we have another three-way handshake that instead of asking to use a `SYN` bit, we use a `FIN` bit set to 1, or *finish*.
+
+
+#### Detecting Lost Packets
+
+We would consider a packet lost if there was never an acknowledgement sent back from the second computer. To avoid this, TCP uses a timer system that will resend packets after a specific amount of time. In the event that the first packet wasn't lost and just taking a long time to finish, we can delete the duplicate packet. 
+
+
+#### Handling Out of Order Packets
+
+Thankfully, since we have the sequence and acknowledgement numbers, we can successfully keep an accurate timeline of how our packets are supposed to be ordered. Even if we were to receive them out of order, they can be resorted using the sequence and acknowledgement numbers. 
+
+When sent an out of order packet, the receiver will actually be able to acknowledge this, and sends back the *expected sequence number* in order to show that something is wrong. This will lead to the protocol to check and resort the sequence. 
+
+
+## Web Protocols
+
+What we understand as the *web* is just a huge interconnected network of web pages, files, and applications we define as the **World Wide Web** (this is where the `WWW` comes from in a URL).
+
+Since the web is clearly huge, it too needs some protocols in order to keep things together. Two we'll look at are *Domain Name System (DNS) protocol* and *HyperText Transfer Protocol (HTTP)*. 
+
+There's also *Transport Layer Security (TLS) protocol* which we're going to look at later. For now, it's important to understand that these protocols are happening on top of the Internet Protocols. TCP/IP is used alongside HTTP requests.
+
+
+### DNS
+
+Obviously, no one wants to memorize IP addresses. To circumnavigate this inconvenience, **DNS** was invented. A *domain name* is just the address we use in place of the IP address
+
+They don't go into this in Khan Academy, but I was curious about who invented DNS. It was a guy named Paul Mockapetris, and the way the internet used to work is pretty interesting. Before the web as we know it today, every single name to an IP address was stored in a single table within a *single* text file called `HOSTS.TXT`. That means any changes or additions needed to be made by *hand*. Pretty nuts stuff.
+
+The anatomy of DNS is pretty straight forward:
+
+```
+[third-level-domain].[second-level-domain].[top-level-domain]
+```
+
+The top lever or TLD's are your `.com` or `.org`'s, and the second level belongs to each individual who owns/runs the site (think `loughlin` or `mrpointing`). The third level can be called a sub-level, mostly because it will belong again to the individual who owns the site (some websites will start with `m.` to specify a mobile version).
+
+
+Now that we understand that, it's again, quite a wonder websites respond so fast. How is it that a computer stores every single domain to IP address relation? Well...it doesn't. There's a step by step process that happens every time you search for a URL:
+
+1. **Cache is Checked**
+	- Your browser keeps a list of all the recently visited websites in order to easily retrieve the IP addresses upon request. After a while though, they will eventually be replaced with other more frequented domain-to-IP pairs
+2. **Ask the ISP cache**
+	- Your *internet service provider* or ISP will have their own local cache, so if you never visited a website but a local neighbor did, your browser would find it there
+3. **Ask the Name Servers**
+	- There exist around the globe numerous servers that are just up and running for the sake of updating and keeping track of the millions of different domain names
+	- There are hierarchy for the servers: root name servers -> TLD name servers -> Host name servers
+		1. ISP asks the root name servers which name servers know about the TLD you're looking for, and sends back the IP address of the TLD name server for your TLD
+		2. ISP asks that TLD name server which Host name servers know about the second level name you're looking for, and similarly returns that IP address of that specified name Host name server
+		3. ISP asks the Host name server what the IP address is for the domain name you're looking for, and returns it
+
+### HTTP
+
+HyperText Transfer Protocol is how your computer downloads and retrieves that page your computer so desperately sought out just a moment ago. Here's how it works:
+
+1. Direct Browser to URL
+	- **URL** or *uniform resource locator* is the link to the website you're trying to get
+	- The URL is made up of the domain name and the HTTP protocol signal, the `http://` part of the URL
+2. Browser Looks Up IP
+	- Does the process defined up above of finding the IP address
+3. Browser Sends HTTP request
+	- I have a note on this already, [Designing a RESTful API]({{< ref "Designing a RESTful API" >}}). It talks about the basics of HTTP a bit more in depth

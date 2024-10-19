@@ -7,7 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/notes/computer-science/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLite Tutorial</title>
+      <link>http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/</guid>
+      <description>What is a Database? Essentially, a database is a place in which your data and tables exists, organized in a way described by the database schema.&#xA;There are many database platforms that use SQL as their main language; MySQL, NoSQL, Microsoft SQL Server, just to name a few. The one we&amp;rsquo;re going to work with due to it&amp;rsquo;s ease of use and lightweight installation is SQLite (appropriately named).&#xA;Creating Our First Database Connection We can actually use SQLite directly inside of PyCharm, our IDE.</description>
+    </item>
   </channel>
 </rss>
