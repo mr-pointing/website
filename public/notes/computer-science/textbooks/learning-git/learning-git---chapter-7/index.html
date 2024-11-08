@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Creating and Pushing to a Remote Repository Currently, we have three commits, red, orange, and yellow. We have two branches, both of them (head and feature) pointing at our yellow commit, and HEAD is attached to main.
+Now that we&amp;rsquo;re beginning to talk about remote repositories, it&amp;rsquo;s important to understand how these projects are started. We&amp;rsquo;ve been working on our Rainbow project, which we know is a local repository." />
+<meta name="keywords" content="homepage, blog, computerscience, git, textbook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-7/" />
+
+
+    <title>
+        
+            Learning Git - Chapter 7 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Learning Git - Chapter 7">
+  <meta itemprop="description" content="Creating and Pushing to a Remote Repository Currently, we have three commits, red, orange, and yellow. We have two branches, both of them (head and feature) pointing at our yellow commit, and HEAD is attached to main.
+Now that we’re beginning to talk about remote repositories, it’s important to understand how these projects are started. We’ve been working on our Rainbow project, which we know is a local repository.">
+  <meta itemprop="datePublished" content="2024-10-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="492">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Git,Textbook">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Learning Git - Chapter 7">
+  <meta name="twitter:description" content="Creating and Pushing to a Remote Repository Currently, we have three commits, red, orange, and yellow. We have two branches, both of them (head and feature) pointing at our yellow commit, and HEAD is attached to main.
+Now that we’re beginning to talk about remote repositories, it’s important to understand how these projects are started. We’ve been working on our Rainbow project, which we know is a local repository.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-7/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Learning Git - Chapter 7">
+  <meta property="og:description" content="Creating and Pushing to a Remote Repository Currently, we have three commits, red, orange, and yellow. We have two branches, both of them (head and feature) pointing at our yellow commit, and HEAD is attached to main.
+Now that we’re beginning to talk about remote repositories, it’s important to understand how these projects are started. We’ve been working on our Rainbow project, which we know is a local repository.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-10-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-22T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Textbook">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-10-22 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-7/">Learning Git - Chapter 7</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="creating-and-pushing-to-a-remote-repository">Creating and Pushing to a Remote Repository</h1>
+<p>Currently, we have three commits, <code>red</code>, <code>orange</code>, and <code>yellow</code>. We have two branches, both of them (<code>head</code> and <code>feature</code>) pointing at our <code>yellow</code> commit, and <code>HEAD</code> is attached to <code>main</code>.</p>
+<p>Now that we&rsquo;re beginning to talk about remote repositories, it&rsquo;s important to understand how these projects are started. We&rsquo;ve been working on our Rainbow project, which we know is a <em>local</em> repository.</p>
+<p>That&rsquo;s our first way; to start from a local repository. We already looked at how to start a local repository, so there are only two more steps: Create a remote repository using your service of choice, then <em>push</em> your local repository to your remote repository. We can use the <code>git push</code> command to make this happen.</p>
+<p>The other way is to start from a remote repository. If you want to work on someone else&rsquo;s project, or you created an empty remote repository, you would need to <em>clone</em> the repository to your local machine to start working.</p>
+<p>Even if we have our local repository pushed into a remote repository, and changes made to either won&rsquo;t reflect in the other unless explicitly told to do so. That means when you make a commit in your local repository, it won&rsquo;t have any changes to the remote repository until you push them.</p>
+<p>Remote repositories utility cannot be understated; having access to all of your projects wherever you go, as well as being able to have collaborators and contribute to other people&rsquo;s projects, really makes this a worthwhile feature.</p>
+<blockquote>
+<p>[!Example Book Project]
+Once again we&rsquo;re back to working on our book project. If I never decided to upload my work into remote repository, and my laptop got stolen or damaged, all of my work is lost. It would also be nice to have two workstations, and I can easily transfer my work from machine to machine without losing anything in the process.</p>
+</blockquote>
+<p>To create our Rainbow project remote repository, we&rsquo;re going to have to create it, connect it, and push our directory into it.</p>
+<h2 id="creating-the-remote-repository">Creating the Remote Repository</h2>
+<p>The creation and configuration is a split process between the local repository and the website of your hosting provider. GitHub will need a remote repository name, and will provide you with a URL (provided in both SSH and HTTPS).</p>
+<p>To ensure as little confusion as possible, we&rsquo;re going to name our remote repository differently than our local. We&rsquo;ll call it <code>remote-repository</code>. You&rsquo;ll also be option to give the remote repository the option to be public or private. Private means that only you have access to it, while Public will leave it open for anyone on the internet to get access to it.</p>
+<p>Some remote repository providers will ask for additional files (Either a <code>README</code> or a <code>.gitignore</code>) but we&rsquo;ll ignore that for now, since we want to upload our entire local directory as is. The default branch name should also be <code>main</code>.</p>
+
+    <img src="/images/remote_directory.png"  alt="remote_directory"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>You should now have an empty remote repository.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/git/">git</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

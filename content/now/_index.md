@@ -5,7 +5,7 @@ tags:
   - me
 title: Now
 date: 2024-08-17
-updated: 2024-09-15T13:47
+updated: 2024-11-08T12:37
 ---
 
 -------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ You can find my Goodreads [here](https://www.goodreads.com/user/show/119117493).
 ## Watching
 
 Currently Watching:
-- Sister Wives
+- Ink Master Season 16
 - JoJo's Bizarre Adventure: Part 5 (the best part)
 
 You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
@@ -43,4 +43,5 @@ You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
 
 Currently Playing:
 - Street Fighter 6 (Akuma Main!)
-- Resident Evil 4 (remake for Halloween) 
+- Tekken 8 (Reina Main!)
+- Resident Evil 4 Remake 

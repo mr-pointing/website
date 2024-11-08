@@ -11,44 +11,44 @@
     <atom:link href="http://localhost:1313/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Appendix A</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/appendix-a/</link>
+      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/appendix-a/</link>
       <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/appendix-a/</guid>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/appendix-a/</guid>
       <description>Summations As we know, we analyze algorithms by their running time. When algorithms use for or while loops (iterative structures), the running time is expressed as the sum of all the times spent on execution.&#xA;Summation Formulas and Properties Say we have $a_1,a_2,&amp;hellip;a_n$ numbers, what we call a sequence. While $n$ is a non-negative integer, we can say the sum of that set is $\sum_{k=1}^{n}a_k$.&#xA;If $n=0$, value is 0.</description>
     </item>
     <item>
       <title>Introduction to Algorithms</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</link>
+      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/</link>
       <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</guid>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/</guid>
       <description>Created: July 17 2024 Modified: August 02 2024&#xA;Fourth Edition Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein Preface Algorithms are everywhere, apart of almost everything we do, and every decision we make. They are part of most if not all tech stacks used today.&#xA;Each chapter in this book will present an algorithm, an application area for some algorithm, or some other related topic.&#xA;For teaching purposes The less complex the audience, the less complex chapters you need.</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 3</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</link>
+      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</link>
       <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</guid>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</guid>
       <description>Characterizing Running Times As we saw in Chapter 2, order of growth gives us the ability to quantify the effectiveness of our algorithms, and compare them.&#xA;Us studying these algorithms at large enough input sizes is us studying the asymptotic efficiency of an algorithm. We can say an algorithm that is &amp;ldquo;more asymptotically efficient&amp;rdquo; is the better choice for most cases, save small inputs.&#xA;O-notation, $\Theta$-notation, and $\Omega$-notation We already met $\Theta$-notation in chapter 2; this is a type of asymptotic notation.</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 2</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
+      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
       <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
       <description>Getting Sorted This chapter is meant to familiarize yourself with the framework used throughout the book.&#xA;2.1 Insertion Sort Solves a sorting problem (obviously).&#xA;The numbers to be sorted are known as keys.&#xA;The input comes in the form of an array with n elements.&#xA;A reason to sort is often because those keys are associated with other data, Satellite data.&#xA;Key + Satellite = Record&#xA;We can think of a spreadsheet, with student records having many pieces of data.</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 1</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
+      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
       <description>Modified: August 02 2024&#xA;The Role of Algorithms in Computing 1.1 Algorithms Algorithm: Any well defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.&#xA;We often say algorithms help us solve computational problems.&#xA;We can define a sorting algorithm like so:&#xA;Input: A sequence of n numbers, {a_1, a_2, ... a_n}</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Part 1</title>
-      <link>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/</link>
+      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/</link>
       <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/</guid>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/</guid>
       <description>Modified: August 02 2024&#xA;Notes on Part 1.</description>
     </item>
   </channel>

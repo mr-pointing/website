@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/math/</link>
+    <description>Recent content in Math on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Learning - Chapter 2</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/</guid>
+      <description>Linear Algebra This book covers all topics of linear algebra that are important to deep learning, not necessarily all topics within Linear Algebra. For a text more focused in linear algebra, see here.&#xA;Scalars, Vectors, Matrices, and Tensors Scalars Single numbers, usually denoted by a lowercase variable name, and introduced with some information on the number.&#xA;Ex.&#xA;Let $$s \in R$$ be the slope of the line for a real-valued scalar Let $$n \in N$$ be the number of units for a natural number scalar Vectors An ordered array of numbers, obtainable via the index position of the number in the array.</description>
+    </item>
+  </channel>
+</rss>

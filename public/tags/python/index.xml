@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flask&#39;s Tutorial</title>
+      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/</guid>
+      <description>Link to tutorial.&#xA;I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, Lython. However, since I&amp;rsquo;m starting Sarah&amp;rsquo;s site, and I want to test out a bunch of features/really get to understand Flask, let&amp;rsquo;s go through it once more.&#xA;Last time, I did a combination of going through the tutorial, then making changes as I saw fit.</description>
+    </item>
+    <item>
+      <title>Tkinter Tutorial</title>
+      <link>http://localhost:1313/notes/computer-science/python/tkinter-tutorial/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/tkinter-tutorial/</guid>
+      <description>Link to the tutorial.&#xA;Building Your First Application What makes Tkinter nice is that it&amp;rsquo;s a built-in library, meaning it should come with all versions of Python 3.12. If you&amp;rsquo;re using Ubuntu (like me) for this example you will have to install it but it doesn&amp;rsquo;t take long at all (sudo apt-get install python3-tk).&#xA;Creating your first window is incredibly simple. The following code will get you up and running in no time:</description>
+    </item>
     <item>
       <title>SQLite Tutorial</title>
       <link>http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/</link>

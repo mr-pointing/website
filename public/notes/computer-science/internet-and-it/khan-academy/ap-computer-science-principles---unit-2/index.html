@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Unit 2: The Internet The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.
+It&amp;rsquo;s an open system, meaning anyone can join given they follow the proper protocols. These include but aren&amp;rsquo;t limited too:
+IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp;amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these." />
+<meta name="keywords" content="homepage, blog, computerscience, internet" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/" />
+
+
+    <title>
+        
+            AP Computer Science Principles - Unit 2 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="AP Computer Science Principles - Unit 2">
+  <meta itemprop="description" content="Unit 2: The Internet The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.
+It’s an open system, meaning anyone can join given they follow the proper protocols. These include but aren’t limited too:
+IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these.">
+  <meta itemprop="datePublished" content="2024-08-14T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-08-14T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2678">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Internet">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="AP Computer Science Principles - Unit 2">
+  <meta name="twitter:description" content="Unit 2: The Internet The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.
+It’s an open system, meaning anyone can join given they follow the proper protocols. These include but aren’t limited too:
+IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="AP Computer Science Principles - Unit 2">
+  <meta property="og:description" content="Unit 2: The Internet The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.
+It’s an open system, meaning anyone can join given they follow the proper protocols. These include but aren’t limited too:
+IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-08-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-14T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Internet">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-08-14 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/">AP Computer Science Principles - Unit 2</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="unit-2-the-internet">Unit 2: The Internet</h1>
+<p>The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.</p>
+<p>It&rsquo;s an <em>open</em> system, meaning anyone can join given they follow the proper <strong>protocols</strong>. These include but aren&rsquo;t limited too:</p>
+<ul>
+<li><strong>IP:</strong> Protocol for identifying IP addresses with some routing strategy to send and receive information</li>
+<li><strong>TCP/UDP:</strong> Protocols that transfer packets of data that check for errors along the route</li>
+<li><strong>TLS:</strong> Protocol for encrypting data</li>
+<li><strong>HTTP &amp; DNS:</strong> Protocols for internet browsers</li>
+</ul>
+<p>Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these. That doesn&rsquo;t mean we shouldn&rsquo;t understand them.</p>
+<h2 id="connecting-networks">Connecting Networks</h2>
+<p>We can define a <em>computer network</em> as any group of interconnecting computing devices (any device that can run a program) that are capable of sending and receiving data. This makes the internet the largest computer network in the world.</p>
+<h3 id="building-a-network">Building a Network</h3>
+<p>When creating a network, you have to consider the <strong>network topology</strong>, or the way in which your devices connect. Let&rsquo;s consider we have six different computers. You can see below that we have a few different ways of connecting these six devices. Some all can talk to one another, where some they have to go through one or more devices.</p>
+<p>
+    <img src="/images/topologies_image.svg"  alt="Topologies Image"  class="center"  style="border-radius: 8px;"  />
+
+
+<a href="https://www.khanacademy.org/computing/ap-computer-science-principles/the-internet/x2d2f703b37b450a3:connecting-networks/a/computer-networks-overview">Source</a></p>
+<h3 id="types-of-networks">Types of Networks</h3>
+<p><strong>LAN</strong> or Local Area Network is a small, limited network that covers areas like a home or school. <strong>WAN</strong> or Wide Area Network covers large geographic ground, and is actually made up of many LAN&rsquo;s communicating. <strong>DCN</strong> is a Data Center Network that relies on instant data transfer (think number data, statistics, not so much visual or graphics).</p>
+<h3 id="physical-network-connections">Physical Network Connections</h3>
+<p><strong>Copper cables</strong> make up lots of connections throughout the world, on LAN and WLAN. We can find an <strong>Ethernet</strong> cable laying around anywhere; if we cut it open, we&rsquo;d find four twisted-pair copper wires. These cables transmit electricity in the form of binary electric signals and are understood via the Ethernet standards.</p>
+<p><strong>Fiber-optic cables</strong> work similarly to copper cables and follow the Ethernet standard, but use pulses of light instead of electricity to pass along binary signals. Since they use light they can transfer information faster (up to ~25 Tbps), and they&rsquo;re commonly used to connect networks across oceans. The biggest downside is the cost being on the expensive side.</p>
+<p><strong>Wireless connections</strong> are exactly what they sound like; network connections without an initial cable connection. A computing device will send out a signal in binary radio waves through the air. The waves should be picked up by a wireless access point, <strong>WAP</strong>, which is connected through some copper or fiber-optic cables.</p>
+<h2 id="bit-rate-bandwidth-and-latency">Bit rate, Bandwidth, and Latency</h2>
+<h3 id="1s-and-0s">1&rsquo;s and 0&rsquo;s</h3>
+<p>We know that computers transmit all of their data through binary. There are two main ways this is done, let&rsquo;s use the example of sending the number 5 (101);</p>
+<ol>
+<li>We could use three cables to send the signal all at once; 1 on, 1 off, and another 1 on.</li>
+<li>We could use one cable, and transmit a character or number over a set amount of time. As long as both computers communicating agree on the same amount of time, the receiving computer will wait for the entire on, off, on to happen on a single wire. We call this <em>line coding</em>.</li>
+</ol>
+<h3 id="bit-rate">Bit Rate</h3>
+<p>We can measure the amount of bits sent each second, and determine the speed of a connection through this <em>bit rate</em>. The internet first began with speeds around 75 bps (bits per second), while today we have speeds in the Mbps (megabits per second) and Gbps (gigabits per second).</p>
+<table>
+<thead>
+<tr>
+<th>Unit</th>
+<th>Number of Bits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kilobit</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>megabit</td>
+<td>1000^2</td>
+</tr>
+<tr>
+<td>gigabit</td>
+<td>1000^3</td>
+</tr>
+<tr>
+<td>terabit</td>
+<td>1000^4</td>
+</tr>
+<tr>
+<td>petabit</td>
+<td>1000^5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bandwidth">Bandwidth</h3>
+<p>Simply the maximum bit rate of a given system. If your system has a bandwidth of 10 Gbps, it can transfer speeds at no faster than 10 gigabits per second (which is very fast).</p>
+<h3 id="latency">Latency</h3>
+<p>Instead of measuring how fast a system can transfer data, we can measure how late said bits arrive. This is the measure of <em>latency</em>. If I send a message to a server, and it takes 30 milliseconds, and the response back from the server that my message was received took 50 milliseconds to get back, we would say the round-trip latency of 80 ms.</p>
+<h3 id="internet-speed">Internet Speed</h3>
+<p>The speed of our internet is made up of a combination of your bandwidth and latency. Computers communicate in a packet-exchange system; a computer cannot send another message until the first packet was received. Because of this, our bandwidth is only part of it, since latency will determine the speed of sending and receiving said packets.</p>
+<p>We can also use the term <em>ping</em> to refer to latency. Upon running a <a href="https://www.speedtest.net/">speed test</a> we will often see faster download than upload. This makes sense, since most users will need to download data more often than upload (think visiting sites and loading text, images, videos, etc.)</p>
+<h2 id="ip-addresses">IP Addresses</h2>
+<p>Meaning <strong>Internet Protocol</strong>, it&rsquo;s one of the most important protocols that comprise the internet. All online communication, addressing and routing, are done through here.</p>
+<p><em>IP addresses</em> are the unique key that identify a device to the internet. When sending a request, or message to another computer, both the sender and the recipients IP addresses are sent. There are two main versions of addresses; IPv4 and IPv6. The first is the first type of address ever for the internet, and the later is a backwards-compatible successor.</p>
+<h3 id="ipv4">IPv4</h3>
+<p>This is a basic IP address: 74.125.20.113</p>
+<p>Wonder what it&rsquo;s for? Type it in your browser to visit it.</p>
+<p>As you can see, the syntax is four numbers between 0 and 255 separated by periods. As we know, this means it&rsquo;s really easy for the computer to store the address in 8 binary bits for each number.</p>
+<h3 id="ipv6">IPv6</h3>
+<p>Here&rsquo;s a IPv6 address: 2001:0db8:0000:0042:0000:8a2e:0370:7334</p>
+<p>Since there can only be <code>2^32</code> IPv4 addresses, IPv6 are designed to include hexadecimal numbers, allowing for <em>way</em> more.</p>
+<h3 id="the-hierarchy-of-an-address">The Hierarchy of an Address</h3>
+<p>Similar to a phone number, the IP address can be broken down to make it easier to send and route messages.</p>
+<p>The first sequence of bits represents the network used for the address, and the final bits identify the specific node in the network (almost exactly how phone numbers work).</p>
+<h2 id="routing-with-redundancy">Routing with Redundancy</h2>
+<h3 id="ip-packets">IP Packets</h3>
+<p>Since messages can be small as pings to large files and pages, there has to be a limit. In order to keep things manageable, networking protocols break down messages into digestible <em>packets</em>.</p>
+<p>Packets have two components, <strong>headers</strong>, which make up the information about data being sent as well as the IP addresses, and the actual <strong>data</strong>.</p>
+<p>First, packets are sent to a router. Once at the router, the router will look at the packets destination IP address, and consult it&rsquo;s <em>forwarding table</em>, which is a list of IP address prefixes that are common. The layout is hierarchical. It will try to send the packet to another router that&rsquo;s closer to the destination until it has finally reached it, going through a variable amount of routers along the way.</p>
+<h3 id="redundancy--fault-tolerance">Redundancy &amp; Fault Tolerance</h3>
+<p>When accessing the internet, there are often many different paths a packet can take. In the event a path closes, usually there is another path that the packets of data can take. This concept is called <em>redundancy</em>, the redundancy of a network can be measured by the amount of network availability.</p>
+<p>We consider the internet <strong>Fault Tolerant</strong> because it can experience failure without having the entire system become unusable. To this day, no one has been able to completely break the internet, due to how interconnected it is around the world. A <em>point of failure</em> is any connection that would completely severe the network.</p>
+<h3 id="transporting-packets">Transporting Packets</h3>
+<p>Now that we can conceptualize how the internet works, it&rsquo;s a wonder anything gets done. There are lots of issues that can possibly occur; If a computer sends multiple messages, the computer has to keep track of which <em>packets</em> belong to which message. Packets often arrive <em>out of order</em>, or can be corrupted for whichever reason. Packets can even be lost; in certain messages, a single packet can mean the message is incomplete.</p>
+<p>To circumnavigate these issues, we can use protocols like TCP or UDP to keep track of our packets and handle errors.</p>
+<p><strong>UDP</strong> or User Datagram Protocol is a lightweight data transportation</p>
+<p>The layout of the IP packet is now reformatted as a UDP segment, made up of a header and data portion with the actual payload (data being delivered). The header is made up of the next four sections:</p>
+<ul>
+<li><strong>Port numbers:</strong> First four bytes of the header. Every networking device can receive messages via different pathways, or <em>virtual ports</em>. It stores the port numbers for the source and destination.</li>
+<li><strong>Segment Length:</strong> The next two bites; storing the length of the segment (maximum length is 65,535).</li>
+<li><strong>Checksum:</strong> The last two bites of the UDP that is an encoding of the data being transported. Used by the sender (computes a checksum on data in the segment, stores it) and by the receiver (computes checksum on received data, compares with stored; if not the same, data corrupted).</li>
+</ul>
+<h3 id="tcp">TCP</h3>
+<p><strong>TCP</strong> or <em>Transmission Control Protocol</em> is another layer that is used with IP, that&rsquo;s significantly more secure than UDP. It is the most common, and the stack used for the internet is commonly know as <em>TCP/IP</em>.</p>
+<p>TCP deals with packet loss, out or order packets, and even duplicate and corrupted packets.</p>
+<p>The same structure used in UDP is used here, the IP&rsquo;s data segment is reformatted into a TCP segment. However this time the TCP segment&rsquo;s header has all of the UDP (source and destination port number, checksum) and even more. The best way is to walk through each layer sequentially.</p>
+<h5 id="step-1-establish-connection">Step 1: Establish Connection</h5>
+<p>Before any information is sent anywhere, a <em>three-way handshake</em> is made between the source and destination.</p>
+<p>The source will send a packet with just a <code>SYN</code> bit set to 1. This is the first computer asking the second to <em>synchronize</em>. The second computer, upon receipt, sends back a packet with the <code>SYN</code> bit and an additional <code>ACK</code> bit set to 1, which indicates the second computers <em>acknowledgment</em>. Once the first computer gets these two back, it sends back an <code>ACK</code> bit in acceptance of the transfer.</p>
+<p>These <code>SYN</code> and <code>ACK</code> bits are actually part of the TCP header and don&rsquo;t actually contain any data.</p>
+<h5 id="step-2-send-packets-of-data">Step 2: Send Packets of Data</h5>
+<p>Anytime data is sent to a destination, that destination must send back a sign of acknowledgement.</p>
+<p>The way it does so is actually quite interesting. The data sent and split into packets will send over both the data and some sequence number. In order to properly acknowledge the data sent, the receiver will send back the <code>ACK</code> bit as well as an acknowledgement number increased by the length of the data sent.</p>
+<p>Both the <em>sequence number</em> and <em>acknowledgement number</em> are parts of the TCP header. We&rsquo;ll talk about how these help keep track of things in a minute.</p>
+<h5 id="step-3-close-the-connection">Step 3: Close the Connection</h5>
+<p>Very similar to the first step, we have another three-way handshake that instead of asking to use a <code>SYN</code> bit, we use a <code>FIN</code> bit set to 1, or <em>finish</em>.</p>
+<h4 id="detecting-lost-packets">Detecting Lost Packets</h4>
+<p>We would consider a packet lost if there was never an acknowledgement sent back from the second computer. To avoid this, TCP uses a timer system that will resend packets after a specific amount of time. In the event that the first packet wasn&rsquo;t lost and just taking a long time to finish, we can delete the duplicate packet.</p>
+<h4 id="handling-out-of-order-packets">Handling Out of Order Packets</h4>
+<p>Thankfully, since we have the sequence and acknowledgement numbers, we can successfully keep an accurate timeline of how our packets are supposed to be ordered. Even if we were to receive them out of order, they can be resorted using the sequence and acknowledgement numbers.</p>
+<p>When sent an out of order packet, the receiver will actually be able to acknowledge this, and sends back the <em>expected sequence number</em> in order to show that something is wrong. This will lead to the protocol to check and resort the sequence.</p>
+<h2 id="web-protocols">Web Protocols</h2>
+<p>What we understand as the <em>web</em> is just a huge interconnected network of web pages, files, and applications we define as the <strong>World Wide Web</strong> (this is where the <code>WWW</code> comes from in a URL).</p>
+<p>Since the web is clearly huge, it too needs some protocols in order to keep things together. Two we&rsquo;ll look at are <em>Domain Name System (DNS) protocol</em> and <em>HyperText Transfer Protocol (HTTP)</em>.</p>
+<p>There&rsquo;s also <em>Transport Layer Security (TLS) protocol</em> which we&rsquo;re going to look at later. For now, it&rsquo;s important to understand that these protocols are happening on top of the Internet Protocols. TCP/IP is used alongside HTTP requests.</p>
+<h3 id="dns">DNS</h3>
+<p>Obviously, no one wants to memorize IP addresses. To circumnavigate this inconvenience, <strong>DNS</strong> was invented. A <em>domain name</em> is just the address we use in place of the IP address</p>
+<p>They don&rsquo;t go into this in Khan Academy, but I was curious about who invented DNS. It was a guy named Paul Mockapetris, and the way the internet used to work is pretty interesting. Before the web as we know it today, every single name to an IP address was stored in a single table within a <em>single</em> text file called <code>HOSTS.TXT</code>. That means any changes or additions needed to be made by <em>hand</em>. Pretty nuts stuff.</p>
+<p>The anatomy of DNS is pretty straight forward:</p>
+<pre tabindex="0"><code>[third-level-domain].[second-level-domain].[top-level-domain]
+</code></pre><p>The top lever or TLD&rsquo;s are your <code>.com</code> or <code>.org</code>&rsquo;s, and the second level belongs to each individual who owns/runs the site (think <code>loughlin</code> or <code>mrpointing</code>). The third level can be called a sub-level, mostly because it will belong again to the individual who owns the site (some websites will start with <code>m.</code> to specify a mobile version).</p>
+<p>Now that we understand that, it&rsquo;s again, quite a wonder websites respond so fast. How is it that a computer stores every single domain to IP address relation? Well&hellip;it doesn&rsquo;t. There&rsquo;s a step by step process that happens every time you search for a URL:</p>
+<ol>
+<li><strong>Cache is Checked</strong>
+<ul>
+<li>Your browser keeps a list of all the recently visited websites in order to easily retrieve the IP addresses upon request. After a while though, they will eventually be replaced with other more frequented domain-to-IP pairs</li>
+</ul>
+</li>
+<li><strong>Ask the ISP cache</strong>
+<ul>
+<li>Your <em>internet service provider</em> or ISP will have their own local cache, so if you never visited a website but a local neighbor did, your browser would find it there</li>
+</ul>
+</li>
+<li><strong>Ask the Name Servers</strong>
+<ul>
+<li>There exist around the globe numerous servers that are just up and running for the sake of updating and keeping track of the millions of different domain names</li>
+<li>There are hierarchy for the servers: root name servers -&gt; TLD name servers -&gt; Host name servers
+<ol>
+<li>ISP asks the root name servers which name servers know about the TLD you&rsquo;re looking for, and sends back the IP address of the TLD name server for your TLD</li>
+<li>ISP asks that TLD name server which Host name servers know about the second level name you&rsquo;re looking for, and similarly returns that IP address of that specified name Host name server</li>
+<li>ISP asks the Host name server what the IP address is for the domain name you&rsquo;re looking for, and returns it</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="http">HTTP</h3>
+<p>HyperText Transfer Protocol is how your computer downloads and retrieves that page your computer so desperately sought out just a moment ago. Here&rsquo;s how it works:</p>
+<ol>
+<li>Direct Browser to URL
+<ul>
+<li><strong>URL</strong> or <em>uniform resource locator</em> is the link to the website you&rsquo;re trying to get</li>
+<li>The URL is made up of the domain name and the HTTP protocol signal, the <code>http://</code> part of the URL</li>
+</ul>
+</li>
+<li>Browser Looks Up IP
+<ul>
+<li>Does the process defined up above of finding the IP address</li>
+</ul>
+</li>
+<li>Browser Sends HTTP request
+<ul>
+<li>I have a note on this already, <a href="http://localhost:1313/projects/designing-a-restful-api/">Designing a RESTful API</a>. It talks about the basics of HTTP a bit more in depth</li>
+</ul>
+</li>
+</ol>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/internet/">internet</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

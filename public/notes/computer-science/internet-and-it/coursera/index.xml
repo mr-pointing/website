@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coursera on Mr. Pointing</title>
+    <link>http://localhost:1313/notes/computer-science/internet-and-it/coursera/</link>
+    <description>Recent content in Coursera on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/computer-science/internet-and-it/coursera/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Computer Networking</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/</guid>
+      <description>TCP/IP and the Five Layer Network Model Below is a basic table outlining the five layers:&#xA;Layer Name Protocol Protocol Data Unit Addressing Application HTTP, SMTP, etc. Messages n/a Transport TCP/UDP Segment Port #&amp;rsquo;s Network IP Packet/Datagram IP Addresses Data Link Ethernet, Wi-Fi Frames MAC Address Physical n/a Bits n/a Physical Layer: The actual computing device(s) and the cables that connect them, sends and receives signals Data Link Layer: Also known as the network access layer, it&amp;rsquo;s our first protocol to interpret signals sent from and to each computing device Ethernet is our first and most common protocol, which is responsible for transporting data across the network Network Layer: Also know as the internet layer, this layer is what actually allows the computing devices to communicate with each other.</description>
+    </item>
+    <item>
+      <title>Technical Support Fundamentals</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/coursera/technical-support-fundamentals/</link>
+      <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/coursera/technical-support-fundamentals/</guid>
+      <description>I started this Corsera course in hopes of getting a certification (and that helping me get a job). I&amp;rsquo;m going to assume it&amp;rsquo;s similar to Khan Academy&amp;rsquo;s courses, but we&amp;rsquo;ll find out if completing it helps or not after the fact.&#xA;What is IT Support? The people behind the scenes helping Information Technology (IT) run and troubleshoot issues. Digital literacy is the &amp;ldquo;defining factor&amp;rdquo; that makes a good IT support technician.</description>
+    </item>
+  </channel>
+</rss>

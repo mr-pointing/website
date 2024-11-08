@@ -52,7 +52,7 @@ Prerequisites What should you know to get the most out of this lesson? At the ve
 What are we doing this lesson then? We’re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on ndarray objects without for loops, and even more advanced things like what axis and shape properties are.">
   <meta itemprop="datePublished" content="2024-09-30T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-09-30T00:00:00+00:00">
-  <meta itemprop="wordCount" content="550">
+  <meta itemprop="wordCount" content="1825">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Python,Documentation,Datastructures">
 
@@ -107,6 +107,7 @@ What are we doing this lesson then? We’re going to learn about what one, two, 
     
         <div class="container">
             <header class="header">
+
     <span class="header__inner">
         <a href="/" style="text-decoration: none;">
     <div class="logo">
@@ -210,6 +211,168 @@ What are we doing this lesson then? We’re going to learn about what one, two, 
 <p>Printing arrays is a breeze. There are some unique conventions that you can read about in the docs- the arrangement of the array isn&rsquo;t so relevant to work I do every day, so I don&rsquo;t feel so inclined to dive deeper.</p>
 <p>I&rsquo;d say experiment with using the <code>print()</code> statement with your arrays and see what you get. More often than not you&rsquo;ll retrieve the array in whichever dimensions you&rsquo;ve set it too, unless your array is large enough, in which case it will cut out the middle and return only the corners. You can turn this off however if you&rsquo;re dead set on getting the entire array.</p>
 <h2 id="basic-operations">Basic Operations</h2>
+<p>Using arithmetic operators on arrays will actually perform the math on the <em>elements</em> rather than the array itself. We call this <em>elementwise</em>. Here&rsquo;s a basic example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">4</span>) <span style="color:#75715e"># makes array([0, 1, 2, 3])</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> c <span style="color:#f92672">=</span> a <span style="color:#f92672">-</span> b
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> c
+</span></span><span style="display:flex;"><span>array([<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">29</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">47</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">35</span>
+</span></span><span style="display:flex;"><span>array([<span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">False</span>, <span style="color:#66d9ef">False</span>])
+</span></span></code></pre></div><p>There is another operation called <em>matrix product</em> using the <code>@</code> sign, but that&rsquo;s too advanced for what we&rsquo;re doing.</p>
+<p>You can see from the above examples that we&rsquo;re actually creating new arrays when we&rsquo;re performing these operations. In order to actually modify existing arrays, we could use something like <code>+=</code> or <code>*=</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>ones((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>), <span style="color:#e6db74">&#34;int64&#34;</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>], <span style="color:#e6db74">&#34;int64&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">+=</span> b
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">5</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span>]]
+</span></span></code></pre></div><p>Notice that we defined our data type. Had we declared differing data types, we would actually get an error when trying to perform the operation. Like we already know from the last lesson, you cannot perform operations on unlike datatypes.</p>
+<p>However, if we didn&rsquo;t specify one of them, and set the other to <code>float64</code> instead of an <code>int64</code>, NumPy will actually <em>upcast</em> the integer into a float.</p>
+<p>NumPy arrays have some pretty useful methods we can access via the dot operator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> rg <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>default_rng(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> rg<span style="color:#f92672">.</span>random((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">0.51182162</span> <span style="color:#ae81ff">0.9504637</span>  <span style="color:#ae81ff">0.14415961</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">0.94864945</span> <span style="color:#ae81ff">0.31183145</span> <span style="color:#ae81ff">0.42332645</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>sum()
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3.290252281866131</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>min()
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.14415961271963373</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>max()
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.9504636963259353</span>
+</span></span></code></pre></div><p>The first line here is actually somewhat special. It&rsquo;s acts like a random number generator, creating a number between 0 and 1. Then, we can use it to create the arrays used in the example. NumPy actually has it&rsquo;s own <code>random</code> module which we can use just like we do above.</p>
+<h2 id="universal-functions">Universal Functions</h2>
+<p>There are some mathematical functions that are automatically packaged with NumPy. The list is comprehensive, so rather than try to go over all of them right now, you can view them all <a href="https://numpy.org/doc/stable/user/quickstart.html#universal-functions">here</a>.</p>
+<h2 id="indexing-slicing--iterating">Indexing, Slicing, &amp; Iterating</h2>
+<p>One-dimensional arrays can be indexed and sliced through the same ways that a regular Python list can be. Nothing too complicated there. It becomes more complicated once we start introducing more dimensions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">12</span>], [<span style="color:#ae81ff">46</span>, <span style="color:#ae81ff">47</span>, <span style="color:#ae81ff">48</span>], [<span style="color:#ae81ff">73</span>, <span style="color:#ae81ff">74</span>, <span style="color:#ae81ff">75</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">12</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">46</span>, <span style="color:#ae81ff">47</span>, <span style="color:#ae81ff">48</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">11</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a[<span style="color:#ae81ff">1</span>:]
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">46</span> <span style="color:#ae81ff">47</span> <span style="color:#ae81ff">48</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">73</span> <span style="color:#ae81ff">74</span> <span style="color:#ae81ff">75</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>] <span style="color:#75715e"># equivalent to using a[2][2]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">75</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a[:, <span style="color:#ae81ff">1</span>] <span style="color:#75715e"># returns all the elements in the second column</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">47</span>, <span style="color:#ae81ff">74</span>]
+</span></span></code></pre></div><p>There&rsquo;s a little more nuance to it; I recommend reading the documentation if you&rsquo;re interested. Otherwise, play around with a few different indexes and see what you get.</p>
+<p>Iterating over the elements within an array can be done in two ways, over the rows or through each element using the <code>.flat</code> attribute:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> a:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>    print(row)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">10</span> <span style="color:#ae81ff">11</span> <span style="color:#ae81ff">12</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">46</span> <span style="color:#ae81ff">47</span> <span style="color:#ae81ff">48</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">73</span> <span style="color:#ae81ff">74</span> <span style="color:#ae81ff">75</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> a<span style="color:#f92672">.</span>flat:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>    print(element)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">11</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">46</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">47</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">48</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">73</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">74</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">75</span>
+</span></span></code></pre></div><h1 id="shape-manipulation">Shape Manipulation</h1>
+<h2 id="changing-the-shape-of-an-array">Changing the Shape of an Array</h2>
+<p>When we talk about the shape of the array, we are talking about how many rows it has by the amount of elements in each row.</p>
+<p>For our above example, <code>a</code>, we can get the shape by printing the <code>.shape</code> attribute for your array:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>shape()
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>)         <span style="color:#75715e"># 3 rows x 3 elements</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Let&#39;s say we add [111, 112, 113] to our array</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>shape()
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">3</span>)         <span style="color:#75715e"># 4 rows x 3 elements</span>
+</span></span></code></pre></div><p>There are many different ways we can alter the shape of our array, depending on what we&rsquo;re trying to do. We can flatten it (return all elements as a single dimensional array), reshape it (change the shape and layout of the data) and transpose (rows and columns are flipped).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>ravel()
+</span></span><span style="display:flex;"><span>[ <span style="color:#ae81ff">10</span>  <span style="color:#ae81ff">11</span>  <span style="color:#ae81ff">12</span>  <span style="color:#ae81ff">46</span>  <span style="color:#ae81ff">47</span>  <span style="color:#ae81ff">48</span>  <span style="color:#ae81ff">73</span>  <span style="color:#ae81ff">74</span>  <span style="color:#ae81ff">75</span> <span style="color:#ae81ff">111</span> <span style="color:#ae81ff">112</span> <span style="color:#ae81ff">113</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>reshape(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>[[ <span style="color:#ae81ff">10</span>  <span style="color:#ae81ff">11</span>  <span style="color:#ae81ff">12</span>  <span style="color:#ae81ff">46</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">47</span>  <span style="color:#ae81ff">48</span>  <span style="color:#ae81ff">73</span>  <span style="color:#ae81ff">74</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">75</span> <span style="color:#ae81ff">111</span> <span style="color:#ae81ff">112</span> <span style="color:#ae81ff">113</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>T
+</span></span><span style="display:flex;"><span>[[ <span style="color:#ae81ff">10</span>  <span style="color:#ae81ff">46</span>  <span style="color:#ae81ff">73</span> <span style="color:#ae81ff">111</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">11</span>  <span style="color:#ae81ff">47</span>  <span style="color:#ae81ff">74</span> <span style="color:#ae81ff">112</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">12</span>  <span style="color:#ae81ff">48</span>  <span style="color:#ae81ff">75</span> <span style="color:#ae81ff">113</span>]]
+</span></span></code></pre></div><p>An important distinction being made is that these arrays are not being reshaped back into the array, but returns a whole new array.</p>
+<h2 id="stacking-together-different-arrays">Stacking Together Different Arrays</h2>
+<p>Often, you&rsquo;ll want to actually combine different arrays together, but not necessarily do any calculations. Stacking can help with that. There are a few different ways to stack, but we&rsquo;re just going to look at 2 common stack methods: vertical and horizontal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Make use of rng to make two arrays</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> rg <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>default_rg(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>floor(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> rg<span style="color:#f92672">.</span>random((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>)))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">5.</span> <span style="color:#ae81ff">9.</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">1.</span> <span style="color:#ae81ff">9.</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>floor(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> rg<span style="color:#f92672">.</span>random((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>)))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">3.</span> <span style="color:#ae81ff">4.</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">8.</span> <span style="color:#ae81ff">4.</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> np<span style="color:#f92672">.</span>vstack((a, b))
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">5.</span> <span style="color:#ae81ff">9.</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">1.</span> <span style="color:#ae81ff">9.</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">3.</span> <span style="color:#ae81ff">4.</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">8.</span> <span style="color:#ae81ff">4.</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> np<span style="color:#f92672">.</span>hstack((a, b))
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">5.</span> <span style="color:#ae81ff">9.</span> <span style="color:#ae81ff">3.</span> <span style="color:#ae81ff">4.</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">1.</span> <span style="color:#ae81ff">9.</span> <span style="color:#ae81ff">8.</span> <span style="color:#ae81ff">4.</span>]]
+</span></span></code></pre></div><h2 id="splitting-into-smaller-arrays">Splitting into Smaller Arrays</h2>
+<p>Not only can we combine arrays, we can break down arrays into smaller arrays. The ways we can do so are using <code>hsplit</code> or <code>vsplit</code>, which will split it horizontally or vertically respectfully.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>floor(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> rg<span style="color:#f92672">.</span>random((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">12</span>)))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a
+</span></span><span style="display:flex;"><span>[[<span style="color:#ae81ff">5.</span> <span style="color:#ae81ff">9.</span> <span style="color:#ae81ff">1.</span> <span style="color:#ae81ff">9.</span> <span style="color:#ae81ff">3.</span> <span style="color:#ae81ff">4.</span> <span style="color:#ae81ff">8.</span> <span style="color:#ae81ff">4.</span> <span style="color:#ae81ff">5.</span> <span style="color:#ae81ff">0.</span> <span style="color:#ae81ff">7.</span> <span style="color:#ae81ff">5.</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#ae81ff">3.</span> <span style="color:#ae81ff">7.</span> <span style="color:#ae81ff">3.</span> <span style="color:#ae81ff">4.</span> <span style="color:#ae81ff">1.</span> <span style="color:#ae81ff">4.</span> <span style="color:#ae81ff">2.</span> <span style="color:#ae81ff">2.</span> <span style="color:#ae81ff">7.</span> <span style="color:#ae81ff">2.</span> <span style="color:#ae81ff">4.</span> <span style="color:#ae81ff">9.</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> np<span style="color:#f92672">.</span>hsplit(a, <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>[array([[<span style="color:#ae81ff">5.</span>, <span style="color:#ae81ff">9.</span>, <span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">9.</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#ae81ff">3.</span>, <span style="color:#ae81ff">7.</span>, <span style="color:#ae81ff">3.</span>, <span style="color:#ae81ff">4.</span>]]), array([[<span style="color:#ae81ff">3.</span>, <span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">8.</span>, <span style="color:#ae81ff">4.</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">2.</span>, <span style="color:#ae81ff">2.</span>]]), array([[<span style="color:#ae81ff">5.</span>, <span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">7.</span>, <span style="color:#ae81ff">5.</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#ae81ff">7.</span>, <span style="color:#ae81ff">2.</span>, <span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">9.</span>]])]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> np<span style="color:#f92672">.</span>vsplit(a, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>[array([<span style="color:#ae81ff">5.</span>, <span style="color:#ae81ff">9.</span>, <span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">9.</span>, <span style="color:#ae81ff">3.</span>, <span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">8.</span>, <span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">5.</span>, <span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">7.</span>, <span style="color:#ae81ff">5.</span>]), array([<span style="color:#ae81ff">3.</span>, <span style="color:#ae81ff">7.</span>, <span style="color:#ae81ff">3.</span>, <span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">2.</span>, <span style="color:#ae81ff">2.</span>, <span style="color:#ae81ff">7.</span>, <span style="color:#ae81ff">2.</span>, <span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">9.</span>])]
+</span></span></code></pre></div><p>Horizontal split is dictated by the amount of columns, while vertical split is dictated by the arrays row count. If you try to split into an indivisible amount, it will break.</p>
+<h1 id="copies-and-views">Copies and Views</h1>
+<p>Up until now, I&rsquo;ve briefly mentioned how new arrays are generated from some of the functions we&rsquo;ve used. Now, let&rsquo;s get a more formal definition for exactly what happens in each Scenario.</p>
+<h2 id="no-copy">No Copy</h2>
+<p>When doing basic assignments, there are no copies made of the array. In the example below we have an array, <code>a</code>, and we make <code>b</code> as a reference to <code>a</code>. There is only <em>one</em> array, and <code>a</code> and <code>b</code> reference it at the same time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>],
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>               [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>],
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>				  [<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>]])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> a     <span style="color:#75715e"># no new object is made</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">is</span> a    
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">True</span>
+</span></span></code></pre></div><h2 id="view-or-shallow-copy">View or Shallow Copy</h2>
+<p>We can use <code>view</code> to make a new array object that looks at the same data. We can change the <em>shape</em> of our view and the original array won&rsquo;t change, but if we edit any values of the created array, the values in the original array will change.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Using a from the previous example</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> c <span style="color:#f92672">=</span> a<span style="color:#f92672">.</span>view()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> c <span style="color:#f92672">is</span> a
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> c <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>reshape((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">6</span>))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a<span style="color:#f92672">.</span>shape
+</span></span><span style="display:flex;"><span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> c[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a
+</span></span><span style="display:flex;"><span>array([[   <span style="color:#ae81ff">0</span>,    <span style="color:#ae81ff">1</span>,    <span style="color:#ae81ff">2</span>,    <span style="color:#ae81ff">3</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#ae81ff">1234</span>,    <span style="color:#ae81ff">5</span>,    <span style="color:#ae81ff">6</span>,    <span style="color:#ae81ff">7</span>],
+</span></span><span style="display:flex;"><span>       [   <span style="color:#ae81ff">8</span>,    <span style="color:#ae81ff">9</span>,   <span style="color:#ae81ff">10</span>,   <span style="color:#ae81ff">11</span>]])
+</span></span></code></pre></div><h2 id="deep-copy">Deep Copy</h2>
+<p>In the instance we do want a complete copy of an array, we can use the <code>copy</code> method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d <span style="color:#f92672">=</span> a<span style="color:#f92672">.</span>copy()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d <span style="color:#f92672">is</span> a
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> d[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">9999</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a
+</span></span><span style="display:flex;"><span>array([[   <span style="color:#ae81ff">0</span>,    <span style="color:#ae81ff">1</span>,    <span style="color:#ae81ff">2</span>,    <span style="color:#ae81ff">3</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#ae81ff">1234</span>,    <span style="color:#ae81ff">5</span>,    <span style="color:#ae81ff">6</span>,    <span style="color:#ae81ff">7</span>],
+</span></span><span style="display:flex;"><span>       [   <span style="color:#ae81ff">8</span>,    <span style="color:#ae81ff">9</span>,   <span style="color:#ae81ff">10</span>,   <span style="color:#ae81ff">11</span>]])
+</span></span></code></pre></div><p>There is a larger list of functions that can be done in NumPy, which can be found <a href="https://numpy.org/doc/stable/user/quickstart.html#functions-and-methods-overview">here</a>.</p>
 
             </div>
         </article>

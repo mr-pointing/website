@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Hosting Services and Authentication Everything we&amp;rsquo;ve done up until this point has been local. Even though some of the things we&amp;rsquo;ve looked at incentive&amp;rsquo;s working in a group, if your repository is local no one else will have access to it. This is where public repositories come into play.
+There are three main players in the repository game; GitHub, GitLab, and Bitbucket. I personally only have experience with GitHub, so we&amp;rsquo;ll be focusing on that going forward." />
+<meta name="keywords" content="homepage, blog, computerscience, git, textbook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-6/" />
+
+
+    <title>
+        
+            Learning Git - Chapter 6 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Learning Git - Chapter 6">
+  <meta itemprop="description" content="Hosting Services and Authentication Everything we’ve done up until this point has been local. Even though some of the things we’ve looked at incentive’s working in a group, if your repository is local no one else will have access to it. This is where public repositories come into play.
+There are three main players in the repository game; GitHub, GitLab, and Bitbucket. I personally only have experience with GitHub, so we’ll be focusing on that going forward.">
+  <meta itemprop="datePublished" content="2024-10-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="275">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Git,Textbook">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Learning Git - Chapter 6">
+  <meta name="twitter:description" content="Hosting Services and Authentication Everything we’ve done up until this point has been local. Even though some of the things we’ve looked at incentive’s working in a group, if your repository is local no one else will have access to it. This is where public repositories come into play.
+There are three main players in the repository game; GitHub, GitLab, and Bitbucket. I personally only have experience with GitHub, so we’ll be focusing on that going forward.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-6/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Learning Git - Chapter 6">
+  <meta property="og:description" content="Hosting Services and Authentication Everything we’ve done up until this point has been local. Even though some of the things we’ve looked at incentive’s working in a group, if your repository is local no one else will have access to it. This is where public repositories come into play.
+There are three main players in the repository game; GitHub, GitLab, and Bitbucket. I personally only have experience with GitHub, so we’ll be focusing on that going forward.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-10-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-01T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Textbook">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-10-01 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-6/">Learning Git - Chapter 6</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="hosting-services-and-authentication">Hosting Services and Authentication</h1>
+<p>Everything we&rsquo;ve done up until this point has been local. Even though some of the things we&rsquo;ve looked at incentive&rsquo;s working in a group, if your repository is local no one else will have access to it. This is where public repositories come into play.</p>
+<p>There are three main players in the repository game; GitHub, GitLab, and Bitbucket. I personally only have experience with GitHub, so we&rsquo;ll be focusing on that going forward.</p>
+<p>We connect to GitHub via HTTPS or SSH, and we&rsquo;re going to learn to make that connection now.</p>
+<h2 id="setting-up-a-hosting-service-account">Setting Up a Hosting Service Account</h2>
+<p>Setting up an account is pretty easy. Go to <a href="https://github.com">GitHub</a> and make an account. Since we&rsquo;re just learning, using your Loughlin account is fine.</p>
+<p>Now that we have an account, we have two ways of making changes to our repository;</p>
+<ol>
+<li>Using GitHub&rsquo;s website and make changes there</li>
+<li>Connecting the local repository to a remote repository and upload changes there</li>
+</ol>
+<p>The second way is our preferred method, and within that decision lies that choice to use HTTPS or SSH. We&rsquo;re going to use HTTPS for this class, so we can look past SSH for now.</p>
+<h3 id="https">HTTPS</h3>
+<p>The <em>authentication</em> process, or identifying yourself to the service, is through a username/email address and password combination. This is made through your GitHub account, and the password is called a <em>Personal Access Token</em>.</p>
+<p>Thankfully, the author of this book (she rocks btw) has a really thorough <a href="https://github.com/annaskoulikari/learninggit">tutorial</a> on how to install Git and get started with GitHub. Follow the link and get started so we can move on to bigger and better things (Like chapter 7).</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-7/">Chapter 7</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/git/">git</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

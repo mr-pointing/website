@@ -2,19 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/computerscience/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/notes/computer-science/internet-and-it/coursera/</loc>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/documentation/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/deep-learning/</loc>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/internet-and-it/</loc>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/me/</loc>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/</loc>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/computerscience/</loc>
+    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/flask/</loc>
+    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/</loc>
+    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2024-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/</loc>
+    <lastmod>2024-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/machinelearning/</loc>
+    <lastmod>2024-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/math/</loc>
+    <lastmod>2024-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/textbook/</loc>
+    <lastmod>2024-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/modules/</loc>
+    <lastmod>2024-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/python/tkinter-tutorial/</loc>
+    <lastmod>2024-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/</loc>
+    <lastmod>2024-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/internet/</loc>
+    <lastmod>2024-10-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/</loc>
+    <lastmod>2024-10-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/git/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-7/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/book/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/entertainment/do-androids-dream-of-electric-sheep/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sciencefiction/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/internet-and-it/coursera/technical-support-fundamentals/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/documentation/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sql/</loc>
@@ -27,9 +99,6 @@
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/arrays/</loc>
@@ -62,25 +131,19 @@
     <loc>http://localhost:1313/tags/algorithms/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/appendix-a/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/appendix-a/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</loc>
-    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/textbook/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/exploratory-data-analysis-with-pandas/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-6/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-6/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/numpy-notes/</loc>
@@ -125,19 +188,13 @@
     <loc>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-anagram/</loc>
     <lastmod>2024-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/book/</loc>
-    <lastmod>2024-09-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/notes/entertainment/edgedancer/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/fantasy/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-5/</loc>
-    <lastmod>2024-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/modules/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-5/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/entertainment/oathbringer/</loc>
@@ -173,7 +230,7 @@
     <loc>http://localhost:1313/notes/computer-science/python/reading-and-writing-files-with-python/</loc>
     <lastmod>2024-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-4/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-4/</loc>
     <lastmod>2024-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---plugins/</loc>
@@ -181,9 +238,6 @@
   </url><url>
     <loc>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</loc>
     <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/me/</loc>
-    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-09-07T00:00:00+00:00</lastmod>
@@ -200,9 +254,6 @@
     <loc>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---preface/</loc>
     <lastmod>2024-09-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/projects/private-gpt/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -212,7 +263,7 @@
     <loc>http://localhost:1313/notes/computer-science/python/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-3/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-3/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/explaining-my-obsidian-to-hugo-workflow/</loc>
@@ -224,7 +275,7 @@
     <loc>http://localhost:1313/tags/website/</loc>
     <lastmod>2024-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-2/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-2/</loc>
     <lastmod>2024-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
@@ -239,13 +290,13 @@
     <loc>http://localhost:1313/tags/html/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/learning-git/learning-git---chapter-1/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/now/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/learning-git/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/manga/</loc>
@@ -257,14 +308,8 @@
     <loc>http://localhost:1313/tags/shonen/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</loc>
+    <loc>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/</loc>
     <lastmod>2024-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/internet/</loc>
-    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/flask/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
@@ -296,13 +341,10 @@
     <loc>http://localhost:1313/tags/apache/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/apache-documentation/</loc>
-    <lastmod>2024-08-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/cookies/</loc>
+    <loc>http://localhost:1313/notes/computer-science/internet-and-it/cookies/</loc>
     <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</loc>
@@ -314,10 +356,10 @@
     <loc>http://localhost:1313/notes/computer-science/hugo/getting-started-with-hugo/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</loc>
+    <loc>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-1/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/classes/</loc>
@@ -347,13 +389,13 @@
     <loc>http://localhost:1313/notes/computer-science/videos/browsers-http-and-you/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/obsidian/templater-formatting-notes/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/introduction-to-algorithms/part-1/</loc>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/</loc>
     <lastmod>2024-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/videos/you-can-do-really-cool-things-with-functions-in-python/</loc>
@@ -369,9 +411,6 @@
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</loc>
-    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sciencefiction/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/entertainment/the-road/</loc>
@@ -440,9 +479,6 @@
     <loc>http://localhost:1313/projects/designing-a-restful-api/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/http-semantics/</loc>
-    <lastmod>2024-06-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/tutorialnotes/</loc>
     <lastmod>2024-06-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -488,9 +524,6 @@
     <loc>http://localhost:1313/tags/essays/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machinelearning/</loc>
-    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/notes/entertainment/naruto/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -515,7 +548,7 @@
     <loc>http://localhost:1313/notes/entertainment/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/computer-science/khan-academy/</loc>
+    <loc>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/obsidian/</loc>

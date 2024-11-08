@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Characterizing Running Times As we saw in Chapter 2, order of growth gives us the ability to quantify the effectiveness of our algorithms, and compare them.
+Us studying these algorithms at large enough input sizes is us studying the asymptotic efficiency of an algorithm. We can say an algorithm that is &amp;ldquo;more asymptotically efficient&amp;rdquo; is the better choice for most cases, save small inputs.
+O-notation, $\Theta$-notation, and $\Omega$-notation We already met $\Theta$-notation in chapter 2; this is a type of asymptotic notation." />
+<meta name="keywords" content="homepage, blog, computerscience, algorithms, textbook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/" />
+
+
+    <title>
+        
+            Introduction to Algorithms - Chapter 3 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Introduction to Algorithms - Chapter 3">
+  <meta itemprop="description" content="Characterizing Running Times As we saw in Chapter 2, order of growth gives us the ability to quantify the effectiveness of our algorithms, and compare them.
+Us studying these algorithms at large enough input sizes is us studying the asymptotic efficiency of an algorithm. We can say an algorithm that is “more asymptotically efficient” is the better choice for most cases, save small inputs.
+O-notation, $\Theta$-notation, and $\Omega$-notation We already met $\Theta$-notation in chapter 2; this is a type of asymptotic notation.">
+  <meta itemprop="datePublished" content="2024-10-02T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-02T00:00:00+00:00">
+  <meta itemprop="wordCount" content="458">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Algorithms,Textbook">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Introduction to Algorithms - Chapter 3">
+  <meta name="twitter:description" content="Characterizing Running Times As we saw in Chapter 2, order of growth gives us the ability to quantify the effectiveness of our algorithms, and compare them.
+Us studying these algorithms at large enough input sizes is us studying the asymptotic efficiency of an algorithm. We can say an algorithm that is “more asymptotically efficient” is the better choice for most cases, save small inputs.
+O-notation, $\Theta$-notation, and $\Omega$-notation We already met $\Theta$-notation in chapter 2; this is a type of asymptotic notation.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Introduction to Algorithms - Chapter 3">
+  <meta property="og:description" content="Characterizing Running Times As we saw in Chapter 2, order of growth gives us the ability to quantify the effectiveness of our algorithms, and compare them.
+Us studying these algorithms at large enough input sizes is us studying the asymptotic efficiency of an algorithm. We can say an algorithm that is “more asymptotically efficient” is the better choice for most cases, save small inputs.
+O-notation, $\Theta$-notation, and $\Omega$-notation We already met $\Theta$-notation in chapter 2; this is a type of asymptotic notation.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-10-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-02T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Textbook">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-10-02 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/">Introduction to Algorithms - Chapter 3</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="characterizing-running-times">Characterizing Running Times</h1>
+<p>As we saw in Chapter 2, order of growth gives us the ability to quantify the effectiveness of our algorithms, and compare them.</p>
+<p>Us studying these algorithms at large enough input sizes is us studying the <strong>asymptotic efficiency</strong> of an algorithm. We can say an algorithm that is &ldquo;<em>more asymptotically efficient</em>&rdquo; is the better choice for most cases, save small inputs.</p>
+<h2 id="o-notation-theta-notation-and-omega-notation">O-notation, $\Theta$-notation, and $\Omega$-notation</h2>
+<p>We already met $\Theta$-notation in chapter 2; this is a type of asymptotic notation.</p>
+<h3 id="o-notation">O-notation</h3>
+<p>O-notation designates the <strong>upper bound</strong> on the asymptotic behavior of a function. We could say, &ldquo;A function <em>grows no faster</em> than a certain rate&hellip;&rdquo;</p>
+<p>Let&rsquo;s examine some random function: $10n^3+100n^2-15n+20$.</p>
+<ul>
+<li>The highest term is $10n^3$, so the rate of growth is $n^3$.</li>
+<li>We could write O($n^3$) to represent that.
+<ul>
+<li>We could also write O($n^4$), since O-notation denotes limits, technically all values greater than the rate of growth are true.</li>
+<li>O($n^c$) for $c&gt;$ 3 in this case.</li>
+</ul>
+</li>
+</ul>
+<h3 id="omega-notation">$\Omega$-notation</h3>
+<p>Similarly, $\Omega$-notation designates the <strong>lower bound</strong> on the asymptotic behavior of a function. &ldquo;A function <em>grows at least as fast</em> as a certain rate&hellip;&rdquo;</p>
+<p>Given the same example as before, we can say $\Omega(n^c)$ for $c&lt;=3$.</p>
+<h3 id="theta-notation">$\Theta$-notation</h3>
+<p>$\Theta$-notation is a <strong>tight bound</strong> on the asymptotic behavior of a function. &ldquo;A function <em>grows precisely</em> at a certain rate&hellip;&rdquo;</p>
+<p>If you can show a functions bounds, $O(f(n))$ &amp; $\Omega(f(n))$, you have shown $\Theta(f(n))$.</p>
+<p>Since from our example we know $O(n^3)$ and $\Omega(n^3)$, $\Theta(n^3)$.</p>
+<h3 id="example-insertion-sort">Example: Insertion Sort</h3>
+<p>What observations can we make about Insertion Sort?</p>
+<ol>
+<li>Outer <code>for</code> loop runs $n-1$ times</li>
+<li>Inner <code>while</code> loop&rsquo;s run depends on the values being sorted; either 0 times (best case), or $j$ times ($i-1$, worst case)</li>
+</ol>
+<p>These two observations gives us the blanket statement of O($n^2$). We would say that <strong>the running time is dictated by the inner loop</strong>.</p>
+<p>The blanket statement can also be said, &ldquo;In all cases&rdquo;, but we know that it can have a time of $\Theta(n)$, so I need more clarification on this.</p>
+<p>The worst-case, $\Omega(n^2)$, can be found using the following example:</p>
+<ul>
+<li>Say that we have an array with a size multiple of 3, 9.</li>
+<li>$A=[7, 8, 9, 3, 4, 1, 2, 5, 6]$</li>
+<li>If we have an instance where the highest values were in the first $n/3$ spots, they&rsquo;d have to move like this:
+<ul>
+<li>Each of the $n/3$ (3) largest values move through each of the $A[n/3+1:2n/3]$ positions to end up somewhere in $A[2n/3+1:n]$.</li>
+<li>Because the first values must move at least $n/3$ (3) times, time taken in the worst case is proportional to $(n/3)(n/3)$, which is $=n^2/9$, which $=\Omega(n^2)$.</li>
+</ul>
+</li>
+</ul>
+<p>Since we have now proved that Insertion Sort runs $O(n^2)$ in all cases and there&rsquo;s an input that makes $\Omega(n^2)$, the worst case is $\Theta(n^2)$.</p>
+<h2 id="asymptotic-notation-formal-definitions">Asymptotic Notation: Formal Definitions</h2>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

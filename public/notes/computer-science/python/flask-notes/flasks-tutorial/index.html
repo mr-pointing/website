@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Link to tutorial.
+I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, Lython. However, since I&amp;rsquo;m starting Sarah&amp;rsquo;s site, and I want to test out a bunch of features/really get to understand Flask, let&amp;rsquo;s go through it once more.
+Last time, I did a combination of going through the tutorial, then making changes as I saw fit." />
+<meta name="keywords" content="homepage, blog, computerscience, flask, python" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/" />
+
+
+    <title>
+        
+            Flask&#39;s Tutorial :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Flask&#39;s Tutorial">
+  <meta itemprop="description" content="Link to tutorial.
+I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, Lython. However, since I’m starting Sarah’s site, and I want to test out a bunch of features/really get to understand Flask, let’s go through it once more.
+Last time, I did a combination of going through the tutorial, then making changes as I saw fit.">
+  <meta itemprop="datePublished" content="2024-11-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-11-06T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1044">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Flask,Python">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Flask&#39;s Tutorial">
+  <meta name="twitter:description" content="Link to tutorial.
+I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, Lython. However, since I’m starting Sarah’s site, and I want to test out a bunch of features/really get to understand Flask, let’s go through it once more.
+Last time, I did a combination of going through the tutorial, then making changes as I saw fit.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Flask&#39;s Tutorial">
+  <meta property="og:description" content="Link to tutorial.
+I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, Lython. However, since I’m starting Sarah’s site, and I want to test out a bunch of features/really get to understand Flask, let’s go through it once more.
+Last time, I did a combination of going through the tutorial, then making changes as I saw fit.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-11-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-06T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Flask">
+    <meta property="article:tag" content="Python">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-11-06 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/">Flask&rsquo;s Tutorial</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p><a href="https://flask.palletsprojects.com/en/stable/tutorial/">Link</a> to tutorial.</p>
+<hr>
+<p>I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, <a href="http://localhost:1313/projects/lython/">Lython</a>. However, since I&rsquo;m starting Sarah&rsquo;s site, and I want to test out a bunch of features/really get to understand Flask, let&rsquo;s go through it once more.</p>
+<p>Last time, I did a combination of going through the tutorial, then making changes as I saw fit. I feel like I missed some crucial details I want to review, and I never documented my process. I&rsquo;m going to completely go through it as if I don&rsquo;t want to make any edits, then make edits <em>after</em> it&rsquo;s finished.</p>
+<p>I also want to run this entirely through PyCharm. The way I know it worked before for me was keeping all my code in a directory inside the PyCharm project.</p>
+<p>Again, this tutorial is meant to teach enough to get an application started and going. The docs go over more detail, and I already went through the <a href="http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/">quick start guide</a> so that has even more detail.</p>
+<h1 id="project-layout">Project Layout</h1>
+<p>If you were doing this from scratch, you could go into any directory and use the following commands to create and enter the directory for the project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir flask-tutorial
+</span></span><span style="display:flex;"><span>cd flask-tutorial
+</span></span></code></pre></div><p>Since we&rsquo;re using PyCharm, let&rsquo;s choose a Flask application when creating our project. We will also create an application directory, <code>flaskr</code>, and a tests directory, <code>tests</code>. We&rsquo;ll talk about tests later, but the <code>flaskr</code> directory will hold all our Python files, as well as the <code>templates</code> directory (HTML pages) and <code>static</code> directory (CSS files).</p>
+<p>The following is a preview of what we&rsquo;re going to end up with at the end of this project.</p>
+<pre tabindex="0"><code>/home/user/Projects/flask-tutorial
+├── flaskr/
+│   ├── __init__.py
+│   ├── db.py
+│   ├── schema.sql
+│   ├── auth.py
+│   ├── blog.py
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── auth/
+│   │   │   ├── login.html
+│   │   │   └── register.html
+│   │   └── blog/
+│   │       ├── create.html
+│   │       ├── index.html
+│   │       └── update.html
+│   └── static/
+│       └── style.css
+├── tests/
+│   ├── conftest.py
+│   ├── data.sql
+│   ├── test_factory.py
+│   ├── test_db.py
+│   ├── test_auth.py
+│   └── test_blog.py
+├── .venv/
+├── pyproject.toml
+└── MANIFEST.in
+</code></pre><p>We can also using the following <code>.gitignore</code> file to ensure we don&rsquo;t grab anything we don&rsquo;t need while using Git.</p>
+<pre tabindex="0"><code>.venv/
+
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
+</code></pre><h1 id="application-setup">Application Setup</h1>
+<p>The Flask application is our <em>instance</em> of the <code>Flask</code> class. We could just use a global <code>Flask</code> instance, but instead we should use something that scales with the growth of our application. We call this an <em>Application Factory</em>. This way, we set up the app in one location, and return it all at once.</p>
+<h2 id="application-factory">Application Factory</h2>
+<p>We&rsquo;re going to change our main Python file, or what would probably be called <code>app.py</code> by PyCharm, into <code>__init__.py</code>. It will contain our application factory <strong>and</strong> tell Python our app&rsquo;s directory is a package.</p>
+<p>Let&rsquo;s go over the parts of our skeleton application factory and what each line does;</p>
+<ol>
+<li><code>app = Flask(__name__, instance_relative_config=True)</code>
+<ul>
+<li>Creates the <code>Flask</code> instance</li>
+<li><code>__name__</code> returns the current Python Module (your project)</li>
+<li><code>instance_relative_config=True</code> tells your application that all configuration files can be found within the <code>instance</code> directory
+<ul>
+<li>The <code>instance</code> folder is important to not be committed/packaged with the <code>flaskr</code> app, so it can contain things like configuration settings and secret keys</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>app.config.from_mapping()</code> helps set up default configuration settings for our app
+<ul>
+<li><code>SECRET_KEY</code> is exactly what it sounds like; a key meant to keep your app safe. We&rsquo;ll leave it as <code>'dev'</code> for now, and change it when we want to deploy our app.</li>
+<li><code>DATABASE</code> is our path to the SQLite database. We use <code>OS</code> to grab our <code>PATH</code>, and use our <code>app</code> instance to give it the path to the <code>instance</code> folder</li>
+</ul>
+</li>
+<li><code>app.config.from_pyfile()</code> helps us set up the <code>config.py</code> file to override default configuration settings
+<ul>
+<li>We use an <code>if</code> statement to check and see if we&rsquo;re running any tests (<code>test_config=True</code>), otherwise use <code>config.py</code></li>
+</ul>
+</li>
+<li><code>os.makedirs()</code> makes sure we have an <code>app.instance_path</code>
+<ul>
+<li>One isn&rsquo;t made by default in Flask, so we&rsquo;ll need one for our SQLite database</li>
+</ul>
+</li>
+<li><code>@app.route()</code> is our first <em>route</em></li>
+</ol>
+<p>We can now run our app. However, if you visit the default location (http://127.0.0.1:5000) you won&rsquo;t see anything. That&rsquo;s because we routed our <code>Hello, world!</code> statement to the <code>/hello</code> location, so we would need to visit http://127.0.0.1:5000/hello to actually see the results.</p>
+<h1 id="define-and-access-the-database">Define and Access the Database</h1>
+<p>SQLite, a super lightweight database management system, is supported by Python via the <code>sqlite3</code> module. This isn&rsquo;t going to go too in depth on how SQLite works, you can visit <a href="http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/">SQLite Tutorial</a> for more information on that.</p>
+<h2 id="connect-to-the-database">Connect to the Database</h2>
+<p>Before we can make edits or add to our database, we first need to create and connect to it. The following code will accomplish this for us:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sqlite3  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> click  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> current_app, g  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_db</span>():  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;db&#39;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> g:  
+</span></span><span style="display:flex;"><span>        g<span style="color:#f92672">.</span>db <span style="color:#f92672">=</span> sqlite3<span style="color:#f92672">.</span>connect(  
+</span></span><span style="display:flex;"><span>            current_app<span style="color:#f92672">.</span>config[<span style="color:#e6db74">&#39;DATABASE&#39;</span>],  
+</span></span><span style="display:flex;"><span>            detect_types<span style="color:#f92672">=</span>sqlite3<span style="color:#f92672">.</span>PARSE_DECLTYPES  
+</span></span><span style="display:flex;"><span>        )  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> g<span style="color:#f92672">.</span>db  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">close_db</span>(e<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):  
+</span></span><span style="display:flex;"><span>    db <span style="color:#f92672">=</span> g<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#39;db&#39;</span>, <span style="color:#66d9ef">None</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> db <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:  
+</span></span><span style="display:flex;"><span>        db<span style="color:#f92672">.</span>close()
+</span></span></code></pre></div><p>We use something called <code>g</code> through Flask; <code>g</code> is a Flask object that is unique upon every request and stores important information multiple functions might use. We create and store it for later use.</p>
+<p><code>current_app</code> is another Flask object that points to the Flask application. Honestly need this part to be explained like I&rsquo;m five cause I&rsquo;m not exactly sure what&rsquo;s going on here. I asked ChatGPT to ELI5;</p>
+<blockquote>
+<p>[!Help]
+Alright, imagine you&rsquo;re building a big Lego city, but instead of building everything all at once, you have little helpers who only build what you need when you ask them.</p>
+<p>In this Lego city, there’s a special “helper” called <code>current_app</code>. This helper knows everything about your city – the roads, buildings, and parks – but only when you’re actually playing with the city. When you’re not playing, <code>current_app</code> doesn’t exist yet.</p>
+<p>So, when you say <code>get_db</code>, it’s like asking for a box of Lego pieces you’ll need later. But <code>current_app</code> can only grab that box once the city is ready and you’re actually playing with it. Because you’ve told it to wait until the right time, it knows exactly what you need and where to get it!</p>
+</blockquote>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/flask/">flask</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

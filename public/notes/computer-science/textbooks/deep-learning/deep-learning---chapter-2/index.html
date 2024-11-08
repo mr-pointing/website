@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Linear Algebra This book covers all topics of linear algebra that are important to deep learning, not necessarily all topics within Linear Algebra. For a text more focused in linear algebra, see here.
+Scalars, Vectors, Matrices, and Tensors Scalars Single numbers, usually denoted by a lowercase variable name, and introduced with some information on the number.
+Ex.
+Let $$s \in R$$ be the slope of the line for a real-valued scalar Let $$n \in N$$ be the number of units for a natural number scalar Vectors An ordered array of numbers, obtainable via the index position of the number in the array." />
+<meta name="keywords" content="homepage, blog, computerscience, AI, machinelearning, textbook, math" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/" />
+
+
+    <title>
+        
+            Deep Learning - Chapter 2 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Deep Learning - Chapter 2">
+  <meta itemprop="description" content="Linear Algebra This book covers all topics of linear algebra that are important to deep learning, not necessarily all topics within Linear Algebra. For a text more focused in linear algebra, see here.
+Scalars, Vectors, Matrices, and Tensors Scalars Single numbers, usually denoted by a lowercase variable name, and introduced with some information on the number.
+Ex.
+Let $$s \in R$$ be the slope of the line for a real-valued scalar Let $$n \in N$$ be the number of units for a natural number scalar Vectors An ordered array of numbers, obtainable via the index position of the number in the array.">
+  <meta itemprop="datePublished" content="2024-10-31T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-31T00:00:00+00:00">
+  <meta itemprop="wordCount" content="339">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,AI,Machinelearning,Textbook,Math">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Deep Learning - Chapter 2">
+  <meta name="twitter:description" content="Linear Algebra This book covers all topics of linear algebra that are important to deep learning, not necessarily all topics within Linear Algebra. For a text more focused in linear algebra, see here.
+Scalars, Vectors, Matrices, and Tensors Scalars Single numbers, usually denoted by a lowercase variable name, and introduced with some information on the number.
+Ex.
+Let $$s \in R$$ be the slope of the line for a real-valued scalar Let $$n \in N$$ be the number of units for a natural number scalar Vectors An ordered array of numbers, obtainable via the index position of the number in the array.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Deep Learning - Chapter 2">
+  <meta property="og:description" content="Linear Algebra This book covers all topics of linear algebra that are important to deep learning, not necessarily all topics within Linear Algebra. For a text more focused in linear algebra, see here.
+Scalars, Vectors, Matrices, and Tensors Scalars Single numbers, usually denoted by a lowercase variable name, and introduced with some information on the number.
+Ex.
+Let $$s \in R$$ be the slope of the line for a real-valued scalar Let $$n \in N$$ be the number of units for a natural number scalar Vectors An ordered array of numbers, obtainable via the index position of the number in the array.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-10-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-31T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Machinelearning">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Math">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-10-31 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/">Deep Learning - Chapter 2</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="linear-algebra">Linear Algebra</h1>
+<p>This book covers all topics of linear algebra that are important to deep learning, not necessarily all topics within Linear Algebra. For a text more focused in linear algebra, see <a href="https://cosmathclub.wordpress.com/wp-content/uploads/2014/10/georgi-shilov-linear-algebra4.pdf">here</a>.</p>
+<h2 id="scalars-vectors-matrices-and-tensors">Scalars, Vectors, Matrices, and Tensors</h2>
+<h3 id="scalars">Scalars</h3>
+<p>Single numbers, usually denoted by a lowercase variable name, and introduced with some information on the number.</p>
+<p><strong>Ex.</strong></p>
+<ul>
+<li>Let $$s \in R$$ be the slope of the line for a <em>real-valued</em> scalar</li>
+<li>Let $$n \in N$$ be the number of units for a <em>natural number</em> scalar</li>
+</ul>
+<h3 id="vectors">Vectors</h3>
+<p>An ordered array of numbers, obtainable via the index position of the number in the array. Usually denoted with a lowercase variable name in bold. The elements start counting at 1, and are usually subscript attached to the name of the vector to show each element.</p>
+<p>We also need to say what type of numbers are stored in the vector; if the numbers are type $$R$$ and have $$n$$ numbers, it&rsquo;s the set of $$R^n$$. A common way of writing vectors; $$x=[x_1,x_2,&hellip;,x_n]$$. Each number is a point in space giving a coordinate point.</p>
+<p>To <em>slice</em> or grab only certain elements, we can write a few different methods of notation. If we define the set $$S={1, 3, 6}$$, we can say that $$x_s$$ to refer to the elements $$x_1, x_3,$$ and $$x_6$$. We could also say $$x_{-1}$$ to refer to the set of all elements <em>except</em> for $$x_1$$. Similarly, $$x_{-S}$$ will refer to all of $$x$$ without the elements defined in set $$S$$.</p>
+<h3 id="matrices">Matrices</h3>
+<p>Where vectors are one dimensional arrays, matrices are two dimensional arrays. Similar rules apply for notation, this time instead of a lowercase we&rsquo;ll use uppercase bold for matrices. To notate a real-valued matrix with a height or $$m$$ and width of $$n$$, we can write that as $$A \in R^{m*n}$$.</p>
+<ul>
+<li>$$A_{1,1}$$ returns the top left number, while $$A_{m, n}$$ returns the bottom right.</li>
+<li><code>:</code> dictates horizontal coordinates; $$A_{i,:}$$ is the horizontal cross section of $$A$$, or the $$i$$-th <em>row</em> of $$A$$, where $$A_{:,i}$$ is the vertical $$i$$-th <em>column</em> of $$A$$.</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/ai/">AI</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/machinelearning/">machinelearning</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/math/">math</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

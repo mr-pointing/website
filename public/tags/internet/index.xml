@@ -7,21 +7,28 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/internet/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AP Computer Science Principles - Unit 2</title>
-      <link>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</link>
-      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-2/</guid>
-      <description>Unit 2: The Internet The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.&#xA;It&amp;rsquo;s an open system, meaning anyone can join given they follow the proper protocols. These include but aren&amp;rsquo;t limited too:&#xA;IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp;amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these.</description>
+      <title>Introduction to Computer Networking</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/</guid>
+      <description>TCP/IP and the Five Layer Network Model Below is a basic table outlining the five layers:&#xA;Layer Name Protocol Protocol Data Unit Addressing Application HTTP, SMTP, etc. Messages n/a Transport TCP/UDP Segment Port #&amp;rsquo;s Network IP Packet/Datagram IP Addresses Data Link Ethernet, Wi-Fi Frames MAC Address Physical n/a Bits n/a Physical Layer: The actual computing device(s) and the cables that connect them, sends and receives signals Data Link Layer: Also known as the network access layer, it&amp;rsquo;s our first protocol to interpret signals sent from and to each computing device Ethernet is our first and most common protocol, which is responsible for transporting data across the network Network Layer: Also know as the internet layer, this layer is what actually allows the computing devices to communicate with each other.</description>
     </item>
     <item>
-      <title>Apache Documentation</title>
-      <link>http://localhost:1313/notes/computer-science/apache-documentation/</link>
-      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/apache-documentation/</guid>
-      <description>Modified: August 02 2024&#xA;Link to documentation.</description>
+      <title>Technical Support Fundamentals</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/coursera/technical-support-fundamentals/</link>
+      <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/coursera/technical-support-fundamentals/</guid>
+      <description>I started this Corsera course in hopes of getting a certification (and that helping me get a job). I&amp;rsquo;m going to assume it&amp;rsquo;s similar to Khan Academy&amp;rsquo;s courses, but we&amp;rsquo;ll find out if completing it helps or not after the fact.&#xA;What is IT Support? The people behind the scenes helping Information Technology (IT) run and troubleshoot issues. Digital literacy is the &amp;ldquo;defining factor&amp;rdquo; that makes a good IT support technician.</description>
+    </item>
+    <item>
+      <title>AP Computer Science Principles - Unit 2</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/</guid>
+      <description>Unit 2: The Internet The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.&#xA;It&amp;rsquo;s an open system, meaning anyone can join given they follow the proper protocols. These include but aren&amp;rsquo;t limited too:&#xA;IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp;amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these.</description>
     </item>
     <item>
       <title>Deploying a Flask Application via Apache</title>
@@ -32,16 +39,16 @@
     </item>
     <item>
       <title>Cookies</title>
-      <link>http://localhost:1313/notes/computer-science/cookies/</link>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/cookies/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/cookies/</guid>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/cookies/</guid>
       <description>Modified: August 02 2024&#xA;Link to Cloudflare, super helpful resource.&#xA;A cookie is a piece of data sent from a web server to a web browser filled with information about the client and session, created when the request was sent from the client to the server.&#xA;The three main reasons why you&amp;rsquo;d want to use cookies would be:&#xA;Session Info: Storing the session info in the cookie allows you to do things like refresh the page or link to another page without having to retype in your user information.</description>
     </item>
     <item>
       <title>AP Computer Science Principles - Unit 1</title>
-      <link>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</link>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-1/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/khan-academy/ap-computer-science-principles---unit-1/</guid>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-1/</guid>
       <description>Unit 1: Digital Information Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&amp;rsquo;ll be looking forward to stealing their ideas.&#xA;Bits and bytes How do computers represent data? All computers understand is Binary, 0&amp;rsquo;s and 1&amp;rsquo;s.&#xA;The video explains the example of using one single wire to transfer electricity through it; on or off.</description>
     </item>
     <item>
@@ -71,13 +78,6 @@
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
       <description>Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
-    </item>
-    <item>
-      <title>HTTP Semantics</title>
-      <link>http://localhost:1313/notes/computer-science/http-semantics/</link>
-      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/http-semantics/</guid>
-      <description>Modified: June 20 2024&#xA;Following this documentation.</description>
     </item>
   </channel>
 </rss>

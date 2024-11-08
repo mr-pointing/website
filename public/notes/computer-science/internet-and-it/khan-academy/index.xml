@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Khan Academy on Mr. Pointing</title>
+    <link>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/</link>
+    <description>Recent content in Khan Academy on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AP Computer Science Principles - Unit 2</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/</guid>
+      <description>Unit 2: The Internet The internet is a global connection of computers communicating with one another. The constant flow of input and output keeps the internet going.&#xA;It&amp;rsquo;s an open system, meaning anyone can join given they follow the proper protocols. These include but aren&amp;rsquo;t limited too:&#xA;IP: Protocol for identifying IP addresses with some routing strategy to send and receive information TCP/UDP: Protocols that transfer packets of data that check for errors along the route TLS: Protocol for encrypting data HTTP &amp;amp; DNS: Protocols for internet browsers Even though we likely use the internet everyday, a lot of these protocols are so far abstracted that we hardly have to think about these.</description>
+    </item>
+    <item>
+      <title>AP Computer Science Principles - Unit 1</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-1/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-1/</guid>
+      <description>Unit 1: Digital Information Most of this I should know, being a computer science teacher. However, outlining this should make teaching this rather boring portion easier. I want to try implementing more diagrams while I teach; I&amp;rsquo;ll be looking forward to stealing their ideas.&#xA;Bits and bytes How do computers represent data? All computers understand is Binary, 0&amp;rsquo;s and 1&amp;rsquo;s.&#xA;The video explains the example of using one single wire to transfer electricity through it; on or off.</description>
+    </item>
+  </channel>
+</rss>
