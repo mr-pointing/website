@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 22 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Git - Chapter 9</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/</guid>
+      <description>Three Way Merges Every merge we&amp;rsquo;ve done so far has been a fast-forward merge. In this chapter, we&amp;rsquo;re going to take a look at performing our first three way merge, and also get some hands on experience with how editing our files out of order will affect our work flow. First, let&amp;rsquo;s simplify our visualization and update it to reflect where we left off in the last chapter;&#xA;Again, three way merges are important and necessary to understand.</description>
+    </item>
+    <item>
+      <title>Learning Git - Chapter 8</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/</guid>
+      <description>Cloning and Fetching As it stands, we have just pushed our local repo onto our remote repo, and updated it with all currently created branches. For this chapter, we&amp;rsquo;re going to start working through what it would be like if you&amp;rsquo;d like to start working on your project with a friend or coworker through an essential core concept of Git called cloning, or copying a remote repository.&#xA;Cloning a Remote Repository Like we know for the beginning of this text, Git is a major player in collaborative coding.</description>
+    </item>
     <item>
       <title>Learning Git - Chapter 7</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-7/</link>

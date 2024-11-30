@@ -52,7 +52,7 @@ I was really hesitant to start this note, since I basically ran through this tut
 Last time, I did a combination of going through the tutorial, then making changes as I saw fit.">
   <meta itemprop="datePublished" content="2024-11-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-11-06T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1044">
+  <meta itemprop="wordCount" content="2150">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Flask,Python">
 
@@ -283,6 +283,127 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 <p>In this Lego city, there’s a special “helper” called <code>current_app</code>. This helper knows everything about your city – the roads, buildings, and parks – but only when you’re actually playing with the city. When you’re not playing, <code>current_app</code> doesn’t exist yet.</p>
 <p>So, when you say <code>get_db</code>, it’s like asking for a box of Lego pieces you’ll need later. But <code>current_app</code> can only grab that box once the city is ready and you’re actually playing with it. Because you’ve told it to wait until the right time, it knows exactly what you need and where to get it!</p>
 </blockquote>
+<p><code>sqlite3.connect()</code> is the command used to make the connection between your app and your SQLite database. It uses <code>current_app</code> to point at the database configuration file we&rsquo;ll create later. <code>sqlite3.Row</code> is another SQLite configuration that sets up returned rows as dictionaries, which gives you the ability to call columns by the key.</p>
+<p>Finally, the <code>close_db</code> function checks if <code>g.db</code> was initialized, and closes the connection if it exists. We&rsquo;ll use this within our app factory to allow to database to be open and closed with each request.</p>
+<h2 id="create-the-tables">Create the Tables</h2>
+<p>We nee to create the schema that will allow for your tables to be created. For this project, we&rsquo;re building a site users can both log into and make posts on, so we&rsquo;ll make two tables; <code>user</code> and <code>post</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> <span style="color:#66d9ef">user</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> post;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">user</span> (
+</span></span><span style="display:flex;"><span>  id INTEGER <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> AUTOINCREMENT,
+</span></span><span style="display:flex;"><span>  username TEXT <span style="color:#66d9ef">UNIQUE</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  password TEXT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> post (
+</span></span><span style="display:flex;"><span>  id INTEGER <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> AUTOINCREMENT,
+</span></span><span style="display:flex;"><span>  author_id INTEGER <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  created <span style="color:#66d9ef">TIMESTAMP</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">CURRENT_TIMESTAMP</span>,
+</span></span><span style="display:flex;"><span>  title TEXT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  body TEXT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FOREIGN</span> <span style="color:#66d9ef">KEY</span> (author_id) <span style="color:#66d9ef">REFERENCES</span> <span style="color:#66d9ef">user</span> (id)
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>We also have to make the Python code that will run these SQL queries;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">init_db</span>():  
+</span></span><span style="display:flex;"><span>    db <span style="color:#f92672">=</span> get_db()  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> current_app<span style="color:#f92672">.</span>open_resource(<span style="color:#e6db74">&#39;schema.sql&#39;</span>) <span style="color:#66d9ef">as</span> f:  
+</span></span><span style="display:flex;"><span>        db<span style="color:#f92672">.</span>executescript(f<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@click.command</span>(<span style="color:#e6db74">&#39;init-db&#39;</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">init_db_command</span>():  
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Clears existing tables/data and creates new tables&#34;&#34;&#34;</span>  
+</span></span><span style="display:flex;"><span>    init_db()  
+</span></span><span style="display:flex;"><span>    click<span style="color:#f92672">.</span>echo(<span style="color:#e6db74">&#34;Database initialized!&#34;</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>sqlite3<span style="color:#f92672">.</span>register_converter(  
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;timestamp&#34;</span>, <span style="color:#66d9ef">lambda</span> v: datetime<span style="color:#f92672">.</span>fromisoformat(v<span style="color:#f92672">.</span>decode())  
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>We use <code>current_app</code> again here, since our location isn&rsquo;t always the same. From what I understand, <code>current_app</code> will always have the path back to our app&rsquo;s directory, or the <code>flaskr</code> folder. This way, we can use <code>.open_resource()</code> and pass in the schema file, and it&rsquo;ll be able to access it no problem.</p>
+<p>The <code>@click.command</code> wrapper allows us to run the <code>init_db()</code> command via the command line, which is extra convenient. Finally, the <code>sqlite.register_converter()</code> command lets Python know how to put timestamp values into the database.</p>
+<p>Now that these commands are made, they have to be registered with the application so they can get recognized and used. We can do this with a function in our database file telling Flask where to get those commands;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">init_app</span>(app):
+</span></span><span style="display:flex;"><span>	app<span style="color:#f92672">.</span>teardown_appcontext(close_db)
+</span></span><span style="display:flex;"><span>	app<span style="color:#f92672">.</span>cli<span style="color:#f92672">.</span>add_command(init_db_command)
+</span></span></code></pre></div><p>Our <code>.teardown_appcontext()</code> method will let Flask know to call that specific function when performing clean up, or after a returned response. We also use <code>.cli.add_command()</code> to register our new command line interface command.</p>
+<p>Now that our <code>db.py</code> file is all set up, we need to tell our application factory to call and use the database; add the following to the end of your app factory <em>before</em> returning the app.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_app</span>():
+</span></span><span style="display:flex;"><span>	app <span style="color:#f92672">=</span> <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># existing code up above</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">from</span> . <span style="color:#f92672">import</span> db
+</span></span><span style="display:flex;"><span>	db<span style="color:#f92672">.</span>init_app(app)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> app
+</span></span></code></pre></div><p>Once done, we can now use the follow command in the terminal to initialize our new database;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>flask --app flaskr init-db
+</span></span></code></pre></div><p>After, you should see your message appear telling you the database was initialized, and there should now be a <code>flaskr.sqlite</code> file within your instance directory.</p>
+<h1 id="blueprints-and-views">Blueprints and Views</h1>
+<p>When using our application, we&rsquo;re going to perform multiple requests for information. A <em>view</em> is a function in Flask written to deal with these requests. They work in both ways; they can help generate responses and URLs.</p>
+<p>A <em>blueprint</em> is a way to organize groups of related views and any other pieces of code you might need. For our <code>Flaskr</code> app, we have two blueprints; authentication and blog posts. First we&rsquo;ll define the authorization blueprint, then add in the blogs later.</p>
+<p>We&rsquo;ll start our <code>auth.py</code> with some imports and create a Blueprint object;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> functools
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>	Blueprint, flash, g, redirect, render_tempalte, request, session, url_for
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> werkzeug.security <span style="color:#f92672">import</span> check_password_hash, generate_password_hash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flaskr.db <span style="color:#f92672">import</span> get_db
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>bp <span style="color:#f92672">=</span> Blueprint(<span style="color:#e6db74">&#39;auth&#39;</span>, __name__, url_prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/auth&#39;</span>)
+</span></span></code></pre></div><p>Our blueprint object takes in the name of it, <code>auth</code>, where it&rsquo;s defined, <code>__name__</code>, and what to append to all URL&rsquo;s using the blueprint. Before we actually define any functions, we have to register our blueprint in our <code>__init__.py</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_app</span>():
+</span></span><span style="display:flex;"><span>	app <span style="color:#f92672">=</span> <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Exisiting code should be here</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">from</span> . <span style="color:#f92672">import</span> auth
+</span></span><span style="display:flex;"><span>	app<span style="color:#f92672">.</span>register_blueprint(auth<span style="color:#f92672">.</span>bp)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> app
+</span></span></code></pre></div><h2 id="making-the-first-view-register">Making the First View: Register</h2>
+<p>Our first view is going to let our user be able to create an account on our app, or a register page. It will give the user a form to submit, and after it&rsquo;ll validate the input, ensuring it&rsquo;s a valid username/password. If not, it&rsquo;ll error out and ask the user to try again.</p>
+<p>An important note is that the view itself is <em>not</em> creating the HTML, we&rsquo;re going to come back and write the actual HTML in a second. Instead, what we&rsquo;ll do is write the Python logic for what needs to be done in order to allow the user to make an account.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.route</span>(<span style="color:#e6db74">&#39;/register&#39;</span>, methods<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;POST&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">register</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
+</span></span><span style="display:flex;"><span>		username <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;username&#39;</span>]
+</span></span><span style="display:flex;"><span>		password <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;password&#39;</span>]
+</span></span><span style="display:flex;"><span>		db <span style="color:#f92672">=</span> get_db()
+</span></span><span style="display:flex;"><span>		error <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> username:
+</span></span><span style="display:flex;"><span>			error <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Username is required.&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> password:
+</span></span><span style="display:flex;"><span>			error <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Password is required.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> error <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>				db<span style="color:#f92672">.</span>execute(
+</span></span><span style="display:flex;"><span>					<span style="color:#e6db74">&#34;INSERT INTO user (username, password) VALUES (?, ?)&#34;</span>,
+</span></span><span style="display:flex;"><span>					(username, generate_password_hash(password)),
+</span></span><span style="display:flex;"><span>				)
+</span></span><span style="display:flex;"><span>				db<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">except</span> db<span style="color:#f92672">.</span>IntegrityError:
+</span></span><span style="display:flex;"><span>				error <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;User </span><span style="color:#e6db74">{</span>username<span style="color:#e6db74">}</span><span style="color:#e6db74"> is already registered.&#34;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#34;auth.login&#34;</span>))
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		flash(error)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;auth/register.html&#39;</span>)
+</span></span></code></pre></div><p>We can walk through each part to gain a better understanding of each part. We are going to use a similar structure for a lot of our functions;</p>
+<ol>
+<li><code>@bp.route</code> is again a wrapper to tell Flask this view should be able to be seen at the <code>/register</code> URL. We also give it two methods that we&rsquo;ll use together, <code>GET</code> and <code>POST</code>. These are REST methods we&rsquo;re looking for.</li>
+<li>We start the function by checking for a <code>POST</code>. If we have one, we&rsquo;re going to evaluate the information passed from a HTML form. We use <code>request.form</code> which is actually a dictionary object, returning the submitted username and password.</li>
+<li>We initialize our database connection with our <code>get_db()</code> function, and set up an error variable which will keep track in case we have an error statement.</li>
+<li>We check for two things before checking against the database, and that&rsquo;s to ensure we have a value for both before checking. If we don&rsquo;t, we assign a value to error which will fail our next check.</li>
+<li>We create another check, making sure we don&rsquo;t have an error. If we do, we send it out, otherwise we keep going.</li>
+<li>A <code>try</code> statement is used to attempt the user entry, but an <code>IntegrityError</code> flag is used as an exception to assign a value to error that tells you the username is already taken. This will prevent duplicate users.</li>
+<li>If there are no errors, we return a redirect to send the user to the login page, <code>auth.login</code>.</li>
+</ol>
 
             </div>
         </article>

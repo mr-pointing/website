@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Question: Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+Symbol Value I 1 V 5 X 10 L 50 C 100 D 500 M 1000
+For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X &#43; II. The number 27 is written as XXVII, which is XX &#43; V &#43; II." />
+<meta name="keywords" content="homepage, blog, computerscience, python, arrays, dictionaries" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/" />
+
+
+    <title>
+        
+            13. Roman to Integer :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="13. Roman to Integer">
+  <meta itemprop="description" content="Question: Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+Symbol Value I 1 V 5 X 10 L 50 C 100 D 500 M 1000
+For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X &#43; II. The number 27 is written as XXVII, which is XX &#43; V &#43; II.">
+  <meta itemprop="datePublished" content="2024-11-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-11-18T00:00:00+00:00">
+  <meta itemprop="wordCount" content="441">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Python,Arrays,Dictionaries">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="13. Roman to Integer">
+  <meta name="twitter:description" content="Question: Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+Symbol Value I 1 V 5 X 10 L 50 C 100 D 500 M 1000
+For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X &#43; II. The number 27 is written as XXVII, which is XX &#43; V &#43; II.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="13. Roman to Integer">
+  <meta property="og:description" content="Question: Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+Symbol Value I 1 V 5 X 10 L 50 C 100 D 500 M 1000
+For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X &#43; II. The number 27 is written as XXVII, which is XX &#43; V &#43; II.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-11-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-18T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Arrays">
+    <meta property="article:tag" content="Dictionaries">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-11-18 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/"><ol start="13">
+<li>Roman to Integer</li>
+</ol>
+</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p><em><strong>Question:</strong></em> Roman numerals are represented by seven different symbols: <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>
+<p><strong>Symbol</strong>       <strong>Value</strong>
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000</p>
+<p>For example, <code>2</code> is written as <code>II</code> in Roman numeral, just two ones added together. <code>12</code> is written as <code>XII</code>, which is simply <code>X + II</code>. The number <code>27</code> is written as <code>XXVII</code>, which is <code>XX + V + II</code>.</p>
+<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:</p>
+<ul>
+<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9. </li>
+<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90. </li>
+<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>
+</ul>
+<p>Given a roman numeral, convert it to an integer.</p>
+<p><em><strong>How to Solve:</strong></em> This is definitely one of those problems that is labeled easy, but looked like an insurmountable force when first looking at it. My biggest struggle was to understand how to do the checks without getting an out of range error.</p>
+<p>Basically, I knew that we would have to constantly compare whatever numeral we&rsquo;re at to the next one, but would run into errors when getting to the end of the list. One of the answers I read was able to solve this pretty nicely, so here&rsquo;s what we&rsquo;re going to have to do;</p>
+<ol>
+<li>Create a mapping (dictionary) of all the numerals and their worth.</li>
+<li>Create a variable to keep track of cost, initialize it to 0.</li>
+<li>Use a <code>for</code> loop from 0 to the length of the string, <code>s</code>.</li>
+<li>Check for two conditions:
+<ol>
+<li>The numeral is less than the numeral after it <strong>AND</strong></li>
+<li>The numeral is not the last one in the string</li>
+</ol>
+</li>
+<li>If both are true, that <em>must</em> mean the numeral we&rsquo;re using is going to subtract some amount, like in the three scenarios discussed above. If so, take <em>away</em> that amount instead of adding it.</li>
+<li>If one is false, add the numeral like normal.</li>
+<li>Return the new amount after the loop is done.</li>
+</ol>
+<p><em><strong>Answer:</strong></em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>m <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#39;I&#39;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#39;V&#39;</span>: <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#39;X&#39;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#39;L&#39;</span>: <span style="color:#ae81ff">50</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#39;C&#39;</span>: <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#39;D&#39;</span>: <span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#39;M&#39;</span>: <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> i <span style="color:#f92672">&lt;</span> len(s) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> m[s[i]] <span style="color:#f92672">&lt;</span> m[s[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]]:
+</span></span><span style="display:flex;"><span>		ans <span style="color:#f92672">-=</span> m[s[i]]
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>		ans <span style="color:#f92672">+=</span> m[s[i]]
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> ans
+</span></span></code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/arrays/">arrays</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/dictionaries/">dictionaries</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -50,7 +50,7 @@ Now that we&amp;rsquo;re beginning to talk about remote repositories, it&amp;rsq
 Now that we’re beginning to talk about remote repositories, it’s important to understand how these projects are started. We’ve been working on our Rainbow project, which we know is a local repository.">
   <meta itemprop="datePublished" content="2024-10-22T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-10-22T00:00:00+00:00">
-  <meta itemprop="wordCount" content="492">
+  <meta itemprop="wordCount" content="1224">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Git,Textbook">
 
@@ -177,7 +177,101 @@ Once again we&rsquo;re back to working on our book project. If I never decided t
     <img src="/images/remote_directory.png"  alt="remote_directory"  class="center"  style="border-radius: 8px;"  />
 
 
-<p>You should now have an empty remote repository.</p>
+<p>You should now have an empty remote repository. We still have to link them, which is what the <code>git remote</code> command is for. The syntax to make this connection is as follows;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add &lt;shortname&gt; &lt;URL&gt;
+</span></span></code></pre></div><p>Remember, we are going to use HTTPS for this, so <code>URL</code> is going to be the URL provided by GitHub, while the <code>shortname</code> will be whatever you call that connection for future use. Like we know from the first few chapters in the history of Git, we should probably use <code>origin</code> for our <code>shortname</code>, since that&rsquo;s the default value used anyways.</p>
+<p>You could also use <code>git remote</code> by itself to return all of the remote repository connections used in your local repository, and <code>git remote -v</code> to grab their <code>shortname</code>&rsquo;s <em>and</em> <code>URL</code>&rsquo;s.</p>
+<p>For me, my command flow looked like this;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git remote <span style="color:#75715e"># noticing I don&#39;t have anything returned</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git remote add origin https://github.com/mr-pointing/rainbow-remote.git
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git remote
+</span></span><span style="display:flex;"><span>origin      <span style="color:#75715e"># now I have the shortname (origin) appearing</span>
+</span></span></code></pre></div><p>If we were to add onto our diagram from just before, there would now be a line going from our local repository, pointing to our new remote repository. However, it would still be empty, and it&rsquo;s important to note this is only a one way relationship; the local repository is not receiving anything from the remote.</p>
+<h2 id="remote-branches-and-remote-tracking-branches">Remote Branches and Remote-Tracking Branches</h2>
+<p>A <em>remote branch</em> is just a branch in a remote repository, pretty simple. However it seems that they work a little differently than our local branches. They don&rsquo;t update alongside our local commits; they will only be updated with a <em>push</em>.</p>
+<p>Another branch that seems important is the <em>remote-tracking branch</em>, which acts like a placeholder for the remote repository. It&rsquo;s a reference inside your local repo for your remote repo (I&rsquo;m going to start abbreviating repository to repo mid sentence, it&rsquo;s just faster and easier at this point) that has a pointer to the commit that the remote repository had at the last connection, sometimes referred as the <em>upstream branch</em>. This is sometimes chosen by Git, but otherwise can be chosen (we&rsquo;ll come back to this in Chapter 9).</p>
+<p>Let&rsquo;s actually make that push we were just talking about. We can use the following syntax to make a push onto a remote repo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push &lt;shortname&gt; &lt;branch_name&gt;
+</span></span></code></pre></div><p>When doing this, you&rsquo;ll actually create both a remote branch and a remote-tracking branch. We&rsquo;ll also be able to use <code>git branch --all</code> to see the new branch changes.</p>
+<p>Also, before we do this, make sure to point <code>HEAD</code> at <code>main</code>, and your on your <code>yellow</code> commit. Also, this took me <em><strong>forever</strong></em> to understand, but I think because I was using Linux I needed to generate a <em>Personal Access Token</em> in your developer settings, and it wouldn&rsquo;t accept my password as authentication.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git push origin main 
+</span></span><span style="display:flex;"><span>Username <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#39;https://github.com&#39;</span>: mr-pointing
+</span></span><span style="display:flex;"><span>Password <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#39;https://mr-pointing@github.com&#39;</span>:
+</span></span><span style="display:flex;"><span>Enumerating objects: 9, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Counting objects: 100% <span style="color:#f92672">(</span>9/9<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Delta compression using up to <span style="color:#ae81ff">4</span> threads
+</span></span><span style="display:flex;"><span>Compressing objects: 100% <span style="color:#f92672">(</span>5/5<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Writing objects: 100% <span style="color:#f92672">(</span>9/9<span style="color:#f92672">)</span>, <span style="color:#ae81ff">744</span> bytes | 744.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Total <span style="color:#ae81ff">9</span> <span style="color:#f92672">(</span>delta 1<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>remote: Resolving deltas: 100% <span style="color:#f92672">(</span>1/1<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>To https://github.com/mr-pointing/rainbow-remote.git
+</span></span><span style="display:flex;"><span> * <span style="color:#f92672">[</span>new branch<span style="color:#f92672">]</span>      main -&gt; main
+</span></span><span style="display:flex;"><span>branch <span style="color:#e6db74">&#39;main&#39;</span> set up to track <span style="color:#e6db74">&#39;origin/main&#39;</span>.
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>  feature
+</span></span><span style="display:flex;"><span>* main
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4 <span style="color:#f92672">(</span>HEAD -&gt; main, origin/main, feature<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Sep <span style="color:#ae81ff">14</span> 16:57:14 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    yellow
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit ae65b50098378ac6bf0cbe9ab92a9884b98db61b
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Fri Sep <span style="color:#ae81ff">13</span> 15:59:13 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    orange
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit f54fa770db92bbe31125032abb853f7dd6af414b
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Thu Sep <span style="color:#ae81ff">12</span> 15:59:22 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    red
+</span></span></code></pre></div><p>Our visualization now looks like this;</p>
+
+    <img src="/images/remote_first_update.png"  alt="remote_first_update"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We now have our remote branch reflecting the branch we committed. Importantly, that means we don&rsquo;t have the <code>feature</code> branch as a part of our remote repo. We&rsquo;ll have to do this manually;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git switch feature
+</span></span><span style="display:flex;"><span>Switched to branch <span style="color:#e6db74">&#39;feature&#39;</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git push origin feature
+</span></span><span style="display:flex;"><span>Username <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#39;https://github.com&#39;</span>: mr-pointing
+</span></span><span style="display:flex;"><span>Password <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#39;https://mr-pointing@github.com&#39;</span>:
+</span></span><span style="display:flex;"><span>Total <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>remote:
+</span></span><span style="display:flex;"><span>remote: Create a pull request <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#39;feature&#39;</span> on GitHub by visiting:
+</span></span><span style="display:flex;"><span>remote:      https://github.com/mr-pointing/rainbow-remote/pull/new/feature
+</span></span><span style="display:flex;"><span>remote:
+</span></span><span style="display:flex;"><span>To https://github.com/mr-pointing/rainbow-remote.git
+</span></span><span style="display:flex;"><span> * <span style="color:#f92672">[</span>new branch<span style="color:#f92672">]</span>      feature -&gt; feature
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>* feature
+</span></span><span style="display:flex;"><span>  main
+</span></span><span style="display:flex;"><span>  remotes/origin/feature
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4 <span style="color:#f92672">(</span>HEAD -&gt; feature, origin/main, origin/feature, main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Sep <span style="color:#ae81ff">14</span> 16:57:14 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    yellow
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit ae65b50098378ac6bf0cbe9ab92a9884b98db61b
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Fri Sep <span style="color:#ae81ff">13</span> 15:59:13 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    orange
+</span></span></code></pre></div><p>Our visualization now looks something like this;</p>
+
+    <img src="/images/remote_second_update.png"  alt="remote_second_update"  class="center"  style="border-radius: 8px;"  />
+
+
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/">Chapter 8</a></p>
 
             </div>
         </article>

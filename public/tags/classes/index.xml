@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/classes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inheritance</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/inheritance/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/inheritance/</guid>
+      <description>According to the AI road map I&amp;rsquo;ve been following, this and the rest of the concepts in this folder are meant to be considered more advanced concepts. Some of these have been covered in the Python Tutorial, some have not. This is the starting note, but I won&amp;rsquo;t link these concepts together unless necessary, as the concepts aren&amp;rsquo;t explicitly tied together.&#xA;What is Inheritance? Inheritance is the concept that you can build a new class based off of, or derived from, an existing class.</description>
+    </item>
     <item>
       <title>How To Use @dataclass in Python</title>
       <link>http://localhost:1313/notes/computer-science/videos/how-to-use-@dataclass-in-python/</link>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Cloning and Fetching As it stands, we have just pushed our local repo onto our remote repo, and updated it with all currently created branches. For this chapter, we&amp;rsquo;re going to start working through what it would be like if you&amp;rsquo;d like to start working on your project with a friend or coworker through an essential core concept of Git called cloning, or copying a remote repository.
+Cloning a Remote Repository Like we know for the beginning of this text, Git is a major player in collaborative coding." />
+<meta name="keywords" content="homepage, blog, computerscience, git, textbook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/" />
+
+
+    <title>
+        
+            Learning Git - Chapter 8 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Learning Git - Chapter 8">
+  <meta itemprop="description" content="Cloning and Fetching As it stands, we have just pushed our local repo onto our remote repo, and updated it with all currently created branches. For this chapter, we’re going to start working through what it would be like if you’d like to start working on your project with a friend or coworker through an essential core concept of Git called cloning, or copying a remote repository.
+Cloning a Remote Repository Like we know for the beginning of this text, Git is a major player in collaborative coding.">
+  <meta itemprop="datePublished" content="2024-11-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-11-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2111">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Git,Textbook">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Learning Git - Chapter 8">
+  <meta name="twitter:description" content="Cloning and Fetching As it stands, we have just pushed our local repo onto our remote repo, and updated it with all currently created branches. For this chapter, we’re going to start working through what it would be like if you’d like to start working on your project with a friend or coworker through an essential core concept of Git called cloning, or copying a remote repository.
+Cloning a Remote Repository Like we know for the beginning of this text, Git is a major player in collaborative coding.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Learning Git - Chapter 8">
+  <meta property="og:description" content="Cloning and Fetching As it stands, we have just pushed our local repo onto our remote repo, and updated it with all currently created branches. For this chapter, we’re going to start working through what it would be like if you’d like to start working on your project with a friend or coworker through an essential core concept of Git called cloning, or copying a remote repository.
+Cloning a Remote Repository Like we know for the beginning of this text, Git is a major player in collaborative coding.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-11-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-09T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Textbook">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-11-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/">Learning Git - Chapter 8</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="cloning-and-fetching">Cloning and Fetching</h1>
+<p>As it stands, we have just pushed our local repo onto our remote repo, and updated it with all currently created branches. For this chapter, we&rsquo;re going to start working through what it would be like if you&rsquo;d like to start working on your project with a friend or coworker through an essential core concept of Git called <em>cloning</em>, or copying a remote repository.</p>
+<h2 id="cloning-a-remote-repository">Cloning a Remote Repository</h2>
+<p>Like we know for the beginning of this text, Git is a major player in collaborative coding. The below example returns to our Book Project for another example of how we would use it.</p>
+<blockquote>
+<p>[!Example Book Project]
+The co-author working on my book with me, if he wants to keep up to date, would need to clone my repo in order to get all of the most current commits.</p>
+<p>This would require getting their GitHub account set up, and me giving them privileges to make commits and pushes.</p>
+</blockquote>
+<p>Since using another machine for a textbook follow along is a little extra, we can happily just use another directory and clone into our remote repo. Make a new directory simply called <code>friend-rainbow</code>. We can use the following git command to get this going;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone &lt;URL&gt; &lt;directory_name&gt;
+</span></span></code></pre></div><p>This will put whichever remote repo&rsquo;s URL you provided into the specified directory. Here&rsquo;s exactly what happens when call that <code>clone</code> command;</p>
+<ol>
+<li>Creates a project directory into the specified directory (in this case, <code>friend-rainbow</code>)</li>
+<li>Initializes a local repo in <code>friend-repo</code></li>
+<li>Downloads all data on remote repo</li>
+<li>Adds a connection to the remote repo with the name <code>origin</code> in the new local repo</li>
+</ol>
+<p>We can use a few git commands to inspect the changes and state of our <code>friend-rainbow</code> directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; cd friend-rainbow <span style="color:#75715e"># in case you&#39;re not already there, navigate into your new local repo</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git remote -v
+</span></span><span style="display:flex;"><span>origin	https://github.com/mr-pointing/rainbow-remote.git <span style="color:#f92672">(</span>fetch<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>origin	https://github.com/mr-pointing/rainbow-remote.git <span style="color:#f92672">(</span>push<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>* main
+</span></span><span style="display:flex;"><span>  remotes/origin/HEAD -&gt; origin/main
+</span></span><span style="display:flex;"><span>  remotes/origin/feature
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4 <span style="color:#f92672">(</span>HEAD -&gt; main, origin/main, origin/feature, origin/HEAD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Sep <span style="color:#ae81ff">14</span> 16:57:14 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    yellow
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit ae65b50098378ac6bf0cbe9ab92a9884b98db61b
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Fri Sep <span style="color:#ae81ff">13</span> 15:59:13 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    orange
+</span></span></code></pre></div><p>First up, we use the <code>remote -v</code> command to list out our remote repo. Then, we use <code>git branch --all</code> to retrieve all branches; notice how there is no local feature branch? Small but important detail. <code>feature</code> and <code>main</code> exist as remote branches, while we only have one local branch, <code>main</code>. There is also a remote <code>HEAD</code> pointing to the remote <code>main</code>branch. We&rsquo;ll go over the questions that arise from cloning in the next few sections, but first, let&rsquo;s get a better visualization of where we&rsquo;re at in our project.</p>
+
+    <img src="/images/friend_rainbow_viz.png"  alt="friend_rainbow_viz"  class="center"  style="border-radius: 8px;"  />
+
+
+<h3 id="what-is-originhead">What is <code>origin/HEAD</code>?</h3>
+<p>Like we saw above, we have this <code>remote/origin/HEAD</code> branch pointing at <code>origin/main</code>. This is here so Git can know when to stop cloning, or when it&rsquo;s given you the designated <code>HEAD</code> branch defined in the remote repository. For the rest of the visualizations thought, the author leaves it out, so I&rsquo;ll do the same.</p>
+<h3 id="why-no-feature-branch">Why no <code>feature</code> branch?</h3>
+<p>When we clone a repository, we are only going to locally receive the branch being pointed at by that <code>origin/HEAD</code> pointer we just learned about. So, in order to actually get onto the feature branch, we&rsquo;ll have to switch onto it, and it&rsquo;ll create a local branch for us based on the <code>feature</code> branch on the remote repo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git switch feature
+</span></span><span style="display:flex;"><span>branch <span style="color:#e6db74">&#39;feature&#39;</span> set up to track <span style="color:#e6db74">&#39;origin/feature&#39;</span>.
+</span></span><span style="display:flex;"><span>Switched to a new branch <span style="color:#e6db74">&#39;feature&#39;</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>* feature
+</span></span><span style="display:flex;"><span>  main
+</span></span><span style="display:flex;"><span>  remotes/origin/HEAD -&gt; origin/main
+</span></span><span style="display:flex;"><span>  remotes/origin/feature
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span></code></pre></div><p>Now, our local <code>HEAD</code> is pointing at our new local branch, <code>feature</code>.</p>
+<h2 id="deleting-branches">Deleting Branches</h2>
+<p>The same reasons why we&rsquo;d delete anything apply to git; we don&rsquo;t want things we aren&rsquo;t using or referencing, and it helps keep a project organized. Obviously, make sure you don&rsquo;t need any of the work on a branch before you commit it, by merging the work onto a branch you&rsquo;re using.</p>
+<p>Funnily enough, when you delete a branch you don&rsquo;t actually delete any of the commits made on that branch. They&rsquo;re actually still there, but really hard to reach since there is no branch in which to retrieve them from.</p>
+<p>Maybe your friend working in the <code>friend-rainbow</code> branch doesn&rsquo;t want to work on the <code>feature</code> branch anymore. It&rsquo;s deletion comes in three parts; the remote branch, the remote-tracking branch, and the local branch.</p>
+<p>We can delete a remote branch and remote-tracking branch at once with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push &lt;shortname&gt; -d &lt;branch_name&gt;
+</span></span></code></pre></div><p>Deleting a local branch is also a relatively simple command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -d &lt;branch_name&gt;
+</span></span></code></pre></div><p>The following code is going to walk through us acting as our friend in our <code>friend-rainbow</code> repo. Important to notice that we have to be on a different branch in order to delete <code>feature</code>, you cannot delete a branch you&rsquo;re currently on.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>* feature
+</span></span><span style="display:flex;"><span>  main
+</span></span><span style="display:flex;"><span>  remotes/origin/HEAD -&gt; origin/main
+</span></span><span style="display:flex;"><span>  remotes/origin/feature
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git push origin -d feature
+</span></span><span style="display:flex;"><span>Username <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#39;https://github.com&#39;</span>: mr-pointing
+</span></span><span style="display:flex;"><span>Password <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#39;https://mr-pointing@github.com&#39;</span>:
+</span></span><span style="display:flex;"><span>To https://github.com/mr-pointing/rainbow-remote.git
+</span></span><span style="display:flex;"><span> - <span style="color:#f92672">[</span>deleted<span style="color:#f92672">]</span>         feature
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>* feature
+</span></span><span style="display:flex;"><span>  main
+</span></span><span style="display:flex;"><span>  remotes/origin/HEAD -&gt; origin/main
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git switch main
+</span></span><span style="display:flex;"><span>Switched to branch <span style="color:#e6db74">&#39;main&#39;</span>
+</span></span><span style="display:flex;"><span>Your branch is up to date with <span style="color:#e6db74">&#39;origin/main&#39;</span>.
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch -d feature
+</span></span><span style="display:flex;"><span>Deleted branch feature <span style="color:#f92672">(</span>was 43a7cff<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>* main
+</span></span><span style="display:flex;"><span>  remotes/origin/HEAD -&gt; origin/main
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span></code></pre></div><p>In our, or the first <code>rainbow</code> directory, we&rsquo;ll still have access to our feature branch. Not only that, but we&rsquo;ll still have our <code>origin/feature</code> branch, which we&rsquo;ll delete later.</p>
+<h2 id="git-collaborations-and-branches">Git Collaborations and Branches</h2>
+<p>When working on a project, it&rsquo;s good common practice to give you and your team some conventions and rules to follow about making commits, pushes, commit messages, and so on.</p>
+<p>We covered this a few chapters ago, but remember to discuss these with the people you&rsquo;re working with. Now that we know how to make branches, it&rsquo;s usually a good idea to work on individual branches before making any merges or commits to the main branch, which then can be reviewed by the team/team leader before integration.</p>
+<h3 id="walking-through-collaboration">Walking Through Collaboration</h3>
+<p>To get a hands on approach of good collaboration practices, let&rsquo;s start acting like our friend and make a new commit to our <code>rainbowcolors.txt</code> file. Following the rainbow theme, add in &ldquo;Green is the fourth color of the rainbow.&rdquo; to line 4. Then, run the following commands;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git add rainbowcolors.txt
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git commit -m <span style="color:#e6db74">&#34;green&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>main dbae3cd<span style="color:#f92672">]</span> green
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">1</span> file changed, <span style="color:#ae81ff">1</span> insertion<span style="color:#f92672">(</span>+<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit dbae3cde2f90035d9bfcc5c9d970aba10237c2ed <span style="color:#f92672">(</span>HEAD -&gt; main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Thu Nov <span style="color:#ae81ff">21</span> 12:44:27 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    green
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4 <span style="color:#f92672">(</span>origin/main, origin/HEAD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Sep <span style="color:#ae81ff">14</span> 16:57:14 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    yellow
+</span></span></code></pre></div><p>Our new visualization looks like this;</p>
+
+    <img src="/images/friend_rainbow_green_update.png"  alt="friend_rainbow_green_update"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>An important reflection in this update is that although <code>HEAD</code> has moved, the <code>origin/main</code> pointer in <code>friend-rainbow</code> is still pointing at yellow, since we didn&rsquo;t push anything to our remote repo.</p>
+<p>Since we&rsquo;re pushing work from a local branch into a remote branch. If there happens to be a default upstream branch, we can use <code>git push</code> and call it a day. If there isn&rsquo;t however, we&rsquo;ll have to specify one. If you want to see if there is, you can use <code>git branch -vv</code>, or the &ldquo;very verbose&rdquo; option for branch information. When running that from your <code>friend-rainbow</code> directory, you should get the following output;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git branch -vv
+</span></span><span style="display:flex;"><span>* main dbae3cd <span style="color:#f92672">[</span>origin/main: ahead 1<span style="color:#f92672">]</span> green
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git status
+</span></span><span style="display:flex;"><span>On branch main
+</span></span><span style="display:flex;"><span>Your branch is ahead of <span style="color:#e6db74">&#39;origin/main&#39;</span> by <span style="color:#ae81ff">1</span> commit.
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>use <span style="color:#e6db74">&#34;git push&#34;</span> to publish your local commits<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nothing to commit, working tree clean 
+</span></span></code></pre></div><p>This output should make sense; we&rsquo;re still on main, we got rid of <code>feature</code>, and we the upstream branch (or the remote branch <code>origin/main</code>) never got our <code>green</code> commit, so it should be one step behind us. The <code>ahead 1</code> is actually referring to us, which you can see more explicitly in the second command used above, <code>git status</code>. Since the branch we want to push to is our default upstream branch, we can nicely just use <code>git push</code> to upload our commit to the remote repo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git push
+</span></span><span style="display:flex;"><span>Enumerating objects: 5, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Counting objects: 100% <span style="color:#f92672">(</span>5/5<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Delta compression using up to <span style="color:#ae81ff">4</span> threads
+</span></span><span style="display:flex;"><span>Compressing objects: 100% <span style="color:#f92672">(</span>2/2<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Writing objects: 100% <span style="color:#f92672">(</span>3/3<span style="color:#f92672">)</span>, <span style="color:#ae81ff">292</span> bytes | 292.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Total <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>delta 1<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>remote: Resolving deltas: 100% <span style="color:#f92672">(</span>1/1<span style="color:#f92672">)</span>, completed with <span style="color:#ae81ff">1</span> local object.
+</span></span><span style="display:flex;"><span>To https://github.com/mr-pointing/rainbow-remote.git
+</span></span><span style="display:flex;"><span>   43a7cff..dbae3cd  main -&gt; main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git status
+</span></span><span style="display:flex;"><span>On branch main
+</span></span><span style="display:flex;"><span>Your branch is up to date with <span style="color:#e6db74">&#39;origin/main&#39;</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nothing to commit, working tree clean
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit dbae3cde2f90035d9bfcc5c9d970aba10237c2ed <span style="color:#f92672">(</span>HEAD -&gt; main, origin/main, origin/HEAD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Thu Nov <span style="color:#ae81ff">21</span> 12:44:27 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    green
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Sep <span style="color:#ae81ff">14</span> 16:57:14 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    yellow
+</span></span></code></pre></div><p>Again, we can use commands like <code>status</code> and <code>log</code> to help track our progress. If your output looks vastly different to mine, maybe retrace your steps before moving forward. Our new visualization can be seen below.</p>
+
+    <img src="/images/friend_green_push.png"  alt="friend_green_push"  class="center"  style="border-radius: 8px;"  />
+
+
+<h2 id="incorporating-changes-from-the-remote-repository">Incorporating Changes from the Remote Repository</h2>
+<p>Unfortunately for us, since our friend is working from a different local repo, when he pushes to the remote repo we are both using, my local repo does <strong>not</strong> automatically update. I say unfortunately, because it means a little more work for us, but really it&rsquo;s a blessing. Say for example, our friend uploaded something that broke our code (for our project&rsquo;s sake, say they incorrectly named Green as the last color of the rainbow), it be broken <em>everywhere</em>. That is obviously, really bad.</p>
+<p>We are going to have to go get the updates made to our remote repo ourselves. This does put more responsibility on our shoulders, but that&rsquo;s sort of our thing as software developers.</p>
+<p>One way we can refer to getting the updated repo information is a <em>fetch</em>. We are fetching a repo when we want to just download all of the changes, without any integration. To actually integrate the data we downloaded, we&rsquo;re going to have to perform a <em>merge</em>. The merging process takes whatever changes were fetched from the remote repo. Later on we&rsquo;ll learn how to combine these, but for now let&rsquo;s take this one step at time.</p>
+<h4 id="fetch">Fetch</h4>
+<p>To fetch a branch is, like most git commands, straight-forward. Without specifying a branch name, it will grab <code>origin</code> or the defined upstream branch. The syntax is;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git fetch &lt;shortname&gt;
+</span></span></code></pre></div><p>The fetched data isn&rsquo;t saved only onto the remote branches, without any merging into our local branches.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git log --all
+</span></span><span style="display:flex;"><span>commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4 <span style="color:#f92672">(</span>HEAD -&gt; feature, origin/main, origin/feature, main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Sep <span style="color:#ae81ff">14</span> 16:57:14 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    yellow
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit ae65b50098378ac6bf0cbe9ab92a9884b98db61b
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Fri Sep <span style="color:#ae81ff">13</span> 15:59:13 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    orange
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git fetch
+</span></span><span style="display:flex;"><span>remote: Enumerating objects: 5, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Counting objects: 100% <span style="color:#f92672">(</span>5/5<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Compressing objects: 100% <span style="color:#f92672">(</span>1/1<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Total <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>delta 1<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>delta 1<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>from 0<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Unpacking objects: 100% <span style="color:#f92672">(</span>3/3<span style="color:#f92672">)</span>, <span style="color:#ae81ff">272</span> bytes | 45.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>From https://github.com/mr-pointing/rainbow-remote
+</span></span><span style="display:flex;"><span>   43a7cff..dbae3cd  main       -&gt; origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log --all
+</span></span><span style="display:flex;"><span>commit dbae3cde2f90035d9bfcc5c9d970aba10237c2ed <span style="color:#f92672">(</span>origin/main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Thu Nov <span style="color:#ae81ff">21</span> 12:44:27 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    green
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4 <span style="color:#f92672">(</span>HEAD -&gt; feature, origin/feature, main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Sep <span style="color:#ae81ff">14</span> 16:57:14 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    yellow
+</span></span></code></pre></div><h4 id="merge">Merge</h4>
+<p>Just like we did in chapter 5, we&rsquo;re going to do another fast-forward merge. We have to be on the branch we want to merge into, so we should switch back onto main to make that happen.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git switch main
+</span></span><span style="display:flex;"><span>Switched to branch <span style="color:#e6db74">&#39;main&#39;</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git merge origin/main
+</span></span><span style="display:flex;"><span>Updating 43a7cff..dbae3cd
+</span></span><span style="display:flex;"><span>Fast-forward
+</span></span><span style="display:flex;"><span> rainbowcolors.txt | <span style="color:#ae81ff">1</span> +
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">1</span> file changed, <span style="color:#ae81ff">1</span> insertion<span style="color:#f92672">(</span>+<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit dbae3cde2f90035d9bfcc5c9d970aba10237c2ed <span style="color:#f92672">(</span>HEAD -&gt; main, origin/main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Thu Nov <span style="color:#ae81ff">21</span> 12:44:27 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    green
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit 43a7cffeceeaa1be4b55e94f4769ff5dc154cde4 <span style="color:#f92672">(</span>origin/feature, feature<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Sep <span style="color:#ae81ff">14</span> 16:57:14 <span style="color:#ae81ff">2024</span> -0400
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    yellow
+</span></span></code></pre></div><p>To continue our clean up, we should get rid of feature in our local <code>rainbow</code> repo. The only difference is now we don&rsquo;t have a remote repo for our <code>feature</code> branch anymore, so we&rsquo;re going to have to use a different command than last time. This command is actually a use of the fetch command, <code>git fetch -p</code>. The <code>-p</code> stands for prune, which will get rid of any remote branches in our local repo that no longer exist in our remote repo. Then, we can just use a <code>-d</code> command for <code>branch</code> to get rid of the local feature.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>  feature
+</span></span><span style="display:flex;"><span>* main
+</span></span><span style="display:flex;"><span>  remotes/origin/feature
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git fetch -p
+</span></span><span style="display:flex;"><span>From https://github.com/mr-pointing/rainbow-remote
+</span></span><span style="display:flex;"><span> - <span style="color:#f92672">[</span>deleted<span style="color:#f92672">]</span>         <span style="color:#f92672">(</span>none<span style="color:#f92672">)</span>     -&gt; origin/feature
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>  feature
+</span></span><span style="display:flex;"><span>* main
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch -d feature
+</span></span><span style="display:flex;"><span>Deleted branch feature <span style="color:#f92672">(</span>was 43a7cff<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch --all
+</span></span><span style="display:flex;"><span>* main
+</span></span><span style="display:flex;"><span>  remotes/origin/main
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/">Chapter 9</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/git/">git</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

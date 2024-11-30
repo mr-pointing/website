@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced Python on Mr. Pointing</title>
+    <link>http://localhost:1313/notes/computer-science/python/advanced-python/</link>
+    <description>Recent content in Advanced Python on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 11 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/computer-science/python/advanced-python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decorators</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</guid>
+      <description>What is a Decorator? Essentially, a decorator, is a wrapping for function. It allows you to do something before and/or after a function is called. Let&amp;rsquo;s look at a super basic example;&#xA;def uppercase_word(function): def wrapper(): func = function() # call the function to get the return value make_upper = func.upper() return make_upper return wrapper Now, let&amp;rsquo;s say we make a really basic function to print text out;&#xA;def say_word(): return &amp;#34;say wooooord&amp;#34; We could print it out like this:</description>
+    </item>
+    <item>
+      <title>Inheritance</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/inheritance/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/inheritance/</guid>
+      <description>According to the AI road map I&amp;rsquo;ve been following, this and the rest of the concepts in this folder are meant to be considered more advanced concepts. Some of these have been covered in the Python Tutorial, some have not. This is the starting note, but I won&amp;rsquo;t link these concepts together unless necessary, as the concepts aren&amp;rsquo;t explicitly tied together.&#xA;What is Inheritance? Inheritance is the concept that you can build a new class based off of, or derived from, an existing class.</description>
+    </item>
+  </channel>
+</rss>

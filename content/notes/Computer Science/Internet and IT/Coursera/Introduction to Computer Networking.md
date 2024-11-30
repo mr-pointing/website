@@ -159,3 +159,29 @@ There are two main protocols; *Interior Gateway Protocols* or *Exterior Gateway 
 Interior protocols share information within a single autonomous system, or a collection of networks that are all controlled by a single network operator. Think of connecting two LANs for a company; two distinct buildings that need to transfer information to one another.
 
 Distance-Vector protocols are how routing tables started; a router takes a list of it's available networks with how many hops for each, then shared with each device in it's network. This is pretty inefficient, as the information is limiting and usually only about immediate neighbors. 
+
+## Transport Layer
+
+We rely on the transport layer for a myriad of reasons, mostly to help do exactly as the layer is called, transport the actual data from client to server and vice versa. 
+
+One concept vital to the transport layer is *Multiplexing*, or allowing a node existing on a network to actually help direct data flow, or traffic, to where it needs to go. It then uses *Demultiplexing* to receive and accurately place the received data to where it should be displayed or kept. 
+
+Multi- and Demultiplexing use *ports*, or places where expected data is received. These ports are 16-bit numbers that acts like the delivery room for different services/protocols. For example, something like HTTP is port 80; this means that when requesting information from an unencrypted web page, traffic gets sent to port 80 on that device. Another common port is 21, usually reserved for FTP, or *file transfer protocol*. FTP is pretty old but is still in use today. 
+
+There's a video segment on exactly what makes up the TCP packet, but I went over that decently well in [AP Computer Science Principles - Unit 2]({{< ref "AP Computer Science Principles - Unit 2" >}}), so you can check there for more details. It also touched on the three-way handshake, which is also gone over in the same note.
+
+A new concept to me is the term *socket*, which is the instantiation of a TCP connection. It's a little vague, so a good example would use ports; you can send data to any open port, but only the port with the accepting socket from some program will actually respond to it. 
+
+Sockets have a few different states, which are outlined below:
+
+- **LISTEN**: TCP socket is open and ready for any incoming connection, importantly this would only show up on the server side, not the client
+- **SYN_SENT**: A request for synchronization, sent from exclusively the client side. This does not mean a connection has been established yet
+- **SYN_RECEIVED**: The socket that was just in a LISTEN state has received the request to synchronize, or the SYN_SENT (sends out the SYN/ACK flags)
+- **ESTABLISHED**: TCP connection has been made successfully on both sides, seen on both client and server side
+- **FIN_WAIT**: A FIN signal has been sent but no ACK has been received
+- **CLOSE_WAIT**: Connection has been closed, but only on the TCP layer; the application actually has to release the socket to be fully complete
+- **CLOSED**: Connection fully cut and communication is no longer possible
+
+They also explain TCP ports and sockets in a different way than I've seen before. They define the segment of a TCP datagram as the code that details which port should be used to make a connection, and it achieves this on the server side of the connection by telling the server which port to watch for incoming data requests. Once told, that port is now a socket. 
+
+A *firewall* is actually a device/software that will stop incoming traffic if it doesn't pass as expected traffic. They can be seen at any layer, but are mostly seen at the transport layer. They can help redirect the flow of traffic to specific ports, or even cut off access to ports entirely. 

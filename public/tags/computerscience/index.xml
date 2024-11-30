@@ -7,8 +7,43 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Git - Chapter 9</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/</guid>
+      <description>Three Way Merges Every merge we&amp;rsquo;ve done so far has been a fast-forward merge. In this chapter, we&amp;rsquo;re going to take a look at performing our first three way merge, and also get some hands on experience with how editing our files out of order will affect our work flow. First, let&amp;rsquo;s simplify our visualization and update it to reflect where we left off in the last chapter;&#xA;Again, three way merges are important and necessary to understand.</description>
+    </item>
+    <item>
+      <title>13. Roman to Integer</title>
+      <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/</guid>
+      <description>Question: Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.&#xA;Symbol Value I 1 V 5 X 10 L 50 C 100 D 500 M 1000&#xA;For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.</description>
+    </item>
+    <item>
+      <title>Inheritance</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/inheritance/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/inheritance/</guid>
+      <description>According to the AI road map I&amp;rsquo;ve been following, this and the rest of the concepts in this folder are meant to be considered more advanced concepts. Some of these have been covered in the Python Tutorial, some have not. This is the starting note, but I won&amp;rsquo;t link these concepts together unless necessary, as the concepts aren&amp;rsquo;t explicitly tied together.&#xA;What is Inheritance? Inheritance is the concept that you can build a new class based off of, or derived from, an existing class.</description>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</guid>
+      <description>What is a Decorator? Essentially, a decorator, is a wrapping for function. It allows you to do something before and/or after a function is called. Let&amp;rsquo;s look at a super basic example;&#xA;def uppercase_word(function): def wrapper(): func = function() # call the function to get the return value make_upper = func.upper() return make_upper return wrapper Now, let&amp;rsquo;s say we make a really basic function to print text out;&#xA;def say_word(): return &amp;#34;say wooooord&amp;#34; We could print it out like this:</description>
+    </item>
+    <item>
+      <title>Learning Git - Chapter 8</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/</guid>
+      <description>Cloning and Fetching As it stands, we have just pushed our local repo onto our remote repo, and updated it with all currently created branches. For this chapter, we&amp;rsquo;re going to start working through what it would be like if you&amp;rsquo;d like to start working on your project with a friend or coworker through an essential core concept of Git called cloning, or copying a remote repository.&#xA;Cloning a Remote Repository Like we know for the beginning of this text, Git is a major player in collaborative coding.</description>
+    </item>
     <item>
       <title>Flask&#39;s Tutorial</title>
       <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/</link>
@@ -21,7 +56,7 @@
       <link>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/</link>
       <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/</guid>
-      <description>Linear Algebra This book covers all topics of linear algebra that are important to deep learning, not necessarily all topics within Linear Algebra. For a text more focused in linear algebra, see here.&#xA;Scalars, Vectors, Matrices, and Tensors Scalars Single numbers, usually denoted by a lowercase variable name, and introduced with some information on the number.&#xA;Ex.&#xA;Let $$s \in R$$ be the slope of the line for a real-valued scalar Let $$n \in N$$ be the number of units for a natural number scalar Vectors An ordered array of numbers, obtainable via the index position of the number in the array.</description>
+      <description>Linear Algebra This book covers all topics of linear algebra that are important to deep learning, not necessarily all topics within Linear Algebra. For a text more focused in linear algebra, see here.&#xA;Scalars, Vectors, Matrices, and Tensors Scalars Single numbers, usually denoted by a lowercase variable name, and introduced with some information on the number.&#xA;Ex.&#xA;Let $s \in R$ be the slope of the line for a real-valued scalar Let $n \in N$ be the number of units for a natural number scalar Vectors An ordered array of numbers, obtainable via the index position of the number in the array.</description>
     </item>
     <item>
       <title>Tkinter Tutorial</title>
@@ -704,9 +739,9 @@
     </item>
     <item>
       <title>You Are Not Expected To Understand This</title>
-      <link>http://localhost:1313/notes/entertainment/you-are-not-expected-to-understand-this/</link>
+      <link>http://localhost:1313/notes/entertainment/books/you-are-not-expected-to-understand-this/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/entertainment/you-are-not-expected-to-understand-this/</guid>
+      <guid>http://localhost:1313/notes/entertainment/books/you-are-not-expected-to-understand-this/</guid>
       <description>Modified: July 26 2024&#xA;26 short essays on the pieces/lines of code that shaped the modern understanding of computer science.&#xA;6/3/24&#xA;Halfway through, I think some of the stories are interesting. Some of the articles don&amp;rsquo;t go as deep as I think they could/should; some bring up gender/race for seemingly no reason&amp;hellip;others actually delve deeper into the politics of it encouragingly.&#xA;I started Topics I&amp;rsquo;m Interested In because of this book pretty much.</description>
     </item>
     <item>
