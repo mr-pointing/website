@@ -7,8 +7,113 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 2</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Day 11</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-11/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-11/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist Accept Request &amp;amp; Booking Feature &amp;ldquo;Accept&amp;rdquo; button HTML site Booking HTML site Booking Python file (refactor requests to make recs_books?) Accomplishments I got a Twilio phone number waiting to be verified, added the booking form and all the logic to get there, as well as fixed a small issue where requests were stuck and would re-send after refreshing the page.</description>
+    </item>
+    <item>
+      <title>Day 10</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-10/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-10/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist For Today:&#xA;Accept Request &amp;amp; Booking Feature &amp;ldquo;Accept&amp;rdquo; button HTML site Booking HTML site Booking Python file (refactor requests to make recs_books?) Accomplishments Set up the text messaging API account.&#xA;Problems or Issues Next: Day 11</description>
+    </item>
+    <item>
+      <title>Arch Linux on Virtual Machine</title>
+      <link>http://localhost:1313/projects/arch-linux-on-virtual-machine/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/arch-linux-on-virtual-machine/</guid>
+      <description>After running my laptop on Ubuntu for the past 4 months (and enjoying it) I figured it was time to give some other distros a chance. One of the YouTube channels I watch in order to expand my horizons is Mischa van den Burg who specializes in cloud computing dev ops things. I&amp;rsquo;ve watched a ton of his videos and got inspired to learn more about dev ops mostly through his influence.</description>
+    </item>
+    <item>
+      <title>Day 9</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-9/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-9/</guid>
+      <description>Goal From Last Week:&#xA;Format the Email back to client For Today:&#xA;Set up email to Client w/ request form Set up email to Admin saying there&amp;rsquo;s a new request w/ client info Set up text messages for both Accomplishments I was able to get a decent chunk of things today for today. One thing that I&amp;rsquo;m trying to to stress is the prettification of all of my elements. I got the emails working, but they look like crap.</description>
+    </item>
+    <item>
+      <title>Day 8</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-8/</link>
+      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-8/</guid>
+      <description>Goal From Yesterday:&#xA;Format the Email back to client Accomplishments Problems or Issues Tattooed today, so maybe today will be nice free day?&#xA;Next: Day 9</description>
+    </item>
+    <item>
+      <title>Day 7</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-7/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-7/</guid>
+      <description>Goal From Yesterday:&#xA;Format the Email back to client Accomplishments I didn&amp;rsquo;t get to work on this project much this weekend, and honestly I feel kind of okay about it? I am going to be putting off the AI roadmap on hold until this month is over to see if that helps with my workflow. This week I tried to do both and it left me really wanting to pick one over the other, so perhaps I&amp;rsquo;ll just leave the AI roadmap stuff on the back burner while I work hard on the next few days.</description>
+    </item>
+    <item>
+      <title>Week 1</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Day 6</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-6/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-6/</guid>
+      <description>Goal From yesterday:&#xA;Test email sending/receiving Format the Email back to client Accomplishments Today was a very busy work day, so I really didn&amp;rsquo;t get that far on anything. The biggest thing I did was I was able to locate the right documentation to help out with the next few steps. Otherwise, not a whole lot got done today.&#xA;Problems or Issues When running the Gmail quickstart code, I neglected to realize you would need to change the SCOPE list variable to allow more authorizations.</description>
+    </item>
+    <item>
+      <title>Day 5</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-5/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-5/</guid>
+      <description>Goal From yesterday:&#xA;View Request Page (Admin page for Sarah) Work on getting pictures to display Test and integrate email to client &amp;amp; Sarah w/ request form Format the Email back to client Accomplishments Work Time: 1hr&#xA;So far so okay. I was able to finally get the images working, but I had to rely on ChatGPT for help since none of the videos I watched were able to really help.</description>
+    </item>
+    <item>
+      <title>Day 4</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-4/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-4/</guid>
+      <description>Goal From yesterday:&#xA;View Request Page (Admin page for Sarah) Work on the JOIN to bring client info along with each request Work on getting pictures to display Test and integrate email to client &amp;amp; Sarah w/ request form Format the Email back to client Accomplishments Work Time: 1hr 20&#xA;Not my best day, but to be expected. Today wasn&amp;rsquo;t one of my best days, so I shouldn&amp;rsquo;t be too hard on myself.</description>
+    </item>
+    <item>
+      <title>Day 3</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-3/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-3/</guid>
+      <description>Goal From yesterday:&#xA;View Request Page (Admin page for Sarah) Python file (Flask View) HTML file (formatting) Work on the JOIN to bring client info along with each request For today:&#xA;Test and integrate email to client &amp;amp; Sarah w/ request form Format the Email back to client Accomplishments Work Time: 2 hours&#xA;While I didn&amp;rsquo;t get that much done as far as my lists are concerned, I was able to get a lot done today.</description>
+    </item>
+    <item>
+      <title>30 Day Coding Challenge</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/</guid>
+      <description> Goal Create a booking/request site for Tattoo artists.&#xA;Tracker Day 1 2 3 4 5 6 7 Notes Day 1 Day 2 Day 3 Day 4 Day 5 Day 6 Day 7 Day 8 9 10 11 12 13 14 Notes Day 8 Day 9 Day 10 Day 15 16 17 18 19 20 21 Notes Day 22 23 24 25 26 27 28 Notes Day 29 30 31 Notes </description>
+    </item>
+    <item>
+      <title>Day 1</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-1/</link>
+      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-1/</guid>
+      <description>Goal Write down a step-by-step initial guide to follow to help track/maintain progress Complete the initial booking form Set up the SQLite database/schema Accomplishments Work Time: 1hr 45&#xA;So today was the first day and I feel like I was able to make some pretty decent progress. I created a really simple step-by-step guide to keep me on track, and to make the scope less creepy. I also was able to get a working schema for my tables, and I currently have user for Sarah, client for all people who book, and a requests for initial requests.</description>
+    </item>
+    <item>
+      <title>Day 2</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-2/</link>
+      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-2/</guid>
+      <description>Goal From yesterday:&#xA;Complete the initial booking form For today:&#xA;Allow Images to be stored in SQLite database View Request Page (Admin page for Sarah) Accomplishments Work Time: 1hr 30&#xA;I got a lot done today, or at least it feels like it. First up, I messed around with the CSS Cursor gave me and tried to play with the setting up of the text entry fields for the requests.</description>
+    </item>
     <item>
       <title>Mr. Pointing Website</title>
       <link>http://localhost:1313/projects/mr.-pointing-website/</link>

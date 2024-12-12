@@ -5,8 +5,8 @@ draft: false
 tags:
   - me
 title: Mr. Pointing
-date: 2024-08-02
-updated: 2024-08-08T21:50
+date: 2024-12-12
+updated: 2024-12-12T21:50
 ---
 
 -------------------------------------------------------------------------------
@@ -19,8 +19,8 @@ My focus is in Python, but I've recently been trying to dip my feet in Bash and 
 
 ## **What I'm Working On**
 
-- I'm going through [Introduction to Algorithms]({{< ref "Introduction to Algorithms - Chapter 1" >}}), which I read myself when I was an undergrad in college.
-- Developing out my Master's Capstone, [Lython]({{< ref "Lython" >}}).
+- I'm going through [Learning Git]({{< ref "Learning Git - Chapter 1" >}}), by the very talented Anna Skoulikari. Her diagrams and approach to all of the main features of Git, while being readable and digestible makes it perfect in my opinion for High School honor students. Can't recommend this book enough. 
+- Working on a [30 Day Coding Challenge]({{<ref "Day 1" >}}), building a Tattoo booking web app.
 - Working on my first hardware project, a [Vinyl Visualizer]({{< ref "Vinyl Visualizer" >}}).
 
 

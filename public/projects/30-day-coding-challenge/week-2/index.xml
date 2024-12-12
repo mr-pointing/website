@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week 2 on Mr. Pointing</title>
+    <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/</link>
+    <description>Recent content in Week 2 on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/30-day-coding-challenge/week-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day 11</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-11/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-11/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist Accept Request &amp;amp; Booking Feature &amp;ldquo;Accept&amp;rdquo; button HTML site Booking HTML site Booking Python file (refactor requests to make recs_books?) Accomplishments I got a Twilio phone number waiting to be verified, added the booking form and all the logic to get there, as well as fixed a small issue where requests were stuck and would re-send after refreshing the page.</description>
+    </item>
+    <item>
+      <title>Day 10</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-10/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-10/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist For Today:&#xA;Accept Request &amp;amp; Booking Feature &amp;ldquo;Accept&amp;rdquo; button HTML site Booking HTML site Booking Python file (refactor requests to make recs_books?) Accomplishments Set up the text messaging API account.&#xA;Problems or Issues Next: Day 11</description>
+    </item>
+    <item>
+      <title>Day 9</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-9/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-9/</guid>
+      <description>Goal From Last Week:&#xA;Format the Email back to client For Today:&#xA;Set up email to Client w/ request form Set up email to Admin saying there&amp;rsquo;s a new request w/ client info Set up text messages for both Accomplishments I was able to get a decent chunk of things today for today. One thing that I&amp;rsquo;m trying to to stress is the prettification of all of my elements. I got the emails working, but they look like crap.</description>
+    </item>
+    <item>
+      <title>Day 8</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-8/</link>
+      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-8/</guid>
+      <description>Goal From Yesterday:&#xA;Format the Email back to client Accomplishments Problems or Issues Tattooed today, so maybe today will be nice free day?&#xA;Next: Day 9</description>
+    </item>
+  </channel>
+</rss>

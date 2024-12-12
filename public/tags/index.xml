@@ -7,27 +7,83 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 30 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Entertainment</title>
-      <link>http://localhost:1313/tags/entertainment/</link>
-      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/entertainment/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Me</title>
-      <link>http://localhost:1313/tags/me/</link>
-      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/me/</guid>
+      <title>Book</title>
+      <link>http://localhost:1313/tags/book/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/book/</guid>
       <description></description>
     </item>
     <item>
       <title>Computerscience</title>
       <link>http://localhost:1313/tags/computerscience/</link>
-      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/computerscience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Me</title>
+      <link>http://localhost:1313/tags/me/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/me/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project</title>
+      <link>http://localhost:1313/tags/project/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flask</title>
+      <link>http://localhost:1313/tags/flask/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flask/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Youtube</title>
+      <link>http://localhost:1313/tags/youtube/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/youtube/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>http://localhost:1313/tags/documentation/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/documentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sorting</title>
+      <link>http://localhost:1313/tags/sorting/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sorting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Entertainment</title>
+      <link>http://localhost:1313/tags/entertainment/</link>
+      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/entertainment/</guid>
       <description></description>
     </item>
     <item>
@@ -59,20 +115,6 @@
       <description></description>
     </item>
     <item>
-      <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Book</title>
-      <link>http://localhost:1313/tags/book/</link>
-      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/book/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Fantasy</title>
       <link>http://localhost:1313/tags/fantasy/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
@@ -91,13 +133,6 @@
       <link>http://localhost:1313/tags/horror/</link>
       <pubDate>Tue, 01 Jan 1991 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/horror/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Flask</title>
-      <link>http://localhost:1313/tags/flask/</link>
-      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/flask/</guid>
       <description></description>
     </item>
     <item>
@@ -140,13 +175,6 @@
       <link>http://localhost:1313/tags/sciencefiction/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/sciencefiction/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Documentation</title>
-      <link>http://localhost:1313/tags/documentation/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/documentation/</guid>
       <description></description>
     </item>
     <item>
@@ -220,13 +248,6 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Html</title>
       <link>http://localhost:1313/tags/html/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
@@ -245,13 +266,6 @@
       <link>http://localhost:1313/tags/shonen/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/shonen/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Project</title>
-      <link>http://localhost:1313/tags/project/</link>
-      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/project/</guid>
       <description></description>
     </item>
     <item>
@@ -280,13 +294,6 @@
       <link>http://localhost:1313/tags/shell/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/shell/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Youtube</title>
-      <link>http://localhost:1313/tags/youtube/</link>
-      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/youtube/</guid>
       <description></description>
     </item>
     <item>
@@ -357,13 +364,6 @@
       <link>http://localhost:1313/tags/audio/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/audio/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sorting</title>
-      <link>http://localhost:1313/tags/sorting/</link>
-      <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sorting/</guid>
       <description></description>
     </item>
     <item>

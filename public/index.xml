@@ -7,8 +7,113 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rhythm of War</title>
+      <link>http://localhost:1313/notes/entertainment/books/rhythm-of-war/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/entertainment/books/rhythm-of-war/</guid>
+      <description>Previous: Dawnshard&#xA;Wow. Completely floored that I was so captivated by this entry. I began as a book 4 hater; it felt like so much had been accomplished in the first three, what else could possibly happen to our cast of characters? Well, it turns out, a lot can happen and change, which is a recurring theme not only throughout this series, but especially in this one. Almost all of our main characters are going through internal and external factors that push them to make decisions, some life-altering, others not so much.</description>
+    </item>
+    <item>
+      <title>Day 11</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-11/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-11/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist Accept Request &amp;amp; Booking Feature &amp;ldquo;Accept&amp;rdquo; button HTML site Booking HTML site Booking Python file (refactor requests to make recs_books?) Accomplishments I got a Twilio phone number waiting to be verified, added the booking form and all the logic to get there, as well as fixed a small issue where requests were stuck and would re-send after refreshing the page.</description>
+    </item>
+    <item>
+      <title>Day 10</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-10/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-10/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist For Today:&#xA;Accept Request &amp;amp; Booking Feature &amp;ldquo;Accept&amp;rdquo; button HTML site Booking HTML site Booking Python file (refactor requests to make recs_books?) Accomplishments Set up the text messaging API account.&#xA;Problems or Issues Next: Day 11</description>
+    </item>
+    <item>
+      <title>Arch Linux on Virtual Machine</title>
+      <link>http://localhost:1313/projects/arch-linux-on-virtual-machine/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/arch-linux-on-virtual-machine/</guid>
+      <description>After running my laptop on Ubuntu for the past 4 months (and enjoying it) I figured it was time to give some other distros a chance. One of the YouTube channels I watch in order to expand my horizons is Mischa van den Burg who specializes in cloud computing dev ops things. I&amp;rsquo;ve watched a ton of his videos and got inspired to learn more about dev ops mostly through his influence.</description>
+    </item>
+    <item>
+      <title>Day 9</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-9/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-9/</guid>
+      <description>Goal From Last Week:&#xA;Format the Email back to client For Today:&#xA;Set up email to Client w/ request form Set up email to Admin saying there&amp;rsquo;s a new request w/ client info Set up text messages for both Accomplishments I was able to get a decent chunk of things today for today. One thing that I&amp;rsquo;m trying to to stress is the prettification of all of my elements. I got the emails working, but they look like crap.</description>
+    </item>
+    <item>
+      <title>Day 8</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-8/</link>
+      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-8/</guid>
+      <description>Goal From Yesterday:&#xA;Format the Email back to client Accomplishments Problems or Issues Tattooed today, so maybe today will be nice free day?&#xA;Next: Day 9</description>
+    </item>
+    <item>
+      <title>Day 7</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-7/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-7/</guid>
+      <description>Goal From Yesterday:&#xA;Format the Email back to client Accomplishments I didn&amp;rsquo;t get to work on this project much this weekend, and honestly I feel kind of okay about it? I am going to be putting off the AI roadmap on hold until this month is over to see if that helps with my workflow. This week I tried to do both and it left me really wanting to pick one over the other, so perhaps I&amp;rsquo;ll just leave the AI roadmap stuff on the back burner while I work hard on the next few days.</description>
+    </item>
+    <item>
+      <title>Day 6</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-6/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-6/</guid>
+      <description>Goal From yesterday:&#xA;Test email sending/receiving Format the Email back to client Accomplishments Today was a very busy work day, so I really didn&amp;rsquo;t get that far on anything. The biggest thing I did was I was able to locate the right documentation to help out with the next few steps. Otherwise, not a whole lot got done today.&#xA;Problems or Issues When running the Gmail quickstart code, I neglected to realize you would need to change the SCOPE list variable to allow more authorizations.</description>
+    </item>
+    <item>
+      <title>Sending Emails from Python</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/sending-emails-from-python/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/sending-emails-from-python/</guid>
+      <description>As shown in one of the chapter 10 in the Python Tutorial, we can send emails over a built-in smtplib module that you can send emails with. You can find a basic example there. In wanting to implement a email to the tattoo booking app, I wanted to do a tutorial on how I can set it up so that emails are sent from the tattoo artist&amp;rsquo;s email address, so it would be easy for the client to respond.</description>
+    </item>
+    <item>
+      <title>Day 5</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-5/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-5/</guid>
+      <description>Goal From yesterday:&#xA;View Request Page (Admin page for Sarah) Work on getting pictures to display Test and integrate email to client &amp;amp; Sarah w/ request form Format the Email back to client Accomplishments Work Time: 1hr&#xA;So far so okay. I was able to finally get the images working, but I had to rely on ChatGPT for help since none of the videos I watched were able to really help.</description>
+    </item>
+    <item>
+      <title>Day 4</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-4/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-4/</guid>
+      <description>Goal From yesterday:&#xA;View Request Page (Admin page for Sarah) Work on the JOIN to bring client info along with each request Work on getting pictures to display Test and integrate email to client &amp;amp; Sarah w/ request form Format the Email back to client Accomplishments Work Time: 1hr 20&#xA;Not my best day, but to be expected. Today wasn&amp;rsquo;t one of my best days, so I shouldn&amp;rsquo;t be too hard on myself.</description>
+    </item>
+    <item>
+      <title>Day 3</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-3/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-3/</guid>
+      <description>Goal From yesterday:&#xA;View Request Page (Admin page for Sarah) Python file (Flask View) HTML file (formatting) Work on the JOIN to bring client info along with each request For today:&#xA;Test and integrate email to client &amp;amp; Sarah w/ request form Format the Email back to client Accomplishments Work Time: 2 hours&#xA;While I didn&amp;rsquo;t get that much done as far as my lists are concerned, I was able to get a lot done today.</description>
+    </item>
+    <item>
+      <title>Sorting Techniques</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/sorting-techniques/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/sorting-techniques/</guid>
+      <description>Link to article&#xA;Sorting Basics There are two basic ways we can ascending sort (organize from least to greatest on value) built into Python, .sort() on a list object, and the sorted() function, which takes in any iterable sequence.&#xA;sorted() will actually return the sequence in order, while .sort() is more of a step to be done, and will actually return None.&#xA;&amp;gt;&amp;gt;&amp;gt; a = [3, 6, 1, 4] &amp;gt;&amp;gt;&amp;gt; sorted(a) [1, 3, 4, 6] &amp;gt;&amp;gt;&amp;gt; a.</description>
+    </item>
+    <item>
+      <title>Day 1</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-1/</link>
+      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-1/</guid>
+      <description>Goal Write down a step-by-step initial guide to follow to help track/maintain progress Complete the initial booking form Set up the SQLite database/schema Accomplishments Work Time: 1hr 45&#xA;So today was the first day and I feel like I was able to make some pretty decent progress. I created a really simple step-by-step guide to keep me on track, and to make the scope less creepy. I also was able to get a working schema for my tables, and I currently have user for Sarah, client for all people who book, and a requests for initial requests.</description>
+    </item>
+    <item>
+      <title>Day 2</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-2/</link>
+      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-2/</guid>
+      <description>Goal From yesterday:&#xA;Complete the initial booking form For today:&#xA;Allow Images to be stored in SQLite database View Request Page (Admin page for Sarah) Accomplishments Work Time: 1hr 30&#xA;I got a lot done today, or at least it feels like it. First up, I messed around with the CSS Cursor gave me and tried to play with the setting up of the text entry fields for the requests.</description>
+    </item>
     <item>
       <title>Learning Git - Chapter 9</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/</link>
@@ -31,18 +136,18 @@
       <description>Previous: Oathbringer&#xA;I&amp;rsquo;m not sure who keeps telling Brando Sando to keep making Novellas, but whoever it is needs to actually read them. I really can&amp;rsquo;t justify this being it&amp;rsquo;s own story. Even more than the first, this felt like a different type of filler. Filler with the audacity to be a hardcover.&#xA;My issues don&amp;rsquo;t come with the story at all really. I actually enjoyed Rysn, and thought every time she was on the page she felt real.</description>
     </item>
     <item>
+      <title>Decorators</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</guid>
+      <description>What is a Decorator? Essentially, a decorator, is a wrapping for function. It allows you to do something before and/or after a function is called. Let&amp;rsquo;s look at a super basic example;&#xA;def uppercase_word(function): def wrapper(): func = function() # call the function to get the return value make_upper = func.upper() return make_upper return wrapper Now, let&amp;rsquo;s say we make a really basic function to print text out;&#xA;def say_word(): return &amp;#34;say wooooord&amp;#34; We could print it out like this:</description>
+    </item>
+    <item>
       <title>Inheritance</title>
       <link>http://localhost:1313/notes/computer-science/python/advanced-python/inheritance/</link>
       <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/advanced-python/inheritance/</guid>
       <description>According to the AI road map I&amp;rsquo;ve been following, this and the rest of the concepts in this folder are meant to be considered more advanced concepts. Some of these have been covered in the Python Tutorial, some have not. This is the starting note, but I won&amp;rsquo;t link these concepts together unless necessary, as the concepts aren&amp;rsquo;t explicitly tied together.&#xA;What is Inheritance? Inheritance is the concept that you can build a new class based off of, or derived from, an existing class.</description>
-    </item>
-    <item>
-      <title>Untitled</title>
-      <link>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</link>
-      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</guid>
-      <description>What is a Decorator? Essentially, a decorator, is a wrapping for function. It allows you to do something before and/or after a function is called. Let&amp;rsquo;s look at a super basic example;&#xA;def uppercase_word(function): def wrapper(): func = function() # call the function to get the return value make_upper = func.upper() return make_upper return wrapper Now, let&amp;rsquo;s say we make a really basic function to print text out;&#xA;def say_word(): return &amp;#34;say wooooord&amp;#34; We could print it out like this:</description>
     </item>
     <item>
       <title>Learning Git - Chapter 8</title>

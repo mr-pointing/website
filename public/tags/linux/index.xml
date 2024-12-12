@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux on Virtual Machine</title>
+      <link>http://localhost:1313/projects/arch-linux-on-virtual-machine/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/arch-linux-on-virtual-machine/</guid>
+      <description>After running my laptop on Ubuntu for the past 4 months (and enjoying it) I figured it was time to give some other distros a chance. One of the YouTube channels I watch in order to expand my horizons is Mischa van den Burg who specializes in cloud computing dev ops things. I&amp;rsquo;ve watched a ton of his videos and got inspired to learn more about dev ops mostly through his influence.</description>
+    </item>
     <item>
       <title>Linux File System-Structure Explained!</title>
       <link>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</link>

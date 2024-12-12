@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/notes/computer-science/python/advanced-python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sending Emails from Python</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/sending-emails-from-python/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/sending-emails-from-python/</guid>
+      <description>As shown in one of the chapter 10 in the Python Tutorial, we can send emails over a built-in smtplib module that you can send emails with. You can find a basic example there. In wanting to implement a email to the tattoo booking app, I wanted to do a tutorial on how I can set it up so that emails are sent from the tattoo artist&amp;rsquo;s email address, so it would be easy for the client to respond.</description>
+    </item>
+    <item>
+      <title>Sorting Techniques</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/sorting-techniques/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/sorting-techniques/</guid>
+      <description>Link to article&#xA;Sorting Basics There are two basic ways we can ascending sort (organize from least to greatest on value) built into Python, .sort() on a list object, and the sorted() function, which takes in any iterable sequence.&#xA;sorted() will actually return the sequence in order, while .sort() is more of a step to be done, and will actually return None.&#xA;&amp;gt;&amp;gt;&amp;gt; a = [3, 6, 1, 4] &amp;gt;&amp;gt;&amp;gt; sorted(a) [1, 3, 4, 6] &amp;gt;&amp;gt;&amp;gt; a.</description>
+    </item>
     <item>
       <title>Decorators</title>
       <link>http://localhost:1313/notes/computer-science/python/advanced-python/decorators/</link>
