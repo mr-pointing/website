@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Goal From Yesterday:
+Set up text message for request Client Artist For Today:
+Refactor for Yagmail instead of Gmail&amp;rsquo;s Oauth2 set up Refactor requests for asking for consent for text messages Create JSON file for artist schedule Integrate with Google Calendar? (maybe way down the line) Make a confirm booking button that checks to make sure there is no issue with timing Accomplishments Getting a lot done today; more so with understanding how the calendar features work for Fullcalendar." />
+<meta name="keywords" content="homepage, blog, computerscience, project, python, flask" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/projects/30-day-coding-challenge/week-2/day-14/" />
+
+
+    <title>
+        
+            Day 14 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Day 14">
+  <meta itemprop="description" content="Goal From Yesterday:
+Set up text message for request Client Artist For Today:
+Refactor for Yagmail instead of Gmail’s Oauth2 set up Refactor requests for asking for consent for text messages Create JSON file for artist schedule Integrate with Google Calendar? (maybe way down the line) Make a confirm booking button that checks to make sure there is no issue with timing Accomplishments Getting a lot done today; more so with understanding how the calendar features work for Fullcalendar.">
+  <meta itemprop="datePublished" content="2024-12-14T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-14T00:00:00+00:00">
+  <meta itemprop="wordCount" content="479">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Project,Python,Flask">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Day 14">
+  <meta name="twitter:description" content="Goal From Yesterday:
+Set up text message for request Client Artist For Today:
+Refactor for Yagmail instead of Gmail’s Oauth2 set up Refactor requests for asking for consent for text messages Create JSON file for artist schedule Integrate with Google Calendar? (maybe way down the line) Make a confirm booking button that checks to make sure there is no issue with timing Accomplishments Getting a lot done today; more so with understanding how the calendar features work for Fullcalendar.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/projects/30-day-coding-challenge/week-2/day-14/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Day 14">
+  <meta property="og:description" content="Goal From Yesterday:
+Set up text message for request Client Artist For Today:
+Refactor for Yagmail instead of Gmail’s Oauth2 set up Refactor requests for asking for consent for text messages Create JSON file for artist schedule Integrate with Google Calendar? (maybe way down the line) Make a confirm booking button that checks to make sure there is no issue with timing Accomplishments Getting a lot done today; more so with understanding how the calendar features work for Fullcalendar.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-12-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-14T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Project">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Flask">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-12-14 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/projects/30-day-coding-challenge/week-2/day-14/">Day 14</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="goal">Goal</h1>
+<hr>
+<p>From Yesterday:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Set up text message for request
+<ul>
+<li><input disabled="" type="checkbox"> Client</li>
+<li><input disabled="" type="checkbox"> Artist</li>
+</ul>
+</li>
+</ul>
+<p>For Today:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Refactor for Yagmail instead of Gmail&rsquo;s Oauth2 set up</li>
+<li><input checked="" disabled="" type="checkbox"> Refactor requests for asking for consent for text messages</li>
+<li><input checked="" disabled="" type="checkbox"> Create JSON file for artist schedule
+<ul>
+<li><input disabled="" type="checkbox"> Integrate with Google Calendar? (maybe way down the line)</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> Make a confirm booking button that checks to make sure there is no issue with timing</li>
+</ul>
+<h1 id="accomplishments">Accomplishments</h1>
+<hr>
+<p>Getting a lot done today; more so with understanding how the calendar features work for Fullcalendar. So far, I know I&rsquo;m going to use a Grid view, and I&rsquo;m currently able to place events anywhere with the limit set by the artist.</p>
+<p>Some things I got done were the ability to only show times from 11am to 11pm to avoid crazy time placements, I was able to work on the request page to include an easy consent button, and moved the artist&rsquo;s temporary schedule into a JSON file.</p>
+<p>I also moved the dummy email and password in after switching to an app password (see below) and started using Yagmail. Not only is my code a little cleaner, but I also understand a lot more of it since I&rsquo;m the one who wrote it. Not very complex, but I understand what&rsquo;s happening a little clearer and I don&rsquo;t have to deal with forgetting to renew my credentials.</p>
+<h1 id="problems-or-issues">Problems or Issues</h1>
+<hr>
+<p>I ran into the issue where since the Oauth2 consent is only available for a limited time, I was up against a wall for almost a half hour trying to figure out why my email features weren&rsquo;t working. Because of that, I just said screw it, used two-factor authorization for my test Gmail, and made an app password. With that, I can keep that in the <code>artist_info.json</code> file so I don&rsquo;t commit any passwords. This way, there is no pesky expiration date.</p>
+<p>I ran into an issue where I thought I could nicely use Jinja to insert the client information and use it for making events in the calendar. I could, I just didn&rsquo;t realize I needed to add <code>| tojson</code> in order for it to work.</p>
+<p>An issue currently with the calendar is that a client can potentially make the booking on an unavailable day, or a day where the entire time slot is taken.</p>
+<p>A huge issue I realized with this calendar feature is that I don&rsquo;t know JavaScript at all. The process for this project has been usually me going as far as I can, run into a wall, see if I can fix it (have been able to fix a decent amount by myself actually), and if not run it through Google then AI. Google has been able to give me some help, but for the JavaScript AI has been a big help. After this project I think I&rsquo;m going to have to spend some more time learning basic JavaScript.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/projects/30-day-coding-challenge/week-3/day-15/">Day 15</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/project/">project</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/flask/">flask</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

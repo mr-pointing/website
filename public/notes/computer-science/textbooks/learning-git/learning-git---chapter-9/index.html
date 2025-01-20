@@ -50,7 +50,7 @@ Again, three way merges are important and necessary to understand." />
 Again, three way merges are important and necessary to understand.">
   <meta itemprop="datePublished" content="2024-11-23T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-11-23T00:00:00+00:00">
-  <meta itemprop="wordCount" content="258">
+  <meta itemprop="wordCount" content="2016">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Git,Textbook">
 
@@ -185,7 +185,214 @@ Again, three way merges are important and necessary to understand.">
 </span></span><span style="display:flex;"><span>Date:   Thu Nov <span style="color:#ae81ff">21</span> 12:44:27 <span style="color:#ae81ff">2024</span> -0500
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    green
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>We have to define our upstream branch if it&rsquo;s not defined for us already; this will allow us to just <code>push</code> our commits, instead of having to tell git where to <code>push</code> it. Remember, upstream branches are only automatically set when cloning a remote repo; when initialized locally, it will <em>not</em> be set, and you&rsquo;ll need to specify it. The syntax for that is below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -u &lt;shortname&gt;/&lt;branch_name&gt;
+</span></span></code></pre></div><p>We can also check to see if we have an upstream branch defined or not by using the <code>-vv</code> option when using <code>git branch</code>. Let&rsquo;s run that and define our upstream branch inside our local <code>rainbow</code> repo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git branch -vv
+</span></span><span style="display:flex;"><span>* main d0ab541
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch -u origin/main
+</span></span><span style="display:flex;"><span>branch <span style="color:#e6db74">&#39;main&#39;</span> set up to track <span style="color:#e6db74">&#39;origin/main&#39;</span>.
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git branch -vv
+</span></span><span style="display:flex;"><span>* main d0ab541 <span style="color:#f92672">[</span>origin/main: ahead 1<span style="color:#f92672">]</span> brown
+</span></span></code></pre></div><p>We can see that after setting our upstream branch, the <code>-vv</code> option tells us we&rsquo;re ahead 1 commit, or that our upstream branch is behind by 1. Let&rsquo;s walk through pushing our newest commit;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git push
+</span></span><span style="display:flex;"><span>Enumerating objects: 4, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Counting objects: 100% <span style="color:#f92672">(</span>4/4<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Delta compression using up to <span style="color:#ae81ff">4</span> threads
+</span></span><span style="display:flex;"><span>Compressing objects: 100% <span style="color:#f92672">(</span>2/2<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Writing objects: 100% <span style="color:#f92672">(</span>3/3<span style="color:#f92672">)</span>, <span style="color:#ae81ff">313</span> bytes | 313.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Total <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>To https://github.com/mr-pointing/rainbow-remote.git
+</span></span><span style="display:flex;"><span>   dbae3cd..d0ab541  main -&gt; main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit d0ab54146cdd169ec9f121fa51b88bae47864235 <span style="color:#f92672">(</span>HEAD -&gt; main, origin/main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Nov <span style="color:#ae81ff">23</span> 16:48:29 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    brown
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit dbae3cde2f90035d9bfcc5c9d970aba10237c2ed
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Thu Nov <span style="color:#ae81ff">21</span> 12:44:27 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    green
+</span></span></code></pre></div><p>Now we have our local <code>rainbow</code> repo being reflected in our remote repo, but to really have a three-way merge happen, the development history of our paths must <em>diverge</em>, which means our friend&rsquo;s repo is going to veer off in a different direction.</p>
+<p>When making changes between commits, Git doesn&rsquo;t automatically load the changes up for you; as a matter of fact, Git doesn&rsquo;t really do <em>anything</em> automatic for you. We&rsquo;re about to walk through our friend editing their version of the <code>rainbowcolors.txt</code> file in the<code>friend-rainbow</code> repo, but they&rsquo;re <em>not</em> going to pull in our changes from the original <code>rainbow</code> repo. We&rsquo;re also going to watch them make a mistake in their commit, and have to go back and edit it. To make this easier to visualize, we&rsquo;re going to use the Git staging area diagrams we used previously in chapter 2.</p>
+
+    <img src="/images/friend_directory.png"  alt="friend_directory"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>While in our <code>friend-rainbow</code> directory, edit the <code>rainbowcolors.txt</code> file to add &ldquo;Bloo is the fifth color of the rainbow.&rdquo; The typo is intentional. If we run <code>git status</code>, you should see that our branch is up to date, but we have one change not staged for commit, out modification to <code>rainbowcolors.txt</code>. That text file is still in the working directory, and hasn&rsquo;t moved onto the staging area;</p>
+
+    <img src="/images/three_way_merge_p1.png"  alt="three_way_merge_p1"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Then, we should add our <code>rainbowcolors.txt</code> file using <code>git add</code>, and check on the <code>status</code> to see that we now have that vB file in both our working directory and staging area;</p>
+
+    <img src="/images/three_way_merge_p2.png"  alt="three_way_merge_p2"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Now, from here, let&rsquo;s say your friend noticed their mistake. They&rsquo;re going to go back and edit the <code>rainbowcolors.txt</code> file replace &ldquo;Bloo&rdquo; with &ldquo;Blue&rdquo;. After you do this, run <code>git status</code>. You should see something peculiar; <code>rainbowcolors.txt</code> as both staged for commit and <em>not</em> staged for commit. Technically, they are two different files, which can be visualized here;</p>
+
+    <img src="/images/three_way_merge_p3.png"  alt="three_way_merge_p3"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>To put our non-typo version (vC) in the staging area, we&rsquo;re going to very simply add it using <code>git add</code>. This will place vC in the staging area, and get our Blue commit ready to be made. Go ahead and push the correct spelling of Blue.</p>
+<p>Currently, our friend has not fetched the <code>brown</code> commit that&rsquo;s in both our local and remote repo. This means our friend&rsquo;s repo is out of sync with our remote repo, since that&rsquo;s our friend&rsquo;s connection to the changes. Let&rsquo;s try to push our changes;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git commit -m <span style="color:#e6db74">&#34;blue&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>main e3fb1ec<span style="color:#f92672">]</span> blue
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">1</span> file changed, <span style="color:#ae81ff">1</span> insertion<span style="color:#f92672">(</span>+<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git push
+</span></span><span style="display:flex;"><span>To https://github.com/mr-pointing/rainbow-remote.git
+</span></span><span style="display:flex;"><span> ! <span style="color:#f92672">[</span>rejected<span style="color:#f92672">]</span>        main -&gt; main <span style="color:#f92672">(</span>fetch first<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>error: failed to push some refs to <span style="color:#e6db74">&#39;https://github.com/mr-pointing/rainbow-remote.git&#39;</span>
+</span></span><span style="display:flex;"><span>hint: Updates were rejected because the remote contains work that you <span style="color:#66d9ef">do</span> not
+</span></span><span style="display:flex;"><span>hint: have locally. This is usually caused by another repository pushing to
+</span></span><span style="display:flex;"><span>hint: the same ref. If you want to integrate the remote changes, use
+</span></span><span style="display:flex;"><span>hint: <span style="color:#e6db74">&#39;git pull&#39;</span> before pushing again.
+</span></span><span style="display:flex;"><span>hint: See the <span style="color:#e6db74">&#39;Note about fast-forwards&#39;</span> in <span style="color:#e6db74">&#39;git push --help&#39;</span> <span style="color:#66d9ef">for</span> details.
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit e3fb1ec6f3aeaccdcae2bd063a3fb74eb0993f25 <span style="color:#f92672">(</span>HEAD -&gt; main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Tue Dec <span style="color:#ae81ff">10</span> 11:20:51 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    blue
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit dbae3cde2f90035d9bfcc5c9d970aba10237c2ed <span style="color:#f92672">(</span>origin/main, origin/HEAD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Thu Nov <span style="color:#ae81ff">21</span> 12:44:27 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    green
+</span></span></code></pre></div><p>As we can see, we have an error we cannot resolve with a simple fast forward merge. Git is also telling us that we should <code>pull</code> before using <code>push</code> again. Before we cover <code>pull</code> in more detail, let&rsquo;s perform the three way merge.</p>
+<h2 id="three-way-merge-in-practice">Three-Way Merge in Practice</h2>
+<p>To get this merge going, we know from the above and the last chapter we require two things to happen; the changes needed to integrate grabbed or fetched, followed up by integrating them into the local branch.</p>
+<p>This chapter also goes over a really interesting tool used by many programmers all over the world, <strong>Vim</strong>. I am not going to even think about reviewing Vim with the classroom, mostly because I&rsquo;m no where near proficient enough with it myself. That being said, I&rsquo;ll pass on the information in the text here, although a quick visit to YouTube will show you the community for Vim is very much alive and thriving.</p>
+<p>The reason Vim is being introduced is because we&rsquo;re going to initial a merge commit while performing the three-way merge, and we&rsquo;re <em>not</em> going to specify the commit message. Because of this, Git is going to use Vim in order to get one from us before accepting the commit.</p>
+<p>The actual command is simple; we&rsquo;re going to just accept whatever default commit message Git will provide to us, so the sequence is as follows;</p>
+<ol>
+<li>Hit <code>Esc</code></li>
+<li>Type, <code>:wq</code></li>
+<li>Hit <code>Enter</code></li>
+</ol>
+<p>This will write or save the text, and quit out of Vim. Now that we know what to do, let&rsquo;s do it;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git fetch
+</span></span><span style="display:flex;"><span>remote: Enumerating objects: 4, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Counting objects: 100% <span style="color:#f92672">(</span>4/4<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Compressing objects: 100% <span style="color:#f92672">(</span>2/2<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Total <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>from 0<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Unpacking objects: 100% <span style="color:#f92672">(</span>3/3<span style="color:#f92672">)</span>, <span style="color:#ae81ff">293</span> bytes | 146.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>From https://github.com/mr-pointing/rainbow-remote
+</span></span><span style="display:flex;"><span>   dbae3cd..d0ab541  main       -&gt; origin/main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git merge origin/main
+</span></span><span style="display:flex;"><span>*Save using text editor*
+</span></span><span style="display:flex;"><span>Merge made by the <span style="color:#e6db74">&#39;ort&#39;</span> strategy.
+</span></span><span style="display:flex;"><span> othercolors.txt | <span style="color:#ae81ff">1</span> +
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">1</span> file changed, <span style="color:#ae81ff">1</span> insertion<span style="color:#f92672">(</span>+<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> create mode <span style="color:#ae81ff">100644</span> othercolors.txt
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit 5dc826f03e5c2238ce7fccd967c169ae258907a6 <span style="color:#f92672">(</span>HEAD -&gt; main<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Merge: e3fb1ec d0ab541
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Wed Jan <span style="color:#ae81ff">1</span> 19:20:52 <span style="color:#ae81ff">2025</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Merge remote-tracking branch <span style="color:#e6db74">&#39;origin/main&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit e3fb1ec6f3aeaccdcae2bd063a3fb74eb0993f25
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Tue Dec <span style="color:#ae81ff">10</span> 11:20:51 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    blue
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit d0ab54146cdd169ec9f121fa51b88bae47864235 <span style="color:#f92672">(</span>origin/main, origin/HEAD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Sat Nov <span style="color:#ae81ff">23</span> 16:48:29 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    brown
+</span></span></code></pre></div><p>Lots to notice above; we can see the new commit in our log with Git&rsquo;s default message and <code>ort</code> method of merging, which is our three-way merge. We can see in the following drawing that our new visualization looks a bit messy;</p>
+
+    <img src="/images/blue_brown_update.png"  alt="blue_brown_update"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Our new merge commit, <code>M1</code>, has two parent commits, the <code>brown</code> and <code>blue</code> commit. In the text back from <code>git log</code>, we can see the two parent commits, <code>3fb1ec</code> and <code>d0ab541</code>. We could also retrieve the same information with <code>git cat-file -p *commit number*</code>, just replace the commit number with your merge&rsquo;s commit number:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git cat-file -p 5dc826f
+</span></span><span style="display:flex;"><span>tree 6737155935d3aa1b20105eb73906a2e8f15dc871
+</span></span><span style="display:flex;"><span>parent e3fb1ec6f3aeaccdcae2bd063a3fb74eb0993f25
+</span></span><span style="display:flex;"><span>parent d0ab54146cdd169ec9f121fa51b88bae47864235
+</span></span><span style="display:flex;"><span>author mr-pointing &lt;rpointing@blmhs.org&gt; <span style="color:#ae81ff">1735777252</span> -0500
+</span></span><span style="display:flex;"><span>committer mr-pointing &lt;rpointing@blmhs.org&gt; <span style="color:#ae81ff">1735777252</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Merge remote-tracking branch <span style="color:#e6db74">&#39;origin/main&#39;</span>
+</span></span></code></pre></div><p>Now, let&rsquo;s perform our <code>push</code> and see if we&rsquo;re caught up;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git push
+</span></span><span style="display:flex;"><span>Enumerating objects: 9, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Counting objects: 100% <span style="color:#f92672">(</span>8/8<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Delta compression using up to <span style="color:#ae81ff">4</span> threads
+</span></span><span style="display:flex;"><span>Compressing objects: 100% <span style="color:#f92672">(</span>4/4<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Writing objects: 100% <span style="color:#f92672">(</span>5/5<span style="color:#f92672">)</span>, <span style="color:#ae81ff">576</span> bytes | 576.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Total <span style="color:#ae81ff">5</span> <span style="color:#f92672">(</span>delta 1<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>remote: Resolving deltas: 100% <span style="color:#f92672">(</span>1/1<span style="color:#f92672">)</span>, completed with <span style="color:#ae81ff">1</span> local object.
+</span></span><span style="display:flex;"><span>To https://github.com/mr-pointing/rainbow-remote.git
+</span></span><span style="display:flex;"><span>   d0ab541..5dc826f  main -&gt; main
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit 5dc826f03e5c2238ce7fccd967c169ae258907a6 <span style="color:#f92672">(</span>HEAD -&gt; main, origin/main, origin/HEAD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Merge: e3fb1ec d0ab541
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Wed Jan <span style="color:#ae81ff">1</span> 19:20:52 <span style="color:#ae81ff">2025</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Merge remote-tracking branch <span style="color:#e6db74">&#39;origin/main&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit e3fb1ec6f3aeaccdcae2bd063a3fb74eb0993f25
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Tue Dec <span style="color:#ae81ff">10</span> 11:20:51 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    blue
+</span></span></code></pre></div><p>Again, we can confirm we&rsquo;re up to date using <code>git log</code>, and as we can see we&rsquo;re all caught up and have merged our commits.</p>
+<p>Just to recap, in both our <code>friend-rainbow</code> directory and remote repo, our <code>rainbowcolors.txt</code> looks like this:</p>
+<pre tabindex="0"><code>Red is the first color of the rainbow.
+Orange is the second color of the rainbow.
+Yellow is the third color of the rainbow.
+Green is the fourth color of the rainbow.
+Blue is the fifth color of the rainbow.
+</code></pre><p>and we have our other file <code>othercolors.txt</code> that just says:</p>
+<pre tabindex="0"><code>Brown is not a color of the rainbow.
+</code></pre><h2 id="pulling-changes">Pulling Changes</h2>
+<p>If we were to look back at our local <code>rainbow</code> repo, remember that we would <em><strong>not</strong></em> see the fifth line in <code>rainbowcolors.txt</code>, because we haven&rsquo;t fetched the new remote changes. Like before, we would need to fetch the new commits, then merge them with our local repo.</p>
+<p>With a command called <code>pull</code>, we&rsquo;ll be able to achieve both the previous goals at once. The only thing we would need to specify is the upstream branch if it is not set; otherwise, we can just use <code>git pull</code> to get started.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; git pull
+</span></span><span style="display:flex;"><span>remote: Enumerating objects: 12, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Counting objects: 100% <span style="color:#f92672">(</span>11/11<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Compressing objects: 100% <span style="color:#f92672">(</span>5/5<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Total <span style="color:#ae81ff">8</span> <span style="color:#f92672">(</span>delta 2<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">8</span> <span style="color:#f92672">(</span>delta 2<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>from 0<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Unpacking objects: 100% <span style="color:#f92672">(</span>8/8<span style="color:#f92672">)</span>, <span style="color:#ae81ff">815</span> bytes | 407.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>From https://github.com/mr-pointing/rainbow-remote
+</span></span><span style="display:flex;"><span>   d0ab541..4b4a3da  main       -&gt; origin/main
+</span></span><span style="display:flex;"><span>Updating d0ab541..4b4a3da
+</span></span><span style="display:flex;"><span>Fast-forward
+</span></span><span style="display:flex;"><span> rainbowcolors.txt | <span style="color:#ae81ff">1</span> +
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">1</span> file changed, <span style="color:#ae81ff">1</span> insertion<span style="color:#f92672">(</span>+<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; git log
+</span></span><span style="display:flex;"><span>commit 5dc826f03e5c2238ce7fccd967c169ae258907a6 <span style="color:#f92672">(</span>HEAD -&gt; main, origin/main, origin/HEAD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Merge: e3fb1ec d0ab541
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Wed Jan <span style="color:#ae81ff">1</span> 19:20:52 <span style="color:#ae81ff">2025</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Merge remote-tracking branch <span style="color:#e6db74">&#39;origin/main&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commit e3fb1ec6f3aeaccdcae2bd063a3fb74eb0993f25
+</span></span><span style="display:flex;"><span>Author: mr-pointing &lt;rpointing@blmhs.org&gt;
+</span></span><span style="display:flex;"><span>Date:   Tue Dec <span style="color:#ae81ff">10</span> 11:20:51 <span style="color:#ae81ff">2024</span> -0500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    blue
+</span></span></code></pre></div><p>There is one pro-tip that&rsquo;s important to understand about choosing between doing <code>git fetch</code> and <code>merge</code> or just <code>git pull</code>, and that&rsquo;s on the method of combination you&rsquo;re using; merging or rebasing. The common practice is that if your local repo and remote repo&rsquo;s development history has <em>diverged</em>, then you should <code>fetch</code> and choose to <code>merge</code> or <code>rebase</code>. If there hasn&rsquo;t been a divergence, you can just use <code>git pull</code>.</p>
+<p>The final, updated visualization can be seen below;</p>
+
+    <img src="/images/final_three_way.png"  alt="final_three_way"  class="center"  style="border-radius: 8px;"  />
+
+
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-10/">Chapter 10</a></p>
+
             </div>
         </article>
 

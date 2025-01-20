@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week 4 on Mr. Pointing</title>
+    <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/</link>
+    <description>Recent content in Week 4 on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/30-day-coding-challenge/week-4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day 24</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-24/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-24/</guid>
+      <description>Goal Get current bookings page working Look into filtering requests/bookings Don&amp;rsquo;t want to have to refresh the page, but it doesn&amp;rsquo;t need to constantly update as the user is typing. Results should only appear upon hitting enter. Accomplishments Current bookings was a lot easier now that I&amp;rsquo;m using a template for all my pages, and it was a breeze to create a new blueprint for the page since it&amp;rsquo;s even less code than the requests page, due to their not needing to handle any post requests.</description>
+    </item>
+    <item>
+      <title>Day 23</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-23/</link>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-23/</guid>
+      <description>Goal Coming back from a few days to think about a game plan for the finish line, I think I can get something out and working by the end of these 30 days. Maybe.&#xA;Finish applying base.html to all pages Make the admin index page for current requests page for current bookings page for manual application form Finish CSS for pages Accomplishments Got a ton done today, and worked for probably over 2 hours.</description>
+    </item>
+    <item>
+      <title>Day 22</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-22/</link>
+      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-22/</guid>
+      <description>Goal Start working on HTML/CSS changes Finish reformatting HTML with base.html Accomplishments Surprisingly, got a decent amount done in just under an hour. I was able to complete the base.html file, and worked out some of the kinks of the formatting. It doesn&amp;rsquo;t look exactly like the Figma yet, but I want to make sure all of the HTML files have the base.html extension first.&#xA;Problems or Issues Next: Day 23</description>
+    </item>
+  </channel>
+</rss>

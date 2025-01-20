@@ -7,7 +7,7 @@ tags:
   - python
 title: Flask's Tutorial
 date: 2024-11-06
-updated: 2024-11-30T12:20
+updated: 2024-12-16T18:40
 ---
 [Link](https://flask.palletsprojects.com/en/stable/tutorial/) to tutorial.
 
@@ -319,3 +319,57 @@ We can walk through each part to gain a better understanding of each part. We ar
 5. We create another check, making sure we don't have an error. If we do, we send it out, otherwise we keep going.
 6. A `try` statement is used to attempt the user entry, but an `IntegrityError` flag is used as an exception to assign a value to error that tells you the username is already taken. This will prevent duplicate users. 
 7. If there are no errors, we return a redirect to send the user to the login page, `auth.login`.
+8. Since there has to be somewhere to actually allow the user to request anything, the `return render_template()` call will display `auth/register.html` by default or when there is a validation error.
+
+## Login
+
+Our login view is going to work incredibly similarly to our register view, except instead of inserting into our database, we'll be retrieving. 
+
+```python
+@bp.route('login', methods=('GET', 'POST'))  
+def login():  
+    if request.method == 'POST':  
+        username = request.form['username']  
+        password = request.form['password']  
+        db = get_db()  
+        error = None  
+        user = db.execute(  
+            "SELECT * FROM user WHERE username = ?", (username,)  
+        ).fetchone()  
+  
+        if user is None:  
+            error = "Incorrect username."  
+        elif not check_password_hash(user['password'], password):  
+            error = "Incorrect password."  
+  
+        if error is None:  
+            session.clear()  
+            session['user_id'] = user['id']  
+            return redirect(url_for('index'))  
+  
+        flash(error)  
+  
+    return render_template('auth/login.html')
+```
+
+Let's walk through this;
+
+1. Our routine of grabbing username and password remains the same, and we again create an `error` variable for validation, and create a `db` connection.
+2. We retrieve the user's information based on the username given on the login form, and use `.fetchone()` at the end to only get one row from our database. Later, we'll see how we can use `.fetchall()` to do the opposite.
+3. After retrieval, first check to see if we got anything with a `None` check; `user` will give back `None` if there isn't a return from the query (no usernames in the database). Then, if we did get a user, check and see if the password they gave in the form is the same as the hashed password stored in the database. If either fail, we store a result inside of `error`.
+4. If `error`  is still `None` by the time it reaches the if statement for it, we clear the `session`, set the key `user_id` to the requested user's `id`, and redirect them to the index page.
+
+A crucial object to understand about what we just did, is that `session` is actually a dictionary, since we could access certain key's like `user_id`. Since we stored it here, it will be usable upon page refreshes or navigations, as long as the *session* is still active. We can write a function that will run before any view is ran, that will actually store all of the information about our user into that `g` object we saw before when creating our database functions. The code is below and we'll implement it later.
+
+```python
+@bp.before_app_request  
+def load_logged_in_user():  
+    user_id = session.get('user_id')  
+  
+    if user_id is None:  
+        g.user = None  
+    else:  
+        g.user = get_db().execute(  
+            'SELECT * FROM user WHERE id = ?', (user_id,)  
+        ).fetchone()
+```

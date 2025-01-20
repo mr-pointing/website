@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Git - Chapter 12</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-12/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-12/</guid>
+      <description>We&amp;rsquo;re on our final chapter, and almost through with the rainbow project. Before we move onto our last lesson, let&amp;rsquo;s review where we&amp;rsquo;re at;&#xA;An important distinction we need to make up front first is that in the past, we have introduced and used pull. While that is involved in what we&amp;rsquo;re about to learn, we&amp;rsquo;re going to go more specifically into pull requests, or a request to collaborate on work via a hosting service.</description>
+    </item>
+    <item>
+      <title>Learning Git - Chapter 11</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-11/</link>
+      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-11/</guid>
+      <description>Rebasing We&amp;rsquo;re over ten chapters into this text; let&amp;rsquo;s get a quick recap of the status of our repos:&#xA;One thing to notice about the repos up until this point is that up to the green commit, our project&amp;rsquo;s history was linear. Some people prefer to keep their history this way, and want to avoid branching pathways, like we had to do for the three-way merges we had to make.</description>
+    </item>
+    <item>
+      <title>Learning Git - Chapter 10</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-10/</link>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-10/</guid>
+      <description>Merge Conflicts In our last chapter, we were able to pull off our first three way merge without any issues. This time, we&amp;rsquo;re about to experience some merge conflicts, and what to do when we encounter them. You can view the end of Chapter 9 to see the visualization of where we&amp;rsquo;re at; we&amp;rsquo;ve got the M1 commit as the latest in all three repos.&#xA;One important distinction we need to make about this experiment we&amp;rsquo;re going to do versus the last chapter is the type of changes we&amp;rsquo;re going to make.</description>
+    </item>
     <item>
       <title>Learning Git - Chapter 9</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/</link>

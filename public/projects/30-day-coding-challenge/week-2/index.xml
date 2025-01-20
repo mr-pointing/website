@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/30-day-coding-challenge/week-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day 14</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-14/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-14/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist For Today:&#xA;Refactor for Yagmail instead of Gmail&amp;rsquo;s Oauth2 set up Refactor requests for asking for consent for text messages Create JSON file for artist schedule Integrate with Google Calendar? (maybe way down the line) Make a confirm booking button that checks to make sure there is no issue with timing Accomplishments Getting a lot done today; more so with understanding how the calendar features work for Fullcalendar.</description>
+    </item>
+    <item>
+      <title>Day 13</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-13/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-13/</guid>
+      <description>Goal From Yesterday:&#xA;Accomplishments I looked more into Twilio and it seems like they have their own API that can be used to make sure it&amp;rsquo;s compliant with their rules. I&amp;rsquo;m going to try editing in a checkbox option that allows the user to check yes before submitting the application. If they don&amp;rsquo;t say yes, the database save will not include the phone number, save it as None, and text message reminders won&amp;rsquo;t be sent to them.</description>
+    </item>
+    <item>
+      <title>Day 12</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-12/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-12/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist For Today:&#xA;Booking Python file Figure out how Google Calendar works Accomplishments Had a good talk with the boss about the structuring of the site so far. I had misunderstood the need for a &amp;ldquo;fast form&amp;rdquo;, it really should just be a button that sends a booking form that she fills out the request details and customer information for.</description>
+    </item>
     <item>
       <title>Day 11</title>
       <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-11/</link>

@@ -7,8 +7,113 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day 24</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-24/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-24/</guid>
+      <description>Goal Get current bookings page working Look into filtering requests/bookings Don&amp;rsquo;t want to have to refresh the page, but it doesn&amp;rsquo;t need to constantly update as the user is typing. Results should only appear upon hitting enter. Accomplishments Current bookings was a lot easier now that I&amp;rsquo;m using a template for all my pages, and it was a breeze to create a new blueprint for the page since it&amp;rsquo;s even less code than the requests page, due to their not needing to handle any post requests.</description>
+    </item>
+    <item>
+      <title>Week 4</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Day 23</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-23/</link>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-23/</guid>
+      <description>Goal Coming back from a few days to think about a game plan for the finish line, I think I can get something out and working by the end of these 30 days. Maybe.&#xA;Finish applying base.html to all pages Make the admin index page for current requests page for current bookings page for manual application form Finish CSS for pages Accomplishments Got a ton done today, and worked for probably over 2 hours.</description>
+    </item>
+    <item>
+      <title>Day 22</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-22/</link>
+      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-22/</guid>
+      <description>Goal Start working on HTML/CSS changes Finish reformatting HTML with base.html Accomplishments Surprisingly, got a decent amount done in just under an hour. I was able to complete the base.html file, and worked out some of the kinks of the formatting. It doesn&amp;rsquo;t look exactly like the Figma yet, but I want to make sure all of the HTML files have the base.html extension first.&#xA;Problems or Issues Next: Day 23</description>
+    </item>
+    <item>
+      <title>Day 21</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-21/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-21/</guid>
+      <description>Goal Get Calendly to prefill info for booking link Accomplishments I really thought todays goal was going to be harder, but it actually ended up being pretty easy. All I had to do was edit the URL and pass in some parameters. I thought maybe I&amp;rsquo;d have to set up a developer account and use JSON/JavaScript, but honestly it seems fine without it?&#xA;Problems or Issues Next: Day 22</description>
+    </item>
+    <item>
+      <title>Day 20</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-20/</link>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-20/</guid>
+      <description>Goal Correctly sync the booking form to choose which type of session Caret drop down menu &amp;amp; link to appropriate function Small Tattoo Session Medium Tattoo Session Large Tattoo Session Small Tattoo Reschedule Medium Tattoo Reschedule Tattoo Touchup Accomplishments Got a ton done today; walked through the Figma with Big Boss and was able to get going on the layout. Promising results on that front shortly.&#xA;I was able to get the quick note I made down below finished pretty quick, and glad I did since that will help out immensely when I start building out the search/filter feature.</description>
+    </item>
+    <item>
+      <title>Day 19</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-19/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-19/</guid>
+      <description>Goal Finish the Figma for site Mess around on Calendly Accomplishments Finished the preliminary wireframe for the site, handed off to big boss So another rejection as far as my current layout for the site. I was able to get started and get an actual calendar embedded into the site which worked nicely. I now have a new slew of issues to worry about;&#xA;There are 3 types of bookings to account for Normal tattoo sessions, three types Small (&amp;gt;2hrs) Medium (2 - 5hrs) Large (5+hrs) Reschedules Small (2hrs) Medium (3hrs30) Touchups (1hr30) Change Admin&amp;rsquo;s booking page to choose which type of session Booking should generate and save a link to it in the SQLite database for use later Artist can send via dm with info already filled out Figure out how to give Calendly forms pre-saved information Problems or Issues Next: Day 20</description>
+    </item>
+    <item>
+      <title>Week 3</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-3/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-3/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Day 18</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-18/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-18/</guid>
+      <description>Goal Goals for today are quite simple; complete the look of the website on Figma, so the boss can come in and make design changes before I start committing any time towards building in HTML/CSS. I&amp;rsquo;m building out a basic skeleton for her to build off of, and I should be able to finish that today.&#xA;As far as the project is coming along, since we are moving away from using Full Calendar, I think we&amp;rsquo;re going to just integrate with Calendly.</description>
+    </item>
+    <item>
+      <title>Day 17</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-17/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-17/</guid>
+      <description>Goal First day back!&#xA;I was sick for maybe 2, 3 weeks? Probably the worst cold I&amp;rsquo;ve had in my life, and of course it happened in the midst of my 30 day challenge. I almost tried to work through it, but I couldn&amp;rsquo;t focus at all and had to stop completely. Instead of calling it quits though, I&amp;rsquo;m going to start Day 17 over as a new day, and try and get back up on the saddle.</description>
+    </item>
+    <item>
+      <title>Day 16</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-16/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-16/</guid>
+      <description>Goal Honestly, I might be taking a small break today? I mostly wanted to get the ball rolling this week but after yesterday, I think I might have to settle for Calendly integration before trying to re-create their services. The Twilio account rejected my verification again, and after trying to build a working calendar system through JavaScript, I realized two things; I suck at JavaScript and don&amp;rsquo;t know what I&amp;rsquo;m doing, and Twilio has everything I&amp;rsquo;m looking for plus a little more.</description>
+    </item>
+    <item>
+      <title>Day 15</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-15/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-3/day-15/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist Integrate with Google Calendar For Today:&#xA;Change calendar to full month and change the formatting Had a talk with the boss, and she wants it to look a little bit different than the week-hour grid I had going on. Instead, I need each date to be clickable when available, and when clicked, needs to open up a little window in front with the available times.</description>
+    </item>
+    <item>
+      <title>Day 14</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-14/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-14/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist For Today:&#xA;Refactor for Yagmail instead of Gmail&amp;rsquo;s Oauth2 set up Refactor requests for asking for consent for text messages Create JSON file for artist schedule Integrate with Google Calendar? (maybe way down the line) Make a confirm booking button that checks to make sure there is no issue with timing Accomplishments Getting a lot done today; more so with understanding how the calendar features work for Fullcalendar.</description>
+    </item>
+    <item>
+      <title>Day 13</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-13/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-13/</guid>
+      <description>Goal From Yesterday:&#xA;Accomplishments I looked more into Twilio and it seems like they have their own API that can be used to make sure it&amp;rsquo;s compliant with their rules. I&amp;rsquo;m going to try editing in a checkbox option that allows the user to check yes before submitting the application. If they don&amp;rsquo;t say yes, the database save will not include the phone number, save it as None, and text message reminders won&amp;rsquo;t be sent to them.</description>
+    </item>
+    <item>
+      <title>Day 12</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-12/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-2/day-12/</guid>
+      <description>Goal From Yesterday:&#xA;Set up text message for request Client Artist For Today:&#xA;Booking Python file Figure out how Google Calendar works Accomplishments Had a good talk with the boss about the structuring of the site so far. I had misunderstood the need for a &amp;ldquo;fast form&amp;rdquo;, it really should just be a button that sends a booking form that she fills out the request details and customer information for.</description>
+    </item>
     <item>
       <title>Week 2</title>
       <link>http://localhost:1313/projects/30-day-coding-challenge/week-2/</link>
@@ -98,7 +203,7 @@
       <link>http://localhost:1313/projects/30-day-coding-challenge/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/30-day-coding-challenge/</guid>
-      <description> Goal Create a booking/request site for Tattoo artists.&#xA;Tracker Day 1 2 3 4 5 6 7 Notes Day 1 Day 2 Day 3 Day 4 Day 5 Day 6 Day 7 Day 8 9 10 11 12 13 14 Notes Day 8 Day 9 Day 10 Day 15 16 17 18 19 20 21 Notes Day 22 23 24 25 26 27 28 Notes Day 29 30 31 Notes </description>
+      <description> Goal Create a booking/request site for Tattoo artists.&#xA;Tracker Day 1 2 3 4 5 6 7 Notes Day 1 Day 2 Day 3 Day 4 Day 5 Day 6 Day 7 Day 8 9 10 11 12 13 14 Notes Day 8 Day 9 Day 10 Day 11 Day 12 Day 13 Day 14 Day 15 16 17 18 19 20 21 Notes Day 15 Day 16 Day 17 Day 18 Day 19 Day 20 Day 21 Day 22 23 24 25 26 27 28 Notes Day 22 Day 23 Day 24 Day 29 30 31 Notes </description>
     </item>
     <item>
       <title>Day 1</title>

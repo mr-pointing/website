@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Odin Project on Mr. Pointing</title>
+    <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/</link>
+    <description>Recent content in The Odin Project on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 11 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS Units</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/css-units/</link>
+      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/css-units/</guid>
+      <description>There are mainly two types of ways to define sizes in CSS; absolute and relative. Absolute units are any measurement where the size will retain the same size no matter what; regardless of the other elements on screen, and screen size. The only absolute unit that should be in use is pixels, or px.&#xA;The other, relative, change based on a few factors. When using text, you&amp;rsquo;ll want to use rem or em, but most likely just rem.</description>
+    </item>
+    <item>
+      <title>Flexbox and Tables</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/flexbox-and-tables/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/flexbox-and-tables/</guid>
+      <description>When progressing through the Odin Project, I went directly into the Full Stack JavaScript path, which started with SVGs and continues with Tables. I did see one topic I didn&amp;rsquo;t remember from the beginner path; flexboxes. My HTML is rusty, so I decided to read that article before hopping into tables. I thought why not combine them, since it was a quick read.&#xA;Essentially, flex is a way of organizing content on a web page so that it can be uniform and behavior is expected/controlled.</description>
+    </item>
+    <item>
+      <title>SVGs</title>
+      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/svgs/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/svgs/</guid>
+      <description>SVGs is an image formatting type, known for its use in web design. It is used so commonly due to it being scalable (part of the name, Scalable Vector Graphics) and compatibility with CSS and JavaScript. Use cases range from icons to simple graphs and images, even backgrounds.&#xA;The main reason to use an SVG instead of a pixel based format would be the resolution not being so limiting. To increase the size of an image using what we call raster graphics would be stuck having to adjust for pixels not originally intended to be concerned with.</description>
+    </item>
+  </channel>
+</rss>
