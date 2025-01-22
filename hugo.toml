@@ -19,6 +19,14 @@ paginate     = 10
   keywords = "homepage, blog"
   images = [""]
   name = "Richard Pointing"
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/mr-pointing"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/richard-pointing-318994172"
+
   
   
 
