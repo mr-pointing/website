@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20 Textbooks</title>
+      <link>http://localhost:1313/posts/20-textbooks/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/20-textbooks/</guid>
+      <description>For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&amp;rsquo;ve purchased. Below is a list that I&amp;rsquo;ll keep updated, as well as a link to their inevitable notes.&#xA;1. [[Learning Git - Chapter 1|Learning Git]] 2.</description>
+    </item>
     <item>
       <title>Day 24</title>
       <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-24/</link>

@@ -6,8 +6,43 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate>
         <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>20 Textbooks</title>
+            <link>http://localhost:1313/posts/20-textbooks/</link>
+            <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+            
+            <guid>http://localhost:1313/posts/20-textbooks/</guid>
+            <description>For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&amp;rsquo;ve purchased. Below is a list that I&amp;rsquo;ll keep updated, as well as a link to their inevitable notes.
+1. Learning Git 2. Deep Learning - Math 3.</description>
+            <content type="html"><![CDATA[<hr>
+<p>For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&rsquo;ve purchased. Below is a list that I&rsquo;ll keep updated, as well as a link to their inevitable notes.</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 1. <a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/">Learning Git</a></li>
+<li><input disabled="" type="checkbox"> 2. <a href="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/">Deep Learning - Math</a></li>
+<li><input disabled="" type="checkbox"> 3. Grokking Algorithms</li>
+<li><input disabled="" type="checkbox"> 4. Learning Lua</li>
+<li><input disabled="" type="checkbox"> 5. Learning Modern Linux</li>
+<li><input disabled="" type="checkbox"> 6. Real World Python</li>
+<li><input disabled="" type="checkbox"> 7. Impractical Python Projects</li>
+<li><input disabled="" type="checkbox"> 8. Foundations of Information Security</li>
+<li><input disabled="" type="checkbox"> 9. Penetration Testing</li>
+<li><input disabled="" type="checkbox"> 10. Python for DevOps</li>
+<li><input disabled="" type="checkbox"> 11. Fast API</li>
+<li><input disabled="" type="checkbox"> 12. The Shape of Data</li>
+<li><input disabled="" type="checkbox"> 13. Deep Learning: A Visual Approach</li>
+<li><input disabled="" type="checkbox"> 14. Practical Linux Systems Administration</li>
+<li><input disabled="" type="checkbox"> 15. Efficient Linux at the Command Line</li>
+<li><input disabled="" type="checkbox"> 16. Linux Basics for Hackers</li>
+<li><input disabled="" type="checkbox"> 17. Cyberjutsu</li>
+<li><input disabled="" type="checkbox"> 18. Network Programmability &amp; Automation</li>
+<li><input disabled="" type="checkbox"> 19. Docker Up &amp; Running</li>
+<li><input disabled="" type="checkbox"> 20. Learning DevSecOps</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Teaching with Obsidian</title>
