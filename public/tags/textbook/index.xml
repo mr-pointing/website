@@ -7,14 +7,49 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grokking Algorithms - Chapter 2</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</guid>
+      <description>Selection Sort Before going into choosing an array vs. a linked list, let&amp;rsquo;s do a quick lesson on memory.&#xA;Think of your computers memory like a dresser full of small drawers. When you want to store a value, in a variable, that variable name is given an address, and whatever value is stored inside of it. Incredibly simple for single value variables- but what about multiple items? This is where picking an array or a linked list comes in.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 1</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</guid>
+      <description>Introduction to Algorithms An algorithm is simply a set of instructions or code designed in a way to accomplish a specific task. Tasks range from solving a math problem, to how to make decision given a specific scenario.&#xA;All the algorithms featured in this text are fast, solve interesting problems, or even both. The text will introduce an algorithm, give an example, and discuss the running time in Big O (we&amp;rsquo;ll get back to this in a second).</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Preface</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</guid>
+      <description>Second Edition By Aditya Y. Bhargava Not only is this book incredibly easy to follow, but it requires very little in terms of prerequisites. The most you need to know is a basic understanding of Python and Algebra.&#xA;This book is for people who already know how to code, hobbyists, visual learners, or anyone who wants to learn algorithms without a rigorous mathematical foundation.&#xA;Code for all chapters can be found here.</description>
+    </item>
+    <item>
+      <title>CPL - Chapter 5</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</guid>
+      <description>Names, Bindings, &amp;amp; Scope We should understand that in across programming languages, like when we use the term identifier or name (both are synonymous), it depends on the language we are using. Different languages have different naming conventions and rules or syntax. We&amp;rsquo;ll look at variables in this chapter, and the different parts their made out of;&#xA;Name Address Value Type Lifetime Scope Bindings A binding is an association between an attribute and an entity, such as between a variable and it&amp;rsquo;s type or value, or between an operation and a symbol.</description>
+    </item>
     <item>
       <title>20 Textbooks</title>
       <link>http://localhost:1313/posts/20-textbooks/</link>
       <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/20-textbooks/</guid>
       <description>For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&amp;rsquo;ve purchased. Below is a list that I&amp;rsquo;ll keep updated, as well as a link to their inevitable notes.&#xA;1. Learning Git 2. Deep Learning - Math 3.</description>
+    </item>
+    <item>
+      <title>Deep Learning - Chapter 3</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/</link>
+      <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/</guid>
+      <description>Probability and Information Theory When we encounter situations where the output is unknown, probability theory gives us a mathematical framework to deal with these statements. They use the term &amp;ldquo;quantifying uncertainty&amp;rdquo; which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it&amp;rsquo;s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents.</description>
     </item>
     <item>
       <title>Learning Git - Chapter 12</title>

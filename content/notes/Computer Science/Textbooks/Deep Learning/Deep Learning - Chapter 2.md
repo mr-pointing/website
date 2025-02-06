@@ -241,3 +241,50 @@ If we have $v$, an eigenvector of $A$, then so too is any vector $s$, as long as
 Let's again look at matrix $A$, suppose we have $n$ linearly independent eigenvectors {$v^{(1)},...,v^{(n)}$} along with corresponding eigenvalues {$\lambda _1,...,\lambda _n$}. We're allowed to put all the eigenvectors together into one matrix $V$ with a single eigenvector per column: $V=[ v^{(1)},...,v^{(n)}]$. We could also put together all of the eigenvalues to form a vector $\lambda = [\lambda _1,...,\lambda _n]^{\intercal}$.
 
 Using the above paragraph's conclusions, we could say that the **eigendecomposition** of $A$ must be $A=Vdiag(\lambda)V^{-1}$. 
+
+Every real symmetric matrix can be decomposed into the following expression: $A=Q\Lambda Q^{\intercal}$, where $Q$ is an orthogonal matrix composed of eigenvectors of $A$, and $\Lambda$ is a diagonal matrix. 
+
+Some things we can learn about a matrix using eigendecomposition:
+
+- A matrix is singular if any eigenvalues are zero
+- A matrix whose eigenvalues are all positive is called a *positive definite*
+- All positive or zero? *positive semidefinite*
+- All negative? *negative definite*
+- All negative or zero? *negative semidefinite*
+
+## Singular Value Decomposition
+
+**SVD**, or *singular value decomposition*, is another method of factorizing a matrix, into what we call *singular vectors* and *singular values*. It will give similar information to what eigendecomposition will return, but it's more applicable in a general sense. Any real matrix has an SVD, whereas some may not have an eigendecomposition (see non-square matrices).
+
+In SVD, we can break down our example of matrix $A$ as $A=UDV^{\intercal}$. Again, assume $A$ is a $m*n$ matrix, but this time assume $U$ as a $m*m$ matrix, $D$ as a $m*n$ matrix, and $V$ as an $n*n$ matrix. 
+
+Not only are the sizes predetermined by the size of $A$, but each matrix also has a set structure; $U$ and $V$ are orthogonal matrices, and $D$ is a diagonal matrix. The values in the diagonal of $D$ are the *singular values* we were referring to earlier, while the columns of $U$ are *left-singular vectors*, leaving the columns of $V$ to be *right-singular vectors*.
+
+The most useful feature when using SVD is when partially generalizing matrix inversion to non-square matrices (see next section).
+
+## The Moore-Penrose Pseudoinverse
+
+There are some cases in which we will have non-square matrices that we want to use or manipulate in some way. Matrix inversion is unfortunately not defined for non-square matrices. This is where the *Moore-Penrose pseudoinverse* comes in. 
+
+We can use the pseudoinverse of $A$, $A^{+}=VD^{+}U^{\intercal}$, where $U, D,$ and $V$ are the SVD of $A$, and the pseudoinverse of $D^{+}$ of diagonal matrix $D$ (obtained by taking the reciprocal of the nonzero elements, then the transpose of that matrix) in situations, for example, where $A$ has more columns than rows, or vice versa.
+
+## The Trace Operator
+
+When we want the sum of all the diagonal entries of a given matrix, we can use the *Trace Operator*; $Tr(A)=\sum_{i}A_{i,i}$.
+
+There are a few instances where the Trace Operator can actually simplify some other formulas. For example, go back to our Frobenius norm, and we can make it; $||A||_F=\sqrt{Tr(AA^{\intercal})}$. It's also useful to note that the Transpose of a Trace is equivalent; $Tr(A)=Tr(A^{\intercal})$. 
+
+When tracing a square matrix composed of multiple factors, it's invariant to moving the last factor into the first position. Weird, but it looks like this; $Tr(ABC) = Tr(CAB) = Tr(BCA)$, which gets even further simplified to $Tr(\prod_{i=1}^{n}F^{(i)})=Tr(F^{(n)}\prod_{i=1}^{n-1}F^{(i)})$.
+
+Trace is also invariant if the product result has a different shape; for $A\in R ^{m*n}$ and $B\in R ^{n*m}$, $Tr(AB)=Tr(BA)$.
+
+## The Determinant
+
+Simply put, determinate of a square matrix ($det(A)$) isa function that maps matrices to real scalars. It can be thought of also as the product of all eigenvalues of a matrix. 
+
+Absolute value of determinants range from 0 to 1, where 0 indicates the space is contracted along one dimension, losing all volume. Conversely, 1 indicates the transformation preserves volume.
+
+
+---
+Next: 
+[Chapter 3]({{< ref "Deep Learning - Chapter 3" >}}) 

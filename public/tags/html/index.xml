@@ -7,34 +7,48 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 11 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CSS Units</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/css-units/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/css-units/</guid>
-      <description>There are mainly two types of ways to define sizes in CSS; absolute and relative. Absolute units are any measurement where the size will retain the same size no matter what; regardless of the other elements on screen, and screen size. The only absolute unit that should be in use is pixels, or px.&#xA;The other, relative, change based on a few factors. When using text, you&amp;rsquo;ll want to use rem or em, but most likely just rem.</description>
+      <title>Fundamental CSS Properties</title>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/</guid>
+      <description> </description>
     </item>
     <item>
       <title>The Odin Project</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/</guid>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/</guid>
       <description>Notes taken during lessons on The Odin Project</description>
     </item>
     <item>
+      <title>Text Styles</title>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/text-styles/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/text-styles/</guid>
+      <description>Getting New Fonts If you decided that you wanted to use a custom font for your website, unless the person viewing your site also has that font downloaded, it will default to the standard HTML font. To avoid this, it&amp;rsquo;s common practice to use a system font stack;&#xA;body { font-family: system-ui, &amp;#34;Segoe UI&amp;#34;, Roboto, Helvetica, Arial, sans-serif, &amp;#34;Apple Color Emoji&amp;#34;, &amp;#34;Segoe UI Emoji&amp;#34;, &amp;#34;Segoe UI Symbol&amp;#34;; } This will allow your site to have numerous back-up styles, in the off chance your user doesn&amp;rsquo;t have access to that font.</description>
+    </item>
+    <item>
+      <title>CSS Units</title>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/css-units/</link>
+      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/css-units/</guid>
+      <description>There are mainly two types of ways to define sizes in CSS; absolute and relative. Absolute units are any measurement where the size will retain the same size no matter what; regardless of the other elements on screen, and screen size. The only absolute unit that should be in use is pixels, or px.&#xA;The other, relative, change based on a few factors. When using text, you&amp;rsquo;ll want to use rem or em, but most likely just rem.</description>
+    </item>
+    <item>
       <title>Flexbox and Tables</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/flexbox-and-tables/</link>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/flexbox-and-tables/</link>
       <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/flexbox-and-tables/</guid>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/flexbox-and-tables/</guid>
       <description>When progressing through the Odin Project, I went directly into the Full Stack JavaScript path, which started with SVGs and continues with Tables. I did see one topic I didn&amp;rsquo;t remember from the beginner path; flexboxes. My HTML is rusty, so I decided to read that article before hopping into tables. I thought why not combine them, since it was a quick read.&#xA;Essentially, flex is a way of organizing content on a web page so that it can be uniform and behavior is expected/controlled.</description>
     </item>
     <item>
       <title>SVGs</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/svgs/</link>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/svgs/</link>
       <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/svgs/</guid>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/svgs/</guid>
       <description>SVGs is an image formatting type, known for its use in web design. It is used so commonly due to it being scalable (part of the name, Scalable Vector Graphics) and compatibility with CSS and JavaScript. Use cases range from icons to simple graphs and images, even backgrounds.&#xA;The main reason to use an SVG instead of a pixel based format would be the resolution not being so limiting. To increase the size of an image using what we call raster graphics would be stuck having to adjust for pixels not originally intended to be concerned with.</description>
     </item>
     <item>

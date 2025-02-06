@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Textbooks on Mr. Pointing</title>
+    <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/</link>
+    <description>Recent content in Textbooks on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPL - Chapter 5</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</guid>
+      <description>Names, Bindings, &amp;amp; Scope We should understand that in across programming languages, like when we use the term identifier or name (both are synonymous), it depends on the language we are using. Different languages have different naming conventions and rules or syntax. We&amp;rsquo;ll look at variables in this chapter, and the different parts their made out of;&#xA;Name Address Value Type Lifetime Scope Bindings A binding is an association between an attribute and an entity, such as between a variable and it&amp;rsquo;s type or value, or between an operation and a symbol.</description>
+    </item>
+  </channel>
+</rss>

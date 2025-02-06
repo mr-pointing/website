@@ -7,8 +7,99 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day 30</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-30/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-30/</guid>
+      <description>Goal Finish Portfolio prototype Accomplishments I was able to finish a basic prototype for the portfolio page but it kind of sucks.&#xA;I wanted to figure out an easy way to get the Instagram feed for the artist, but working with Meta&amp;rsquo;s API is almost as sucky as my portfolio page. So I honestly have my work cut out for me.&#xA;This has been a crazy 30 days. Technically more, but who&amp;rsquo;s counting?</description>
+    </item>
+    <item>
+      <title>Day 31 - Summary</title>
+      <link>http://localhost:1313/posts/day-31---summary/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/day-31---summary/</guid>
+      <description>I can&amp;rsquo;t believe I worked on this project for 30 days. The growth has been fantastic, and I should be proud of all that I was able to accomplish. If this is true, why do I feel a pit in my stomach when I think about this project? If I did such a good job, why do I feel like such shit?&#xA;To be honest, the more I worked on this the more I understood why it takes teams of people to produce applications.</description>
+    </item>
+    <item>
+      <title>Week 4</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Fundamental CSS Properties</title>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 2</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</guid>
+      <description>Selection Sort Before going into choosing an array vs. a linked list, let&amp;rsquo;s do a quick lesson on memory.&#xA;Think of your computers memory like a dresser full of small drawers. When you want to store a value, in a variable, that variable name is given an address, and whatever value is stored inside of it. Incredibly simple for single value variables- but what about multiple items? This is where picking an array or a linked list comes in.</description>
+    </item>
+    <item>
+      <title>The Odin Project</title>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/</guid>
+      <description>Notes taken during lessons on The Odin Project</description>
+    </item>
+    <item>
+      <title>Day 29</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-29/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-29/</guid>
+      <description>Goal Complete the manual entry form Accomplishments FINALLY completed the manual entry form!! I&amp;rsquo;ve been building this out for a while and I was nervous to commit to it since there were a few more moving parts than just a regular request/booking. Happy to say it&amp;rsquo;s done and it&amp;rsquo;s pretty close to completion. The next and hopefully last big hurdle is the creation of the portfolio page, and ending with the testing of the hosting and such.</description>
+    </item>
+    <item>
+      <title>Text Styles</title>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/text-styles/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/text-styles/</guid>
+      <description>Getting New Fonts If you decided that you wanted to use a custom font for your website, unless the person viewing your site also has that font downloaded, it will default to the standard HTML font. To avoid this, it&amp;rsquo;s common practice to use a system font stack;&#xA;body { font-family: system-ui, &amp;#34;Segoe UI&amp;#34;, Roboto, Helvetica, Arial, sans-serif, &amp;#34;Apple Color Emoji&amp;#34;, &amp;#34;Segoe UI Emoji&amp;#34;, &amp;#34;Segoe UI Symbol&amp;#34;; } This will allow your site to have numerous back-up styles, in the off chance your user doesn&amp;rsquo;t have access to that font.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 1</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</guid>
+      <description>Introduction to Algorithms An algorithm is simply a set of instructions or code designed in a way to accomplish a specific task. Tasks range from solving a math problem, to how to make decision given a specific scenario.&#xA;All the algorithms featured in this text are fast, solve interesting problems, or even both. The text will introduce an algorithm, give an example, and discuss the running time in Big O (we&amp;rsquo;ll get back to this in a second).</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Preface</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</guid>
+      <description>Second Edition By Aditya Y. Bhargava Not only is this book incredibly easy to follow, but it requires very little in terms of prerequisites. The most you need to know is a basic understanding of Python and Algebra.&#xA;This book is for people who already know how to code, hobbyists, visual learners, or anyone who wants to learn algorithms without a rigorous mathematical foundation.&#xA;Code for all chapters can be found here.</description>
+    </item>
+    <item>
+      <title>CPL - Chapter 5</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</guid>
+      <description>Names, Bindings, &amp;amp; Scope We should understand that in across programming languages, like when we use the term identifier or name (both are synonymous), it depends on the language we are using. Different languages have different naming conventions and rules or syntax. We&amp;rsquo;ll look at variables in this chapter, and the different parts their made out of;&#xA;Name Address Value Type Lifetime Scope Bindings A binding is an association between an attribute and an entity, such as between a variable and it&amp;rsquo;s type or value, or between an operation and a symbol.</description>
+    </item>
+    <item>
+      <title>Day 28</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-28/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-28/</guid>
+      <description>Goal Work on email formatting Finish search for bookings Look into pagination Accomplishments I finished the searching for the bookings table, and tweaked the functions around a bit. This time, instead of creating a second search function, I made a new parameter table that takes in the type of table you want to search from. This way, I can just create a second view for the page to view the bookings.</description>
+    </item>
+    <item>
+      <title>Day 27</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-27/</link>
+      <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-27/</guid>
+      <description>Goal Accomplishments I got the search feature working! I honestly was pretty shocked at how easy it was to implement after I got past the initial hurdle of creating the correct SQL query.&#xA;Problems or Issues I had to change the SQL query that grabbed the search results to format it with the variables before trying to execute it. I think because I was using a question mark placeholder for both column and search term, it was messing up the column value with quotation marks.</description>
+    </item>
     <item>
       <title>20 Textbooks</title>
       <link>http://localhost:1313/posts/20-textbooks/</link>
@@ -17,18 +108,32 @@
       <description>For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&amp;rsquo;ve purchased. Below is a list that I&amp;rsquo;ll keep updated, as well as a link to their inevitable notes.&#xA;1. Learning Git 2. Deep Learning - Math 3.</description>
     </item>
     <item>
+      <title>Day 26</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-26/</link>
+      <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-26/</guid>
+      <description>Goal Accomplishments I was able to get the progress from yesterday into a bit more of a tangible solution. Currently, in order to update the SQL table of when a booking has been confirmed, is when the embedded widget passes an event scheduled action, it will notify the window which will in turn send the scheduled events information to a Flask view. From there, I need to make another call using the events information unique identifier to retrieve the start time.</description>
+    </item>
+    <item>
+      <title>Deep Learning - Chapter 3</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/</link>
+      <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/</guid>
+      <description>Probability and Information Theory When we encounter situations where the output is unknown, probability theory gives us a mathematical framework to deal with these statements. They use the term &amp;ldquo;quantifying uncertainty&amp;rdquo; which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it&amp;rsquo;s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents.</description>
+    </item>
+    <item>
+      <title>Day 25</title>
+      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-25/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-25/</guid>
+      <description>Goal Accomplishments I worked for a bit yesterday and a lot today, so I&amp;rsquo;ll count them as one. I was able to implement some more font choices so we can narrow that down sooner rather than later, and was also able to work on the color scheme a bit.&#xA;Problems or Issues Today was a daunting experience. I was finally able to get the API connection with Calendly going, just to realize I&amp;rsquo;m getting into more unfamiliar territory.</description>
+    </item>
+    <item>
       <title>Day 24</title>
       <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-24/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-24/</guid>
       <description>Goal Get current bookings page working Look into filtering requests/bookings Don&amp;rsquo;t want to have to refresh the page, but it doesn&amp;rsquo;t need to constantly update as the user is typing. Results should only appear upon hitting enter. Accomplishments Current bookings was a lot easier now that I&amp;rsquo;m using a template for all my pages, and it was a breeze to create a new blueprint for the page since it&amp;rsquo;s even less code than the requests page, due to their not needing to handle any post requests.</description>
-    </item>
-    <item>
-      <title>Week 4</title>
-      <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/30-day-coding-challenge/week-4/</guid>
-      <description> </description>
     </item>
     <item>
       <title>Day 23</title>
@@ -46,30 +151,23 @@
     </item>
     <item>
       <title>CSS Units</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/css-units/</link>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/css-units/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/css-units/</guid>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/css-units/</guid>
       <description>There are mainly two types of ways to define sizes in CSS; absolute and relative. Absolute units are any measurement where the size will retain the same size no matter what; regardless of the other elements on screen, and screen size. The only absolute unit that should be in use is pixels, or px.&#xA;The other, relative, change based on a few factors. When using text, you&amp;rsquo;ll want to use rem or em, but most likely just rem.</description>
     </item>
     <item>
-      <title>The Odin Project</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/</guid>
-      <description>Notes taken during lessons on The Odin Project</description>
-    </item>
-    <item>
       <title>Flexbox and Tables</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/flexbox-and-tables/</link>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/flexbox-and-tables/</link>
       <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/flexbox-and-tables/</guid>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/flexbox-and-tables/</guid>
       <description>When progressing through the Odin Project, I went directly into the Full Stack JavaScript path, which started with SVGs and continues with Tables. I did see one topic I didn&amp;rsquo;t remember from the beginner path; flexboxes. My HTML is rusty, so I decided to read that article before hopping into tables. I thought why not combine them, since it was a quick read.&#xA;Essentially, flex is a way of organizing content on a web page so that it can be uniform and behavior is expected/controlled.</description>
     </item>
     <item>
       <title>SVGs</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/svgs/</link>
+      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/svgs/</link>
       <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/the-odin-project/svgs/</guid>
+      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/svgs/</guid>
       <description>SVGs is an image formatting type, known for its use in web design. It is used so commonly due to it being scalable (part of the name, Scalable Vector Graphics) and compatibility with CSS and JavaScript. Use cases range from icons to simple graphs and images, even backgrounds.&#xA;The main reason to use an SVG instead of a pixel based format would be the resolution not being so limiting. To increase the size of an image using what we call raster graphics would be stuck having to adjust for pixels not originally intended to be concerned with.</description>
     </item>
     <item>
@@ -266,7 +364,7 @@
       <link>http://localhost:1313/projects/30-day-coding-challenge/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/30-day-coding-challenge/</guid>
-      <description> Goal Create a booking/request site for Tattoo artists.&#xA;Tracker Day 1 2 3 4 5 6 7 Notes Day 1 Day 2 Day 3 Day 4 Day 5 Day 6 Day 7 Day 8 9 10 11 12 13 14 Notes Day 8 Day 9 Day 10 Day 11 Day 12 Day 13 Day 14 Day 15 16 17 18 19 20 21 Notes Day 15 Day 16 Day 17 Day 18 Day 19 Day 20 Day 21 Day 22 23 24 25 26 27 28 Notes Day 22 Day 23 Day 24 Day 29 30 31 Notes </description>
+      <description> Goal Create a booking/request site for Tattoo artists.&#xA;Tracker Day 1 2 3 4 5 6 7 Notes Day 1 Day 2 Day 3 Day 4 Day 5 Day 6 Day 7 Day 8 9 10 11 12 13 14 Notes Day 8 Day 9 Day 10 Day 11 Day 12 Day 13 Day 14 Day 15 16 17 18 19 20 21 Notes Day 15 Day 16 Day 17 Day 18 Day 19 Day 20 Day 21 Day 22 23 24 25 26 27 28 Notes Day 22 Day 23 Day 24 Day 25 Day 26 Day 27 Day 28 Day 29 30 31 Notes Day 29 Day 30 </description>
     </item>
     <item>
       <title>Sorting Techniques</title>

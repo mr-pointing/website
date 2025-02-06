@@ -27,6 +27,6 @@ Create a booking/request site for Tattoo artists.
 | Day   | 15         | 16         | 17         | 18         | 19         | 20         | 21         |
 | Notes | [Day 15]({{< ref "Day 15" >}}) | [Day 16]({{< ref "Day 16" >}}) | [Day 17]({{< ref "Day 17" >}}) | [Day 18]({{< ref "Day 18" >}}) | [Day 19]({{< ref "Day 19" >}}) | [Day 20]({{< ref "Day 20" >}}) | [Day 21]({{< ref "Day 21" >}}) |
 | Day   | 22         | 23         | 24         | 25         | 26         | 27         | 28         |
-| Notes | [Day 22]({{< ref "Day 22" >}}) | [Day 23]({{< ref "Day 23" >}}) | [Day 24]({{< ref "Day 24" >}}) |            |            |            |            |
+| Notes | [Day 22]({{< ref "Day 22" >}}) | [Day 23]({{< ref "Day 23" >}}) | [Day 24]({{< ref "Day 24" >}}) | [Day 25]({{< ref "Day 25" >}}) | [Day 26]({{< ref "Day 26" >}}) | [Day 27]({{< ref "Day 27" >}}) | [Day 28]({{< ref "Day 28" >}}) |
 | Day   | 29         | 30         | 31         |            |            |            |            |
-| Notes |            |            |            |            |            |            |            |
+| Notes | [Day 29]({{< ref "Day 29" >}}) | [Day 30]({{< ref "Day 30" >}}) |            |            |            |            |            |

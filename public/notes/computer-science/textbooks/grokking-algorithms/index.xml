@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grokking Algorithms - Preface on Mr. Pointing</title>
+    <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</link>
+    <description>Recent content in Grokking Algorithms - Preface on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 03 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grokking Algorithms - Chapter 2</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</guid>
+      <description>Selection Sort Before going into choosing an array vs. a linked list, let&amp;rsquo;s do a quick lesson on memory.&#xA;Think of your computers memory like a dresser full of small drawers. When you want to store a value, in a variable, that variable name is given an address, and whatever value is stored inside of it. Incredibly simple for single value variables- but what about multiple items? This is where picking an array or a linked list comes in.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 1</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</guid>
+      <description>Introduction to Algorithms An algorithm is simply a set of instructions or code designed in a way to accomplish a specific task. Tasks range from solving a math problem, to how to make decision given a specific scenario.&#xA;All the algorithms featured in this text are fast, solve interesting problems, or even both. The text will introduce an algorithm, give an example, and discuss the running time in Big O (we&amp;rsquo;ll get back to this in a second).</description>
+    </item>
+  </channel>
+</rss>

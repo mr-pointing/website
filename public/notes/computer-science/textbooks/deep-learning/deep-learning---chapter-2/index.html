@@ -54,7 +54,7 @@ Ex.
 Let $s \in R$ be the slope of the line for a real-valued scalar Let $n \in N$ be the number of units for a natural number scalar Vectors An ordered array of numbers, obtainable via the index position of the number in the array.">
   <meta itemprop="datePublished" content="2024-10-31T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-10-31T00:00:00+00:00">
-  <meta itemprop="wordCount" content="2803">
+  <meta itemprop="wordCount" content="3349">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,AI,Machinelearning,Textbook,Math">
 
@@ -347,6 +347,34 @@ Imagine you have a bunch of crayons, each a different color. Each crayon can dra
 <p>If we have $v$, an eigenvector of $A$, then so too is any vector $s$, as long as $s$ is a real number and not 0. $sv$ also has the same eigenvalue, which is why we will mostly be concerned with eigenvectors.</p>
 <p>Let&rsquo;s again look at matrix $A$, suppose we have $n$ linearly independent eigenvectors {$v^{(1)},&hellip;,v^{(n)}$} along with corresponding eigenvalues {$\lambda _1,&hellip;,\lambda _n$}. We&rsquo;re allowed to put all the eigenvectors together into one matrix $V$ with a single eigenvector per column: $V=[ v^{(1)},&hellip;,v^{(n)}]$. We could also put together all of the eigenvalues to form a vector $\lambda = [\lambda _1,&hellip;,\lambda _n]^{\intercal}$.</p>
 <p>Using the above paragraph&rsquo;s conclusions, we could say that the <strong>eigendecomposition</strong> of $A$ must be $A=Vdiag(\lambda)V^{-1}$.</p>
+<p>Every real symmetric matrix can be decomposed into the following expression: $A=Q\Lambda Q^{\intercal}$, where $Q$ is an orthogonal matrix composed of eigenvectors of $A$, and $\Lambda$ is a diagonal matrix.</p>
+<p>Some things we can learn about a matrix using eigendecomposition:</p>
+<ul>
+<li>A matrix is singular if any eigenvalues are zero</li>
+<li>A matrix whose eigenvalues are all positive is called a <em>positive definite</em></li>
+<li>All positive or zero? <em>positive semidefinite</em></li>
+<li>All negative? <em>negative definite</em></li>
+<li>All negative or zero? <em>negative semidefinite</em></li>
+</ul>
+<h2 id="singular-value-decomposition">Singular Value Decomposition</h2>
+<p><strong>SVD</strong>, or <em>singular value decomposition</em>, is another method of factorizing a matrix, into what we call <em>singular vectors</em> and <em>singular values</em>. It will give similar information to what eigendecomposition will return, but it&rsquo;s more applicable in a general sense. Any real matrix has an SVD, whereas some may not have an eigendecomposition (see non-square matrices).</p>
+<p>In SVD, we can break down our example of matrix $A$ as $A=UDV^{\intercal}$. Again, assume $A$ is a $m<em>n$ matrix, but this time assume $U$ as a $m</em>m$ matrix, $D$ as a $m<em>n$ matrix, and $V$ as an $n</em>n$ matrix.</p>
+<p>Not only are the sizes predetermined by the size of $A$, but each matrix also has a set structure; $U$ and $V$ are orthogonal matrices, and $D$ is a diagonal matrix. The values in the diagonal of $D$ are the <em>singular values</em> we were referring to earlier, while the columns of $U$ are <em>left-singular vectors</em>, leaving the columns of $V$ to be <em>right-singular vectors</em>.</p>
+<p>The most useful feature when using SVD is when partially generalizing matrix inversion to non-square matrices (see next section).</p>
+<h2 id="the-moore-penrose-pseudoinverse">The Moore-Penrose Pseudoinverse</h2>
+<p>There are some cases in which we will have non-square matrices that we want to use or manipulate in some way. Matrix inversion is unfortunately not defined for non-square matrices. This is where the <em>Moore-Penrose pseudoinverse</em> comes in.</p>
+<p>We can use the pseudoinverse of $A$, $A^{+}=VD^{+}U^{\intercal}$, where $U, D,$ and $V$ are the SVD of $A$, and the pseudoinverse of $D^{+}$ of diagonal matrix $D$ (obtained by taking the reciprocal of the nonzero elements, then the transpose of that matrix) in situations, for example, where $A$ has more columns than rows, or vice versa.</p>
+<h2 id="the-trace-operator">The Trace Operator</h2>
+<p>When we want the sum of all the diagonal entries of a given matrix, we can use the <em>Trace Operator</em>; $Tr(A)=\sum_{i}A_{i,i}$.</p>
+<p>There are a few instances where the Trace Operator can actually simplify some other formulas. For example, go back to our Frobenius norm, and we can make it; $||A||_F=\sqrt{Tr(AA^{\intercal})}$. It&rsquo;s also useful to note that the Transpose of a Trace is equivalent; $Tr(A)=Tr(A^{\intercal})$.</p>
+<p>When tracing a square matrix composed of multiple factors, it&rsquo;s invariant to moving the last factor into the first position. Weird, but it looks like this; $Tr(ABC) = Tr(CAB) = Tr(BCA)$, which gets even further simplified to $Tr(\prod_{i=1}^{n}F^{(i)})=Tr(F^{(n)}\prod_{i=1}^{n-1}F^{(i)})$.</p>
+<p>Trace is also invariant if the product result has a different shape; for $A\in R ^{m<em>n}$ and $B\in R ^{n</em>m}$, $Tr(AB)=Tr(BA)$.</p>
+<h2 id="the-determinant">The Determinant</h2>
+<p>Simply put, determinate of a square matrix ($det(A)$) isa function that maps matrices to real scalars. It can be thought of also as the product of all eigenvalues of a matrix.</p>
+<p>Absolute value of determinants range from 0 to 1, where 0 indicates the space is contracted along one dimension, losing all volume. Conversely, 1 indicates the transformation preserves volume.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/">Chapter 3</a></p>
 
             </div>
         </article>

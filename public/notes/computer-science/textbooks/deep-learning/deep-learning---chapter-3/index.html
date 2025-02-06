@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Probability and Information Theory When we encounter situations where the output is unknown, probability theory gives us a mathematical framework to deal with these statements. They use the term &amp;ldquo;quantifying uncertainty&amp;rdquo; which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it&amp;rsquo;s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents." />
+<meta name="keywords" content="homepage, blog, computerscience, AI, machine_learning, textbook, math, probability" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/" />
+
+
+    <title>
+        
+            Deep Learning - Chapter 3 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Deep Learning - Chapter 3">
+  <meta itemprop="description" content="Probability and Information Theory When we encounter situations where the output is unknown, probability theory gives us a mathematical framework to deal with these statements. They use the term “quantifying uncertainty” which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it’s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents.">
+  <meta itemprop="datePublished" content="2025-01-21T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-01-21T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1897">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,AI,Machine_learning,Textbook,Math,Probability">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Deep Learning - Chapter 3">
+  <meta name="twitter:description" content="Probability and Information Theory When we encounter situations where the output is unknown, probability theory gives us a mathematical framework to deal with these statements. They use the term “quantifying uncertainty” which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it’s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Deep Learning - Chapter 3">
+  <meta property="og:description" content="Probability and Information Theory When we encounter situations where the output is unknown, probability theory gives us a mathematical framework to deal with these statements. They use the term “quantifying uncertainty” which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it’s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-01-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-21T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Machine_learning">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Math">
+    <meta property="article:tag" content="Probability">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-01-21 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/">Deep Learning - Chapter 3</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="probability-and-information-theory">Probability and Information Theory</h1>
+<p>When we encounter situations where the output is unknown, <em>probability theory</em> gives us a mathematical framework to deal with these statements. They use the term &ldquo;quantifying uncertainty&rdquo; which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it&rsquo;s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents.</p>
+<p>The distinction is made between probability theory and <em>information theory</em>, where the former is concerned with making uncertain statements, and the latter gives us the ability to quantify the levels of uncertainty.</p>
+<h2 id="why-probability">Why Probability?</h2>
+<p>While programmers often work in fields that are deterministic (machines run instructions without errors (that aren&rsquo;t human) relatively well), there is still need for understanding the theory.</p>
+<p>When designing machine learning agents, it&rsquo;s normal to run into uncertain or what we call <em>stochastic</em> quantities. Essentially, stochastic refers to a random element, making the outcome or output unable to be precisely determined (though it can be analyzed and averaged).</p>
+<p>There are three main sources of uncertainty in modeling;</p>
+<ol>
+<li>Inherent stochasticity in a system being modeled
+<ol>
+<li>Basically, there is always an element of randomness that must be accounted for</li>
+</ol>
+</li>
+<li>Incomplete observability</li>
+<li>Incomplete modeling</li>
+</ol>
+<p>Sometimes, it&rsquo;s &ldquo;safer&rdquo; to use a simple and uncertain rule over a complex and certain one, <em>even when the certain one is deterministic and we can afford too</em>. Take for example, the term &ldquo;Most birds fly&rdquo;. You could spend a while explaining the actual statement, &ldquo;All birds fly, except baby birds, sick birds, penguins,&hellip;&rdquo; on and on. You might even forget about Kiwis.</p>
+<p>Probability theory originates from the need to analyze the frequency of events. We see simple forms of this in things like statistics in card games, what we call <em>frequentist probability</em>. We also have the degree of belief, which relates to levels of certainty, or <em>Bayesian probability</em>. Both do use similar, if not the same formulas in calculations.</p>
+<h2 id="random-variables">Random Variables</h2>
+<p>Simply put, <strong>Random Variables</strong> are variables that can take on a random value. Denoted with a lowercase script, subscripts are possible values of the random variable: x is a random variable, and $x_1$ &amp; $x_2$ are possible values of x. It can also be represented as random vector, <strong>x</strong> with $x$ as a value of <strong>x</strong>.</p>
+<p>On it&rsquo;s own, random variables don&rsquo;t do much. However, when paired with a probability distribution, it&rsquo;s randomness can be mapped and understood.</p>
+<h2 id="probability-distributions">Probability Distributions</h2>
+<p>A <em>probability distribution</em>, hinted too just previously, describes how likely a random variable is to give a certain output, otherwise known as a possible state. The distribution changes depending on the variables being <em>discrete</em> or <em>continuous</em>.</p>
+<p>I needed a refresher on the difference between the two. Discrete data has exact values; think of shoe sizes, the number of pages in a book, or people in a room. Conversely, continuous data can take on any value within a given range; how long a movie is, the temperature outside, or the time it takes to complete a test.</p>
+<h3 id="discrete-variables-and-probability-mass-functions">Discrete Variables and Probability Mass Functions</h3>
+<p>When describing distributions with discrete variables, we are describing them using a <em>probability mass function</em>, or PMF. We denote these functions with capital p&rsquo;s, $P$. For reading sake, the book will have different outcomes denoted with different variables rather than names, $P(x)  != P(y)$. We say the probability of x = $x$ is known as $P(x)$, with a range of 0 (impossible) to 1 (certain).</p>
+<p>We can expand this a level further, and create a <em>joint probability distribution</em>, which will use two or more variables; $P($x$=x,$y$=y)$ denotes the probability of both x and y. You can see this written as $P(x,y)$ often.</p>
+<p>PMF comes with some rules in order for $P$ to be a valid function:</p>
+<ol>
+<li>The domain (inputs or $x$) of $P$ must be the set of all possible states of x.</li>
+<li>All of the $P(x)$ values (range or output) must be between 0 and 1.</li>
+<li>The sum of all the $x$ values must add to one; $\sum_{x\in X}P(x)=1$. This property is called <strong>normalized</strong>.</li>
+</ol>
+<h3 id="continuous-variables-and-probability-density-functions">Continuous Variables and Probability Density Functions</h3>
+<p>When working with continuous random variables, instead of PMF, we&rsquo;re going to use a <em>probability density function</em>, or PDF. Just like a PMF, a PDF has rules as well,</p>
+<ol>
+<li>The domain of $p$ must be the set of all possible states of x.</li>
+<li>All of the $p(x)$ values must be greater than or equal to 0.</li>
+<li>$\int p(x)dx=1$. They proceed to go this assuming you know about integral (which I don&rsquo;t) and it flew right over my head. Will need to come back to this later.</li>
+</ol>
+<h2 id="marginal-probability">Marginal Probability</h2>
+<p>Marginal probability distribution refers to grabbing the probability of a subset of random variables within a known set of random variables.</p>
+<p>To find the probability of lets say x from a known $P($x,y$)$, you can use the <em>sum rule</em>; $P($x$=x)=\sum_{y}P($x$=x,$y$=y)$. When using continuous variables, replace summation with integration.</p>
+<h2 id="conditional-probability">Conditional Probability</h2>
+<p>Anytime we are concerned with the probability of a given event based on another event, we call that <em>conditional probability</em>. We would say that the probability of y$=y$ given x$=x$ as $P($y$=y|$x$=x)$. You compute this using $(P($y$=y|$x$=x))/P($x$=x)$. It i s also only defined when $P($x$=x) &gt;0$.</p>
+<h3 id="the-chain-rule-of-conditional-probabilities">The Chain Rule of Conditional Probabilities</h3>
+<p>If we were to perform a probability distribution over many random variables, we are able to decompose it into a conditional distribution over only <em>one</em> variable.</p>
+<h2 id="independence-and-conditional-independence">Independence and Conditional Independence</h2>
+<p>Variables are considered <em>independent</em> if you can express their probability distribution as the product of two factors, separating x and y; $p($x$=x,$y$=y)=p($x$=x)p($y$=y)$.</p>
+<p>The other scenario we may encounter are variables that are <em>conditionally independent</em>, where x and y are random conditionally independent variables given the variable z, and the conditional probability distribution over x and y factorizes like so;  $p($x$=x,$y$=y|$z$=z)=p($x$=x|$z$=z)p($y$=y|$z$=z)$.</p>
+<p>We can simply denote these two as x$\perp$y, and x$\perp$y | z.</p>
+<h2 id="expectation-variance-and-covariance">Expectation, Variance and Covariance</h2>
+<p>Just like we represent the probability of an event happening, we need to represent the expected value, or <em>expectation</em>, of a given function ($f(x)$). We commonly refer to this as the average of the probability distribution $P($x$)$, or more specifically the value $f$ takes on for each $x$ of $P$. For discrete variables it&rsquo;s solved with summation ($\sum_{x}P(x)f(x)$) and with continuous variables it&rsquo;s solved with integral ($\int p(x)f(x)dx$). Depending on how much we know about our random variables, changes how we express $E[ ]$, but we always assume the existence of square brackets accounts for multiple random variables.</p>
+<p><em>Variance</em> is a measurement used to represent the range of the values of a function; Var$(f(x))=E[(f(x)-E[f(x)])^2]$. We could actually visually see the variance in a dataset, when the variance is low enough, the values of $f(x)$ will cluster near the expected value. If we square root the variance, we actually get the <em>standard deviation</em> of our function.</p>
+<p>Similarly, we can calculate <em>covariance</em>, which is the representation of two values and their linear relativity. Some concepts to remember about covariance and dependence:</p>
+<ul>
+<li>High absolute values of covariance means values have a wide range and far from the mean simultaneously</li>
+<li>If covariance is positive, both variables have high values simultaneously</li>
+<li>If covariance is negative, one variable has a high value at times the other has a low value, and vice versa
+<ul>
+<li>We could measure <em>correlation</em> to normalize the contribution of each variable to measure relevance</li>
+</ul>
+</li>
+<li>Two variables that are independent have zero covariance, and two variables that have <strong>nonzero</strong> covariance are dependent</li>
+<li>Independence is a <em>stronger</em> requirement than zero covariance:
+<ul>
+<li>For two variables to have zero covariance, they must have no linear dependence</li>
+<li>It is possible for two variables to be dependent but have zero covariance</li>
+</ul>
+</li>
+</ul>
+<h2 id="common-probability-distributions">Common Probability Distributions</h2>
+<h3 id="bernoulli-distribution">Bernoulli Distribution</h3>
+<p>A distribution over a single binary variable, controlled by a single parameter $\phi \in[0,1]$ ; essentially returns the probability of variable being equal to 1. Two useful properties that stuck out to me are</p>
+<ul>
+<li>$P($x$=1)=\phi$</li>
+<li>$P($x$=0)=1-\phi$</li>
+</ul>
+<h3 id="multinoulli-distribution">Multinoulli Distribution</h3>
+<p>Sometimes called the categorical distribution, the <em>Multinoulli distribution</em> is a distribution of a single discrete variable with $k$ different states, and $k$ is finite. We denote it with vector $p\in[0,1]^{k-1}$, and $p_i$ will return the probability of the $i$-th state.</p>
+<h3 id="gaussian-distribution">Gaussian Distribution</h3>
+<p>One of the most common distributions over real numbers is appropriately called normal distribution, or <em>Gaussian distribution</em>.</p>
+<p>The formula ($N(x;\mu,\sigma ^{2})=\sqrt{1/2\pi \sigma^{2}}exp(-{1/2\sigma^{2}}(x-\mu)^{2}$) has a lot to inspect. Our parameters are $\mu\in R$ and $\sigma \in (0, \infty)$ are what control the distribution; specifically, $\mu$ is the coordinate of the central peak of the distribution (average, $E[$x$]=\mu$), and $\sigma$ is the standard deviation, with $\sigma^{2}$ as the variance.</p>
+<p>It&rsquo;s usually a good idea to run a normal distribution over an application if you&rsquo;re unsure of what form the distribution should take for two main reasons;</p>
+<ol>
+<li>Most distributions we want to model are close to normal distributions, <strong>central limit theorem</strong> (sum of independent random variables are normally distributed).</li>
+<li>Among other distributions with the same variance, normal distribution has the maximum amount of uncertainty over real numbers (least amount of prior knowledge)</li>
+</ol>
+<h3 id="exponential-and-laplace-distributions">Exponential and Laplace Distributions</h3>
+<p>Often in deep learning, we will desire a probability distribution with a sharp point at $x=0$. We can do this in two ways:</p>
+<ol>
+<li><strong>Exponential Distribution</strong>: $p(x;\lambda)=\lambda 1_{x&gt;=0}exp(-\lambda x)$
+<ol>
+<li>$1_{x&gt;=0}$ assigns zero to all values of $x$.</li>
+</ol>
+</li>
+<li><strong>Laplace Distribution</strong>: Laplace$(x;\mu,\gamma)={1/2\gamma}exp(-{|x-\mu |/ \gamma})$</li>
+</ol>
+<h3 id="multiple-distributions">Multiple Distributions</h3>
+<p>There are a few more distributions the book goes over, but since I don&rsquo;t want to jump too deeply into machine learning mathematics yet (at least before I read a good pre-calculus textbook) I&rsquo;d rather just abbreviate the next few subsections into the following idea; often, you&rsquo;ll encounter situations where you&rsquo;ll use multiple different distributions together. This leads to the introduction of <em>latent variables</em>, random variables are can&rsquo;t observe directly that will be discussed in a later chapter.</p>
+<h2 id="bayes-rule">Bayes&rsquo; Rule</h2>
+<p>If we know $P($y|x$)$, <em>Bayes&rsquo; Rule</em> tells us we can find $P($x|y$)$ using $(P($x$)P($y|x$))$/$P($y$)$. If we don&rsquo;t know $P($y$)$, we can find it with $\sum_x P($y|x$)P(x)$.</p>
+<h2 id="technical-details-of-continuous-variables">Technical Details of Continuous Variables</h2>
+<p>The book is pretty upfront about the aspects of mathematics it won&rsquo;t go over. In this case, we turn our attention to <em>measure theory</em>. Essentially, measure theory helps us deal with paradoxes, which is out of the scope of examples in this book.</p>
+<p>Some terms that come from measure theory that might come up:</p>
+<ul>
+<li><em>Measure zero</em>: a description of a set that is negligibly small</li>
+<li><em>Almost everywhere</em>: a property that &ldquo;holds almost everywhere&rdquo; except for a set of measure zero</li>
+</ul>
+<h2 id="information-theory">Information Theory</h2>
+<p>Originally used in sending messages via radio, <em>information theory</em> is a branch of mathematics that is centered on the information that is sent via signal. Information theory is important because it helps in the creation of code used in communication, and even helps in the realm of machine learning with continuous variables and their message length.</p>
+<p>One of the largest takeaways we should remember from information theory is that the notification of an irregular event is more important that the notification of a regular event (Compare &ldquo;sun rose in the morning&rdquo; and &ldquo;three moons in the sky&rdquo;).</p>
+<p>To put into more formal context; likely events should have a low amount of information, guaranteed events shouldn&rsquo;t have any information, less likely events should have high information content, and independent events should have additional information.</p>
+<p>To satisfy the previous properties, we can use $I(x)=-logP(x)$. $I(x)$ is in <em>nats</em>, where one nat is the amount of info obtained after an event of probability $^{1}_{e}$.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/ai/">AI</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/machine_learning/">machine_learning</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/math/">math</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/probability/">probability</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
