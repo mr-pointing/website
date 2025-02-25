@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="In some occasions, using classes, ID&amp;rsquo;s, or types are not enough. This is about those times. There are a bunch, but we&amp;rsquo;re just going to look at a few.
+Child and Sibling Combinators Given the following:
+&amp;lt;main class=&amp;#34;parent&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;child group1&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;grand-child group1&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;child group2&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;grand-child group2&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;child group3&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;grand-child group3&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/main&amp;gt; If we wanted to access all of the div elements inside of main, we can do so in a few different ways." />
+<meta name="keywords" content="homepage, blog, computerscience, html, css" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/front-end/the-odin-project/advanced-css-selectors/" />
+
+
+    <title>
+        
+            Advanced CSS Selectors :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Advanced CSS Selectors">
+  <meta itemprop="description" content="In some occasions, using classes, ID’s, or types are not enough. This is about those times. There are a bunch, but we’re just going to look at a few.
+Child and Sibling Combinators Given the following:
+&lt;main class=&#34;parent&#34;&gt; &lt;div class=&#34;child group1&#34;&gt; &lt;div class=&#34;grand-child group1&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&#34;child group2&#34;&gt; &lt;div class=&#34;grand-child group2&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&#34;child group3&#34;&gt; &lt;div class=&#34;grand-child group3&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;/main&gt; If we wanted to access all of the div elements inside of main, we can do so in a few different ways.">
+  <meta itemprop="datePublished" content="2025-02-19T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-19T00:00:00+00:00">
+  <meta itemprop="wordCount" content="511">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Html,Css">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Advanced CSS Selectors">
+  <meta name="twitter:description" content="In some occasions, using classes, ID’s, or types are not enough. This is about those times. There are a bunch, but we’re just going to look at a few.
+Child and Sibling Combinators Given the following:
+&lt;main class=&#34;parent&#34;&gt; &lt;div class=&#34;child group1&#34;&gt; &lt;div class=&#34;grand-child group1&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&#34;child group2&#34;&gt; &lt;div class=&#34;grand-child group2&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&#34;child group3&#34;&gt; &lt;div class=&#34;grand-child group3&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;/main&gt; If we wanted to access all of the div elements inside of main, we can do so in a few different ways.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/front-end/the-odin-project/advanced-css-selectors/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Advanced CSS Selectors">
+  <meta property="og:description" content="In some occasions, using classes, ID’s, or types are not enough. This is about those times. There are a bunch, but we’re just going to look at a few.
+Child and Sibling Combinators Given the following:
+&lt;main class=&#34;parent&#34;&gt; &lt;div class=&#34;child group1&#34;&gt; &lt;div class=&#34;grand-child group1&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&#34;child group2&#34;&gt; &lt;div class=&#34;grand-child group2&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&#34;child group3&#34;&gt; &lt;div class=&#34;grand-child group3&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;/main&gt; If we wanted to access all of the div elements inside of main, we can do so in a few different ways.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-02-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-19T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Html">
+    <meta property="article:tag" content="Css">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-02-19 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/front-end/the-odin-project/advanced-css-selectors/">Advanced CSS Selectors</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p>In some occasions, using classes, ID&rsquo;s, or types are not enough. This is about those times. There are a bunch, but we&rsquo;re just going to look at a few.</p>
+<h2 id="child-and-sibling-combinators">Child and Sibling Combinators</h2>
+<p>Given the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">main</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;parent&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;child group1&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;grand-child group1&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;child group2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;grand-child group2&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;child group3&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;grand-child group3&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">main</span>&gt;
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<p>If we wanted to access all of the <code>div</code> elements inside of <code>main</code>, we can do so in a few different ways. One, would include use simply stating the element after your <code>main</code> declaration in your style sheet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">main</span> <span style="color:#f92672">div</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#960050;background-color:#1e0010">%%</span> <span style="color:#960050;background-color:#1e0010">Some</span> <span style="color:#960050;background-color:#1e0010">css</span> <span style="color:#960050;background-color:#1e0010">%%</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This would very simply select all of the <code>div</code> elements, regardless of their heritage or relation. You can be more specific, using the <code>&gt;</code> operator, or the <em>child combinator</em>. Now we can access our child elements and grandchild elements independently:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">main</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">div</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#960050;background-color:#1e0010">%%</span> <span style="color:#960050;background-color:#1e0010">This</span> <span style="color:#960050;background-color:#1e0010">will</span> <span style="color:#960050;background-color:#1e0010">change</span> <span style="color:#960050;background-color:#1e0010">child</span> <span style="color:#960050;background-color:#1e0010">div</span> <span style="color:#960050;background-color:#1e0010">elements</span> <span style="color:#960050;background-color:#1e0010">only</span> <span style="color:#960050;background-color:#1e0010">%%</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">main</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">div</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">div</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#960050;background-color:#1e0010">%%</span> <span style="color:#960050;background-color:#1e0010">This</span> <span style="color:#960050;background-color:#1e0010">will</span> <span style="color:#960050;background-color:#1e0010">change</span> <span style="color:#960050;background-color:#1e0010">grandchild</span> <span style="color:#960050;background-color:#1e0010">div</span> <span style="color:#960050;background-color:#1e0010">elements</span> <span style="color:#960050;background-color:#1e0010">only</span> <span style="color:#960050;background-color:#1e0010">%%</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You could also change adjacent elements, or elements that directly follow one. You would use the <code>+</code> sign, or the <em>adjacent combinator</em>. Had you wanted to select all siblings, you could just use <code>~</code>, or the <em>general sibling combinator</em>.</p>
+<h2 id="pseudo-classes">Pseudo-classes</h2>
+<p>There are a ton of these, and they&rsquo;re essentially unique ways of interacting with HTML elements you otherwise wouldn&rsquo;t have access too in standard CSS.</p>
+<h3 id="dynamic-and-user-action-pseudo-classes">Dynamic and User Action Pseudo-classes</h3>
+<ul>
+<li><code>:focus</code> will change the element when the user has it selected</li>
+<li><code>:hover</code> will change the element when the user&rsquo;s mouse is over it</li>
+<li><code>:active</code> will change the element when the user clicks on it</li>
+<li><code>:link</code> will change all unvisited links
+<ul>
+<li><code>a:link</code></li>
+</ul>
+</li>
+<li><code>:visited</code> will change all visited links</li>
+<li><code>:root</code> is the head of the HTML page, and is useful for storing global CSS styles
+<ul>
+<li><code>box-sizing: border-box;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="pseudo-elements">Pseudo-elements</h3>
+<p>Another way to interact with our HMTL elements, and actually affect parts of of our HTML that aren&rsquo;t elements at all. Weird, so let&rsquo;s see some examples;</p>
+<ul>
+<li><code>::marker</code> usefully will affect the indicator of your list bullets for <code>&lt;li&gt;</code> elements</li>
+<li><code>::first-letter</code> and <code>::first-line</code> affect the first letter and line of a given element</li>
+<li><code>::selection</code> changes the highlighting of text when the user highlights it</li>
+<li><code>::before</code> and <code>::after</code> place extra elements in front or after
+<ul>
+<li><code>p::before { }</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="attribute-selectors">Attribute Selectors</h2>
+<p>To review, attributes are the opening parameters passed to an element upon creation (<code>href</code>, <code>src</code>, etc). We can do this in three ways:</p>
+<ol>
+<li><code>[attribute]</code>: affect all instances where <code>attribute</code> is used</li>
+<li><code>selector[attribute]</code>: affect only instances where <code>attribute</code> is used with associated <code>selector</code></li>
+<li><code>[attribute=&quot;value&quot;]</code>: to target only attributes that have a specific name</li>
+</ol>
+<p>The last one can get incredibly specific, as we can use wildcard operators to grab a few different item names at once:</p>
+<ol>
+<li><code>[attribute^=&quot;value&quot;]</code> will match strings only from the start</li>
+<li><code>[attribute$=&quot;value&quot;]</code> will match strings only from the end</li>
+<li><code>[attribute*=&quot;value&quot;]</code> will match anywhere in the given string</li>
+</ol>
+<p><a href="https://flukeout.github.io/">CSS Diner</a> is a great way to test your skills with CSS and see if you retained the info you read through.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/html/">html</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/css/">css</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

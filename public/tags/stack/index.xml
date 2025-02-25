@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stack on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/stack/</link>
+    <description>Recent content in Stack on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Valid Parenthesis</title>
+      <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-parenthesis/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-parenthesis/</guid>
+      <description>Question: You are given a string s consisting of the following characters: &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;.&#xA;The input string s is valid if and only if:&#xA;Every open bracket is closed by the same type of close bracket. Open brackets are closed in the correct order. Every close bracket has a corresponding open bracket of the same type. Return true if s is a valid string, and false otherwise.</description>
+    </item>
+  </channel>
+</rss>

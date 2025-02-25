@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Recursion Recursion, or the process of a sub-program calling itself, is a reoccurring concept in many different algorithms, and a foundational topic in computer science.
+It is a hard topic to understand, but not super complicated. All code examples should be ran and written yourself to gain a full understanding.
+Pseudocode is another term you should familiarize yourself with, since it will be used both by this book and by myself." />
+<meta name="keywords" content="homepage, blog, computerscience, algorithms, textbook, recursion" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/" />
+
+
+    <title>
+        
+            Grokking Algorithms - Chapter 3 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Grokking Algorithms - Chapter 3">
+  <meta itemprop="description" content="Recursion Recursion, or the process of a sub-program calling itself, is a reoccurring concept in many different algorithms, and a foundational topic in computer science.
+It is a hard topic to understand, but not super complicated. All code examples should be ran and written yourself to gain a full understanding.
+Pseudocode is another term you should familiarize yourself with, since it will be used both by this book and by myself.">
+  <meta itemprop="datePublished" content="2025-02-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-08T00:00:00+00:00">
+  <meta itemprop="wordCount" content="611">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Algorithms,Textbook,Recursion">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Grokking Algorithms - Chapter 3">
+  <meta name="twitter:description" content="Recursion Recursion, or the process of a sub-program calling itself, is a reoccurring concept in many different algorithms, and a foundational topic in computer science.
+It is a hard topic to understand, but not super complicated. All code examples should be ran and written yourself to gain a full understanding.
+Pseudocode is another term you should familiarize yourself with, since it will be used both by this book and by myself.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Grokking Algorithms - Chapter 3">
+  <meta property="og:description" content="Recursion Recursion, or the process of a sub-program calling itself, is a reoccurring concept in many different algorithms, and a foundational topic in computer science.
+It is a hard topic to understand, but not super complicated. All code examples should be ran and written yourself to gain a full understanding.
+Pseudocode is another term you should familiarize yourself with, since it will be used both by this book and by myself.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-02-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-08T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Recursion">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-02-08 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/">Grokking Algorithms - Chapter 3</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="recursion">Recursion</h1>
+<p><em>Recursion</em>, or the process of a sub-program calling itself, is a reoccurring concept in many different algorithms, and a foundational topic in computer science.</p>
+<p>It <em>is</em> a hard topic to understand, but not super complicated. All code examples should be ran and written yourself to gain a full understanding.</p>
+<p>Pseudocode is another term you should familiarize yourself with, since it will be used both by this book and by myself. Pseudocode refers to the code or instruction of a given program written out in plain English, usually written before any code is ran to ensure the logic is sound.</p>
+<p>To start thinking about recursion, we should look at a simple task: you have to find a key inside a box within a box, but there are multiple boxes inside the initial box. How could you approach finding the key?</p>
+<p>Basically, there are two main ways;</p>
+
+    <img src="/images/whileloop.png"  alt="whileloop"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>or,</p>
+
+    <img src="/images/recursion_example.png"  alt="recursion_example"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The first method uses a while loop, and the second uses recursion. Both are incredibly useful and have their own merits; different situations call for different tools.</p>
+<p>Using recursion is simple to write- which makes it easy to screw up. Take the following function definition and call:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">countdown</span>(i):
+</span></span><span style="display:flex;"><span>	print(i)
+</span></span><span style="display:flex;"><span>	countdown(i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>countdown(<span style="color:#ae81ff">3</span>)
+</span></span></code></pre></div><p>Depending on what you&rsquo;re running your code on, you&rsquo;ll either break it or experience an infinite loop. My IDE crashed, and if you&rsquo;re still stuck, hit <strong>Ctrl + C</strong> to terminate it.</p>
+<p>The issue we just ran into happened because we didn&rsquo;t define a <em>recursive case</em> and <em>base case</em>. The recursive case is when the function should call itself, and the base is when the function should stop. If we wanted to fix our countdown timer, we can check for our base case before using recursion:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">countdown</span>(i):
+</span></span><span style="display:flex;"><span>	print(i)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> i <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>	countdown(i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><h2 id="stack--call-stack">Stack &amp; Call Stack</h2>
+<p>Another programming concept we should understand is <em>stack</em>, and how the <strong>call stack</strong> works. The more you understand about that, the easier recursion will be to understand.</p>
+<p>A stack is simply any structure with two simple actions: <em>push</em> (insert) and <em>pop</em> (remove &amp; read). An easy example to look at would be a restaurant; as orders are taken, they are given to the chef to work on. (Technically the restaurant motif doesn&rsquo;t work here since restaurants work more like a queue, but we&rsquo;ll get to that later.)</p>
+<p>The call stack is your computers own stack, as it takes in processes or functions as they are called. Your computer pushes the first function in, and any subsequent functions called get pushed, and upon their completion, popped out. That first function (and all running subsequent functions that have made a call) is in a partially completed state, in suspension while the other function(s) run.</p>
+<h3 id="exercises">Exercises</h3>
+
+    <img src="/images/grok_algo_ex3_1.png"  alt="grok_algo_ex3_1"  class="center"  style="border-radius: 8px;"  />
+
+
+<ol>
+<li>Based on the above call stack, what can be observed?
+<ul>
+<li>I originally, in my usual lazy fashion, only gave a single answer: Function 2 is a subfunction (or nested function) within function 1. There are a few more observations that can be made: Function 1 is called first with the variable <code>Name</code> valued as &ldquo;Mr. P&rdquo;, the current function is Function 2, and Function 1 is currently incomplete/suspended.</li>
+</ul>
+</li>
+</ol>
+<h2 id="call-stack-with-recursion">Call Stack with Recursion</h2>
+<p>This is big brain stuff, so pay close attention.</p>
+<p>Here is the code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fact</span>(x):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> fact(x<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>To accomplish <code>fact(3)</code>, here is the line by line walkthrough:</p>
+
+    <img src="/images/grok_algo_call_stack.png"  alt="grok_algo_call_stack"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Stack is incredibly useful, but can take up a lot of memory if the call stack gets too big.</p>
+<h3 id="exercises-1">Exercises</h3>
+<ol>
+<li>When a recursive call runs forever, what does that do to your stack in memory?
+<ul>
+<li>It piles up until the program terminates; a stack overflow error will eventually occur.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-4/">Chapter 4</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/recursion/">recursion</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

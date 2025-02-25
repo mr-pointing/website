@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Question: You are given a a 9 x 9 Sudoku board board. A Sudoku board is valid if the following rules are followed:
+Each row must contain the digits 1-9 without duplicates. Each column must contain the digits 1-9 without duplicates. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without duplicates. Return true if the Sudoku board is valid, otherwise return false" />
+<meta name="keywords" content="homepage, blog, computerscience, python, dictionaries" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/" />
+
+
+    <title>
+        
+            Valid Sudoku :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Valid Sudoku">
+  <meta itemprop="description" content="Question: You are given a a 9 x 9 Sudoku board board. A Sudoku board is valid if the following rules are followed:
+Each row must contain the digits 1-9 without duplicates. Each column must contain the digits 1-9 without duplicates. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without duplicates. Return true if the Sudoku board is valid, otherwise return false">
+  <meta itemprop="datePublished" content="2025-02-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-18T00:00:00+00:00">
+  <meta itemprop="wordCount" content="480">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Python,Dictionaries">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Valid Sudoku">
+  <meta name="twitter:description" content="Question: You are given a a 9 x 9 Sudoku board board. A Sudoku board is valid if the following rules are followed:
+Each row must contain the digits 1-9 without duplicates. Each column must contain the digits 1-9 without duplicates. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without duplicates. Return true if the Sudoku board is valid, otherwise return false">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Valid Sudoku">
+  <meta property="og:description" content="Question: You are given a a 9 x 9 Sudoku board board. A Sudoku board is valid if the following rules are followed:
+Each row must contain the digits 1-9 without duplicates. Each column must contain the digits 1-9 without duplicates. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without duplicates. Return true if the Sudoku board is valid, otherwise return false">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-02-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-18T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Dictionaries">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-02-18 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/">Valid Sudoku</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p><em><strong>Question:</strong></em> You are given a a <code>9 x 9</code> Sudoku board <code>board</code>. A Sudoku board is valid if the following rules are followed:</p>
+<ol>
+<li>Each row must contain the digits <code>1-9</code> without duplicates.</li>
+<li>Each column must contain the digits <code>1-9</code> without duplicates.</li>
+<li>Each of the nine <code>3 x 3</code> sub-boxes of the grid must contain the digits <code>1-9</code> without duplicates.</li>
+</ol>
+<p>Return <code>true</code> if the Sudoku board is valid, otherwise return <code>false</code></p>
+<p><em><strong>How to Solve:</strong></em> Like any problem, we need to think of what we are trying to do. We are trying to check against duplicates, so we know we are going to probably have to use a set. But how can we ensure we&rsquo;ve checked the rows, columns, <em>and</em> squares efficiently?</p>
+<p>My original theory was to get all the numbers out of each row and column, moving through each one and returning false if we ran into any of the duplicates on the way. I didn&rsquo;t do this very efficiently after looking at the solution, but I was proud I got this far on my own:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_dupes</span>(board):  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">9</span>):  
+</span></span><span style="display:flex;"><span>        c_row <span style="color:#f92672">=</span> [int(col) <span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> board[x][<span style="color:#ae81ff">0</span>:] <span style="color:#66d9ef">if</span> col<span style="color:#f92672">.</span>isnumeric()]  
+</span></span><span style="display:flex;"><span>        c_col <span style="color:#f92672">=</span> [int(board[row][x]) <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">9</span>) <span style="color:#66d9ef">if</span> board[row][x]<span style="color:#f92672">.</span>isnumeric()]  
+</span></span><span style="display:flex;"><span>        print(c_col)  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> len(set(c_row)) <span style="color:#f92672">!=</span> len([z <span style="color:#66d9ef">for</span> z <span style="color:#f92672">in</span> c_row <span style="color:#66d9ef">if</span> z <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;.&#34;</span>]) <span style="color:#f92672">or</span> len(set(c_col)) <span style="color:#f92672">!=</span> len(  
+</span></span><span style="display:flex;"><span>                [z <span style="color:#66d9ef">for</span> z <span style="color:#f92672">in</span> c_col <span style="color:#66d9ef">if</span> z <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;.&#34;</span>]):  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span></code></pre></div><p>My thought was the sum of the numbers didn&rsquo;t matter, just the occurences, but I thought a little too little and went for length of the set instead of appearance in the set as the determining factor. This makes my code really long and harder to read, since I need to turn everything into a numerical list, then get the set of both, and check if they&rsquo;re the same length as the list without all the periods. Not super efficient.</p>
+<p>Then I had to tackle actually getting the squares. I was stumped on this for a bit, but I found a way to actually get all of the squares:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">3</span>):  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):  
+</span></span><span style="display:flex;"><span>        print(board[x][j:j<span style="color:#f92672">+</span><span style="color:#ae81ff">3</span>])  
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>):  
+</span></span><span style="display:flex;"><span>        print(board[x][j:j<span style="color:#f92672">+</span><span style="color:#ae81ff">3</span>])  
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">9</span>):  
+</span></span><span style="display:flex;"><span>        print(board[x][j:j<span style="color:#f92672">+</span><span style="color:#ae81ff">3</span>])
+</span></span></code></pre></div><p>Again, not the most efficient at all. I honestly didn&rsquo;t realize what I should have done was set up a hash set, or a dictionary with sets as all the values. The columns, rows, and squares would have their own hash set, and a neat way to keep your squares separated is using <code>//3</code> against the indicies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isValidSudoku</span>(self, board: List[List[str]]) <span style="color:#f92672">-&gt;</span> bool:
+</span></span><span style="display:flex;"><span>        cols <span style="color:#f92672">=</span> defaultdict(set)
+</span></span><span style="display:flex;"><span>        rows <span style="color:#f92672">=</span> defaultdict(set)
+</span></span><span style="display:flex;"><span>        squares <span style="color:#f92672">=</span> defaultdict(set)  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">9</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">9</span>):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> board[r][c] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;.&#34;</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> ( board[r][c] <span style="color:#f92672">in</span> rows[r]
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">or</span> board[r][c] <span style="color:#f92672">in</span> cols[c]
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">or</span> board[r][c] <span style="color:#f92672">in</span> squares[(r <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span>, c <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span>)]):
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                cols[c]<span style="color:#f92672">.</span>add(board[r][c])
+</span></span><span style="display:flex;"><span>                rows[r]<span style="color:#f92672">.</span>add(board[r][c])
+</span></span><span style="display:flex;"><span>                squares[(r <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span>, c <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span>)]<span style="color:#f92672">.</span>add(board[r][c])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span></code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/dictionaries/">dictionaries</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

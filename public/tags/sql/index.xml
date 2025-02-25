@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Importing CSV to SQL Table Using Python</title>
+      <link>http://localhost:1313/notes/computer-science/sql/importing-csv-to-sql-table-using-python/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/importing-csv-to-sql-table-using-python/</guid>
+      <description>From Stack Overflow:&#xA;Using SQLite import csv, sqlite3 con = sqlite3.connect(&amp;#34;:memory:&amp;#34;) # change to &amp;#39;sqlite:///your_filename.db&amp;#39; cur = con.cursor() cur.execute(&amp;#34;CREATE TABLE t (col1, col2);&amp;#34;) # use your column names here with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as fin: # `with` statement available in 2.5+ # csv.DictReader uses first line in file for column headings by default dr = csv.DictReader(fin) # comma is default delimiter to_db = [(i[&amp;#39;col1&amp;#39;], i[&amp;#39;col2&amp;#39;]) for i in dr] cur.executemany(&amp;#34;INSERT INTO t (col1, col2) VALUES (?</description>
+    </item>
     <item>
       <title>SQLBolt - Lesson 16</title>
       <link>http://localhost:1313/notes/computer-science/sql/sqlbolt/sqlbolt---lesson-16/</link>

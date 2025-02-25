@@ -6,8 +6,62 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
         <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Blender Donut Tutorial</title>
+            <link>http://localhost:1313/posts/blender-donut-tutorial/</link>
+            <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+            
+            <guid>http://localhost:1313/posts/blender-donut-tutorial/</guid>
+            <description>Link to video series
+Why Do I Want to Learn Blender? My uncle is a huge inspiration in my life and career. I always admired his artistic ability, always drawing my favorite super heroes and other cool pieces. He ended working full time as a graphic design artist, and has been making killer 3D animations for years.
+This is another way of integrating what things I love, and also possibly picking up a new hobby.</description>
+            <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=B0J27sf9N1Y">Link</a> to video series</p>
+<hr>
+<h1 id="why-do-i-want-to-learn-blender">Why Do I Want to Learn Blender?</h1>
+<p>My uncle is a huge inspiration in my life and career. I always admired his artistic ability, always drawing my favorite super heroes and other cool pieces. He ended working full time as a graphic design artist, and has been making killer 3D animations for years.</p>
+<p>This is another way of integrating what things I love, and also possibly picking up a new hobby. Let&rsquo;s see how this goes.</p>
+<h2 id="part-1-introduction">Part 1: Introduction</h2>
+<p>Basic installation and walkthrough of getting started. Most importantly, how to add things into your scene, <code>Ctrl+A</code>. Super useful shortcut, and for the most part we are going to work with <strong>meshes.</strong></p>
+<p><strong>Render View Mode</strong> can be toggled on to include directional lighting, which can be set by the position of the camera. More details on moving around and moving the camera are in the video.</p>
+<p><strong>Renders</strong>, or detailed stills of your camera view, can be made with <code>F12</code>.</p>
+<p>A good cheat to move the camera with camera view enabled (<code>Numpad 0</code>) is to use <code>n</code> to open properties, select the <code>View</code> tab, then choose the <code>Lock Camera to View</code> option. This will move your camera to where your view is.</p>
+<p>To change the color of meshes, you should add a <strong>material</strong> to it, on the right side bar with the object selected. From there, you can select a color from the scale.</p>
+<p>Hitting <code>s</code> on an object will activate the <em>Scale</em> property, allowing you to quickly alter the objects shape along the axis.</p>
+<p>You also, when viewing through your camera lens, might want to quickly move something around, or rotate it. You can hit <code>r</code> to activate the <em>Rotate</em> tool, which will let you rotate your object around in place.</p>
+<h2 id="part-2-basic-modeling">Part 2: Basic Modeling</h2>
+<p>To make our donut, we should use the most donut-like starting object; the Torus. From there, we should edit the properties using <code>F9</code> to scale it accordingly. We could use a high major and minor segment count, but doing so will actually make our life harder down the road. It is easier to scale up than it is to scale down, and there are some neat tools that we can use to make it look like our low poly object is a higher resolution. For now, we can se our major to 32, and minor to 12.</p>
+<p>To start with those tools to help us fake it till we make it, we can right click and hit <strong>Shade Smooth</strong>, which will make our object look a lot nicer. We should also add a <em>Modifier</em>, which will help our object smooth out even more. The little wrench icon in the bottom right after clicking on an object will allow you to add a <strong>Subdivision Surface</strong>, which essentially exponentially add details.</p>
+<p>Now that our object has the shape we like, we can deform it a bit to make it more realistic by hitting <code>Tab</code> to open up the vertex viewer, then click on a vertex to move it around. Moving one by itself though doesn&rsquo;t look great; you should use <strong>Proportional Editing</strong>, which can be turned on with the tiny circles button, and move multiple parts of your object in unison to get a more natural looking movement. If you want to select an entire edge, <code>Alt+Left Click</code> to select.</p>
+<h2 id="part-3-modeling-the-icing">Part 3: Modeling the Icing</h2>
+<p>Lots going on in this one, so be prepared for definitions. Without doing this as a frame of reference, none of this makes any sense.</p>
+<p>Instead of creating a whole new shape, we know we just the top part of a donut, and that can become our icing texture. You can duplicate any object with <code>Shift+D</code>.</p>
+<p>Now, you clearly don&rsquo;t want the icing covering the entire thing, or you might as well not include it at all. You&rsquo;ll have to select the entire bottom of the object and delete it. An easy way to do this is by using the toggle x-ray tool <code>Alt+z</code> to see through and select all the vertices at a time instead of just the one side your camera is looking at. Then, delete all vertices.</p>
+<p>The icing looks pretty bad, since Blender is trying to render two faces on top of one another. To avoid this, we should try to keep them as close together as we can allow. To start, we should add a <em>solidify</em> modifier, and set the <em>offset</em> and <em>inner crease</em> to 1, and the thickness to something like 0.025. The inner crease will help later by making your icing look like it&rsquo;s more attached to the donut.</p>
+<p>Sometimes your modifier will hide your mesh from view, in which case you need to toggle the view in the right side next to the modifier&rsquo;s name.</p>
+<p>To actually drag out the icing and have it not clip into the donut, you need to do a few things. First thing, with the icing selected, you need to <strong>snap</strong> it (<code>Shift+Tab</code>) using <em>face project</em>, but that&rsquo;s not all. You&rsquo;ll also have to apply a subdivision modifier. It should already have one, so click the down arrow next the named subdivision modifier and click apply. This should make more faces appear in edit mode.</p>
+<p>Sometimes you want to make part of your mesh unedited, or left alone. In our case, we don&rsquo;t want to affect the icing in the middle of our donut. We should select all of the vertices (<code>Alt-Click</code> them) and hide them with <code>h</code>. Now, you should be able to drag the icing around and make it more icing like.</p>
+<p>To make specific portions droop down more without making the faces clip, you could elongate it with <code>e</code> and <code>click</code> for each new portion.</p>
+<h2 id="part-4-sculpting">Part 4: Sculpting</h2>
+<p>Now is a good time to check your icing to look for any issues. You could move each vertex individually if you have any clipping, or you could use a modifier. This time, we have the <strong>shrink-wrap</strong> modifier, used to attach one object to another and smooth out the connection. If you apply it <em>after</em> the subdivision it&rsquo;ll give you issues, so make sure to drag it to the top then hit <code>Apply</code>.</p>
+<p>Now, if we wanted to add in detail that comes along with icing like the ability for icing to pile at the ends/bottom of the donut, currently we couldn&rsquo;t grab any vertex and change it to look nice at all. First, we have to <em>apply</em> our <strong>solidify</strong> modifier, so we can actually get the 3D mesh. Then, <em>apply</em> our <strong>subdivision</strong> modifier with a viewport resolution of 2. This will actually let us edit in the version it&rsquo;s going to look like.</p>
+<p>Now that we&rsquo;re set up, we can use the <em><strong>Sculpt</strong></em> tool, which acts like a brush to do certain elements faster than individually clicking each vertex.</p>
+<p>Technically these next few including Sculpt are brushes, so that&rsquo;s how I&rsquo;ll be referring to them. The next useful one is <strong>Grab</strong>, that works like a finger to push your objects as if they were clay.</p>
+<p>Making a <strong>Mask</strong> is telling Blender an area you <em>don&rsquo;t</em> want to affect; by default, when doing something like <strong>Inflating</strong> (or making objects larger) you would inflate everything except what&rsquo;s chosen in the mask. If you want to select the mask, you would need to invert it.</p>
+<p>The <strong>Smooth</strong> brush allows you to easily smooth out textures. You should do this anytime you have any <em>artifacting</em>.</p>
+<h2 id="part-5-shading">Part 5: Shading</h2>
+<p>Time to add some colors to things. I noticed that in my process of creating the donut, I have a few more vertices than him in the viewport, so I might have added another layer of complexity. I&rsquo;m also getting some jagged edges in rendering, which I might have to add another layer for just that later.</p>
+<p>For now, add the <em>material</em> for color to the icing and the donut. We&rsquo;re going to have to make a table for our donut to sit on, so we should use the <strong>plane</strong> mesh that will act as our table. Scale it out to an appropriate size. The problem now is that if we move our donut, the icing won&rsquo;t follow. To avoid this, make the icing a child of the donut. Click the icing, then <code>Ctrl</code> click the donut, and hit <code>Ctrl+P</code>.</p>
+<p>This part is pretty complicated so strap in. We want to add a texture to the plane. Let&rsquo;s do a Marble countertop as our goal. We can go grab a random marble from this guy&rsquo;s website (have to pay for most but a good amount are free) and we can apply it to the plane, by clicking the yellow circle next to the material&rsquo;s color and choosing Image.</p>
+<p>To me it looked great, but he pointed out that the marble was really flat, so we&rsquo;re going to have to modify a little more. Instead of using the tool bar on the right, we&rsquo;re going to go to an entirely different area called <em><strong>Shading</strong></em>.  This will give us more direct control over our elements via the Node system, which shows a workflow our how our object is modified from start to finish (left to right).</p>
+<p>Refer to the video for this part because it is hard to explain writing it out, but you need to create two more nodes, one for the Roughness and one for Normal (which will actually provide more textures). There&rsquo;s some funny stuff with colors going on that he doesn&rsquo;t outright explain, so I&rsquo;d rather not butcher it. Essentially there are some settings that have to be changed around color for Blender to display the textures correctly.</p>
+<p>After those are done, there&rsquo;s one filter we have to add before we attach the normal mapping to the plane. We need a <strong>Normal Map</strong>, which will provide those bumps, scratches, and smudges on the countertop.</p>
+<p>To get an even more realistic feel for our donut, we can isolate it (click it and hit <code>/</code>) and notice there is no whiter ring along the outside of our donut. Real donuts have this because they&rsquo;re cooked less on the outer-most rim.</p>
+<p>We can add that by clicking on our donut and creating an <em>Image Texture</em>. First go to the <strong>Texture Paint</strong> tab and go to materials. Click the yellow circle next to color to select image texture, then select <code>New</code>. Call it <code>donut_base.png</code> or something, and set some default colors with the default resolution. On the left side of the screen, on the photo icon, click the <code>donut_base</code> image. Now, we can paint directly onto our mesh. Mess around with the colors and the brush levels to get the type of look you desire.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Day 31 - Summary</title>

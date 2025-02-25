@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Valid Parenthesis</title>
+      <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-parenthesis/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-parenthesis/</guid>
+      <description>Question: You are given a string s consisting of the following characters: &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;.&#xA;The input string s is valid if and only if:&#xA;Every open bracket is closed by the same type of close bracket. Open brackets are closed in the correct order. Every close bracket has a corresponding open bracket of the same type. Return true if s is a valid string, and false otherwise.</description>
+    </item>
+    <item>
+      <title>Valid Sudoku</title>
+      <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/</guid>
+      <description>Question: You are given a a 9 x 9 Sudoku board board. A Sudoku board is valid if the following rules are followed:&#xA;Each row must contain the digits 1-9 without duplicates. Each column must contain the digits 1-9 without duplicates. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without duplicates. Return true if the Sudoku board is valid, otherwise return false</description>
+    </item>
+    <item>
+      <title>Importing CSV to SQL Table Using Python</title>
+      <link>http://localhost:1313/notes/computer-science/sql/importing-csv-to-sql-table-using-python/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/sql/importing-csv-to-sql-table-using-python/</guid>
+      <description>From Stack Overflow:&#xA;Using SQLite import csv, sqlite3 con = sqlite3.connect(&amp;#34;:memory:&amp;#34;) # change to &amp;#39;sqlite:///your_filename.db&amp;#39; cur = con.cursor() cur.execute(&amp;#34;CREATE TABLE t (col1, col2);&amp;#34;) # use your column names here with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as fin: # `with` statement available in 2.5+ # csv.DictReader uses first line in file for column headings by default dr = csv.DictReader(fin) # comma is default delimiter to_db = [(i[&amp;#39;col1&amp;#39;], i[&amp;#39;col2&amp;#39;]) for i in dr] cur.executemany(&amp;#34;INSERT INTO t (col1, col2) VALUES (?</description>
+    </item>
     <item>
       <title>Day 30</title>
       <link>http://localhost:1313/projects/30-day-coding-challenge/week-4/day-30/</link>
