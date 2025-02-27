@@ -4,7 +4,7 @@ aliases:
 draft: false
 tags:
   - me
-title: Computer Science
+title: Front End
 date: 2025-02-06
 ---
 
