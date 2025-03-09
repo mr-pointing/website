@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Hash Tables Hash tables are the more formal term for Python&amp;rsquo;s Dictionary structure; a key-value pairing of elements. Hash functions are any function that does the mapping of a value to an input.
+Two main rules when implementing hash tables:
+Pairings should be consistent Key&amp;rsquo;s should be unique The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms, dictionaries, datastructures" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/" />
+
+
+    <title>
+        
+            Grokking Algorithms - Chapter 5 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Grokking Algorithms - Chapter 5">
+  <meta itemprop="description" content="Hash Tables Hash tables are the more formal term for Python’s Dictionary structure; a key-value pairing of elements. Hash functions are any function that does the mapping of a value to an input.
+Two main rules when implementing hash tables:
+Pairings should be consistent Key’s should be unique The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access.">
+  <meta itemprop="datePublished" content="2025-02-27T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="391">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Algorithms,Dictionaries,Datastructures">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Grokking Algorithms - Chapter 5">
+  <meta name="twitter:description" content="Hash Tables Hash tables are the more formal term for Python’s Dictionary structure; a key-value pairing of elements. Hash functions are any function that does the mapping of a value to an input.
+Two main rules when implementing hash tables:
+Pairings should be consistent Key’s should be unique The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Grokking Algorithms - Chapter 5">
+  <meta property="og:description" content="Hash Tables Hash tables are the more formal term for Python’s Dictionary structure; a key-value pairing of elements. Hash functions are any function that does the mapping of a value to an input.
+Two main rules when implementing hash tables:
+Pairings should be consistent Key’s should be unique The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-02-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-27T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Dictionaries">
+    <meta property="article:tag" content="Datastructures">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-02-27 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/">Grokking Algorithms - Chapter 5</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="hash-tables">Hash Tables</h1>
+<p><em>Hash tables</em> are the more formal term for Python&rsquo;s Dictionary structure; a key-value pairing of elements. <em>Hash functions</em> are any function that does the mapping of a value to an input.</p>
+<p>Two main rules when implementing hash tables:</p>
+<ol>
+<li>Pairings should be consistent</li>
+<li>Key&rsquo;s should be unique</li>
+</ol>
+<p>The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access.</p>
+<h3 id="exercises">Exercises</h3>
+<p>Which of the following four are consistent?</p>
+<ol>
+<li>$f(x)=1$ <em>Returns 1 for all input</em> ✅</li>
+<li>$f(x)=$ <code>random.random()</code> ❌</li>
+<li>$f(x)=$ <code>next_empty_slot()</code> ❌</li>
+<li>$f(x) = len(x)$ ✅</li>
+</ol>
+<h2 id="use-cases-of-hash-tables">Use cases of Hash Tables</h2>
+<p>Honestly, they are used pretty much everywhere. Contact lists on your phone, social media apps, sports and athletics, just to name a few. Creating one in Python is as simple as <code>phone_book = {}</code>.</p>
+<p>Most Hash Tables are <em><strong>created with lookups in mind</strong></em>. Why? Again, instant access. The internet even does it, just on an even grander scale than our examples. IP addresses are mapped to a domain name (URL) through <strong>DNS</strong>, <em>domain name resolution</em>.</p>
+<p>Browsers use a DNS cache that store recently visited URL&rsquo;s for easy viewing. See <a href="http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/#dns">this note</a> on DNS for more info on how exactly that works. Caching makes things super fast, and looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>cache <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_page</span>(url):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> url <span style="color:#f92672">in</span> cache:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> cache[url]
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>		data <span style="color:#f92672">=</span> get_data_from_server(url)
+</span></span><span style="display:flex;"><span>		cache[url] <span style="color:#f92672">=</span> data
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> data
+</span></span></code></pre></div><h2 id="collisions-and-performance">Collisions and Performance</h2>
+<p>To understand performance, we have to first understand what collisions are and how they happen. Unfortunately, when using hash functions, you can&rsquo;t always avoid keys being assigned to a spot in memory. Exactly why this happens is abstract and not necessary to understand right now.</p>
+<p>You could use linked lists or arrays in tables, but that also has it&rsquo;s own limits like memory waste and management. Hash functions &amp; low load factor help avoid collisions, which is the worst nightmare for hash tables.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hash (avg)</th>
+<th>Hash (worst)</th>
+<th>Arrays</th>
+<th>Linked Lists</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search</td>
+<td>$O(1)$</td>
+<td>$O(n)$</td>
+<td>$O(1)$</td>
+<td>$O(n)$</td>
+</tr>
+<tr>
+<td>Insert</td>
+<td>$O(1)$</td>
+<td>$O(n)$</td>
+<td>$O(n)$</td>
+<td>$O(1)$</td>
+</tr>
+<tr>
+<td>Delete</td>
+<td>$O(1)$</td>
+<td>$O(n)$</td>
+<td>$O(n)$</td>
+<td>$O(1)$</td>
+</tr>
+</tbody>
+</table>
+<p><em>Load Factor</em> is another concept to be aware of, measuring how full an array is (# of items/# of slots). If your load factor is too high, memory is full, and you&rsquo;ll end up having to resize. Good Hash functions spread the data that&rsquo;s stored in them evenly.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/">Chapter 6</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/dictionaries/">dictionaries</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/datastructures/">datastructures</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

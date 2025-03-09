@@ -5,7 +5,7 @@ tags:
   - computerscience
   - textbook
   - algorithms
-title: Grokking Algorithms - Preface
+title: Grokking Algorithms
 date: 2025-01-29
 updated: 2025-01-29T17:20
 ---

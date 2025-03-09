@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Dijkstra&amp;rsquo;s Algorithm Dijkstra&amp;rsquo;s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
+From what we know of BFS, we can assume it would probably return &amp;ldquo;Start -&amp;gt; A -&amp;gt; Finish&amp;rdquo; as the shortest path. without weights, that makes perfect sense." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/" />
+
+
+    <title>
+        
+            Grokking Algorithms - Chapter 9 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Grokking Algorithms - Chapter 9">
+  <meta itemprop="description" content="Dijkstra’s Algorithm Dijkstra’s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
+From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense.">
+  <meta itemprop="datePublished" content="2025-03-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-03T00:00:00+00:00">
+  <meta itemprop="wordCount" content="581">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Algorithms">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Grokking Algorithms - Chapter 9">
+  <meta name="twitter:description" content="Dijkstra’s Algorithm Dijkstra’s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
+From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Grokking Algorithms - Chapter 9">
+  <meta property="og:description" content="Dijkstra’s Algorithm Dijkstra’s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
+From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-03T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-03 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/">Grokking Algorithms - Chapter 9</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="dijkstras-algorithm">Dijkstra&rsquo;s Algorithm</h1>
+<p><em>Dijkstra&rsquo;s Algorithm</em> calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:</p>
+
+    <img src="/images/weighted_graph.png"  alt="weighted_graph"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>From what we know of BFS, we can assume it would probably return &ldquo;Start -&gt; A -&gt; Finish&rdquo; as the shortest path. without weights, that makes perfect sense. However, that has a cost of 7 (7 minutes). Isn&rsquo;t there a cheaper way to get there? We&rsquo;ll see in a second how Dijkstra&rsquo;s algorithm calculates this for us.</p>
+<p>Here is how it works;</p>
+<ol>
+<li>Find the cheapest node</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>6</td>
+</tr>
+<tr>
+<td>B</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Finish</td>
+<td>$\infty$</td>
+</tr>
+<tr>
+<td>Since we haven&rsquo;t reached Finish yet, we&rsquo;ll leave it marked as $\infty$. We&rsquo;ll see why soon. We have two options from Start, A or B. B is cheaper, so we start there.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li>Calculate how long it takes to get to the next nodes out-neighbor</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>5</td>
+</tr>
+<tr>
+<td>B</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Finish</td>
+<td>7</td>
+</tr>
+<tr>
+<td>3. Repeat, in this case A is the last node to check</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>5</td>
+</tr>
+<tr>
+<td>B</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Finish</td>
+<td>6</td>
+</tr>
+<tr>
+<td>The time in this scenario is our weight. Dijkstra&rsquo;s algorithm <em>only</em> works on weighted graphs, and the weights <strong>cannot</strong> negative. If you an all positive weighted graph, Dijkstra&rsquo;s algorithm could be useful.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="implementation">Implementation</h2>
+<p>How could we try out the above example in Python? Once again, we can make use of hash tables, or in this case, dictionaries.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>graph <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>costs <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>parents <span style="color:#f92672">=</span> {}
+</span></span></code></pre></div><p>Here&rsquo;s a visualization of how we can think about how to populate these dictionaries. We need to consider that we have to literally make the graph, so we should have an entry for each node, as well as keeping track of it&rsquo;s out-neighbors and the cost associated&hellip;that&rsquo;s a lot already. Not only do we need to keep track of the current and updated costs, but also the parents of each node.</p>
+
+    <img src="/images/dijkstras_tables.png"  alt="dijkstras_tables"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The best way to replicate this is actually with sub dictionaries:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;start&#39;</span>] <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;start&#39;</span>][<span style="color:#e6db74">&#39;A&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;start&#39;</span>][<span style="color:#e6db74">&#39;B&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>For Costs, we can use the math module to help us out:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>infinity <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>inf
+</span></span><span style="display:flex;"><span>costs <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>costs[<span style="color:#e6db74">&#39;A&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>costs[<span style="color:#e6db74">&#39;B&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>costs[<span style="color:#e6db74">&#39;Finish&#39;</span>] <span style="color:#f92672">=</span> infinity
+</span></span></code></pre></div><p>and for parents,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>parents <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>parents[<span style="color:#e6db74">&#39;A&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Start&#39;</span>
+</span></span><span style="display:flex;"><span>parents[<span style="color:#e6db74">&#39;B&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Start&#39;</span>
+</span></span><span style="display:flex;"><span>parents[<span style="color:#e6db74">&#39;Finish&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div><p>Last but not least, we also need a set! Remember, sets cannot contain duplicates, which is going to help us in a second.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>processed <span style="color:#f92672">=</span> set()
+</span></span></code></pre></div><p>The logic for the algorithm is as follows:</p>
+<ol>
+<li>Grab the cheapest node that is closest to the start</li>
+<li>While we have nodes to process&hellip;
+<ol>
+<li>Update costs for it&rsquo;s neighbors</li>
+<li>If any neighbors&rsquo; costs were updated, update the parent as well</li>
+<li>Mark this node as processed</li>
+<li>Find the next cheapest node</li>
+</ol>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>node <span style="color:#f92672">=</span> find_lowest_cost_node(costs)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> node <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>	cost <span style="color:#f92672">=</span> costs[node]
+</span></span><span style="display:flex;"><span>	neighbors <span style="color:#f92672">=</span> graph[node]
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> neighbors<span style="color:#f92672">.</span>keys():
+</span></span><span style="display:flex;"><span>		new_cost <span style="color:#f92672">=</span> cost <span style="color:#f92672">+</span> neighbors[n]
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> costs[n] <span style="color:#f92672">&gt;</span> new_cost:
+</span></span><span style="display:flex;"><span>			costs[n] <span style="color:#f92672">=</span> new_cost
+</span></span><span style="display:flex;"><span>			parents[n] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>	processed<span style="color:#f92672">.</span>add(node)
+</span></span><span style="display:flex;"><span>	node <span style="color:#f92672">=</span> find_lowest_cost_node(costs)
+</span></span></code></pre></div><p>There is a lot going on there. We should definitely take a walk through that in the debugger to really see behind the scenes how it works, step by step. There is one thing left out; the function called <code>find_lowest_cost_node()</code>!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_lowest_cost_node</span>(costs):
+</span></span><span style="display:flex;"><span>	lowest_cost <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>inf
+</span></span><span style="display:flex;"><span>	lowest_cost_node <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> node <span style="color:#f92672">in</span> costs:
+</span></span><span style="display:flex;"><span>		cost <span style="color:#f92672">=</span> costs[node]
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> cost <span style="color:#f92672">&lt;</span> lowest_cost <span style="color:#f92672">and</span> node <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> processed:
+</span></span><span style="display:flex;"><span>			lowest_cost <span style="color:#f92672">=</span> cost
+</span></span><span style="display:flex;"><span>			lowest_cost_node <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> lowest_cost_node
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/">Chapter 10</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

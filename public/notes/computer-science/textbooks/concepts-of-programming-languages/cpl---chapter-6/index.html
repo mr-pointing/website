@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Data Types What is a data type? Data types are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it&amp;rsquo;s data types and types used.
+The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers)." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, syntax" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/" />
+
+
+    <title>
+        
+            CPL - Chapter 6 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="CPL - Chapter 6">
+  <meta itemprop="description" content="Data Types What is a data type? Data types are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it’s data types and types used.
+The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers).">
+  <meta itemprop="datePublished" content="2025-03-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-08T00:00:00+00:00">
+  <meta itemprop="wordCount" content="577">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Syntax">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="CPL - Chapter 6">
+  <meta name="twitter:description" content="Data Types What is a data type? Data types are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it’s data types and types used.
+The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers).">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="CPL - Chapter 6">
+  <meta property="og:description" content="Data Types What is a data type? Data types are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it’s data types and types used.
+The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers).">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-08T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Syntax">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-08 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/">CPL - Chapter 6</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="data-types">Data Types</h1>
+<p>What is a data type? <em>Data types</em> are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it&rsquo;s data types and types used.</p>
+<p>The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers). <em>Descriptors</em> are the collection of the attributes of a variable.</p>
+<h2 id="primitive-data-types">Primitive Data Types</h2>
+<p>Data types that are not defined in terms of other types.</p>
+<ul>
+<li><strong>Numeric Types</strong>:
+<ul>
+<li>Integers: Different languages have different types, some common are; <code>short</code>, <code>byte</code>, <code>int</code>, <code>long</code></li>
+<li>Floating-point: Models real numbers, but representations are only approximations for many real values; <code>float</code> or <code>doubles</code></li>
+<li>Complex: Ordered pairs of floating-point values</li>
+<li>Decimal: Mostly for larger computers designed to support business system applications; stores a fixed number of decimal digits, with the decimal point being fixed position in the value</li>
+</ul>
+</li>
+<li><strong>Boolean Types</strong>:
+<ul>
+<li>Simplest of all types; one value for True, one for False, typically stored in a byte</li>
+</ul>
+</li>
+<li><strong>Character Types</strong>:
+<ul>
+<li>Stored usually as numeric coding. Common coding&rsquo;s are 8-bit or ASCII</li>
+</ul>
+</li>
+</ul>
+<h2 id="character-string-types">Character String Types</h2>
+<p>A data type in which the values consist of sequences of characters. These have some inherent design issues;</p>
+<ol>
+<li>Should strings be a special kind of character array or a primitive type?</li>
+<li>Should strings have static or dynamic length?</li>
+</ol>
+<h3 id="strings-and-their-operators">Strings and Their Operators</h3>
+<p>Most common operations are assignment, concatenation, sub-string reference, comparison, &amp; pattern matching. The <em>sub-string reference</em> is simply a reference to a sub-string of a given string.</p>
+<p>If strings are not defined as a primitive type, strings are usually stored in arrays of single characters.</p>
+<ul>
+<li>C &amp; C++ use <code>char</code> arrays
+<ul>
+<li><code>char str[] = 'apples';</code>
+<ul>
+<li>Equal to <code>apples0</code> where 0 is the null character that stops the list from being read past the characters</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="string-length-options">String Length Options</h3>
+<p>Three main options:</p>
+<ol>
+<li><strong>Static Length String</strong>:
+<ol>
+<li>The length can be static, set when the string is created. Such is the case for Python, Java, C++ Classes, etc.
+<ol>
+<li>Descriptor:
+<ol>
+<li>Static String (name of type)</li>
+<li>Length</li>
+<li>Address (of first character)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Limited Dynamic Length Strings</strong>:
+<ol>
+<li>To allow strings to have varying length up to a declared and fixed maximum set by the variables definition
+<ol>
+<li>Descriptor
+<ol>
+<li>Limited Dynamic String</li>
+<li>Max length</li>
+<li>Current length</li>
+<li>Address</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Dynamic Length Strings</strong>:
+<ol>
+<li>To allow strings to have varying length with no maximum. This is the case for JavaScript, Perl, and standard C++ libraries</li>
+</ol>
+</li>
+</ol>
+<p>Dealing with strings as arrays is overall more cumbersome than a primitive string type.</p>
+<h2 id="enumeration-types">Enumeration Types</h2>
+<p>One in which all possible values, which are named constants, are provided, or enumerated, in the definition.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#66d9ef">enum</span> days {Mon, Tue, Wed, Thu, Fri, Sat, Sun}
+</span></span></code></pre></div><p>There are some inherent design issues;</p>
+<ol>
+<li>Is an enumeration constant allowed to appear in more than one type definition, and if so, how is the type of an occurrence of that constant in the program checked?</li>
+<li>Are enumeration values coerced to integer?</li>
+<li>Are any other types coerced to an enumeration type?</li>
+</ol>
+<p><em><strong>All the above are type checking issues</strong></em>.</p>
+<p>For languages without enumeration types, we can use int values; <code>{red = 0; blue = 1;}</code></p>
+<h3 id="c">C++</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">colors</span> {red, blue, green, yellow, black};
+</span></span><span style="display:flex;"><span>colors MyColor <span style="color:#f92672">=</span> blue, yourColor <span style="color:#f92672">=</span> red;
+</span></span></code></pre></div><p>Because enumeration types evaluate to an integer value, they can be used in mathematical operations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span>myColor<span style="color:#f92672">++</span>; <span style="color:#75715e">// Setzs myColor to green from blue
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>myColor <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>;  <span style="color:#75715e">// Illegal in C++
+</span></span></span></code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/syntax/">syntax</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

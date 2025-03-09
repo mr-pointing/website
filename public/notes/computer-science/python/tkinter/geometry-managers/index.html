@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Controlling Layouts with Geometry Managers Tkinter has three geometry managers, or methods that define how the content of your app is structured. .pack() is just one of them; we also could use .place() or .grid(). You can only use one at a time, so let&amp;rsquo;s discover the instances in which we&amp;rsquo;d use them.
+.pack() When using .pack(), you&amp;rsquo;re actually using a packing algorithm in order to place the widgets on screen." />
+<meta name="keywords" content="homepage, blog, computerscience, python, tkinter, modules" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/python/tkinter/geometry-managers/" />
+
+
+    <title>
+        
+            Geometry Managers :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Geometry Managers">
+  <meta itemprop="description" content="Controlling Layouts with Geometry Managers Tkinter has three geometry managers, or methods that define how the content of your app is structured. .pack() is just one of them; we also could use .place() or .grid(). You can only use one at a time, so let’s discover the instances in which we’d use them.
+.pack() When using .pack(), you’re actually using a packing algorithm in order to place the widgets on screen.">
+  <meta itemprop="datePublished" content="2025-03-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1155">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Python,Tkinter,Modules">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Geometry Managers">
+  <meta name="twitter:description" content="Controlling Layouts with Geometry Managers Tkinter has three geometry managers, or methods that define how the content of your app is structured. .pack() is just one of them; we also could use .place() or .grid(). You can only use one at a time, so let’s discover the instances in which we’d use them.
+.pack() When using .pack(), you’re actually using a packing algorithm in order to place the widgets on screen.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/python/tkinter/geometry-managers/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Geometry Managers">
+  <meta property="og:description" content="Controlling Layouts with Geometry Managers Tkinter has three geometry managers, or methods that define how the content of your app is structured. .pack() is just one of them; we also could use .place() or .grid(). You can only use one at a time, so let’s discover the instances in which we’d use them.
+.pack() When using .pack(), you’re actually using a packing algorithm in order to place the widgets on screen.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-09T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Tkinter">
+    <meta property="article:tag" content="Modules">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/python/tkinter/geometry-managers/">Geometry Managers</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="controlling-layouts-with-geometry-managers">Controlling Layouts with Geometry Managers</h1>
+<p>Tkinter has three <em>geometry managers</em>, or methods that define how the content of your app is structured. <code>.pack()</code> is just one of them; we also could use <code>.place()</code> or <code>.grid()</code>. You can only use one at a time, so let&rsquo;s discover the instances in which we&rsquo;d use them.</p>
+<h2 id="pack"><code>.pack()</code></h2>
+<p>When using <code>.pack()</code>, you&rsquo;re actually using a <em>packing algorithm</em> in order to place the widgets on screen. It accomplishes this in two steps;</p>
+<ol>
+<li>Creates a <em>parcel</em>, or a rectangular shape that is large enough for the content within it (the rest of the window is filled with empty space)</li>
+<li>Automatically centers the widget inside the parcel unless another location is given</li>
+</ol>
+<p>We could visualize how this works by using three <code>.pack()</code> statements after one another with varying sizes to see how pack will structure our app:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>frame1 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(master<span style="color:#f92672">=</span>window, width<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>)
+</span></span><span style="display:flex;"><span>frame1<span style="color:#f92672">.</span>pack()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>frame2 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(master<span style="color:#f92672">=</span>window, width<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span>)
+</span></span><span style="display:flex;"><span>frame2<span style="color:#f92672">.</span>pack()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>frame3 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(master<span style="color:#f92672">=</span>window, width<span style="color:#f92672">=</span><span style="color:#ae81ff">25</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">25</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>)
+</span></span><span style="display:flex;"><span>frame3<span style="color:#f92672">.</span>pack()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>Since we packed our red frame first, that box will appear first. Same goes for our green and blue boxes. Again, we see that since we offered no <em>anchor point</em>, we have centered boxes again.</p>
+<p><code>.pack()</code> takes a few useful arguments we should discuss. The first is to use <code>fill</code> with <code>X</code>, <code>Y</code>, or <code>BOTH</code>. <code>X</code> will fill the window in horizontal directions, <code>Y</code> fills the window in vertical directions, and <code>BOTH</code> will fill in both directions. Using this feature with hard-coded width and heights is a little tricky. I suggest playing around with different features and seeing what you get.</p>
+<p>Here&rsquo;s what I noticed;</p>
+<ul>
+<li>When using <code>fill=tk.X</code> with a dedicated height and width, it worked as I thought. It also worked as intended with <em>just</em> a height, but not with only a width.</li>
+<li>When using <code>fill=tk.Y</code> with a dedicated height and width, it <strong>didn&rsquo;t</strong> work the way I thought. I figured it would take up the window as I made it longer, but it stayed it&rsquo;s 100x100 size. I even thought it had something to do with the other frames being packed, but even with them removed I couldn&rsquo;t get it to expand vertically. Even with a solo height and solo width, I wasn&rsquo;t able to get it to work.
+<ul>
+<li>I ended up having to use another argument, <code>expand</code>, and set it equal to <code>True</code> to get the fill to actually work vertically</li>
+</ul>
+</li>
+<li>With <code>fill=tk.BOTH</code>, along with <code>expand=True</code>, you can nicely get it to expand in all directions. You can even let it rock with no height or width, and it&rsquo;ll function just fine.</li>
+</ul>
+<h2 id="place"><code>.place()</code></h2>
+<p>The <code>.place()</code> manager uses <em>exact locations</em> when organizing and structuring widgets. <code>.place()</code> takes two arguments, <code>x</code> and <code>y</code>. The one thing to be aware of when using <code>.place()</code> is that your screens point of origin, or (0, 0), is at the top left of your screen, and the limit of your screen is the bottom most right-hand side.</p>
+<p>The following code is an easy example of placing label widgets within a packed frame;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>frm <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(master<span style="color:#f92672">=</span>window, width<span style="color:#f92672">=</span><span style="color:#ae81ff">150</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">150</span>)
+</span></span><span style="display:flex;"><span>frm<span style="color:#f92672">.</span>pack()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>lbl1 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(master<span style="color:#f92672">=</span>frm, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;I&#39;m at (0, 0)&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>)
+</span></span><span style="display:flex;"><span>lbl1<span style="color:#f92672">.</span>place(x<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>lbl2 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(master<span style="color:#f92672">=</span>frm, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;I&#39;m at (75, 100)&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yellow&#34;</span>)
+</span></span><span style="display:flex;"><span>lbl2<span style="color:#f92672">.</span>place(x<span style="color:#f92672">=</span><span style="color:#ae81ff">75</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>You might notice when running this example, our yellow box is cut off. That&rsquo;s because our <em>Frame</em> isn&rsquo;t large enough. We would need to expand it a little bit (perhaps to 200) to actually let it render fully.</p>
+<p>This reason is a large part of why <code>.place()</code> isn&rsquo;t all that great. Screen sizes vary on multiple different factors (operating systems, size and form-factor, fonts, etc.) making it difficult to account for where something will be compared to other elements. If your locations are relevant to your application thought (think of a map) <code>.place()</code> has it&rsquo;s uses.</p>
+<h2 id="grid"><code>.grid()</code></h2>
+<p>The <code>.grid()</code> geometry manager is the one you&rsquo;re more likely to use over packing or placing. Matter of fact, <code>.grid()</code> works really similarly to <code>.pack()</code> with even easier syntax.</p>
+<p><code>.grid()</code> will split your window or whatever Frame you&rsquo;re using into rows and columns. The index locations for row and column position work just like they do in Python sequences, starting at position 0.</p>
+<p>This gives us the ability to make really neat structures using basic looping. The following uses a double <code>for</code> loop to create a 3x3 area;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+</span></span><span style="display:flex;"><span>		frame <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(
+</span></span><span style="display:flex;"><span>			master<span style="color:#f92672">=</span>window,
+</span></span><span style="display:flex;"><span>			relief<span style="color:#f92672">=</span>tk<span style="color:#f92672">.</span>RAISED,
+</span></span><span style="display:flex;"><span>			borderwidth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>		frame<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span>i, column<span style="color:#f92672">=</span>j)
+</span></span><span style="display:flex;"><span>		label <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(master<span style="color:#f92672">=</span>frame, text<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Row </span><span style="color:#e6db74">{</span>i<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Column </span><span style="color:#e6db74">{</span>j<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>		label<span style="color:#f92672">.</span>pack()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>We&rsquo;re actually using two methods here; we&rsquo;re using the <code>grid()</code> geometry manager to attach the frames to the <code>window</code>, then using <code>pack()</code> to attach the <code>label</code> to the master <code>frame</code>.</p>
+<p>Just like CSS, we can include padding into the parameters of our <code>grid()</code> to create space between frames, with both <code>padx</code> and <code>pady</code>. If we pass them into <code>pack()</code>, it&rsquo;ll create space between the text and the sides of each <code>frame</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>		frame<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span>i, column<span style="color:#f92672">=</span>j, padx<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>		label<span style="color:#f92672">.</span>pack(padx<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Doing this will start to make our window look nice, but if you resize the window it immediately start to looks bad. To avoid this, we can use methods of our <code>window</code> to tell it what to do when resizing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+</span></span><span style="display:flex;"><span>	window<span style="color:#f92672">.</span>columnconfigure(i, weight<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, minsize<span style="color:#f92672">=</span><span style="color:#ae81ff">75</span>)
+</span></span><span style="display:flex;"><span>    window<span style="color:#f92672">.</span>rowconfigure(i, weight<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, minsize<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><h1 id="creating-a-submission-form">Creating a Submission Form</h1>
+
+    <img src="/images/17_6_tk_exercise2_win10.43ba39ae6134.avif"  alt="problem_example"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Here&rsquo;s what we need to create: simple right?</p>
+<p>I understood right away that having to individually make and pack each line is possible, but would be a lot and ugly. So, thinking programmatically, we can use a loop structure to move through categories to create new labels and entries. I needed to look at their submission to effectively get the stacking method right on what to pack and what to grid, but I don&rsquo;t like how their buttons don&rsquo;t stick to the form:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>entry_cats <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;First Name: &#39;</span>, <span style="color:#e6db74">&#39;Last Name: &#39;</span>, <span style="color:#e6db74">&#39;Address: &#39;</span>, <span style="color:#e6db74">&#39;City: &#39;</span>, <span style="color:#e6db74">&#39;State: &#39;</span>, <span style="color:#e6db74">&#39;Zip: &#39;</span>, <span style="color:#e6db74">&#39;Country: &#39;</span>]  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>entry_frame <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(  
+</span></span><span style="display:flex;"><span>    relief<span style="color:#f92672">=</span>tk<span style="color:#f92672">.</span>SUNKEN, borderwidth<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>entry_frame<span style="color:#f92672">.</span>pack(padx<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>button_frame <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>button_frame<span style="color:#f92672">.</span>pack(fill<span style="color:#f92672">=</span>tk<span style="color:#f92672">.</span>X, ipadx<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, ipady<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)  
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i, text <span style="color:#f92672">in</span> enumerate(entry_cats):  
+</span></span><span style="display:flex;"><span>    label <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(master<span style="color:#f92672">=</span>entry_frame, text<span style="color:#f92672">=</span>text)  
+</span></span><span style="display:flex;"><span>    entry <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Entry(master<span style="color:#f92672">=</span>entry_frame, width<span style="color:#f92672">=</span><span style="color:#ae81ff">75</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    label<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span>i, column<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;e&#34;</span>)  
+</span></span><span style="display:flex;"><span>    entry<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span>i, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>submit_button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(  
+</span></span><span style="display:flex;"><span>    master<span style="color:#f92672">=</span>button_frame,  
+</span></span><span style="display:flex;"><span>    text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Submit&#34;</span>,  
+</span></span><span style="display:flex;"><span>    width<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>,  
+</span></span><span style="display:flex;"><span>    height<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>submit_button<span style="color:#f92672">.</span>pack(side<span style="color:#f92672">=</span>tk<span style="color:#f92672">.</span>RIGHT, padx<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)  
+</span></span><span style="display:flex;"><span>clear_button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(  
+</span></span><span style="display:flex;"><span>    master<span style="color:#f92672">=</span>button_frame,  
+</span></span><span style="display:flex;"><span>    text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Clear&#34;</span>,  
+</span></span><span style="display:flex;"><span>    width<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>,  
+</span></span><span style="display:flex;"><span>    height<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>clear_button<span style="color:#f92672">.</span>pack(side<span style="color:#f92672">=</span>tk<span style="color:#f92672">.</span>RIGHT, padx<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>I personally think this looks a little bit nicer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>entry_cats <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;First Name: &#39;</span>, <span style="color:#e6db74">&#39;Last Name: &#39;</span>, <span style="color:#e6db74">&#39;Address: &#39;</span>, <span style="color:#e6db74">&#39;City: &#39;</span>, <span style="color:#e6db74">&#39;State: &#39;</span>, <span style="color:#e6db74">&#39;Zip: &#39;</span>, <span style="color:#e6db74">&#39;Country: &#39;</span>]  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>entry_frame <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(  
+</span></span><span style="display:flex;"><span>    relief<span style="color:#f92672">=</span>tk<span style="color:#f92672">.</span>SUNKEN, borderwidth<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>entry_frame<span style="color:#f92672">.</span>pack(padx<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>left_off <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i, text <span style="color:#f92672">in</span> enumerate(entry_cats):  
+</span></span><span style="display:flex;"><span>    label <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(master<span style="color:#f92672">=</span>entry_frame, text<span style="color:#f92672">=</span>text)  
+</span></span><span style="display:flex;"><span>    entry <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Entry(master<span style="color:#f92672">=</span>entry_frame, width<span style="color:#f92672">=</span><span style="color:#ae81ff">75</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    label<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span>i, column<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;e&#34;</span>)  
+</span></span><span style="display:flex;"><span>    entry<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span>i, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>    left_off <span style="color:#f92672">=</span> i  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>submit_button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(  
+</span></span><span style="display:flex;"><span>    master<span style="color:#f92672">=</span>entry_frame,  
+</span></span><span style="display:flex;"><span>    text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Submit&#34;</span>,  
+</span></span><span style="display:flex;"><span>    width<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>,  
+</span></span><span style="display:flex;"><span>    height<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>submit_button<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span>left_off<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;e&#34;</span>, padx<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)  
+</span></span><span style="display:flex;"><span>clear_button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(  
+</span></span><span style="display:flex;"><span>    master<span style="color:#f92672">=</span>entry_frame,  
+</span></span><span style="display:flex;"><span>    text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Clear&#34;</span>,  
+</span></span><span style="display:flex;"><span>    width<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>,  
+</span></span><span style="display:flex;"><span>    height<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>clear_button<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span>left_off<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;e&#34;</span>, padx<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/python/tkinter/interactive-applications/">Interactive Applications</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/tkinter/">tkinter</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/modules/">modules</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

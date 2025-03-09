@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lua on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/lua/</link>
+    <description>Recent content in Lua on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/lua/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming in Lua - Chapter 3</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-3/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-3/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 2</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-2/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-2/</guid>
+      <description>The Eight Queens Problem Not a whole lot going on in this chapter, but they present a fun example of Lua&amp;rsquo;s capabilities. Walking through this code is worthwhile; I recommend giving it a read first, trying it out yourself, and changing some things around to get some different outcomes.&#xA;N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do&#x9;-- for each queen already placed.</description>
+    </item>
+    <item>
+      <title>Programming in Lua</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/</guid>
+      <description>Fourth Edition By Roberto Ierusalimschy Lua was initially designed to be integrated with software written in C/C++. It&amp;rsquo;s a small yet powerful language, and achieves this by not trying to do what C already does; perform well. Lua offers dynamic structures, zero redundancies, and a simpler time testing and debugging code.&#xA;It&amp;rsquo;s an extensible language; things like dynamic typing, automatic memory management, and first-class functions make Lua a good pick for small to even medium/large projects.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 1</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/</guid>
+      <description>Getting Started Just like any other language, standard output is a great first step. To do so on a windows machine, you have to download Lua much like you do Python, and run it via the command line. The fastest way I did this was through a command line installer scoop, and installed it with scoop install lua. Then just use lua to run your environment.&#xA;A simple print() will put anything on the screen:</description>
+    </item>
+    <item>
+      <title>The Basics</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/</guid>
+      <description>The Basics</description>
+    </item>
+  </channel>
+</rss>

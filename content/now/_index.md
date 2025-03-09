@@ -26,7 +26,7 @@ You can also find a link to my Discogs [here](https://www.discogs.com/user/binky
 ## Reading
 
 Currently Reading: 
-- *Rhythm of War* by **Brandon Sanderson**
+- *Wind and Truth* by **Brandon Sanderson**
 
 You can find my Goodreads [here](https://www.goodreads.com/user/show/119117493).
 
@@ -35,7 +35,6 @@ You can find my Goodreads [here](https://www.goodreads.com/user/show/119117493).
 
 Currently Watching:
 - Dragon Ball Daima
-- Castlevania Nocturne Season 2
 
 You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
 
@@ -43,3 +42,4 @@ You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
 
 Currently Playing:
 - Persona 3 Reload
+- Demon Souls

@@ -95,3 +95,46 @@ To get an even more realistic feel for our donut, we can isolate it (click it an
 
 We can add that by clicking on our donut and creating an *Image Texture*. First go to the **Texture Paint** tab and go to materials. Click the yellow circle next to color to select image texture, then select `New`. Call it `donut_base.png` or something, and set some default colors with the default resolution. On the left side of the screen, on the photo icon, click the `donut_base` image. Now, we can paint directly onto our mesh. Mess around with the colors and the brush levels to get the type of look you desire.
 
+## Part 6: Geometry Nodes
+
+We're going to start creating our sprinkles by creating new *Geometry Nodes*. There is a heading tab we have to switch too, and we can generally get rid of the spreadsheet on the top left. Now with our icing selected, click "New". Geometry Nodes are actually modifiers, so you should also see a new modifier on the bottom right.
+
+Now, what we're actually doing here is giving our mesh objects more options by choosing different ways of manipulating our mesh, then passing them into our node system. Once there, anywhere in Blender I can now easily access whatever changes I set up to make. For the sprinkles, we want random points across our mesh, so use `Shift+A` to go to `Point`, then `Distribute Points on Face`. This node should go between the connection of input and output (into mesh). 
+
+This is only halfway there, however. What actually happened here was that it took the icing mesh, made it these points, and fed it back to us. This *isn't* what we want, since we want both the mesh and these new points. This is where we use `Shift+A` to `Geometry`, then use the `Join Geometry` features to connect the distribution node we just made to the output. We will also have to drag a line from the input into the join node to actually create that join.
+
+Making the sprinkle is really easy, just use `Shift+A` to create a UV Sphere Mesh. Since it will be used many times over and will be small, we can make it low resolution at 12 segments and 8 rings, and a size of `0.01 meters` . Since we've created our sphere, we can easily use the top right menu to drag it into our Geometry Nodes work area for our icing.
+
+To get this sphere to be represented by the node we have creating points on our icing, we can use another node called `Instance on Points`. This should go between your distribution node and join node. This instance node replaces the nodes with whatever is passed into it. So, we know we just dragged in our sphere mesh, drag from the geometry out on the sphere node to the instance input on the instance node.
+
+If you increase the density, you'll notice quickly the sprinkles are so random they're inside of one another. This can be avoided by using *Poisson Disk* distribution, which gives you the ability to change the distance minimum between points. Set to a value of 0.012 is a good start, as going too far apart will look a little unrealistic.
+
+We also have a ton of sprinkles everywhere, any I mean everywhere. Even on the inside of our mesh. This is going to cause our machine to work harder to render it, even though there are things we're not even seeing. To avoid this we use **Weight Painting**. On the top left, hit the Object View drop down and choose Weight Paint. Your donut should turn blue; just for the sake of starting, draw a circle on top of your icing.
+
+You should notice the circle you painted is a bright red, with other green and yellow around the edges. This is going to act as our area of effect for our distribution of sprinkles. Donuts naturally have more sprinkles in the part dipped into the sprinkle tray, which is more often than not a perfect circle on the top most part of the donut. Creating a thick ring with some imperfect spots here and there will do us justice, but we have to call it into action.
+
+First up, make sure the paint brush stroke you made was only on the front of your mesh by using the `front faces only` option under the advanced drop down on your object view tool bar. Your new brushed circle exists as a data object, and we should name it something useful (we're about to use it). Then, from your density factor input option on your distribution node, drag out and select named attribute. Then, you're going to choose the name you just made for your sprinkles.
+
+If we made a duplicate of our donut and changed the Geometry Nodes values directly from the menu nodes, it'll change both. However, if you want some option to be specific to each object, you can drag any input out into the origin input node, so each will have it in their properties.
+
+If you look at the properties of our donut, you'll notice it's around 1.2 meters across. That's about 4 feet long in America, which is huge for a donut. To fix this, we have to scale it down. Select everything and hit `s` and use `Ctrl` to go down by constant values. if we're at 1.2 meters, 0.12 would be more accurate.
+
+The scale isn't applied yet though. Select everything, `Ctrl+A`, and hit `Apply Scale`. You'll notice it works if your sprinkles look messed up. You'll have to massively increase your density for sprinkles. You can either increase it by around x10,000 or use a math multiplier node between.
+
+## Part 7: Long Sprinkles
+
+Right off the bat, we have our first conversation about the 3D cursor. The 3D cursor is where any newly created object will be placed. We want to see our sprinkle so we should probably move it to the plane (`Alt+Right Click`).
+
+The long sprinkle is a cylinder. Bring it down to the smallest size, then just 12 vertices. I had some trouble moving the sprinkles around, for whatever reason the mesh would zoom into the plane if my cursor was over the plane. In his video it worked fine, not sure what setting I had on that made that happen.
+
+We'll need to round out the ends of the sprinkle, so hit `Tab` and *face select* (3) to select the top and bottom face, and use `Ctrl+B` to apply a bevel. Scroll up on the mouse wheel a bit to apply more geometry, but not too much. Then You have a nice rounder edge. Don't forget to apply smooth shading. 
+
+Use duplicate to make another sprinkle, and we'll create our medium size. Hit `Tab` and enter vertex select. Select the top vertices, then `G`, and `X` to move along the X axes. Do this again for your large sprinkle. We also want one more of the large sprinkle so we can bend it.
+
+To create more geometry to enable a bend, we'll need a loop cut. Hit `Ctrl+R` and scroll up to use about 8 cuts. We could bend it now, but there's actually a nice modifier that will accomplish that for us. Hit modifier and search for a *Simple Deform* modifier. Select `Bend` and it'll create really easily maneuverable bending motions in whatever angle you'd like. 
+
+You'll notice the bend is centered at the bottom of the sprinkle. That's because that's where our origin point is, the little yellow/orange circle that's on every mesh object. We should move this to the center of all of our sprinkles. Use `Ctrl` to select all your sprinkles, then use `Right Click` to select `Set Origin`, then select `Origin to Geometry`.
+
+Now to help for getting the sprinkles onto the icing, we need to put them in a collection in the top right. Once in a folder, duplicate the donut and make sure to click the two next to the icings geometry nodes modifier, so each donut is separate.
+
+Then, hop on over to Geometry Nodes. Take out the current node attached to the `instance` path on the `Instance on Points` node. That was our round sprinkles, now we need our long ones. Take the collection we made and drag it into the Geometry Nodes environment. Then attach that to where the round sprinkles were. Hit Reset Children, Separate Children, and Pick Instance.

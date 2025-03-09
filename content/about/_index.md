@@ -21,6 +21,6 @@ My focus is in Python, but I've recently been trying to dip my feet in Bash and 
 
 - I'm going through [20 textbooks]({{<ref "20 Textbooks">}}) this year. I want to challenge myself and my ability to not only read but understand and hopefully be able to teach topics from these books.  
 - Working on a [30 Day Coding Challenge]({{<ref "Day 1" >}}), building a Tattoo booking web app.
-- Working on my first hardware project, a [Vinyl Visualizer]({{< ref "Vinyl Visualizer" >}}).
+
 
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tkinter on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/tkinter/</link>
+    <description>Recent content in Tkinter on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tkinter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geometry Managers</title>
+      <link>http://localhost:1313/notes/computer-science/python/tkinter/geometry-managers/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/tkinter/geometry-managers/</guid>
+      <description>Controlling Layouts with Geometry Managers Tkinter has three geometry managers, or methods that define how the content of your app is structured. .pack() is just one of them; we also could use .place() or .grid(). You can only use one at a time, so let&amp;rsquo;s discover the instances in which we&amp;rsquo;d use them.&#xA;.pack() When using .pack(), you&amp;rsquo;re actually using a packing algorithm in order to place the widgets on screen.</description>
+    </item>
+    <item>
+      <title>Interactive Applications</title>
+      <link>http://localhost:1313/notes/computer-science/python/tkinter/interactive-applications/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/tkinter/interactive-applications/</guid>
+      <description>The above has taught you how to make things appear inside your window. This will only get you so far; the things in your window need to do things. Let&amp;rsquo;s learn about events.&#xA;Using Events and Event Handlers Going back to when we learned about the window.mainloop(), the loop this starts is known as the event loop. During this, the window will wait for some response. All we have to code is the events that we want to happen in response to these events, otherwise known as event handlers.</description>
+    </item>
+    <item>
+      <title>Widgets</title>
+      <link>http://localhost:1313/notes/computer-science/python/tkinter/widgets/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/tkinter/widgets/</guid>
+      <description>Below are a few different types of widgets;&#xA;Label: displays text Button: displays a button that can have text and do action commands Entry: displays a text input form for a single line Text: displays a text input form for multi-line entry Frame: a rectangular area for widgets or padding between widgets There are many more widgets, as well as themed widgets, which are more updated versions of classic widgets, but we don&amp;rsquo;t need to get into that today.</description>
+    </item>
+    <item>
+      <title>Your First App</title>
+      <link>http://localhost:1313/notes/computer-science/python/tkinter/your-first-app/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/tkinter/your-first-app/</guid>
+      <description>Link to the tutorial.&#xA;What makes Tkinter nice is that it&amp;rsquo;s a built-in library, meaning it should come with all versions of Python 3.12. If you&amp;rsquo;re using Ubuntu (like me) for this example you will have to install it but it doesn&amp;rsquo;t take long at all (sudo apt-get install python3-tk).&#xA;Creating your first window is incredibly simple. The following code will get you up and running in no time:</description>
+    </item>
+  </channel>
+</rss>

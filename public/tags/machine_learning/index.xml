@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 21 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/machine_learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grokking Algorithms - Chapter 13</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</guid>
+      <description>Where To Go Next What a journey this has been! The next few sections are light on detail, and geared more towards exposure. Please feel free to dive into each of these topics on your own, as each is large enough to devote an entire chapter to.&#xA;Linear Regression Given a data set of points, a line of best fit is generated to make predictions. This is one of the first topics covered when you begin learning about Machine Learning (due to how easy it is to set up), so you&amp;rsquo;re likely going to have first hand experience with this soon enough.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 12</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</guid>
+      <description>K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it&amp;rsquo;s something best understood visually. Let&amp;rsquo;s use one of the most common examples, classifying fruit;&#xA;In the above example, the orange marks indicate an orange, and the red marks indicate an apple.</description>
+    </item>
     <item>
       <title>Deep Learning - Chapter 3</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/</link>

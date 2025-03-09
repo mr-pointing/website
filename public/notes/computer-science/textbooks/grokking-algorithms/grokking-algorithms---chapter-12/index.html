@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it&amp;rsquo;s something best understood visually. Let&amp;rsquo;s use one of the most common examples, classifying fruit;
+In the above example, the orange marks indicate an orange, and the red marks indicate an apple." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms, machine_learning" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/" />
+
+
+    <title>
+        
+            Grokking Algorithms - Chapter 12 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Grokking Algorithms - Chapter 12">
+  <meta itemprop="description" content="K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it’s something best understood visually. Let’s use one of the most common examples, classifying fruit;
+In the above example, the orange marks indicate an orange, and the red marks indicate an apple.">
+  <meta itemprop="datePublished" content="2025-03-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-06T00:00:00+00:00">
+  <meta itemprop="wordCount" content="953">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Algorithms,Machine_learning">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Grokking Algorithms - Chapter 12">
+  <meta name="twitter:description" content="K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it’s something best understood visually. Let’s use one of the most common examples, classifying fruit;
+In the above example, the orange marks indicate an orange, and the red marks indicate an apple.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Grokking Algorithms - Chapter 12">
+  <meta property="og:description" content="K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it’s something best understood visually. Let’s use one of the most common examples, classifying fruit;
+In the above example, the orange marks indicate an orange, and the red marks indicate an apple.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-06T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Machine_learning">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-06 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/">Grokking Algorithms - Chapter 12</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="k-nearest-neighbor">K-Nearest Neighbor</h1>
+<p>K-nearest neighbor, or simply <em>KNN</em>, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it&rsquo;s something best understood visually. Let&rsquo;s use one of the most common examples, classifying fruit;</p>
+
+    <img src="/images/knn.png"  alt="knn"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>In the above example, the orange marks indicate an orange, and the red marks indicate an apple. Now, we could use this graph to classify the next fruit I get. If I find a place to put it, we can look at that new point&rsquo;s neighbors to classify what kind of fruit it must be.</p>
+<p>The K in KNN means you determines the number of neighbors you&rsquo;ll be using as a classifying metric. For example. we place a point in the near middle. If K=3, we look at the three closest neighbors. If those 3 happen to be oranges, we have a good chance of our new fruit actually being an orange.</p>
+<p>The classifying metrics mentioned above are the size and color of the fruit. We call these metrics <em>features</em>, and the features chosen dictates our classification. We can actually determine the distance between points using the following formula; $\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$ . This will compare against just two features.</p>
+<p>This system is actually how Netflix runs their recommendation system. Users will rate movies on a scale, and are given a movie recommendation based on other users ratings that are similar. We can tell how close two user&rsquo;s taste are by comparing their ratings <em>as</em> features;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Pri</th>
+<th>JT</th>
+<th>Morpheus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comedy</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Drama</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Horror</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Romance</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Now that we have <em>five</em> features to test against, our formula changes slightly; $\sqrt{(a_1-a_2)^2+(b_1-b_2)^2+(c_1-c_2)^2+(d_1-d_2)^2+(e_1-e_2)^2}$.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>If we attempted to see how close the tastes are between two Pri and JT, it would look like this:</p>
+<ul>
+<li>$\sqrt{(3-4)^2+(4-3)^2+(4-5)^2+(1-1)^2+(4-5)^2}$</li>
+<li>$\sqrt{1+1+1+0+1}$</li>
+<li>$\sqrt{4}$</li>
+<li>2 &ndash;&gt; Our Answer!</li>
+</ul>
+<p>Now, we can compare this answer by comparing the tastes of Pri and Morpheus:</p>
+<ul>
+<li>$\sqrt{(3-2)^2+(4-5)^2+(4-1)^2+(1-3)^2+(4-1)^2}$</li>
+<li>$\sqrt{1+1+9+4+9}$</li>
+<li>$\sqrt{24}$ &ndash;&gt; Our Answer!</li>
+</ul>
+<p>Clearly, given the results, Pri and JT have more in common than Pri and Morpheus.</p>
+<h3 id="exercises">Exercises</h3>
+<ol>
+<li>If two users are using the same scale with different meanings (Ex. both use 1-5, but one user only rates 1 or 5, and the other uses all five options). How could you compare both?</li>
+</ol>
+<p>Use the average of both users ratings!</p>
+<ol start="2">
+<li>Suppose some users ratings matter more than others. How could you edit the rating formula to account for this?</li>
+</ol>
+<p>Using weights (count the special ratings more than once)</p>
+<h2 id="regression">Regression</h2>
+<p>If you wanted to say, predict how Pri will rate the next movie she sees, you would want to use a <em>Regression</em>. Regressions make predictions based on other users&rsquo; rating of the same movie with similar tastes as Pri. We would take all the other user ratings collect an average, which we can use to predict how Pri will rate it.</p>
+<p>Another example, what if we wanted to prepare a bakery for a day of work? This bakery has three determining factors for how much it will sell; the weather (scale of 1 to 5), whether it&rsquo;s a weekend or holiday (1 if so, 0 otherwise) and if there is a sports game on to watch (1 for yes, 0 for no). The bakery kept track of the amount of loaves based on the above features six times;</p>
+
+    <img src="/images/knn_neighbors.png"  alt="knn_neighbors"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>With this information, we&rsquo;d have to compare each feature just like we did before if we wanted to predict today&rsquo;s bread count. Today&rsquo;s features are (4, 1, 0).</p>
+<p><em><strong>A</strong></em></p>
+<ul>
+<li>$\sqrt{(5-4)^2+(1-1)^2+(0-0)^2}$</li>
+<li>$\sqrt{1+0+0}$</li>
+<li>$\sqrt{1}$</li>
+<li>1 &ndash;&gt; Our Answer!</li>
+</ul>
+<p><em><strong>B</strong></em></p>
+<ul>
+<li>$\sqrt{(3-4)^2+(1-1)^2+(1-0)^2}$</li>
+<li>$\sqrt{1+0+1}$</li>
+<li>$\sqrt{2}$ &ndash;&gt; Our Answer!</li>
+</ul>
+<p><em><strong>C</strong></em></p>
+<ul>
+<li>$\sqrt{(1-4)^2+(1-1)^2+(0-0)^2}$</li>
+<li>$\sqrt{9+0+0}$</li>
+<li>$\sqrt{9}$ &ndash;&gt; Our Answer!</li>
+</ul>
+<p><em><strong>D</strong></em></p>
+<ul>
+<li>$\sqrt{(4-4)^2+(0-1)^2+(1-0)^2}$</li>
+<li>$\sqrt{0+1+1}$</li>
+<li>$\sqrt{2}$ &ndash;&gt; Our Answer!</li>
+</ul>
+<p><em><strong>E</strong></em></p>
+<ul>
+<li>$\sqrt{(4-4)^2+(0-1)^2+(0-0)^2}$</li>
+<li>$\sqrt{0+1+0}$</li>
+<li>$\sqrt{1}$</li>
+<li>$1$ &ndash;&gt; Our Answer!</li>
+</ul>
+<p><em><strong>F</strong></em></p>
+<ul>
+<li>$\sqrt{(2-4)^2+(0-1)^2+(0-0)^2}$</li>
+<li>$\sqrt{4+1+0}$</li>
+<li>$\sqrt{5}$ &ndash;&gt; Our Answer!</li>
+</ul>
+<p>The closest answers are A, B, D, and E. If we calculate up the loaves made on these days, and get an average, we get 218.75 loaves. We should probably make around 220 loaves, just to be safe.</p>
+<p>As we can see, the features being accurate matters a lot. So, how do we pick good features? Great question; for one, they should correlate with what you&rsquo;re looking to predict. If you are looking to predict bread loaf sales for the day, an irrelevant factor would be what you had for breakfast, or what TV show you last watched.</p>
+<p>Another is that they should be free of bias. Think of someone trying to predict how audiences will react to a new comedy special they are making. A bad idea would be to collect information from people who <em>only</em> like comedy, as they are more likely to say yes than others whom you know may not prefer or like comedy specials.</p>
+<h2 id="introduction-to-machine-learning">Introduction to Machine Learning</h2>
+<p>This text only briefly spends time on it, but it does introduce the most common/relevant topics you are likely to find in any Machine Learning specific text. This section and the next chapter cover introductions to a few different Machine Learning algorithms.</p>
+<h3 id="ocr">OCR</h3>
+<p><em>Optical Character Recognition</em>, or OCR, is a common introduction to see exactly how machine learning works. OCR allows for the transfer of text through images. KNN is used to go through images and extract features, adding to the grid based on each newly discovered feature.</p>
+<p><em>Feature extraction</em> is what that&rsquo;s called, and is the first step. Once all relevant features have been extracted, <em>training</em>. A model is trained on the images and the features within those images to recognize features within newly introduced data points. Often, you&rsquo;ll have to <em>parameter tune</em> by moving the value of K up and down until desired results are obtained.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/">Chapter 13</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/machine_learning/">machine_learning</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

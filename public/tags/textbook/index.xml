@@ -7,14 +7,119 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPL - Chapter 6</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</guid>
+      <description>Data Types What is a data type? Data types are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it&amp;rsquo;s data types and types used.&#xA;The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers).</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 3</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-3/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-3/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 13</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</guid>
+      <description>Where To Go Next What a journey this has been! The next few sections are light on detail, and geared more towards exposure. Please feel free to dive into each of these topics on your own, as each is large enough to devote an entire chapter to.&#xA;Linear Regression Given a data set of points, a line of best fit is generated to make predictions. This is one of the first topics covered when you begin learning about Machine Learning (due to how easy it is to set up), so you&amp;rsquo;re likely going to have first hand experience with this soon enough.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 12</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</guid>
+      <description>K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it&amp;rsquo;s something best understood visually. Let&amp;rsquo;s use one of the most common examples, classifying fruit;&#xA;In the above example, the orange marks indicate an orange, and the red marks indicate an apple.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 2</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-2/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-2/</guid>
+      <description>The Eight Queens Problem Not a whole lot going on in this chapter, but they present a fun example of Lua&amp;rsquo;s capabilities. Walking through this code is worthwhile; I recommend giving it a read first, trying it out yourself, and changing some things around to get some different outcomes.&#xA;N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do&#x9;-- for each queen already placed.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 10</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/</link>
+      <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/</guid>
+      <description>Greedy Algorithms A simpler concept than the last few we just tackled, Greedy Algorithms are algorithms that pick the most optimal movement at each step. This seems vague, and it is! You are literally just picking the most locally optimal solution, or the best choice, until you&amp;rsquo;re left with the globally optimal solution.&#xA;If you have a day where you&amp;rsquo;re trying to schedule classes &amp;amp; have as many as you possibly can, taking up your entire schedule.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 11</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-11/</link>
+      <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-11/</guid>
+      <description>Dynamic Programming The knapsack problem is coming back; this time with a vengeance. This time around, we have the same items, but we have a four pound limit in our bag. The Switch is $1500 and 1 pound, the P.C. is $3000 and 4 pounds, and the laptop is $2000 and 3 pounds.&#xA;If we went with the most simple solution, we could just add up all possible combinations and pick the best.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 8</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/</guid>
+      <description>Balanced Trees From on out, if an array or linked list isn&amp;rsquo;t enough, a tree should be our next structure to try. It&amp;rsquo;s a balancing act to choose between both, especially for run time. Binary Search Trees are great, especially for insertion.&#xA;Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 9</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/</guid>
+      <description>Dijkstra&amp;rsquo;s Algorithm Dijkstra&amp;rsquo;s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:&#xA;From what we know of BFS, we can assume it would probably return &amp;ldquo;Start -&amp;gt; A -&amp;gt; Finish&amp;rdquo; as the shortest path. without weights, that makes perfect sense.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 7</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/</guid>
+      <description>Trees A subset of graphs, trees are similarly made with nodes and edges and come in multiple different varieties. The first tree we are going to look at is the rooted tree, which is quite easy to visualize.&#xA;Rooted trees must have one node that heads to all other nodes in the tree. Nodes have at most one parent, and the only node with no parent is known as the root node.</description>
+    </item>
+    <item>
+      <title>Programming in Lua</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/</guid>
+      <description>Fourth Edition By Roberto Ierusalimschy Lua was initially designed to be integrated with software written in C/C++. It&amp;rsquo;s a small yet powerful language, and achieves this by not trying to do what C already does; perform well. Lua offers dynamic structures, zero redundancies, and a simpler time testing and debugging code.&#xA;It&amp;rsquo;s an extensible language; things like dynamic typing, automatic memory management, and first-class functions make Lua a good pick for small to even medium/large projects.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 1</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/</guid>
+      <description>Getting Started Just like any other language, standard output is a great first step. To do so on a windows machine, you have to download Lua much like you do Python, and run it via the command line. The fastest way I did this was through a command line installer scoop, and installed it with scoop install lua. Then just use lua to run your environment.&#xA;A simple print() will put anything on the screen:</description>
+    </item>
+    <item>
+      <title>The Basics</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/</guid>
+      <description>The Basics</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 6</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/</guid>
+      <description>Breadth-First Search Graphs are the next data structure we are going to learn. Breadth-first search is the first graphing algorithm we&amp;rsquo;ll take a look at, and will give us the ability to find the shortest distance between two points.&#xA;There are many use cases for BFS:&#xA;Spell checker Finding nearby doctors/hospitals Search engines Graphs come in many different forms. One of the easiest ways to visualize is with locations:</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 5</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</link>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</guid>
+      <description>Hash Tables Hash tables are the more formal term for Python&amp;rsquo;s Dictionary structure; a key-value pairing of elements. Hash functions are any function that does the mapping of a value to an input.&#xA;Two main rules when implementing hash tables:&#xA;Pairings should be consistent Key&amp;rsquo;s should be unique The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access.</description>
+    </item>
     <item>
       <title>Grokking Algorithms - Chapter 4</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-4/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-4/</guid>
-      <description> </description>
+      <description>Quicksort Divide and Conquer To introduce another tool into our algorithm toolbox, we can introduce Divide &amp;amp; Conquer, a useful method to recursively solve problems. Just like we learned in recursion, we need to identify our base case. Then we divide our problem into smaller problems, until we eventually reach our base case.&#xA;We can use the example of a plot of land:&#xA;If we wanted to divide our land into perfectly even square boxes, making sure to use all available land with no land left out.</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 3</title>
@@ -31,18 +136,18 @@
       <description>Selection Sort Before going into choosing an array vs. a linked list, let&amp;rsquo;s do a quick lesson on memory.&#xA;Think of your computers memory like a dresser full of small drawers. When you want to store a value, in a variable, that variable name is given an address, and whatever value is stored inside of it. Incredibly simple for single value variables- but what about multiple items? This is where picking an array or a linked list comes in.</description>
     </item>
     <item>
+      <title>Grokking Algorithms</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</guid>
+      <description>Second Edition By Aditya Y. Bhargava Not only is this book incredibly easy to follow, but it requires very little in terms of prerequisites. The most you need to know is a basic understanding of Python and Algebra.&#xA;This book is for people who already know how to code, hobbyists, visual learners, or anyone who wants to learn algorithms without a rigorous mathematical foundation.&#xA;Code for all chapters can be found here.</description>
+    </item>
+    <item>
       <title>Grokking Algorithms - Chapter 1</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</guid>
       <description>Introduction to Algorithms An algorithm is simply a set of instructions or code designed in a way to accomplish a specific task. Tasks range from solving a math problem, to how to make decision given a specific scenario.&#xA;All the algorithms featured in this text are fast, solve interesting problems, or even both. The text will introduce an algorithm, give an example, and discuss the running time in Big O (we&amp;rsquo;ll get back to this in a second).</description>
-    </item>
-    <item>
-      <title>Grokking Algorithms - Preface</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</guid>
-      <description>Second Edition By Aditya Y. Bhargava Not only is this book incredibly easy to follow, but it requires very little in terms of prerequisites. The most you need to know is a basic understanding of Python and Algebra.&#xA;This book is for people who already know how to code, hobbyists, visual learners, or anyone who wants to learn algorithms without a rigorous mathematical foundation.&#xA;Code for all chapters can be found here.</description>
     </item>
     <item>
       <title>CPL - Chapter 5</title>

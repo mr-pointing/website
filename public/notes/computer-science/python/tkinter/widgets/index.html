@@ -6,18 +6,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Link to the tutorial.
-Building Your First Application What makes Tkinter nice is that it&amp;rsquo;s a built-in library, meaning it should come with all versions of Python 3.12. If you&amp;rsquo;re using Ubuntu (like me) for this example you will have to install it but it doesn&amp;rsquo;t take long at all (sudo apt-get install python3-tk).
-Creating your first window is incredibly simple. The following code will get you up and running in no time:" />
-<meta name="keywords" content="homepage, blog, computerscience, python, modules" />
+<meta name="description" content="Below are a few different types of widgets;
+Label: displays text Button: displays a button that can have text and do action commands Entry: displays a text input form for a single line Text: displays a text input form for multi-line entry Frame: a rectangular area for widgets or padding between widgets There are many more widgets, as well as themed widgets, which are more updated versions of classic widgets, but we don&amp;rsquo;t need to get into that today." />
+<meta name="keywords" content="homepage, blog, computerscience, python, tkinter, modules" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/notes/computer-science/python/tkinter-tutorial/" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/python/tkinter/widgets/" />
 
 
     <title>
         
-            Tkinter Tutorial :: Mr. Pointing  — Computer Science Teacher
+            Widgets :: Mr. Pointing  — Computer Science Teacher
         
     </title>
 
@@ -46,38 +45,36 @@ Creating your first window is incredibly simple. The following code will get you
 
 
 
-  <meta itemprop="name" content="Tkinter Tutorial">
-  <meta itemprop="description" content="Link to the tutorial.
-Building Your First Application What makes Tkinter nice is that it’s a built-in library, meaning it should come with all versions of Python 3.12. If you’re using Ubuntu (like me) for this example you will have to install it but it doesn’t take long at all (sudo apt-get install python3-tk).
-Creating your first window is incredibly simple. The following code will get you up and running in no time:">
-  <meta itemprop="datePublished" content="2024-10-27T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-27T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1386">
+  <meta itemprop="name" content="Widgets">
+  <meta itemprop="description" content="Below are a few different types of widgets;
+Label: displays text Button: displays a button that can have text and do action commands Entry: displays a text input form for a single line Text: displays a text input form for multi-line entry Frame: a rectangular area for widgets or padding between widgets There are many more widgets, as well as themed widgets, which are more updated versions of classic widgets, but we don’t need to get into that today.">
+  <meta itemprop="datePublished" content="2025-03-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="586">
   <meta itemprop="image" content="http://localhost:1313/">
-  <meta itemprop="keywords" content="Computerscience,Python,Modules">
+  <meta itemprop="keywords" content="Computerscience,Python,Tkinter,Modules">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/">
-  <meta name="twitter:title" content="Tkinter Tutorial">
-  <meta name="twitter:description" content="Link to the tutorial.
-Building Your First Application What makes Tkinter nice is that it’s a built-in library, meaning it should come with all versions of Python 3.12. If you’re using Ubuntu (like me) for this example you will have to install it but it doesn’t take long at all (sudo apt-get install python3-tk).
-Creating your first window is incredibly simple. The following code will get you up and running in no time:">
+  <meta name="twitter:title" content="Widgets">
+  <meta name="twitter:description" content="Below are a few different types of widgets;
+Label: displays text Button: displays a button that can have text and do action commands Entry: displays a text input form for a single line Text: displays a text input form for multi-line entry Frame: a rectangular area for widgets or padding between widgets There are many more widgets, as well as themed widgets, which are more updated versions of classic widgets, but we don’t need to get into that today.">
 
 
 
-    <meta property="og:url" content="http://localhost:1313/notes/computer-science/python/tkinter-tutorial/">
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/python/tkinter/widgets/">
   <meta property="og:site_name" content="Mr. Pointing">
-  <meta property="og:title" content="Tkinter Tutorial">
-  <meta property="og:description" content="Link to the tutorial.
-Building Your First Application What makes Tkinter nice is that it’s a built-in library, meaning it should come with all versions of Python 3.12. If you’re using Ubuntu (like me) for this example you will have to install it but it doesn’t take long at all (sudo apt-get install python3-tk).
-Creating your first window is incredibly simple. The following code will get you up and running in no time:">
+  <meta property="og:title" content="Widgets">
+  <meta property="og:description" content="Below are a few different types of widgets;
+Label: displays text Button: displays a button that can have text and do action commands Entry: displays a text input form for a single line Text: displays a text input form for multi-line entry Frame: a rectangular area for widgets or padding between widgets There are many more widgets, as well as themed widgets, which are more updated versions of classic widgets, but we don’t need to get into that today.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
-    <meta property="article:published_time" content="2024-10-27T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-10-27T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-03-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-09T00:00:00+00:00">
     <meta property="article:tag" content="Computerscience">
     <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Tkinter">
     <meta property="article:tag" content="Modules">
     <meta property="og:image" content="http://localhost:1313/">
 
@@ -86,7 +83,7 @@ Creating your first window is incredibly simple. The following code will get you
 
 
 
-    <meta property="article:published_time" content="2024-10-27 00:00:00 &#43;0000 UTC" />
+    <meta property="article:published_time" content="2025-03-09 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -153,7 +150,7 @@ Creating your first window is incredibly simple. The following code will get you
         </div>
 
         <article>
-            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/python/tkinter-tutorial/">Tkinter Tutorial</a></h2>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/python/tkinter/widgets/">Widgets</a></h2>
 
             
             
@@ -161,23 +158,6 @@ Creating your first window is incredibly simple. The following code will get you
 
             <div class="post-content">
                 <hr>
-<p><a href="https://realpython.com/python-gui-tkinter/">Link</a> to the tutorial.</p>
-<h1 id="building-your-first-application">Building Your First Application</h1>
-<p>What makes Tkinter nice is that it&rsquo;s a built-in library, meaning it should come with all versions of Python 3.12. If you&rsquo;re using Ubuntu (like me) for this example you will have to install it but it doesn&rsquo;t take long at all (<code>sudo apt-get install python3-tk</code>).</p>
-<p>Creating your first window is incredibly simple. The following code will get you up and running in no time:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>words <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;I Love Python!&#34;</span>)
-</span></span><span style="display:flex;"><span>words<span style="color:#f92672">.</span>pack()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
-</span></span><span style="display:flex;"><span>	window<span style="color:#f92672">.</span>mainloop()
-</span></span></code></pre></div><p>The above code will give you an empty window that will stay open until you close it.</p>
-<p>The <em>window</em> is our environment, while any content inside of our window is a <em>widget</em>, aka the <code>words</code> variable. The <code>mainloop()</code> method starts the environment, telling Python to run it until the user turns it off.</p>
-<p>The reason we have to use <code>pack</code> is to ensure the content we want actually appears in our window.</p>
-<h2 id="widgets">Widgets</h2>
 <p>Below are a few different types of widgets;</p>
 <ul>
 <li><code>Label</code>: displays text</li>
@@ -187,7 +167,7 @@ Creating your first window is incredibly simple. The following code will get you
 <li><code>Frame</code>: a rectangular area for widgets or padding between widgets</li>
 </ul>
 <p>There are many more widgets, as well as <em>themed widgets</em>, which are more updated versions of classic widgets, but we don&rsquo;t need to get into that today.</p>
-<h3 id="labels">Labels</h3>
+<h2 id="labels">Labels</h2>
 <p>Using a <code>Label</code> object, we can show basic text that can&rsquo;t be edited by the user or even images. The text example is up above, where we pass the text we want to the <code>text</code> parameter of <code>Label</code>. We can do basic text editing by adding additional parameters like <code>fg</code> and <code>bg</code>, which change the color of the text color and background color respectively. You can also do <code>width</code> and <code>height</code>, which change the size in <em>text units</em>, a rather odd unit of measurement (uses the width of the number 0). We&rsquo;ll learn more expressive formatting later.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>big_word <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(
 </span></span><span style="display:flex;"><span>	text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;big words!&#34;</span>,
@@ -196,7 +176,7 @@ Creating your first window is incredibly simple. The following code will get you
 </span></span><span style="display:flex;"><span>	width<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>,
 </span></span><span style="display:flex;"><span>	height<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>
 </span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><h3 id="buttons">Buttons</h3>
+</span></span></code></pre></div><h2 id="buttons">Buttons</h2>
 <p>Buttons work incredibly similarly to <code>Label</code>, and even take some of the same parameters. You can make a button with the the following example;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(
 </span></span><span style="display:flex;"><span>	text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;I&#39;m a button!&#34;</span>,
@@ -205,14 +185,14 @@ Creating your first window is incredibly simple. The following code will get you
 </span></span><span style="display:flex;"><span>	bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;green&#34;</span>,
 </span></span><span style="display:flex;"><span>	fg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;orange&#34;</span>
 </span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><h3 id="entry">Entry</h3>
+</span></span></code></pre></div><h2 id="entry">Entry</h2>
 <p>Many, if not all applications work by collecting some input from the user. To start collecting, we can use a really basic text input stream, <code>Entry</code>. Combined with a <code>Label</code>, and you can create a super basic text-entry form.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>name_label <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span>)
 </span></span><span style="display:flex;"><span>entry <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Entry()
 </span></span><span style="display:flex;"><span>name_label<span style="color:#f92672">.</span>pack()
 </span></span><span style="display:flex;"><span>entrys<span style="color:#f92672">.</span>pack()
 </span></span></code></pre></div><p>This tutorial uses <code>.get()</code>, <code>.delete()</code>, and <code>.insert()</code> to retrieve, edit, and enter information, but honestly at the moment I&rsquo;m not seeing the relevance? For my project and many projects, I&rsquo;m not sure why I&rsquo;d need to edit the text-entry forms. If anything, I&rsquo;m hoping later it will teach how to enter information and save it when in the main loop.</p>
-<h3 id="frames">Frames</h3>
+<h2 id="frames">Frames</h2>
 <p>Frames seem to be mostly for containing other widgets, like in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>frame_a <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame()
 </span></span><span style="display:flex;"><span>frame_b <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame()
@@ -227,7 +207,7 @@ Creating your first window is incredibly simple. The following code will get you
 </span></span><span style="display:flex;"><span>frame_a<span style="color:#f92672">.</span>pack()
 </span></span><span style="display:flex;"><span>frame_b<span style="color:#f92672">.</span>pack()
 </span></span></code></pre></div><p>These frames will by default stack on top of one another. All of the five widgets we went over have this <code>master</code> argument, so you can dictate which widgets will appear in which frame.</p>
-<h4 id="adjusting-frame-appearance">Adjusting Frame Appearance</h4>
+<h3 id="adjusting-frame-appearance">Adjusting Frame Appearance</h3>
 <p>The <code>relief</code> attribute of a given frame is what the border of the frame will look like when printed. The following attributes can be added onto any frame, and we&rsquo;re going to create a Python dictionary to store and use them conveniently;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
 </span></span><span style="display:flex;"><span>
@@ -255,61 +235,9 @@ Creating your first window is incredibly simple. The following code will get you
 </span></span><span style="display:flex;"><span>Entry <span style="color:#f92672">-&gt;</span> ent
 </span></span><span style="display:flex;"><span>Text <span style="color:#f92672">-&gt;</span> txt
 </span></span><span style="display:flex;"><span>Frame <span style="color:#f92672">-&gt;</span> frm
-</span></span></code></pre></div><h2 id="controlling-layouts-with-geometry-managers">Controlling Layouts with Geometry Managers</h2>
-<p>Tkinter has three <em>geometry managers</em>, or methods that define how the content of your app is structured. <code>.pack()</code> is just one of them; we also could use <code>.place()</code> or <code>.grid()</code>. You can only use one at a time, so let&rsquo;s discover the instances in which we&rsquo;d use them.</p>
-<h3 id="pack"><code>.pack()</code></h3>
-<p>When using <code>.pack()</code>, you&rsquo;re actually using a <em>packing algorithm</em> in order to place the widgets on screen. It accomplishes this in two steps;</p>
-<ol>
-<li>Creates a <em>parcel</em>, or a rectangular shape that is large enough for the content within it (the rest of the window is filled with empty space)</li>
-<li>Automatically centers the widget inside the parcel unless another location is given</li>
-</ol>
-<p>We could visualize how this works by using three <code>.pack()</code> statements after one another with varying sizes to see how pack will structure our app:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>frame1 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(master<span style="color:#f92672">=</span>window, width<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>)
-</span></span><span style="display:flex;"><span>frame1<span style="color:#f92672">.</span>pack()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>frame2 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(master<span style="color:#f92672">=</span>window, width<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span>)
-</span></span><span style="display:flex;"><span>frame2<span style="color:#f92672">.</span>pack()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>frame3 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(master<span style="color:#f92672">=</span>window, width<span style="color:#f92672">=</span><span style="color:#ae81ff">25</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">25</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>)
-</span></span><span style="display:flex;"><span>frame3<span style="color:#f92672">.</span>pack()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
-</span></span></code></pre></div><p>Since we packed our red frame first, that box will appear first. Same goes for our green and blue boxes. Again, we see that since we offered no <em>anchor point</em>, we have centered boxes again.</p>
-<p><code>.pack()</code> takes a few useful arguments we should discuss. The first is to use <code>fill</code> with <code>X</code>, <code>Y</code>, or <code>BOTH</code>. <code>X</code> will fill the window in horizontal directions, <code>Y</code> fills the window in vertical directions, and <code>BOTH</code> will fill in both directions. Using this feature with hard-coded width and heights is a little tricky. I suggest playing around with different features and seeing what you get.</p>
-<p>Here&rsquo;s what I noticed;</p>
-<ul>
-<li>When using <code>fill=tk.X</code> with a dedicated height and width, it worked as I thought. It also worked as intended with <em>just</em> a height, but not with only a width.</li>
-<li>When using <code>fill=tk.Y</code> with a dedicated height and width, it <strong>didn&rsquo;t</strong> work the way I thought. I figured it would take up the window as I made it longer, but it stayed it&rsquo;s 100x100 size. I even thought it had something to do with the other frames being packed, but even with them removed I couldn&rsquo;t get it to expand vertically. Even with a solo height and solo width, I wasn&rsquo;t able to get it to work.
-<ul>
-<li>I ended up having to use another argument, <code>expand</code>, and set it equal to <code>True</code> to get the fill to actually work vertically</li>
-</ul>
-</li>
-<li>With <code>fill=tk.BOTH</code>, along with <code>expand=True</code>, you can nicely get it to expand in all directions. You can even let it rock with no height or width, and it&rsquo;ll function just fine.</li>
-</ul>
-<h3 id="place"><code>.place()</code></h3>
-<p>The <code>.place()</code> manager uses <em>exact locations</em> when organizing and structuring widgets. <code>.place()</code> takes two arguments, <code>x</code> and <code>y</code>. The one thing to be aware of when using <code>.place()</code> is that your screens point of origin, or (0, 0), is at the top left of your screen, and the limit of your screen is the bottom most right-hand side.</p>
-<p>The following code is an easy example of placing label widgets within a packed frame;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>frm <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(master<span style="color:#f92672">=</span>window, width<span style="color:#f92672">=</span><span style="color:#ae81ff">150</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">150</span>)
-</span></span><span style="display:flex;"><span>frm<span style="color:#f92672">.</span>pack()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>lbl1 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(master<span style="color:#f92672">=</span>frm, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;I&#39;m at (0, 0)&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>)
-</span></span><span style="display:flex;"><span>lbl1<span style="color:#f92672">.</span>place(x<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>lbl2 <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(master<span style="color:#f92672">=</span>frm, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;I&#39;m at (75, 100)&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yellow&#34;</span>)
-</span></span><span style="display:flex;"><span>lbl2<span style="color:#f92672">.</span>place(x<span style="color:#f92672">=</span><span style="color:#ae81ff">75</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
-</span></span></code></pre></div><p>You might notice when running this example, our yellow box is cut off. That&rsquo;s because our <em>Frame</em> isn&rsquo;t large enough. We would need to expand it a little bit (perhaps to 200) to actually let it render fully.</p>
-<p>This reason is a large part of why <code>.place()</code> isn&rsquo;t all that great. Screen sizes vary on multiple different factors (operating systems, size and form-factor, fonts, etc.) making it difficult to account for where something will be compared to other elements. If your locations are relevant to your application thought (think of a map) <code>.place()</code> has it&rsquo;s uses.</p>
-<h3 id="grid"><code>.grid()</code></h3>
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/python/tkinter/geometry-managers/">Geometry Managers</a></p>
 
             </div>
         </article>
@@ -323,6 +251,7 @@ Creating your first window is incredibly simple. The following code will get you
 
         <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
         <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/tkinter/">tkinter</a></span>
         <span class="tag"><a href="http://localhost:1313/tags/modules/">modules</a></span>
         
     </p>

@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 18 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dictionaries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grokking Algorithms - Chapter 5</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</link>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</guid>
+      <description>Hash Tables Hash tables are the more formal term for Python&amp;rsquo;s Dictionary structure; a key-value pairing of elements. Hash functions are any function that does the mapping of a value to an input.&#xA;Two main rules when implementing hash tables:&#xA;Pairings should be consistent Key&amp;rsquo;s should be unique The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access.</description>
+    </item>
     <item>
       <title>Valid Sudoku</title>
       <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/</link>

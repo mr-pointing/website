@@ -50,7 +50,7 @@ Name Address Value Type Lifetime Scope Bindings A binding is an association betw
 Name Address Value Type Lifetime Scope Bindings A binding is an association between an attribute and an entity, such as between a variable and it’s type or value, or between an operation and a symbol.">
   <meta itemprop="datePublished" content="2025-01-28T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-01-28T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1161">
+  <meta itemprop="wordCount" content="1558">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Textbook,Syntax">
 
@@ -264,6 +264,58 @@ Name Address Value Type Lifetime Scope Bindings A binding is an association betw
 </ol>
 <p>In general, static scoping is unnecessarily complicated, hard to read, rigid, and overall awkward to use.</p>
 <h3 id="dynamic-scoping">Dynamic Scoping</h3>
+<p>Dynamic Scoping is based on the calling sequence of subprograms, not on spatial relationships between one another. <strong>Scope is determined at run times</strong>.</p>
+<p>Evaluating dynamic scoping shows that it&rsquo;s overall less reliable than static scoping, due to local variable assignments not pointing to the correct place, an inability to type check references to non-locals statically, and are very hard to read.</p>
+<h3 id="scope-and-lifetime">Scope and Lifetime</h3>
+<p>Sometimes, a variables scope and lifetime are closely related. Even though they are separated, certain examples like a function with no parameters creating a variable, that variables scope &amp; lifetime are closely linked.</p>
+<p>The <em>referencing environment</em> of a statement is a collection of all variables that are visible in the statement. In static-scoped languages, the reference environment is the variables declared in it&rsquo;s local scope plus the collection of all variables of it&rsquo;s ancestor scopes that are visible. Referencing environments are needed while compiling statements so the code and data structures can be created with correct references.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>g <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sub1</span>():
+</span></span><span style="display:flex;"><span>	a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>     <span style="color:#75715e"># Creates local</span>
+</span></span><span style="display:flex;"><span>	b <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>     <span style="color:#75715e"># Creates local</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sub2</span>():
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">global</span> g     <span style="color:#75715e"># global g now assignable</span>
+</span></span><span style="display:flex;"><span>		c <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>        <span style="color:#75715e"># creates local</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sub3</span>():
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">nonlocal</span> c     <span style="color:#75715e"># makes nonlocal c visible</span>
+</span></span><span style="display:flex;"><span>			g <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>         <span style="color:#75715e"># creates local</span>
+</span></span></code></pre></div><ul>
+<li>By Line 4, <code>a</code> and <code>b</code> are local to function <code>sub1()</code> and <code>g</code> is global for reference but <strong>not</strong> for the assignment</li>
+<li>By Line 7, <code>c</code> is local to <code>sub2()</code>, and <code>g</code> is global for both reference and assignment</li>
+<li>By Line 10, <code>c</code> is non-local of <code>sub2()</code>, and have a local <code>g</code> that belongs to <code>sub3()</code></li>
+</ul>
+<h3 id="named-constants">Named Constants</h3>
+<p>A variable is bound to a value only once. For example, <code>pi = 3.14159265</code>, or;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">example</span>(numbers: list[int]):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, len(numbers)):
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>vs<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">example</span>(numbers: list[int]):
+</span></span><span style="display:flex;"><span>	num_len <span style="color:#f92672">=</span> len(numbers)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, num_len):
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>	
+</span></span></code></pre></div><p>In the example it&rsquo;s just one line of code, but it&rsquo;s a great example of abstraction. Both number of elements in some arrays and the number of iterations in some loops.</p>
+<p>Some language examples:</p>
+<ul>
+<li>C++ allows for dynamic binding of named constants
+<ul>
+<li><code>const int result = 2 * width + 1;</code></li>
+</ul>
+</li>
+<li>Java uses <code>Final</code></li>
+<li>C# has two : <code>const</code> &amp; <code>radyonly</code>
+<ul>
+<li><code>const</code> works to have one value regardless of execution, where <code>readonly</code> can have a different value per execution</li>
+</ul>
+</li>
+</ul>
+<p><strong>Initialization</strong> is the time of binding of a variable to a value.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/">Chapter 6</a></p>
 
             </div>
         </article>

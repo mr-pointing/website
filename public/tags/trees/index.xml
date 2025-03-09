@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trees on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/trees/</link>
+    <description>Recent content in Trees on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/trees/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grokking Algorithms - Chapter 8</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/</guid>
+      <description>Balanced Trees From on out, if an array or linked list isn&amp;rsquo;t enough, a tree should be our next structure to try. It&amp;rsquo;s a balancing act to choose between both, especially for run time. Binary Search Trees are great, especially for insertion.&#xA;Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left.</description>
+    </item>
+    <item>
+      <title>Grokking Algorithms - Chapter 7</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/</guid>
+      <description>Trees A subset of graphs, trees are similarly made with nodes and edges and come in multiple different varieties. The first tree we are going to look at is the rooted tree, which is quite easy to visualize.&#xA;Rooted trees must have one node that heads to all other nodes in the tree. Nodes have at most one parent, and the only node with no parent is known as the root node.</description>
+    </item>
+  </channel>
+</rss>

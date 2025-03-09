@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Trees A subset of graphs, trees are similarly made with nodes and edges and come in multiple different varieties. The first tree we are going to look at is the rooted tree, which is quite easy to visualize.
+Rooted trees must have one node that heads to all other nodes in the tree. Nodes have at most one parent, and the only node with no parent is known as the root node." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms, datastructures, trees" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/" />
+
+
+    <title>
+        
+            Grokking Algorithms - Chapter 7 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Grokking Algorithms - Chapter 7">
+  <meta itemprop="description" content="Trees A subset of graphs, trees are similarly made with nodes and edges and come in multiple different varieties. The first tree we are going to look at is the rooted tree, which is quite easy to visualize.
+Rooted trees must have one node that heads to all other nodes in the tree. Nodes have at most one parent, and the only node with no parent is known as the root node.">
+  <meta itemprop="datePublished" content="2025-03-02T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-02T00:00:00+00:00">
+  <meta itemprop="wordCount" content="459">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Algorithms,Datastructures,Trees">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Grokking Algorithms - Chapter 7">
+  <meta name="twitter:description" content="Trees A subset of graphs, trees are similarly made with nodes and edges and come in multiple different varieties. The first tree we are going to look at is the rooted tree, which is quite easy to visualize.
+Rooted trees must have one node that heads to all other nodes in the tree. Nodes have at most one parent, and the only node with no parent is known as the root node.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Grokking Algorithms - Chapter 7">
+  <meta property="og:description" content="Trees A subset of graphs, trees are similarly made with nodes and edges and come in multiple different varieties. The first tree we are going to look at is the rooted tree, which is quite easy to visualize.
+Rooted trees must have one node that heads to all other nodes in the tree. Nodes have at most one parent, and the only node with no parent is known as the root node.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-02T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Datastructures">
+    <meta property="article:tag" content="Trees">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-02 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/">Grokking Algorithms - Chapter 7</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="trees">Trees</h1>
+<p>A subset of graphs, <em>trees</em> are similarly made with nodes and edges and come in multiple different varieties. The first tree we are going to look at is the rooted tree, which is quite easy to visualize.</p>
+<p>Rooted trees must have one node that heads to all other nodes in the tree. Nodes have at most one parent, and the only node with no parent is known as the <em>root</em> node. Nodes with no children are called <em>leaf</em> nodes.</p>
+<p>File directories are a great example of a tree, and one in which we can run algorithms on.</p>
+
+    <img src="/images/tree_directory.png"  alt="tree_directory"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We could use BFS to get not only a target, but also list out all files as well:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> os <span style="color:#f92672">import</span> listdir
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> os.path <span style="color:#f92672">import</span> isfile, join
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> deque
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_names</span>(start_dir):
+</span></span><span style="display:flex;"><span>	search_queue <span style="color:#f92672">=</span> deque()
+</span></span><span style="display:flex;"><span>	search_queue<span style="color:#f92672">.</span>append(start_dir)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span> search_queue:
+</span></span><span style="display:flex;"><span>		dir <span style="color:#f92672">=</span>  search_queue<span style="color:#f92672">.</span>popleft()
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> sorted(listdir(dir)):
+</span></span><span style="display:flex;"><span>			fullpath <span style="color:#f92672">=</span> join(dir, file)
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> isfile(fullpath):
+</span></span><span style="display:flex;"><span>				print(file)
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>				search_queue<span style="color:#f92672">.</span>append(fullpath)
+</span></span></code></pre></div><p>This time around, we don&rsquo;t have to keep track of the folders we go through, since there are no cycles in trees. If there is a cycle in your graph, it is <strong>not</strong> a tree, and you could run into infinite loops. Like many algorithms, we could also write this recursively, but it becomes a slightly different algorithm;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> os <span style="color:#f92672">import</span> listdir
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> os.path <span style="color:#f92672">import</span> isfile, join
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_names</span>(dir):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> sorted(listdir(dir)):
+</span></span><span style="display:flex;"><span>		fullpath <span style="color:#f92672">=</span> join(dir, file)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> isfile(fullpath):
+</span></span><span style="display:flex;"><span>			print(file)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>			print_names(fullpath)
+</span></span></code></pre></div><p>The main difference here comes in how we reach our data and what we do when we get it, more specifically directories. In the first algorithm, we go through all the files in a directory no matter what, and store all directories found for later. In the second, if we come across a directory, we empty it immediately.</p>
+<p>This second algorithm is actually called <em>Depth-First Search</em>. DFS <strong>cannot</strong> be used to find the shortest path however. This will change the way our print statement works:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># BFS print for the above example</span>
+</span></span><span style="display:flex;"><span>odyssey<span style="color:#f92672">.</span>png
+</span></span><span style="display:flex;"><span>a<span style="color:#f92672">.</span>png
+</span></span><span style="display:flex;"><span>space<span style="color:#f92672">.</span>png
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DFS print </span>
+</span></span><span style="display:flex;"><span>a<span style="color:#f92672">.</span>png
+</span></span><span style="display:flex;"><span>space<span style="color:#f92672">.</span>png
+</span></span><span style="display:flex;"><span>odyssey<span style="color:#f92672">.</span>png
+</span></span></code></pre></div><p>To provide a formal definition, trees are <em>connected, acyclical graphs</em>.</p>
+<h2 id="binary-trees">Binary Trees</h2>
+<p>Another common type of tree; nodes can only have at most two children: the <em>left</em> and <em>right</em> child (hence two). We&rsquo;ll use binary trees a few times in the upcoming chapters.</p>
+<p>Huffman Coding uses binary trees to do character encoding. There is a larger lesson on encoding featured in <a href="http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-1/#storing-text-in-binary">this</a> note. The biggest takeaway for now is that compression algorithms try to reduce the number of bits to store a character. Huffman looks at the characters being used and makes a binary tree with them to create text files using less than 8 bits. It doesn&rsquo;t use standard chunking like bits and bytes, they can be any length.</p>
+
+    <img src="/images/huffman_example.png"  alt="huffman_example"  class="center"  style="border-radius: 8px;"  />
+
+
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/">Chapter 8</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/datastructures/">datastructures</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/trees/">trees</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

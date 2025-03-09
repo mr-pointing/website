@@ -132,3 +132,67 @@ Different languages have different ways of declaring a global variables. In C, `
 In general, static scoping is unnecessarily complicated, hard to read, rigid, and overall awkward to use.
 
 ### Dynamic Scoping
+
+Dynamic Scoping is based on the calling sequence of subprograms, not on spatial relationships between one another. **Scope is determined at run times**.
+
+Evaluating dynamic scoping shows that it's overall less reliable than static scoping, due to local variable assignments not pointing to the correct place, an inability to type check references to non-locals statically, and are very hard to read.
+
+### Scope and Lifetime
+
+Sometimes, a variables scope and lifetime are closely related. Even though they are separated, certain examples like a function with no parameters creating a variable, that variables scope & lifetime are closely linked.
+
+The *referencing environment* of a statement is a collection of all variables that are visible in the statement. In static-scoped languages, the reference environment is the variables declared in it's local scope plus the collection of all variables of it's ancestor scopes that are visible. Referencing environments are needed while compiling statements so the code and data structures can be created with correct references.
+
+
+```python
+g = 3
+def sub1():
+	a = 5     # Creates local
+	b = 7     # Creates local
+	def sub2():
+		global g     # global g now assignable
+		c = 9        # creates local
+		def sub3():
+			nonlocal c     # makes nonlocal c visible
+			g = 11         # creates local
+```
+
+- By Line 4, `a` and `b` are local to function `sub1()` and `g` is global for reference but **not** for the assignment
+- By Line 7, `c` is local to `sub2()`, and `g` is global for both reference and assignment
+- By Line 10, `c` is non-local of `sub2()`, and have a local `g` that belongs to `sub3()`
+
+
+### Named Constants
+
+A variable is bound to a value only once. For example, `pi = 3.14159265`, or;
+
+```python
+def example(numbers: list[int]):
+	for i in range(0, len(numbers)):
+		...
+
+vs.
+
+def example(numbers: list[int]):
+	num_len = len(numbers)
+	for i in range(0, num_len):
+		...
+	
+```
+
+In the example it's just one line of code, but it's a great example of abstraction. Both number of elements in some arrays and the number of iterations in some loops.
+
+Some language examples:
+
+- C++ allows for dynamic binding of named constants
+	- `const int result = 2 * width + 1;`
+- Java uses `Final`
+- C# has two : `const` & `radyonly`
+	- `const` works to have one value regardless of execution, where `readonly` can have a different value per execution
+
+**Initialization** is the time of binding of a variable to a value.
+
+
+---
+Next: 
+[Chapter 6]({{< ref "CPL - Chapter 6" >}}) 

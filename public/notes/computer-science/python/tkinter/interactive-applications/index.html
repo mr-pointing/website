@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="The above has taught you how to make things appear inside your window. This will only get you so far; the things in your window need to do things. Let&amp;rsquo;s learn about events.
+Using Events and Event Handlers Going back to when we learned about the window.mainloop(), the loop this starts is known as the event loop. During this, the window will wait for some response. All we have to code is the events that we want to happen in response to these events, otherwise known as event handlers." />
+<meta name="keywords" content="homepage, blog, computerscience, python, tkinter, modules" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/python/tkinter/interactive-applications/" />
+
+
+    <title>
+        
+            Interactive Applications :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Interactive Applications">
+  <meta itemprop="description" content="The above has taught you how to make things appear inside your window. This will only get you so far; the things in your window need to do things. Let’s learn about events.
+Using Events and Event Handlers Going back to when we learned about the window.mainloop(), the loop this starts is known as the event loop. During this, the window will wait for some response. All we have to code is the events that we want to happen in response to these events, otherwise known as event handlers.">
+  <meta itemprop="datePublished" content="2025-03-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1042">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Python,Tkinter,Modules">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Interactive Applications">
+  <meta name="twitter:description" content="The above has taught you how to make things appear inside your window. This will only get you so far; the things in your window need to do things. Let’s learn about events.
+Using Events and Event Handlers Going back to when we learned about the window.mainloop(), the loop this starts is known as the event loop. During this, the window will wait for some response. All we have to code is the events that we want to happen in response to these events, otherwise known as event handlers.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/python/tkinter/interactive-applications/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Interactive Applications">
+  <meta property="og:description" content="The above has taught you how to make things appear inside your window. This will only get you so far; the things in your window need to do things. Let’s learn about events.
+Using Events and Event Handlers Going back to when we learned about the window.mainloop(), the loop this starts is known as the event loop. During this, the window will wait for some response. All we have to code is the events that we want to happen in response to these events, otherwise known as event handlers.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-09T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Tkinter">
+    <meta property="article:tag" content="Modules">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/python/tkinter/interactive-applications/">Interactive Applications</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p>The above has taught you how to make things appear inside your window. This will only get you so far; the things in your window need to do things. Let&rsquo;s learn about <em>events</em>.</p>
+<h1 id="using-events-and-event-handlers">Using Events and Event Handlers</h1>
+<p>Going back to when we learned about the <code>window.mainloop()</code>, the loop this starts is known as the <em>event loop</em>. During this, the window will wait for some response. All we have to code is the events that we want to happen in response to these events, otherwise known as <em>event handlers</em>.</p>
+<p>Tkinter keeps track of all the different types of events that can happen in a window. Given an object <code>event</code>, there is an attribute called <code>.type</code> which keeps track of the type of event that occurred. You can create handlers that listen for these actions and change something in the window upon action happening.</p>
+<p>The window actually keeps track of all the events that happen within it inside of a list, and runs an event handler everything a new event is added to that list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Our event handler</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">handle_keypress</span>(event):
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;&#34;Print the character associated to the key pressed&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	print(event<span style="color:#f92672">.</span>char)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>The only thing we are missing is the ability to let our window know when exactly it should do this new function.</p>
+<h1 id="using-bind">Using <code>.bind()</code></h1>
+<p>There&rsquo;s a method called <code>.bind()</code> which tells the given object what to do with a given event, and what function to call given it receives that event.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Bind keypress to event handle_keypress()</span>
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Key&gt;&#34;</span>, handle_keypress)
+</span></span></code></pre></div><p>This isn&rsquo;t going to do much; it will print out the character you press, but only in the terminal of your IDE. You can use <code>.bind</code> on the window like the above example, or to any widget, like in the example below;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">handle_click</span>(event):
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;ouch&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Please don&#39;t click me&#34;</span>)
+</span></span><span style="display:flex;"><span>button<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Button-1&gt;&#34;</span>, handle_click)
+</span></span></code></pre></div><h2 id="using-command">Using <code>command</code></h2>
+<p>When binding buttons to a function, the button widgets actually have an easier way of doing this than <code>.bind()</code>. We can use the <code>command</code> attribute that every button has.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>window<span style="color:#f92672">.</span>rowconfigure(<span style="color:#ae81ff">0</span>, minsize<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, weight<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>columnconfigure([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], minsize<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, weight<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>btn_decrease <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(master<span style="color:#f92672">=</span>window, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-&#34;</span>)  
+</span></span><span style="display:flex;"><span>btn_decrease<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nsew&#34;</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>number <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(master<span style="color:#f92672">=</span>window, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>)  
+</span></span><span style="display:flex;"><span>number<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>btn_increase <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(master<span style="color:#f92672">=</span>window, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+&#34;</span>)  
+</span></span><span style="display:flex;"><span>btn_increase<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nsew&#34;</span>)
+</span></span></code></pre></div><p>The above will create a simple counter with a button on each side, one for addition and the other for subtraction. The reason we need <code>sticky=&quot;nsew&quot;</code> instead of any other is so that it&rsquo;ll fill the screen no matter what size it is. It looks a lot better than if you had just used <code>&quot;e&quot;</code> or <code>&quot;w&quot;</code>. Nothing&rsquo;s really done yet though, we can start writing the functions we need.</p>
+<p>Let&rsquo;s tackle addition first. We need to write our function but need the value that currently exists in our label. The only way to access the text of the label is through a dictionary reference, <code>number['text']</code> in the case for the above example. That means we need to get the text and make it a number value so we can accurately set the new value with no type errors. Sounds hard, but let&rsquo;s see it in action:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">increase</span>():
+</span></span><span style="display:flex;"><span>	value <span style="color:#f92672">=</span> int(number[<span style="color:#e6db74">&#39;text&#39;</span>])
+</span></span><span style="display:flex;"><span>	number[<span style="color:#e6db74">&#39;text&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>value <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decrease</span>():
+</span></span><span style="display:flex;"><span>	value <span style="color:#f92672">=</span> int(number[<span style="color:#e6db74">&#39;text&#39;</span>])
+</span></span><span style="display:flex;"><span>	number[<span style="color:#e6db74">&#39;text&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>value <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>Then, use then by passing them through the <code>command</code> attribute upon initialization of the button;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>btn_decrease <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(master<span style="color:#f92672">=</span>window, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-&#34;</span>, command<span style="color:#f92672">=</span>decrease)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>btn_increase <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(master<span style="color:#f92672">=</span>window, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+&#34;</span>, command<span style="color:#f92672">=</span>increase)
+</span></span></code></pre></div><h1 id="making-a-text-editor">Making a Text Editor</h1>
+<p>This is a really fun task, and can definitely be customized to your liking depending on how you can dream it up. Due to it&rsquo;s simplicity, we can use a simple grid structure to accomplish 3 main tasks: open a file, edit a file, and save the changes made to a file.</p>
+<p>Not only should it be able to do these three things, but it should look nice and clean. When resized, your editor should resize as well. An 800x800 window is a great place to start, and we can mimic their example of a thin left column and wide right column to begin. As an added challenge, you can try to replicate the Microsoft word and Google Docs have of a thin top strip instead.</p>
+<p>Let&rsquo;s look at the code, then talk about it after:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>window <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Tk()  
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Text Editor&#34;</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>rowconfigure(<span style="color:#ae81ff">0</span>, minsize<span style="color:#f92672">=</span><span style="color:#ae81ff">800</span>, weight<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>columnconfigure(<span style="color:#ae81ff">1</span>, minsize<span style="color:#f92672">=</span><span style="color:#ae81ff">400</span>, weight<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>edit_text <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Text(window)  
+</span></span><span style="display:flex;"><span>button_frame <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Frame(window, relief<span style="color:#f92672">=</span>tk<span style="color:#f92672">.</span>RAISED, bd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)  
+</span></span><span style="display:flex;"><span>open_button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(button_frame, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Open...&#34;</span>)  
+</span></span><span style="display:flex;"><span>save_button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(button_frame, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Save As...&#34;</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>open_button<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ew&#34;</span>, padx<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)  
+</span></span><span style="display:flex;"><span>save_button<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ew&#34;</span>, padx<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>button_frame<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ns&#34;</span>)  
+</span></span><span style="display:flex;"><span>edit_text<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, sticky<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nsew&#34;</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>window<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>All of this is as we&rsquo;ve seen; pretty standard stuff. The only thing I want to explain is the <code>minsize=400</code> attached to the window column configuration. This setting will tell your editor the size you&rsquo;ll allow the text to wrap too: the lower the number, the thinner your user can make their window. This can be left at the default 800, but I changed it to 400 to make it a little more flexible.</p>
+<p>Obviously, all we&rsquo;ve done is create the environment. We haven&rsquo;t made any of the functionality yet. Let&rsquo;s start with the open feature, since that&rsquo;s likely where your user will start;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">open_file</span>():  
+</span></span><span style="display:flex;"><span>    file_path <span style="color:#f92672">=</span> askopenfilename(  
+</span></span><span style="display:flex;"><span>        filetypes<span style="color:#f92672">=</span>[(<span style="color:#e6db74">&#34;Text Files&#34;</span>, <span style="color:#e6db74">&#34;*.txt&#34;</span>), (<span style="color:#e6db74">&#34;All Files&#34;</span>, <span style="color:#e6db74">&#34;*.*&#34;</span>)]  
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> file_path:  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>  
+</span></span><span style="display:flex;"><span>    edit_text<span style="color:#f92672">.</span>delete(<span style="color:#e6db74">&#34;1.0&#34;</span>, tk<span style="color:#f92672">.</span>END)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(file_path, mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;r&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> input_file:  
+</span></span><span style="display:flex;"><span>        text <span style="color:#f92672">=</span> input_file<span style="color:#f92672">.</span>read()  
+</span></span><span style="display:flex;"><span>        edit_text<span style="color:#f92672">.</span>insert(tk<span style="color:#f92672">.</span>END, text)  
+</span></span><span style="display:flex;"><span>    window<span style="color:#f92672">.</span>title(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Text Editor - </span><span style="color:#e6db74">{</span>file_path<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>Tkinter has it&rsquo;s own way of obtaining a file path; it can open up file explorer window for you to choose your own text file. We have to import this option with <code>from tkinter.filedialog import askopenfilename</code>. We choose we file types we want it to ask for, then if we get a file we can open, delete any text currently in the box, and replace it with the text we got from the file we chose. We also change the title of the window to reflect the file we got.</p>
+<p>The save feature is nearly identical, with a different Tkinter library. This time, we&rsquo;ll use <code>asksaveasfilename</code>, which does the same thing as the last one we just described with saving instead of opening.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">save_file</span>():  
+</span></span><span style="display:flex;"><span>    file_path <span style="color:#f92672">=</span> asksaveasfilename(  
+</span></span><span style="display:flex;"><span>        defaultextension<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.txt&#34;</span>,  
+</span></span><span style="display:flex;"><span>        filetypes<span style="color:#f92672">=</span>[(<span style="color:#e6db74">&#34;Text Files&#34;</span>, <span style="color:#e6db74">&#34;*.txt&#34;</span>), (<span style="color:#e6db74">&#34;All Files&#34;</span>, <span style="color:#e6db74">&#34;*.*&#34;</span>)],  
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> file_path:  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(file_path, mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;w&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> output_file:  
+</span></span><span style="display:flex;"><span>        text <span style="color:#f92672">=</span> edit_text<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;1.0&#34;</span>, tk<span style="color:#f92672">.</span>END)  
+</span></span><span style="display:flex;"><span>        output_file<span style="color:#f92672">.</span>write(text)  
+</span></span><span style="display:flex;"><span>    window<span style="color:#f92672">.</span>title(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Text Editor - </span><span style="color:#e6db74">{</span>file_path<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/tkinter/">tkinter</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/modules/">modules</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

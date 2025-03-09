@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPL - Chapter 6</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</guid>
+      <description>Data Types What is a data type? Data types are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it&amp;rsquo;s data types and types used.&#xA;The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers).</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 2</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-2/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-2/</guid>
+      <description>The Eight Queens Problem Not a whole lot going on in this chapter, but they present a fun example of Lua&amp;rsquo;s capabilities. Walking through this code is worthwhile; I recommend giving it a read first, trying it out yourself, and changing some things around to get some different outcomes.&#xA;N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do&#x9;-- for each queen already placed.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 1</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/</guid>
+      <description>Getting Started Just like any other language, standard output is a great first step. To do so on a windows machine, you have to download Lua much like you do Python, and run it via the command line. The fastest way I did this was through a command line installer scoop, and installed it with scoop install lua. Then just use lua to run your environment.&#xA;A simple print() will put anything on the screen:</description>
+    </item>
     <item>
       <title>CPL - Chapter 5</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</link>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Greedy Algorithms A simpler concept than the last few we just tackled, Greedy Algorithms are algorithms that pick the most optimal movement at each step. This seems vague, and it is! You are literally just picking the most locally optimal solution, or the best choice, until you&amp;rsquo;re left with the globally optimal solution.
+If you have a day where you&amp;rsquo;re trying to schedule classes &amp;amp; have as many as you possibly can, taking up your entire schedule." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/" />
+
+
+    <title>
+        
+            Grokking Algorithms - Chapter 10 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Grokking Algorithms - Chapter 10">
+  <meta itemprop="description" content="Greedy Algorithms A simpler concept than the last few we just tackled, Greedy Algorithms are algorithms that pick the most optimal movement at each step. This seems vague, and it is! You are literally just picking the most locally optimal solution, or the best choice, until you’re left with the globally optimal solution.
+If you have a day where you’re trying to schedule classes &amp; have as many as you possibly can, taking up your entire schedule.">
+  <meta itemprop="datePublished" content="2025-03-05T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-05T00:00:00+00:00">
+  <meta itemprop="wordCount" content="725">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Algorithms">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Grokking Algorithms - Chapter 10">
+  <meta name="twitter:description" content="Greedy Algorithms A simpler concept than the last few we just tackled, Greedy Algorithms are algorithms that pick the most optimal movement at each step. This seems vague, and it is! You are literally just picking the most locally optimal solution, or the best choice, until you’re left with the globally optimal solution.
+If you have a day where you’re trying to schedule classes &amp; have as many as you possibly can, taking up your entire schedule.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Grokking Algorithms - Chapter 10">
+  <meta property="og:description" content="Greedy Algorithms A simpler concept than the last few we just tackled, Greedy Algorithms are algorithms that pick the most optimal movement at each step. This seems vague, and it is! You are literally just picking the most locally optimal solution, or the best choice, until you’re left with the globally optimal solution.
+If you have a day where you’re trying to schedule classes &amp; have as many as you possibly can, taking up your entire schedule.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-05T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-05 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/">Grokking Algorithms - Chapter 10</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="greedy-algorithms">Greedy Algorithms</h1>
+<p>A simpler concept than the last few we just tackled, <em>Greedy Algorithms</em> are algorithms that pick the most optimal movement at each step. This seems vague, and it is! You are literally just picking the most <em>locally optimal solution</em>, or the best choice, until you&rsquo;re left with the <em>globally optimal solution</em>.</p>
+<p>If you have a day where you&rsquo;re trying to schedule classes &amp; have as many as you possibly can, taking up your entire schedule. How would you plan your day? The major issue is that the classes times overlap; some start while others are still going, etc.</p>
+<p>There are many ways we can try to solve this, but simplicity is sometimes all we need:</p>
+<ol>
+<li>Pick the class that ends the soonest. This becomes your first class</li>
+<li>Next, pick a class that starts after the first. This becomes your second class</li>
+<li>Repeat until schedule is filled</li>
+</ol>
+<p>In this situation, greedy algorithms helped out and made solving our problem extremely simple.</p>
+<p>Here&rsquo;s another scenario: We have a knapsack with a 35-pound weight limit. There are 3 items we can steal; A Nintendo Switch for $1500 weighing 15 pounds, a P.C. worth $3000 weighing 30 pounds, and Laptop for $2000 weighing 20 pounds.</p>
+<p>In this situation, a greedy algorithm might actually hurt us more than help. A good greedy algorithm for this might be something like this;</p>
+<ol>
+<li>Pick the most expensive item that fits</li>
+<li>Pick the next most expensive item</li>
+<li>Repeat until knapsack is full</li>
+</ol>
+<p>This, unfortunately, would not give us desired results. If I went for the most expensive thing, I would have grabbed the P.C., and immediately filled up my bag. I have 5 pounds of wasted space. The better combination would have been to take the Switch and the Laptop, resulting in $5000 more.</p>
+<h3 id="exercises">Exercises</h3>
+<ol>
+<li>You work for a furniture moving company. Come up with a greedy algorithm to store the moving truck to maximize space. Will it give an optimal solution?</li>
+</ol>
+<p>Store the largest box first, then store the next largest box, and repeat until the moving truck is full. This has the potential to be un-optimal, due to factors such as balance, # of items, size of items, etc.)</p>
+<ol>
+<li>Say you&rsquo;re traveling, and keep track of all the places you want to go with a number associated to show how much you want to go. Would a greedy algorithm work?</li>
+</ol>
+<p>Yes it would work! Go to the attraction with the highest number, then the next highest, and so on. Even if you don&rsquo;t get to do some things, you got the most important ones done first.</p>
+<h2 id="the-set-covering-problem">The Set Covering Problem</h2>
+<p>We&rsquo;ve got an incredibly difficult task ahead of us; we want to start a radio show and want to reach all 50 states. We would have to map out all of the stations, since some overlap into similar areas.</p>
+<p>To figure out the smallest set of stations to reach everyone, you actually have to list <em>all</em> possible subsets of stations (called a <strong>powerset</strong>). The time to run this is ($2^n$), which takes an extremely long time once you get past 10 stations.</p>
+<p>Greedy algorithms can help us out here and help us get a good solution. More formally greedy algorithms are considered <em>approximation algorithm</em>, since the answer they return isn&rsquo;t always the most optimal solution, it&rsquo;s a good enough solution. The exact solution takes up too much time to figure out, so we can settle for good enough:</p>
+<ol>
+<li>Pick the station that covers the most states not covered</li>
+<li>Repeat until all states are covered</li>
+</ol>
+<p>This will get us a fast, reasonably good answer that&rsquo;s close to the optimal choice, and runs in $O(n^2)$! Much faster than before, and $n$ is the number of stations.</p>
+
+    <img src="/images/state_greedy.png"  alt="state_greedy"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Instead of working with all 50 states, let&rsquo;s just grab as subset of them, specifically the West Coast. The above diagram shows different stations, represented by different colors. The station numbers are noted in the key.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>states_needed <span style="color:#f92672">=</span> set([<span style="color:#e6db74">&#39;mt&#39;</span>, <span style="color:#e6db74">&#39;wa&#39;</span>,<span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;nv&#39;</span>, <span style="color:#e6db74">&#39;ut&#39;</span>, <span style="color:#e6db74">&#39;or&#39;</span>, <span style="color:#e6db74">&#39;ca&#39;</span>, <span style="color:#e6db74">&#39;az&#39;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>stations <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>stations[<span style="color:#e6db74">&#39;kone&#39;</span>] <span style="color:#f92672">=</span> set([<span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;nv&#39;</span>, <span style="color:#e6db74">&#39;ut&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>final_stations <span style="color:#f92672">=</span> set()
+</span></span></code></pre></div><p>To actually calculate our answer, we need more variables. Our solution looks like this;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> states_needed:
+</span></span><span style="display:flex;"><span>	best_station <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>	states_covered <span style="color:#f92672">=</span> set()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> station, states_for_station <span style="color:#f92672">in</span> station<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>		covered <span style="color:#f92672">=</span> states_needed <span style="color:#f92672">&amp;</span> states
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> len(covered) <span style="color:#f92672">&gt;</span> len(states_covered):
+</span></span><span style="display:flex;"><span>			best_station <span style="color:#f92672">=</span> station
+</span></span><span style="display:flex;"><span>			states_covered <span style="color:#f92672">=</span> covered
+</span></span><span style="display:flex;"><span>	states_needed <span style="color:#f92672">-=</span> states_covered
+</span></span><span style="display:flex;"><span>	final_stations<span style="color:#f92672">.</span>add(best_station)
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-11/">Chapter 11</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Breadth-First Search Graphs are the next data structure we are going to learn. Breadth-first search is the first graphing algorithm we&amp;rsquo;ll take a look at, and will give us the ability to find the shortest distance between two points.
+There are many use cases for BFS:
+Spell checker Finding nearby doctors/hospitals Search engines Graphs come in many different forms. One of the easiest ways to visualize is with locations:" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms, datastructures" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/" />
+
+
+    <title>
+        
+            Grokking Algorithms - Chapter 6 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Grokking Algorithms - Chapter 6">
+  <meta itemprop="description" content="Breadth-First Search Graphs are the next data structure we are going to learn. Breadth-first search is the first graphing algorithm we’ll take a look at, and will give us the ability to find the shortest distance between two points.
+There are many use cases for BFS:
+Spell checker Finding nearby doctors/hospitals Search engines Graphs come in many different forms. One of the easiest ways to visualize is with locations:">
+  <meta itemprop="datePublished" content="2025-02-28T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-28T00:00:00+00:00">
+  <meta itemprop="wordCount" content="645">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Algorithms,Datastructures">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Grokking Algorithms - Chapter 6">
+  <meta name="twitter:description" content="Breadth-First Search Graphs are the next data structure we are going to learn. Breadth-first search is the first graphing algorithm we’ll take a look at, and will give us the ability to find the shortest distance between two points.
+There are many use cases for BFS:
+Spell checker Finding nearby doctors/hospitals Search engines Graphs come in many different forms. One of the easiest ways to visualize is with locations:">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Grokking Algorithms - Chapter 6">
+  <meta property="og:description" content="Breadth-First Search Graphs are the next data structure we are going to learn. Breadth-first search is the first graphing algorithm we’ll take a look at, and will give us the ability to find the shortest distance between two points.
+There are many use cases for BFS:
+Spell checker Finding nearby doctors/hospitals Search engines Graphs come in many different forms. One of the easiest ways to visualize is with locations:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-02-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-28T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Datastructures">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-02-28 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/">Grokking Algorithms - Chapter 6</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="breadth-first-search">Breadth-First Search</h1>
+<p><em>Graphs</em> are the next data structure we are going to learn. <strong>Breadth-first search</strong> is the first graphing algorithm we&rsquo;ll take a look at, and will give us the ability to find the shortest distance between two points.</p>
+<p>There are many use cases for BFS:</p>
+<ul>
+<li>Spell checker</li>
+<li>Finding nearby doctors/hospitals</li>
+<li>Search engines</li>
+</ul>
+<p>Graphs come in many different forms. One of the easiest ways to visualize is with locations:</p>
+
+    <img src="/images/location_graph.png"  alt="location_graph"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The arrows are only pointing in one direction, indicating this is a start to finish graph. We start in the Bronx, and want to end in Long Island. How many possible paths do we have there?</p>
+<p>If you said 5, you would be correct! What BFS is going to do is move one step from the starting position, and keep incrementing until the finish node is reached. This is known as a <em>shortest-path</em> problem.</p>
+<h2 id="graph-vocabulary">Graph Vocabulary</h2>
+<p>The graph itself is models the connections between <em>entities</em>. Each <em>node</em> represents another entity, and the <em>edges</em> are the lines between them representing the connections. The arrow facing determines whether that node is an <em>out-neighbor</em> or <em>in-neighbor</em>. In the above example, Brooklyn is an in-neighbor to Manhattan, and Manhattan is the out-neighbor or Brooklyn.</p>
+<h2 id="using-breadth-first-search">Using Breadth-First Search</h2>
+<p>Not only is it a search algorithm, it actually accomplishes two things, asking two questions;</p>
+<ol>
+<li>Is there a path? (touching all nodes in the progress)</li>
+<li>What is the shortest path between two points?</li>
+</ol>
+<p>If we had a network of connections showing the people I know, and nodes for all the people they know, it would grow pretty quickly. Say I wanted to find someone who sells records, old vinyl. I would start with my connections, then check all of my connections&rsquo; connections, and so on until a record seller is found.</p>
+<p>We can use BFS to solve this issue. It will see if we have a record seller in our own network, as well as our outer connections. It will check all until it finds one, or returns none. Often, you&rsquo;ll prefer a first-degree connection over second-degree or more. The way we determine the priority for connections is through the data structure called a <em>Queue</em>.</p>
+<p>Queues, unlike stacks, are First In First Out (FIFO). Only two operations we have to worry about, <em>enqueue</em> (add) &amp; <em>dequeue</em> (pop). We have <strong>no</strong> access to random elements within a queue.</p>
+<h2 id="making-the-graph">Making the Graph</h2>
+<p>To start making a graph of &ldquo;Record Sellers&rdquo; is super easy in Python. Start by making a simple empty dictionary, and adding entries with lists of connections:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>graph <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;you&#39;</span>] <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Johnathan&#39;</span>, <span style="color:#e6db74">&#39;Jotato&#39;</span>, <span style="color:#e6db74">&#39;Josuke&#39;</span>]
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;Johnathan&#39;</span>] <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Dio&#39;</span>, <span style="color:#e6db74">&#39;Suzy&#39;</span>]
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;Jotaro&#39;</span>] <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Dio&#39;</span>, <span style="color:#e6db74">&#39;Kakyion&#39;</span>]
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;Josuke&#39;</span>] <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Rohan&#39;</span>, <span style="color:#e6db74">&#39;Okuyasu&#39;</span>]
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;Dio&#39;</span>] <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;Suzy&#39;</span>] <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;Rohan&#39;</span>] <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;Kakyoin&#39;</span>] <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>graph[<span style="color:#e6db74">&#39;Okuyasu&#39;</span>] <span style="color:#f92672">=</span> []
+</span></span></code></pre></div><p>Since we&rsquo;re entering this all before the algorithm&rsquo;s called, the organization of our entries doesn&rsquo;t matter all that much. If we had a undirected graph, we could just call out nodes <em>neighbors</em>.</p>
+<h2 id="making-the-algorithm">Making the Algorithm</h2>
+<ol>
+<li>Make a queue of your contacts</li>
+<li>Pop the first contact</li>
+<li>Check if they&rsquo;re a record seller</li>
+<li>If they sell records, you&rsquo;re done!
+<ol>
+<li>Else, add their contacts to the queue</li>
+</ol>
+</li>
+<li>Loop back to step 2</li>
+</ol>
+<p>To make a queue in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> deque
+</span></span><span style="display:flex;"><span>search_queue <span style="color:#f92672">=</span> deque()
+</span></span><span style="display:flex;"><span>search_queue <span style="color:#f92672">+=</span> graph[<span style="color:#e6db74">&#39;you&#39;</span>]
+</span></span></code></pre></div><p>Another important thing to keep in mind is that we should not be checking people multiple times, which means we should also include a set:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search</span>(name):
+</span></span><span style="display:flex;"><span>	search_queue <span style="color:#f92672">=</span> deque()
+</span></span><span style="display:flex;"><span>	search_queue <span style="color:#f92672">+=</span> graph[name]
+</span></span><span style="display:flex;"><span>	searched <span style="color:#f92672">=</span> set()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span> search_queue:
+</span></span><span style="display:flex;"><span>		person <span style="color:#f92672">=</span> search_queue<span style="color:#f92672">.</span>popleft()
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> person <span style="color:#f92672">in</span> searched:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> person_is_seller(person):
+</span></span><span style="display:flex;"><span>				print(<span style="color:#e6db74">&#34;Is record seller!&#34;</span>)
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>				search_queue <span style="color:#f92672">+=</span> graph[person]
+</span></span><span style="display:flex;"><span>				searched<span style="color:#f92672">.</span>add(person)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span></code></pre></div><p>The running time here has two main factors to consider: we are searching every one, so we need to follow each edge (e) and it takes constant time ($O(1)$) for adding each person to our queue. This means our run time is $O(v+e)$.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/">Chapter 7</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/datastructures/">datastructures</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

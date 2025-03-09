@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Where To Go Next What a journey this has been! The next few sections are light on detail, and geared more towards exposure. Please feel free to dive into each of these topics on your own, as each is large enough to devote an entire chapter to.
+Linear Regression Given a data set of points, a line of best fit is generated to make predictions. This is one of the first topics covered when you begin learning about Machine Learning (due to how easy it is to set up), so you&amp;rsquo;re likely going to have first hand experience with this soon enough." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms, machine_learning" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/" />
+
+
+    <title>
+        
+            Grokking Algorithms - Chapter 13 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Grokking Algorithms - Chapter 13">
+  <meta itemprop="description" content="Where To Go Next What a journey this has been! The next few sections are light on detail, and geared more towards exposure. Please feel free to dive into each of these topics on your own, as each is large enough to devote an entire chapter to.
+Linear Regression Given a data set of points, a line of best fit is generated to make predictions. This is one of the first topics covered when you begin learning about Machine Learning (due to how easy it is to set up), so you’re likely going to have first hand experience with this soon enough.">
+  <meta itemprop="datePublished" content="2025-03-07T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-07T00:00:00+00:00">
+  <meta itemprop="wordCount" content="546">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Algorithms,Machine_learning">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Grokking Algorithms - Chapter 13">
+  <meta name="twitter:description" content="Where To Go Next What a journey this has been! The next few sections are light on detail, and geared more towards exposure. Please feel free to dive into each of these topics on your own, as each is large enough to devote an entire chapter to.
+Linear Regression Given a data set of points, a line of best fit is generated to make predictions. This is one of the first topics covered when you begin learning about Machine Learning (due to how easy it is to set up), so you’re likely going to have first hand experience with this soon enough.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Grokking Algorithms - Chapter 13">
+  <meta property="og:description" content="Where To Go Next What a journey this has been! The next few sections are light on detail, and geared more towards exposure. Please feel free to dive into each of these topics on your own, as each is large enough to devote an entire chapter to.
+Linear Regression Given a data set of points, a line of best fit is generated to make predictions. This is one of the first topics covered when you begin learning about Machine Learning (due to how easy it is to set up), so you’re likely going to have first hand experience with this soon enough.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-07T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Machine_learning">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-07 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/">Grokking Algorithms - Chapter 13</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="where-to-go-next">Where To Go Next</h1>
+<p>What a journey this has been! The next few sections are light on detail, and geared more towards exposure. Please feel free to dive into each of these topics on your own, as each is large enough to devote an entire chapter to.</p>
+<h2 id="linear-regression">Linear Regression</h2>
+<p>Given a data set of points, a line of best fit is generated to make predictions. This is one of the first topics covered when you begin learning about Machine Learning (due to how easy it is to set up), so you&rsquo;re likely going to have first hand experience with this soon enough.</p>
+<h2 id="inverted-indexes">Inverted Indexes</h2>
+<p>This topic is how search engines actually work. Inverted Indexes use a hash structure that maps words to places they appear. Then, given a new entry, it&rsquo;ll compare the words as they appear with other metrics it was trained on to return results similar to what you&rsquo;re searching for.</p>
+<h2 id="fourier-transformation">Fourier Transformation</h2>
+<p>An algorithm used in separating the make-up of some input. The book uses a fantastic example of &ldquo;<em>Given a smoothie, it will return the ingredients of that smoothie</em>.&rdquo; Not only can it do this with text, but also audio (think of boosting of lowering levels) and image (think compression).</p>
+<h2 id="parallel-algorithms">Parallel Algorithms</h2>
+<p>A huge topic in itself; nowadays, the only way to <em>really</em> improve performance is to split the processing power of a program into multiple units, or specifically CPU/GPU cores. Inherently hard to design because of this.</p>
+<p>There are so many variables at play when building parallel algorithms; how do you evenly split the workload? How about <strong>Amdahl&rsquo;s Law</strong>, which states that when optimizing one part of a system, performance gains are inherently limited by how much <em>that</em> part took? Or how about <em>load balancing</em>, when a task runs too fast &amp; idle time wastes precious resources? Tough questions.</p>
+<h2 id="mapreduce">map/reduce</h2>
+<p>Known as a distributed algorithm, map/reduce runs over multiple devices. Google actually popularized this with their MapReduce service. Great when you want to increase the speed of a lot of computational work.</p>
+<h2 id="bloom-filters">Bloom Filters</h2>
+<p>Bloom filters are probabilistic data structures; gives an answer that could be incorrect, but is likely correct. Think of our approximation algorithms from earlier in the text. They are useful since they take up such little space.</p>
+<h2 id="hyperloglog">HyperLogLog</h2>
+<p>Approximates the number of unique elements in a set. Again, this is an approximation algorithm, so the return will be close, but not exact.</p>
+<h2 id="https-and-the-diffie-hellman-key-exchange">HTTPS and the Diffie-Hellman Key Exchange</h2>
+<p>This is actually a really interesting look into how the internet actually works. HTTPS works by encrypting a message using a special key. You have to send the encrypted message <strong>and</strong> the key into a function in order to un-encrypt the data to be read. However, since there are in fact malicious people out there looking to steal your data, it is dangerous to send both the hash and key together.</p>
+<p>This is where Diffie-Hellman comes in. It provides a safe way to read encrypted data between two clients without sending any secret keys.</p>
+<ol>
+<li>Generate keys (for both clients)</li>
+<li>Generate a common pattern for both</li>
+<li>Overlay the pattern over both keys
+<ol>
+<li>This makes a public key</li>
+</ol>
+</li>
+<li>Overlay the public key into the private keys</li>
+</ol>
+<p>Now, both of you have a key you can use to encrypt your messages. Neat!</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/algorithms/">algorithms</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/machine_learning/">machine_learning</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

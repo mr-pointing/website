@@ -6,7 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content=" " />
+<meta name="description" content="Quicksort Divide and Conquer To introduce another tool into our algorithm toolbox, we can introduce Divide &amp;amp; Conquer, a useful method to recursively solve problems. Just like we learned in recursion, we need to identify our base case. Then we divide our problem into smaller problems, until we eventually reach our base case.
+We can use the example of a plot of land:
+If we wanted to divide our land into perfectly even square boxes, making sure to use all available land with no land left out." />
 <meta name="keywords" content="homepage, blog, computerscience, algorithms, textbook" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -45,23 +47,30 @@
 
 
   <meta itemprop="name" content="Grokking Algorithms - Chapter 4">
-  <meta itemprop="description" content=" ">
+  <meta itemprop="description" content="Quicksort Divide and Conquer To introduce another tool into our algorithm toolbox, we can introduce Divide &amp; Conquer, a useful method to recursively solve problems. Just like we learned in recursion, we need to identify our base case. Then we divide our problem into smaller problems, until we eventually reach our base case.
+We can use the example of a plot of land:
+If we wanted to divide our land into perfectly even square boxes, making sure to use all available land with no land left out.">
   <meta itemprop="datePublished" content="2025-02-17T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-02-17T00:00:00+00:00">
+  <meta itemprop="wordCount" content="739">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Algorithms,Textbook">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Grokking Algorithms - Chapter 4">
-  <meta name="twitter:description" content=" ">
+  <meta name="twitter:description" content="Quicksort Divide and Conquer To introduce another tool into our algorithm toolbox, we can introduce Divide &amp; Conquer, a useful method to recursively solve problems. Just like we learned in recursion, we need to identify our base case. Then we divide our problem into smaller problems, until we eventually reach our base case.
+We can use the example of a plot of land:
+If we wanted to divide our land into perfectly even square boxes, making sure to use all available land with no land left out.">
 
 
 
     <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-4/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Grokking Algorithms - Chapter 4">
-  <meta property="og:description" content=" ">
+  <meta property="og:description" content="Quicksort Divide and Conquer To introduce another tool into our algorithm toolbox, we can introduce Divide &amp; Conquer, a useful method to recursively solve problems. Just like we learned in recursion, we need to identify our base case. Then we divide our problem into smaller problems, until we eventually reach our base case.
+We can use the example of a plot of land:
+If we wanted to divide our land into perfectly even square boxes, making sure to use all available land with no land left out.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -152,6 +161,91 @@
 
             <div class="post-content">
                 <hr>
+<h1 id="quicksort">Quicksort</h1>
+<h2 id="divide-and-conquer">Divide and Conquer</h2>
+<p>To introduce another tool into our algorithm toolbox, we can introduce <strong>Divide &amp; Conquer</strong>, a useful method to recursively solve problems. Just like we learned in recursion, we need to identify our base case. Then we <em>divide</em> our problem into smaller problems, until we eventually reach our base case.</p>
+<p>We can use the example of a plot of land:</p>
+
+    <img src="/images/plot_of_land_base.png"  alt="plot_of_land_base"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>If we wanted to divide our land into perfectly even square boxes, making sure to use all available land with no land left out. How would you begin to figure this out?</p>
+<p>In D&amp;C&rsquo;s case, we should determine a base case. A good way to think about this if one side is twice another, you could do a nice even split, so that&rsquo;s our best case. If you try to make the most even boxes you can, this is what you end up with:</p>
+
+    <img src="/images/pol_cut.png"  alt="pol_cut"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Thankfully, our recursive case is here to help us out. The same algorithm we used to D&amp;C the first plot will be done to the remaining or leftover portion of land, in this case the 400x640 space. We continue to break down the portion until we are left with the an 80x160 portion, satisfying our best case and returning how large our square portions should be; 80x80!</p>
+<p>D&amp;C can also be used for finding things like sum and maximum. Recursive functions don&rsquo;t rely or need variables; the stack is what keeps track of the values as you move through the recursive case.</p>
+<h3 id="exercises">Exercises</h3>
+<ol>
+<li>Write out the code for a recursive sum function</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sum_nums</span>(nums):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> nums <span style="color:#f92672">==</span> []:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> nums[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">+</span> sum_nums(nums[<span style="color:#ae81ff">1</span>:])
+</span></span></code></pre></div><ol start="2">
+<li>Write out the code for a recursive counter</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count_nums</span>(nums):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> nums <span style="color:#f92672">==</span> []:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> count_nums(nums[<span style="color:#ae81ff">1</span>:])
+</span></span></code></pre></div><ol start="3">
+<li>Write a recursive function to find the max number in a list</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">max_num</span>(nums):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> len(nums) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> nums[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">if</span> nums[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&gt;</span> nums[<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">else</span> nums[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>	sub_max <span style="color:#f92672">=</span> max_num(nums[<span style="color:#ae81ff">1</span>:])
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> nums[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">if</span> nums[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&gt;</span> sub_max <span style="color:#66d9ef">else</span> sub_max
+</span></span></code></pre></div><ol>
+<li>For Binary Search, what is the best case and what is the recursive case?
+<ul>
+<li>Base Case: An array with 1 item: if it matches, great! If not, not in array</li>
+<li>Recursive Case: Split the array in half, and search the remaining half</li>
+</ul>
+</li>
+</ol>
+<h2 id="quicksort-1">Quicksort</h2>
+<p>Obviously, quicksort is a sorting algorithm. It uses Divide &amp; Conquer, hence when it was just introduced.</p>
+<p>Right away, we identify our case case: arrays that don&rsquo;t need to be sorted! An array with 0 or 1 element.</p>
+<p>For a list of elements, to perform D&amp;C, we have to choose a <em>pivot</em> point, or where we&rsquo;ll split our array. For now, we can just choose the first number in the array.</p>
+<p>After the pivot is found, we separate the remaining list into two categories, numbers smaller and larger than our pivot. This is known as <em>partitioning</em>.</p>
+<p>Technically, this only works when the items before and after are sorted, correct? Well, that becomes our recursive case.</p>
+<p>The code looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">quicksort</span>(nums):  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> len(nums) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> nums  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:  
+</span></span><span style="display:flex;"><span>        pivot <span style="color:#f92672">=</span> nums[<span style="color:#ae81ff">0</span>]  
+</span></span><span style="display:flex;"><span>        less <span style="color:#f92672">=</span> [i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> nums[<span style="color:#ae81ff">1</span>:] <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&lt;=</span> pivot]  
+</span></span><span style="display:flex;"><span>        more <span style="color:#f92672">=</span> [i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> nums[<span style="color:#ae81ff">1</span>:] <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&gt;</span> pivot]  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> quicksort(less) <span style="color:#f92672">+</span> [pivot] <span style="color:#f92672">+</span> quicksort(more)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>print(quicksort([<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span> ,<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">5</span>]))
+</span></span></code></pre></div><h2 id="revisiting-big-o-notation">Revisiting Big O Notation</h2>
+<p>Quicksort is a unique algorithm due to it&rsquo;s speed and times depending on your choice of pivot. Usually, constants don&rsquo;t affect the run time, so we can ignore them. For quicksort, the average case is faster than quicksort even though they are both $O(n \log n)$.</p>
+<p>In the worst case, the list is already sorted, and the pivot is the first number. You will have to move through the list of size $n$, $n$ times! Even in the worst situation, if you move the pivot to the middle, you make less recursive calls: $O(n)$ vs $O(\log n)$.</p>
+<p>We touch all $n$ elements, every step of the way, taking $O(n)$ time. We have to account for that:</p>
+<ul>
+<li>Worst case, $O(n)$ with $O(n)$ steps = $O(n^2)$</li>
+<li>Best case, $O(\log n)$ with $O(n)$ steps = $O(n \log n)$</li>
+</ul>
+<p>Quicksort is a fast sorting algorithm, and a great example of Divide &amp; Conquer.</p>
+<h3 id="exercises-1">Exercises</h3>
+<p>How long in Big O for each?</p>
+<ol>
+<li>Printing the value of each element in an array: $O(n)$</li>
+<li>Doubling the value of each element: $O(n)$</li>
+<li>Doubling the value of just the first element: $O(1)$</li>
+<li>Creating a multiplication table with all the elements of an array: $O(n^2)$</li>
+</ol>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/">Chapter 5</a></p>
 
             </div>
         </article>

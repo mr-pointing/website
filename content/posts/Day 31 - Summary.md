@@ -13,7 +13,7 @@ updated: 2025-02-06T17:37
 
 -------------------------------------------------------------------------------
 
-I can't believe I worked on this project for 30 days. The growth has been fantastic, and I should be proud of all that I was able to accomplish. If this is true, why do I feel a pit in my stomach when I think about this project? If I did such a good job, why do I feel like such shit?
+I can't believe I worked on this project for 30 days. The growth has been fantastic, and I should be proud of all that I was able to accomplish. If this is true, why do I feel a pit in my stomach when I think about this project? If I did such a good job, why do I feel like such crap?
 
 To be honest, the more I worked on this the more I understood why it takes teams of people to produce applications. I know there are gurus out there who can solo develop their ideas, but wow I never realized how *not* like that I am. I enjoyed every part of the development process, yet the more I saw of the road ahead of me to actually make this usable? That is what really scared me.
 
