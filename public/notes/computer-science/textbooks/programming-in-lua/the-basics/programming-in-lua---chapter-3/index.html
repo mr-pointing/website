@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content=" " />
-<meta name="keywords" content="homepage, blog, computerscience, textbook, lua" />
+<meta name="description" content="Numbers Up until recently, all numbers in Lua were floating point numbers. Now, Lua past version 5.3, has two representations for numbers; 64-bit integers and double-precision floating points, just floats.
+The Lua interpreter will allow the input of numbers in whatever format you want, and return it that way (unless specified not too).
+&amp;gt; 4 --&amp;gt; 4 &amp;gt; 0.4 --&amp;gt; 0.4 &amp;gt; 4.57e-3 --&amp;gt; 0.00457 &amp;gt; 0.3e12 --&amp;gt; 300000000000.0 &amp;gt; 5E&#43;20 --&amp;gt; 5e&#43;20 If you call type() on any number, it will always return as a number type." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, lua, syntax" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-3/" />
@@ -45,23 +47,30 @@
 
 
   <meta itemprop="name" content="Programming in Lua - Chapter 3">
-  <meta itemprop="description" content=" ">
+  <meta itemprop="description" content="Numbers Up until recently, all numbers in Lua were floating point numbers. Now, Lua past version 5.3, has two representations for numbers; 64-bit integers and double-precision floating points, just floats.
+The Lua interpreter will allow the input of numbers in whatever format you want, and return it that way (unless specified not too).
+&gt; 4 --&gt; 4 &gt; 0.4 --&gt; 0.4 &gt; 4.57e-3 --&gt; 0.00457 &gt; 0.3e12 --&gt; 300000000000.0 &gt; 5E&#43;20 --&gt; 5e&#43;20 If you call type() on any number, it will always return as a number type.">
   <meta itemprop="datePublished" content="2025-03-08T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-08T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1080">
   <meta itemprop="image" content="http://localhost:1313/">
-  <meta itemprop="keywords" content="Computerscience,Textbook,Lua">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Lua,Syntax">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Programming in Lua - Chapter 3">
-  <meta name="twitter:description" content=" ">
+  <meta name="twitter:description" content="Numbers Up until recently, all numbers in Lua were floating point numbers. Now, Lua past version 5.3, has two representations for numbers; 64-bit integers and double-precision floating points, just floats.
+The Lua interpreter will allow the input of numbers in whatever format you want, and return it that way (unless specified not too).
+&gt; 4 --&gt; 4 &gt; 0.4 --&gt; 0.4 &gt; 4.57e-3 --&gt; 0.00457 &gt; 0.3e12 --&gt; 300000000000.0 &gt; 5E&#43;20 --&gt; 5e&#43;20 If you call type() on any number, it will always return as a number type.">
 
 
 
     <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-3/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Programming in Lua - Chapter 3">
-  <meta property="og:description" content=" ">
+  <meta property="og:description" content="Numbers Up until recently, all numbers in Lua were floating point numbers. Now, Lua past version 5.3, has two representations for numbers; 64-bit integers and double-precision floating points, just floats.
+The Lua interpreter will allow the input of numbers in whatever format you want, and return it that way (unless specified not too).
+&gt; 4 --&gt; 4 &gt; 0.4 --&gt; 0.4 &gt; 4.57e-3 --&gt; 0.00457 &gt; 0.3e12 --&gt; 300000000000.0 &gt; 5E&#43;20 --&gt; 5e&#43;20 If you call type() on any number, it will always return as a number type.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -70,6 +79,7 @@
     <meta property="article:tag" content="Computerscience">
     <meta property="article:tag" content="Textbook">
     <meta property="article:tag" content="Lua">
+    <meta property="article:tag" content="Syntax">
     <meta property="og:image" content="http://localhost:1313/">
 
 
@@ -152,6 +162,188 @@
 
             <div class="post-content">
                 <hr>
+<h1 id="numbers">Numbers</h1>
+<p>Up until recently, all numbers in Lua were floating point numbers. Now, Lua past version 5.3, has two representations for numbers; 64-bit <em>integers</em> and double-precision floating points, just <em>floats</em>.</p>
+<p>The Lua interpreter will allow the input of numbers in whatever format you want, and return it that way (unless specified not too).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e">--&gt; 4</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.4</span> <span style="color:#75715e">--&gt; 0.4</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4.57e-3</span> <span style="color:#75715e">--&gt; 0.00457</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.3e12</span> <span style="color:#75715e">--&gt; 300000000000.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5E+20</span> <span style="color:#75715e">--&gt; 5e+20</span>
+</span></span></code></pre></div><p>If you call <code>type()</code> on any number, it will always return as a <code>number</code> type. If you wanted to ensure you have an integer or float, you would have to specify it as a math type using <code>math.type()</code>.</p>
+<p>Lua not only handles hexadecimal constants, but also floating-point hexadecimal constants:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0xff</span> <span style="color:#75715e">--&gt; 255</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x1A3</span> <span style="color:#75715e">--&gt; 419</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x0.2</span> <span style="color:#75715e">--&gt; 0.125</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x1p-1</span> <span style="color:#75715e">--&gt; 0.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0xa.bp2</span> <span style="color:#75715e">--&gt; 42.75</span>
+</span></span></code></pre></div><h2 id="arithmetic-operators">Arithmetic Operators</h2>
+<p>Lua has the standard four big operators, <code>+</code> <code>-</code> <code>*</code> and <code>/</code>.</p>
+<p>In addition, subtraction, multiplication, and negation, two integers produce an integer. If presented with integers and floats, they will produce a float.</p>
+<p>For division, Lua will automatically convert all numbers to a float, and produce a float result. There is also the existence of <em>floor division</em>, <code>//</code>, that rounds down by default. This again follows the rule of any float in the mix causes the production of a float.</p>
+<p>The Modulo operator, <code>%</code>, also works the same way it does in other languages, returning remainder. Exponents are used with the caret, <code>^</code>, and also always operate on floats. There are some interesting ways of using modulo that I never considered;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> math.pi
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">-</span> x<span style="color:#f92672">%</span><span style="color:#ae81ff">0.01</span> <span style="color:#75715e">--&gt; 3.14</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">-</span> x<span style="color:#f92672">%</span><span style="color:#ae81ff">0.001</span> <span style="color:#75715e">--&gt; 3.141</span>
+</span></span></code></pre></div><h2 id="relational-operators">Relational Operators</h2>
+<ul>
+<li><code>&lt;</code>: less than</li>
+<li><code>&gt;</code>: greater than</li>
+<li><code>&lt;=</code>: less than or equal too</li>
+<li><code>&gt;=</code>: greater than or equal too</li>
+<li><code>= =</code>: (should be together but causes an error in Obsidian) equality operator</li>
+<li><code>~=</code>: not equal too</li>
+</ul>
+<h2 id="the-mathematical-library">The Mathematical Library</h2>
+<p>Like we&rsquo;ve seen already, we can call on the math module for more functions and utilities we can use in our calculations;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.sin(math.pi <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>) <span style="color:#75715e">--&gt; 1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.max(<span style="color:#ae81ff">10.4</span>, <span style="color:#ae81ff">7</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">20</span>) <span style="color:#75715e">--&gt; 20</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.huge <span style="color:#75715e">--&gt; inf</span>
+</span></span></code></pre></div><h3 id="random-number-generator">Random Number Generator</h3>
+<p>Three ways we can easily generate a random number:</p>
+<ol>
+<li><code>math.random()</code> will return a random float in the range [0, 1)</li>
+<li><code>math.random(x)</code> will return a random integer in the range [1, x]</li>
+<li><code>math.random(x, y)</code> will return a random integer in the range [x, y]</li>
+</ol>
+<h3 id="rounding-functions">Rounding Functions</h3>
+<p>Just like with the random module, we have three options;</p>
+<ol>
+<li><code>math.floor(x)</code> rounds <code>x</code> down to negative infinity</li>
+<li><code>math.ceil(x)</code> rounds <code>x</code> up to positive infinity</li>
+<li><code>math.modf(x)</code> rounds <code>x</code> to 0 <em>and also returns the fractional part of the number</em></li>
+</ol>
+<p>Weird way to explain it, but in practice it makes a lot more sense:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.floor (<span style="color:#ae81ff">3.3</span>) <span style="color:#75715e">--&gt; 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.floor (<span style="color:#f92672">-</span><span style="color:#ae81ff">3.3</span>) <span style="color:#75715e">--&gt; -4</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.ceil (<span style="color:#ae81ff">3.3</span>) <span style="color:#75715e">--&gt; 4</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.ceil (<span style="color:#f92672">-</span><span style="color:#ae81ff">3.3</span>) <span style="color:#75715e">--&gt; -3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.modf (<span style="color:#ae81ff">3.3</span>) <span style="color:#75715e">--&gt; 3 0.3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.modf (<span style="color:#f92672">-</span><span style="color:#ae81ff">3.3</span>) <span style="color:#75715e">--&gt; -3 -0.3</span>
+</span></span></code></pre></div><h2 id="representation-limits">Representation Limits</h2>
+<p>Since Lua uses 64-bit integers, we can represent numbers up to about $10^{19}$. We can actually get these upper and lower limits, through the use of <code>math.maxinteger</code> and <code>max.mininteger</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.maxinteger <span style="color:#75715e">--&gt; 9223372036854775807</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.mininteger <span style="color:#75715e">--&gt; -9223372036854775808</span>
+</span></span></code></pre></div><p>This is worth going over, but it&rsquo;s kind of strange behavior. If you exceed the limits, you&rsquo;ll actually <em>wrap back around to the beginning/end</em>. What does this mean? Let&rsquo;s look;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.maxinteger <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> math.mininteger <span style="color:#75715e">--&gt; true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.mininteger <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> math.maxinteger <span style="color:#75715e">--&gt; true</span>
+</span></span></code></pre></div><p>Weird right? These values are so large they seem insignificant, but if not anticipated, can really throw you for a loop.</p>
+<p>Floats have a larger range ($[-2^{53}, 2^{53}]$), and up until you reach these limits, the differences between integers and floats is at best negligible.</p>
+<h2 id="conversions">Conversions</h2>
+<p>Lua has a really easy to to make any number a float; add $0.0$ to it! Any integer can become a float;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.0</span> <span style="color:#75715e">--&gt; -3.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x7fffffffffffffff</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.0</span> <span style="color:#75715e">--&gt; 9.2233720368548e+18</span>
+</span></span></code></pre></div><p>Another Lua convention, we can move the other way, and forcing any number to be an integer, with the <em>or</em> operator, or the <code>|</code> sign, with a 0;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">^</span><span style="color:#ae81ff">53</span> <span style="color:#75715e">--&gt; 9.007199254741e+15</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">^</span><span style="color:#ae81ff">53</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">0</span> <span style="color:#75715e">--&gt; 9007199254740992</span>
+</span></span></code></pre></div><p>This doesn&rsquo;t work the way you think it might do; it won&rsquo;t make any floating point number an integer if you pass in a decimal; it will actually <strong>break</strong>. This defeats the purpose mostly; which is why we probably want to use <code>math.tointeger(x)</code> instead, where <code>x</code> is a floating point number. Now, instead of breaking, if our <code>x</code> value has a decimal, it&rsquo;ll return <code>nil</code> instead.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3.2</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>stdin:<span style="color:#ae81ff">1</span>: nuimber has no integer representation
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.tointeger(<span style="color:#f92672">-</span><span style="color:#ae81ff">258.0</span>) <span style="color:#75715e">--&gt; -258</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.tointeger(<span style="color:#ae81ff">2</span><span style="color:#f92672">^</span><span style="color:#ae81ff">30</span>) <span style="color:#75715e">--&gt; 1073741824</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> math.tointeger(<span style="color:#ae81ff">5.01</span>) <span style="color:#75715e">--&gt; nil</span>
+</span></span></code></pre></div><p>The text provides a useful function that will convert a number to an integer if possible, and just return it if it can&rsquo;t be converted;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">cond2int</span> (x)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> math.tointeger(x) <span style="color:#f92672">or</span> x
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h2 id="precedence">Precedence</h2>
+<p>Here is the order of operators;</p>
+<ol>
+<li><code>^</code></li>
+<li>Unary Operators (<code>-, #, ~, not</code>)</li>
+<li><code>* / // %</code></li>
+<li><code>+ -</code></li>
+<li><code>..</code></li>
+<li><code>&lt;&lt; &gt;&gt;</code></li>
+<li><code>&amp;</code></li>
+<li><code>~</code></li>
+<li><code>|</code></li>
+<li><code>&lt; &gt; &lt;= &gt;= ~= ==</code></li>
+<li><code>and</code></li>
+<li><code>or</code></li>
+</ol>
+<p>We&rsquo;ll learn more about 6 - 9 in chapter 13.</p>
+<h3 id="exercises">Exercises</h3>
+<ol>
+<li>
+<p>Which of the following are valid numerals?</p>
+<ol>
+<li><code>.0e12</code> ✔</li>
+<li><code>.e12</code> ❌</li>
+<li><code>0.0e</code> ❌</li>
+<li><code>0x12</code> ✔</li>
+<li><code>0xABFG</code> ❌</li>
+<li><code>0xA</code> ✔`</li>
+<li><code>FFFF</code> ✔</li>
+<li><code>0xFFFFFFFF</code> ✔</li>
+<li><code>0x</code> ❌</li>
+<li><code>0x1P10</code> ✔</li>
+<li><code>0.1e1</code> ✔</li>
+<li><code>0x0.1p1</code> ✔</li>
+</ol>
+</li>
+<li>
+<p>Explain the following results:</p>
+<ol>
+<li><code>&gt; math.maxinteger * 2 --&gt; -2</code>
+<ol>
+<li>The largest number wraps past the minimum, but does not reach past 0.</li>
+</ol>
+</li>
+<li><code>&gt; math.mininteger * 2 --&gt; 0</code>
+<ol>
+<li>Smallest number plus the smallest number brings you back to 0</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>What will the following program print?</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  print(i, i <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><pre><code>1. -10	2
+-9	0
+-8	1
+-7	2
+-6	0
+-5	1
+-4	2
+-3	0
+-2	1
+-1	2
+0	0
+1	1
+2	2
+3	0
+4	1
+5	2
+6	0
+7	1
+8	2
+9	0
+10	1
+</code></pre>
+<ol start="4">
+<li>What is the result of the expression <code>2^3^4</code>? How about <code>2^-3^4</code>?
+<ol>
+<li><code>2.4178516392293e+24</code></li>
+<li><code>4.1359030627651e-25</code></li>
+</ol>
+</li>
+<li>The number 12.7 is equal to the fraction 127/10, where the denominator is a power of 10. Can you express it as a common fraction where the denominator is a power of two?
+<ol>
+<li><code>254/20</code></li>
+</ol>
+</li>
+<li>Write a function to compute the volume of a right circular cone, given it&rsquo;s height and the angle between a generatrix and the axis.</li>
+<li>Using <code>math.ranomd</code>, write a function to produce a pseudo-random number with a standard normal (Gaussian) distribution.</li>
+</ol>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-4/">Chapter 4</a></p>
 
             </div>
         </article>
@@ -166,6 +358,7 @@
         <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
         <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
         <span class="tag"><a href="http://localhost:1313/tags/lua/">lua</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/syntax/">syntax</a></span>
         
     </p>
 

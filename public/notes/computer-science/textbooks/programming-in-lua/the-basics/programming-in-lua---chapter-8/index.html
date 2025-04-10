@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Filling in Some Gaps A quick send off chapter for the basics of Lua. Let&amp;rsquo;s review some key components that are necessary, but maybe doesn&amp;rsquo;t need an entire chapter.
+Local Variables and Blocks Quite simply, Lua makes all variables global by default. To specify a local variable, you have to call it with local in front. Local variables only have a scope inside the block it was declared in." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, lua, syntax" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-8/" />
+
+
+    <title>
+        
+            Programming in Lua - Chapter 8 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Programming in Lua - Chapter 8">
+  <meta itemprop="description" content="Filling in Some Gaps A quick send off chapter for the basics of Lua. Let’s review some key components that are necessary, but maybe doesn’t need an entire chapter.
+Local Variables and Blocks Quite simply, Lua makes all variables global by default. To specify a local variable, you have to call it with local in front. Local variables only have a scope inside the block it was declared in.">
+  <meta itemprop="datePublished" content="2025-03-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="624">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Lua,Syntax">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Programming in Lua - Chapter 8">
+  <meta name="twitter:description" content="Filling in Some Gaps A quick send off chapter for the basics of Lua. Let’s review some key components that are necessary, but maybe doesn’t need an entire chapter.
+Local Variables and Blocks Quite simply, Lua makes all variables global by default. To specify a local variable, you have to call it with local in front. Local variables only have a scope inside the block it was declared in.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-8/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Programming in Lua - Chapter 8">
+  <meta property="og:description" content="Filling in Some Gaps A quick send off chapter for the basics of Lua. Let’s review some key components that are necessary, but maybe doesn’t need an entire chapter.
+Local Variables and Blocks Quite simply, Lua makes all variables global by default. To specify a local variable, you have to call it with local in front. Local variables only have a scope inside the block it was declared in.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-25T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Lua">
+    <meta property="article:tag" content="Syntax">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-25 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-8/">Programming in Lua - Chapter 8</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="filling-in-some-gaps">Filling in Some Gaps</h1>
+<p>A quick send off chapter for the basics of Lua. Let&rsquo;s review some key components that are necessary, but maybe doesn&rsquo;t need an entire chapter.</p>
+<h2 id="local-variables-and-blocks">Local Variables and Blocks</h2>
+<p>Quite simply, Lua makes all variables global by default. To specify a local variable, you have to call it with <code>local</code> in front. Local variables only have a scope inside the block it was declared in.</p>
+<p>It&rsquo;s considered a good programming habit to use local variables when possible. It allows for less confusion with existing global variables, it&rsquo;s cleaner, and also faster as access to local variables is faster than global variables.</p>
+<p>An idiom the text offers is <code>local foo = foo</code> after declaring <code>foo</code>. As we know, we now have faster access.</p>
+<h2 id="control-structures">Control Structures</h2>
+<h3 id="if-then-else"><code>if then else</code></h3>
+<p>Works just like any other if statement. Syntax works like this;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">then</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> a <span style="color:#f92672">&lt;</span> b <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">return</span> a <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">return</span> b <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> line <span style="color:#f92672">&gt;</span> MAXLINES <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  showpage()
+</span></span><span style="display:flex;"><span>  line <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>All uses are valid in Lua. You can also nest if statements with as many <code>elseif</code> statements as you&rsquo;d like.</p>
+<h3 id="while"><code>while</code></h3>
+<p>Repeats a block of code based on the condition being true;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> a[i] <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  print(a[i])
+</span></span><span style="display:flex;"><span>  i <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h3 id="repeat"><code>repeat</code></h3>
+<p>An interesting structure, performs a block of code based on the condition being false;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> line
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>  line <span style="color:#f92672">=</span> io.read()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">until</span> line <span style="color:#f92672">~=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>print(line)
+</span></span></code></pre></div><h3 id="numeric-for">Numeric <code>for</code></h3>
+<p>Weirdly enough, <code>for</code> is used in two different ways. For numbers, it will execute some block of code for each value given a range;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> var <span style="color:#f92672">=</span> exp1, exp2, exp3 <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>something<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>In the above, we move from the value of <code>var</code> set to <code>exp1</code>, until it is equal to <code>exp2</code>. <code>exp3</code> is an optional parameter indicating step. This works a lot like the <code>range</code> function in Python. One Lua idiom that&rsquo;s useful is using <code>math.huge</code> as the upper bound.</p>
+<p>The value of <code>var</code> is only local to the <code>for</code> loop; if we leave the loop, we no longer have access to whatever value is associated with <code>var</code>. We&rsquo;d have to use another variable to assign it too.</p>
+<h3 id="generic-for">Generic <code>for</code></h3>
+<p>Really not much different, but used in the way we&rsquo;ve been using it in past examples. We use <code>for</code> to move through some iterator, like <code>ipairs</code>, <code>pairs</code>, or <code>io.lines</code>.</p>
+<h2 id="break-return-and-goto"><code>break</code>, <code>return</code>, and <code>goto</code></h2>
+<p>Whenever we are in a block of code, we can use <code>break</code> or <code>return</code> to leave that block. On the flip side, <code>goto</code> will bring you to any location within a function.</p>
+<p>Put simply, use <code>break</code> to finish any loop structure; it will bring you back to where you entered the loop and will not work if used outside a loop.</p>
+<p><code>return</code> sends back a value from a specific function.</p>
+<p><code>goto</code> jumps the executing code&rsquo;s cursor to a specified label with the syntax <code>::name::</code> . It works a lot like a continue statement.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> some_condition <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  ::redo::
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> some_other_condition <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">goto</span> continue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> yet_another_condition <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">goto</span> redo <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>some code<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  ::continue::
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Here&rsquo;s an example using <code>goto</code> to create a simple maze game;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">goto</span> room1 <span style="color:#75715e">-- initial room</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>::room1:: <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> move <span style="color:#f92672">=</span> io.read()
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> move <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;south&#34;</span> <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">goto</span> room3
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">elseif</span> move <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;east&#34;</span> <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">goto</span> room2
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;invalid move&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">goto</span> room1 <span style="color:#75715e">-- stay in room</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>::room2:: <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> move <span style="color:#f92672">=</span> io.read()
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> move <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;south&#34;</span> <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">goto</span> room4
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">elseif</span> move <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;west&#34;</span> <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">goto</span> room1
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;invalid move&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">goto</span> room2
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>::room3:: <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> move <span style="color:#f92672">=</span> io.read()
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> move <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;north&#34;</span> <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">goto</span> room1
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">elseif</span> move <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;east&#34;</span> <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">goto</span> room4
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;invalid move&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">goto</span> room3
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>::room4:: <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Congrats! You made it!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-9/">Chapter 9</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/lua/">lua</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/syntax/">syntax</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

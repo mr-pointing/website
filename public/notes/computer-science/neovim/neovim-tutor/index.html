@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="After going through Programming in Lua, I started watching a video series on learning Neovim. It really got me wanting to try out Neovim, so I started with the tutor. I&amp;rsquo;ll probably just throw in a few of the most important things I learn in each chapter of the tutor.
+Chapter 1 Moving can be done with the arrows or h, j, k, and l to move left, down, up, and right respectively You can open any file in Neovim with nvim FILENAME." />
+<meta name="keywords" content="homepage, blog, computerscience, nvim, documentation, text_editor" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/neovim/neovim-tutor/" />
+
+
+    <title>
+        
+            Neovim Tutor :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Neovim Tutor">
+  <meta itemprop="description" content="After going through Programming in Lua, I started watching a video series on learning Neovim. It really got me wanting to try out Neovim, so I started with the tutor. I’ll probably just throw in a few of the most important things I learn in each chapter of the tutor.
+Chapter 1 Moving can be done with the arrows or h, j, k, and l to move left, down, up, and right respectively You can open any file in Neovim with nvim FILENAME.">
+  <meta itemprop="datePublished" content="2025-03-29T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-29T00:00:00+00:00">
+  <meta itemprop="wordCount" content="777">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Nvim,Documentation,Text_editor">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Neovim Tutor">
+  <meta name="twitter:description" content="After going through Programming in Lua, I started watching a video series on learning Neovim. It really got me wanting to try out Neovim, so I started with the tutor. I’ll probably just throw in a few of the most important things I learn in each chapter of the tutor.
+Chapter 1 Moving can be done with the arrows or h, j, k, and l to move left, down, up, and right respectively You can open any file in Neovim with nvim FILENAME.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/neovim/neovim-tutor/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Neovim Tutor">
+  <meta property="og:description" content="After going through Programming in Lua, I started watching a video series on learning Neovim. It really got me wanting to try out Neovim, so I started with the tutor. I’ll probably just throw in a few of the most important things I learn in each chapter of the tutor.
+Chapter 1 Moving can be done with the arrows or h, j, k, and l to move left, down, up, and right respectively You can open any file in Neovim with nvim FILENAME.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-29T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Nvim">
+    <meta property="article:tag" content="Documentation">
+    <meta property="article:tag" content="Text_editor">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/neovim/neovim-tutor/">Neovim Tutor</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p>After going through <a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/">Programming in Lua</a>, I started watching a video series on <a href="/">learning Neovim</a>. It really got me wanting to try out Neovim, so I started with the tutor. I&rsquo;ll probably just throw in a few of the most important things I learn in each chapter of the tutor.</p>
+<h2 id="chapter-1">Chapter 1</h2>
+<ul>
+<li>Moving can be done with the arrows or <code>h</code>, <code>j</code>, <code>k</code>, and <code>l</code> to move left, down, up, and right respectively</li>
+<li>You can open any file in Neovim with <code>nvim FILENAME</code>.</li>
+<li>Exiting Neovim is done with <code>:q!</code> to discard changes, and <code>:wq</code> to keep changes</li>
+<li>Deleting characters outside of <code>insert</code> mode can be done with hitting <code>x</code></li>
+<li>Entering <code>insert</code> mode can be done by hitting <code>i</code>
+<ul>
+<li>You can append to any line by hitting <code>A</code></li>
+</ul>
+</li>
+<li>Hitting <code>Esc</code> brings you back to <code>normal</code> mode</li>
+</ul>
+<h2 id="chapter-2">Chapter 2</h2>
+<ul>
+<li>The <code>delete</code> operator can be used to quickly get rid of words
+<ul>
+<li><code>dw</code> to delete from your cursor to the next word</li>
+<li><code>d$</code> to delete from your cursor to the end of a line</li>
+<li><code>dd</code> to delete an entire line</li>
+</ul>
+</li>
+<li>You can use numbers before operators to repeat operations</li>
+<li><code>w</code> moves word to word by the first letter
+<ul>
+<li><code>e</code> moves word to word by the last letter</li>
+</ul>
+</li>
+<li>Change command syntax is as follows, <code>operator [number] motion</code></li>
+<li><code>0</code> moves to the beginning of a line</li>
+<li>Undo changes with <code>u</code>
+<ul>
+<li>Undo all changes to a line with <code>U</code>
+<ul>
+<li>Go forward in time with <code>Ctrl+r</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="chapter-3">Chapter 3</h2>
+<ul>
+<li>After deleting anything, you can put it anywhere with <code>p</code>, placing it after the cursor</li>
+<li>Replace any character with <code>r</code> and the character you want</li>
+<li><code>c</code> is the change operator; it replaces a section with putting you into <code>insert</code> mode to make changes
+<ul>
+<li><code>ce</code> or <code>c#e</code> will delete from the cursor to the end of the word or # amount of words</li>
+</ul>
+</li>
+</ul>
+<h2 id="chapter-4">Chapter 4</h2>
+<ul>
+<li>If you want to display your current line location, you can with <code>Ctrl+g</code>
+<ul>
+<li><code>gg</code> brings your cursor to the first line</li>
+<li><code>#G</code> brings your cursor to line number #</li>
+<li><code>G</code> brings your cursor to the end of the file</li>
+</ul>
+</li>
+<li>You can search for text using <code>/</code> and text to search forward in the file
+<ul>
+<li>You search backwards using <code>?</code></li>
+<li>When searching, press <code>n</code> for the next occurrence and <code>N</code> for the previous</li>
+</ul>
+</li>
+<li>Use <code>%</code> to bring your cursor to the opening or closing of a pair of brackets</li>
+<li>Use <code>:s/old/new</code> to substitute the first occurrence of <code>old</code> with <code>new</code>
+<ul>
+<li>You can specify what lines you want to effect with <code>:#,#s</code></li>
+<li>You can use <code>:s/old/new/g</code> to replace an entire lines <code>old</code> with <code>new</code></li>
+<li>Use <code>:%s/old/new</code> to replace all <code>old</code> with <code>new</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="chapter-5">Chapter 5</h2>
+<ul>
+<li>You can use external commands using the <code>!</code> operator;
+<ul>
+<li><code>:!ls</code> will run <code>ls</code></li>
+<li>Usually opens it up in a smaller window</li>
+</ul>
+</li>
+<li>We can create new files easily with <code>:w FILENAME</code>, and just as easily remove it with <code>:!rm FILENAME</code></li>
+<li>Traditional highlighting can be accomplished using <code>v</code> or <code>Visual Selection</code>
+<ul>
+<li>After highlighting a section of text, you can use <code>d</code> to simply delete the selection</li>
+<li>You can even save and move selected text into a separate file, writing <code>:w FILENAME</code>
+<ul>
+<li>You&rsquo;ll notice after writing the <code>:</code>, some more characters appeared after it, <code>'&lt;, '&gt;</code>. I don&rsquo;t know why this happens, but it does let you know nicely that you are in some modifier mode</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can retrieve and place the contents of any file using <code>:r FILENAME</code>
+<ul>
+<li>A cool trick is reading the output of external commands; you can use <code>:r !ls</code> to read in the output of <code>ls</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="chapter-6">Chapter 6</h2>
+<ul>
+<li>Open is a command you can use to insert a new line under or above an existing line
+<ul>
+<li>On a line, type <code>o</code> to insert a new line under the line your cursor exists on</li>
+<li>Typing <code>O</code> will do the same but above the line your cursor is on</li>
+</ul>
+</li>
+<li>You can append to any line
+<ul>
+<li><code>a</code> brings you to the end of the word of your cursor</li>
+<li><code>A</code> brings you to the end of the line your cursor is on</li>
+</ul>
+</li>
+<li>A new mode, <code>Replace</code> mode, can be entered not using <code>r</code>, but <code>R</code>. It works like <code>Insert</code> mode but replaces over characters instead of inserting them into the line</li>
+<li>Copy using <code>y</code> and paste with <code>p</code>
+<ul>
+<li>You can use <code>v</code> to select and <code>y</code> to copy it</li>
+<li>You could also use <code>yank</code> as an operator, like using <code>yw</code> to copy a word</li>
+<li><code>P</code> places before your cursor instead of after</li>
+</ul>
+</li>
+<li>The <code>:set</code> operator can be used to configure other commands
+<ul>
+<li><code>:set ic</code> ignores casing when searching</li>
+<li><code>:set is</code> shows partial matches</li>
+<li><code>:set hls</code> highlights all matching phrases
+<ul>
+<li>Use <code>no</code> in front of any of these options to switch them off</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/nvim/">nvim</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/text_editor/">text_editor</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

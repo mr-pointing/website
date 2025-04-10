@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Pattern Matching Due to Lua&amp;rsquo;s goal of maintaining a lite and quick language, it relies on it&amp;rsquo;s own method of pattern matching rather than POSIX regex or even Perl regex.
+Pattern Matching Functions There are four pattern matching functions within Lua&amp;rsquo;s standard string library. We&amp;rsquo;ve actually already seen two of them, find and gsub. We will cover those in slightly more detail, as well as the other two, match and gmatch." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, lua" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-10/" />
+
+
+    <title>
+        
+            Programming in Lua - Chapter 10 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Programming in Lua - Chapter 10">
+  <meta itemprop="description" content="Pattern Matching Due to Lua’s goal of maintaining a lite and quick language, it relies on it’s own method of pattern matching rather than POSIX regex or even Perl regex.
+Pattern Matching Functions There are four pattern matching functions within Lua’s standard string library. We’ve actually already seen two of them, find and gsub. We will cover those in slightly more detail, as well as the other two, match and gmatch.">
+  <meta itemprop="datePublished" content="2025-04-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-04-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="563">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Lua">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Programming in Lua - Chapter 10">
+  <meta name="twitter:description" content="Pattern Matching Due to Lua’s goal of maintaining a lite and quick language, it relies on it’s own method of pattern matching rather than POSIX regex or even Perl regex.
+Pattern Matching Functions There are four pattern matching functions within Lua’s standard string library. We’ve actually already seen two of them, find and gsub. We will cover those in slightly more detail, as well as the other two, match and gmatch.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-10/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Programming in Lua - Chapter 10">
+  <meta property="og:description" content="Pattern Matching Due to Lua’s goal of maintaining a lite and quick language, it relies on it’s own method of pattern matching rather than POSIX regex or even Perl regex.
+Pattern Matching Functions There are four pattern matching functions within Lua’s standard string library. We’ve actually already seen two of them, find and gsub. We will cover those in slightly more detail, as well as the other two, match and gmatch.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-04-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-09T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Lua">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-04-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-10/">Programming in Lua - Chapter 10</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="pattern-matching">Pattern Matching</h1>
+<p>Due to Lua&rsquo;s goal of maintaining a lite and quick language, it relies on it&rsquo;s own method of pattern matching rather than POSIX regex or even Perl regex.</p>
+<h2 id="pattern-matching-functions">Pattern Matching Functions</h2>
+<p>There are four pattern matching functions within Lua&rsquo;s standard string library. We&rsquo;ve actually already seen two of them, <code>find</code> and <code>gsub</code>. We will cover those in slightly more detail, as well as the other two, <code>match</code> and <code>gmatch</code>.</p>
+<h3 id="stringfind"><code>string.find</code></h3>
+<p>Simply searches for a pattern inside a given string. The return of <code>find</code> is the first position of the pattern, and the last position of said pattern. If a match isn&rsquo;t found, Lua returns <code>nil</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello world!&#34;</span>
+</span></span><span style="display:flex;"><span>i, j <span style="color:#f92672">=</span> string.find(s, <span style="color:#e6db74">&#34;Hello&#34;</span>)
+</span></span><span style="display:flex;"><span>print(i, j) <span style="color:#75715e">--&gt; 1   5</span>
+</span></span><span style="display:flex;"><span>print(s:find(<span style="color:#e6db74">&#34;Hello&#34;</span>)) <span style="color:#75715e">--&gt; 1   5</span>
+</span></span><span style="display:flex;"><span>print(string.sub(s, i, j)) <span style="color:#75715e">--&gt; Hello</span>
+</span></span><span style="display:flex;"><span>print(s:find(<span style="color:#e6db74">&#34;lll&#34;</span>)) <span style="color:#75715e">--&gt; nil</span>
+</span></span></code></pre></div><p>There are also two optional parameters you can pass in, and they work a little strangely. The third is simple enough, it&rsquo;s an index on where to begin the search. The fourth however, is a Boolean value to indicate a <em>plain search</em>, or a search that does not recognize patterns.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.find(<span style="color:#e6db74">&#34;A [word]&#34;</span>, <span style="color:#e6db74">&#34;[&#34;</span>])
+</span></span><span style="display:flex;"><span>stdin:<span style="color:#ae81ff">1</span>: malformed pattern (missing <span style="color:#e6db74">&#39;]&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.find(<span style="color:#e6db74">&#34;A [word]&#34;</span>, <span style="color:#e6db74">&#34;[&#34;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#66d9ef">true</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>   <span style="color:#ae81ff">3</span>
+</span></span></code></pre></div><p>In the above example, because square brackets have a special relationship, when you search for one it will automatically try to find the second. In order to just find one, we should set the fourth parameter to <code>True</code>.</p>
+<h3 id="stringmatch"><code>string.match</code></h3>
+<p>A method that works similarly to <code>find</code>, but instead of returning Index numbers, it returns the pattern. This is useless with string data, as we can see below;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.match(<span style="color:#e6db74">&#34;Hello World&#34;</span>, <span style="color:#e6db74">&#34;Hello&#34;</span>)
+</span></span><span style="display:flex;"><span>Hello
+</span></span></code></pre></div><p>The power comes in when used alongside variable patterns, which we&rsquo;ll go into more detail later on. For now, let&rsquo;s look at an example;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>date <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Today is 9/4/2025&#34;</span>
+</span></span><span style="display:flex;"><span>d <span style="color:#f92672">=</span> string.match(date, <span style="color:#e6db74">&#34;$d+/%d+/%d+&#34;</span>)
+</span></span><span style="display:flex;"><span>print(d) <span style="color:#75715e">--&gt; 9/4/2025</span>
+</span></span></code></pre></div><h3 id="stringgsub"><code>string.gsub</code></h3>
+<p>A useful function that replaces a string for each pattern inside a given string. It takes three mandatory parameters; a subject string, the pattern to search for in the subject string, and the replacement string. if the replacement can&rsquo;t be done, it just returns the unmodified string. An optional fourth parameter allows you to control how many instances you want to change;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> string.gsub(<span style="color:#e6db74">&#34;Lua is bunk&#34;</span>, <span style="color:#e6db74">&#34;bunk&#34;</span>, <span style="color:#e6db74">&#34;awesome&#34;</span>)
+</span></span><span style="display:flex;"><span>print(s) <span style="color:#75715e">--&gt; Lua is awesome</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> string.gsub(<span style="color:#e6db74">&#34;A lil bit of luck&#34;</span>, <span style="color:#e6db74">&#34;l&#34;</span>, <span style="color:#e6db74">&#34;x&#34;</span>)
+</span></span><span style="display:flex;"><span>print(a) <span style="color:#75715e">--&gt; A xix bit of xuck</span>
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> string.gsub(<span style="color:#e6db74">&#34;A lil bit of luck&#34;</span>, <span style="color:#e6db74">&#34;l&#34;</span>, <span style="color:#e6db74">&#34;x&#34;</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(b) <span style="color:#75715e">--&gt; A xix bit of luck</span>
+</span></span></code></pre></div><p>Another interesting use is as an additional return, it will send back the number of changes it made.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> string.gsub(<span style="color:#e6db74">&#34;A lil bit of luck&#34;</span>, <span style="color:#e6db74">&#34;l&#34;</span>, <span style="color:#e6db74">&#34;x&#34;</span>)
+</span></span><span style="display:flex;"><span>print(b) <span style="color:#75715e">--&gt; 3</span>
+</span></span></code></pre></div><h3 id="stringgmatch"><code>string.gmatch</code></h3>
+<p>A more complex function, <code>string.gmatch</code> returns an anonymous function that will iterate over all occurrences of a given pattern. The syntax is deceptively simple, so let&rsquo;s take a look before we dive into the actual pattern matching portion of this chapter. The following example will iterate over all words in the given string, and store all words in a table called <code>words</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Some cool words that I like&#34;</span>
+</span></span><span style="display:flex;"><span>words <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> w <span style="color:#66d9ef">in</span> string.gmatch(a, <span style="color:#e6db74">&#34;%a+&#34;</span>) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  words[<span style="color:#f92672">#</span>words <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> w
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h2 id="patterns">Patterns</h2>
+<p>Lua treats patterns like any other string; they follow the same rules as traditional strings. The only way to identify a pattern is with the percent sign.</p>
+<h3 id="character-classes">Character Classes</h3>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/lua/">lua</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

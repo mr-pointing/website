@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you&amp;rsquo;d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
+Any string we make in Lua is immutable, so we can&amp;rsquo;t alter it once it&amp;rsquo;s made." />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, lua, syntax" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-4/" />
+
+
+    <title>
+        
+            Programming in Lua - Chapter 4 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Programming in Lua - Chapter 4">
+  <meta itemprop="description" content="Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you’d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
+Any string we make in Lua is immutable, so we can’t alter it once it’s made.">
+  <meta itemprop="datePublished" content="2025-03-12T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-12T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1097">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Lua,Syntax">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Programming in Lua - Chapter 4">
+  <meta name="twitter:description" content="Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you’d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
+Any string we make in Lua is immutable, so we can’t alter it once it’s made.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-4/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Programming in Lua - Chapter 4">
+  <meta property="og:description" content="Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you’d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
+Any string we make in Lua is immutable, so we can’t alter it once it’s made.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-12T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Lua">
+    <meta property="article:tag" content="Syntax">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-03-12 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-4/">Programming in Lua - Chapter 4</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="strings">Strings</h1>
+<p>A string is basically a representation of some text. They can be tiny, or huge, depending on how you&rsquo;d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.</p>
+<p>Any string we make in Lua is immutable, so we can&rsquo;t alter it once it&rsquo;s made. Any alterations would have to be made to an entirely new string. Not only that, but Lua also has <em>automatic memory management</em>, so we don&rsquo;t have to concern ourselves with allocation and deallocation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My string!&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> b <span style="color:#f92672">=</span> string.gsub(a, <span style="color:#e6db74">&#39;My&#39;</span>, <span style="color:#e6db74">&#39;Our&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> a <span style="color:#75715e">--&gt; My string!</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> b <span style="color:#75715e">--&gt; Our string!</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">#</span>a <span style="color:#75715e">--&gt; 10</span>
+</span></span></code></pre></div><p>A helpful operator we&rsquo;ll use a bunch is the length operator, or <em>#</em>. Just be careful, in certain encodings it doesn&rsquo;t count characters but bytes instead.</p>
+<p>The concatenation operator is two dots, <code>..</code>. This operator also always creates a new string.</p>
+<h2 id="literal-strings">Literal Strings</h2>
+<p>A <em>literal string</em> is any string in single or double quotation marks. If you use one, you can use the other within the same string without escaping which is a nice feature. It also has similar escape characters as Python does,</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bell</td>
+<td>\a</td>
+</tr>
+<tr>
+<td>back space</td>
+<td>\b</td>
+</tr>
+<tr>
+<td>form feed</td>
+<td>\f</td>
+</tr>
+<tr>
+<td>newline</td>
+<td>\n</td>
+</tr>
+<tr>
+<td>carriage return</td>
+<td>\r</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>\t</td>
+</tr>
+<tr>
+<td>vertical slash</td>
+<td>\v</td>
+</tr>
+<tr>
+<td>backslash</td>
+<td>\\</td>
+</tr>
+<tr>
+<td>double quote</td>
+<td>\&quot;</td>
+</tr>
+<tr>
+<td>single quote</td>
+<td>\'</td>
+</tr>
+</tbody>
+</table>
+<p>Lua allows representation of characters through many formats; numeric values, hexadecimal, ASCII, and even UTF-8 characters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x41</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x <span style="color:#75715e">--&gt; A</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ALO</span><span style="color:#ae81ff">\n\&#39;</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> y <span style="color:#75715e">--&gt; ALO</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ae81ff">123</span><span style="color:#e6db74">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&gt; z = &#39;</span><span style="color:#960050;background-color:#1e0010">\</span>u{<span style="color:#ae81ff">3</span>b2}<span style="color:#e6db74">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&gt; z --&gt; β
+</span></span></span></code></pre></div><h2 id="long-strings">Long Strings</h2>
+<p>You can have like, <em>really</em> long strings in Lua. They are really easy to format, just put your text between double square brackets. If you end up needing to use double quotes, you can use some amount of equal signs between the brackets to differentiate them. Just make sure to use the same amount of signs for both the opening and closing.</p>
+<h2 id="coercions">Coercions</h2>
+<p>Funny things start to happen when you start mixing numbers and strings. For one, Lua will convert any string to a number if that string meets a numeric operator. Not only that, but Lua will convert any number to a string when expecting a string. The text recommends not counting on these in your programs, but to acknowledge their existence for potential bug fixing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> print (<span style="color:#ae81ff">10</span> <span style="color:#f92672">..</span> <span style="color:#ae81ff">20</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1020</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">11.0</span>
+</span></span></code></pre></div><p>We can take any string and explicitly make it a number using the <code>tonumber()</code> function. You can even do some crazy things with an additional parameter to define your base number;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tonumber (<span style="color:#e6db74">&#34;   -3 &#34;</span>) <span style="color:#75715e">--&gt; -3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tonumber (<span style="color:#e6db74">&#34;  10e4 &#34;</span>) <span style="color:#75715e">--&gt; 100000.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tonumber (<span style="color:#e6db74">&#34;10e&#34;</span>) <span style="color:#75715e">--&gt; nil (not valid number)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tonumber (<span style="color:#e6db74">&#34;0x1.3p-4&#34;</span>) <span style="color:#75715e">--&gt; 0.07421875</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tonumber (<span style="color:#e6db74">&#34;100101&#34;</span>, <span style="color:#ae81ff">2</span>) <span style="color:#75715e">--&gt; 37</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tonumber (<span style="color:#e6db74">&#34;100101&#34;</span>, <span style="color:#ae81ff">36</span>) <span style="color:#75715e">--&gt; 60467473</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tonumber (<span style="color:#e6db74">&#34;fff&#34;</span>, <span style="color:#ae81ff">16</span>) <span style="color:#75715e">--&gt; 4095</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tostring(<span style="color:#ae81ff">10</span>) <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#75715e">--&gt; true</span>
+</span></span></code></pre></div><p>The last line is a small example of the reverse; how to turn a number into a string, but we have no control over the formatting of it. To avoid major issues, Lua doesn&rsquo;t allow comparison between numbers and strings like <code>2 &lt; &quot;15&quot;</code>.</p>
+<h2 id="the-string-library">The String Library</h2>
+<p>At the basic level, you can&rsquo;t do much with strings. That&rsquo;s what the string library is for. Let&rsquo;s go over some useful methods;</p>
+<ul>
+<li><code>string.len(s)</code> will return the length of <code>s</code> (equal to <code>#s</code>)</li>
+<li><code>string.rep(s, n)</code> will repeat the given string <code>s</code>, <code>n</code> times</li>
+<li><code>string.reverse(s)</code> will reverse the string <code>s</code></li>
+<li><code>string.lower(s)</code> will return all the uppercase characters in <code>s</code> as lowercase</li>
+<li><code>string.upper(s)</code> will return the reverse of the above</li>
+<li><code>string.sub(s, i, j)</code>returns the characters from index <code>i</code> to <code>j</code> from string <code>s</code>
+<ul>
+<li>Important detail, this does not change the value of the original string, but creates a new string all together</li>
+</ul>
+</li>
+<li><code>string.char(x)</code> will return the converted characters for the given number</li>
+<li><code>string.byte(s)</code> will return the converted number for the given characters
+<ul>
+<li>Useful tech; <code>string.byte(s, 1, -1)</code> to return all codes of all characters in <code>s</code></li>
+</ul>
+</li>
+<li><code>string.format()</code> will allow for more advanced string formatting
+<ul>
+<li>Takes a few different types of substitutions
+<ul>
+<li><code>d</code> for integer</li>
+<li><code>x</code> for hexadecimal</li>
+<li><code>f</code> for floating point</li>
+<li><code>s</code> for strings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>string.find(s, w)</code> searches for patterns; returning the index numbers if <code>w</code> exists in <code>s</code></li>
+<li><code>string.gsub(s, w, m)</code> replaces all occurrences of <code>w</code> in <code>s</code> with <code>m</code>
+<ul>
+<li>Also returns the amount of replacements made</li>
+</ul>
+</li>
+</ul>
+<p>Before getting into examples, we can call any function with two different ways; like the above, or with a shorten-er, <code>s:function</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;I love lucy!&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.len(x) <span style="color:#75715e">--&gt; 12</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x:rep(<span style="color:#ae81ff">2</span>) <span style="color:#75715e">--&gt; I love lucy!I love lucy!</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x:reverse() <span style="color:#75715e">--&gt; !ycul evol I</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x:upper() <span style="color:#75715e">--&gt; I LOVE LUCY!</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x:sub(<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">10</span>) <span style="color:#75715e">--&gt; e luc</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.char(<span style="color:#ae81ff">97</span>) <span style="color:#75715e">--&gt; a</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.byte(<span style="color:#e6db74">&#39;abc&#39;</span>) <span style="color:#75715e">--&gt; 97</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> tag, title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;h1&#34;</span>, <span style="color:#e6db74">&#34;My Title&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.format(<span style="color:#e6db74">&#34;&lt; %s&gt;%s&lt;/%s&gt;&#34;</span>, tag, title) <span style="color:#75715e">--&gt; &lt;h1&gt;My Title&lt;/h1&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x:find(<span style="color:#e6db74">&#34;luc&#34;</span>) <span style="color:#75715e">--&gt; 8    10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x:gsub(<span style="color:#e6db74">&#34;lucy&#34;</span>, <span style="color:#e6db74">&#34;money&#34;</span>) <span style="color:#75715e">--&gt; I love money!	1</span>
+</span></span></code></pre></div><h2 id="the-unicode-library">The Unicode Library</h2>
+<p>As far as internet standards go, UTF-8 is the dominant decision for Unicode, and even has it&rsquo;s own library. This is because some of the functions we saw above won&rsquo;t work on Unicode characters. This lead to the <code>utf8</code> library. It has extremely similar functions, like <code>utf8.len()</code>, and <code>utf8.char()</code>.</p>
+<h3 id="exercises">Exercises</h3>
+<ol>
+<li>How can you embed the following XML into a Lua string? In two different ways?</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-XML" data-lang="XML"><span style="display:flex;"><span><span style="color:#75715e">&lt;![CDATA[
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Hello world
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">]]&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#e6db74">[===[
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;![CDATA[
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Hello world
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">]]&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">]===]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">or</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;!</span><span style="color:#ae81ff">\u{5B}</span><span style="color:#e6db74">CDATA</span><span style="color:#ae81ff">\u{5B}\n</span><span style="color:#e6db74">Hello world</span><span style="color:#ae81ff">\n\u{5D}\u{5D}</span><span style="color:#e6db74">&gt;&#39;</span>
+</span></span></code></pre></div><ol start="2">
+<li>Suppose you need yo write a long sequence of arbitrary bytes as a literal string. What format would you use and why?</li>
+</ol>
+<p>I would use the <code>[ [ ] ] </code> format (with spacing intentional for Obsidian).</p>
+<ol start="3">
+<li>Write a function that can insert a string into a given position of another one <code>insert(&quot;Hello world&quot;, 1, &quot;start: &quot;)</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">insert</span> (text_string, num, in_text)
+</span></span><span style="display:flex;"><span>  print (text_string:sub(<span style="color:#ae81ff">1</span>, num) <span style="color:#f92672">..</span> in_text <span style="color:#f92672">..</span> text_string:sub(num <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><ol start="4">
+<li>Redo the previous exercise for UTF-8 strings</li>
+</ol>
+<p>I think you could do this with a structure like a table or list; take all the characters from a Unicode string, gets the codes for them, then uses the concatenation to insert them into the string using normal string functions.</p>
+<ol start="5">
+<li>Write a function to remove a slide from a string; the slice should be given by its initial position and length;</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">remove</span> (text_string, pos, leng)
+</span></span><span style="display:flex;"><span>  print(text_string:sub(<span style="color:#ae81ff">1</span>, pos) <span style="color:#f92672">..</span> text_string:sub((pos <span style="color:#f92672">+</span> leng) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>I can change the above with using multiple assignment to separate the index out.</p>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-5/">Chapter 5</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/lua/">lua</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/syntax/">syntax</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

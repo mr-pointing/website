@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Real Programming on Mr. Pointing</title>
+    <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/</link>
+    <description>Recent content in Real Programming on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 09 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming in Lua - Chapter 10</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-10/</link>
+      <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-10/</guid>
+      <description>Pattern Matching Due to Lua&amp;rsquo;s goal of maintaining a lite and quick language, it relies on it&amp;rsquo;s own method of pattern matching rather than POSIX regex or even Perl regex.&#xA;Pattern Matching Functions There are four pattern matching functions within Lua&amp;rsquo;s standard string library. We&amp;rsquo;ve actually already seen two of them, find and gsub. We will cover those in slightly more detail, as well as the other two, match and gmatch.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 9</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-9/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-9/</guid>
+      <description>Closures The first advanced topic, more of a clarification, let&amp;rsquo;s discuss the true nature of functions and how they&amp;rsquo;re treated in Lua.&#xA;Any function inside Lua is a first-class value, meaning they are treated with similar properties as strings and numbers. This implies that not only can we store functions inside of variables, but we can also pass functions as arguments.&#xA;Another concept that gives Lua additional flexibility is lexical scoping, meaning nested functions have automatic access to variables in their enclosing function.</description>
+    </item>
+  </channel>
+</rss>

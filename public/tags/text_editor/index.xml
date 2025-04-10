@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text_editor on Mr. Pointing</title>
+    <link>http://localhost:1313/tags/text_editor/</link>
+    <description>Recent content in Text_editor on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 29 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/text_editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim Tutor</title>
+      <link>http://localhost:1313/notes/computer-science/neovim/neovim-tutor/</link>
+      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/neovim/neovim-tutor/</guid>
+      <description>After going through Programming in Lua, I started watching a video series on learning Neovim. It really got me wanting to try out Neovim, so I started with the tutor. I&amp;rsquo;ll probably just throw in a few of the most important things I learn in each chapter of the tutor.&#xA;Chapter 1 Moving can be done with the arrows or h, j, k, and l to move left, down, up, and right respectively You can open any file in Neovim with nvim FILENAME.</description>
+    </item>
+  </channel>
+</rss>

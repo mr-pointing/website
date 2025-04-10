@@ -7,20 +7,97 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computerscience</title>
       <link>http://localhost:1313/tags/computerscience/</link>
-      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/computerscience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lua</title>
+      <link>http://localhost:1313/tags/lua/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lua/</guid>
       <description></description>
     </item>
     <item>
       <title>Me</title>
       <link>http://localhost:1313/tags/me/</link>
-      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/me/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Textbook</title>
+      <link>http://localhost:1313/tags/textbook/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/textbook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stack</title>
+      <link>http://localhost:1313/tags/stack/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/stack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>http://localhost:1313/tags/documentation/</link>
+      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/documentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nvim</title>
+      <link>http://localhost:1313/tags/nvim/</link>
+      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nvim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Text_editor</title>
+      <link>http://localhost:1313/tags/text_editor/</link>
+      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/text_editor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syntax</title>
+      <link>http://localhost:1313/tags/syntax/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/syntax/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>http://localhost:1313/tags/book/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>History</title>
+      <link>http://localhost:1313/tags/history/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Politics</title>
+      <link>http://localhost:1313/tags/politics/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/politics/</guid>
       <description></description>
     </item>
     <item>
@@ -31,38 +108,10 @@
       <description></description>
     </item>
     <item>
-      <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Tkinter</title>
       <link>http://localhost:1313/tags/tkinter/</link>
       <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/tkinter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Lua</title>
-      <link>http://localhost:1313/tags/lua/</link>
-      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lua/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Syntax</title>
-      <link>http://localhost:1313/tags/syntax/</link>
-      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Textbook</title>
-      <link>http://localhost:1313/tags/textbook/</link>
-      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/textbook/</guid>
       <description></description>
     </item>
     <item>
@@ -98,13 +147,6 @@
       <link>http://localhost:1313/tags/dictionaries/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/dictionaries/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Stack</title>
-      <link>http://localhost:1313/tags/stack/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/stack/</guid>
       <description></description>
     </item>
     <item>
@@ -220,13 +262,6 @@
       <description></description>
     </item>
     <item>
-      <title>Book</title>
-      <link>http://localhost:1313/tags/book/</link>
-      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/book/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Linux</title>
       <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
@@ -238,13 +273,6 @@
       <link>http://localhost:1313/tags/youtube/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/youtube/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Documentation</title>
-      <link>http://localhost:1313/tags/documentation/</link>
-      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/documentation/</guid>
       <description></description>
     </item>
     <item>

@@ -7,14 +7,56 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming in Lua - Chapter 8</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-8/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-8/</guid>
+      <description>Filling in Some Gaps A quick send off chapter for the basics of Lua. Let&amp;rsquo;s review some key components that are necessary, but maybe doesn&amp;rsquo;t need an entire chapter.&#xA;Local Variables and Blocks Quite simply, Lua makes all variables global by default. To specify a local variable, you have to call it with local in front. Local variables only have a scope inside the block it was declared in.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 7</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-7/</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-7/</guid>
+      <description>The External World Lua is not the language for powerful performance with the exterior world. Even the text admits that most use of Input and Output are done through the host application or external libraries. Lua can handle basic file manipulation, which we&amp;rsquo;ll review now.&#xA;The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 6</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-6/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-6/</guid>
+      <description>Functions Functions in Lua are the main method of abstracting out commands. We&amp;rsquo;ve been using functions the entire time. Like most other languages, we can accomplish direct tasks or solve complicated problems with repeatable calls.&#xA;When calling functions, we use parenthesis, even when there are no parameters. The only time we can leave parenthesis out is when the argument is a literal string or a table constructor.&#xA;A fun addition of Lua is the colon operator, which supports method like calling;</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 5</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-5/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-5/</guid>
+      <description>Tables Funnily enough, tables are the only data structure natively in Lua. Tables can be used to represent basic arrays, sets, records, and others. We&amp;rsquo;ll see some of these created this chapter.&#xA;By default, a table acts like a Python dictionary, or an associative array. They can contain any number or string value, except for nil. The tables themselves are considered objects. Programs only manipulate references to a table; Lua will never create a hidden copy of your table.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 4</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-4/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-4/</guid>
+      <description>Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you&amp;rsquo;d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.&#xA;Any string we make in Lua is immutable, so we can&amp;rsquo;t alter it once it&amp;rsquo;s made.</description>
+    </item>
     <item>
       <title>CPL - Chapter 6</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</guid>
       <description>Data Types What is a data type? Data types are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it&amp;rsquo;s data types and types used.&#xA;The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers).</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 3</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-3/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-3/</guid>
+      <description>Numbers Up until recently, all numbers in Lua were floating point numbers. Now, Lua past version 5.3, has two representations for numbers; 64-bit integers and double-precision floating points, just floats.&#xA;The Lua interpreter will allow the input of numbers in whatever format you want, and return it that way (unless specified not too).&#xA;&amp;gt; 4 --&amp;gt; 4 &amp;gt; 0.4 --&amp;gt; 0.4 &amp;gt; 4.57e-3 --&amp;gt; 0.00457 &amp;gt; 0.3e12 --&amp;gt; 300000000000.0 &amp;gt; 5E+20 --&amp;gt; 5e+20 If you call type() on any number, it will always return as a number type.</description>
     </item>
     <item>
       <title>Programming in Lua - Chapter 2</title>
