@@ -7,8 +7,50 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 09 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generators</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/generators/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/generators/</guid>
+      <description>Link to article 1. Link to article 2.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 13</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-13/</link>
+      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-13/</guid>
+      <description>Bits and Bytes Not a dense chapter, but we should recognize that Lua handles binary data very similarly to text. Let&amp;rsquo;s dive right into it.&#xA;Bitwise Operators There are a few Lua operators that work only on integers and binary data; &amp;amp; or AND, | or OR, ~ or BITWISE OR, &amp;gt;&amp;gt; or SHIFT RIGHT, &amp;lt;&amp;lt; or SHIFT LEFT, and ~ which can also mean BITWISE NOT.&#xA;string.format(&amp;#34;%x&amp;#34;, 0xff &amp;amp; 0xabcd) --&amp;gt; cd string.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 12</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-12/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-12/</guid>
+      <description>Date and Time Not Lua&amp;rsquo;s strong-suit, but there are ways to retrieve and filter on date and time. Although, the system is quite weird.&#xA;Lua officially has two ways of representing date and time. First is a single number, known as the number of seconds from the epoch, or some fixed date. POSIX and Windows use the date January 1st, 1970, 0:00 UTC.&#xA;The second is through a table that&amp;rsquo;s a lot more human readable.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 11</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-11/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-11/</guid>
+      <description>Most Frequent Words Another interlude chapter, this time going over a pretty simple concept; reading and counting all the words within a file. It accomplishes three main tasks;&#xA;Reads all of the text, storing each count of the occurring word within a table Sorts the table based on the order of frequency Prints all results for n local counter = {} for line in io.lines() do for word in string.</description>
+    </item>
+    <item>
+      <title>How .join Works</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/how-.join-works/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/how-.join-works/</guid>
+      <description>Link to article&#xA;A simple built-in string method of Python, .join() allows you to combine strings passed through an iterable of strings, using a separator string as the delimiter.&#xA;&amp;gt;&amp;gt;&amp;gt; facts = [&amp;#39;Giorno&amp;#39;, &amp;#39;is&amp;#39;, &amp;#39;the&amp;#39;, &amp;#39;strongest&amp;#39;, &amp;#39;Jojo&amp;#39;] &amp;gt;&amp;gt;&amp;gt; &amp;#34; &amp;#34;.join(facts) &amp;#34;Giorno is the strongest Jojo&amp;#34; # You could also set the delimiter into it&amp;#39;s own variable for more modularity &amp;gt;&amp;gt;&amp;gt; separator = &amp;#34; &amp;#34; &amp;gt;&amp;gt;&amp;gt; separator.join(facts) &amp;#34;Giorno is the strongest Jojo&amp;#34; You don&amp;rsquo;t have to use a whitespace either if you don&amp;rsquo;t want too.</description>
+    </item>
+    <item>
+      <title>Advent of Neovim</title>
+      <link>http://localhost:1313/notes/computer-science/neovim/advent-of-neovim/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/neovim/advent-of-neovim/</guid>
+      <description>I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ&amp;rsquo;s videos. For now, I&amp;rsquo;ll keep all the videos here separated by headings.&#xA;Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e .</description>
+    </item>
     <item>
       <title>Programming in Lua - Chapter 10</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-10/</link>

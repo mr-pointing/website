@@ -52,7 +52,7 @@ I was really hesitant to start this note, since I basically ran through this tut
 Last time, I did a combination of going through the tutorial, then making changes as I saw fit.">
   <meta itemprop="datePublished" content="2024-11-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-11-06T00:00:00+00:00">
-  <meta itemprop="wordCount" content="2560">
+  <meta itemprop="wordCount" content="4795">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Flask,Python">
 
@@ -94,6 +94,10 @@ Last time, I did a combination of going through the tutorial, then making change
 
 
 
+
+
+    
+  
 
 
 
@@ -251,10 +255,39 @@ build/
 <li><code>@app.route()</code> is our first <em>route</em></li>
 </ol>
 <p>We can now run our app. However, if you visit the default location (http://127.0.0.1:5000) you won&rsquo;t see anything. That&rsquo;s because we routed our <code>Hello, world!</code> statement to the <code>/hello</code> location, so we would need to visit http://127.0.0.1:5000/hello to actually see the results.</p>
-<h1 id="define-and-access-the-database">Define and Access the Database</h1>
+<p><code>flaskr/__init__.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_app</span>(test_config<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create and configure app  </span>
+</span></span><span style="display:flex;"><span>    app <span style="color:#f92672">=</span> Flask(__name__, instance_relative_config<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)  
+</span></span><span style="display:flex;"><span>    app<span style="color:#f92672">.</span>config<span style="color:#f92672">.</span>from_mapping(  
+</span></span><span style="display:flex;"><span>        SECRET_KEY<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dev&#39;</span>,  
+</span></span><span style="display:flex;"><span>        DATABASE<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(app<span style="color:#f92672">.</span>instance_path, <span style="color:#e6db74">&#39;flaskr.sqlite&#39;</span>),  
+</span></span><span style="display:flex;"><span>    )  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> test_config <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:  
+</span></span><span style="display:flex;"><span>        app<span style="color:#f92672">.</span>config<span style="color:#f92672">.</span>from_pyfile(<span style="color:#e6db74">&#39;config.py&#39;</span>, silent<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:  
+</span></span><span style="display:flex;"><span>        app<span style="color:#f92672">.</span>config<span style="color:#f92672">.</span>from_mapping(test_config)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:  
+</span></span><span style="display:flex;"><span>        os<span style="color:#f92672">.</span>makedirs(app<span style="color:#f92672">.</span>instance_path)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">OSError</span>:  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/hello&#39;</span>)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>():  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&lt;b&gt;Hello, world!&lt;/b&gt;&#39;</span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> app
+</span></span></code></pre></div><h1 id="define-and-access-the-database">Define and Access the Database</h1>
 <p>SQLite, a super lightweight database management system, is supported by Python via the <code>sqlite3</code> module. This isn&rsquo;t going to go too in depth on how SQLite works, you can visit <a href="http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/">SQLite Tutorial</a> for more information on that.</p>
 <h2 id="connect-to-the-database">Connect to the Database</h2>
 <p>Before we can make edits or add to our database, we first need to create and connect to it. The following code will accomplish this for us:</p>
+<p><code>flaskr/db.py</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sqlite3  
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime  
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> click  
@@ -266,7 +299,8 @@ build/
 </span></span><span style="display:flex;"><span>        g<span style="color:#f92672">.</span>db <span style="color:#f92672">=</span> sqlite3<span style="color:#f92672">.</span>connect(  
 </span></span><span style="display:flex;"><span>            current_app<span style="color:#f92672">.</span>config[<span style="color:#e6db74">&#39;DATABASE&#39;</span>],  
 </span></span><span style="display:flex;"><span>            detect_types<span style="color:#f92672">=</span>sqlite3<span style="color:#f92672">.</span>PARSE_DECLTYPES  
-</span></span><span style="display:flex;"><span>        )  
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        g<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>row_factory <span style="color:#f92672">=</span> sqlite3<span style="color:#f92672">.</span>Row  
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> g<span style="color:#f92672">.</span>db  
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  
@@ -287,6 +321,7 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 <p>Finally, the <code>close_db</code> function checks if <code>g.db</code> was initialized, and closes the connection if it exists. We&rsquo;ll use this within our app factory to allow to database to be open and closed with each request.</p>
 <h2 id="create-the-tables">Create the Tables</h2>
 <p>We nee to create the schema that will allow for your tables to be created. For this project, we&rsquo;re building a site users can both log into and make posts on, so we&rsquo;ll make two tables; <code>user</code> and <code>post</code>.</p>
+<p><code>flaskr/schema.sql</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> <span style="color:#66d9ef">user</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> post;
 </span></span><span style="display:flex;"><span>
@@ -305,6 +340,7 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">FOREIGN</span> <span style="color:#66d9ef">KEY</span> (author_id) <span style="color:#66d9ef">REFERENCES</span> <span style="color:#66d9ef">user</span> (id)
 </span></span><span style="display:flex;"><span>);
 </span></span></code></pre></div><p>We also have to make the Python code that will run these SQL queries;</p>
+<p><code>flaskr/db.py</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">init_db</span>():  
 </span></span><span style="display:flex;"><span>    db <span style="color:#f92672">=</span> get_db()  
 </span></span><span style="display:flex;"><span>  
@@ -325,6 +361,7 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 </span></span></code></pre></div><p>We use <code>current_app</code> again here, since our location isn&rsquo;t always the same. From what I understand, <code>current_app</code> will always have the path back to our app&rsquo;s directory, or the <code>flaskr</code> folder. This way, we can use <code>.open_resource()</code> and pass in the schema file, and it&rsquo;ll be able to access it no problem.</p>
 <p>The <code>@click.command</code> wrapper allows us to run the <code>init_db()</code> command via the command line, which is extra convenient. Finally, the <code>sqlite.register_converter()</code> command lets Python know how to put timestamp values into the database.</p>
 <p>Now that these commands are made, they have to be registered with the application so they can get recognized and used. We can do this with a function in our database file telling Flask where to get those commands;</p>
+<p><code>flaskr/db.py</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">init_app</span>(app):
 </span></span><span style="display:flex;"><span>	app<span style="color:#f92672">.</span>teardown_appcontext(close_db)
 </span></span><span style="display:flex;"><span>	app<span style="color:#f92672">.</span>cli<span style="color:#f92672">.</span>add_command(init_db_command)
@@ -345,10 +382,11 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 <p>When using our application, we&rsquo;re going to perform multiple requests for information. A <em>view</em> is a function in Flask written to deal with these requests. They work in both ways; they can help generate responses and URLs.</p>
 <p>A <em>blueprint</em> is a way to organize groups of related views and any other pieces of code you might need. For our <code>Flaskr</code> app, we have two blueprints; authentication and blog posts. First we&rsquo;ll define the authorization blueprint, then add in the blogs later.</p>
 <p>We&rsquo;ll start our <code>auth.py</code> with some imports and create a Blueprint object;</p>
+<p><code>flaskr/auth.py</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> functools
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> (
-</span></span><span style="display:flex;"><span>	Blueprint, flash, g, redirect, render_tempalte, request, session, url_for
+</span></span><span style="display:flex;"><span>	Blueprint, flash, g, redirect, render_template, request, session, url_for
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> werkzeug.security <span style="color:#f92672">import</span> check_password_hash, generate_password_hash
 </span></span><span style="display:flex;"><span>
@@ -367,6 +405,7 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 </span></span></code></pre></div><h2 id="making-the-first-view-register">Making the First View: Register</h2>
 <p>Our first view is going to let our user be able to create an account on our app, or a register page. It will give the user a form to submit, and after it&rsquo;ll validate the input, ensuring it&rsquo;s a valid username/password. If not, it&rsquo;ll error out and ask the user to try again.</p>
 <p>An important note is that the view itself is <em>not</em> creating the HTML, we&rsquo;re going to come back and write the actual HTML in a second. Instead, what we&rsquo;ll do is write the Python logic for what needs to be done in order to allow the user to make an account.</p>
+<p><code>flaskr/auth.py</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.route</span>(<span style="color:#e6db74">&#39;/register&#39;</span>, methods<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;POST&#39;</span>))
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">register</span>():
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
@@ -407,6 +446,7 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 </ol>
 <h2 id="login">Login</h2>
 <p>Our login view is going to work incredibly similarly to our register view, except instead of inserting into our database, we&rsquo;ll be retrieving.</p>
+<p><code>flaskr/auth.py</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.route</span>(<span style="color:#e6db74">&#39;login&#39;</span>, methods<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;POST&#39;</span>))  
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login</span>():  
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:  
@@ -439,6 +479,7 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 <li>If <code>error</code>  is still <code>None</code> by the time it reaches the if statement for it, we clear the <code>session</code>, set the key <code>user_id</code> to the requested user&rsquo;s <code>id</code>, and redirect them to the index page.</li>
 </ol>
 <p>A crucial object to understand about what we just did, is that <code>session</code> is actually a dictionary, since we could access certain key&rsquo;s like <code>user_id</code>. Since we stored it here, it will be usable upon page refreshes or navigations, as long as the <em>session</em> is still active. We can write a function that will run before any view is ran, that will actually store all of the information about our user into that <code>g</code> object we saw before when creating our database functions. The code is below and we&rsquo;ll implement it later.</p>
+<p><code>flaskr/auth.py</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.before_app_request</span>  
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_logged_in_user</span>():  
 </span></span><span style="display:flex;"><span>    user_id <span style="color:#f92672">=</span> session<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;user_id&#39;</span>)  
@@ -449,6 +490,423 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 </span></span><span style="display:flex;"><span>        g<span style="color:#f92672">.</span>user <span style="color:#f92672">=</span> get_db()<span style="color:#f92672">.</span>execute(  
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;SELECT * FROM user WHERE id = ?&#39;</span>, (user_id,)  
 </span></span><span style="display:flex;"><span>        )<span style="color:#f92672">.</span>fetchone()
+</span></span></code></pre></div><h2 id="logout">Logout</h2>
+<p>Logging out is relatively simple; just clear the session.</p>
+<p><code>flaskr/auth.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.route</span>(<span style="color:#e6db74">&#39;/logout&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">logout</span>():
+</span></span><span style="display:flex;"><span>	session<span style="color:#f92672">.</span>clear()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;index&#39;</span>))
+</span></span></code></pre></div><h2 id="requiring-authentication">Requiring Authentication</h2>
+<p>Since we only want certain features to be able to be used by a logged in user, we are going to have to let those functions know they should only activate if it&rsquo;s a legit, logged in user trying to use them. We could check this individually every time we write a function, or we could just write what we call a <em>decorator</em> that we can put before each function to let our app know a user must be logged in to be using these features;</p>
+<p><code>flaskr/auth.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login_required</span>(view):
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@functools.wraps</span>(view)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapped_view</span>(<span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> g<span style="color:#f92672">.</span>user <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;auth.login&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> view(<span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> wrapped_view
+</span></span></code></pre></div><h1 id="templates">Templates</h1>
+<p>If you attempted to run any of the previous routes we just defined, you&rsquo;d notice they don&rsquo;t work. Not only that, but we&rsquo;ve been sending our users to pages we haven&rsquo;t even written yet. We&rsquo;re going to mostly take care of that in this section, on templates. Since, again, HTML and CSS deserves it&rsquo;s own unit, you can learn more from many different resources (including some <a href="http://localhost:1313/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/">notes of my own</a>). Otherwise, let&rsquo;s use the tutorial&rsquo;s basic skeleton and you can explore and make some changes in your free time.</p>
+<p>We store templates, or HTML files, in the template directory. Templates specifically house the sites static information, and contain placeholders for any dynamically collected data through use. The way it accomplishes all of this is with the help of a template language, Jinja. It is denoted with <code>{{</code> and <code>}}</code>, works similarly to Python, and is generally easy to use.</p>
+<h2 id="the-base">The Base</h2>
+<p>Let&rsquo;s build a base page, or what every page will be built on top of;</p>
+<p><code>flaskr/templates/base.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">title</span>&gt;{% block title %}{% endblock %} - Flaskr&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ url_for(&#39;static&#39;, filename=&#39;style.css&#39;) }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;Flaskr&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    {% if g.user %}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">span</span>&gt;{{ g.user[&#39;username&#39;] }}&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ url_for(&#39;auth.logout&#39;) }}&#34;</span>&gt;Log Out&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>    {% else %}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ url_for(&#39;auth.register&#39;) }}&#34;</span>&gt;Register&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ url_for(&#39;auth.login&#39;) }}&#34;</span>&gt;Log In&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>    {% endif %}
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>    {% block header %}{% endblock %}
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>  {% for message in get_flashed_messages() %}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;flash&#34;</span>&gt;{{ message }}&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  {% endfor %}
+</span></span><span style="display:flex;"><span>  {% block content %}{% endblock %}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">section</span>&gt;
+</span></span></code></pre></div><p>Right of the bat, we&rsquo;ve got some Jinja helping us create a nice dynamic nav bar. If we happened to be logged in, it will understand that and provide a logout feature. Otherwise, it will provide a register and login feature. Pretty neat.</p>
+<p>We also created the <code>section</code> that will house all of our information. We can see the <code>block title</code>, <code>block content</code>  and <code>block header</code> on the bottom? Those are areas we&rsquo;ll populate in the remaining template pages.</p>
+<h2 id="register">Register</h2>
+<p>Making a register feature is crucial to the design of our application. Otherwise, we have no users. Making the sign up form is actually the easiest part; we did the hard part a little earlier when we created the <code>register</code> function.</p>
+<p>All we need is a form we can access through HTTP, and the correct variable names for them;</p>
+<p><code>flaskr/templates/auth/register.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{% extends &#39;base.html&#39; %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block header %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;{% block title %}Register{% endblock %}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block content %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span>&gt;Username&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span> <span style="color:#a6e22e">required</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>&gt;Password&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">required</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Register&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span></code></pre></div><p>A neat little trick we do here is give the H1 heading inside the header the <code>block title</code> tag, so we set the display title of the page and the meta data title at the same time. Flask is smooth like that.</p>
+<h2 id="login-1">Login</h2>
+<p>Extremely similar to the register template;</p>
+<p><code>flaskr/templates/auth/login.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{% extends &#39;base.html&#39; %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block header %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;{% block title %}Log In{% endblock %}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block content %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span>&gt;Username&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span> <span style="color:#a6e22e">required</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>&gt;Password&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">required</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Log In&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span></code></pre></div><p>Now, try to register and see if it works. Also, try removing the <code>required</code> part of the username and password to see what exactly Flask&rsquo;s error messaging looks like.</p>
+<h1 id="static-files">Static Files</h1>
+<p>Something we&rsquo;ve actually already implemented, the use of static files are the opposite of our Templates; while our templates will be filled and changed depending on their content, the information inside our static directory does not change throughout the runtime of our application. This is where we are going to put our stylesheet, seeing as we want it to be consistent from the moment we launch our app till the moment we close it.</p>
+<p>Here&rsquo;s is the CSS file we&rsquo;re going to use; it&rsquo;s not entirely necessary to understand every part of this just yet, but it doesn&rsquo;t hurt to brush through it to find the parts you do know/understand so you can more easily come back later and make adjustments:</p>
+<p><code>flaskr/static/styles.css</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">html</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#eee</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">960</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">white</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span><span style="color:#f92672">,</span> <span style="color:#f92672">h2</span><span style="color:#f92672">,</span> <span style="color:#f92672">h3</span><span style="color:#f92672">,</span> <span style="color:#f92672">h4</span><span style="color:#f92672">,</span> <span style="color:#f92672">h5</span><span style="color:#f92672">,</span> <span style="color:#f92672">h6</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#66d9ef">serif</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#377ba8</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">a</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#377ba8</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">hr</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">lightgray</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">nav</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">lightgray</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">nav</span> <span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">flex</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">nav</span> <span style="color:#f92672">h1</span> <span style="color:#f92672">a</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0.25</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">nav</span> <span style="color:#f92672">ul</span>  {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">nav</span> <span style="color:#f92672">ul</span> <span style="color:#f92672">li</span> <span style="color:#f92672">a</span><span style="color:#f92672">,</span> <span style="color:#f92672">nav</span> <span style="color:#f92672">ul</span> <span style="color:#f92672">li</span> <span style="color:#f92672">span</span><span style="color:#f92672">,</span> <span style="color:#f92672">header</span> .<span style="color:#a6e22e">action</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">header</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">lightgray</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">flex-end</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">header</span> <span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">flex</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0.25</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">flash</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">em</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#cae6f6</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#377ba8</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">header</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">flex-end</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">0.85</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">header</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">first-of-type</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">flex</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">header</span> <span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span> .<span style="color:#a6e22e">about</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">slategray</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-style</span>: <span style="color:#66d9ef">italic</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span> .<span style="color:#a6e22e">body</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">white-space</span>: <span style="color:#66d9ef">pre-line</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span>:<span style="color:#a6e22e">last-child</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span> <span style="color:#f92672">form</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">em</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">column</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span> <span style="color:#f92672">label</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">bold</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span> <span style="color:#f92672">input</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">content</span> <span style="color:#f92672">textarea</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span> <span style="color:#f92672">textarea</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">resize</span>: <span style="color:#66d9ef">vertical</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">input</span>.<span style="color:#a6e22e">danger</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#cc2f2e</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">input</span><span style="color:#f92672">[</span><span style="color:#f92672">type</span><span style="color:#f92672">=</span><span style="color:#f92672">submit</span><span style="color:#f92672">]</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">align-self</span>: <span style="color:#66d9ef">start</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">min-width</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Here</a> is a great resource for learning more about CSS. For now, after you&rsquo;ve copy and pasted this into the correct project directory, you should be able to run your app with some new very basic styling. Remember, because we set up a rule inside of the <code>auth.py</code> file that sets the <code>url_prefix='/auth'</code>, this means that going to <a href="http://127.0.0.1:5000/login">http://127.0.0.1:5000/login</a> is not going to work. Instead, you&rsquo;ll need to visit <a href="http://127.0.0.1:5000/auth/login">http://127.0.0.1:5000/auth/login</a>.</p>
+<h1 id="remaining-blueprints">Remaining Blueprints</h1>
+<p>We are on the final stretch! This is the final implementation of our project; after this is testing (which technically should be done alongside development but not important for this lesson) and production. Both are out of the scope for this class, so let&rsquo;s just focus on the most important parts; the underlying Python code that helps our blog function properly.</p>
+<h2 id="blog-blueprint">Blog Blueprint</h2>
+<p>First up, the blog&rsquo;s blueprint. Nothing too wild to start with;</p>
+<p><code>flaskr/blog.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>	Blueprint, flash, g, redirect, render_template, request, url_for
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> werkzeug.exceptions <span style="color:#f92672">import</span> abort
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flaskr.auth <span style="color:#f92672">import</span> login_required
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flaskr.db <span style="color:#f92672">import</span> get_db
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>bp <span style="color:#f92672">=</span> Blueprint(<span style="color:#e6db74">&#39;blog&#39;</span>, __name__)
+</span></span></code></pre></div><p>Before continuing, let&rsquo;s tell our application factory we&rsquo;ve created a new Blueprint we want it to serve;</p>
+<p><code>flaskr/__init__.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_app</span>():
+</span></span><span style="display:flex;"><span>	app <span style="color:#f92672">=</span> <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Above is code you already wrote!</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">from</span> . <span style="color:#f92672">import</span> blog
+</span></span><span style="display:flex;"><span>	app<span style="color:#f92672">.</span>register_blueprint(blog<span style="color:#f92672">.</span>bp)
+</span></span><span style="display:flex;"><span>	app<span style="color:#f92672">.</span>add_url_rule(<span style="color:#e6db74">&#39;/&#39;</span>, endpoint<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;index&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> app
+</span></span></code></pre></div><p>This is exactly the same process as the last few blueprints we added, except this time we are including a URL rule that associates the route to <code>index</code> the same as <code>blog.index</code>.</p>
+<h2 id="index">Index</h2>
+<p>Since our application is a blog, it makes sense the blogs main features will take up most of the main page. We shoould start by showing all of the created posts so far, most recent at the top, by using a quick SQL query;</p>
+<p><code>flaskr/blog.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+</span></span><span style="display:flex;"><span>	db <span style="color:#f92672">=</span> get_db()
+</span></span><span style="display:flex;"><span>	posts <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>execute(
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#39;SELECT p.id, title, body, created, author_id, username&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#39; FROM post p JOIN user u ON p.author_id = u.id&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#39; ORDER BY created DESC&#39;</span>
+</span></span><span style="display:flex;"><span>	)<span style="color:#f92672">.</span>fetchall()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;blog/index.html&#39;</span>, posts<span style="color:#f92672">=</span>posts)
+</span></span></code></pre></div><p>Then, we should obviously create the visual side of this with the corresponding HTML page;</p>
+<p><code>flaskr/templates/blog/index.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{% extends &#39;base.html&#39; %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block header %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;{% block title %}Posts{% endblock %}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  {% if g.user %}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;action&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ url_for(&#39;blog.create&#39;) }}&#34;</span>&gt;New&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>  {% endif %}
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block content %}
+</span></span><span style="display:flex;"><span>  {% for post in posts %}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">article</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">h1</span>&gt;{{ post[&#39;title&#39;] }}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;about&#34;</span>&gt;by {{ post[&#39;username&#39;] }} on {{ post[&#39;created&#39;].strftime(&#39;%Y-%m-%d&#39;) }}&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        {% if g.user[&#39;id&#39;] == post[&#39;author_id&#39;] %}
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;action&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ url_for(&#39;blog.update&#39;, id=post[&#39;id&#39;]) }}&#34;</span>&gt;Edit&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>        {% endif %}
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;body&#34;</span>&gt;{{ post[&#39;body&#39;] }}&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>    {% if not loop.last %}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">hr</span>&gt;
+</span></span><span style="display:flex;"><span>    {% endif %}
+</span></span><span style="display:flex;"><span>  {% endfor %}
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span></code></pre></div><p>There is a lot going on here, and again a lot of it is happening thanks in large part to Jinja&rsquo;s flexibility. Before letting me explain what&rsquo;s happening, try following the code down line by line and try on your own to figure out what&rsquo;s going on.</p>
+<h2 id="create-posts">Create Posts</h2>
+<p>Creating a new post is going to work similarly to how our <code>register</code> view works, with some obvious changes. We are going to check and make sure the post is valid, then if there are no issues, create the post and send the user back to the main index. We also don&rsquo;t want anyone who is not a user to try and make their own posts, so we should make use of that <code>@login_required</code> wrapper we made a while ago.</p>
+<p><code>flaskr/blog.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.route</span>(<span style="color:#e6db74">&#39;/create&#39;</span>, methods<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;POST&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@login_required</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
+</span></span><span style="display:flex;"><span>		title <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;title&#39;</span>]
+</span></span><span style="display:flex;"><span>		body <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;body&#39;</span>]
+</span></span><span style="display:flex;"><span>		error <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> title:
+</span></span><span style="display:flex;"><span>			error <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Title is required.&#39;</span>
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> error <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>			flash(error)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>			db <span style="color:#f92672">=</span> get_db()
+</span></span><span style="display:flex;"><span>			db<span style="color:#f92672">.</span>execute(
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#39;INSERT INTO post (title, body, author_id)&#39;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#39; VALUES (?, ?, ?)&#39;</span>,
+</span></span><span style="display:flex;"><span>				(title, body, g<span style="color:#f92672">.</span>user[<span style="color:#e6db74">&#39;id&#39;</span>])
+</span></span><span style="display:flex;"><span>			)
+</span></span><span style="display:flex;"><span>			db<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;blog.index&#39;</span>))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;blog/create.html&#39;</span>)
+</span></span></code></pre></div><p>And let&rsquo;s make the HTML page;</p>
+<p><code>flaskr/templates/blog/create.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{% extends &#39;base.html&#39; %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block header %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;{% block title %}New Post{% endblock %}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block content %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;Title&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ request.form[&#39;title&#39;] }}&#34;</span> <span style="color:#a6e22e">required</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;body&#34;</span>&gt;Body&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;body&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;body&#34;</span>&gt;{{ request.form[&#39;body&#39;] }}&lt;/<span style="color:#f92672">textarea</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Save&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span></code></pre></div><h2 id="update-and-delete">Update and Delete</h2>
+<p>Both the updating and deleting of a post feature is going to use a similar concept; they are both going to have to retrieve the information on a specific post made by the user that&rsquo;s currently logged in, otherwise the user shouldn&rsquo;t have access to edit anyone else&rsquo;s posts. Let&rsquo;s write a small function that can help us retrieve that post;</p>
+<p><code>flaskr/blog.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_post</span>(id, check_author<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>):
+</span></span><span style="display:flex;"><span>	post <span style="color:#f92672">=</span> get_db()<span style="color:#f92672">.</span>execute(
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#39;SELECT p.id, title, body, created, author_id, username&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#39; FROM post p JOIN user u ON p.author_id = u.id&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#39; WHERE p.id = ?&#39;</span>,
+</span></span><span style="display:flex;"><span>		(id,)
+</span></span><span style="display:flex;"><span>	)<span style="color:#f92672">.</span>fetchone()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> post <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>		abort(<span style="color:#ae81ff">404</span>, <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Post id </span><span style="color:#e6db74">{</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74"> doesn&#39;t exist.&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> check_author <span style="color:#f92672">and</span> post[<span style="color:#e6db74">&#39;author_id&#39;</span>] <span style="color:#f92672">!=</span> g<span style="color:#f92672">.</span>user[<span style="color:#e6db74">&#39;id&#39;</span>]:
+</span></span><span style="display:flex;"><span>		abort(<span style="color:#ae81ff">403</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> post
+</span></span></code></pre></div><p>The only new thing we&rsquo;re doing above is carrying out a new function called <code>abort</code>. This new function raises an exception using HTTP status codes; we pass in a 404 error for not found, and a 403 error for a &ldquo;Forbidden&rdquo; edit, say if another user tried to edit a different user&rsquo;s post.</p>
+<p>Now that we have all of the posts information stored and returned, we can actually write the rest of the update function;</p>
+<p><code>flaskr/blog.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.route</span>(<span style="color:#e6db74">&#39;/&lt;int:id&gt;/update&#39;</span>, methods<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;POST&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@login_required</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update</span>(id):
+</span></span><span style="display:flex;"><span>	post <span style="color:#f92672">=</span> get_post(id)
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
+</span></span><span style="display:flex;"><span>		title <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;title&#39;</span>]
+</span></span><span style="display:flex;"><span>		body <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;body&#39;</span>]
+</span></span><span style="display:flex;"><span>		error <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> title:
+</span></span><span style="display:flex;"><span>			error <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Title is required.&#39;</span>
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> error <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>			flash(error)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>			db <span style="color:#f92672">=</span> get_db()
+</span></span><span style="display:flex;"><span>			db<span style="color:#f92672">.</span>execute(
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#39;UPDATE post SET title = ?, body = ?&#39;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#39; WHERE id = ?&#39;</span>,
+</span></span><span style="display:flex;"><span>				(title, body, id)
+</span></span><span style="display:flex;"><span>			)
+</span></span><span style="display:flex;"><span>			db<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;blog.index&#39;</span>))
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;blog/update.html&#39;</span>, post<span style="color:#f92672">=</span>post)
+</span></span></code></pre></div><p>And again, we should start to see a pattern here, after we write out the logic for how our feetures should work, we implement them using HTML;</p>
+<p><code>flaskr/templates/blog/update.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{% extends &#39;base.html&#39; %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block header %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;{% block title %}Edit &#34;{{ post[&#39;title&#39;] }}&#34;{% endblock %}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block content %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;Title&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ request.form[&#39;title&#39;] or post[&#39;title&#39;] }}&#34;</span> <span style="color:#a6e22e">required</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;body&#34;</span>&gt;Body&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;body&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;body&#34;</span>&gt;{{ request.form[&#39;body&#39;] or post[&#39;body&#39;] }}&lt;/<span style="color:#f92672">textarea</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Save&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">hr</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ url_for(&#39;blog.delete&#39;, id=post[&#39;id&#39;]) }}&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;danger&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Delete&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;return confirm(&#39;Are you sure?&#39;);&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span></code></pre></div><p>The deletion is only slightly working now; you can see we have a <code>form</code> element with an <code>action</code> attribute calling some function we haven&rsquo;t written yet, <code>blog.delete</code>. We actually don&rsquo;t need a whole separate page and visualization for the deleting of a post; since it&rsquo;s a super simple concept, we can just write out the function and pass one of the forms buttons to activate our delete function upon press (and an additional check with an &ldquo;Are you sure?&rdquo; dialogue box);</p>
+<p><code>flaskr/blog.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@bp.route</span>(<span style="color:#e6db74">&#39;/&lt;int:id&gt;/delete&#39;</span>, methods<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#39;POST&#39;</span>,))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@login_required</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">delete</span>(id):
+</span></span><span style="display:flex;"><span>	get_post(id)
+</span></span><span style="display:flex;"><span>	db <span style="color:#f92672">=</span> get_db()
+</span></span><span style="display:flex;"><span>	db<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;DELETE FROM post WHERE id = ?&#34;</span>, (id,))
+</span></span><span style="display:flex;"><span>	db<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;blog.index&#39;</span>))
 </span></span></code></pre></div>
             </div>
         </article>

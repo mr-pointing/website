@@ -50,7 +50,7 @@ Pattern Matching Functions There are four pattern matching functions within Lua&
 Pattern Matching Functions There are four pattern matching functions within Luaâ€™s standard string library. Weâ€™ve actually already seen two of them, find and gsub. We will cover those in slightly more detail, as well as the other two, match and gmatch.">
   <meta itemprop="datePublished" content="2025-04-09T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-04-09T00:00:00+00:00">
-  <meta itemprop="wordCount" content="563">
+  <meta itemprop="wordCount" content="1363">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Textbook,Lua">
 
@@ -90,6 +90,10 @@ Pattern Matching Functions There are four pattern matching functions within Luaâ
 
 
 
+
+
+    
+  
 
 
 
@@ -204,6 +208,143 @@ Pattern Matching Functions There are four pattern matching functions within Luaâ
 </span></span></code></pre></div><h2 id="patterns">Patterns</h2>
 <p>Lua treats patterns like any other string; they follow the same rules as traditional strings. The only way to identify a pattern is with the percent sign.</p>
 <h3 id="character-classes">Character Classes</h3>
+<table>
+<thead>
+<tr>
+<th>Sign</th>
+<th>Representation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>All characters</td>
+</tr>
+<tr>
+<td>%a</td>
+<td>Letters</td>
+</tr>
+<tr>
+<td>%c</td>
+<td>Control characters</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>Digits</td>
+</tr>
+<tr>
+<td>%g</td>
+<td>Printable characters except spaces</td>
+</tr>
+<tr>
+<td>%l</td>
+<td>Lowercase letters</td>
+</tr>
+<tr>
+<td>%p</td>
+<td>Punctuation characters</td>
+</tr>
+<tr>
+<td>%s</td>
+<td>Space characters</td>
+</tr>
+<tr>
+<td>%u</td>
+<td>Uppercase letters</td>
+</tr>
+<tr>
+<td>%w</td>
+<td>Alphanumeric characters</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>Hexadecimal digits</td>
+</tr>
+<tr>
+<td>To get the compliment to any of these commands, just use the uppercase version of the sign. In the below example, we use uppercase A to get all non-letter characters.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.gsub(<span style="color:#e6db74">&#34;hello, up-down!&#34;</span>, <span style="color:#e6db74">&#34;%A&#34;</span>, <span style="color:#e6db74">&#34;.&#34;</span>)
+</span></span><span style="display:flex;"><span>hello<span style="color:#f92672">..</span>up.down.
+</span></span></code></pre></div><p>There are some characters that are known as <em>magic characters</em>, (<code>( ) . % + - * ? [ ] ^ $</code>) that must be escaped explicitly using the <code>%</code> sign. An interesting we can do if none of the above classes can help us, is create our own with <em>char sets</em>. Char sets are create with two brackets, like in the following <code>[%w_]</code> that captures alphanumeric characters as well as underscores, or the following example that counts the number of vowels;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>_, nvow <span style="color:#f92672">=</span> string.gsub(text, <span style="color:#e6db74">&#34;[AEIOUaeiou]&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+</span></span></code></pre></div><p>We could also use ranges when defining charsets, but it&rsquo;s pretty specific since most useful ranges are already defined. One way we can improve our uses of patterns is with modifiers. These allow for multiple parts or repetitions.</p>
+<table>
+<thead>
+<tr>
+<th>Sign</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>1 or more repetitions</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>0 or more repetitions</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>0 or more lazy repetitions</td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>Optional (0 or 1 occurence)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.gsub(<span style="color:#e6db74">&#34;one, and two; and three&#34;</span>, <span style="color:#e6db74">&#34;%a+&#34;</span>, <span style="color:#e6db74">&#34;word&#34;</span>)
+</span></span><span style="display:flex;"><span>word, word word; word word
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.match(<span style="color:#e6db74">&#34;the number 1324 is even&#34;</span>, <span style="color:#e6db74">&#34;%d+&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1324</span>
+</span></span></code></pre></div><p>The <code>*</code> sign is essentially the same but will catch no repetitions. It&rsquo;s mostly used for catching spaces, like in this example <code>%(%s*%)</code>. The subtraction modifier will also catch 0 or more repetitions, but this time instead of looking for the longest, it will look for the shortest. A quick example to differentiate the two is when we want to get rid of all comments in a file;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> test <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;int x; /* x */ int y /* y */&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> print((string.gsub(test, <span style="color:#e6db74">&#34;/%*.*%*/&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)))
+</span></span><span style="display:flex;"><span>int x;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> print((string.gsub(test, <span style="color:#e6db74">&#34;/%*.-%*/&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)))
+</span></span><span style="display:flex;"><span>int x;  int y;
+</span></span></code></pre></div><p>The question mark will do exactly as it says; catch an optional character. If we wanted to find an optional sign on a number in a text string, we could use <code>[+-]?%d+</code>. The question mark after the char set makes the signs optional. These modifiers can only be applied to a character class, not patterns.</p>
+<p>If a pattern begins with a caret (<code>^</code>), it will only search the beginning of the string. Likewise, the dollar sign will only search the end of the string. The following will check if the string represents an integer number without any trailing characters: <code>^[+-]?%d+$</code>. The caret and dollar sign are only magic at the beginning and end, respectively.</p>
+<p>An interesting character class is <code>%b</code>, or balanced strings. It takes two parameters, <code>x</code> and <code>y</code>, where both are distinct characters. You can pick any two, but these are most commonly used with enclosing structures, like <code>%b()</code> or <code>%b&lt;&gt;</code>.</p>
+<h2 id="captures">Captures</h2>
+<p><em>Captures</em> are a feature in Lua that allow you to retrieve substrings that match parts of the pattern you&rsquo;re sending in. They&rsquo;re written like normal patterns, except we encase what we want to capture inside of parenthesis;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>pair <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;name = Luis&#34;</span>
+</span></span><span style="display:flex;"><span>key, value <span style="color:#f92672">=</span> string.match(pair, <span style="color:#e6db74">&#34;(%a+)%s*=%s*(%a+)&#34;</span>)
+</span></span><span style="display:flex;"><span>print(key, value) <span style="color:#75715e">--&gt; name  Luis</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>date <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Today is 4/17/2025&#34;</span>
+</span></span><span style="display:flex;"><span>m, d, y <span style="color:#f92672">=</span> string.match(date, <span style="color:#e6db74">&#34;(%d+)/(%d+)/(%d+)&#34;</span>)
+</span></span><span style="display:flex;"><span>print(m, d, y) <span style="color:#75715e">--&gt; 4  17  2025</span>
+</span></span></code></pre></div><h2 id="replacements">Replacements</h2>
+<p>Working very similarly to Python&rsquo;s format string, we can also use <code>string.gsub</code> to pass in a function to call that function for each match made and replace that match with something else. In our case, we&rsquo;re going to replace with global variables, called with Lua&rsquo;s global table <code>_G</code>. If there is no key, there is no replacement.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">expand</span> (s)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (string.gsub(s, <span style="color:#e6db74">&#34;$(%w+)&#34;</span>, _G))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Lua&#34;</span>, status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;great&#34;</span>
+</span></span><span style="display:flex;"><span>print(expand(<span style="color:#e6db74">&#34;$name is $status, isn&#39;t it?&#34;</span>))
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">--&gt; Lua is great, isn&#39;t it?</span>
+</span></span></code></pre></div><p>If the value isn&rsquo;t guaranteed to be a string, we can modify our <code>expand</code> function slightly,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">expand</span> (s)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (string.gsub(s, <span style="color:#e6db74">&#34;$(%w_)&#34;</span>, <span style="color:#66d9ef">function</span> (n)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> tostring(_G[n])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h2 id="tricks-of-the-trade">Tricks of the Trade</h2>
+<p>As we learned, pattern matching is an extremely powerful tool in your toolbox. With great power comes great responsibility; pattern matching is <em>not</em> a replacement for a good parser. You should never write a pattern that ends with the minus modifier, since that will only get you an empty string. Be careful when using <code>.*</code> since it can often return more than you&rsquo;re expecting.</p>
+<h3 id="exercises">Exercises</h3>
+<ol>
+<li>Write a function <code>split</code> that receives a string and a delimiter pattern and returns a sequence with the chunks in the original string separated by the delimiter. Ex <code>t = split(&quot;a whole new world&quot;, &quot; &quot;) --&gt; t = {&quot;a&quot;, &quot;whole&quot;, &quot;new&quot;, &quot;world&quot;}</code>.</li>
+<li>The patterns <code>%D</code> and <code>[^%d]</code> are the same. What about <code>[^%d%u]</code> and <code>[%D%U]</code>?</li>
+</ol>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-11/">Chapter 11</a></p>
 
             </div>
         </article>

@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 29 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/nvim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advent of Neovim</title>
+      <link>http://localhost:1313/notes/computer-science/neovim/advent-of-neovim/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/neovim/advent-of-neovim/</guid>
+      <description>I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ&amp;rsquo;s videos. For now, I&amp;rsquo;ll keep all the videos here separated by headings.&#xA;Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e .</description>
+    </item>
     <item>
       <title>Neovim Tutor</title>
       <link>http://localhost:1313/notes/computer-science/neovim/neovim-tutor/</link>

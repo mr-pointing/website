@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming in Lua - Chapter 13</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-13/</link>
+      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-13/</guid>
+      <description>Bits and Bytes Not a dense chapter, but we should recognize that Lua handles binary data very similarly to text. Let&amp;rsquo;s dive right into it.&#xA;Bitwise Operators There are a few Lua operators that work only on integers and binary data; &amp;amp; or AND, | or OR, ~ or BITWISE OR, &amp;gt;&amp;gt; or SHIFT RIGHT, &amp;lt;&amp;lt; or SHIFT LEFT, and ~ which can also mean BITWISE NOT.&#xA;string.format(&amp;#34;%x&amp;#34;, 0xff &amp;amp; 0xabcd) --&amp;gt; cd string.</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 12</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-12/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-12/</guid>
+      <description>Date and Time Not Lua&amp;rsquo;s strong-suit, but there are ways to retrieve and filter on date and time. Although, the system is quite weird.&#xA;Lua officially has two ways of representing date and time. First is a single number, known as the number of seconds from the epoch, or some fixed date. POSIX and Windows use the date January 1st, 1970, 0:00 UTC.&#xA;The second is through a table that&amp;rsquo;s a lot more human readable.</description>
+    </item>
     <item>
       <title>Real Programming</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/</link>

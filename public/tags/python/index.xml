@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generators</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/generators/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/generators/</guid>
+      <description>Link to article 1. Link to article 2.</description>
+    </item>
+    <item>
+      <title>How .join Works</title>
+      <link>http://localhost:1313/notes/computer-science/python/advanced-python/how-.join-works/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/how-.join-works/</guid>
+      <description>Link to article&#xA;A simple built-in string method of Python, .join() allows you to combine strings passed through an iterable of strings, using a separator string as the delimiter.&#xA;&amp;gt;&amp;gt;&amp;gt; facts = [&amp;#39;Giorno&amp;#39;, &amp;#39;is&amp;#39;, &amp;#39;the&amp;#39;, &amp;#39;strongest&amp;#39;, &amp;#39;Jojo&amp;#39;] &amp;gt;&amp;gt;&amp;gt; &amp;#34; &amp;#34;.join(facts) &amp;#34;Giorno is the strongest Jojo&amp;#34; # You could also set the delimiter into it&amp;#39;s own variable for more modularity &amp;gt;&amp;gt;&amp;gt; separator = &amp;#34; &amp;#34; &amp;gt;&amp;gt;&amp;gt; separator.join(facts) &amp;#34;Giorno is the strongest Jojo&amp;#34; You don&amp;rsquo;t have to use a whitespace either if you don&amp;rsquo;t want too.</description>
+    </item>
     <item>
       <title>Generate Parentheses</title>
       <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/generate-parentheses/</link>
