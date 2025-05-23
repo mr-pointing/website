@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN&amp;rsquo;s come into the picture.
-Our syntax for a standard expression doesn&amp;rsquo;t change, only get&amp;rsquo;s different options for our JOIN keyword.
-SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, ." />
+<meta name="description" content=" Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN&rsquo;s come into the picture.
+Our syntax for a standard expression doesn&rsquo;t change, only get&rsquo;s different options for our JOIN keyword.
+SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, ... ASC/DESC LIMIT num_limit OFFSET num_offset; Let&rsquo;s say we have two tables, joining table A to table B. Doing a LEFT JOIN will include rows from A even if there isn&rsquo;t a match in B. Similarly, a RIGHT JOIN will return rows found in B even if there is no match in A. If we were to do a FULL JOIN, all rows are kept even if there is no match.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, documentation, SQL" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -49,7 +50,7 @@ SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN
   <meta itemprop="name" content="SQLBolt - Lesson 7">
   <meta itemprop="description" content="Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN’s come into the picture.
 Our syntax for a standard expression doesn’t change, only get’s different options for our JOIN keyword.
-SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, .">
+SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, ... ASC/DESC LIMIT num_limit OFFSET num_offset; Let’s say we have two tables, joining table A to table B. Doing a LEFT JOIN will include rows from A even if there isn’t a match in B. Similarly, a RIGHT JOIN will return rows found in B even if there is no match in A. If we were to do a FULL JOIN, all rows are kept even if there is no match.">
   <meta itemprop="datePublished" content="2024-10-07T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-10-07T00:00:00+00:00">
   <meta itemprop="wordCount" content="144">
@@ -61,7 +62,7 @@ SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN
   <meta name="twitter:title" content="SQLBolt - Lesson 7">
   <meta name="twitter:description" content="Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN’s come into the picture.
 Our syntax for a standard expression doesn’t change, only get’s different options for our JOIN keyword.
-SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, .">
+SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, ... ASC/DESC LIMIT num_limit OFFSET num_offset; Let’s say we have two tables, joining table A to table B. Doing a LEFT JOIN will include rows from A even if there isn’t a match in B. Similarly, a RIGHT JOIN will return rows found in B even if there is no match in A. If we were to do a FULL JOIN, all rows are kept even if there is no match.">
 
 
 
@@ -70,7 +71,7 @@ SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN
   <meta property="og:title" content="SQLBolt - Lesson 7">
   <meta property="og:description" content="Outer Joins vs. Inner Joins Any table from an INNER JOIN will only contain information that belongs in BOTH tables. These can be limiting, which is where LEFT, RIGHT, and FULL JOIN’s come into the picture.
 Our syntax for a standard expression doesn’t change, only get’s different options for our JOIN keyword.
-SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, .">
+SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, ... ASC/DESC LIMIT num_limit OFFSET num_offset; Let’s say we have two tables, joining table A to table B. Doing a LEFT JOIN will include rows from A even if there isn’t a match in B. Similarly, a RIGHT JOIN will return rows found in B even if there is no match in A. If we were to do a FULL JOIN, all rows are kept even if there is no match.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -97,8 +98,6 @@ SELECT column, another_table_column, ... FROM mytable INNER/LEFT/RIGHT/FULL JOIN
 
 
     
-  
-
 
 
 

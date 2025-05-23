@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ&amp;rsquo;s videos. For now, I&amp;rsquo;ll keep all the videos here separated by headings.
-Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e ." />
+<meta name="description" content=" I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ&rsquo;s videos. For now, I&rsquo;ll keep all the videos here separated by headings.
+Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e . to open a file manager Use :echo nvim_list_runtime_paths() to list run time paths (lol) Configuring More Neovim Options Set vim.opt.shiftwidth to a number to set spaces used after carriage return Use the /after/ftplugin/ directory to store .lua files for each language you want local options for. For Lua, we probably want to make a lua.lua file and set vim.opt_local.shiftwidth = 2 To set numbers on the left hand side and the relative position, use; vim.opt.number = true vim.opt.relativenumber = true A neat trick he does in the local files is use the following to make things nicer to read/write; local set = vim.opt_local set.shiftwidth = 2 set.number = true Treesitter Basics vim.opt.clipboard = &quot;unnamedplus&quot; allows for pasting into Neovim LSP in Neovim =g to format a file K for a hover over a function Ctrl&#43;] to find the root of a function/variable/path/etc. grn to rename all instances of a name :help lsp for more info on these Telescope Introduction You can use Ctrl&#43;/ to bring up the movement guide while in a telescope window Ctrl&#43;n to move forward, Ctrl-p to move backwards " />
 <meta name="keywords" content="homepage, blog, computerscience, nvim, text_editor" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +47,7 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
 
   <meta itemprop="name" content="Advent of Neovim">
   <meta itemprop="description" content="I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ’s videos. For now, I’ll keep all the videos here separated by headings.
-Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e .">
+Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e . to open a file manager Use :echo nvim_list_runtime_paths() to list run time paths (lol) Configuring More Neovim Options Set vim.opt.shiftwidth to a number to set spaces used after carriage return Use the /after/ftplugin/ directory to store .lua files for each language you want local options for. For Lua, we probably want to make a lua.lua file and set vim.opt_local.shiftwidth = 2 To set numbers on the left hand side and the relative position, use; vim.opt.number = true vim.opt.relativenumber = true A neat trick he does in the local files is use the following to make things nicer to read/write; local set = vim.opt_local set.shiftwidth = 2 set.number = true Treesitter Basics vim.opt.clipboard = &#34;unnamedplus&#34; allows for pasting into Neovim LSP in Neovim =g to format a file K for a hover over a function Ctrl&#43;] to find the root of a function/variable/path/etc. grn to rename all instances of a name :help lsp for more info on these Telescope Introduction You can use Ctrl&#43;/ to bring up the movement guide while in a telescope window Ctrl&#43;n to move forward, Ctrl-p to move backwards">
   <meta itemprop="datePublished" content="2025-04-10T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-04-10T00:00:00+00:00">
   <meta itemprop="wordCount" content="261">
@@ -58,7 +58,7 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Advent of Neovim">
   <meta name="twitter:description" content="I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ’s videos. For now, I’ll keep all the videos here separated by headings.
-Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e .">
+Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e . to open a file manager Use :echo nvim_list_runtime_paths() to list run time paths (lol) Configuring More Neovim Options Set vim.opt.shiftwidth to a number to set spaces used after carriage return Use the /after/ftplugin/ directory to store .lua files for each language you want local options for. For Lua, we probably want to make a lua.lua file and set vim.opt_local.shiftwidth = 2 To set numbers on the left hand side and the relative position, use; vim.opt.number = true vim.opt.relativenumber = true A neat trick he does in the local files is use the following to make things nicer to read/write; local set = vim.opt_local set.shiftwidth = 2 set.number = true Treesitter Basics vim.opt.clipboard = &#34;unnamedplus&#34; allows for pasting into Neovim LSP in Neovim =g to format a file K for a hover over a function Ctrl&#43;] to find the root of a function/variable/path/etc. grn to rename all instances of a name :help lsp for more info on these Telescope Introduction You can use Ctrl&#43;/ to bring up the movement guide while in a telescope window Ctrl&#43;n to move forward, Ctrl-p to move backwards">
 
 
 
@@ -66,7 +66,7 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Advent of Neovim">
   <meta property="og:description" content="I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ’s videos. For now, I’ll keep all the videos here separated by headings.
-Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e .">
+Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e . to open a file manager Use :echo nvim_list_runtime_paths() to list run time paths (lol) Configuring More Neovim Options Set vim.opt.shiftwidth to a number to set spaces used after carriage return Use the /after/ftplugin/ directory to store .lua files for each language you want local options for. For Lua, we probably want to make a lua.lua file and set vim.opt_local.shiftwidth = 2 To set numbers on the left hand side and the relative position, use; vim.opt.number = true vim.opt.relativenumber = true A neat trick he does in the local files is use the following to make things nicer to read/write; local set = vim.opt_local set.shiftwidth = 2 set.number = true Treesitter Basics vim.opt.clipboard = &#34;unnamedplus&#34; allows for pasting into Neovim LSP in Neovim =g to format a file K for a hover over a function Ctrl&#43;] to find the root of a function/variable/path/etc. grn to rename all instances of a name :help lsp for more info on these Telescope Introduction You can use Ctrl&#43;/ to bring up the movement guide while in a telescope window Ctrl&#43;n to move forward, Ctrl-p to move backwards">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -93,8 +93,6 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
 
 
     
-  
-
 
 
 

@@ -14,35 +14,35 @@
       <link>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</guid>
-      <description>Link to documentation.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blinker.readthedocs.io/en/stable/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Click</title>
       <link>http://localhost:1313/notes/computer-science/python/flask-notes/click/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/flask-notes/click/</guid>
-      <description>Link to the documentation.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://click.palletsprojects.com/en/8.1.x/&#34;&gt;Link&lt;/a&gt; to the documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Jinja</title>
       <link>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</guid>
-      <description>Link to documentation.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jinja.palletsprojects.com/en/3.1.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Werkzeug</title>
       <link>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</guid>
-      <description>Link to documentation.&#xA;First of all, what is WSGI?&#xA;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://werkzeug.palletsprojects.com/en/3.0.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;First of all, what is WSGI?&lt;/p&gt;&#xA;&lt;p&gt;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Designing a RESTful API</title>
       <link>http://localhost:1313/projects/designing-a-restful-api/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
-      <description>Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
+      <description>&lt;p&gt;Modified: August 02 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Watched &lt;a href=&#34;https://www.youtube.com/watch?v=-mN3VyJuCjM&#34;&gt;this&lt;/a&gt; video to take some notes on what REST is.&lt;/p&gt;&#xA;&lt;p&gt;API: Application Programming Interface, is how to computers can communicate with each other.&lt;/p&gt;&#xA;&lt;p&gt;Client sends a Request to the server, server sends a response back to the client.&lt;/p&gt;&#xA;&lt;p&gt;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&lt;/p&gt;&#xA;&lt;p&gt;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

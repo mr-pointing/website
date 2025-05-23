@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn&amp;rsquo;t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
+<meta name="description" content=" Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn&rsquo;t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
 That reason is why we have the ability to specify our results with conditional statements:
-SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries." />
+SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries. Say for example we wanted to collect reptiles who don&rsquo;t have teeth and are the color green, we could use a query like this:
+" />
 <meta name="keywords" content="homepage, blog, computerscience, SQL, documentation" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -49,7 +50,7 @@ SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_c
   <meta itemprop="name" content="SQLBolt - Lesson 2">
   <meta itemprop="description" content="Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn’t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
 That reason is why we have the ability to specify our results with conditional statements:
-SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries.">
+SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries. Say for example we wanted to collect reptiles who don’t have teeth and are the color green, we could use a query like this:">
   <meta itemprop="datePublished" content="2024-09-21T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-09-21T00:00:00+00:00">
   <meta itemprop="wordCount" content="346">
@@ -61,7 +62,7 @@ SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_c
   <meta name="twitter:title" content="SQLBolt - Lesson 2">
   <meta name="twitter:description" content="Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn’t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
 That reason is why we have the ability to specify our results with conditional statements:
-SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries.">
+SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries. Say for example we wanted to collect reptiles who don’t have teeth and are the color green, we could use a query like this:">
 
 
 
@@ -70,7 +71,7 @@ SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_c
   <meta property="og:title" content="SQLBolt - Lesson 2">
   <meta property="og:description" content="Specifying Data to Select (Constraints) When our table has only a few rows, a select * query isn’t so bad. However, if we have hundreds, sometimes thousands of rows of data, retrieving all of them at once becomes an issue.
 That reason is why we have the ability to specify our results with conditional statements:
-SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries.">
+SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_condition AND/OR ...; We can collect more complex results from building more complex queries. Say for example we wanted to collect reptiles who don’t have teeth and are the color green, we could use a query like this:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -97,8 +98,6 @@ SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_c
 
 
     
-  
-
 
 
 
@@ -180,82 +179,82 @@ SELECT column, another_column, ... FROM mytable WHERE condition AND/OR another_c
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">AND</span> has_teeth <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 </span></span></code></pre></div><p>The different <em>logical operators</em> can be seen in the table below:</p>
 <table>
-<thead>
-<tr>
-<th>Operator</th>
-<th>Condition</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>=, !=, &lt;, &lt;=, &gt;, &gt;=</td>
-<td>Standard numerical operations</td>
-<td><code>col_name != 10</code></td>
-</tr>
-<tr>
-<td><code>BETWEEN...AND...</code></td>
-<td>Number is within range of two values</td>
-<td><code>col_name BETWEEN 2.5 AND 7.5</code></td>
-</tr>
-<tr>
-<td><code>NOT BETWEEN...AND...</code></td>
-<td>Number is not within range of two values</td>
-<td><code>col_name NOT BETWEEN 2.5 AND 7.5</code></td>
-</tr>
-<tr>
-<td><code>IN (...)</code></td>
-<td>Value exists in a list</td>
-<td><code>col_name IN (&quot;Example1&quot;, &quot;Example2&quot;)</code></td>
-</tr>
-<tr>
-<td><code>NOT IN (...)</code></td>
-<td>Value does not exists in a list</td>
-<td><code>col_name NOT IN (&quot;Example1&quot;, &quot;Example2&quot;)</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Operator</th>
+          <th>Condition</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>=, !=, &lt;, &lt;=, &gt;, &gt;=</td>
+          <td>Standard numerical operations</td>
+          <td><code>col_name != 10</code></td>
+      </tr>
+      <tr>
+          <td><code>BETWEEN...AND...</code></td>
+          <td>Number is within range of two values</td>
+          <td><code>col_name BETWEEN 2.5 AND 7.5</code></td>
+      </tr>
+      <tr>
+          <td><code>NOT BETWEEN...AND...</code></td>
+          <td>Number is not within range of two values</td>
+          <td><code>col_name NOT BETWEEN 2.5 AND 7.5</code></td>
+      </tr>
+      <tr>
+          <td><code>IN (...)</code></td>
+          <td>Value exists in a list</td>
+          <td><code>col_name IN (&quot;Example1&quot;, &quot;Example2&quot;)</code></td>
+      </tr>
+      <tr>
+          <td><code>NOT IN (...)</code></td>
+          <td>Value does not exists in a list</td>
+          <td><code>col_name NOT IN (&quot;Example1&quot;, &quot;Example2&quot;)</code></td>
+      </tr>
+  </tbody>
 </table>
 <p>Both numbers and words can exist within a table. Just like Python, we can define the type of input like <code>INT</code> and <code>FLOAT</code> for numbers, and <code>VARCHAR</code> for words/mixed content. String content must be within quotes and does have some of it&rsquo;s own conventions for conditionals;</p>
 <table>
-<thead>
-<tr>
-<th>Operator</th>
-<th>Condition</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>=</td>
-<td>Case sensitive exact string comparison</td>
-<td><code>col_name = &quot;abc&quot;</code></td>
-</tr>
-<tr>
-<td>!= or &lt;&gt;</td>
-<td>Case sensitive exact inequality comparison</td>
-<td><code>col_name != &quot;abcd&quot;</code></td>
-</tr>
-<tr>
-<td><code>LIKE</code></td>
-<td>Case insensitive exact string comparision</td>
-<td><code>col_name LIKE &quot;ABC&quot;</code></td>
-</tr>
-<tr>
-<td><code>NOT LIKE</code></td>
-<td>Case insensitive exact string inequality comparison</td>
-<td><code>col_name NOT LIKE &quot;ABCD</code></td>
-</tr>
-<tr>
-<td>%</td>
-<td>Used anywhere in a string to match a sequence of zero or more characters (only with <code>LIKE</code> or <code>NOT LIKE</code>)</td>
-<td><code>col_name LIKE &quot;%AT%&quot;</code> (This will return AT, ATTIC, CAT, and BATS)</td>
-</tr>
-<tr>
-<td>_</td>
-<td>Used anywhere in a string to match a single character (only with <code>LIKE</code> or <code>NOT LIKE</code>)</td>
-<td><code>col_name LIKE &quot;AN_&quot;</code> (This matches AND, but not AN)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Operator</th>
+          <th>Condition</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>=</td>
+          <td>Case sensitive exact string comparison</td>
+          <td><code>col_name = &quot;abc&quot;</code></td>
+      </tr>
+      <tr>
+          <td>!= or &lt;&gt;</td>
+          <td>Case sensitive exact inequality comparison</td>
+          <td><code>col_name != &quot;abcd&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>LIKE</code></td>
+          <td>Case insensitive exact string comparision</td>
+          <td><code>col_name LIKE &quot;ABC&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>NOT LIKE</code></td>
+          <td>Case insensitive exact string inequality comparison</td>
+          <td><code>col_name NOT LIKE &quot;ABCD</code></td>
+      </tr>
+      <tr>
+          <td>%</td>
+          <td>Used anywhere in a string to match a sequence of zero or more characters (only with <code>LIKE</code> or <code>NOT LIKE</code>)</td>
+          <td><code>col_name LIKE &quot;%AT%&quot;</code> (This will return AT, ATTIC, CAT, and BATS)</td>
+      </tr>
+      <tr>
+          <td>_</td>
+          <td>Used anywhere in a string to match a single character (only with <code>LIKE</code> or <code>NOT LIKE</code>)</td>
+          <td><code>col_name LIKE &quot;AN_&quot;</code> (This matches AND, but not AN)</td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <p>Next:

@@ -14,77 +14,77 @@
       <link>http://localhost:1313/projects/arch-linux-on-virtual-machine/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/arch-linux-on-virtual-machine/</guid>
-      <description>After running my laptop on Ubuntu for the past 4 months (and enjoying it) I figured it was time to give some other distros a chance. One of the YouTube channels I watch in order to expand my horizons is Mischa van den Burg who specializes in cloud computing dev ops things. I&amp;rsquo;ve watched a ton of his videos and got inspired to learn more about dev ops mostly through his influence.</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;After running my laptop on Ubuntu for the past 4 months (and enjoying it) I figured it was time to give some other distros a chance. One of the YouTube channels I watch in order to expand my horizons is &lt;a href=&#34;https://www.youtube.com/@mischavandenburg&#34;&gt;Mischa van den Burg&lt;/a&gt; who specializes in cloud computing dev ops things. I&amp;rsquo;ve watched a ton of his videos and got inspired to learn more about dev ops mostly through his influence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Private GPT</title>
       <link>http://localhost:1313/projects/private-gpt/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/private-gpt/</guid>
-      <description>Link to the project.&#xA;This really tested my time and patience. What should have taken me an hour took me closer to a day, but it was extremely worth the time investment. No mind blowing innovation going on, and certainly nothing I haven&amp;rsquo;t seen before, nevertheless gratifying to bring together.&#xA;The most frustrating issue was that the configuration for running setting up the llama model in Poetry was either wrong on the tutorial or my machine is weird.</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.privategpt.dev/installation/getting-started/installation&#34;&gt;Link&lt;/a&gt; to the project.&lt;/p&gt;&#xA;&lt;p&gt;This really tested my time and patience. What should have taken me an hour took me closer to a day, but it was extremely worth the time investment. No mind blowing innovation going on, and certainly nothing I haven&amp;rsquo;t seen before, nevertheless gratifying to bring together.&lt;/p&gt;&#xA;&lt;p&gt;The most frustrating issue was that the configuration for running setting up the llama model in Poetry was either wrong on the tutorial or my machine is weird. Essentially I had to use &lt;code&gt;poetry install --extras &amp;quot;llms-llama-cpp ui vector-stores-qdrant embeddings-huggingface&amp;quot;&lt;/code&gt; instead of there version (not much different, save embeddings and different llama model).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Circuit Playground Express</title>
       <link>http://localhost:1313/projects/circuit-playground-express/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/circuit-playground-express/</guid>
-      <description>I was listening to a podcast from Real Python that mentioned getting your hands on a Circuit Playground Express. It was in passing and I probably wouldn&amp;rsquo;t have ordered one, had I not seen one for sale at Micro Center for only $30.&#xA;From my understanding, it&amp;rsquo;s a very basic introduction to using circuit boards, and I got it mostly because of something called Circuit Python, which is a version of Python meant to introduce students and beginners into controlling single board computers (SBC&amp;rsquo;s).</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;I was listening to a podcast from &lt;a href=&#34;https://realpython.com/&#34;&gt;Real Python&lt;/a&gt; that mentioned getting your hands on a Circuit Playground Express. It was in passing and I probably wouldn&amp;rsquo;t have ordered one, had I not seen one for sale at Micro Center for only $30.&lt;/p&gt;&#xA;&lt;p&gt;From my understanding, it&amp;rsquo;s a very basic introduction to using circuit boards, and I got it mostly because of something called &lt;a href=&#34;https://circuitpython.org/&#34;&gt;Circuit Python&lt;/a&gt;, which is a version of Python meant to introduce students and beginners into controlling single board computers (SBC&amp;rsquo;s).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mr. Pointing Website</title>
       <link>http://localhost:1313/projects/mr.-pointing-website/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/mr.-pointing-website/</guid>
-      <description>So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:&#xA;Get pages formatted to look good on Hugo Add date property to all pages Get Excalidraw images linked Cloudflare Hugo Note Title Needs fixing Need to create something to format for Hugo&amp;rsquo;s scientific notation Intro to Algorithms Khan Academy Ignore Templates, re-route Excalidraw Get mr.</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;So, I want to make my website using Obsidian to write Markdown files, have Hugo collect and display them, then use Cloudflare to host it. I have a few things I know I need to get done:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Get pages formatted to look good on Hugo&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Add &lt;code&gt;date&lt;/code&gt; property to all pages&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Get Excalidraw images linked&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Cloudflare Hugo Note Title Needs fixing&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Need to create something to format for Hugo&amp;rsquo;s scientific notation&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Intro to Algorithms&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Khan Academy&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Ignore Templates, re-route Excalidraw&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Get mr.pointing domain name&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create README&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create Now Page&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Reading/Listening/Watching&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Web scraper to get info from Discogs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Update/Connect GitHub&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Start &lt;a href=&#34;http://localhost:1313/posts/starting-my-website/&#34;&gt;Starting My Website&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;So some updates before I go to bed:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deploying a Flask Application via Apache</title>
       <link>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/deploying-a-flask-application-via-apache/</guid>
-      <description>Modified: August 02 2024&#xA;Link to the project website.</description>
+      <description>&lt;p&gt;Modified: August 02 2024&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.opensourceforu.com/2023/03/deploying-a-flask-application-via-the-apache-server/&#34;&gt;Link&lt;/a&gt; to the project website.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Lython</title>
       <link>http://localhost:1313/projects/lython/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/lython/</guid>
-      <description>Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&#xA;Github&#xA;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class.</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Lython is my final project for my Masters program. I based it off an idea I had of giving my students a filtered AI, which branched off into editing ChatGPT with prompt filtering. Seeing that alone was particularly easy, I looked into implementing RAG, which works kind of.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/mr-pointing/Lython_GCU&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;d like to continue working on my project as an actual tool to use during class. I&amp;rsquo;d like to be able to launch it to a production server, so my students can access it during class. That way, I can cut the websites to just Lython, and the website they need to submit their assignments on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Raspberry Pi NAS</title>
       <link>http://localhost:1313/projects/raspberry-pi-nas/</link>
       <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/raspberry-pi-nas/</guid>
-      <description>Link</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gyMpI8csWis&amp;amp;t=122s&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Jobany Rosario</title>
       <link>http://localhost:1313/projects/jobany-rosario/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/jobany-rosario/</guid>
-      <description> New updated Schedule:&#xA;Monday:&#xA;Dojo 11am - 12pm 8pm - 9pm Wednesday:&#xA;Dojo 11am - 12pm Clockwork 7:30pm - 8:30pm Tuesday/Thursday/Friday:&#xA;Link to contact for privates </description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;New updated Schedule:&lt;/p&gt;&#xA;&lt;p&gt;Monday:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dojo&#xA;&lt;ul&gt;&#xA;&lt;li&gt;11am - 12pm&lt;/li&gt;&#xA;&lt;li&gt;8pm - 9pm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Wednesday:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dojo&#xA;&lt;ul&gt;&#xA;&lt;li&gt;11am - 12pm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Clockwork&#xA;&lt;ul&gt;&#xA;&lt;li&gt;7:30pm - 8:30pm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Tuesday/Thursday/Friday:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Link to contact for privates&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Designing a RESTful API</title>
       <link>http://localhost:1313/projects/designing-a-restful-api/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
-      <description>Modified: August 02 2024&#xA;Watched this video to take some notes on what REST is.&#xA;API: Application Programming Interface, is how to computers can communicate with each other.&#xA;Client sends a Request to the server, server sends a response back to the client.&#xA;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&#xA;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.</description>
+      <description>&lt;p&gt;Modified: August 02 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Watched &lt;a href=&#34;https://www.youtube.com/watch?v=-mN3VyJuCjM&#34;&gt;this&lt;/a&gt; video to take some notes on what REST is.&lt;/p&gt;&#xA;&lt;p&gt;API: Application Programming Interface, is how to computers can communicate with each other.&lt;/p&gt;&#xA;&lt;p&gt;Client sends a Request to the server, server sends a response back to the client.&lt;/p&gt;&#xA;&lt;p&gt;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&lt;/p&gt;&#xA;&lt;p&gt;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Future Projects</title>
       <link>http://localhost:1313/projects/future-projects/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/future-projects/</guid>
-      <description>Modified: June 20 2024&#xA;Obsidian Related:&#xA;Integrate an AI model into Obsidian as a plug-in LLM trained on my Obsidian data Obsidian plug-in that automates a bibliography from links Website related:&#xA;Python script that automates adding .md to Excalidraw files after Obsidian to Hugo transfer. </description>
+      <description>&lt;p&gt;Modified: June 20 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Obsidian Related:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Integrate an AI model into Obsidian as a plug-in&lt;/li&gt;&#xA;&lt;li&gt;LLM trained on my Obsidian data&lt;/li&gt;&#xA;&lt;li&gt;Obsidian plug-in that automates a bibliography from links&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Website related:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python script that automates adding &lt;code&gt;.md&lt;/code&gt; to Excalidraw files after Obsidian to Hugo transfer.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Vinyl Visualizer</title>
       <link>http://localhost:1313/projects/vinyl-visualizer/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/vinyl-visualizer/</guid>
-      <description>A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.&#xA;To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.&#xA;I first asked ChatGPT 3.5 for advice.&#xA;I also asked ChatGPT 4o and got a little better/pointed advice.</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;A passion project I&amp;rsquo;d like to make. It would be my first time using hardware and software together.&lt;/p&gt;&#xA;&lt;p&gt;To start, I&amp;rsquo;d like to grab a raspberry pi with a screen and audio in so it can display the record cover, the title, artist, and duration that updates as the song goes on.&lt;/p&gt;&#xA;&lt;p&gt;I first asked &lt;a href=&#34;https://chatgpt.com/share/ec6a257c-6e65-4364-b964-c66f437d005c&#34;&gt;ChatGPT 3.5&lt;/a&gt; for advice.&lt;/p&gt;&#xA;&lt;p&gt;I also asked &lt;a href=&#34;https://chatgpt.com/share/7c70547a-f544-4dd5-a80a-b645661ac905&#34;&gt;ChatGPT 4o&lt;/a&gt; and got a little better/pointed advice. Not much different though. It gave me advice on the script without asking.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

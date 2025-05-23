@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Balanced Trees From on out, if an array or linked list isn&amp;rsquo;t enough, a tree should be our next structure to try. It&amp;rsquo;s a balancing act to choose between both, especially for run time. Binary Search Trees are great, especially for insertion.
-Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left." />
+<meta name="description" content=" Balanced Trees From on out, if an array or linked list isn&rsquo;t enough, a tree should be our next structure to try. It&rsquo;s a balancing act to choose between both, especially for run time. Binary Search Trees are great, especially for insertion.
+Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left. This makes searches incredibly fast.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms, datastructures, trees" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +48,7 @@ Remember, arrays take longer to insert than linked lists, but provide faster sor
 
   <meta itemprop="name" content="Grokking Algorithms - Chapter 8">
   <meta itemprop="description" content="Balanced Trees From on out, if an array or linked list isn’t enough, a tree should be our next structure to try. It’s a balancing act to choose between both, especially for run time. Binary Search Trees are great, especially for insertion.
-Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left.">
+Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left. This makes searches incredibly fast.">
   <meta itemprop="datePublished" content="2025-03-03T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-03T00:00:00+00:00">
   <meta itemprop="wordCount" content="452">
@@ -58,7 +59,7 @@ Remember, arrays take longer to insert than linked lists, but provide faster sor
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Grokking Algorithms - Chapter 8">
   <meta name="twitter:description" content="Balanced Trees From on out, if an array or linked list isn’t enough, a tree should be our next structure to try. It’s a balancing act to choose between both, especially for run time. Binary Search Trees are great, especially for insertion.
-Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left.">
+Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left. This makes searches incredibly fast.">
 
 
 
@@ -66,7 +67,7 @@ Remember, arrays take longer to insert than linked lists, but provide faster sor
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Grokking Algorithms - Chapter 8">
   <meta property="og:description" content="Balanced Trees From on out, if an array or linked list isn’t enough, a tree should be our next structure to try. It’s a balancing act to choose between both, especially for run time. Binary Search Trees are great, especially for insertion.
-Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left.">
+Remember, arrays take longer to insert than linked lists, but provide faster sorts. Binary Search Trees optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left. This makes searches incredibly fast.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -95,8 +96,6 @@ Remember, arrays take longer to insert than linked lists, but provide faster sor
 
 
     
-  
-
 
 
 
@@ -184,30 +183,30 @@ Remember, arrays take longer to insert than linked lists, but provide faster sor
 
 <p>Our new Big O table for search &amp; inserts looks more like this:</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>Search</th>
-<th>Insert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sorted Arrays</td>
-<td>$O(\log n)$</td>
-<td>$O(n)$</td>
-</tr>
-<tr>
-<td>Linked Lists</td>
-<td>$O(n)$</td>
-<td>$O(1)$</td>
-</tr>
-<tr>
-<td>Binary Search Trees</td>
-<td>$O(\log n)$</td>
-<td>$O(\log n)$</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Search</th>
+          <th>Insert</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Sorted Arrays</td>
+          <td>$O(\log n)$</td>
+          <td>$O(n)$</td>
+      </tr>
+      <tr>
+          <td>Linked Lists</td>
+          <td>$O(n)$</td>
+          <td>$O(1)$</td>
+      </tr>
+      <tr>
+          <td>Binary Search Trees</td>
+          <td>$O(\log n)$</td>
+          <td>$O(\log n)$</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="splay-trees">Splay Trees</h2>
 <p>Another type of balanced BSTs, this time with a focus on speeding up lookups on commonly accesses elements. They do this by changing the root node to the most recently accessed each item on each retrieval. If the next search is for the most recently received item, the search is instant.</p>

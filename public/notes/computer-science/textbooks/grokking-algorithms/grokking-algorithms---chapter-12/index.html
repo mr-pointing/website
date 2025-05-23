@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it&amp;rsquo;s something best understood visually. Let&amp;rsquo;s use one of the most common examples, classifying fruit;
-In the above example, the orange marks indicate an orange, and the red marks indicate an apple." />
+<meta name="description" content=" K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it&rsquo;s something best understood visually. Let&rsquo;s use one of the most common examples, classifying fruit;
+In the above example, the orange marks indicate an orange, and the red marks indicate an apple. Now, we could use this graph to classify the next fruit I get. If I find a place to put it, we can look at that new point&rsquo;s neighbors to classify what kind of fruit it must be.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms, machine_learning" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +48,7 @@ In the above example, the orange marks indicate an orange, and the red marks ind
 
   <meta itemprop="name" content="Grokking Algorithms - Chapter 12">
   <meta itemprop="description" content="K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it’s something best understood visually. Let’s use one of the most common examples, classifying fruit;
-In the above example, the orange marks indicate an orange, and the red marks indicate an apple.">
+In the above example, the orange marks indicate an orange, and the red marks indicate an apple. Now, we could use this graph to classify the next fruit I get. If I find a place to put it, we can look at that new point’s neighbors to classify what kind of fruit it must be.">
   <meta itemprop="datePublished" content="2025-03-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-06T00:00:00+00:00">
   <meta itemprop="wordCount" content="953">
@@ -58,7 +59,7 @@ In the above example, the orange marks indicate an orange, and the red marks ind
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Grokking Algorithms - Chapter 12">
   <meta name="twitter:description" content="K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it’s something best understood visually. Let’s use one of the most common examples, classifying fruit;
-In the above example, the orange marks indicate an orange, and the red marks indicate an apple.">
+In the above example, the orange marks indicate an orange, and the red marks indicate an apple. Now, we could use this graph to classify the next fruit I get. If I find a place to put it, we can look at that new point’s neighbors to classify what kind of fruit it must be.">
 
 
 
@@ -66,7 +67,7 @@ In the above example, the orange marks indicate an orange, and the red marks ind
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Grokking Algorithms - Chapter 12">
   <meta property="og:description" content="K-Nearest Neighbor K-nearest neighbor, or simply KNN, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it’s something best understood visually. Let’s use one of the most common examples, classifying fruit;
-In the above example, the orange marks indicate an orange, and the red marks indicate an apple.">
+In the above example, the orange marks indicate an orange, and the red marks indicate an apple. Now, we could use this graph to classify the next fruit I get. If I find a place to put it, we can look at that new point’s neighbors to classify what kind of fruit it must be.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -94,8 +95,6 @@ In the above example, the orange marks indicate an orange, and the red marks ind
 
 
     
-  
-
 
 
 
@@ -173,52 +172,52 @@ In the above example, the orange marks indicate an orange, and the red marks ind
 <p>The classifying metrics mentioned above are the size and color of the fruit. We call these metrics <em>features</em>, and the features chosen dictates our classification. We can actually determine the distance between points using the following formula; $\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$ . This will compare against just two features.</p>
 <p>This system is actually how Netflix runs their recommendation system. Users will rate movies on a scale, and are given a movie recommendation based on other users ratings that are similar. We can tell how close two user&rsquo;s taste are by comparing their ratings <em>as</em> features;</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>Pri</th>
-<th>JT</th>
-<th>Morpheus</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Comedy</td>
-<td>3</td>
-<td>4</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Action</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Drama</td>
-<td>4</td>
-<td>5</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Horror</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Romance</td>
-<td>4</td>
-<td>5</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Now that we have <em>five</em> features to test against, our formula changes slightly; $\sqrt{(a_1-a_2)^2+(b_1-b_2)^2+(c_1-c_2)^2+(d_1-d_2)^2+(e_1-e_2)^2}$.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Pri</th>
+          <th>JT</th>
+          <th>Morpheus</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Comedy</td>
+          <td>3</td>
+          <td>4</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Action</td>
+          <td>4</td>
+          <td>3</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>Drama</td>
+          <td>4</td>
+          <td>5</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Horror</td>
+          <td>1</td>
+          <td>1</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>Romance</td>
+          <td>4</td>
+          <td>5</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Now that we have <em>five</em> features to test against, our formula changes slightly; $\sqrt{(a_1-a_2)^2+(b_1-b_2)^2+(c_1-c_2)^2+(d_1-d_2)^2+(e_1-e_2)^2}$.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <p>If we attempted to see how close the tastes are between two Pri and JT, it would look like this:</p>
 <ul>

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Dijkstra&amp;rsquo;s Algorithm Dijkstra&amp;rsquo;s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
-From what we know of BFS, we can assume it would probably return &amp;ldquo;Start -&amp;gt; A -&amp;gt; Finish&amp;rdquo; as the shortest path. without weights, that makes perfect sense." />
+<meta name="description" content=" Dijkstra&rsquo;s Algorithm Dijkstra&rsquo;s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
+From what we know of BFS, we can assume it would probably return &ldquo;Start -&gt; A -&gt; Finish&rdquo; as the shortest path. without weights, that makes perfect sense. However, that has a cost of 7 (7 minutes). Isn&rsquo;t there a cheaper way to get there? We&rsquo;ll see in a second how Dijkstra&rsquo;s algorithm calculates this for us.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +48,7 @@ From what we know of BFS, we can assume it would probably return &amp;ldquo;Star
 
   <meta itemprop="name" content="Grokking Algorithms - Chapter 9">
   <meta itemprop="description" content="Dijkstra’s Algorithm Dijkstra’s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
-From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense.">
+From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense. However, that has a cost of 7 (7 minutes). Isn’t there a cheaper way to get there? We’ll see in a second how Dijkstra’s algorithm calculates this for us.">
   <meta itemprop="datePublished" content="2025-03-03T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-03T00:00:00+00:00">
   <meta itemprop="wordCount" content="581">
@@ -58,7 +59,7 @@ From what we know of BFS, we can assume it would probably return “Start -&gt; 
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Grokking Algorithms - Chapter 9">
   <meta name="twitter:description" content="Dijkstra’s Algorithm Dijkstra’s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
-From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense.">
+From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense. However, that has a cost of 7 (7 minutes). Isn’t there a cheaper way to get there? We’ll see in a second how Dijkstra’s algorithm calculates this for us.">
 
 
 
@@ -66,7 +67,7 @@ From what we know of BFS, we can assume it would probably return “Start -&gt; 
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Grokking Algorithms - Chapter 9">
   <meta property="og:description" content="Dijkstra’s Algorithm Dijkstra’s Algorithm calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:
-From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense.">
+From what we know of BFS, we can assume it would probably return “Start -&gt; A -&gt; Finish” as the shortest path. without weights, that makes perfect sense. However, that has a cost of 7 (7 minutes). Isn’t there a cheaper way to get there? We’ll see in a second how Dijkstra’s algorithm calculates this for us.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -93,8 +94,6 @@ From what we know of BFS, we can assume it would probably return “Start -&gt; 
 
 
     
-  
-
 
 
 
@@ -173,85 +172,85 @@ From what we know of BFS, we can assume it would probably return “Start -&gt; 
 <li>Find the cheapest node</li>
 </ol>
 <table>
-<thead>
-<tr>
-<th>Node</th>
-<th>Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>6</td>
-</tr>
-<tr>
-<td>B</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Finish</td>
-<td>$\infty$</td>
-</tr>
-<tr>
-<td>Since we haven&rsquo;t reached Finish yet, we&rsquo;ll leave it marked as $\infty$. We&rsquo;ll see why soon. We have two options from Start, A or B. B is cheaper, so we start there.</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Node</th>
+          <th>Time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A</td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>B</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Finish</td>
+          <td>$\infty$</td>
+      </tr>
+      <tr>
+          <td>Since we haven&rsquo;t reached Finish yet, we&rsquo;ll leave it marked as $\infty$. We&rsquo;ll see why soon. We have two options from Start, A or B. B is cheaper, so we start there.</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <ol start="2">
 <li>Calculate how long it takes to get to the next nodes out-neighbor</li>
 </ol>
 <table>
-<thead>
-<tr>
-<th>Node</th>
-<th>Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Finish</td>
-<td>7</td>
-</tr>
-<tr>
-<td>3. Repeat, in this case A is the last node to check</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Node</th>
+          <th>Time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>B</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Finish</td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>3. Repeat, in this case A is the last node to check</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <table>
-<thead>
-<tr>
-<th>Node</th>
-<th>Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Finish</td>
-<td>6</td>
-</tr>
-<tr>
-<td>The time in this scenario is our weight. Dijkstra&rsquo;s algorithm <em>only</em> works on weighted graphs, and the weights <strong>cannot</strong> negative. If you an all positive weighted graph, Dijkstra&rsquo;s algorithm could be useful.</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Node</th>
+          <th>Time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>B</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Finish</td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>The time in this scenario is our weight. Dijkstra&rsquo;s algorithm <em>only</em> works on weighted graphs, and the weights <strong>cannot</strong> negative. If you an all positive weighted graph, Dijkstra&rsquo;s algorithm could be useful.</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="implementation">Implementation</h2>
 <p>How could we try out the above example in Python? Once again, we can make use of hash tables, or in this case, dictionaries.</p>

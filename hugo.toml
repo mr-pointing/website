@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'mr.pointing'
 theme = ['hugo-embed-pdf-shortcode', 'mr-p-hello-friend-ng']
 enableInlineShortcodes = true
-paginate     = 10
-
+pagination.pagerSize     = 10
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
   dateform        = "Jan 2, 2006"

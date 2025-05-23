@@ -15,9 +15,11 @@
             <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
             
             <guid>http://localhost:1313/posts/blender-donut-tutorial/</guid>
-            <description>Link to video series
-Why Do I Want to Learn Blender? My uncle is a huge inspiration in my life and career. I always admired his artistic ability, always drawing my favorite super heroes and other cool pieces. He ended working full time as a graphic design artist, and has been making killer 3D animations for years.
-This is another way of integrating what things I love, and also possibly picking up a new hobby.</description>
+            <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=B0J27sf9N1Y&#34;&gt;Link&lt;/a&gt; to video series&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;why-do-i-want-to-learn-blender&#34;&gt;Why Do I Want to Learn Blender?&lt;/h1&gt;
+&lt;p&gt;My uncle is a huge inspiration in my life and career. I always admired his artistic ability, always drawing my favorite super heroes and other cool pieces. He ended working full time as a graphic design artist, and has been making killer 3D animations for years.&lt;/p&gt;
+&lt;p&gt;This is another way of integrating what things I love, and also possibly picking up a new hobby. Let&amp;rsquo;s see how this goes.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=B0J27sf9N1Y">Link</a> to video series</p>
 <hr>
 <h1 id="why-do-i-want-to-learn-blender">Why Do I Want to Learn Blender?</h1>
@@ -91,8 +93,9 @@ This is another way of integrating what things I love, and also possibly picking
             <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
             
             <guid>http://localhost:1313/posts/day-31---summary/</guid>
-            <description>I can&amp;rsquo;t believe I worked on this project for 30 days. The growth has been fantastic, and I should be proud of all that I was able to accomplish. If this is true, why do I feel a pit in my stomach when I think about this project? If I did such a good job, why do I feel like such crap?
-To be honest, the more I worked on this the more I understood why it takes teams of people to produce applications.</description>
+            <description>&lt;hr&gt;
+&lt;p&gt;I can&amp;rsquo;t believe I worked on this project for 30 days. The growth has been fantastic, and I should be proud of all that I was able to accomplish. If this is true, why do I feel a pit in my stomach when I think about this project? If I did such a good job, why do I feel like such crap?&lt;/p&gt;
+&lt;p&gt;To be honest, the more I worked on this the more I understood why it takes teams of people to produce applications. I know there are gurus out there who can solo develop their ideas, but wow I never realized how &lt;em&gt;not&lt;/em&gt; like that I am. I enjoyed every part of the development process, yet the more I saw of the road ahead of me to actually make this usable? That is what really scared me.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<hr>
 <p>I can&rsquo;t believe I worked on this project for 30 days. The growth has been fantastic, and I should be proud of all that I was able to accomplish. If this is true, why do I feel a pit in my stomach when I think about this project? If I did such a good job, why do I feel like such crap?</p>
 <p>To be honest, the more I worked on this the more I understood why it takes teams of people to produce applications. I know there are gurus out there who can solo develop their ideas, but wow I never realized how <em>not</em> like that I am. I enjoyed every part of the development process, yet the more I saw of the road ahead of me to actually make this usable? That is what really scared me.</p>
@@ -114,8 +117,30 @@ To be honest, the more I worked on this the more I understood why it takes teams
             <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
             
             <guid>http://localhost:1313/posts/20-textbooks/</guid>
-            <description>For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&amp;rsquo;ve purchased. Below is a list that I&amp;rsquo;ll keep updated, as well as a link to their inevitable notes.
-1. Learning Git 2. Deep Learning - Math 3.</description>
+            <description>&lt;hr&gt;
+&lt;p&gt;For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&amp;rsquo;ve purchased. Below is a list that I&amp;rsquo;ll keep updated, as well as a link to their inevitable notes.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 1. &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/&#34;&gt;Learning Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 2. &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/&#34;&gt;Deep Learning - Math&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 3. &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/&#34;&gt;Grokking Algorithms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 4. &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/&#34;&gt;Learning Lua&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 5. Learning Modern Linux&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 6. Real World Python&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 7. Impractical Python Projects&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 8. Foundations of Information Security&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 9. Penetration Testing&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 10. Python for DevOps&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 11. Fast API&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 12. The Shape of Data&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 13. Deep Learning: A Visual Approach&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 14. Practical Linux Systems Administration&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 15. Efficient Linux at the Command Line&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 16. Linux Basics for Hackers&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 17. Cyberjutsu&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 18. Network Programmability &amp;amp; Automation&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 19. Docker Up &amp;amp; Running&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 20. Learning DevSecOps&lt;/li&gt;
+&lt;/ul&gt;</description>
             <content type="html"><![CDATA[<hr>
 <p>For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&rsquo;ve purchased. Below is a list that I&rsquo;ll keep updated, as well as a link to their inevitable notes.</p>
 <ul>
@@ -149,8 +174,9 @@ To be honest, the more I worked on this the more I understood why it takes teams
             <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
             
             <guid>http://localhost:1313/posts/teaching-with-obsidian/</guid>
-            <description>I&amp;rsquo;m not sure if it&amp;rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.
-This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&amp;rsquo;s a good place to store code from lessons and start to think about what&amp;rsquo;s really important.</description>
+            <description>&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;m not sure if it&amp;rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.&lt;/p&gt;
+&lt;p&gt;This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&amp;rsquo;s a good place to store code from lessons and start to think about what&amp;rsquo;s really important.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<hr>
 <p>I&rsquo;m not sure if it&rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.</p>
 <p>This is a small band-aid fix, but I&rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&rsquo;s a good place to store code from lessons and start to think about what&rsquo;s really important.</p>
@@ -165,8 +191,10 @@ This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsi
             <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
             
             <guid>http://localhost:1313/posts/explaining-my-obsidian-to-hugo-workflow/</guid>
-            <description>Where We Left Off I was just able to get my website viewable for the first time in Hugo&amp;rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&amp;rsquo;t compatible with, and everything is looking good.
-Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anything about Git, you can start by reading my analysis of a beginner Git textbook. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&amp;rsquo;re off to the races.</description>
+            <description>&lt;hr&gt;
+&lt;h2 id=&#34;where-we-left-off&#34;&gt;Where We Left Off&lt;/h2&gt;
+&lt;p&gt;I was just able to get my &lt;a href=&#34;https://mrpointing.com&#34;&gt;website&lt;/a&gt; viewable for the first time in Hugo&amp;rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&amp;rsquo;t compatible with, and everything is looking good.&lt;/p&gt;
+&lt;p&gt;Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anything about Git, you can start by reading my analysis of a beginner &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/&#34;&gt;Git textbook&lt;/a&gt;. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&amp;rsquo;re off to the races.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<hr>
 <h2 id="where-we-left-off">Where We Left Off</h2>
 <p>I was just able to get my <a href="https://mrpointing.com">website</a> viewable for the first time in Hugo&rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&rsquo;t compatible with, and everything is looking good.</p>
@@ -195,8 +223,17 @@ Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anythin
             <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
             
             <guid>http://localhost:1313/posts/starting-my-website/</guid>
-            <description>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.
-Components Obsidian Git/GitHub Hugo Cloudflare How I Started Regarding Obsdian, I began writing as if I were dictating to my students.</description>
+            <description>&lt;hr&gt;
+&lt;p&gt;As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.&lt;/p&gt;
+&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Obsidian&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mr-pointing/website&#34;&gt;Git/GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cloudflare&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-i-started&#34;&gt;How I Started&lt;/h2&gt;
+&lt;p&gt;Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a &lt;a href=&#34;http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/&#34;&gt;python tutorial&lt;/a&gt;, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&amp;rsquo;m sure in a few weeks it will be a little different.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<hr>
 <p>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.</p>
 <h2 id="components">Components</h2>

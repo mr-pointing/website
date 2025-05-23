@@ -14,28 +14,28 @@
       <link>http://localhost:1313/notes/obsidian/note-taking-methods/</link>
       <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/obsidian/note-taking-methods/</guid>
-      <description>PARA Method Link to notes.&#xA;Projects, Areas, Resources, and Archives.&#xA;Projects: Short term efforts in your work or life that you&amp;rsquo;re actively working on&#xA;Think of the things you want to accomplish in the short-term. A few days to a few weeks of effort. Think:&#xA;Completing a coding project (website, utility) Purchase a new computer/phone/tv Reorganize your room/locker Finishing a school project Area: Long-term responsibilities you want to manage over time</description>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;para-method&#34;&gt;PARA Method&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fortelabs.com/blog/para/&#34;&gt;Link&lt;/a&gt; to notes.&lt;/p&gt;&#xA;&lt;p&gt;Projects, Areas, Resources, and Archives.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Projects:&lt;/strong&gt; Short term efforts in your work or life that you&amp;rsquo;re actively working on&lt;/p&gt;&#xA;&lt;p&gt;Think of the things you want to accomplish in the short-term. A few days to a few weeks of effort. Think:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Completing a coding project (website, utility)&lt;/li&gt;&#xA;&lt;li&gt;Purchase a new computer/phone/tv&lt;/li&gt;&#xA;&lt;li&gt;Reorganize your room/locker&lt;/li&gt;&#xA;&lt;li&gt;Finishing a school project&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; Long-term responsibilities you want to manage over time&lt;/p&gt;</description>
     </item>
     <item>
       <title>Current Obsidian Plugins</title>
       <link>http://localhost:1313/notes/obsidian/current-obsidian-plugins/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/obsidian/current-obsidian-plugins/</guid>
-      <description>Community Plugins Community plugins keep some pieces of software alive. When development stops on a product, often the users can keep producing forks of the initial project and continue developing their own functions and uses for the app. In Obsidian&amp;rsquo;s case, even while production is still going, they implore users to develop their own plugins to meet their own needs.&#xA;One thing should be stressed; community plugins should only be prioritized after learning the ins and outs of core Obsidian.</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;community-plugins&#34;&gt;Community Plugins&lt;/h1&gt;&#xA;&lt;p&gt;Community plugins keep some pieces of software alive. When development stops on a product, often the users can keep producing &lt;em&gt;forks&lt;/em&gt; of the initial project and continue developing their own functions and uses for the app. In Obsidian&amp;rsquo;s case, even while production is still going, they implore users to develop their own plugins to meet their own needs.&lt;/p&gt;&#xA;&lt;p&gt;One thing should be stressed; community plugins should only be prioritized &lt;em&gt;after&lt;/em&gt; learning the ins and outs of core Obsidian. Obsidian has tons of features, large and small, some we haven&amp;rsquo;t gone over. Take your time to explore Obsidian before branching out.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Beginner Tutorial for Obsidian Dataview</title>
       <link>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</guid>
-      <description>Link to the video.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=G8eOF61wmzI&amp;amp;t=669s&#34;&gt;Link&lt;/a&gt; to the video.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Templater Formatting Notes</title>
       <link>http://localhost:1313/notes/obsidian/templater-formatting-notes/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/obsidian/templater-formatting-notes/</guid>
-      <description>Link to Templater Documentation.</description>
+      <description>&lt;hr&gt;&#xA;&#xA;    &lt;img src=&#34;http://localhost:1313/images/DateFormatting.png&#34;  alt=&#34;DateFormatting&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&#xA;    &lt;img src=&#34;http://localhost:1313/images/Time%20Formatting.png&#34;  alt=&#34;Time Formatting&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://silentvoid13.github.io/Templater/introduction.html&#34;&gt;Link&lt;/a&gt; to Templater Documentation.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -14,7 +14,7 @@
       <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/</guid>
-      <description>Recursion Recursion, or the process of a sub-program calling itself, is a reoccurring concept in many different algorithms, and a foundational topic in computer science.&#xA;It is a hard topic to understand, but not super complicated. All code examples should be ran and written yourself to gain a full understanding.&#xA;Pseudocode is another term you should familiarize yourself with, since it will be used both by this book and by myself.</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;recursion&#34;&gt;Recursion&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Recursion&lt;/em&gt;, or the process of a sub-program calling itself, is a reoccurring concept in many different algorithms, and a foundational topic in computer science.&lt;/p&gt;&#xA;&lt;p&gt;It &lt;em&gt;is&lt;/em&gt; a hard topic to understand, but not super complicated. All code examples should be ran and written yourself to gain a full understanding.&lt;/p&gt;&#xA;&lt;p&gt;Pseudocode is another term you should familiarize yourself with, since it will be used both by this book and by myself. Pseudocode refers to the code or instruction of a given program written out in plain English, usually written before any code is ran to ensure the logic is sound.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

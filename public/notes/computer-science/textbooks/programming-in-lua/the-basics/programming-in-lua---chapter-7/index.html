@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="The External World Lua is not the language for powerful performance with the exterior world. Even the text admits that most use of Input and Output are done through the host application or external libraries. Lua can handle basic file manipulation, which we&amp;rsquo;ll review now.
-The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout." />
+<meta name="description" content=" The External World Lua is not the language for powerful performance with the exterior world. Even the text admits that most use of Input and Output are done through the host application or external libraries. Lua can handle basic file manipulation, which we&rsquo;ll review now.
+The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout. We can route either using io.input and io.output, respectively.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, textbook, lua, syntax" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +48,7 @@ The Simple I/O Model Lua assumes the use of two streams, the current input strea
 
   <meta itemprop="name" content="Programming in Lua - Chapter 7">
   <meta itemprop="description" content="The External World Lua is not the language for powerful performance with the exterior world. Even the text admits that most use of Input and Output are done through the host application or external libraries. Lua can handle basic file manipulation, which we’ll review now.
-The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout.">
+The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout. We can route either using io.input and io.output, respectively.">
   <meta itemprop="datePublished" content="2025-03-23T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-23T00:00:00+00:00">
   <meta itemprop="wordCount" content="759">
@@ -58,7 +59,7 @@ The Simple I/O Model Lua assumes the use of two streams, the current input strea
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Programming in Lua - Chapter 7">
   <meta name="twitter:description" content="The External World Lua is not the language for powerful performance with the exterior world. Even the text admits that most use of Input and Output are done through the host application or external libraries. Lua can handle basic file manipulation, which we’ll review now.
-The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout.">
+The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout. We can route either using io.input and io.output, respectively.">
 
 
 
@@ -66,7 +67,7 @@ The Simple I/O Model Lua assumes the use of two streams, the current input strea
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Programming in Lua - Chapter 7">
   <meta property="og:description" content="The External World Lua is not the language for powerful performance with the exterior world. Even the text admits that most use of Input and Output are done through the host application or external libraries. Lua can handle basic file manipulation, which we’ll review now.
-The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout.">
+The Simple I/O Model Lua assumes the use of two streams, the current input stream and the current output stream. Using C terminology, the current input is default stdin while output is stdout. We can route either using io.input and io.output, respectively.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -94,8 +95,6 @@ The Simple I/O Model Lua assumes the use of two streams, the current input strea
 
 
     
-  
-
 
 
 
@@ -174,38 +173,38 @@ The Simple I/O Model Lua assumes the use of two streams, the current input strea
 </span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt; sin(3) = 0.14112000805987</span>
 </span></span></code></pre></div><p><code>io.read</code> takes a few different arguments, controlling how the content is read;</p>
 <table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&quot;a&quot;</code></td>
-<td>reads the whole file</td>
-</tr>
-<tr>
-<td><code>&quot;l&quot;</code></td>
-<td>reads the next line (dropping the newline)</td>
-</tr>
-<tr>
-<td><code>&quot;L&quot;</code></td>
-<td>reads the next line (keeping the newline)</td>
-</tr>
-<tr>
-<td><code>&quot;n&quot;</code></td>
-<td>reads a number</td>
-</tr>
-<tr>
-<td><code>num</code></td>
-<td>reads <code>num</code> characters as a string</td>
-</tr>
-<tr>
-<td>Working with reading and writing to files is quite strange. After reading all contents to a file, if you try to assign that same file to another variable using the same connection as before, you get nothing in return, since you already read everything in. Honestly it gets easier in the next part, let&rsquo;s just jot down some of the important functions they gave us;</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&quot;a&quot;</code></td>
+          <td>reads the whole file</td>
+      </tr>
+      <tr>
+          <td><code>&quot;l&quot;</code></td>
+          <td>reads the next line (dropping the newline)</td>
+      </tr>
+      <tr>
+          <td><code>&quot;L&quot;</code></td>
+          <td>reads the next line (keeping the newline)</td>
+      </tr>
+      <tr>
+          <td><code>&quot;n&quot;</code></td>
+          <td>reads a number</td>
+      </tr>
+      <tr>
+          <td><code>num</code></td>
+          <td>reads <code>num</code> characters as a string</td>
+      </tr>
+      <tr>
+          <td>Working with reading and writing to files is quite strange. After reading all contents to a file, if you try to assign that same file to another variable using the same connection as before, you get nothing in return, since you already read everything in. Honestly it gets easier in the next part, let&rsquo;s just jot down some of the important functions they gave us;</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> lines <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>

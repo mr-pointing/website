@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person&amp;rsquo;s collected data. It will often take a few minutes of &amp;ldquo;getting calibrated&amp;rdquo; to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
-The more complicated problems will end up needing some visualization tools which is something we&amp;rsquo;ll look at later, so for now let&amp;rsquo;s not think too big." />
+<meta name="description" content=" Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person&rsquo;s collected data. It will often take a few minutes of &ldquo;getting calibrated&rdquo; to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
+The more complicated problems will end up needing some visualization tools which is something we&rsquo;ll look at later, so for now let&rsquo;s not think too big. However, one of the best ways to become more familiar with a dataset is to build it from scratch. Since we&rsquo;re building it from scratch, that means we&rsquo;re going to need some tables to store the data in.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, SQL, documentation" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +48,7 @@ The more complicated problems will end up needing some visualization tools which
 
   <meta itemprop="name" content="SQLBolt - Lesson 16">
   <meta itemprop="description" content="Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person’s collected data. It will often take a few minutes of “getting calibrated” to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
-The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big.">
+The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big. However, one of the best ways to become more familiar with a dataset is to build it from scratch. Since we’re building it from scratch, that means we’re going to need some tables to store the data in.">
   <meta itemprop="datePublished" content="2024-10-15T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-10-15T00:00:00+00:00">
   <meta itemprop="wordCount" content="443">
@@ -58,7 +59,7 @@ The more complicated problems will end up needing some visualization tools which
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="SQLBolt - Lesson 16">
   <meta name="twitter:description" content="Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person’s collected data. It will often take a few minutes of “getting calibrated” to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
-The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big.">
+The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big. However, one of the best ways to become more familiar with a dataset is to build it from scratch. Since we’re building it from scratch, that means we’re going to need some tables to store the data in.">
 
 
 
@@ -66,7 +67,7 @@ The more complicated problems will end up needing some visualization tools which
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="SQLBolt - Lesson 16">
   <meta property="og:description" content="Creating Tables One of the hardest things to do in data science (at least, to me) is pick up another person’s collected data. It will often take a few minutes of “getting calibrated” to understand the rows from simple things like understanding naming conventions (some are really bad) to more complex things like what story the data is telling.
-The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big.">
+The more complicated problems will end up needing some visualization tools which is something we’ll look at later, so for now let’s not think too big. However, one of the best ways to become more familiar with a dataset is to build it from scratch. Since we’re building it from scratch, that means we’re going to need some tables to store the data in.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -93,8 +94,6 @@ The more complicated problems will end up needing some visualization tools which
 
 
     
-  
-
 
 
 
@@ -181,70 +180,70 @@ The more complicated problems will end up needing some visualization tools which
 </span></span><span style="display:flex;"><span>);
 </span></span></code></pre></div><h2 id="table-data-types">Table Data Types</h2>
 <table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>INTEGER</code>, <code>BOOLEAN</code></td>
-<td>Whole integer values, basic number or age. Bools will be represented as 0 or 1</td>
-</tr>
-<tr>
-<td><code>FLOAT</code>, <code>DOUBLE</code>, <code>REAL</code></td>
-<td>More precise decimal numbers. Used for measurements or fractions</td>
-</tr>
-<tr>
-<td><code>CHARACTER(num_chars)</code>, <code>VARCHAR(num_chars)</code>, <code>TEXT</code></td>
-<td>Text-based types, used to store any information in quotations. First two are used when more precise memory management is required</td>
-</tr>
-<tr>
-<td><code>DATE</code>, <code>DATETIME</code></td>
-<td>Date and date with time, respectively</td>
-</tr>
-<tr>
-<td><code>BLOB</code></td>
-<td>Binary data</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>INTEGER</code>, <code>BOOLEAN</code></td>
+          <td>Whole integer values, basic number or age. Bools will be represented as 0 or 1</td>
+      </tr>
+      <tr>
+          <td><code>FLOAT</code>, <code>DOUBLE</code>, <code>REAL</code></td>
+          <td>More precise decimal numbers. Used for measurements or fractions</td>
+      </tr>
+      <tr>
+          <td><code>CHARACTER(num_chars)</code>, <code>VARCHAR(num_chars)</code>, <code>TEXT</code></td>
+          <td>Text-based types, used to store any information in quotations. First two are used when more precise memory management is required</td>
+      </tr>
+      <tr>
+          <td><code>DATE</code>, <code>DATETIME</code></td>
+          <td>Date and date with time, respectively</td>
+      </tr>
+      <tr>
+          <td><code>BLOB</code></td>
+          <td>Binary data</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="table-constraints">Table Constraints</h2>
 <p>Certainly not a comprehensive list, but a few that are common and useful.</p>
 <table>
-<thead>
-<tr>
-<th>Constraint</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>PRIMARY KEY</code></td>
-<td>Values in this column are unique and are identifies for each individual row</td>
-</tr>
-<tr>
-<td><code>AUTOINCREMENT</code></td>
-<td>Integer value that goes up automatically as data is inserted</td>
-</tr>
-<tr>
-<td><code>UNIQUE</code></td>
-<td>Ensures no other row in the database has the same value for this specific column</td>
-</tr>
-<tr>
-<td><code>NOT NULL</code></td>
-<td>Cannot be empty or NULL</td>
-</tr>
-<tr>
-<td><code>CHECK (expression)</code></td>
-<td>Allows you to basically have a conditional statement checked before inserting data</td>
-</tr>
-<tr>
-<td><code>FOREIGN KEY</code></td>
-<td>Ensures that there exists a value in another table that corresponds to the newly inserted value</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Constraint</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>PRIMARY KEY</code></td>
+          <td>Values in this column are unique and are identifies for each individual row</td>
+      </tr>
+      <tr>
+          <td><code>AUTOINCREMENT</code></td>
+          <td>Integer value that goes up automatically as data is inserted</td>
+      </tr>
+      <tr>
+          <td><code>UNIQUE</code></td>
+          <td>Ensures no other row in the database has the same value for this specific column</td>
+      </tr>
+      <tr>
+          <td><code>NOT NULL</code></td>
+          <td>Cannot be empty or NULL</td>
+      </tr>
+      <tr>
+          <td><code>CHECK (expression)</code></td>
+          <td>Allows you to basically have a conditional statement checked before inserting data</td>
+      </tr>
+      <tr>
+          <td><code>FOREIGN KEY</code></td>
+          <td>Ensures that there exists a value in another table that corresponds to the newly inserted value</td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <p>Next:

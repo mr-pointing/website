@@ -9,7 +9,8 @@
 <meta name="description" content="Modified: July 19 2024
 A Brief Tour of the Standard Library 7/4/2024
 10.1 Operating System Interface The os module provides functions for interacting with operating systems:
-&amp;gt;&amp;gt;&amp;gt; import os &amp;gt;&amp;gt;&amp;gt; os.getcwd() # returns the working directory &amp;#39;C:\\Python312&amp;#39; &amp;gt;&amp;gt;&amp;gt; os.chdir(&amp;#39;/server/accesslogs&amp;#39;) # change working directory &amp;gt;&amp;gt;&amp;gt; os.system(&amp;#39;mkdir today&amp;#39;) # run the command mkdir in the system shell 0 Never use from os import *. It&amp;rsquo;s not good practice to not do this regardless, but it will specifically keep os." />
+&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It&rsquo;s not good practice to not do this regardless, but it will specifically keep os.open() from shadowing the built-in open() function which operators for opening files.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, python, documentation, standardlibrary, modules" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -51,7 +52,7 @@ A Brief Tour of the Standard Library 7/4/2024
   <meta itemprop="description" content="Modified: July 19 2024
 A Brief Tour of the Standard Library 7/4/2024
 10.1 Operating System Interface The os module provides functions for interacting with operating systems:
-&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.">
+&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.open() from shadowing the built-in open() function which operators for opening files.">
   <meta itemprop="datePublished" content="2024-07-04T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-07-04T00:00:00+00:00">
   <meta itemprop="wordCount" content="1450">
@@ -64,7 +65,7 @@ A Brief Tour of the Standard Library 7/4/2024
   <meta name="twitter:description" content="Modified: July 19 2024
 A Brief Tour of the Standard Library 7/4/2024
 10.1 Operating System Interface The os module provides functions for interacting with operating systems:
-&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.">
+&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.open() from shadowing the built-in open() function which operators for opening files.">
 
 
 
@@ -74,7 +75,7 @@ A Brief Tour of the Standard Library 7/4/2024
   <meta property="og:description" content="Modified: July 19 2024
 A Brief Tour of the Standard Library 7/4/2024
 10.1 Operating System Interface The os module provides functions for interacting with operating systems:
-&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.">
+&gt;&gt;&gt; import os &gt;&gt;&gt; os.getcwd() # returns the working directory &#39;C:\\Python312&#39; &gt;&gt;&gt; os.chdir(&#39;/server/accesslogs&#39;) # change working directory &gt;&gt;&gt; os.system(&#39;mkdir today&#39;) # run the command mkdir in the system shell 0 Never use from os import *. It’s not good practice to not do this regardless, but it will specifically keep os.open() from shadowing the built-in open() function which operators for opening files.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -103,8 +104,6 @@ A Brief Tour of the Standard Library 7/4/2024
 
 
     
-  
-
 
 
 

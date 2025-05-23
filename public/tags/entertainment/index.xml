@@ -14,21 +14,21 @@
       <link>http://localhost:1313/notes/entertainment/books/</link>
       <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/entertainment/books/</guid>
-      <description>Reflections on books.</description>
+      <description>&lt;p&gt;Reflections on books.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Manga</title>
       <link>http://localhost:1313/notes/entertainment/manga/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/entertainment/manga/</guid>
-      <description>Reflections on manga.</description>
+      <description>&lt;p&gt;Reflections on manga.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Entertainment</title>
       <link>http://localhost:1313/notes/entertainment/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/entertainment/</guid>
-      <description>Reflections on books, movies, manga, or anything else fun.</description>
+      <description>&lt;p&gt;Reflections on books, movies, manga, or anything else fun.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Bits and Bytes Not a dense chapter, but we should recognize that Lua handles binary data very similarly to text. Let&amp;rsquo;s dive right into it.
-Bitwise Operators There are a few Lua operators that work only on integers and binary data; &amp;amp; or AND, | or OR, ~ or BITWISE OR, &amp;gt;&amp;gt; or SHIFT RIGHT, &amp;lt;&amp;lt; or SHIFT LEFT, and ~ which can also mean BITWISE NOT.
-string.format(&amp;#34;%x&amp;#34;, 0xff &amp;amp; 0xabcd) --&amp;gt; cd string." />
+<meta name="description" content=" Bits and Bytes Not a dense chapter, but we should recognize that Lua handles binary data very similarly to text. Let&rsquo;s dive right into it.
+Bitwise Operators There are a few Lua operators that work only on integers and binary data; &amp; or AND, | or OR, ~ or BITWISE OR, &gt;&gt; or SHIFT RIGHT, &lt;&lt; or SHIFT LEFT, and ~ which can also mean BITWISE NOT.
+string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.format(&#34;%x&#34;, 0xff | 0xabcd) --&gt; abff Unsigned Integers Essentially, unsigned integers are any numbers that can only represent non-negative values. By default, Lua does not support them, but there are workarounds that can help implement them in necessary.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, textbook, lua" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -49,10 +50,10 @@ string.format(&amp;#34;%x&amp;#34;, 0xff &amp;amp; 0xabcd) --&amp;gt; cd string.
   <meta itemprop="name" content="Programming in Lua - Chapter 13">
   <meta itemprop="description" content="Bits and Bytes Not a dense chapter, but we should recognize that Lua handles binary data very similarly to text. Let’s dive right into it.
 Bitwise Operators There are a few Lua operators that work only on integers and binary data; &amp; or AND, | or OR, ~ or BITWISE OR, &gt;&gt; or SHIFT RIGHT, &lt;&lt; or SHIFT LEFT, and ~ which can also mean BITWISE NOT.
-string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.">
+string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.format(&#34;%x&#34;, 0xff | 0xabcd) --&gt; abff Unsigned Integers Essentially, unsigned integers are any numbers that can only represent non-negative values. By default, Lua does not support them, but there are workarounds that can help implement them in necessary.">
   <meta itemprop="datePublished" content="2025-04-22T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-04-22T00:00:00+00:00">
-  <meta itemprop="wordCount" content="116">
+  <meta itemprop="wordCount" content="290">
   <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Computerscience,Textbook,Lua">
 
@@ -61,7 +62,7 @@ string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.">
   <meta name="twitter:title" content="Programming in Lua - Chapter 13">
   <meta name="twitter:description" content="Bits and Bytes Not a dense chapter, but we should recognize that Lua handles binary data very similarly to text. Let’s dive right into it.
 Bitwise Operators There are a few Lua operators that work only on integers and binary data; &amp; or AND, | or OR, ~ or BITWISE OR, &gt;&gt; or SHIFT RIGHT, &lt;&lt; or SHIFT LEFT, and ~ which can also mean BITWISE NOT.
-string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.">
+string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.format(&#34;%x&#34;, 0xff | 0xabcd) --&gt; abff Unsigned Integers Essentially, unsigned integers are any numbers that can only represent non-negative values. By default, Lua does not support them, but there are workarounds that can help implement them in necessary.">
 
 
 
@@ -70,7 +71,7 @@ string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.">
   <meta property="og:title" content="Programming in Lua - Chapter 13">
   <meta property="og:description" content="Bits and Bytes Not a dense chapter, but we should recognize that Lua handles binary data very similarly to text. Let’s dive right into it.
 Bitwise Operators There are a few Lua operators that work only on integers and binary data; &amp; or AND, | or OR, ~ or BITWISE OR, &gt;&gt; or SHIFT RIGHT, &lt;&lt; or SHIFT LEFT, and ~ which can also mean BITWISE NOT.
-string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.">
+string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.format(&#34;%x&#34;, 0xff | 0xabcd) --&gt; abff Unsigned Integers Essentially, unsigned integers are any numbers that can only represent non-negative values. By default, Lua does not support them, but there are workarounds that can help implement them in necessary.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -97,8 +98,6 @@ string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.">
 
 
     
-  
-
 
 
 
@@ -174,6 +173,25 @@ string.format(&#34;%x&#34;, 0xff &amp; 0xabcd) --&gt; cd string.">
 </span></span></code></pre></div><h2 id="unsigned-integers">Unsigned Integers</h2>
 <p>Essentially, unsigned integers are any numbers that can only represent non-negative values. By default, Lua does not support them, but there are workarounds that can help implement them in necessary.</p>
 <h2 id="packing-and-unpacking-binary-data">Packing and Unpacking Binary Data</h2>
+<p>You can use <code>string.pack</code> to pack values into binary strings, and <code>string.unpack</code> to accomplish the opposite;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> string.pack(<span style="color:#e6db74">&#34;iii&#34;</span>, <span style="color:#ae81ff">3</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">27</span>, <span style="color:#ae81ff">450</span>)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">#</span>s <span style="color:#75715e">--&gt; 12</span>
+</span></span><span style="display:flex;"><span>string.unpack(<span style="color:#e6db74">&#34;iii&#34;</span>, s) <span style="color:#75715e">--&gt; 3  -27  450  13</span>
+</span></span></code></pre></div><p>In the above example, we pack 3 integer values into s, 3, -27, and 450. We know it&rsquo;s 3 based on the first parameter, <code>iii</code>. Returning the length before going for any output is important for the output; when we unpack those numbers using again <code>iii</code> as our parameter, we get those numbers back with the position of the cursor. In this case, <code>13</code>, since we had up to 12 characters being used in <code>s</code> already.</p>
+<p>You could even give <code>unpack</code> a third additional argument, where to start reading. The next example is a unique use case for this, <code>&quot;z&quot;</code> refers to a zero-terminated string;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;What&#39;s</span><span style="color:#ae81ff">\0</span><span style="color:#e6db74">up</span><span style="color:#ae81ff">\0</span><span style="color:#e6db74">chatroom?</span><span style="color:#ae81ff">\0</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;=</span> <span style="color:#f92672">#</span> s <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> res
+</span></span><span style="display:flex;"><span>  res, i <span style="color:#f92672">=</span> string.unpack(<span style="color:#e6db74">&#34;z&#34;</span>, s, i)
+</span></span><span style="display:flex;"><span>  print(res)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt; What&#39;s</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt; up</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt; chatroom?</span>
+</span></span></code></pre></div><hr>
+<p>Next:
+[[Programming in Lua - Chapter 14|Chapter 14]]</p>
 
             </div>
         </article>

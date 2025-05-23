@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Question: Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
-How to Solve: I originally thought I had an awesome solution, but it only passed with the first test case that didn&amp;rsquo;t have zeros:
-def productExceptSelf(self, nums: List[int]) -&amp;gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &amp;lt; len(nums): total *= nums[i] i &#43;= 1 for num in nums: if num !" />
+<meta name="description" content=" Question: Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
+How to Solve: I originally thought I had an awesome solution, but it only passed with the first test case that didn&rsquo;t have zeros:
+def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &lt; len(nums): total *= nums[i] i &#43;= 1 for num in nums: if num != 0: ans.append(int(total/num)) else: ans.append(total) return ans My issue began when there were 0&rsquo;s to worry about. I spent a decent amount of time on this so I just decided to look at the answer below and I&rsquo;ll dissect it after:
+" />
 <meta name="keywords" content="homepage, blog, computerscience, python, arrays" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -49,7 +50,7 @@ def productExceptSelf(self, nums: List[int]) -&amp;gt; List[int]: total = nums[0
   <meta itemprop="name" content="Products of Array Not Including Self">
   <meta itemprop="description" content="Question: Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
 How to Solve: I originally thought I had an awesome solution, but it only passed with the first test case that didn’t have zeros:
-def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &lt; len(nums): total *= nums[i] i &#43;= 1 for num in nums: if num !">
+def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &lt; len(nums): total *= nums[i] i &#43;= 1 for num in nums: if num != 0: ans.append(int(total/num)) else: ans.append(total) return ans My issue began when there were 0’s to worry about. I spent a decent amount of time on this so I just decided to look at the answer below and I’ll dissect it after:">
   <meta itemprop="datePublished" content="2024-10-12T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-10-12T00:00:00+00:00">
   <meta itemprop="wordCount" content="343">
@@ -61,7 +62,7 @@ def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * 
   <meta name="twitter:title" content="Products of Array Not Including Self">
   <meta name="twitter:description" content="Question: Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
 How to Solve: I originally thought I had an awesome solution, but it only passed with the first test case that didn’t have zeros:
-def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &lt; len(nums): total *= nums[i] i &#43;= 1 for num in nums: if num !">
+def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &lt; len(nums): total *= nums[i] i &#43;= 1 for num in nums: if num != 0: ans.append(int(total/num)) else: ans.append(total) return ans My issue began when there were 0’s to worry about. I spent a decent amount of time on this so I just decided to look at the answer below and I’ll dissect it after:">
 
 
 
@@ -70,7 +71,7 @@ def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * 
   <meta property="og:title" content="Products of Array Not Including Self">
   <meta property="og:description" content="Question: Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
 How to Solve: I originally thought I had an awesome solution, but it only passed with the first test case that didn’t have zeros:
-def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &lt; len(nums): total *= nums[i] i &#43;= 1 for num in nums: if num !">
+def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * nums[1] ans = [] i = 2 while i &lt; len(nums): total *= nums[i] i &#43;= 1 for num in nums: if num != 0: ans.append(int(total/num)) else: ans.append(total) return ans My issue began when there were 0’s to worry about. I spent a decent amount of time on this so I just decided to look at the answer below and I’ll dissect it after:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -97,8 +98,6 @@ def productExceptSelf(self, nums: List[int]) -&gt; List[int]: total = nums[0] * 
 
 
     
-  
-
 
 
 

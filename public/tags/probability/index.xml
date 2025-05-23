@@ -14,7 +14,7 @@
       <link>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/</link>
       <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/</guid>
-      <description>Probability and Information Theory When we encounter situations where the output is unknown, probability theory gives us a mathematical framework to deal with these statements. They use the term &amp;ldquo;quantifying uncertainty&amp;rdquo; which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it&amp;rsquo;s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents.</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;probability-and-information-theory&#34;&gt;Probability and Information Theory&lt;/h1&gt;&#xA;&lt;p&gt;When we encounter situations where the output is unknown, &lt;em&gt;probability theory&lt;/em&gt; gives us a mathematical framework to deal with these statements. They use the term &amp;ldquo;quantifying uncertainty&amp;rdquo; which I like a lot. The connection between AI applications and probability come from two places; algorithms often use probability theory to give AI it&amp;rsquo;s reasoning abilities, and probability with statistics are used to grade and categorize the behavior of the AI models/agents.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

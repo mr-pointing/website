@@ -14,35 +14,35 @@
       <link>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</guid>
-      <description>Link to the video.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=G8eOF61wmzI&amp;amp;t=669s&#34;&gt;Link&lt;/a&gt; to the video.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Templater Formatting Notes</title>
       <link>http://localhost:1313/notes/obsidian/templater-formatting-notes/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/obsidian/templater-formatting-notes/</guid>
-      <description>Link to Templater Documentation.</description>
+      <description>&lt;hr&gt;&#xA;&#xA;    &lt;img src=&#34;http://localhost:1313/images/DateFormatting.png&#34;  alt=&#34;DateFormatting&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&#xA;    &lt;img src=&#34;http://localhost:1313/images/Time%20Formatting.png&#34;  alt=&#34;Time Formatting&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://silentvoid13.github.io/Templater/introduction.html&#34;&gt;Link&lt;/a&gt; to Templater Documentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jinja</title>
       <link>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</guid>
-      <description>Link to documentation.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jinja.palletsprojects.com/en/3.1.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Formatting Percentages</title>
       <link>http://localhost:1313/notes/computer-science/python/formatting-percentages/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/formatting-percentages/</guid>
-      <description>Modified: July 03 2024&#xA;7/3/2024&#xA;Taken from this article.&#xA;Often in projects, we want to format our large float types as smaller percentages.&#xA;There are three main ways to do this:&#xA;Rounding and Float/String Types: round() takes two parameters: a value and a number to round too. Then, we can use a little complicated string statement.&#xA;&amp;gt;&amp;gt;&amp;gt; number = 0.8839133112 &amp;gt;&amp;gt;&amp;gt; n2 = round(number, 4) &amp;gt;&amp;gt;&amp;gt; print(n2) 0.886 &amp;gt;&amp;gt;&amp;gt; print(str(n2 * 100) + &amp;#39;%&amp;#39;) Format() Alternatively, if that seems a bit complicated, we can just format() instead.</description>
+      <description>&lt;p&gt;Modified: July 03 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;7/3/2024&lt;/p&gt;&#xA;&lt;p&gt;Taken from &lt;a href=&#34;https://pythonmldaily.com/posts/python-show-number-as-percentage-with-format-and-f-string&#34;&gt;this&lt;/a&gt; article.&lt;/p&gt;&#xA;&lt;p&gt;Often in projects, we want to format our large &lt;code&gt;float&lt;/code&gt; types as smaller percentages.&lt;/p&gt;&#xA;&lt;p&gt;There are three main ways to do this:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Rounding and Float/String Types:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;code&gt;round()&lt;/code&gt; takes two parameters: a value and a number to round too. Then, we can use a little complicated string statement.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8839133112&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; n2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; round(number, &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; print(n2)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.886&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; print(str(n2 &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Format()&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Alternatively, if that seems a bit complicated, we can just &lt;code&gt;format()&lt;/code&gt; instead.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 1, 2, and 3</title>
       <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</link>
       <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</guid>
-      <description>Modified: July 19 2024&#xA;Link to source&#xA;6/2/2024&#xA;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&#xA;Introduction What is Python?&#xA;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.</description>
+      <description>&lt;p&gt;Modified: July 19 2024&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.python.org/3/tutorial/index.html&#34;&gt;Link to source&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;6/2/2024&lt;/p&gt;&#xA;&lt;p&gt;In order to get a better understanding of Python as a whole language, I&amp;rsquo;m going to document and take notes as I go through the tutorial. I mostly would like to improve as a programmer, and eventually get a software job at Google or something.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;What is Python?&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Python is an easy to learn, powerful programming language. Featuring efficient high-level data structures as well as a simple but effective approach to object-oriented programming.&lt;/li&gt;&#xA;&lt;li&gt;Ideal language for scripting and rapid application development&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Description of objects and modules are in &lt;a href=&#34;https://docs.python.org/3/library/index.html#library-index&#34;&gt;The Python Standard Library&lt;/a&gt;. I&amp;rsquo;ll probably go through this another day.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

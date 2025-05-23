@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Dynamic Programming The knapsack problem is coming back; this time with a vengeance. This time around, we have the same items, but we have a four pound limit in our bag. The Switch is $1500 and 1 pound, the P.C. is $3000 and 4 pounds, and the laptop is $2000 and 3 pounds.
-If we went with the most simple solution, we could just add up all possible combinations and pick the best." />
+<meta name="description" content=" Dynamic Programming The knapsack problem is coming back; this time with a vengeance. This time around, we have the same items, but we have a four pound limit in our bag. The Switch is $1500 and 1 pound, the P.C. is $3000 and 4 pounds, and the laptop is $2000 and 3 pounds.
+If we went with the most simple solution, we could just add up all possible combinations and pick the best. For 3 items, it&rsquo;s no big deal. There are only 8 sets of possible combinations; easy to walk through. However, increasing from there is incredibly slow ($2^n$), so past 10 items it begins to become massive amounts of processing power to produce an answer.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, textbook, algorithms" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +48,7 @@ If we went with the most simple solution, we could just add up all possible comb
 
   <meta itemprop="name" content="Grokking Algorithms - Chapter 11">
   <meta itemprop="description" content="Dynamic Programming The knapsack problem is coming back; this time with a vengeance. This time around, we have the same items, but we have a four pound limit in our bag. The Switch is $1500 and 1 pound, the P.C. is $3000 and 4 pounds, and the laptop is $2000 and 3 pounds.
-If we went with the most simple solution, we could just add up all possible combinations and pick the best.">
+If we went with the most simple solution, we could just add up all possible combinations and pick the best. For 3 items, it’s no big deal. There are only 8 sets of possible combinations; easy to walk through. However, increasing from there is incredibly slow ($2^n$), so past 10 items it begins to become massive amounts of processing power to produce an answer.">
   <meta itemprop="datePublished" content="2025-03-05T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-05T00:00:00+00:00">
   <meta itemprop="wordCount" content="901">
@@ -58,7 +59,7 @@ If we went with the most simple solution, we could just add up all possible comb
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Grokking Algorithms - Chapter 11">
   <meta name="twitter:description" content="Dynamic Programming The knapsack problem is coming back; this time with a vengeance. This time around, we have the same items, but we have a four pound limit in our bag. The Switch is $1500 and 1 pound, the P.C. is $3000 and 4 pounds, and the laptop is $2000 and 3 pounds.
-If we went with the most simple solution, we could just add up all possible combinations and pick the best.">
+If we went with the most simple solution, we could just add up all possible combinations and pick the best. For 3 items, it’s no big deal. There are only 8 sets of possible combinations; easy to walk through. However, increasing from there is incredibly slow ($2^n$), so past 10 items it begins to become massive amounts of processing power to produce an answer.">
 
 
 
@@ -66,7 +67,7 @@ If we went with the most simple solution, we could just add up all possible comb
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Grokking Algorithms - Chapter 11">
   <meta property="og:description" content="Dynamic Programming The knapsack problem is coming back; this time with a vengeance. This time around, we have the same items, but we have a four pound limit in our bag. The Switch is $1500 and 1 pound, the P.C. is $3000 and 4 pounds, and the laptop is $2000 and 3 pounds.
-If we went with the most simple solution, we could just add up all possible combinations and pick the best.">
+If we went with the most simple solution, we could just add up all possible combinations and pick the best. For 3 items, it’s no big deal. There are only 8 sets of possible combinations; easy to walk through. However, increasing from there is incredibly slow ($2^n$), so past 10 items it begins to become massive amounts of processing power to produce an answer.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -93,8 +94,6 @@ If we went with the most simple solution, we could just add up all possible comb
 
 
     
-  
-
 
 
 
@@ -172,163 +171,163 @@ If we went with the most simple solution, we could just add up all possible comb
 </ol>
 <p>To start, it&rsquo;ll look like this:</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Switch</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>P.C.</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Laptop</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Switch</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>P.C.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Laptop</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <p>Our first row is the easiest; we only have a single item, the Switch, which fits in our bag at only 1 pound. For all pounds with no other options, taking the Switch has the best value. We should update our table to reflect that;</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Switch</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-</tr>
-<tr>
-<td>P.C.</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Laptop</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>The letter dictates what items we currently are holding, creating that value. We have the same 1500 provided by the Switch, hence the entire row being &ldquo;1500 (s)&rdquo;.</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Switch</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+      </tr>
+      <tr>
+          <td>P.C.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Laptop</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>The letter dictates what items we currently are holding, creating that value. We have the same 1500 provided by the Switch, hence the entire row being &ldquo;1500 (s)&rdquo;.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <p>Next is obviously the second row. However, the P.C. takes 4 pounds, so the best value for pounds 1 through 3 stays the same. When we get to 4, our new best value is taking just the P.C., with a value of 3000.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Switch</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td><del>1500 (s)</del></td>
-</tr>
-<tr>
-<td>P.C.</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td>3000 (p)</td>
-</tr>
-<tr>
-<td>Laptop</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Now for our final row, again, the laptop weighs 3 pounds, so for the first two cells there is no change. But for the third cell, the laptop will fill the whole 3 pounds for a better deal, so that&rsquo;s what gets replaced. And for the final, we can fit both the Laptop &amp; Switch, which is a better deal than the most updated value.</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Switch</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td><del>1500 (s)</del></td>
+      </tr>
+      <tr>
+          <td>P.C.</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td>3000 (p)</td>
+      </tr>
+      <tr>
+          <td>Laptop</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Now for our final row, again, the laptop weighs 3 pounds, so for the first two cells there is no change. But for the third cell, the laptop will fill the whole 3 pounds for a better deal, so that&rsquo;s what gets replaced. And for the final, we can fit both the Laptop &amp; Switch, which is a better deal than the most updated value.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Switch</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td><del>1500 (s)</del></td>
-</tr>
-<tr>
-<td>P.C.</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td><del>1500 (s)</del></td>
-<td><del>3000 (p)</del></td>
-</tr>
-<tr>
-<td>Laptop</td>
-<td>1500 (s)</td>
-<td>1500 (s)</td>
-<td>2000 (l)</td>
-<td>3500(s, l)</td>
-</tr>
-<tr>
-<td>Our last value is now our best value, so we should take the Laptop &amp; Switch for $3500. Each cell is compared with the following pseudocode;</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Switch</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td><del>1500 (s)</del></td>
+      </tr>
+      <tr>
+          <td>P.C.</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td><del>1500 (s)</del></td>
+          <td><del>3000 (p)</del></td>
+      </tr>
+      <tr>
+          <td>Laptop</td>
+          <td>1500 (s)</td>
+          <td>1500 (s)</td>
+          <td>2000 (l)</td>
+          <td>3500(s, l)</td>
+      </tr>
+      <tr>
+          <td>Our last value is now our best value, so we should take the Laptop &amp; Switch for $3500. Each cell is compared with the following pseudocode;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>cell[i][j] <span style="color:#f92672">=</span> max(the previous max(cell[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]), Current value <span style="color:#f92672">+</span> cell[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j<span style="color:#f92672">-</span>item weight])
 </span></span></code></pre></div><h3 id="exercises">Exercises</h3>
@@ -351,155 +350,155 @@ If we went with the most simple solution, we could just add up all possible comb
 <p>Spell checkers use Dynamic Programming to set up a grid of all the values the words have in common. If we were to try and solve this using the method we used just before, how could we set this up? What would be our grid, and what would be our constraint?</p>
 <p>Well, we can start the grid as comparing both words, since in this instance what we want and typed are the same type (words). Our grid can look something like this;</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>H</th>
-<th>I</th>
-<th>S</th>
-<th>H</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>F</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>I</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>S</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>H</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Then, for every cell where we have a match in characters, we count not only that they are alike, but keep track of the <em>amount of consistent alike characters</em>. Our table is then populated;</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>H</th>
+          <th>I</th>
+          <th>S</th>
+          <th>H</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>F</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>I</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>S</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>H</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Then, for every cell where we have a match in characters, we count not only that they are alike, but keep track of the <em>amount of consistent alike characters</em>. Our table is then populated;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>H</th>
-<th>I</th>
-<th>S</th>
-<th>H</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>F</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>I</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>S</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-</tr>
-<tr>
-<td>H</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Compare this to another word like crash;</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>H</th>
+          <th>I</th>
+          <th>S</th>
+          <th>H</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>F</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>I</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>S</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>H</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>Compare this to another word like crash;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>H</th>
-<th>I</th>
-<th>S</th>
-<th>H</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>C</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>R</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>A</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>S</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>H</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Clearly, &ldquo;hish&rdquo; is more like &ldquo;fish&rdquo; than &ldquo;crash&rdquo;, so we should suggest &ldquo;fish&rdquo; instead of &ldquo;hish.&rdquo; The formula to achieve this is fairly simple;</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>H</th>
+          <th>I</th>
+          <th>S</th>
+          <th>H</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>C</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>R</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>A</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>S</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>H</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Clearly, &ldquo;hish&rdquo; is more like &ldquo;fish&rdquo; than &ldquo;crash&rdquo;, so we should suggest &ldquo;fish&rdquo; instead of &ldquo;hish.&rdquo; The formula to achieve this is fairly simple;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> word_a[i] <span style="color:#f92672">==</span> word_b[j]:
 </span></span><span style="display:flex;"><span>	cell[i][j] <span style="color:#f92672">=</span> cell[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]

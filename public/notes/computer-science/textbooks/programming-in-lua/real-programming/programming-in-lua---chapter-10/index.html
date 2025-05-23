@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Pattern Matching Due to Lua&amp;rsquo;s goal of maintaining a lite and quick language, it relies on it&amp;rsquo;s own method of pattern matching rather than POSIX regex or even Perl regex.
-Pattern Matching Functions There are four pattern matching functions within Lua&amp;rsquo;s standard string library. We&amp;rsquo;ve actually already seen two of them, find and gsub. We will cover those in slightly more detail, as well as the other two, match and gmatch." />
+<meta name="description" content=" Pattern Matching Due to Lua&rsquo;s goal of maintaining a lite and quick language, it relies on it&rsquo;s own method of pattern matching rather than POSIX regex or even Perl regex.
+Pattern Matching Functions There are four pattern matching functions within Lua&rsquo;s standard string library. We&rsquo;ve actually already seen two of them, find and gsub. We will cover those in slightly more detail, as well as the other two, match and gmatch.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, textbook, lua" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -93,8 +94,6 @@ Pattern Matching Functions There are four pattern matching functions within Luaâ
 
 
     
-  
-
 
 
 
@@ -209,62 +208,62 @@ Pattern Matching Functions There are four pattern matching functions within Luaâ
 <p>Lua treats patterns like any other string; they follow the same rules as traditional strings. The only way to identify a pattern is with the percent sign.</p>
 <h3 id="character-classes">Character Classes</h3>
 <table>
-<thead>
-<tr>
-<th>Sign</th>
-<th>Representation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.</td>
-<td>All characters</td>
-</tr>
-<tr>
-<td>%a</td>
-<td>Letters</td>
-</tr>
-<tr>
-<td>%c</td>
-<td>Control characters</td>
-</tr>
-<tr>
-<td>%d</td>
-<td>Digits</td>
-</tr>
-<tr>
-<td>%g</td>
-<td>Printable characters except spaces</td>
-</tr>
-<tr>
-<td>%l</td>
-<td>Lowercase letters</td>
-</tr>
-<tr>
-<td>%p</td>
-<td>Punctuation characters</td>
-</tr>
-<tr>
-<td>%s</td>
-<td>Space characters</td>
-</tr>
-<tr>
-<td>%u</td>
-<td>Uppercase letters</td>
-</tr>
-<tr>
-<td>%w</td>
-<td>Alphanumeric characters</td>
-</tr>
-<tr>
-<td>%x</td>
-<td>Hexadecimal digits</td>
-</tr>
-<tr>
-<td>To get the compliment to any of these commands, just use the uppercase version of the sign. In the below example, we use uppercase A to get all non-letter characters.</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Sign</th>
+          <th>Representation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>.</td>
+          <td>All characters</td>
+      </tr>
+      <tr>
+          <td>%a</td>
+          <td>Letters</td>
+      </tr>
+      <tr>
+          <td>%c</td>
+          <td>Control characters</td>
+      </tr>
+      <tr>
+          <td>%d</td>
+          <td>Digits</td>
+      </tr>
+      <tr>
+          <td>%g</td>
+          <td>Printable characters except spaces</td>
+      </tr>
+      <tr>
+          <td>%l</td>
+          <td>Lowercase letters</td>
+      </tr>
+      <tr>
+          <td>%p</td>
+          <td>Punctuation characters</td>
+      </tr>
+      <tr>
+          <td>%s</td>
+          <td>Space characters</td>
+      </tr>
+      <tr>
+          <td>%u</td>
+          <td>Uppercase letters</td>
+      </tr>
+      <tr>
+          <td>%w</td>
+          <td>Alphanumeric characters</td>
+      </tr>
+      <tr>
+          <td>%x</td>
+          <td>Hexadecimal digits</td>
+      </tr>
+      <tr>
+          <td>To get the compliment to any of these commands, just use the uppercase version of the sign. In the below example, we use uppercase A to get all non-letter characters.</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.gsub(<span style="color:#e6db74">&#34;hello, up-down!&#34;</span>, <span style="color:#e6db74">&#34;%A&#34;</span>, <span style="color:#e6db74">&#34;.&#34;</span>)
 </span></span><span style="display:flex;"><span>hello<span style="color:#f92672">..</span>up.down.
@@ -272,30 +271,30 @@ Pattern Matching Functions There are four pattern matching functions within Luaâ
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>_, nvow <span style="color:#f92672">=</span> string.gsub(text, <span style="color:#e6db74">&#34;[AEIOUaeiou]&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)
 </span></span></code></pre></div><p>We could also use ranges when defining charsets, but it&rsquo;s pretty specific since most useful ranges are already defined. One way we can improve our uses of patterns is with modifiers. These allow for multiple parts or repetitions.</p>
 <table>
-<thead>
-<tr>
-<th>Sign</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>+</code></td>
-<td>1 or more repetitions</td>
-</tr>
-<tr>
-<td><code>*</code></td>
-<td>0 or more repetitions</td>
-</tr>
-<tr>
-<td><code>-</code></td>
-<td>0 or more lazy repetitions</td>
-</tr>
-<tr>
-<td><code>?</code></td>
-<td>Optional (0 or 1 occurence)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Sign</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>+</code></td>
+          <td>1 or more repetitions</td>
+      </tr>
+      <tr>
+          <td><code>*</code></td>
+          <td>0 or more repetitions</td>
+      </tr>
+      <tr>
+          <td><code>-</code></td>
+          <td>0 or more lazy repetitions</td>
+      </tr>
+      <tr>
+          <td><code>?</code></td>
+          <td>Optional (0 or 1 occurence)</td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> string.gsub(<span style="color:#e6db74">&#34;one, and two; and three&#34;</span>, <span style="color:#e6db74">&#34;%a+&#34;</span>, <span style="color:#e6db74">&#34;word&#34;</span>)
 </span></span><span style="display:flex;"><span>word, word word; word word

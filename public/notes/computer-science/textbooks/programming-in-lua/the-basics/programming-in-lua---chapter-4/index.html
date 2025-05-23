@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you&amp;rsquo;d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
-Any string we make in Lua is immutable, so we can&amp;rsquo;t alter it once it&amp;rsquo;s made." />
+<meta name="description" content=" Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you&rsquo;d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
+Any string we make in Lua is immutable, so we can&rsquo;t alter it once it&rsquo;s made. Any alterations would have to be made to an entirely new string. Not only that, but Lua also has automatic memory management, so we don&rsquo;t have to concern ourselves with allocation and deallocation.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, textbook, lua, syntax" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +48,7 @@ Any string we make in Lua is immutable, so we can&amp;rsquo;t alter it once it&a
 
   <meta itemprop="name" content="Programming in Lua - Chapter 4">
   <meta itemprop="description" content="Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you’d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
-Any string we make in Lua is immutable, so we can’t alter it once it’s made.">
+Any string we make in Lua is immutable, so we can’t alter it once it’s made. Any alterations would have to be made to an entirely new string. Not only that, but Lua also has automatic memory management, so we don’t have to concern ourselves with allocation and deallocation.">
   <meta itemprop="datePublished" content="2025-03-12T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-12T00:00:00+00:00">
   <meta itemprop="wordCount" content="1097">
@@ -58,7 +59,7 @@ Any string we make in Lua is immutable, so we can’t alter it once it’s made.
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Programming in Lua - Chapter 4">
   <meta name="twitter:description" content="Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you’d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
-Any string we make in Lua is immutable, so we can’t alter it once it’s made.">
+Any string we make in Lua is immutable, so we can’t alter it once it’s made. Any alterations would have to be made to an entirely new string. Not only that, but Lua also has automatic memory management, so we don’t have to concern ourselves with allocation and deallocation.">
 
 
 
@@ -66,7 +67,7 @@ Any string we make in Lua is immutable, so we can’t alter it once it’s made.
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Programming in Lua - Chapter 4">
   <meta property="og:description" content="Strings A string is basically a representation of some text. They can be tiny, or huge, depending on how you’d like. We consider strings as a sequence of bytes, which we can go into more detail on later. For now, just know we can store any binary data as a string, or even Unicode representation.
-Any string we make in Lua is immutable, so we can’t alter it once it’s made.">
+Any string we make in Lua is immutable, so we can’t alter it once it’s made. Any alterations would have to be made to an entirely new string. Not only that, but Lua also has automatic memory management, so we don’t have to concern ourselves with allocation and deallocation.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -94,8 +95,6 @@ Any string we make in Lua is immutable, so we can’t alter it once it’s made.
 
 
     
-  
-
 
 
 
@@ -175,54 +174,54 @@ Any string we make in Lua is immutable, so we can’t alter it once it’s made.
 <h2 id="literal-strings">Literal Strings</h2>
 <p>A <em>literal string</em> is any string in single or double quotation marks. If you use one, you can use the other within the same string without escaping which is a nice feature. It also has similar escape characters as Python does,</p>
 <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>bell</td>
-<td>\a</td>
-</tr>
-<tr>
-<td>back space</td>
-<td>\b</td>
-</tr>
-<tr>
-<td>form feed</td>
-<td>\f</td>
-</tr>
-<tr>
-<td>newline</td>
-<td>\n</td>
-</tr>
-<tr>
-<td>carriage return</td>
-<td>\r</td>
-</tr>
-<tr>
-<td>tab</td>
-<td>\t</td>
-</tr>
-<tr>
-<td>vertical slash</td>
-<td>\v</td>
-</tr>
-<tr>
-<td>backslash</td>
-<td>\\</td>
-</tr>
-<tr>
-<td>double quote</td>
-<td>\&quot;</td>
-</tr>
-<tr>
-<td>single quote</td>
-<td>\'</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>bell</td>
+          <td>\a</td>
+      </tr>
+      <tr>
+          <td>back space</td>
+          <td>\b</td>
+      </tr>
+      <tr>
+          <td>form feed</td>
+          <td>\f</td>
+      </tr>
+      <tr>
+          <td>newline</td>
+          <td>\n</td>
+      </tr>
+      <tr>
+          <td>carriage return</td>
+          <td>\r</td>
+      </tr>
+      <tr>
+          <td>tab</td>
+          <td>\t</td>
+      </tr>
+      <tr>
+          <td>vertical slash</td>
+          <td>\v</td>
+      </tr>
+      <tr>
+          <td>backslash</td>
+          <td>\\</td>
+      </tr>
+      <tr>
+          <td>double quote</td>
+          <td>\&quot;</td>
+      </tr>
+      <tr>
+          <td>single quote</td>
+          <td>\'</td>
+      </tr>
+  </tbody>
 </table>
 <p>Lua allows representation of characters through many formats; numeric values, hexadecimal, ASCII, and even UTF-8 characters.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x41</span><span style="color:#e6db74">&#39;</span>

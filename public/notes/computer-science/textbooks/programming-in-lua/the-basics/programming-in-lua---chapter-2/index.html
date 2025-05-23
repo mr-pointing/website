@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="The Eight Queens Problem Not a whole lot going on in this chapter, but they present a fun example of Lua&amp;rsquo;s capabilities. Walking through this code is worthwhile; I recommend giving it a read first, trying it out yourself, and changing some things around to get some different outcomes.
-N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do	-- for each queen already placed." />
+<meta name="description" content=" The Eight Queens Problem Not a whole lot going on in this chapter, but they present a fun example of Lua&rsquo;s capabilities. Walking through this code is worthwhile; I recommend giving it a read first, trying it out yourself, and changing some things around to get some different outcomes.
+N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do	-- for each queen already placed... if (a[i] == c) or -- same column? (a[i] - i == c - n) or	-- same diagonal? (a[i] &#43; i == c &#43; n) then	-- other diagonal? return false	-- place can be attacked end end return true end -- print a board function printsolution (a) for i = 1, N do	-- for each row for j = 1, N do	-- and for each column -- write &#34;X&#34; or &#34;-&#34; plus a space io.write(a[i] == j and &#34;X&#34; or &#34;-&#34;, &#34; &#34;) end io.write(&#34;\n&#34;) end io.write(&#34;\n&#34;) end -- add to board &#39;a&#39; all queens from &#39;n&#39; to &#39;N&#39; function addqueen (a, n) if n &gt; N then	-- checks for all queens being placed printsolution(a) else for c = 1, N do if isplaceok(a, n, c) then a[n] = c addqueen(a,n &#43; 1) end end end end -- run the program addqueen({}, 1) Exercises Modify the program so that it stops after printing the first solution For me, I just put os.exit() after the first call for printsolution().
+" />
 <meta name="keywords" content="homepage, blog, computerscience, lua, textbook, syntax" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -47,7 +48,7 @@ N = 8 -- board size -- check whether position (n,c) is free from attacks functio
 
   <meta itemprop="name" content="Programming in Lua - Chapter 2">
   <meta itemprop="description" content="The Eight Queens Problem Not a whole lot going on in this chapter, but they present a fun example of Lua’s capabilities. Walking through this code is worthwhile; I recommend giving it a read first, trying it out yourself, and changing some things around to get some different outcomes.
-N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do	-- for each queen already placed.">
+N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do	-- for each queen already placed... if (a[i] == c) or -- same column? (a[i] - i == c - n) or	-- same diagonal? (a[i] &#43; i == c &#43; n) then	-- other diagonal? return false	-- place can be attacked end end return true end -- print a board function printsolution (a) for i = 1, N do	-- for each row for j = 1, N do	-- and for each column -- write &#34;X&#34; or &#34;-&#34; plus a space io.write(a[i] == j and &#34;X&#34; or &#34;-&#34;, &#34; &#34;) end io.write(&#34;\n&#34;) end io.write(&#34;\n&#34;) end -- add to board &#39;a&#39; all queens from &#39;n&#39; to &#39;N&#39; function addqueen (a, n) if n &gt; N then	-- checks for all queens being placed printsolution(a) else for c = 1, N do if isplaceok(a, n, c) then a[n] = c addqueen(a,n &#43; 1) end end end end -- run the program addqueen({}, 1) Exercises Modify the program so that it stops after printing the first solution For me, I just put os.exit() after the first call for printsolution().">
   <meta itemprop="datePublished" content="2025-03-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-06T00:00:00+00:00">
   <meta itemprop="wordCount" content="259">
@@ -58,7 +59,7 @@ N = 8 -- board size -- check whether position (n,c) is free from attacks functio
   <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Programming in Lua - Chapter 2">
   <meta name="twitter:description" content="The Eight Queens Problem Not a whole lot going on in this chapter, but they present a fun example of Lua’s capabilities. Walking through this code is worthwhile; I recommend giving it a read first, trying it out yourself, and changing some things around to get some different outcomes.
-N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do	-- for each queen already placed.">
+N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do	-- for each queen already placed... if (a[i] == c) or -- same column? (a[i] - i == c - n) or	-- same diagonal? (a[i] &#43; i == c &#43; n) then	-- other diagonal? return false	-- place can be attacked end end return true end -- print a board function printsolution (a) for i = 1, N do	-- for each row for j = 1, N do	-- and for each column -- write &#34;X&#34; or &#34;-&#34; plus a space io.write(a[i] == j and &#34;X&#34; or &#34;-&#34;, &#34; &#34;) end io.write(&#34;\n&#34;) end io.write(&#34;\n&#34;) end -- add to board &#39;a&#39; all queens from &#39;n&#39; to &#39;N&#39; function addqueen (a, n) if n &gt; N then	-- checks for all queens being placed printsolution(a) else for c = 1, N do if isplaceok(a, n, c) then a[n] = c addqueen(a,n &#43; 1) end end end end -- run the program addqueen({}, 1) Exercises Modify the program so that it stops after printing the first solution For me, I just put os.exit() after the first call for printsolution().">
 
 
 
@@ -66,7 +67,7 @@ N = 8 -- board size -- check whether position (n,c) is free from attacks functio
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Programming in Lua - Chapter 2">
   <meta property="og:description" content="The Eight Queens Problem Not a whole lot going on in this chapter, but they present a fun example of Lua’s capabilities. Walking through this code is worthwhile; I recommend giving it a read first, trying it out yourself, and changing some things around to get some different outcomes.
-N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do	-- for each queen already placed.">
+N = 8 -- board size -- check whether position (n,c) is free from attacks function isplaceok (a, n, c) for i = 1, n - 1 do	-- for each queen already placed... if (a[i] == c) or -- same column? (a[i] - i == c - n) or	-- same diagonal? (a[i] &#43; i == c &#43; n) then	-- other diagonal? return false	-- place can be attacked end end return true end -- print a board function printsolution (a) for i = 1, N do	-- for each row for j = 1, N do	-- and for each column -- write &#34;X&#34; or &#34;-&#34; plus a space io.write(a[i] == j and &#34;X&#34; or &#34;-&#34;, &#34; &#34;) end io.write(&#34;\n&#34;) end io.write(&#34;\n&#34;) end -- add to board &#39;a&#39; all queens from &#39;n&#39; to &#39;N&#39; function addqueen (a, n) if n &gt; N then	-- checks for all queens being placed printsolution(a) else for c = 1, N do if isplaceok(a, n, c) then a[n] = c addqueen(a,n &#43; 1) end end end end -- run the program addqueen({}, 1) Exercises Modify the program so that it stops after printing the first solution For me, I just put os.exit() after the first call for printsolution().">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -94,8 +95,6 @@ N = 8 -- board size -- check whether position (n,c) is free from attacks functio
 
 
     
-  
-
 
 
 
