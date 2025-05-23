@@ -7,8 +7,43 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/lua/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming in Lua - Chapter 17</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-17/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-17/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;modules-and-packages&#34;&gt;Modules and Packages&lt;/h1&gt;&#xA;&lt;p&gt;When it comes to Lua, there are generally no policies set in place. However, starting with Lua 5.1, there are policies set up for modules and packages. Programmers are open to follow these policies or define their own as they see fit. We consider a &lt;em&gt;module&lt;/em&gt; as some code in Lua or C, and can be loaded into an environment using the function &lt;code&gt;require&lt;/code&gt; that creates and returns a table. All things defined (variables, functions, etc.) are defined in the table provided.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 18</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-18/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-18/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;iterators-and-the-generic-for&#34;&gt;Iterators and the Generic &lt;code&gt;for&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s learn how to make our own &lt;em&gt;Iterators&lt;/em&gt; in Lua. We&amp;rsquo;ll accomplish this by taking a look at the &lt;code&gt;for&lt;/code&gt; loop in more detail; more specifically, the &lt;strong&gt;generic&lt;/strong&gt; &lt;code&gt;for&lt;/code&gt; loop.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iterators-and-closures&#34;&gt;Iterators and Closures&lt;/h2&gt;&#xA;&lt;p&gt;We consider an iterator to be any construction that will allow is to iterate over the elements within some collection of objects. Most commonly we use functions to accomplish this. We make calls to the function when we want the next item, and so on. We&amp;rsquo;ve seen this with &lt;code&gt;io.read&lt;/code&gt; in the past.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 16</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-16/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-16/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;compilation-execution-and-errors&#34;&gt;Compilation, Execution, and Errors&lt;/h1&gt;&#xA;&lt;p&gt;Lua is an interpreted language. Regardless, Lua will always pre-compile source code to a temporary middle-form in the &lt;em&gt;compilation phase&lt;/em&gt;. This is standard practice, but feels out of place knowing that interpreted languages are known to be quick and run without any compilers. This chapter is dense and nerdy, but will explain part of the process and why Lua chooses to use that system. This chapter should probably be read on it&amp;rsquo;s own, as my notes will not be sufficient.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 14</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-14/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-14/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;data-structures&#34;&gt;Data Structures&lt;/h1&gt;&#xA;&lt;p&gt;As we know, Lua just has tables. Within this, we can arrange tables in numerous different fashions to create whatever data structure we need. Since tables work so well, some of these aren&amp;rsquo;t entirely necessary but can be done.&lt;/p&gt;&#xA;&lt;h2 id=&#34;arrays&#34;&gt;Arrays&lt;/h2&gt;&#xA;&lt;p&gt;To accomplish the array structure, we can do something we&amp;rsquo;ve done previously; create a table with numbered indexes. Super simple to accomplish.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  a[i] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The above creates an array with a range of 1 to 100, and any call to a field out of that range will return &lt;code&gt;nil&lt;/code&gt;. We can find the length of &lt;code&gt;a&lt;/code&gt; easily with &lt;code&gt;#a&lt;/code&gt;. A one liner version for an array type of table is accomplished with any set of numbers like so;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 15</title>
+      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-15/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-15/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;data-files-and-serialization&#34;&gt;Data Files and Serialization&lt;/h1&gt;&#xA;&lt;p&gt;Writing data is usually much cleaner than reading in data. There are many different ways in which the process can be corrupted. This calls for writing well written, error-preventative code. Problem is, that&amp;rsquo;s pretty hard. We can do one better; we can make our data easier to read in by writing it in readable formats. Lua makes this easy. We can write code that will generate our data objects for us.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Programming in Lua - Chapter 13</title>
       <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-13/</link>

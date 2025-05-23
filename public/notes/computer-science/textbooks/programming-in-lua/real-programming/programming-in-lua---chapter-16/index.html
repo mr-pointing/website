@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Compilation, Execution, and Errors Lua is an interpreted language. Regardless, Lua will always pre-compile source code to a temporary middle-form in the compilation phase. This is standard practice, but feels out of place knowing that interpreted languages are known to be quick and run without any compilers. This chapter is dense and nerdy, but will explain part of the process and why Lua chooses to use that system. This chapter should probably be read on it&rsquo;s own, as my notes will not be sufficient.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, lua" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-16/" />
+
+
+    <title>
+        
+            Programming in Lua - Chapter 16 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Programming in Lua - Chapter 16">
+  <meta itemprop="description" content="Compilation, Execution, and Errors Lua is an interpreted language. Regardless, Lua will always pre-compile source code to a temporary middle-form in the compilation phase. This is standard practice, but feels out of place knowing that interpreted languages are known to be quick and run without any compilers. This chapter is dense and nerdy, but will explain part of the process and why Lua chooses to use that system. This chapter should probably be read on it’s own, as my notes will not be sufficient.">
+  <meta itemprop="datePublished" content="2025-05-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-05-08T00:00:00+00:00">
+  <meta itemprop="wordCount" content="952">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Lua">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Programming in Lua - Chapter 16">
+  <meta name="twitter:description" content="Compilation, Execution, and Errors Lua is an interpreted language. Regardless, Lua will always pre-compile source code to a temporary middle-form in the compilation phase. This is standard practice, but feels out of place knowing that interpreted languages are known to be quick and run without any compilers. This chapter is dense and nerdy, but will explain part of the process and why Lua chooses to use that system. This chapter should probably be read on it’s own, as my notes will not be sufficient.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-16/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Programming in Lua - Chapter 16">
+  <meta property="og:description" content="Compilation, Execution, and Errors Lua is an interpreted language. Regardless, Lua will always pre-compile source code to a temporary middle-form in the compilation phase. This is standard practice, but feels out of place knowing that interpreted languages are known to be quick and run without any compilers. This chapter is dense and nerdy, but will explain part of the process and why Lua chooses to use that system. This chapter should probably be read on it’s own, as my notes will not be sufficient.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-05-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-08T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Lua">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-05-08 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-16/">Programming in Lua - Chapter 16</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="compilation-execution-and-errors">Compilation, Execution, and Errors</h1>
+<p>Lua is an interpreted language. Regardless, Lua will always pre-compile source code to a temporary middle-form in the <em>compilation phase</em>. This is standard practice, but feels out of place knowing that interpreted languages are known to be quick and run without any compilers. This chapter is dense and nerdy, but will explain part of the process and why Lua chooses to use that system. This chapter should probably be read on it&rsquo;s own, as my notes will not be sufficient.</p>
+<h2 id="compilation">Compilation</h2>
+<p>Funnily enough, <code>dofile</code>, a function used just last chapter, is actually an <em>auxiliary function</em>; the work is being done by another function <code>loadfile</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">dofile</span> (filename)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> f <span style="color:#f92672">=</span> assert(loadfile(filename))
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> f()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p><code>loadfile</code> is nice because it does not raise errors, nut returns error codes instead, which is a nicer quality of life difference. <code>dofile</code> is great for quick and dirty uses, but for more flexibility and customization we can use <code>loadfile</code>. Part of that flexibility comes from returning not just <code>nil</code> if it errors, but the code as well. It&rsquo;s also significantly less costly, since we can call the returned variable from <code>loadfile</code> throughout a chunk as opposed to running <code>dofile</code> once per call.</p>
+<p>Another expensive call, <code>load</code> works similarly to <code>loadfile</code> except it&rsquo;s mainly used for reading from strings or functions;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>f <span style="color:#f92672">=</span> load(<span style="color:#e6db74">&#34;i = i + 1&#34;</span>)
+</span></span><span style="display:flex;"><span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>f(); print(i) <span style="color:#75715e">--&gt; 1</span>
+</span></span><span style="display:flex;"><span>f(); print(i) <span style="color:#75715e">--&gt; 2</span>
+</span></span></code></pre></div><p>This should be used with caution. The following line is not only faster but more intuitive to read personally;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>f <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () i <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>The following example will show another reason for <code>load</code> to not be your go to option;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>f <span style="color:#f92672">=</span> load(<span style="color:#e6db74">&#34;i = i + 1; print(i)&#34;</span>)
+</span></span><span style="display:flex;"><span>g <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () i <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>; print(i) <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>f() <span style="color:#75715e">--&gt; 33</span>
+</span></span><span style="display:flex;"><span>g() <span style="color:#75715e">--&gt; 1</span>
+</span></span></code></pre></div><p><code>load</code> will always access global variables, while functions will grab local. <code>load</code> is best used for running external code.</p>
+<h2 id="precompiled-code">Precompiled Code</h2>
+<p>We already know that Lua precompiles source code. Lua also allows for distributing code in precompiled forms, or <em>binary chunks</em>, is with the <code>luac</code> program built in. The following creates a <code>prog.lc</code> files using the precompiled version of <code>prog.lua</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>luac <span style="color:#f92672">-</span>o prog.lc prog.lua
+</span></span></code></pre></div><p>Precompiled code is not always smaller but always faster to run, and has the benefit of protecting against changes of sources. You should never run untrusted precompiled code, as that can lead to loads of different potential malicious injections.</p>
+<h2 id="errors">Errors</h2>
+<p>Due to the amount of applications that rely on Lua, crashes aren&rsquo;t desirable. We must be able to handle errors, which Lua does well. Anytime Lua runs into an unexpected condition it will raise an error, or you can directly call an error using the <code>error</code> function with some message for the error;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>print <span style="color:#e6db74">&#34;Give me a number please: &#34;</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">=</span> io.read(<span style="color:#e6db74">&#34;n&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> n <span style="color:#66d9ef">then</span> error(<span style="color:#e6db74">&#34;invalid input&#34;</span>) <span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Because this happens so often, Lua has a built-in function that can handle this for us, <code>assert</code>. It checks if the first argument is false, and if it is raises an error with the provided message;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>print <span style="color:#e6db74">&#34;Give me a number please: &#34;</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">=</span> assert(io.read(<span style="color:#e6db74">&#34;n&#34;</span>), <span style="color:#e6db74">&#34;invalid input&#34;</span>)
+</span></span></code></pre></div><p>Whenever running into <em>exceptions</em>, Lua has two ways of dealing with them, either returning an error code of <code>nil</code> or <code>false</code>, or raising an error. There is no explicit decision between the two, but the general rule is that <em>an exception that is easily avoided should raise an error; otherwise it should return an error code</em>.</p>
+<h2 id="error-handling-and-exceptions">Error Handling and Exceptions</h2>
+<p>Since Lua is used alongside other languages, often we don&rsquo;t need Lua to do any much handling. If we do want to handle errors, we should use <code>pcall</code> or a <em>protected call</em> to encapsulate our chunks.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> ok, msg <span style="color:#f92672">=</span> pcall(<span style="color:#66d9ef">function</span> ()
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>some code<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> unexpected_condition <span style="color:#66d9ef">then</span> error() <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>some code<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  print(a[i])
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>some code<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ok <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>regular code<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>error<span style="color:#f92672">-</span>handling code<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Now, if there are no errors, <code>pcall</code> returns <code>true</code> alongside any values returned by the call. Otherwise, it returns <code>false</code> with the corresponding error message.</p>
+<h2 id="error-messages-and-tracebacks">Error Messages and Tracebacks</h2>
+<p>We can use any value for an error message, not just strings. During an internal error, Lua will generate the default error object, a string. If it&rsquo;s not a string, it&rsquo;s the value passed to the function <code>error</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> status, err <span style="color:#f92672">=</span> pcall(<span style="color:#66d9ef">function</span> () error(<span style="color:#e6db74">&#34;my error&#34;</span>) <span style="color:#66d9ef">end</span>)
+</span></span><span style="display:flex;"><span>print(err) <span style="color:#75715e">--&gt; stdin:1: my error</span>
+</span></span></code></pre></div><p>Let&rsquo;s look at how Lua will handle the following;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo</span> (str)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> type(str) <span style="color:#f92672">~=</span> <span style="color:#e6db74">&#34;string&#34;</span> <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    error(<span style="color:#e6db74">&#34;string expected&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>regular code<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>If someone tries to make the following incorrect call;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>foo({x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>})
+</span></span></code></pre></div><p>Lua will think the error is <code>foo</code>&rsquo;s fault, rather than the person who made this call. We can fix this by appending 2 to the error call (<code>error(&quot;string expected&quot;, 2)</code>). This will let Lua know the error happened on level 2 instead of 1 (our function).</p>
+<p>A <em>traceback</em> is the collection of calls that lead to an error message. In order to retrieve this, we have to actually make it before the call to <code>pcall</code> returns it. We can use <code>xpcall</code> in this scenario, where the second argument is a message handler function designed to call before the stack unwinds, and collects all the relevant information on the error. The two message handlers provided by Lua are <code>debug.debug</code> and <code>debug.traceback</code>. The latter is more verbose and is used by the stand-alone interpreter by default.</p>
+<h3 id="exercises">Exercises</h3>
+<ol>
+<li>Write a function, <code>loadwithprefix</code>, that works like <code>load</code>, except it adds its extra first argument as a prefix to the chunk being loaded. It should call <code>load</code> that returns the prefix, then <code>load</code> for the remaining original chunk.</li>
+</ol>
+<hr>
+<p>Next:
+<a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-17/">Chapter 17</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/lua/">lua</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
