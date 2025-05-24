@@ -21,7 +21,7 @@
       <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---plugins/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---plugins/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;core-plugins&#34;&gt;Core Plugins&lt;/h1&gt;&#xA;&lt;p&gt;Out of the box, Obsidian has a plethora of usable features. Most you might never touch. Others will be ingrained in your workflow you&amp;rsquo;ll forget they&amp;rsquo;re plugins. This list is not extensive- like everything else, more detailed information can be found in their &lt;a href=&#34;https://help.obsidian.md/Plugins/Core&amp;#43;plugins&#34;&gt;documentation&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;outgoing-and-backlinks&#34;&gt;Outgoing and Backlinks&lt;/h2&gt;&#xA;&lt;p&gt;We already saw how powerful linking can be using Obsidian. Let&amp;rsquo;s define two specific types of links; &lt;strong&gt;outgoing links&lt;/strong&gt; and &lt;strong&gt;backlinks&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Backlinks&lt;/strong&gt; are a collection of notes that precede a given note. A note can have as many backlinks as there are references; there is no limit. You can view backlinks by default on your right-hand side bar.&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;core-plugins&#34;&gt;Core Plugins&lt;/h1&gt;&#xA;&lt;p&gt;Out of the box, Obsidian has a plethora of usable features. Most you might never touch. Others will be ingrained in your workflow you&amp;rsquo;ll forget they&amp;rsquo;re plugins. This list is not extensive- like everything else, more detailed information can be found in their &lt;a href=&#34;https://help.obsidian.md/Plugins/Core+plugins&#34;&gt;documentation&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;outgoing-and-backlinks&#34;&gt;Outgoing and Backlinks&lt;/h2&gt;&#xA;&lt;p&gt;We already saw how powerful linking can be using Obsidian. Let&amp;rsquo;s define two specific types of links; &lt;strong&gt;outgoing links&lt;/strong&gt; and &lt;strong&gt;backlinks&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Backlinks&lt;/strong&gt; are a collection of notes that precede a given note. A note can have as many backlinks as there are references; there is no limit. You can view backlinks by default on your right-hand side bar.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian Help - Editing and Formatting</title>
@@ -77,7 +77,7 @@
       <link>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/obsidian/beginner-tutorial-for-obsidian-dataview/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=G8eOF61wmzI&amp;amp;t=669s&#34;&gt;Link&lt;/a&gt; to the video.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=G8eOF61wmzI&amp;t=669s&#34;&gt;Link&lt;/a&gt; to the video.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Templater Formatting Notes</title>

@@ -25,6 +25,8 @@ Layer Name Protocol Protocol Data Unit Addressing Application HTTP, SMTP, etc. M
 
 
 
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
 
 
 
@@ -235,7 +237,7 @@ provide us with internet access.</p>
 <p><em>UTP</em>, or unshielded twisted pair, are common where the previous three issues aren&rsquo;t a big deal. If they are, you would use either a shielded twisted pair (<em>STP</em>) that uses braided aluminum and/or copper shield around all four twisted pairs, or a foiled shielded pair (<em>FTP</em>) that uses thin foil shielding to wrap around the pairs.</p>
 <p><strong>Straight-through cables</strong> are the types of cables you see everyday, as they connect computers to routers. The colors on straight-through cables are different depending on the communication, and are consistent from end to end (two dedicated to sending, two to receiving).</p>
 <p>The form factor or name we use for the ports of these cables are <em>RJ 45</em>. RJ 45 ports fit RJ 45 plugs, and the ports often have LED&rsquo;s indicating what&rsquo;s going on. Usually, the top left is yellow and indicates a connection and the top right is green indicating transfer of data.</p>
-<p><a href="https://www.youtube.com/watch?v=aFsSg5mA7Uk&amp;t=1009s">This</a> is a really awesome video on how to actually strip, cut, and crimp a wire for RJ 45.</p>
+<p><a href="https://www.youtube.com/watch?v=aFsSg5mA7Uk&t=1009s">This</a> is a really awesome video on how to actually strip, cut, and crimp a wire for RJ 45.</p>
 <h2 id="data-link-layer">Data Link Layer</h2>
 <p>Since we&rsquo;re using Ethernet cables for communication, I think it makes sense to call the protocol in which you send and receive data over them <em>Ethernet</em>. The Data Link Layer really helps the following layers out, by standardizing the information being received regardless of the type of machine it&rsquo;s coming from, <em>abstracting out the complexity of the physical layer</em>.</p>
 <p>What makes Ethernet so special is it&rsquo;s ability to take in information from a wired or wireless connection and make it accessible regardless. It also evolved the way computer networks function, by reducing the amount of crosstalk and other previous issues by introducing a standard called <em>carrier sense multiple access with collision detection</em>, or much simply <strong>CSMA/CD</strong>. Basically, it can determine when a channel or line of communication is open and free of use, to avoid collision or unintelligible data.</p>

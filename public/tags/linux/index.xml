@@ -21,7 +21,7 @@
       <link>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HbgzrKJvDRw&amp;amp;list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&amp;amp;index=21&#34;&gt;Link&lt;/a&gt; to video.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Unlike Windows, the Linux file system is structured a lot differently.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;/bin&lt;/strong&gt; is the directory containing &amp;ldquo;binaries&amp;rdquo;, just another word for programs or applications. /bin contains programs like &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, and all sorts of others.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;/sbin&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HbgzrKJvDRw&amp;list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&amp;index=21&#34;&gt;Link&lt;/a&gt; to video.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Unlike Windows, the Linux file system is structured a lot differently.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;/bin&lt;/strong&gt; is the directory containing &amp;ldquo;binaries&amp;rdquo;, just another word for programs or applications. /bin contains programs like &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, and all sorts of others.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;/sbin&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Start a Homelab for $0</title>
