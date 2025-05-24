@@ -45,10 +45,24 @@
       <description></description>
     </item>
     <item>
+      <title>Me</title>
+      <link>http://localhost:1313/tags/me/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/me/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Philosophy</title>
       <link>http://localhost:1313/tags/philosophy/</link>
       <pubDate>Mon, 01 Jan 1883 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Entertainment</title>
+      <link>http://localhost:1313/tags/entertainment/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/entertainment/</guid>
       <description></description>
     </item>
     <item>
@@ -63,13 +77,6 @@
       <link>http://localhost:1313/tags/python/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Me</title>
-      <link>http://localhost:1313/tags/me/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/me/</guid>
       <description></description>
     </item>
     <item>
@@ -301,13 +308,6 @@
       <link>http://localhost:1313/tags/sorting/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/sorting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Entertainment</title>
-      <link>http://localhost:1313/tags/entertainment/</link>
-      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/entertainment/</guid>
       <description></description>
     </item>
     <item>

@@ -35,7 +35,13 @@
     <loc>http://localhost:1313/tags/textbook/</loc>
     <lastmod>2025-05-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/me/</loc>
+    <lastmod>2025-05-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-16/</loc>
+    <lastmod>2025-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/textbooks/</loc>
     <lastmod>2025-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/philosophy/</loc>
@@ -49,6 +55,15 @@
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-15/</loc>
     <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/computer-science/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/entertainment/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/entertainment/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/fantasy/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
@@ -78,9 +93,6 @@
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/lua-isms/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/me/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/neovim/</loc>
@@ -482,9 +494,6 @@
     <loc>http://localhost:1313/projects/30-day-coding-challenge/week-1/day-2/</loc>
     <lastmod>2024-11-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/entertainment/</loc>
-    <lastmod>2024-11-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/</loc>
     <lastmod>2024-11-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -525,9 +534,6 @@
     <lastmod>2024-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/internet-and-it/</loc>
-    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/computer-science/textbooks/</loc>
     <lastmod>2024-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/</loc>
@@ -709,9 +715,6 @@
   </url><url>
     <loc>http://localhost:1313/projects/private-gpt/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/computer-science/</loc>
-    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-3/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
@@ -961,9 +964,6 @@
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/</loc>
     <lastmod>2024-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/entertainment/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
