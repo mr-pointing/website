@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NumPy Notes on Mr. Pointing</title>
-    <link>http://localhost:1313/notes/computer-science/python/numpy-notes/</link>
+    <link>https://mrpointing.com/notes/computer-science/python/numpy-notes/</link>
     <description>Recent content in NumPy Notes on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/computer-science/python/numpy-notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/notes/computer-science/python/numpy-notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NumPy Quickstart</title>
-      <link>http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/numpy-notes/numpy-quickstart/</link>
       <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/numpy-notes/numpy-quickstart/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://numpy.org/doc/stable/user/quickstart.html&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h1&gt;&#xA;&lt;p&gt;What should you know to get the most out of this lesson? At the very least, the fundamentals of Python. You should also refer to &lt;a href=&#34;http://localhost:1313/notes/computer-science/python/numpy-notes/what-is-numpy/&#34;&gt;this&lt;/a&gt; to get a fundamental understanding of the reasons why we&amp;rsquo;d want to use &lt;code&gt;ndarray&lt;/code&gt; in the first place.&lt;/p&gt;&#xA;&lt;p&gt;What are we doing this lesson then? We&amp;rsquo;re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on &lt;code&gt;ndarray&lt;/code&gt; objects &lt;em&gt;without&lt;/em&gt; &lt;code&gt;for&lt;/code&gt; loops, and even more advanced things like what axis and shape properties are.&lt;/p&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/python/numpy-notes/numpy-quickstart/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://numpy.org/doc/stable/user/quickstart.html&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h1&gt;&#xA;&lt;p&gt;What should you know to get the most out of this lesson? At the very least, the fundamentals of Python. You should also refer to &lt;a href=&#34;https://mrpointing.com/notes/computer-science/python/numpy-notes/what-is-numpy/&#34;&gt;this&lt;/a&gt; to get a fundamental understanding of the reasons why we&amp;rsquo;d want to use &lt;code&gt;ndarray&lt;/code&gt; in the first place.&lt;/p&gt;&#xA;&lt;p&gt;What are we doing this lesson then? We&amp;rsquo;re going to learn about what one, two, and $n$ dimensional arrays actually are, some algebra operations on &lt;code&gt;ndarray&lt;/code&gt; objects &lt;em&gt;without&lt;/em&gt; &lt;code&gt;for&lt;/code&gt; loops, and even more advanced things like what axis and shape properties are.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is NumPy</title>
-      <link>http://localhost:1313/notes/computer-science/python/numpy-notes/what-is-numpy/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/numpy-notes/what-is-numpy/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/numpy-notes/what-is-numpy/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/numpy-notes/what-is-numpy/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://numpy.org/doc/stable/&#34;&gt;Link&lt;/a&gt; to documentation&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;what-is-numpy&#34;&gt;What is NumPy?&lt;/h1&gt;&#xA;&lt;p&gt;Python lists are great- easy to use, easy to understand, and perfect for quick one-and-done scenarios. However, there is a huge downside to lists. In most cases, since lists can accept any data type by default, this leaves lists open to unexpected data types you might not want around your list data.&lt;/p&gt;&#xA;&lt;p&gt;NumPy is a solution to this issue, specifically in the realm of scientific computing. It&amp;rsquo;s primary use is for it&amp;rsquo;s &lt;em&gt;multidimensional array objects&lt;/em&gt; and &lt;em&gt;assortment of fast methods for arrays&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

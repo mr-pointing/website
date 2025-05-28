@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lua-isms on Mr. Pointing</title>
-    <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/lua-isms/</link>
+    <link>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/</link>
     <description>Recent content in Lua-isms on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/lua-isms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Programming in Lua - Chapter 18</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-18/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-18/</link>
       <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-18/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-18/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;iterators-and-the-generic-for&#34;&gt;Iterators and the Generic &lt;code&gt;for&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s learn how to make our own &lt;em&gt;Iterators&lt;/em&gt; in Lua. We&amp;rsquo;ll accomplish this by taking a look at the &lt;code&gt;for&lt;/code&gt; loop in more detail; more specifically, the &lt;strong&gt;generic&lt;/strong&gt; &lt;code&gt;for&lt;/code&gt; loop.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iterators-and-closures&#34;&gt;Iterators and Closures&lt;/h2&gt;&#xA;&lt;p&gt;We consider an iterator to be any construction that will allow is to iterate over the elements within some collection of objects. Most commonly we use functions to accomplish this. We make calls to the function when we want the next item, and so on. We&amp;rsquo;ve seen this with &lt;code&gt;io.read&lt;/code&gt; in the past.&lt;/p&gt;</description>
     </item>
   </channel>

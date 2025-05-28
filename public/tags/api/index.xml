@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/api/</link>
+    <link>https://mrpointing.com/tags/api/</link>
     <description>Recent content in Api on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blinker</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://blinker.readthedocs.io/en/stable/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Click</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/click/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/click/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://click.palletsprojects.com/en/8.1.x/&#34;&gt;Link&lt;/a&gt; to the documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Jinja</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jinja.palletsprojects.com/en/3.1.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Werkzeug</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://werkzeug.palletsprojects.com/en/3.0.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;First of all, what is WSGI?&lt;/p&gt;&#xA;&lt;p&gt;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Designing a RESTful API</title>
-      <link>http://localhost:1313/projects/designing-a-restful-api/</link>
+      <link>https://mrpointing.com/projects/designing-a-restful-api/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
+      <guid>https://mrpointing.com/projects/designing-a-restful-api/</guid>
       <description>&lt;p&gt;Modified: August 02 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Watched &lt;a href=&#34;https://www.youtube.com/watch?v=-mN3VyJuCjM&#34;&gt;this&lt;/a&gt; video to take some notes on what REST is.&lt;/p&gt;&#xA;&lt;p&gt;API: Application Programming Interface, is how to computers can communicate with each other.&lt;/p&gt;&#xA;&lt;p&gt;Client sends a Request to the server, server sends a response back to the client.&lt;/p&gt;&#xA;&lt;p&gt;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&lt;/p&gt;&#xA;&lt;p&gt;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.&lt;/p&gt;</description>
     </item>
   </channel>

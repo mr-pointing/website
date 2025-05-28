@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Science on Mr. Pointing</title>
-    <link>http://localhost:1313/notes/computer-science/</link>
+    <link>https://mrpointing.com/notes/computer-science/</link>
     <description>Recent content in Computer Science on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/notes/computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Engineer Roadmap</title>
-      <link>http://localhost:1313/notes/computer-science/ai-engineer-roadmap/</link>
+      <link>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/ai-engineer-roadmap/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/ai-engineer-roadmap/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;A resource by &lt;a href=&#34;https://youtube.com/code_basics&#34;&gt;Code Basics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll see how this works. Starting in June of 2024, I plan to get myself prepared for a new career after another year of teaching. Pretty much; I want to find a job ideally that starts in the late summer of next year.&lt;/p&gt;&#xA;&lt;p&gt;Week 0 is stupid lol.&lt;/p&gt;&#xA;&lt;h2 id=&#34;week-1-and-2-62---617&#34;&gt;&lt;strong&gt;Week 1 and 2 (6/2 - 6/17)&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;I have a masters degree in this subject. I think I can handle a khan academy course and going through the entire Python documentation in two weeks. Or at least I hope I can.&lt;/p&gt;</description>
     </item>
   </channel>

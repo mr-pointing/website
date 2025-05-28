@@ -2,151 +2,151 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/algorithms/</link>
+    <link>https://mrpointing.com/tags/algorithms/</link>
     <description>Recent content in Algorithms on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Grokking Algorithms - Chapter 13</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;where-to-go-next&#34;&gt;Where To Go Next&lt;/h1&gt;&#xA;&lt;p&gt;What a journey this has been! The next few sections are light on detail, and geared more towards exposure. Please feel free to dive into each of these topics on your own, as each is large enough to devote an entire chapter to.&lt;/p&gt;&#xA;&lt;h2 id=&#34;linear-regression&#34;&gt;Linear Regression&lt;/h2&gt;&#xA;&lt;p&gt;Given a data set of points, a line of best fit is generated to make predictions. This is one of the first topics covered when you begin learning about Machine Learning (due to how easy it is to set up), so you&amp;rsquo;re likely going to have first hand experience with this soon enough.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 12</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;k-nearest-neighbor&#34;&gt;K-Nearest Neighbor&lt;/h1&gt;&#xA;&lt;p&gt;K-nearest neighbor, or simply &lt;em&gt;KNN&lt;/em&gt;, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it&amp;rsquo;s something best understood visually. Let&amp;rsquo;s use one of the most common examples, classifying fruit;&lt;/p&gt;&#xA;&#xA;    &lt;img src=&#34;http://localhost:1313/images/knn.png&#34;  alt=&#34;knn&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;In the above example, the orange marks indicate an orange, and the red marks indicate an apple. Now, we could use this graph to classify the next fruit I get. If I find a place to put it, we can look at that new point&amp;rsquo;s neighbors to classify what kind of fruit it must be.&lt;/p&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;k-nearest-neighbor&#34;&gt;K-Nearest Neighbor&lt;/h1&gt;&#xA;&lt;p&gt;K-nearest neighbor, or simply &lt;em&gt;KNN&lt;/em&gt;, is a classification algorithm. Whenever we are given a set of data, given the unique attributes of that dataset, we can plot it on a graph. Like most things from this text, it&amp;rsquo;s something best understood visually. Let&amp;rsquo;s use one of the most common examples, classifying fruit;&lt;/p&gt;&#xA;&#xA;    &lt;img src=&#34;https://mrpointing.com/images/knn.png&#34;  alt=&#34;knn&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;In the above example, the orange marks indicate an orange, and the red marks indicate an apple. Now, we could use this graph to classify the next fruit I get. If I find a place to put it, we can look at that new point&amp;rsquo;s neighbors to classify what kind of fruit it must be.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 10</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/</link>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-10/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;greedy-algorithms&#34;&gt;Greedy Algorithms&lt;/h1&gt;&#xA;&lt;p&gt;A simpler concept than the last few we just tackled, &lt;em&gt;Greedy Algorithms&lt;/em&gt; are algorithms that pick the most optimal movement at each step. This seems vague, and it is! You are literally just picking the most &lt;em&gt;locally optimal solution&lt;/em&gt;, or the best choice, until you&amp;rsquo;re left with the &lt;em&gt;globally optimal solution&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;If you have a day where you&amp;rsquo;re trying to schedule classes &amp;amp; have as many as you possibly can, taking up your entire schedule. How would you plan your day? The major issue is that the classes times overlap; some start while others are still going, etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 11</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-11/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-11/</link>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-11/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-11/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;dynamic-programming&#34;&gt;Dynamic Programming&lt;/h1&gt;&#xA;&lt;p&gt;The knapsack problem is coming back; this time with a vengeance. This time around, we have the same items, but we have a &lt;em&gt;&lt;strong&gt;four&lt;/strong&gt;&lt;/em&gt; pound limit in our bag. The Switch is $1500 and 1 pound, the P.C. is $3000 and 4 pounds, and the laptop is $2000 and 3 pounds.&lt;/p&gt;&#xA;&lt;p&gt;If we went with the most simple solution, we could just add up all possible combinations and pick the best. For 3 items, it&amp;rsquo;s no big deal. There are only 8 sets of possible combinations; easy to walk through. However, increasing from there is &lt;em&gt;incredibly&lt;/em&gt; slow ($2^n$), so past 10 items it begins to become massive amounts of processing power to produce an answer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 8</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/</link>
       <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-8/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;balanced-trees&#34;&gt;Balanced Trees&lt;/h1&gt;&#xA;&lt;p&gt;From on out, if an array or linked list isn&amp;rsquo;t enough, a tree should be our next structure to try. It&amp;rsquo;s a balancing act to choose between both, especially for run time. Binary Search Trees are great, especially for insertion.&lt;/p&gt;&#xA;&lt;p&gt;Remember, arrays take longer to insert than linked lists, but provide faster sorts. &lt;em&gt;Binary Search Trees&lt;/em&gt; optimize by providing a clear and easy to understand structure: a root node with values larger to their right, and smaller to the left. This makes searches incredibly fast.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 9</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/</link>
       <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;dijkstras-algorithm&#34;&gt;Dijkstra&amp;rsquo;s Algorithm&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Dijkstra&amp;rsquo;s Algorithm&lt;/em&gt; calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:&lt;/p&gt;&#xA;&#xA;    &lt;img src=&#34;http://localhost:1313/images/weighted_graph.png&#34;  alt=&#34;weighted_graph&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;From what we know of BFS, we can assume it would probably return &amp;ldquo;Start -&amp;gt; A -&amp;gt; Finish&amp;rdquo; as the shortest path. without weights, that makes perfect sense. However, that has a cost of 7 (7 minutes). Isn&amp;rsquo;t there a cheaper way to get there? We&amp;rsquo;ll see in a second how Dijkstra&amp;rsquo;s algorithm calculates this for us.&lt;/p&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-9/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;dijkstras-algorithm&#34;&gt;Dijkstra&amp;rsquo;s Algorithm&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Dijkstra&amp;rsquo;s Algorithm&lt;/em&gt; calculates the shortest path on a weighted graph. Unlike Breadth-first search, every step we take has some cost associated with it that we have to take into account. Just like last chapter, we can use graphs to help us get a better understanding:&lt;/p&gt;&#xA;&#xA;    &lt;img src=&#34;https://mrpointing.com/images/weighted_graph.png&#34;  alt=&#34;weighted_graph&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;From what we know of BFS, we can assume it would probably return &amp;ldquo;Start -&amp;gt; A -&amp;gt; Finish&amp;rdquo; as the shortest path. without weights, that makes perfect sense. However, that has a cost of 7 (7 minutes). Isn&amp;rsquo;t there a cheaper way to get there? We&amp;rsquo;ll see in a second how Dijkstra&amp;rsquo;s algorithm calculates this for us.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 7</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/</link>
       <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-7/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;trees&#34;&gt;Trees&lt;/h1&gt;&#xA;&lt;p&gt;A subset of graphs, &lt;em&gt;trees&lt;/em&gt; are similarly made with nodes and edges and come in multiple different varieties. The first tree we are going to look at is the rooted tree, which is quite easy to visualize.&lt;/p&gt;&#xA;&lt;p&gt;Rooted trees must have one node that heads to all other nodes in the tree. Nodes have at most one parent, and the only node with no parent is known as the &lt;em&gt;root&lt;/em&gt; node. Nodes with no children are called &lt;em&gt;leaf&lt;/em&gt; nodes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 6</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;breadth-first-search&#34;&gt;Breadth-First Search&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Graphs&lt;/em&gt; are the next data structure we are going to learn. &lt;strong&gt;Breadth-first search&lt;/strong&gt; is the first graphing algorithm we&amp;rsquo;ll take a look at, and will give us the ability to find the shortest distance between two points.&lt;/p&gt;&#xA;&lt;p&gt;There are many use cases for BFS:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Spell checker&lt;/li&gt;&#xA;&lt;li&gt;Finding nearby doctors/hospitals&lt;/li&gt;&#xA;&lt;li&gt;Search engines&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Graphs come in many different forms. One of the easiest ways to visualize is with locations:&lt;/p&gt;&#xA;&#xA;    &lt;img src=&#34;http://localhost:1313/images/location_graph.png&#34;  alt=&#34;location_graph&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;The arrows are only pointing in one direction, indicating this is a start to finish graph. We start in the Bronx, and want to end in Long Island. How many possible paths do we have there?&lt;/p&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-6/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;breadth-first-search&#34;&gt;Breadth-First Search&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Graphs&lt;/em&gt; are the next data structure we are going to learn. &lt;strong&gt;Breadth-first search&lt;/strong&gt; is the first graphing algorithm we&amp;rsquo;ll take a look at, and will give us the ability to find the shortest distance between two points.&lt;/p&gt;&#xA;&lt;p&gt;There are many use cases for BFS:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Spell checker&lt;/li&gt;&#xA;&lt;li&gt;Finding nearby doctors/hospitals&lt;/li&gt;&#xA;&lt;li&gt;Search engines&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Graphs come in many different forms. One of the easiest ways to visualize is with locations:&lt;/p&gt;&#xA;&#xA;    &lt;img src=&#34;https://mrpointing.com/images/location_graph.png&#34;  alt=&#34;location_graph&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;The arrows are only pointing in one direction, indicating this is a start to finish graph. We start in the Bronx, and want to end in Long Island. How many possible paths do we have there?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 5</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;hash-tables&#34;&gt;Hash Tables&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Hash tables&lt;/em&gt; are the more formal term for Python&amp;rsquo;s Dictionary structure; a key-value pairing of elements. &lt;em&gt;Hash functions&lt;/em&gt; are any function that does the mapping of a value to an input.&lt;/p&gt;&#xA;&lt;p&gt;Two main rules when implementing hash tables:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Pairings should be consistent&lt;/li&gt;&#xA;&lt;li&gt;Key&amp;rsquo;s should be unique&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 4</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-4/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-4/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-4/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;quicksort&#34;&gt;Quicksort&lt;/h1&gt;&#xA;&lt;h2 id=&#34;divide-and-conquer&#34;&gt;Divide and Conquer&lt;/h2&gt;&#xA;&lt;p&gt;To introduce another tool into our algorithm toolbox, we can introduce &lt;strong&gt;Divide &amp;amp; Conquer&lt;/strong&gt;, a useful method to recursively solve problems. Just like we learned in recursion, we need to identify our base case. Then we &lt;em&gt;divide&lt;/em&gt; our problem into smaller problems, until we eventually reach our base case.&lt;/p&gt;&#xA;&lt;p&gt;We can use the example of a plot of land:&lt;/p&gt;&#xA;&#xA;    &lt;img src=&#34;http://localhost:1313/images/plot_of_land_base.png&#34;  alt=&#34;plot_of_land_base&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;If we wanted to divide our land into perfectly even square boxes, making sure to use all available land with no land left out. How would you begin to figure this out?&lt;/p&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-4/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;quicksort&#34;&gt;Quicksort&lt;/h1&gt;&#xA;&lt;h2 id=&#34;divide-and-conquer&#34;&gt;Divide and Conquer&lt;/h2&gt;&#xA;&lt;p&gt;To introduce another tool into our algorithm toolbox, we can introduce &lt;strong&gt;Divide &amp;amp; Conquer&lt;/strong&gt;, a useful method to recursively solve problems. Just like we learned in recursion, we need to identify our base case. Then we &lt;em&gt;divide&lt;/em&gt; our problem into smaller problems, until we eventually reach our base case.&lt;/p&gt;&#xA;&lt;p&gt;We can use the example of a plot of land:&lt;/p&gt;&#xA;&#xA;    &lt;img src=&#34;https://mrpointing.com/images/plot_of_land_base.png&#34;  alt=&#34;plot_of_land_base&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xA;&#xA;&#xA;&lt;p&gt;If we wanted to divide our land into perfectly even square boxes, making sure to use all available land with no land left out. How would you begin to figure this out?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 3</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-3/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;recursion&#34;&gt;Recursion&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Recursion&lt;/em&gt;, or the process of a sub-program calling itself, is a reoccurring concept in many different algorithms, and a foundational topic in computer science.&lt;/p&gt;&#xA;&lt;p&gt;It &lt;em&gt;is&lt;/em&gt; a hard topic to understand, but not super complicated. All code examples should be ran and written yourself to gain a full understanding.&lt;/p&gt;&#xA;&lt;p&gt;Pseudocode is another term you should familiarize yourself with, since it will be used both by this book and by myself. Pseudocode refers to the code or instruction of a given program written out in plain English, usually written before any code is ran to ensure the logic is sound.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 2</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</link>
       <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-2/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;selection-sort&#34;&gt;Selection Sort&lt;/h1&gt;&#xA;&lt;p&gt;Before going into choosing an array vs. a linked list, let&amp;rsquo;s do a quick lesson on memory.&lt;/p&gt;&#xA;&lt;p&gt;Think of your computers memory like a dresser full of small drawers. When you want to store a value, in a variable, that variable name is given an address, and whatever value is stored inside of it. Incredibly simple for single value variables- but what about multiple items? This is where picking an array or a linked list comes in.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;second-edition&#34;&gt;Second Edition&lt;/h2&gt;&#xA;&lt;h3 id=&#34;by-aditya-y-bhargava&#34;&gt;By Aditya Y. Bhargava&lt;/h3&gt;&#xA;&lt;p&gt;Not only is this book incredibly easy to follow, but it requires very little in terms of prerequisites. The most you need to know is a basic understanding of Python and Algebra.&lt;/p&gt;&#xA;&lt;p&gt;This book is for people who already know how to code, hobbyists, visual learners, or anyone who wants to learn algorithms without a rigorous mathematical foundation.&lt;/p&gt;&#xA;&lt;p&gt;Code for all chapters can be found &lt;a href=&#34;https://github.com/egonSchiele/grokking_algorithms&#34;&gt;here&lt;/a&gt;. All examples are given in Python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grokking Algorithms - Chapter 1</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;introduction-to-algorithms&#34;&gt;Introduction to Algorithms&lt;/h1&gt;&#xA;&lt;p&gt;An &lt;em&gt;algorithm&lt;/em&gt; is simply a set of instructions or code designed in a way to accomplish a specific task. Tasks range from solving a math problem, to how to make decision given a specific scenario.&lt;/p&gt;&#xA;&lt;p&gt;All the algorithms featured in this text are fast, solve interesting problems, or even both. The text will introduce an algorithm, give an example, and discuss the running time in Big O (we&amp;rsquo;ll get back to this in a second).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Appendix A</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/appendix-a/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/appendix-a/</link>
       <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/appendix-a/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/appendix-a/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;summations&#34;&gt;Summations&lt;/h1&gt;&#xA;&lt;p&gt;As we know, we analyze algorithms by their running time. When algorithms use for or while loops (iterative structures), the running time is expressed as the &lt;strong&gt;sum of all the times spent on execution&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;summation-formulas-and-properties&#34;&gt;Summation Formulas and Properties&lt;/h2&gt;&#xA;&lt;p&gt;Say we have $a_1,a_2,&amp;hellip;a_n$ numbers, what we call a &lt;em&gt;sequence&lt;/em&gt;. While $n$ is a non-negative integer, we can say the sum of that set is $\sum_{k=1}^{n}a_k$.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If $n=0$, value is 0.&lt;/li&gt;&#xA;&lt;li&gt;The value of a finite series is always well-defined&lt;/li&gt;&#xA;&lt;li&gt;Order terms are added in doesn&amp;rsquo;t matter (what di I mean with this? who knows)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We might also have an infinite sequence, the infinite sum could be written as $\sum_{k=1}^{\infty}a_k$, or $lim_{n-&amp;gt;\infty}\sum_{k=1}^{n}a_k$.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Algorithms</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/</link>
       <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/</guid>
       <description>&lt;p&gt;Created: July 17 2024&#xA;Modified: August 02 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;fourth-edition&#34;&gt;Fourth Edition&lt;/h2&gt;&#xA;&lt;h3 id=&#34;thomas-h-cormen-charles-e-leiserson-ronald-l-rivest-clifford-stein&#34;&gt;Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein&lt;/h3&gt;&#xA;&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;&#xA;&lt;p&gt;Algorithms are everywhere, apart of almost everything we do, and every decision we make. They are part of most if not all tech stacks used today.&lt;/p&gt;&#xA;&lt;p&gt;Each chapter in this book will present an algorithm, an application area for some algorithm, or some other related topic.&lt;/p&gt;&#xA;&lt;h3 id=&#34;for-teaching-purposes&#34;&gt;For teaching purposes&lt;/h3&gt;&#xA;&lt;p&gt;The less complex the audience, the less complex chapters you need. You can pick and choose what you want to take from this, being so comprehensive of a text. Even a section instead of a whole chapter is completely viable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 3</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</link>
       <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-3/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;characterizing-running-times&#34;&gt;Characterizing Running Times&lt;/h1&gt;&#xA;&lt;p&gt;As we saw in Chapter 2, order of growth gives us the ability to quantify the effectiveness of our algorithms, and compare them.&lt;/p&gt;&#xA;&lt;p&gt;Us studying these algorithms at large enough input sizes is us studying the &lt;strong&gt;asymptotic efficiency&lt;/strong&gt; of an algorithm. We can say an algorithm that is &amp;ldquo;&lt;em&gt;more asymptotically efficient&lt;/em&gt;&amp;rdquo; is the better choice for most cases, save small inputs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;o-notation-theta-notation-and-omega-notation&#34;&gt;O-notation, $\Theta$-notation, and $\Omega$-notation&lt;/h2&gt;&#xA;&lt;p&gt;We already met $\Theta$-notation in chapter 2; this is a type of asymptotic notation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 2</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</link>
       <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-2/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;getting-sorted&#34;&gt;Getting Sorted&lt;/h2&gt;&#xA;&lt;p&gt;This chapter is meant to familiarize yourself with the framework used throughout the book.&lt;/p&gt;&#xA;&lt;h2 id=&#34;21-insertion-sort&#34;&gt;2.1 Insertion Sort&lt;/h2&gt;&#xA;&lt;p&gt;Solves a sorting problem (obviously).&lt;/p&gt;&#xA;&lt;p&gt;The numbers to be sorted are known as &lt;em&gt;keys&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The input comes in the form of an array with &lt;code&gt;n&lt;/code&gt; elements.&lt;/p&gt;&#xA;&lt;p&gt;A reason to sort is often because those keys are associated with other data, &lt;em&gt;Satellite data&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Key + Satellite = &lt;em&gt;Record&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;We can think of a spreadsheet, with student records having many pieces of data. Any piece can be the key; whatever the key is, is how the record is sorted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Chapter 1</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/part-1/introduction-to-algorithms---chapter-1/</guid>
       <description>&lt;p&gt;Modified: August 02 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-role-of-algorithms-in-computing&#34;&gt;The Role of Algorithms in Computing&lt;/h2&gt;&#xA;&lt;h2 id=&#34;11-algorithms&#34;&gt;1.1 Algorithms&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Algorithm:&lt;/strong&gt; Any well defined computational procedure that takes some value, or set of values, as &lt;em&gt;input&lt;/em&gt; and produces some value, or set of values, as &lt;em&gt;output&lt;/em&gt; in a finite amount of time.&lt;/p&gt;&#xA;&lt;p&gt;We often say algorithms help us solve computational problems.&lt;/p&gt;&#xA;&lt;p&gt;We can define a sorting algorithm like so:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; A sequence of &lt;em&gt;n&lt;/em&gt; numbers, &lt;code&gt;{a_1, a_2, ... a_n}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Algorithms - Part 1</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/part-1/</link>
       <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/introduction-to-algorithms/part-1/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/introduction-to-algorithms/part-1/</guid>
       <description>&lt;p&gt;Modified: August 02 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Notes on Part 1.&lt;/p&gt;</description>
     </item>
   </channel>

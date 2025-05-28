@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -11,7 +11,7 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
 <meta name="keywords" content="homepage, blog, computerscience, nvim, text_editor" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/notes/computer-science/neovim/advent-of-neovim/" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/neovim/advent-of-neovim/" />
 
 
     <title>
@@ -51,18 +51,18 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
   <meta itemprop="datePublished" content="2025-04-10T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-04-10T00:00:00+00:00">
   <meta itemprop="wordCount" content="261">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Nvim,Text_editor">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="Advent of Neovim">
   <meta name="twitter:description" content="I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ’s videos. For now, I’ll keep all the videos here separated by headings.
 Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet, but any new commands will open in the second area Use :q to go back to just one Use :e . to open a file manager Use :echo nvim_list_runtime_paths() to list run time paths (lol) Configuring More Neovim Options Set vim.opt.shiftwidth to a number to set spaces used after carriage return Use the /after/ftplugin/ directory to store .lua files for each language you want local options for. For Lua, we probably want to make a lua.lua file and set vim.opt_local.shiftwidth = 2 To set numbers on the left hand side and the relative position, use; vim.opt.number = true vim.opt.relativenumber = true A neat trick he does in the local files is use the following to make things nicer to read/write; local set = vim.opt_local set.shiftwidth = 2 set.number = true Treesitter Basics vim.opt.clipboard = &#34;unnamedplus&#34; allows for pasting into Neovim LSP in Neovim =g to format a file K for a hover over a function Ctrl&#43;] to find the root of a function/variable/path/etc. grn to rename all instances of a name :help lsp for more info on these Telescope Introduction You can use Ctrl&#43;/ to bring up the movement guide while in a telescope window Ctrl&#43;n to move forward, Ctrl-p to move backwards">
 
 
 
-    <meta property="og:url" content="http://localhost:1313/notes/computer-science/neovim/advent-of-neovim/">
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/neovim/advent-of-neovim/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Advent of Neovim">
   <meta property="og:description" content="I found myself using the Neovim Tutor note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ’s videos. For now, I’ll keep all the videos here separated by headings.
@@ -75,7 +75,7 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
     <meta property="article:tag" content="Computerscience">
     <meta property="article:tag" content="Nvim">
     <meta property="article:tag" content="Text_editor">
-    <meta property="og:image" content="http://localhost:1313/">
+    <meta property="og:image" content="https://mrpointing.com/">
 
 
 
@@ -151,7 +151,7 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
         </div>
 
         <article>
-            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/neovim/advent-of-neovim/">Advent of Neovim</a></h2>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/neovim/advent-of-neovim/">Advent of Neovim</a></h2>
 
             
             
@@ -159,7 +159,7 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
 
             <div class="post-content">
                 <hr>
-<p>I found myself using the <a href="http://localhost:1313/notes/computer-science/neovim/neovim-tutor/">Neovim Tutor</a> note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ&rsquo;s videos. For now, I&rsquo;ll keep all the videos here separated by headings.</p>
+<p>I found myself using the <a href="https://mrpointing.com/notes/computer-science/neovim/neovim-tutor/">Neovim Tutor</a> note quite often, so I wanted to also document the other tips and tricks I pick up along the way of watching TJ&rsquo;s videos. For now, I&rsquo;ll keep all the videos here separated by headings.</p>
 <h2 id="lazynvim-explained">Lazy.nvim Explained</h2>
 <ul>
 <li>To open up a new tab, write <code>:new</code></li>
@@ -225,9 +225,9 @@ Lazy.nvim Explained To open up a new tab, write :new Not sure how to switch yet,
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/nvim/">nvim</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/text_editor/">text_editor</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/nvim/">nvim</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/text_editor/">text_editor</a></span>
         
     </p>
 

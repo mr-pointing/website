@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dictionaries on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/dictionaries/</link>
+    <link>https://mrpointing.com/tags/dictionaries/</link>
     <description>Recent content in Dictionaries on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/dictionaries/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/dictionaries/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Grokking Algorithms - Chapter 5</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-5/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;hash-tables&#34;&gt;Hash Tables&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Hash tables&lt;/em&gt; are the more formal term for Python&amp;rsquo;s Dictionary structure; a key-value pairing of elements. &lt;em&gt;Hash functions&lt;/em&gt; are any function that does the mapping of a value to an input.&lt;/p&gt;&#xA;&lt;p&gt;Two main rules when implementing hash tables:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Pairings should be consistent&lt;/li&gt;&#xA;&lt;li&gt;Key&amp;rsquo;s should be unique&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;The way these mappings work are complex, but essentially, when using Python, grabbing values from a dictionary is pretty fast and grants instant access.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Valid Sudoku</title>
-      <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/</link>
+      <link>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/</link>
       <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Question:&lt;/strong&gt;&lt;/em&gt; You are given a a &lt;code&gt;9 x 9&lt;/code&gt; Sudoku board &lt;code&gt;board&lt;/code&gt;. A Sudoku board is valid if the following rules are followed:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Each row must contain the digits &lt;code&gt;1-9&lt;/code&gt; without duplicates.&lt;/li&gt;&#xA;&lt;li&gt;Each column must contain the digits &lt;code&gt;1-9&lt;/code&gt; without duplicates.&lt;/li&gt;&#xA;&lt;li&gt;Each of the nine &lt;code&gt;3 x 3&lt;/code&gt; sub-boxes of the grid must contain the digits &lt;code&gt;1-9&lt;/code&gt; without duplicates.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Return &lt;code&gt;true&lt;/code&gt; if the Sudoku board is valid, otherwise return &lt;code&gt;false&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>13. Roman to Integer</title>
-      <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/</link>
+      <link>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/</link>
       <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/13.-roman-to-integer/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Question:&lt;/strong&gt;&lt;/em&gt; Roman numerals are represented by seven different symbols: &lt;code&gt;I&lt;/code&gt;, &lt;code&gt;V&lt;/code&gt;, &lt;code&gt;X&lt;/code&gt;, &lt;code&gt;L&lt;/code&gt;, &lt;code&gt;C&lt;/code&gt;, &lt;code&gt;D&lt;/code&gt; and &lt;code&gt;M&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Symbol&lt;/strong&gt;       &lt;strong&gt;Value&lt;/strong&gt;&#xA;I             1&#xA;V             5&#xA;X             10&#xA;L             50&#xA;C             100&#xA;D             500&#xA;M             1000&lt;/p&gt;&#xA;&lt;p&gt;For example, &lt;code&gt;2&lt;/code&gt; is written as &lt;code&gt;II&lt;/code&gt; in Roman numeral, just two ones added together. &lt;code&gt;12&lt;/code&gt; is written as &lt;code&gt;XII&lt;/code&gt;, which is simply &lt;code&gt;X + II&lt;/code&gt;. The number &lt;code&gt;27&lt;/code&gt; is written as &lt;code&gt;XXVII&lt;/code&gt;, which is &lt;code&gt;XX + V + II&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Valid Anagram</title>
-      <link>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-anagram/</link>
+      <link>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/valid-anagram/</link>
       <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/leet-and-neet-code-problems/valid-anagram/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/valid-anagram/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Question:&lt;/strong&gt;&lt;/em&gt; Given two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if the two strings are anagrams of each other, otherwise return &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;An &lt;strong&gt;anagram&lt;/strong&gt; is a string that contains the exact same characters as another string, but the order of the characters can be different.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;How to Solve:&lt;/strong&gt;&lt;/em&gt; We essentially need to compare two strings and see if the amount of characters are the same for each word. There are probably a few ways to do that, but I went for the extremely direct approach.&lt;/p&gt;</description>
     </item>
   </channel>

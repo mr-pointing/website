@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -12,7 +12,7 @@ Layer Name Protocol Protocol Data Unit Addressing Application HTTP, SMTP, etc. M
 <meta name="keywords" content="homepage, blog, computerscience, internet" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/" />
 
 
     <title>
@@ -52,18 +52,18 @@ Layer Name Protocol Protocol Data Unit Addressing Application HTTP, SMTP, etc. M
   <meta itemprop="datePublished" content="2024-10-23T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-10-23T00:00:00+00:00">
   <meta itemprop="wordCount" content="2983">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Internet">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="Introduction to Computer Networking">
   <meta name="twitter:description" content="TCP/IP and the Five Layer Network Model Below is a basic table outlining the five layers:
 Layer Name Protocol Protocol Data Unit Addressing Application HTTP, SMTP, etc. Messages n/a Transport TCP/UDP Segment Port #’s Network IP Packet/Datagram IP Addresses Data Link Ethernet, Wi-Fi Frames MAC Address Physical n/a Bits n/a Physical Layer: The actual computing device(s) and the cables that connect them, sends and receives signals Data Link Layer: Also known as the network access layer, it’s our first protocol to interpret signals sent from and to each computing device Ethernet is our first and most common protocol, which is responsible for transporting data across the network Network Layer: Also know as the internet layer, this layer is what actually allows the computing devices to communicate with each other. Helps the data move along from your computer to a server for a webpage or application. Routers are used to accomplish this. Routers with communication actually define a internetwork, and the largest and most popular of these is obviously, the internet. IP is the protocol the computing devices follow to ensure accurate travels through routers. Transport Layer: This is where the decision to dictate which device is the client (using an app) versus the server (where the information is stored). Cables Quick note on cables since I think Khan Academy went into enough detail on this. One new thing I picked up was this term, Crosstalk. So, Cat5 cables were the most common copper cabling for some amount of time. Most are being replaced by Cat5e and Cat6 due to this issue of Crosstalk, where one wire in the cable unintentionally picks up the electrical pulse from a different wire.">
 
 
 
-    <meta property="og:url" content="http://localhost:1313/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/">
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Introduction to Computer Networking">
   <meta property="og:description" content="TCP/IP and the Five Layer Network Model Below is a basic table outlining the five layers:
@@ -75,7 +75,7 @@ Layer Name Protocol Protocol Data Unit Addressing Application HTTP, SMTP, etc. M
     <meta property="article:modified_time" content="2024-10-23T00:00:00+00:00">
     <meta property="article:tag" content="Computerscience">
     <meta property="article:tag" content="Internet">
-    <meta property="og:image" content="http://localhost:1313/">
+    <meta property="og:image" content="https://mrpointing.com/">
 
 
 
@@ -151,7 +151,7 @@ Layer Name Protocol Protocol Data Unit Addressing Application HTTP, SMTP, etc. M
         </div>
 
         <article>
-            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/">Introduction to Computer Networking</a></h2>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/">Introduction to Computer Networking</a></h2>
 
             
             
@@ -325,7 +325,7 @@ provide us with internet access.</p>
 <p>We rely on the transport layer for a myriad of reasons, mostly to help do exactly as the layer is called, transport the actual data from client to server and vice versa.</p>
 <p>One concept vital to the transport layer is <em>Multiplexing</em>, or allowing a node existing on a network to actually help direct data flow, or traffic, to where it needs to go. It then uses <em>Demultiplexing</em> to receive and accurately place the received data to where it should be displayed or kept.</p>
 <p>Multi- and Demultiplexing use <em>ports</em>, or places where expected data is received. These ports are 16-bit numbers that acts like the delivery room for different services/protocols. For example, something like HTTP is port 80; this means that when requesting information from an unencrypted web page, traffic gets sent to port 80 on that device. Another common port is 21, usually reserved for FTP, or <em>file transfer protocol</em>. FTP is pretty old but is still in use today.</p>
-<p>There&rsquo;s a video segment on exactly what makes up the TCP packet, but I went over that decently well in <a href="http://localhost:1313/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/">AP Computer Science Principles - Unit 2</a>, so you can check there for more details. It also touched on the three-way handshake, which is also gone over in the same note.</p>
+<p>There&rsquo;s a video segment on exactly what makes up the TCP packet, but I went over that decently well in <a href="https://mrpointing.com/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/">AP Computer Science Principles - Unit 2</a>, so you can check there for more details. It also touched on the three-way handshake, which is also gone over in the same note.</p>
 <p>A new concept to me is the term <em>socket</em>, which is the instantiation of a TCP connection. It&rsquo;s a little vague, so a good example would use ports; you can send data to any open port, but only the port with the accepting socket from some program will actually respond to it.</p>
 <p>Sockets have a few different states, which are outlined below:</p>
 <ul>
@@ -350,8 +350,8 @@ provide us with internet access.</p>
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/internet/">internet</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/internet/">internet</a></span>
         
     </p>
 

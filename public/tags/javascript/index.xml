@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/javascript/</link>
+    <link>https://mrpointing.com/tags/javascript/</link>
     <description>Recent content in Javascript on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Odin Project</title>
-      <link>http://localhost:1313/notes/computer-science/front-end/the-odin-project/</link>
+      <link>https://mrpointing.com/notes/computer-science/front-end/the-odin-project/</link>
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/front-end/the-odin-project/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/front-end/the-odin-project/</guid>
       <description>&lt;p&gt;Notes taken during lessons on The Odin Project&lt;/p&gt;</description>
     </item>
   </channel>

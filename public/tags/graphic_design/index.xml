@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graphic_design on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/graphic_design/</link>
+    <link>https://mrpointing.com/tags/graphic_design/</link>
     <description>Recent content in Graphic_design on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/graphic_design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/graphic_design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blender Donut Tutorial</title>
-      <link>http://localhost:1313/posts/blender-donut-tutorial/</link>
+      <link>https://mrpointing.com/posts/blender-donut-tutorial/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blender-donut-tutorial/</guid>
+      <guid>https://mrpointing.com/posts/blender-donut-tutorial/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=B0J27sf9N1Y&#34;&gt;Link&lt;/a&gt; to video series&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;why-do-i-want-to-learn-blender&#34;&gt;Why Do I Want to Learn Blender?&lt;/h1&gt;&#xA;&lt;p&gt;My uncle is a huge inspiration in my life and career. I always admired his artistic ability, always drawing my favorite super heroes and other cool pieces. He ended working full time as a graphic design artist, and has been making killer 3D animations for years.&lt;/p&gt;&#xA;&lt;p&gt;This is another way of integrating what things I love, and also possibly picking up a new hobby. Let&amp;rsquo;s see how this goes.&lt;/p&gt;</description>
     </item>
   </channel>

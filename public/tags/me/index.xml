@@ -2,144 +2,144 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Me on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/me/</link>
+    <link>https://mrpointing.com/tags/me/</link>
     <description>Recent content in Me on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Textbooks</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/</guid>
       <description>&lt;p&gt;Notes from various textbooks&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computer Science</title>
-      <link>http://localhost:1313/notes/computer-science/</link>
+      <link>https://mrpointing.com/notes/computer-science/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m going back and writing down my notes as if I were a total computer science beginner.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Neovim</title>
-      <link>http://localhost:1313/notes/computer-science/neovim/</link>
+      <link>https://mrpointing.com/notes/computer-science/neovim/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/neovim/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/neovim/</guid>
       <description>&lt;p&gt;my notes on Neovim.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tkinter</title>
-      <link>http://localhost:1313/notes/computer-science/python/tkinter/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/tkinter/</link>
       <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/tkinter/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/tkinter/</guid>
       <description>&lt;p&gt;Notes on Tkinter&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concepts of Programming Languages</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/concepts-of-programming-languages/</link>
       <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/concepts-of-programming-languages/</guid>
       <description>&lt;p&gt;Notes from Concepts of Programming Languages.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Front End</title>
-      <link>http://localhost:1313/notes/computer-science/front-end/</link>
+      <link>https://mrpointing.com/notes/computer-science/front-end/</link>
       <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/front-end/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/front-end/</guid>
       <description>&lt;p&gt;Notes on Front End related topics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mr. Pointing</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://mrpointing.com/about/</link>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://mrpointing.com/about/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;who-i-am&#34;&gt;&lt;strong&gt;Who I Am&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;My name is Richard Pointing, a computer science teacher based in Brooklyn, New York. I recently graduated with a Masters in Computer Science, with a focus in Machine Learning and AI.&lt;/p&gt;&#xA;&lt;p&gt;My focus is in Python, but I&amp;rsquo;ve recently been trying to dip my feet in Bash and getting comfortable in Linux. This website is a test to see if I can start doing more things myself (choosing to use Hugo instead of Obsidian Publish).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Advanced Python</title>
-      <link>http://localhost:1313/notes/computer-science/python/advanced-python/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/advanced-python/</link>
       <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/advanced-python/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/advanced-python/</guid>
       <description>&lt;p&gt;All my notes regarding Python&amp;rsquo;s advanced concepts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/notes/computer-science/python/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/</link>
       <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/</guid>
       <description>&lt;p&gt;All my notes regarding Python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Coursera</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/coursera/</link>
+      <link>https://mrpointing.com/notes/computer-science/internet-and-it/coursera/</link>
       <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/coursera/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/internet-and-it/coursera/</guid>
       <description>&lt;p&gt;Notes related to Coursera courses&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deep Learning</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/deep-learning/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/deep-learning/</link>
       <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/deep-learning/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/deep-learning/</guid>
       <description>&lt;p&gt;Notes from Deep Learning, a Machine Learning textbook&lt;/p&gt;</description>
     </item>
     <item>
       <title>Internet and IT</title>
-      <link>http://localhost:1313/notes/computer-science/internet-and-it/</link>
+      <link>https://mrpointing.com/notes/computer-science/internet-and-it/</link>
       <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/internet-and-it/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/internet-and-it/</guid>
       <description>&lt;p&gt;Notes related to Internet Protocols and IT support&lt;/p&gt;</description>
     </item>
     <item>
       <title>Teaching with Obsidian</title>
-      <link>http://localhost:1313/posts/teaching-with-obsidian/</link>
+      <link>https://mrpointing.com/posts/teaching-with-obsidian/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/teaching-with-obsidian/</guid>
+      <guid>https://mrpointing.com/posts/teaching-with-obsidian/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;I&amp;rsquo;m not sure if it&amp;rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.&lt;/p&gt;&#xA;&lt;p&gt;This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&amp;rsquo;s a good place to store code from lessons and start to think about what&amp;rsquo;s really important.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Now</title>
-      <link>http://localhost:1313/now/</link>
+      <link>https://mrpointing.com/now/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/now/</guid>
+      <guid>https://mrpointing.com/now/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-now-page&#34;&gt;What is a Now Page?&lt;/h2&gt;&#xA;&lt;p&gt;Learn about why you need a Now page &lt;a href=&#34;https://nownownow.com/about&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;listening&#34;&gt;Listening&lt;/h2&gt;&#xA;&lt;p&gt;I keep one main playlist that constantly add too every few years. My current playlist can be found &lt;a href=&#34;https://open.spotify.com/playlist/3feDlFqrgP49k8q43rpkip?si=2xnKT7-mTcCSmOrkPe-zJA&amp;pi=u-5Fcl0Ir7QaWk&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can also find a link to my Discogs &lt;a href=&#34;https://www.discogs.com/user/binky_core&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;&#xA;&lt;p&gt;Currently Reading:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;The Satanic Verses&lt;/em&gt; by &lt;strong&gt;Salman Rushdie&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can find my Goodreads &lt;a href=&#34;https://www.goodreads.com/user/show/119117493&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;watching&#34;&gt;Watching&lt;/h2&gt;&#xA;&lt;p&gt;Currently Watching:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Invincible&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can find my IMDb &lt;a href=&#34;https://www.imdb.com/user/ur42380257/ratings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;playing&#34;&gt;Playing&lt;/h2&gt;&#xA;&lt;p&gt;Currently Playing:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The Elder Scrolls IV: Oblivion Remastered&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Current Obsidian Plugins</title>
-      <link>http://localhost:1313/notes/obsidian/current-obsidian-plugins/</link>
+      <link>https://mrpointing.com/notes/obsidian/current-obsidian-plugins/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/current-obsidian-plugins/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/current-obsidian-plugins/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;community-plugins&#34;&gt;Community Plugins&lt;/h1&gt;&#xA;&lt;p&gt;Community plugins keep some pieces of software alive. When development stops on a product, often the users can keep producing &lt;em&gt;forks&lt;/em&gt; of the initial project and continue developing their own functions and uses for the app. In Obsidian&amp;rsquo;s case, even while production is still going, they implore users to develop their own plugins to meet their own needs.&lt;/p&gt;&#xA;&lt;p&gt;One thing should be stressed; community plugins should only be prioritized &lt;em&gt;after&lt;/em&gt; learning the ins and outs of core Obsidian. Obsidian has tons of features, large and small, some we haven&amp;rsquo;t gone over. Take your time to explore Obsidian before branching out.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flask Notes</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/</guid>
       <description>&lt;p&gt;Notes on Flask&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugo Notes</title>
-      <link>http://localhost:1313/notes/computer-science/hugo/</link>
+      <link>https://mrpointing.com/notes/computer-science/hugo/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/hugo/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/hugo/</guid>
       <description>&lt;p&gt;Notes on Hugo&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian Help</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/</guid>
       <description>&lt;p&gt;Following the Obsidian Help Documentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Python Tutorial</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/</guid>
       <description>&lt;p&gt;Following the Python Documentation&amp;rsquo;s Tutorial.&lt;/p&gt;</description>
     </item>
   </channel>

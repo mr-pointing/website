@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Concepts of Programming Languages on Mr. Pointing</title>
-    <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/</link>
+    <link>https://mrpointing.com/notes/computer-science/textbooks/concepts-of-programming-languages/</link>
     <description>Recent content in Concepts of Programming Languages on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/notes/computer-science/textbooks/concepts-of-programming-languages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CPL - Chapter 6</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-6/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;data-types&#34;&gt;Data Types&lt;/h1&gt;&#xA;&lt;p&gt;What is a data type? &lt;em&gt;Data types&lt;/em&gt; are a collection of data values and set of pre-defined operations on those values. One major benefit of data typing is error catching. Another is documentation; we can tell a lot about about a program based on it&amp;rsquo;s data types and types used.&lt;/p&gt;&#xA;&lt;p&gt;The two most common structured (non-scalar) data types are arrays and records. Structured data types defined w/ type operators, or constructors (C uses brackets for arrays, asterisks for pointers). &lt;em&gt;Descriptors&lt;/em&gt; are the collection of the attributes of a variable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CPL - Chapter 5</title>
-      <link>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</link>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/concepts-of-programming-languages/cpl---chapter-5/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;names-bindings--scope&#34;&gt;Names, Bindings, &amp;amp; Scope&lt;/h1&gt;&#xA;&lt;p&gt;We should understand that in across programming languages, like when we use the term &lt;em&gt;identifier&lt;/em&gt; or &lt;em&gt;name&lt;/em&gt; (both are synonymous), it depends on the language we are using. Different languages have different naming conventions and rules or &lt;strong&gt;syntax&lt;/strong&gt;. We&amp;rsquo;ll look at variables in this chapter, and the different parts their made out of;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Name&lt;/li&gt;&#xA;&lt;li&gt;Address&lt;/li&gt;&#xA;&lt;li&gt;Value&lt;/li&gt;&#xA;&lt;li&gt;Type&lt;/li&gt;&#xA;&lt;li&gt;Lifetime&lt;/li&gt;&#xA;&lt;li&gt;Scope&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;bindings&#34;&gt;Bindings&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;em&gt;binding&lt;/em&gt; is an association between an attribute and an entity, such as between a variable and it&amp;rsquo;s type or value, or between an operation and a symbol. We consider the moment where the binding takes place appropriately as &lt;em&gt;binding time&lt;/em&gt;. Before any variable can be reference, it must be bound to a data type (which will be covered in the next chapter).&lt;/p&gt;</description>
     </item>
   </channel>

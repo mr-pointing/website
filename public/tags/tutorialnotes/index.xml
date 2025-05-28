@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorialnotes on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/tutorialnotes/</link>
+    <link>https://mrpointing.com/tags/tutorialnotes/</link>
     <description>Recent content in Tutorialnotes on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tutorialnotes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/tutorialnotes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Designing a RESTful API</title>
-      <link>http://localhost:1313/projects/designing-a-restful-api/</link>
+      <link>https://mrpointing.com/projects/designing-a-restful-api/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/designing-a-restful-api/</guid>
+      <guid>https://mrpointing.com/projects/designing-a-restful-api/</guid>
       <description>&lt;p&gt;Modified: August 02 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Watched &lt;a href=&#34;https://www.youtube.com/watch?v=-mN3VyJuCjM&#34;&gt;this&lt;/a&gt; video to take some notes on what REST is.&lt;/p&gt;&#xA;&lt;p&gt;API: Application Programming Interface, is how to computers can communicate with each other.&lt;/p&gt;&#xA;&lt;p&gt;Client sends a Request to the server, server sends a response back to the client.&lt;/p&gt;&#xA;&lt;p&gt;REST, or Representational State Transfer, is the most popular way to communicate with these web servers.&lt;/p&gt;&#xA;&lt;p&gt;REST is actually a set of rules and standards. Any API that follows the REST rules is known as a RESTful API.&lt;/p&gt;</description>
     </item>
   </channel>

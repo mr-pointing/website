@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Obsidian Help on Mr. Pointing</title>
-    <link>http://localhost:1313/notes/obsidian/obsidian-help/</link>
+    <link>https://mrpointing.com/notes/obsidian/obsidian-help/</link>
     <description>Recent content in Obsidian Help on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/obsidian/obsidian-help/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/notes/obsidian/obsidian-help/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Obsidian Help - Plugins</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---plugins/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---plugins/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---plugins/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---plugins/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;core-plugins&#34;&gt;Core Plugins&lt;/h1&gt;&#xA;&lt;p&gt;Out of the box, Obsidian has a plethora of usable features. Most you might never touch. Others will be ingrained in your workflow you&amp;rsquo;ll forget they&amp;rsquo;re plugins. This list is not extensive- like everything else, more detailed information can be found in their &lt;a href=&#34;https://help.obsidian.md/Plugins/Core+plugins&#34;&gt;documentation&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;outgoing-and-backlinks&#34;&gt;Outgoing and Backlinks&lt;/h2&gt;&#xA;&lt;p&gt;We already saw how powerful linking can be using Obsidian. Let&amp;rsquo;s define two specific types of links; &lt;strong&gt;outgoing links&lt;/strong&gt; and &lt;strong&gt;backlinks&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Backlinks&lt;/strong&gt; are a collection of notes that precede a given note. A note can have as many backlinks as there are references; there is no limit. You can view backlinks by default on your right-hand side bar.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian Help - Editing and Formatting</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---editing-and-formatting/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;editing-and-formatting&#34;&gt;Editing and Formatting&lt;/h1&gt;&#xA;&lt;p&gt;Congratulations, after this year you&amp;rsquo;ll technically know &lt;em&gt;two&lt;/em&gt; languages! &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;, what we&amp;rsquo;re writing in, isn&amp;rsquo;t technically a programming language, but it is a useful format to understand and be able to read, just in case something isn&amp;rsquo;t rendered or just browsing files.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basic-formatting-syntax&#34;&gt;Basic Formatting Syntax&lt;/h2&gt;&#xA;&lt;p&gt;A paragraph is just a block of text, separated by a newline. The paragraph for a literal example:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;This is a paragraph. &#xA;&#xA;This is a different paragraph.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We talked about headings before, now let&amp;rsquo;s get specific. Headings are paragraphs that start with a certain amount of hashtags. The amount of hashes correlate the the heading number, and the more hashes the smaller it is.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian Help - User Interface</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---user-interface/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---user-interface/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---user-interface/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---user-interface/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;user-interface&#34;&gt;User Interface&lt;/h1&gt;&#xA;&lt;p&gt;A user interface, otherwise referred to as a UI, is the visual parts of a program you interact with when using it. For Obsidian, the UI is the entire window. Let&amp;rsquo;s break it down piece by piece.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;&#xA;&lt;p&gt;Before we go any further, we should go over the fun part. Making it your own. If your left bar isn&amp;rsquo;t already open, hit the button on the top left (it&amp;rsquo;s a little square with lines in it). Once open, you hit the cog on the bottom right of the left bar. Under the options bar, you hit &amp;ldquo;Appearance.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian Help - Getting Started</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---getting-started/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---getting-started/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---getting-started/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---getting-started/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h1&gt;&#xA;&lt;p&gt;If you don&amp;rsquo;t know where to start, start here.&lt;/p&gt;&#xA;&lt;h2 id=&#34;downloading-and-installing&#34;&gt;Downloading and Installing&lt;/h2&gt;&#xA;&lt;p&gt;For the most part, you&amp;rsquo;ll have access to the computers at school all year long, so you can always get Obsidian through there. If however you want to get Obsidian going at home, look no further.&lt;/p&gt;&#xA;&lt;h3 id=&#34;install-on-windows&#34;&gt;Install on Windows&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://obsidian.md/download&#34;&gt;Click&lt;/a&gt; the link, then &lt;strong&gt;Universal&lt;/strong&gt; and follow instructions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;install-on-mac&#34;&gt;Install on Mac&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://obsidian.md/download&#34;&gt;Click&lt;/a&gt; the link, then &lt;strong&gt;Universal&lt;/strong&gt; and follow instructions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian Help - Preface</title>
-      <link>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---preface/</link>
+      <link>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---preface/</guid>
+      <guid>https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://help.obsidian.md/Home&#34;&gt;Link&lt;/a&gt; to Documentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;what-is-obsidian&#34;&gt;What is Obsidian?&lt;/h1&gt;&#xA;&lt;p&gt;Essentially, a note-taking tool. All it boils down too is the format in which your notes are placed (I just think Obsidian is neat). Obsidian uses a Markdown, a markup-language. Not really a programming language, more of an &lt;em&gt;encoding&lt;/em&gt; language, but we don&amp;rsquo;t need to worry about that for right now.&lt;/p&gt;&#xA;&lt;p&gt;For now, all we are going to focus on is the basics-you have something you want to take notes on, and you write down your notes inside. No (strict) syntax, no indenting, no errors, no worries. Unlike a standard document editor however (think Word) it lacks the ability and flare of the more powerful applications.&lt;/p&gt;</description>
     </item>
   </channel>

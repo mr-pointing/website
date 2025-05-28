@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wix on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/wix/</link>
+    <link>https://mrpointing.com/tags/wix/</link>
     <description>Recent content in Wix on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 30 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/wix/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/wix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jobany Rosario</title>
-      <link>http://localhost:1313/projects/jobany-rosario/</link>
+      <link>https://mrpointing.com/projects/jobany-rosario/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/jobany-rosario/</guid>
+      <guid>https://mrpointing.com/projects/jobany-rosario/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;New updated Schedule:&lt;/p&gt;&#xA;&lt;p&gt;Monday:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dojo&#xA;&lt;ul&gt;&#xA;&lt;li&gt;11am - 12pm&lt;/li&gt;&#xA;&lt;li&gt;8pm - 9pm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Wednesday:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dojo&#xA;&lt;ul&gt;&#xA;&lt;li&gt;11am - 12pm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Clockwork&#xA;&lt;ul&gt;&#xA;&lt;li&gt;7:30pm - 8:30pm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Tuesday/Thursday/Friday:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Link to contact for privates&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

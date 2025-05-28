@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -12,7 +12,7 @@ One thing to notice about the repos up until this point is that up to the green 
 <meta name="keywords" content="homepage, blog, computerscience, git, textbook" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-11/" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-11/" />
 
 
     <title>
@@ -52,18 +52,18 @@ One thing to notice about the repos up until this point is that up to the green 
   <meta itemprop="datePublished" content="2025-01-08T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-01-08T00:00:00+00:00">
   <meta itemprop="wordCount" content="2074">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Git,Textbook">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="Learning Git - Chapter 11">
   <meta name="twitter:description" content="Rebasing We’re over ten chapters into this text; let’s get a quick recap of the status of our repos:
 One thing to notice about the repos up until this point is that up to the green commit, our project’s history was linear. Some people prefer to keep their history this way, and want to avoid branching pathways, like we had to do for the three-way merges we had to make.">
 
 
 
-    <meta property="og:url" content="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-11/">
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-11/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Learning Git - Chapter 11">
   <meta property="og:description" content="Rebasing We’re over ten chapters into this text; let’s get a quick recap of the status of our repos:
@@ -76,7 +76,7 @@ One thing to notice about the repos up until this point is that up to the green 
     <meta property="article:tag" content="Computerscience">
     <meta property="article:tag" content="Git">
     <meta property="article:tag" content="Textbook">
-    <meta property="og:image" content="http://localhost:1313/">
+    <meta property="og:image" content="https://mrpointing.com/">
 
 
 
@@ -152,7 +152,7 @@ One thing to notice about the repos up until this point is that up to the green 
         </div>
 
         <article>
-            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-11/">Learning Git - Chapter 11</a></h2>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-11/">Learning Git - Chapter 11</a></h2>
 
             
             
@@ -170,7 +170,7 @@ One thing to notice about the repos up until this point is that up to the green 
 <p>One way to avoid creating branching paths is with <em>rebasing</em>, which takes changes and creates <em>new</em> commits. This can be confusing to understand, so let&rsquo;s look at our example book project.</p>
 <blockquote>
 <p>[!Example Book Project]
-We&rsquo;re actually going to use the scenario from <a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/">Chapter 9</a>. I am working with a coauthor on a project now, and We are on commit <code>B</code>. We both decide we are going to work on separate branches off of commit <code>B</code>; I decide to name my branch <code>chapter_11</code> and my coauthor uses <code>chapter_12</code>.</p>
+We&rsquo;re actually going to use the scenario from <a href="https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-9/">Chapter 9</a>. I am working with a coauthor on a project now, and We are on commit <code>B</code>. We both decide we are going to work on separate branches off of commit <code>B</code>; I decide to name my branch <code>chapter_11</code> and my coauthor uses <code>chapter_12</code>.</p>
 <p>Unfortunately, my coauthor again chooses to commit and push to our remote repo before me, creating commit <code>C</code> and updating our remote repo to point at that commit. When I make my first commit, it will be commit <code>D</code>.</p>
 <p>I could do a <code>fetch</code> and three way merge to integrate my chapter into the remote repo, but that&rsquo;s going to create a merge commit and my team/department doesn&rsquo;t want branching paths.</p>
 <p>Instead, I could <code>pull</code> the most recent changes, with the intent to rebase the <code>chapter_11</code> branch on top of the <code>main</code> branch. This would, in my local repo, create a new commit, <code>D'</code>, as well as bring in <code>C</code> from our remote repo. My local repo would have <code>main</code> pointing at <code>C</code>, and <code>chapter_11</code> pointing at <code>D'</code>. Then, all I need to do is fast-forward merge my local repo and we&rsquo;re all caught up.</p>
@@ -464,7 +464,7 @@ We&rsquo;re actually going to use the scenario from <a href="http://localhost:13
 </span></span><span style="display:flex;"><span>    black
 </span></span></code></pre></div><hr>
 <p>Next:
-<a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-12/">Chapter 12</a></p>
+<a href="https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-12/">Chapter 12</a></p>
 
             </div>
         </article>
@@ -476,9 +476,9 @@ We&rsquo;re actually going to use the scenario from <a href="http://localhost:13
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/git/">git</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/git/">git</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
         
     </p>
 

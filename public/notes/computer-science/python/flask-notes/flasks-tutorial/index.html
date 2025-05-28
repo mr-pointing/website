@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -13,7 +13,7 @@ Last time, I did a combination of going through the tutorial, then making change
 <meta name="keywords" content="homepage, blog, computerscience, flask, python" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-tutorial/" />
 
 
     <title>
@@ -54,11 +54,11 @@ Last time, I did a combination of going through the tutorial, then making change
   <meta itemprop="datePublished" content="2024-11-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-11-06T00:00:00+00:00">
   <meta itemprop="wordCount" content="4795">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Flask,Python">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="Flask&#39;s Tutorial">
   <meta name="twitter:description" content="Link to tutorial.
 I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, Lython. However, since I’m starting Sarah’s site, and I want to test out a bunch of features/really get to understand Flask, let’s go through it once more.
@@ -66,7 +66,7 @@ Last time, I did a combination of going through the tutorial, then making change
 
 
 
-    <meta property="og:url" content="http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/">
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-tutorial/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Flask&#39;s Tutorial">
   <meta property="og:description" content="Link to tutorial.
@@ -80,7 +80,7 @@ Last time, I did a combination of going through the tutorial, then making change
     <meta property="article:tag" content="Computerscience">
     <meta property="article:tag" content="Flask">
     <meta property="article:tag" content="Python">
-    <meta property="og:image" content="http://localhost:1313/">
+    <meta property="og:image" content="https://mrpointing.com/">
 
 
 
@@ -156,7 +156,7 @@ Last time, I did a combination of going through the tutorial, then making change
         </div>
 
         <article>
-            <h2 class="post-title"><a href="http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/">Flask&rsquo;s Tutorial</a></h2>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-tutorial/">Flask&rsquo;s Tutorial</a></h2>
 
             
             
@@ -165,10 +165,10 @@ Last time, I did a combination of going through the tutorial, then making change
             <div class="post-content">
                 <p><a href="https://flask.palletsprojects.com/en/stable/tutorial/">Link</a> to tutorial.</p>
 <hr>
-<p>I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, <a href="http://localhost:1313/projects/lython/">Lython</a>. However, since I&rsquo;m starting Sarah&rsquo;s site, and I want to test out a bunch of features/really get to understand Flask, let&rsquo;s go through it once more.</p>
+<p>I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, <a href="https://mrpointing.com/projects/lython/">Lython</a>. However, since I&rsquo;m starting Sarah&rsquo;s site, and I want to test out a bunch of features/really get to understand Flask, let&rsquo;s go through it once more.</p>
 <p>Last time, I did a combination of going through the tutorial, then making changes as I saw fit. I feel like I missed some crucial details I want to review, and I never documented my process. I&rsquo;m going to completely go through it as if I don&rsquo;t want to make any edits, then make edits <em>after</em> it&rsquo;s finished.</p>
 <p>I also want to run this entirely through PyCharm. The way I know it worked before for me was keeping all my code in a directory inside the PyCharm project.</p>
-<p>Again, this tutorial is meant to teach enough to get an application started and going. The docs go over more detail, and I already went through the <a href="http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/">quick start guide</a> so that has even more detail.</p>
+<p>Again, this tutorial is meant to teach enough to get an application started and going. The docs go over more detail, and I already went through the <a href="https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/">quick start guide</a> so that has even more detail.</p>
 <h1 id="project-layout">Project Layout</h1>
 <p>If you were doing this from scratch, you could go into any directory and use the following commands to create and enter the directory for the project:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir flask-tutorial
@@ -283,7 +283,7 @@ build/
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> app
 </span></span></code></pre></div><h1 id="define-and-access-the-database">Define and Access the Database</h1>
-<p>SQLite, a super lightweight database management system, is supported by Python via the <code>sqlite3</code> module. This isn&rsquo;t going to go too in depth on how SQLite works, you can visit <a href="http://localhost:1313/notes/computer-science/sql/sqlite-tutorial/">SQLite Tutorial</a> for more information on that.</p>
+<p>SQLite, a super lightweight database management system, is supported by Python via the <code>sqlite3</code> module. This isn&rsquo;t going to go too in depth on how SQLite works, you can visit <a href="https://mrpointing.com/notes/computer-science/sql/sqlite-tutorial/">SQLite Tutorial</a> for more information on that.</p>
 <h2 id="connect-to-the-database">Connect to the Database</h2>
 <p>Before we can make edits or add to our database, we first need to create and connect to it. The following code will accomplish this for us:</p>
 <p><code>flaskr/db.py</code></p>
@@ -508,7 +508,7 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> view(<span style="color:#f92672">**</span>kwargs)
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> wrapped_view
 </span></span></code></pre></div><h1 id="templates">Templates</h1>
-<p>If you attempted to run any of the previous routes we just defined, you&rsquo;d notice they don&rsquo;t work. Not only that, but we&rsquo;ve been sending our users to pages we haven&rsquo;t even written yet. We&rsquo;re going to mostly take care of that in this section, on templates. Since, again, HTML and CSS deserves it&rsquo;s own unit, you can learn more from many different resources (including some <a href="http://localhost:1313/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/">notes of my own</a>). Otherwise, let&rsquo;s use the tutorial&rsquo;s basic skeleton and you can explore and make some changes in your free time.</p>
+<p>If you attempted to run any of the previous routes we just defined, you&rsquo;d notice they don&rsquo;t work. Not only that, but we&rsquo;ve been sending our users to pages we haven&rsquo;t even written yet. We&rsquo;re going to mostly take care of that in this section, on templates. Since, again, HTML and CSS deserves it&rsquo;s own unit, you can learn more from many different resources (including some <a href="https://mrpointing.com/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/">notes of my own</a>). Otherwise, let&rsquo;s use the tutorial&rsquo;s basic skeleton and you can explore and make some changes in your free time.</p>
 <p>We store templates, or HTML files, in the template directory. Templates specifically house the sites static information, and contain placeholders for any dynamically collected data through use. The way it accomplishes all of this is with the help of a template language, Jinja. It is denoted with <code>{{</code> and <code>}}</code>, works similarly to Python, and is generally easy to use.</p>
 <h2 id="the-base">The Base</h2>
 <p>Let&rsquo;s build a base page, or what every page will be built on top of;</p>
@@ -917,9 +917,9 @@ Alright, imagine you&rsquo;re building a big Lego city, but instead of building 
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/computerscience/">computerscience</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/flask/">flask</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/python/">python</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/flask/">flask</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
         
     </p>
 

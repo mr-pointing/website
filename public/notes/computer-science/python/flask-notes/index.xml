@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flask Notes on Mr. Pointing</title>
-    <link>http://localhost:1313/notes/computer-science/python/flask-notes/</link>
+    <link>https://mrpointing.com/notes/computer-science/python/flask-notes/</link>
     <description>Recent content in Flask Notes on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/computer-science/python/flask-notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/notes/computer-science/python/flask-notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flask&#39;s Tutorial</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-tutorial/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-tutorial/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://flask.palletsprojects.com/en/stable/tutorial/&#34;&gt;Link&lt;/a&gt; to tutorial.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, &lt;a href=&#34;http://localhost:1313/projects/lython/&#34;&gt;Lython&lt;/a&gt;. However, since I&amp;rsquo;m starting Sarah&amp;rsquo;s site, and I want to test out a bunch of features/really get to understand Flask, let&amp;rsquo;s go through it once more.&lt;/p&gt;&#xA;&lt;p&gt;Last time, I did a combination of going through the tutorial, then making changes as I saw fit. I feel like I missed some crucial details I want to review, and I never documented my process. I&amp;rsquo;m going to completely go through it as if I don&amp;rsquo;t want to make any edits, then make edits &lt;em&gt;after&lt;/em&gt; it&amp;rsquo;s finished.&lt;/p&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-tutorial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://flask.palletsprojects.com/en/stable/tutorial/&#34;&gt;Link&lt;/a&gt; to tutorial.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I was really hesitant to start this note, since I basically ran through this tutorial once already to start and complete my final project, &lt;a href=&#34;https://mrpointing.com/projects/lython/&#34;&gt;Lython&lt;/a&gt;. However, since I&amp;rsquo;m starting Sarah&amp;rsquo;s site, and I want to test out a bunch of features/really get to understand Flask, let&amp;rsquo;s go through it once more.&lt;/p&gt;&#xA;&lt;p&gt;Last time, I did a combination of going through the tutorial, then making changes as I saw fit. I feel like I missed some crucial details I want to review, and I never documented my process. I&amp;rsquo;m going to completely go through it as if I don&amp;rsquo;t want to make any edits, then make edits &lt;em&gt;after&lt;/em&gt; it&amp;rsquo;s finished.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flask&#39;s Templates</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-templates/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-templates/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://flask.palletsprojects.com/en/3.0.x/templating/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Blinker</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/blinker/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://blinker.readthedocs.io/en/stable/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Click</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/click/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/click/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/click/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://click.palletsprojects.com/en/8.1.x/&#34;&gt;Link&lt;/a&gt; to the documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Jinja</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/jinja/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jinja.palletsprojects.com/en/3.1.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Werkzeug</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://werkzeug.palletsprojects.com/en/3.0.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;First of all, what is WSGI?&lt;/p&gt;&#xA;&lt;p&gt;Web Server Gateway Interface, a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flask&#39;s Quickstart</title>
-      <link>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://flask.palletsprojects.com/en/3.0.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Flask is a framework to create applications via Python. It makes web based applications rather simple.&lt;/p&gt;&#xA;&lt;p&gt;Starting from the &lt;a href=&#34;https://flask.palletsprojects.com/en/3.0.x/installation/#python-version&#34;&gt;here&lt;/a&gt;, the installation page.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;python-version&#34;&gt;Python Version&lt;/h3&gt;&#xA;&lt;p&gt;Python version should be up to date. Flask supports 3.8 and newer.&lt;/p&gt;&#xA;&lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;&#xA;&lt;p&gt;The following are installed automatically when installing Flask:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/computer-science/python/flask-notes/werkzeug/&#34;&gt;Werkzeug&lt;/a&gt; uses WSGI, the standard Python interface between applications and servers.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/computer-science/python/flask-notes/jinja/&#34;&gt;Jinja&lt;/a&gt; is a template language that renders the pages your application serves.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://palletsprojects.com/p/markupsafe/&#34;&gt;MarkupSafe&lt;/a&gt; comes packaged with Jinja, and is used to avoid injection attacks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://palletsprojects.com/p/itsdangerous/&#34;&gt;ItsDangerous&lt;/a&gt; signs data securely to ensure integrity to protect Flask&amp;rsquo;s session cookie&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/computer-science/python/flask-notes/click/&#34;&gt;Click&lt;/a&gt; is a framework that you use for writing command line applications. It allows the &lt;code&gt;flask&lt;/code&gt; command and custom commands&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/computer-science/python/flask-notes/blinker/&#34;&gt;Blinker&lt;/a&gt; provides support for Signals&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;virtual-environments&#34;&gt;Virtual Environments&lt;/h3&gt;&#xA;&lt;p&gt;Flask promotes the use of a virtual environment to manage the dependencies of the project.&lt;/p&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-quickstart/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://flask.palletsprojects.com/en/3.0.x/&#34;&gt;Link&lt;/a&gt; to documentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Flask is a framework to create applications via Python. It makes web based applications rather simple.&lt;/p&gt;&#xA;&lt;p&gt;Starting from the &lt;a href=&#34;https://flask.palletsprojects.com/en/3.0.x/installation/#python-version&#34;&gt;here&lt;/a&gt;, the installation page.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;python-version&#34;&gt;Python Version&lt;/h3&gt;&#xA;&lt;p&gt;Python version should be up to date. Flask supports 3.8 and newer.&lt;/p&gt;&#xA;&lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;&#xA;&lt;p&gt;The following are installed automatically when installing Flask:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/&#34;&gt;Werkzeug&lt;/a&gt; uses WSGI, the standard Python interface between applications and servers.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/&#34;&gt;Jinja&lt;/a&gt; is a template language that renders the pages your application serves.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://palletsprojects.com/p/markupsafe/&#34;&gt;MarkupSafe&lt;/a&gt; comes packaged with Jinja, and is used to avoid injection attacks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://palletsprojects.com/p/itsdangerous/&#34;&gt;ItsDangerous&lt;/a&gt; signs data securely to ensure integrity to protect Flask&amp;rsquo;s session cookie&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mrpointing.com/notes/computer-science/python/flask-notes/click/&#34;&gt;Click&lt;/a&gt; is a framework that you use for writing command line applications. It allows the &lt;code&gt;flask&lt;/code&gt; command and custom commands&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mrpointing.com/notes/computer-science/python/flask-notes/blinker/&#34;&gt;Blinker&lt;/a&gt; provides support for Signals&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;virtual-environments&#34;&gt;Virtual Environments&lt;/h3&gt;&#xA;&lt;p&gt;Flask promotes the use of a virtual environment to manage the dependencies of the project.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Output on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/output/</link>
+    <link>https://mrpointing.com/tags/output/</link>
     <description>Recent content in Output on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 14 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/output/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/output/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reading and Writing Python Files</title>
-      <link>http://localhost:1313/notes/computer-science/python/reading-and-writing-files-with-python/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/reading-and-writing-files-with-python/</link>
       <pubDate>Sat, 14 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/reading-and-writing-files-with-python/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;p&gt;This is a more general file for Python input and output for files. I feel like I constantly need to look up this stuff, so things I find I&amp;rsquo;ll write down here for reference.&lt;/p&gt;&#xA;&lt;h1 id=&#34;reading-in-a-csv&#34;&gt;Reading in a CSV&lt;/h1&gt;&#xA;&lt;p&gt;I was solving some &lt;a href=&#34;http://localhost:1313/notes/computer-science/python/python-problems/&#34;&gt;Python Problems&lt;/a&gt; and needed to format easily from a CSV. I did a quick google and came across this &lt;a href=&#34;https://saturncloud.io/blog/how-to-convert-a-csv-file-to-a-dictionary-in-python-using-the-csv-and-pandas-modules/&#34;&gt;article&lt;/a&gt; which reminded me &lt;a href=&#34;http://localhost:1313/notes/computer-science/python/pandas/&#34;&gt;Pandas&lt;/a&gt; has a easy CSV reader. The syntax is like so,&lt;/p&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/python/reading-and-writing-files-with-python/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;This is a more general file for Python input and output for files. I feel like I constantly need to look up this stuff, so things I find I&amp;rsquo;ll write down here for reference.&lt;/p&gt;&#xA;&lt;h1 id=&#34;reading-in-a-csv&#34;&gt;Reading in a CSV&lt;/h1&gt;&#xA;&lt;p&gt;I was solving some &lt;a href=&#34;https://mrpointing.com/notes/computer-science/python/python-problems/&#34;&gt;Python Problems&lt;/a&gt; and needed to format easily from a CSV. I did a quick google and came across this &lt;a href=&#34;https://saturncloud.io/blog/how-to-convert-a-csv-file-to-a-dictionary-in-python-using-the-csv-and-pandas-modules/&#34;&gt;article&lt;/a&gt; which reminded me &lt;a href=&#34;https://mrpointing.com/notes/computer-science/python/pandas/&#34;&gt;Pandas&lt;/a&gt; has a easy CSV reader. The syntax is like so,&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Python Tutorial Notes - Chapter 7</title>
-      <link>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</link>
       <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/</guid>
       <description>&lt;p&gt;Modified: July 19 2024&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;input-and-output&#34;&gt;&lt;strong&gt;Input and Output&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;6/18/2024&lt;/p&gt;&#xA;&lt;p&gt;There are three main ways to present output in Python; expression statements (not using &lt;code&gt;print()&lt;/code&gt;), using &lt;code&gt;print()&lt;/code&gt;, and using &lt;code&gt;write()&lt;/code&gt; which writes something into an existing or new file.&lt;/p&gt;&#xA;&lt;h3 id=&#34;71-fancier-output-formatting&#34;&gt;&lt;strong&gt;7.1 Fancier Output Formatting&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;At any point in the command line, I can just send out some text without any &lt;code&gt;print()&lt;/code&gt; commands and get back what I just sent in. That&amp;rsquo;s an expression statement. Not super important.&lt;/p&gt;</description>
     </item>
   </channel>

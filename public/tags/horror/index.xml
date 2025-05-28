@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Horror on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/horror/</link>
+    <link>https://mrpointing.com/tags/horror/</link>
     <description>Recent content in Horror on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 09 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/horror/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/horror/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ring</title>
-      <link>http://localhost:1313/notes/entertainment/books/ring/</link>
+      <link>https://mrpointing.com/notes/entertainment/books/ring/</link>
       <pubDate>Tue, 01 Jan 1991 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/entertainment/books/ring/</guid>
+      <guid>https://mrpointing.com/notes/entertainment/books/ring/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;One that&amp;rsquo;s been on my reading list since I was a kid and saw the dynamic spiral cover, Ring is the original book that inspired the prolific and perfectly-spoofed movie of the same name. Hearing this was a series made me nervous this wouldn&amp;rsquo;t be great, but I ended up enjoying it at some parts.&lt;/p&gt;&#xA;&lt;p&gt;It went by really fast. The main character was the &lt;em&gt;worst&lt;/em&gt; dude. Hated how much he clearly did not care about his wife and kids until he put them in danger. Spoiler alert, this guy has the worst gut instincts of all time. He of course becomes friends with the other worst character of all time, and unfortunately make a dynamic duo.&lt;/p&gt;</description>
     </item>
   </channel>

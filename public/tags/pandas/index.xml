@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pandas on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/pandas/</link>
+    <link>https://mrpointing.com/tags/pandas/</link>
     <description>Recent content in Pandas on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploratory Data Analysis with Pandas</title>
-      <link>http://localhost:1313/notes/computer-science/python/exploratory-data-analysis-with-pandas/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/exploratory-data-analysis-with-pandas/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/exploratory-data-analysis-with-pandas/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/exploratory-data-analysis-with-pandas/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/code/kashnitsky/topic-1-exploratory-data-analysis-with-pandas&#34;&gt;Link&lt;/a&gt; to article&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Pandas</title>
-      <link>http://localhost:1313/notes/computer-science/python/pandas/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/pandas/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/python/pandas/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/pandas/</guid>
       <description>&lt;hr&gt;</description>
     </item>
   </channel>

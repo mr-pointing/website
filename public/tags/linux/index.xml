@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Mr. Pointing</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>https://mrpointing.com/tags/linux/</link>
     <description>Recent content in Linux on Mr. Pointing</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mrpointing.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux on Virtual Machine</title>
-      <link>http://localhost:1313/projects/arch-linux-on-virtual-machine/</link>
+      <link>https://mrpointing.com/projects/arch-linux-on-virtual-machine/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/arch-linux-on-virtual-machine/</guid>
+      <guid>https://mrpointing.com/projects/arch-linux-on-virtual-machine/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;After running my laptop on Ubuntu for the past 4 months (and enjoying it) I figured it was time to give some other distros a chance. One of the YouTube channels I watch in order to expand my horizons is &lt;a href=&#34;https://www.youtube.com/@mischavandenburg&#34;&gt;Mischa van den Burg&lt;/a&gt; who specializes in cloud computing dev ops things. I&amp;rsquo;ve watched a ton of his videos and got inspired to learn more about dev ops mostly through his influence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux File System-Structure Explained!</title>
-      <link>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/linux-file-system-structure-explained/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/linux-file-system-structure-explained/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/linux-file-system-structure-explained/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HbgzrKJvDRw&amp;list=PLU-P2PlzpIf3EpWfxk-Mu_ZVJVS5Wb-_e&amp;index=21&#34;&gt;Link&lt;/a&gt; to video.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Unlike Windows, the Linux file system is structured a lot differently.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;/bin&lt;/strong&gt; is the directory containing &amp;ldquo;binaries&amp;rdquo;, just another word for programs or applications. /bin contains programs like &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, and all sorts of others.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;/sbin&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Start a Homelab for $0</title>
-      <link>http://localhost:1313/notes/computer-science/videos/how-to-start-a-homelab-for-0/</link>
+      <link>https://mrpointing.com/notes/computer-science/videos/how-to-start-a-homelab-for-0/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/videos/how-to-start-a-homelab-for-0/</guid>
       <description>&lt;p&gt;Modified: July 19 2024&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=upC8G5yFBsA&#34;&gt;Link&lt;/a&gt; to video.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Building a Homelab is easier and more affordable than ever before.&lt;/p&gt;&#xA;&lt;p&gt;You can start homelabbing with extra tech or cloud options.&lt;/p&gt;&#xA;&lt;p&gt;Clustering, through something like Kubernetes, you can start small. One small machine, and expand as you grow. All you need is a command line and 2gb of RAM.&lt;/p&gt;&#xA;&lt;p&gt;Self hosting might need something more stable.&lt;/p&gt;&#xA;&lt;p&gt;One way to start is with an old laptop. The creator started with one with just 4gb of RAM.&lt;/p&gt;</description>
     </item>
   </channel>

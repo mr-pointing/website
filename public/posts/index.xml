@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Mr. Pointing</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://mrpointing.com/posts/</link>
         <description>Recent content in Posts on Mr. Pointing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Blender Donut Tutorial</title>
-            <link>http://localhost:1313/posts/blender-donut-tutorial/</link>
+            <link>https://mrpointing.com/posts/blender-donut-tutorial/</link>
             <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/blender-donut-tutorial/</guid>
+            <guid>https://mrpointing.com/posts/blender-donut-tutorial/</guid>
             <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=B0J27sf9N1Y&#34;&gt;Link&lt;/a&gt; to video series&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;why-do-i-want-to-learn-blender&#34;&gt;Why Do I Want to Learn Blender?&lt;/h1&gt;
@@ -89,10 +89,10 @@
         
         <item>
             <title>Day 31 - Summary</title>
-            <link>http://localhost:1313/posts/day-31---summary/</link>
+            <link>https://mrpointing.com/posts/day-31---summary/</link>
             <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/day-31---summary/</guid>
+            <guid>https://mrpointing.com/posts/day-31---summary/</guid>
             <description>&lt;hr&gt;
 &lt;p&gt;I can&amp;rsquo;t believe I worked on this project for 30 days. The growth has been fantastic, and I should be proud of all that I was able to accomplish. If this is true, why do I feel a pit in my stomach when I think about this project? If I did such a good job, why do I feel like such crap?&lt;/p&gt;
 &lt;p&gt;To be honest, the more I worked on this the more I understood why it takes teams of people to produce applications. I know there are gurus out there who can solo develop their ideas, but wow I never realized how &lt;em&gt;not&lt;/em&gt; like that I am. I enjoyed every part of the development process, yet the more I saw of the road ahead of me to actually make this usable? That is what really scared me.&lt;/p&gt;</description>
@@ -101,29 +101,29 @@
 <p>To be honest, the more I worked on this the more I understood why it takes teams of people to produce applications. I know there are gurus out there who can solo develop their ideas, but wow I never realized how <em>not</em> like that I am. I enjoyed every part of the development process, yet the more I saw of the road ahead of me to actually make this usable? That is what really scared me.</p>
 <p>When I look at my work, it&rsquo;s difficult to not see all the faults. CSS is not my strong suit, and I know I cut corners in some areas (please don&rsquo;t resize my windows ಥ_ಥ). I made separate pages for things that could have easily been one page. I ended up ditching an entire process and offloaded in onto Calendly, which takes away from the entire point of the project if you think about it too much. The more I produced, the more inadequate I felt. I felt like there was more I should have done, more time I should have spent learning x or practicing y.</p>
 <p>This is the wrong way of thinking about it. I have a lot to be thankful for, and I&rsquo;m happy I was able to say I worked on something I&rsquo;m passionate about. I&rsquo;m walking away from this project with a better understanding of API&rsquo;s, writing and handling requests, storing images via SQLite, sending emails with Yagmail, actually using JavaScript for the first time, and much more.</p>
-<p>If anything, seeing how much I didn&rsquo;t know motivated me to just learn <strong>more</strong>. I started going through the <a href="http://localhost:1313/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/">Odin Project</a>, finally admitting to myself that yeah, I should probably learn JavaScript. I started looking into responsive design and best practices of working on the front-end of applications. The structure of working on my project alone has changed my perspective on my daily structure; I&rsquo;ve started journaling to hold myself more accountable and have an outlet for my emotions and frantic thoughts.</p>
+<p>If anything, seeing how much I didn&rsquo;t know motivated me to just learn <strong>more</strong>. I started going through the <a href="https://mrpointing.com/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/">Odin Project</a>, finally admitting to myself that yeah, I should probably learn JavaScript. I started looking into responsive design and best practices of working on the front-end of applications. The structure of working on my project alone has changed my perspective on my daily structure; I&rsquo;ve started journaling to hold myself more accountable and have an outlet for my emotions and frantic thoughts.</p>
 <p>I do feel sad that I&rsquo;m walking away from these 30 days, and I&rsquo;m no where near a master level engineer, and I don&rsquo;t have a fully functional project. Was that the reason I started though? Not really.</p>
 <p>I started these 30 days because I wanted to see if I could do it. No, the days weren&rsquo;t consecutive, but why does it have to be? I don&rsquo;t have to place arbitrary rules on things I design for myself. Had I been so serious about it, I likely would have never made it to day 30.</p>
 <p>I started these 30 days because I wanted to be a good influence on my students, and show them that they should be proud to work on something, and make progress on their own creations.</p>
 <p>I started these 30 days because I love my wife, and what better way to show that love than make something she can use in her professional life.</p>
 <p>The reasons outweigh the reflective feelings. The longer you stare into the abyss, the more the abyss looks back (or something like that). I&rsquo;m never going to be done learning, and that&rsquo;s okay. To think there is some summit to reach where you&rsquo;ll find all the masters sitting and waiting for you is a false flag. You&rsquo;re never going to get there, but neither will the masters. The journey of learning is an ongoing process, and as long as you love the process, you&rsquo;ll never stop learning.</p>
-<p>If you haven&rsquo;t already checked it out, please give my project a look at! <a href="http://localhost:1313/projects/30-day-coding-challenge/week-1/day-1/">Day 1</a></p>
+<p>If you haven&rsquo;t already checked it out, please give my project a look at! <a href="https://mrpointing.com/projects/30-day-coding-challenge/week-1/day-1/">Day 1</a></p>
 ]]></content>
         </item>
         
         <item>
             <title>20 Textbooks</title>
-            <link>http://localhost:1313/posts/20-textbooks/</link>
+            <link>https://mrpointing.com/posts/20-textbooks/</link>
             <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/20-textbooks/</guid>
+            <guid>https://mrpointing.com/posts/20-textbooks/</guid>
             <description>&lt;hr&gt;
 &lt;p&gt;For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&amp;rsquo;ve purchased. Below is a list that I&amp;rsquo;ll keep updated, as well as a link to their inevitable notes.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 1. &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/&#34;&gt;Learning Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 2. &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/&#34;&gt;Deep Learning - Math&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 3. &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/&#34;&gt;Grokking Algorithms&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 4. &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/&#34;&gt;Learning Lua&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 1. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/&#34;&gt;Learning Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 2. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/&#34;&gt;Deep Learning - Math&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 3. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/&#34;&gt;Grokking Algorithms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 4. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/&#34;&gt;Learning Lua&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 5. Learning Modern Linux&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 6. Real World Python&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 7. Impractical Python Projects&lt;/li&gt;
@@ -144,10 +144,10 @@
             <content type="html"><![CDATA[<hr>
 <p>For 2025, I want to read and document my notes on Obsidian for 20 different textbooks. I acquired most of these throughout 2024 (thank you Humble Bundle!), and I thought why not put my money where my mouth is and actually use all the books I&rsquo;ve purchased. Below is a list that I&rsquo;ll keep updated, as well as a link to their inevitable notes.</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> 1. <a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/">Learning Git</a></li>
-<li><input checked="" disabled="" type="checkbox"> 2. <a href="http://localhost:1313/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/">Deep Learning - Math</a></li>
-<li><input checked="" disabled="" type="checkbox"> 3. <a href="http://localhost:1313/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/">Grokking Algorithms</a></li>
-<li><input disabled="" type="checkbox"> 4. <a href="http://localhost:1313/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/">Learning Lua</a></li>
+<li><input checked="" disabled="" type="checkbox"> 1. <a href="https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/">Learning Git</a></li>
+<li><input checked="" disabled="" type="checkbox"> 2. <a href="https://mrpointing.com/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/">Deep Learning - Math</a></li>
+<li><input checked="" disabled="" type="checkbox"> 3. <a href="https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/">Grokking Algorithms</a></li>
+<li><input disabled="" type="checkbox"> 4. <a href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/">Learning Lua</a></li>
 <li><input disabled="" type="checkbox"> 5. Learning Modern Linux</li>
 <li><input disabled="" type="checkbox"> 6. Real World Python</li>
 <li><input disabled="" type="checkbox"> 7. Impractical Python Projects</li>
@@ -170,36 +170,36 @@
         
         <item>
             <title>Teaching with Obsidian</title>
-            <link>http://localhost:1313/posts/teaching-with-obsidian/</link>
+            <link>https://mrpointing.com/posts/teaching-with-obsidian/</link>
             <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/teaching-with-obsidian/</guid>
+            <guid>https://mrpointing.com/posts/teaching-with-obsidian/</guid>
             <description>&lt;hr&gt;
 &lt;p&gt;I&amp;rsquo;m not sure if it&amp;rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.&lt;/p&gt;
 &lt;p&gt;This is a small band-aid fix, but I&amp;rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&amp;rsquo;s a good place to store code from lessons and start to think about what&amp;rsquo;s really important.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<hr>
 <p>I&rsquo;m not sure if it&rsquo;s obvious to everyone, but as a teacher I noticed that students do not know how to take notes. At best a student is writing something down, albeit not very good notes. Most are not taking any notes at all.</p>
 <p>This is a small band-aid fix, but I&rsquo;m going to start implementing Obsidian as a minor section of my curriculum this year. Online notes are not a replacement for good handwritten note-taking, but for my Computer Science Honors kids it&rsquo;s a good place to store code from lessons and start to think about what&rsquo;s really important.</p>
-<p>There is no bad way to take notes, but taking no notes at all is certainly a worse alternative. They should be having fun and be excited to try something new that&rsquo;s beneficial to them. I&rsquo;m also stepping away from letting my kids use PyCharm&rsquo;s code completion since they get too reliant on it, and will devote a few weeks on just getting more familiar with <a href="http://localhost:1313/notes/computer-science/python/pycharm-ide-features/">using an IDE</a>.</p>
-<p>I only just started, but I&rsquo;ve been working on going through the <a href="http://localhost:1313/notes/obsidian/obsidian-help/obsidian-help---preface/">Obsidian help documentation</a>. It&rsquo;s a great way to structure a lesson plan and get&rsquo;s the kids writing right away. I don&rsquo;t know if I want to enforce a structure around note taking to get some grade to keep them doing it, or letting them just do there thing after the lessons are over and see if it sticks. Either way this year is looking to be a really exciting year!</p>
+<p>There is no bad way to take notes, but taking no notes at all is certainly a worse alternative. They should be having fun and be excited to try something new that&rsquo;s beneficial to them. I&rsquo;m also stepping away from letting my kids use PyCharm&rsquo;s code completion since they get too reliant on it, and will devote a few weeks on just getting more familiar with <a href="https://mrpointing.com/notes/computer-science/python/pycharm-ide-features/">using an IDE</a>.</p>
+<p>I only just started, but I&rsquo;ve been working on going through the <a href="https://mrpointing.com/notes/obsidian/obsidian-help/obsidian-help---preface/">Obsidian help documentation</a>. It&rsquo;s a great way to structure a lesson plan and get&rsquo;s the kids writing right away. I don&rsquo;t know if I want to enforce a structure around note taking to get some grade to keep them doing it, or letting them just do there thing after the lessons are over and see if it sticks. Either way this year is looking to be a really exciting year!</p>
 ]]></content>
         </item>
         
         <item>
             <title>Explaining my Obsidian to Hugo Workflow</title>
-            <link>http://localhost:1313/posts/explaining-my-obsidian-to-hugo-workflow/</link>
+            <link>https://mrpointing.com/posts/explaining-my-obsidian-to-hugo-workflow/</link>
             <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/explaining-my-obsidian-to-hugo-workflow/</guid>
+            <guid>https://mrpointing.com/posts/explaining-my-obsidian-to-hugo-workflow/</guid>
             <description>&lt;hr&gt;
 &lt;h2 id=&#34;where-we-left-off&#34;&gt;Where We Left Off&lt;/h2&gt;
 &lt;p&gt;I was just able to get my &lt;a href=&#34;https://mrpointing.com&#34;&gt;website&lt;/a&gt; viewable for the first time in Hugo&amp;rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&amp;rsquo;t compatible with, and everything is looking good.&lt;/p&gt;
-&lt;p&gt;Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anything about Git, you can start by reading my analysis of a beginner &lt;a href=&#34;http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/&#34;&gt;Git textbook&lt;/a&gt;. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&amp;rsquo;re off to the races.&lt;/p&gt;</description>
+&lt;p&gt;Implementing Git was also incredibly simple. If you don&amp;rsquo;t know anything about Git, you can start by reading my analysis of a beginner &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/&#34;&gt;Git textbook&lt;/a&gt;. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&amp;rsquo;re off to the races.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<hr>
 <h2 id="where-we-left-off">Where We Left Off</h2>
 <p>I was just able to get my <a href="https://mrpointing.com">website</a> viewable for the first time in Hugo&rsquo;s draft view. I worked through the formatting errors that my Hugo theme wasn&rsquo;t compatible with, and everything is looking good.</p>
-<p>Implementing Git was also incredibly simple. If you don&rsquo;t know anything about Git, you can start by reading my analysis of a beginner <a href="http://localhost:1313/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/">Git textbook</a>. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&rsquo;re off to the races.</p>
-<p>What&rsquo;s going to determine what shows up on your site is what&rsquo;s committed to your GitHub repo, so it&rsquo;s a good idea to make sure your content looks good before you make your commit. Considering you have (and if you haven&rsquo;t, you should) read my quick dive into the structure of <a href="http://localhost:1313/notes/computer-science/hugo/getting-started-with-hugo/">hugo</a>, you know that before committing anything to our repo, we clear out the <code>public</code> directory, call <code>hugo</code> to build our site, then use basic Git commands to push to your main branch.</p>
+<p>Implementing Git was also incredibly simple. If you don&rsquo;t know anything about Git, you can start by reading my analysis of a beginner <a href="https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/">Git textbook</a>. Since Hugo requires you using a separate directory for content, just initialize a new repo in your directory, connect it to a GitHub repo, and you&rsquo;re off to the races.</p>
+<p>What&rsquo;s going to determine what shows up on your site is what&rsquo;s committed to your GitHub repo, so it&rsquo;s a good idea to make sure your content looks good before you make your commit. Considering you have (and if you haven&rsquo;t, you should) read my quick dive into the structure of <a href="https://mrpointing.com/notes/computer-science/hugo/getting-started-with-hugo/">hugo</a>, you know that before committing anything to our repo, we clear out the <code>public</code> directory, call <code>hugo</code> to build our site, then use basic Git commands to push to your main branch.</p>
 <h2 id="fixing-my-problems">Fixing My Problems</h2>
 <p>I did have one major issue though; now that I had spent a few hours fixing and finding out all of the unique issues within my markdown files, did I want to do this procedure EVERYTIME I wanted to update my site? No thank you. Now that I&rsquo;m using GitHub, if I were to use Obsidian to Hugo it would end up writing over all of the syntax I just finished editing.</p>
 <p>The main problems were that:</p>
@@ -219,10 +219,10 @@
         
         <item>
             <title>Starting My Website</title>
-            <link>http://localhost:1313/posts/starting-my-website/</link>
+            <link>https://mrpointing.com/posts/starting-my-website/</link>
             <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/starting-my-website/</guid>
+            <guid>https://mrpointing.com/posts/starting-my-website/</guid>
             <description>&lt;hr&gt;
 &lt;p&gt;As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.&lt;/p&gt;
 &lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
@@ -233,7 +233,7 @@
 &lt;li&gt;Cloudflare&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;how-i-started&#34;&gt;How I Started&lt;/h2&gt;
-&lt;p&gt;Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a &lt;a href=&#34;http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/&#34;&gt;python tutorial&lt;/a&gt;, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&amp;rsquo;m sure in a few weeks it will be a little different.&lt;/p&gt;</description>
+&lt;p&gt;Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a &lt;a href=&#34;https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/&#34;&gt;python tutorial&lt;/a&gt;, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&amp;rsquo;m sure in a few weeks it will be a little different.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<hr>
 <p>As a first official post, why not start at the beginning. I want to quickly go over how I started, my motivations, and the first issues I ran into. The footnotes will reference all of the articles and videos I watched that helped contribute to how it works today.</p>
 <h2 id="components">Components</h2>
@@ -244,7 +244,7 @@
 <li>Cloudflare</li>
 </ul>
 <h2 id="how-i-started">How I Started</h2>
-<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="http://localhost:1313/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
+<p>Regarding Obsdian, I began writing as if I were dictating to my students. Instead of overthinking the design of the site and never making content, I just started taking notes. I started with going through a <a href="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-1-2-and-3/">python tutorial</a>, and kept branching out to what it is now. The flow and structure has changed numerous times already; I&rsquo;m sure in a few weeks it will be a little different.</p>
 <p>Most tutorials I read online start at the beginning, and show how to start with a fresh blog. Assuming you understand Hugo (and if you don&rsquo;t you should read the articles in the footnotes), I&rsquo;m going to start right after where the quick-start leaves you.</p>
 <h2 id="making-a-blog-from-an-existing-vault">Making a Blog From an Existing Vault</h2>
 <p>So I tried the <a href="https://gohugo.io/getting-started/quick-start/">tutorial</a> on my laptop before bringing it over to my main machine, so I started on a good note.</p>
