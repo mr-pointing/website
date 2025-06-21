@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Shells and Scripting A huge part of getting comfortable with Linux is getting comfortable using the command line, or CLI. Most common distros today will have some standard GUI application to accomplish most tasks. However, like we discussed, this text is going to be applicable to all Linux releases, and some are entirely command-line driven. We&rsquo;ll discuss some different types of shells, then take a look at scripting, or pre-written chunks of commands in a file meant to be ran by the computer at designated times.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, linux" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-3/" />
+
+
+    <title>
+        
+            Learning Modern Linux - Chapter 3 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Learning Modern Linux - Chapter 3">
+  <meta itemprop="description" content="Shells and Scripting A huge part of getting comfortable with Linux is getting comfortable using the command line, or CLI. Most common distros today will have some standard GUI application to accomplish most tasks. However, like we discussed, this text is going to be applicable to all Linux releases, and some are entirely command-line driven. We’ll discuss some different types of shells, then take a look at scripting, or pre-written chunks of commands in a file meant to be ran by the computer at designated times.">
+  <meta itemprop="datePublished" content="2025-06-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-06-03T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2602">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Linux">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Learning Modern Linux - Chapter 3">
+  <meta name="twitter:description" content="Shells and Scripting A huge part of getting comfortable with Linux is getting comfortable using the command line, or CLI. Most common distros today will have some standard GUI application to accomplish most tasks. However, like we discussed, this text is going to be applicable to all Linux releases, and some are entirely command-line driven. We’ll discuss some different types of shells, then take a look at scripting, or pre-written chunks of commands in a file meant to be ran by the computer at designated times.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-3/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Learning Modern Linux - Chapter 3">
+  <meta property="og:description" content="Shells and Scripting A huge part of getting comfortable with Linux is getting comfortable using the command line, or CLI. Most common distros today will have some standard GUI application to accomplish most tasks. However, like we discussed, this text is going to be applicable to all Linux releases, and some are entirely command-line driven. We’ll discuss some different types of shells, then take a look at scripting, or pre-written chunks of commands in a file meant to be ran by the computer at designated times.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-06-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-03T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Linux">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-06-03 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-3/">Learning Modern Linux - Chapter 3</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="shells-and-scripting">Shells and Scripting</h1>
+<p>A huge part of getting comfortable with Linux is getting comfortable using the <em>command line</em>, or <em>CLI</em>. Most common distros today will have some standard GUI application to accomplish most tasks. However, like we discussed, this text is going to be applicable to all Linux releases, and some are entirely command-line driven. We&rsquo;ll discuss some different types of shells, then take a look at <em>scripting</em>, or pre-written chunks of commands in a file meant to be ran by the computer at designated times.</p>
+<h2 id="basics">Basics</h2>
+<p>My favorite place to start- definitions. We consider a <em>terminal</em> to be any application that offers the user a text-based interaction with the computer. Most modern distros use terminal applications like Alacritty, kitty, and more. A step deeper, a <em>shell</em> is the interpreter running in the terminal application to handle input and output.</p>
+<p>Shell is built with the <code>sh</code> POSIX command, and the one most often used today or most well known is <code>bash</code>, or &ldquo;Bourne Again Shell&rdquo;, named after the original Bourne shell. There are some modern shells but we&rsquo;ll take a look at that later.</p>
+<p>How do shells control the flow of input and output? Through <em>streams</em>! The input stream collects user input, and the output stream sends that back. By default, your shell uses default File Descriptors (FD&rsquo;s) to handle where information goes. By default, your keyboard is <code>stdin</code>, or <code>FD 0</code>, and your monitor/terminal is where <code>stdout</code> (<code>FD 1</code>, standard output) or <code>stderr</code> (<code>FD 2</code>, standard error) are sent. I said default because you can actually control where these streams are sent and received from.</p>
+<p><em>Redirecting</em> output is common enough to be pretty easy to do. For example, instead of putting errors out to the screen, you can send any error messages into a text file. These become known as <em>log</em> files, and help manage most applications. The syntax is <code>$FD&gt;</code> or <code>&lt;$FD</code>, where <code>$FD</code> is the number associated with each stream. To redirect the <code>stderr</code>
+stream, we would use <code>2&gt;</code>. <code>stdout</code> is default, so <code>1&gt;</code> and <code>&gt;</code> mean the same thing. You can redirect both <code>stdout</code> and <code>stderr</code> using <code>&amp;&gt;</code>, and can get rid of a stream using <code>/dev/null</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl https://www.mrpointing.com &amp;&gt; /dev/null
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Takes the output from the curl and directs it to a garbage space</span>
+</span></span><span style="display:flex;"><span>$ curl https://www.mrpointing.com &gt; content.txt 2&gt; curl-status
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Redirects content and status to different files</span>
+</span></span><span style="display:flex;"><span>$ cat &gt; interactive-input.txt
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Allows you to start writing and saves input into the file given</span>
+</span></span></code></pre></div><p>This is just a preview of the power of shell scripting. There are some special characters you&rsquo;ll see used often;</p>
+<ul>
+<li><code>&amp;</code>: Used to run the given process in the background</li>
+<li><code>\</code>: Used to continue a command onto a new line (mostly for readability)</li>
+<li><code>|</code>: Used to send the output of one command into the input stream of another command</li>
+</ul>
+<p><strong>Variables</strong> are also possible when using the terminal. There are two we should be concerned with; <em>Environment</em> variables denoted with <code>env</code>, and <em>Shell</em> variables, which only exist in the context of the shell session you exist in. Let&rsquo;s see how to actually use these;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ set cool_var<span style="color:#f92672">=</span><span style="color:#ae81ff">15</span> <span style="color:#75715e"># Sets a shell variable called cool_var</span>
+</span></span><span style="display:flex;"><span>$ set | grep cool_var <span style="color:#75715e"># Lists all shell variables, but then pipes in a grep to only recieve results with &#39;cool_var&#39;</span>
+</span></span><span style="display:flex;"><span>_<span style="color:#f92672">=</span>cool_var<span style="color:#f92672">=</span><span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>$ export global_cool_var<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;var fun time&#34;</span> <span style="color:#75715e"># Make a new global variable</span>
+</span></span><span style="display:flex;"><span>$ set | grep <span style="color:#e6db74">&#39;cool*&#39;</span> <span style="color:#75715e"># Find results for variables we just made</span>
+</span></span><span style="display:flex;"><span>_<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;global_cool_var=var fun time&#39;</span>
+</span></span><span style="display:flex;"><span>global_cool_var<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;var fun time&#39;</span>
+</span></span><span style="display:flex;"><span>$ env | grep <span style="color:#e6db74">&#39;cool*&#39;</span> <span style="color:#75715e"># List global env variables</span>
+</span></span><span style="display:flex;"><span>global_cool_var<span style="color:#f92672">=</span>var fun time
+</span></span><span style="display:flex;"><span>$ bash <span style="color:#75715e"># Refresh the environment</span>
+</span></span><span style="display:flex;"><span>$ echo $global_cool_var <span style="color:#75715e"># Our global var is still there</span>
+</span></span><span style="display:flex;"><span>var fun time
+</span></span></code></pre></div><p>There are some pretty useful environment variables most shell environments will have (the text has a good amount, I just grabbed what I felt were the most important);</p>
+<ul>
+<li><code>EDITOR</code>: Path to default editor</li>
+<li><code>HOME</code>: Path to home directory</li>
+<li><code>PATH</code>: Lists of directories where the shell looks for executable</li>
+<li><code>PWD</code>: Full path to working directory</li>
+</ul>
+<p>There are a good amount of built in commands; they can be listed by running <code>help</code>. You could also likely find other commands in the <code>/usr/bin</code> and <code>/usr/sbin</code> directories, for user and admin commands respectively;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ which ls
+</span></span><span style="display:flex;"><span>/usr/bin/ls
+</span></span></code></pre></div><p>You&rsquo;ll find that different commands you&rsquo;ll come across take full control of the terminal (say, updating packages). If you wanted that to happen in the background, you just have to end the line with an <code>&amp;</code>. Then, you can use <code>jobs</code> to see which processes are running, and <code>fg</code> to bring it back to the foreground.</p>
+<h2 id="modern-commands">Modern Commands</h2>
+<p>Some commands are going to be used all the time; <code>ls</code>, <code>cat</code>, <code>cd</code>. A few more, but these are good to start with. Since these commands have been around forever, people have updated and built on top of these to make even more useful commands.</p>
+<p>This is a great example at the rate at which tech literature becomes obsolete. The first option presented (<code>exa</code>) already has another name to download it by (<code>eza</code>). Not a big or breaking change, but funny how modern books can still become dated. <code>eza</code> is essentially a better version of <code>ls</code>.</p>
+<p><code>bat</code> is an updated version of <code>cat</code> that offers syntax highlighting, as well as a separate page view for long files. This one is new to me, and I;m excited to include it in my toolkit. Keeping in the same vein as similar titles for existing commands, <code>ripgrep</code> or simply <code>rg</code> is a faster version of <code>grep</code>, that allows for more complex searches. A simple example of this is searching for the word &ldquo;search&rdquo; in a directory. I have a directory called <code>hugo_scripts</code>, with a few files in it. To search for all the instances of &lsquo;search&rsquo; in my directory, the best way I know to do it with grep is the following;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep search main.py o_to_h.py path_files.py
+</span></span><span style="display:flex;"><span>main.py:def replace_text_in_content<span style="color:#f92672">(</span>content, search_text, replacement_text<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>main.py:    <span style="color:#66d9ef">return</span> re.sub<span style="color:#f92672">(</span>search_text, replacement_text, content<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>main.py:def process_directory<span style="color:#f92672">(</span>directory_path, search_text, replacement_text<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>main.py:        new_content <span style="color:#f92672">=</span> replace_text_in_content<span style="color:#f92672">(</span>content, search_text, replacement_text<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>main.py:    search_text <span style="color:#f92672">=</span> input<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Enter the text to search for: &#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>main.py:    process_directory<span style="color:#f92672">(</span>directory_path, search_text, replacement_text<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>I have to list out all the files I&rsquo;m searching in. If I had more than 3 files, I&rsquo;d be annoyed at how long it took. Now, with <code>rg</code>, doing such is trivial;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ rg search
+</span></span><span style="display:flex;"><span>rg search
+</span></span><span style="display:flex;"><span>README.md
+</span></span><span style="display:flex;"><span>6:Nothing fancy; start with <span style="color:#e6db74">`</span>o_to_h.py<span style="color:#e6db74">`</span> to search through your vault <span style="color:#66d9ef">for</span> all files where a <span style="color:#e6db74">`</span>draft<span style="color:#e6db74">`</span> property 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>main.py
+</span></span><span style="display:flex;"><span>19:def replace_text_in_content<span style="color:#f92672">(</span>content, search_text, replacement_text<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>20:    <span style="color:#66d9ef">return</span> re.sub<span style="color:#f92672">(</span>search_text, replacement_text, content<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>23:def process_directory<span style="color:#f92672">(</span>directory_path, search_text, replacement_text<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>30:        new_content <span style="color:#f92672">=</span> replace_text_in_content<span style="color:#f92672">(</span>content, search_text, replacement_text<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>40:    search_text <span style="color:#f92672">=</span> input<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Enter the text to search for: &#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>43:    process_directory<span style="color:#f92672">(</span>directory_path, search_text, replacement_text<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>So much easier, with more verbose information like the file it was found in, with the line it was found on.</p>
+<h2 id="common-tasks">Common Tasks</h2>
+<p>Being able to navigate your terminal while using it is what separates hobbyists from professionals. Not that you need to be a master to accomplish daily tasks, but if you end up working mainly in your terminal, you&rsquo;re going to want to make your life as easy as possible and adopt some useful conventions. For one, most shells offer faster navigation using <code>Ctrl + (insert character)</code>. A full list can be found in the text, but here are some I use all the time;</p>
+<ul>
+<li><code>Ctrl+a</code>: Move to start of the line</li>
+<li><code>Ctrl+e</code>: Move to the end of a line</li>
+<li><code>Ctrl+Left Arrow</code>: Move back one word</li>
+<li><code>Ctrl+Right Arrow</code>: Move forward one word</li>
+<li><code>Ctrl+l</code>: Clear screen</li>
+</ul>
+<p>Not everyone can use Vim motions, or wants too. Not only that, but there are often times where you don&rsquo;t want to bother opening up a text editor at all. In this case, you can edit files entirely through the command line, like in the following example;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ echo <span style="color:#e6db74">&#34;First!&#34;</span> &gt; something <span style="color:#75715e"># You can use the echo command to redirect output into a file</span>
+</span></span><span style="display:flex;"><span>$ echo <span style="color:#e6db74">&#34;Second!&#34;</span> &gt;&gt; something <span style="color:#75715e"># Double &gt;&gt; refers to append; needed, or else you&#39;ll write over &#39;First!&#39;</span>
+</span></span><span style="display:flex;"><span>$ sed <span style="color:#e6db74">&#39;s/!/?/&#39;</span> something <span style="color:#75715e"># Replaces all instances of &#39;!&#39; with &#39;?&#39; in &#39;something&#39;, but only in output. File remains unchanged. </span>
+</span></span><span style="display:flex;"><span>$ cat <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39; &gt; another 
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">First!
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Second!
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Third!
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The above is a cool command; we open a new file called &#39;another&#39; and type into it until we pass in &#39;EOF&#39;. &#39;EOF&#39; is not saved into the file.</span>
+</span></span><span style="display:flex;"><span>$ diff -y something another
+</span></span><span style="display:flex;"><span>First!								First!
+</span></span><span style="display:flex;"><span>Second!								Second!
+</span></span><span style="display:flex;"><span>							     &gt;	Third!
+</span></span></code></pre></div><p>Another useful command to leave you with; to easily get the date, you can use <code>date</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ date
+</span></span><span style="display:flex;"><span>Tue Jun <span style="color:#ae81ff">10</span> 10:34:45 AM EDT <span style="color:#ae81ff">2025</span>
+</span></span></code></pre></div><h2 id="modern-shells">Modern Shells</h2>
+<p>Like we discussed with modern commands, there are also modern shells that replace the bash shell. While these are not <em>all</em> that different than just using bash, there are merits to at least know of a few of these (even if <a href="https://www.ysap.sh">YSAP</a> says we should just use bash!)</p>
+<p>The first we&rsquo;ll look at is the Fish shell. This one I&rsquo;ve actually used before and can attest to the two additions being useful; execution history and auto-suggestions. Both are big QOL changes I thought were nice (even if I still just use bash). There is also a really easy config UI that I haven&rsquo;t used, but seems very easy to work with (call <code>fish_config</code> in a Fish shell).</p>
+<p>Another one I&rsquo;ve used and found to be quite nice is Z-shell, or <code>zsh</code>. Same thing as the last two, except it has an emphasis on line completions and theming support. There are some more that the text reviews, but to be honest, along with what I was mentioning earlier, I think deep diving into one of these now will do us a grave injustice given times change and change fast. For now, I&rsquo;ll stick to bash, and might make a move to another shell once I really feel confident in bash.</p>
+<h3 id="terminal-multiplexer">Terminal Multiplexer</h3>
+<p>This is a subheading I almost want to skip, but I&rsquo;ll get all the general information down. Personally, I find tabs in terminals to be a bit too much. I forget they&rsquo;re there, close a window, and lost 3 sessions. I would much rather have dedicated work spaces, and have a terminal in different spaces to separate them out. Not only that, but using window tiling makes it really easy to accomplish this.</p>
+<p>Let&rsquo;s say you&rsquo;re not like me- you enjoy having one screen and one workspace, and that&rsquo;s your jam. If so, this section is for you. We&rsquo;re going to look at ways to split your terminal window, primarily using <code>tmux</code>. The text does offer more, but actually explicitly recommends using <code>tmux</code>.</p>
+<p>I took a small break to just configure and work with <code>tmux</code> and I gotta say, I&rsquo;m slightly hooked. Mostly because figuring out how to configure it to look the way I want. Again, this is the multiplexer that the author recommends, so if you want to find others, a Google search will lead to a good list. The best resources I found on <code>tmux</code> were <a href="file:///home/richie/Downloads/osdc_cheatsheet-tmux-2021.6.25.pdf">this</a> cheat sheet and <a href="https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/">this</a> article on quick customization.</p>
+<h2 id="scripting">Scripting</h2>
+<p>Of course, we should know how to navigate and remember useful commands that we&rsquo;ll use often. However, there are many times where you&rsquo;ll end up running the same commands over the same tasks over and over again. A task like this could warrant a <em>script</em>, or a chunk of pre-defined code within a file. For bash, these usually end in <code>.sh</code>.</p>
+<p>While large scripts shouldn&rsquo;t be discouraged, it&rsquo;s worth considering using another language like Python to accomplish it. For the most part, bash is a good language to use due to it&rsquo;s accessibility. To walk through making a script, let&rsquo;s try to accomplish a task; print the following statement given a GitHub profile; <code>XXX XXX joined GitHub in YYYY</code>.</p>
+<p>In addition to string date types (advanced numerical calculations should probably not be done using bash) there are arrays that are 0-indexed;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>heroes <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;Link&#39;</span>, <span style="color:#e6db74">&#39;Samus&#39;</span>, <span style="color:#e6db74">&#39;Sora&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>os[0]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#75715e"># Link</span>
+</span></span><span style="display:flex;"><span>number_of_heroes <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${#</span>heroes[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#75715e"># 3</span>
+</span></span></code></pre></div><p>Bash also has control structures like <code>if</code>, <code>for</code>, and <code>while</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> afile in /tmp/* ; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;</span>$afile<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i in <span style="color:#f92672">{</span>1..10<span style="color:#f92672">}</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;</span>$i<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><p>We can even write functions;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>say_hi<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Hi </span>$1<span style="color:#e6db74"> hope you are sick!&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>say_hi <span style="color:#e6db74">&#34;Sarah&#34;</span>
+</span></span></code></pre></div><p>We can collect information from the user;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>read name
+</span></span><span style="display:flex;"><span>printf <span style="color:#e6db74">&#34;Hello %s&#34;</span> <span style="color:#e6db74">&#34;</span>$name<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>For a full walk through of all the capabilities of bash scripting, there is a really nice cheat sheet <a href="https://devhints.io/bash">here</a> that I thought was well put together.</p>
+<p>There&rsquo;s a term you might here often when referring to scripts, and that&rsquo;s a scripts <em>portability</em>. Not how easily you can literally pick it up and walk away; we&rsquo;re talking about the assumptions of the device you&rsquo;re running the script on. A highly portable script is one that doesn&rsquo;t rely on external dependencies, and can run on multiple systems without issue.</p>
+<p>To actually begin writing a script, it&rsquo;s not as complex as you might think. Technically you can just use a text file, but there&rsquo;s a standard convention of ending any script in <code>.sh</code>. After that, you need two things; a declared interpreter on the first line (often called a <em>shebang</em>) and the permissions for that file to be executed (usually though <code>chmod +x</code>).</p>
+<p>To help start you on your script writing journey, let&rsquo;s begin with a basic template. This will set you up for success while maintaining decent error handling;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash # Our shebang, letting us know we want to interpret this script using bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>set -o errexit <span style="color:#75715e"># script should end if any errors occur</span>
+</span></span><span style="display:flex;"><span>set -o nounset <span style="color:#75715e"># Unset variables are errors</span>
+</span></span><span style="display:flex;"><span>set -o pipefail <span style="color:#75715e"># If one portion of a pipe fails, it all fails</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>firstargument<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#66d9ef">:-</span>somedefaultvalue<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;</span>$firstargument<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>We use those three <code>set</code> commands to eliminate any silent errors; essentially, an error that won&rsquo;t break the program and let it continue functioning as if there was no error at all. This can lead to numerous issues, which we can circumnavigate easily with the previous example.</p>
+<p>Let&rsquo;s review some good common practices;</p>
+<ul>
+<li><strong>Fail fast and loud</strong>: errors should be caught and fail (the <code>set</code> commands we just went over)</li>
+<li><strong>Sensitive Information</strong>: You should not have any sensitive info like a password or API key within a script</li>
+<li><strong>Input sanitization</strong>: Default variables are essential to avoid outside, potentially dangerous input</li>
+<li><strong>Check dependencies</strong>: Never want to assume a machine comes with something that isn&rsquo;t pre-installed or built-in; ex. using <code>curl</code> when a machine only has <code>wget</code> by default</li>
+<li><strong>Error handling</strong>: Errors are to be expected; when they happen, provide clear indications to your users of what happened when and where</li>
+<li><strong>Documentation</strong>: Just like any language, comments to help describe workflow are always encouraged</li>
+<li><strong>Version control</strong>: Use Git!</li>
+<li><strong>Testing</strong>: Lint and test!</li>
+</ul>
+<p>If you ever want to look at your script and test for any errors, a great resource is <a href="https://www.shellcheck.net/">ShellCheck</a>, which not only has a browser version, but also one you can download locally as well.</p>
+<p>Now that we know a decent amount about how to properly script, let&rsquo;s make that script for our GitHub account information;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>set -o errexit
+</span></span><span style="display:flex;"><span>set -o errtrace
+</span></span><span style="display:flex;"><span>set -o nounset
+</span></span><span style="display:flex;"><span>set -o pipefail
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Command line parameter:</span>
+</span></span><span style="display:flex;"><span>targetuser<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#66d9ef">:-</span>mr-pointing<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Check if dependencies are met:</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ! <span style="color:#f92672">[</span> -x <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>command -v jq<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;jq is not installed :(&#34;</span> &gt;&amp;<span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Main:</span>
+</span></span><span style="display:flex;"><span>githubapi<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://api.github.com/users/&#34;</span>
+</span></span><span style="display:flex;"><span>tmpuserdump<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/tmp/ghuserdump_</span>$targetuser<span style="color:#e6db74">.json&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>curl -s $githubapi$targetuser<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>echo $result &gt; $tmpuserdump
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>jq .name $tmpuserdump -r<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>created_at<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>jq .created_at $tmpuserdump -r<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>joinyear<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>echo $created_at | cut -f1 -d<span style="color:#e6db74">&#34;-&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>echo $name joined GitHub in $joinyear
+</span></span></code></pre></div><h3 id="chapter-resources">Chapter Resources</h3>
+<ul>
+<li><a href="https://leanpub.com/the-tao-of-tmux/read">Book on <code>tmux</code></a></li>
+<li><a href="https://poor.dev/blog/terminal-anatomy/">Deep dive into what the Terminal is</a></li>
+<li><a href="https://lucasfcosta.com/2019/04/07/streams-introduction.html">How streams actually work</a></li>
+<li><a href="https://google.github.io/styleguide/shellguide.html">Style guide for shell scripts</a></li>
+<li><a href="https://devhints.io/bash"><code>bash</code> script cheat-sheet</a></li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-4/">Chapter 4</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/linux/">linux</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Modern Linux - Chapter 3</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-3/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-3/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;shells-and-scripting&#34;&gt;Shells and Scripting&lt;/h1&gt;&#xA;&lt;p&gt;A huge part of getting comfortable with Linux is getting comfortable using the &lt;em&gt;command line&lt;/em&gt;, or &lt;em&gt;CLI&lt;/em&gt;. Most common distros today will have some standard GUI application to accomplish most tasks. However, like we discussed, this text is going to be applicable to all Linux releases, and some are entirely command-line driven. We&amp;rsquo;ll discuss some different types of shells, then take a look at &lt;em&gt;scripting&lt;/em&gt;, or pre-written chunks of commands in a file meant to be ran by the computer at designated times.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning Modern Linux - Chapter 1</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-1/</link>
+      <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;introduction-to-linux&#34;&gt;Introduction to Linux&lt;/h1&gt;&#xA;&lt;p&gt;Linux is one of the most used operating systems in the world. It&amp;rsquo;s used for a wide variety of applications, and has roots that go back years. TO understand where we are at and how we got here, let&amp;rsquo;s define &lt;strong&gt;modern&lt;/strong&gt; Linux.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-a-modern-environment&#34;&gt;What is a Modern Environment?&lt;/h2&gt;&#xA;&lt;p&gt;Put simply, these &amp;ldquo;environments&amp;rdquo; are spaces in which Linux is commonly used. These range from &lt;em&gt;mobile devices&lt;/em&gt;, (Android is developed with Linux!), &lt;em&gt;cloud computing&lt;/em&gt;, to &lt;em&gt;Internet of Things&lt;/em&gt; (think of smart appliances or cars). We even see Linux get involved when we are &lt;em&gt;diversifying processors&lt;/em&gt;. All of these spaces are heavily influenced by Linux.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning Modern Linux - Chapter 2</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-2/</link>
+      <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-2/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;the-linux-kernel&#34;&gt;The Linux Kernel&lt;/h1&gt;&#xA;&lt;p&gt;In the last chapter, we gained a new perspective on what an Operating System actually does; gives us the ability to use an API to talk to our system hardware and abstracts out all of the obscure and human-intensive tasks. We&amp;rsquo;ll take a look now at where the kernel falls into place in this diagram; not as a separate entity, but a crucial part of the OS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning Modern Linux</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/</guid>
+      <description>&lt;h1 id=&#34;a-handbook-for-the-cloud-native-practitioner&#34;&gt;A Handbook for the Cloud Native Practitioner&lt;/h1&gt;&#xA;&lt;h2 id=&#34;by-michael-hausenblas&#34;&gt;By Michael Hausenblas&lt;/h2&gt;&#xA;&lt;p&gt;Another book from Humble Bundle, this is a book I&amp;rsquo;m pretty excited about. I know very little aside from the basics concerning Linux architecture, so I&amp;rsquo;m looking forward to learning more complicated topics. This text is meant to focus on everyday uses of Linux, from development to standard office.&lt;/p&gt;&#xA;&lt;p&gt;An important part of this text is it&amp;rsquo;s emphasis on the command-line; this is not going to go over the GUI side of Linux. This book is for anyone who wants or needs to use Linux in the above discussed settings. A lot of the text will read as if the reader doesn&amp;rsquo;t have proficient knowledge of Linux. This again, focuses on the use of Linux, rather than the administration of it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Arch Linux on Virtual Machine</title>
       <link>https://mrpointing.com/projects/arch-linux-on-virtual-machine/</link>

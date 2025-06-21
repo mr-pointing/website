@@ -2,29 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mrpointing.com/tags/book/</loc>
-    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+    <loc>https://mrpointing.com/posts/1-year-of-obsidian/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/me/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/</loc>
-    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/obsidian/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/posts/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/computerscience/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-4/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-3/</loc>
+    <lastmod>2025-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/linux/</loc>
+    <lastmod>2025-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/textbook/</loc>
+    <lastmod>2025-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/lua/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-23/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-22/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-1/</loc>
+    <lastmod>2025-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-2/</loc>
+    <lastmod>2025-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-21/</loc>
+    <lastmod>2025-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-20/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/book/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/psychological_fiction/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/</loc>
-    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/notes/entertainment/books/the-secret-history/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/computerscience/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/lua/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-17/</loc>
     <lastmod>2025-05-19T00:00:00+00:00</lastmod>
@@ -32,10 +74,7 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-18/</loc>
     <lastmod>2025-05-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/textbook/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/me/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/</loc>
     <lastmod>2025-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-16/</loc>
@@ -257,9 +296,6 @@
     <loc>https://mrpointing.com/tags/graphic_design/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/posts/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/notes/computer-science/front-end/the-odin-project/fundamental-css-properties/</loc>
     <lastmod>2025-02-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -441,9 +477,6 @@
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/projects/30-day-coding-challenge/week-2/day-9/</loc>
-    <lastmod>2024-12-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/linux/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/youtube/</loc>
@@ -642,9 +675,6 @@
     <lastmod>2024-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/obsidian/note-taking-methods/</loc>
-    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/obsidian/</loc>
     <lastmod>2024-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/contains-duplicate/</loc>

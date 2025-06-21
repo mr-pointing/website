@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" The Environment Now it&rsquo;s time to talk about global variables. Technically speaking, Lua doesn&rsquo;t actually have any. Why would you want global variables? For the most part they over complicate code, and can lead to messy implementation if caution isn&rsquo;t used. That being said, global variables can also help tremendously if used correctly.
+What it does have, are variables placed within a table called the global environment. It&rsquo;s a cheeky way to circumnavigate having to actually implement global variables. Lua uses a table named _G to store all of the global variables, and we can use the following to list out everything inside of it;
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, lua" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-22/" />
+
+
+    <title>
+        
+            Programming in Lua - Chapter 22 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Programming in Lua - Chapter 22">
+  <meta itemprop="description" content="The Environment Now it’s time to talk about global variables. Technically speaking, Lua doesn’t actually have any. Why would you want global variables? For the most part they over complicate code, and can lead to messy implementation if caution isn’t used. That being said, global variables can also help tremendously if used correctly.
+What it does have, are variables placed within a table called the global environment. It’s a cheeky way to circumnavigate having to actually implement global variables. Lua uses a table named _G to store all of the global variables, and we can use the following to list out everything inside of it;">
+  <meta itemprop="datePublished" content="2025-05-28T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-05-28T00:00:00+00:00">
+  <meta itemprop="wordCount" content="898">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Lua">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Programming in Lua - Chapter 22">
+  <meta name="twitter:description" content="The Environment Now it’s time to talk about global variables. Technically speaking, Lua doesn’t actually have any. Why would you want global variables? For the most part they over complicate code, and can lead to messy implementation if caution isn’t used. That being said, global variables can also help tremendously if used correctly.
+What it does have, are variables placed within a table called the global environment. It’s a cheeky way to circumnavigate having to actually implement global variables. Lua uses a table named _G to store all of the global variables, and we can use the following to list out everything inside of it;">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-22/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Programming in Lua - Chapter 22">
+  <meta property="og:description" content="The Environment Now it’s time to talk about global variables. Technically speaking, Lua doesn’t actually have any. Why would you want global variables? For the most part they over complicate code, and can lead to messy implementation if caution isn’t used. That being said, global variables can also help tremendously if used correctly.
+What it does have, are variables placed within a table called the global environment. It’s a cheeky way to circumnavigate having to actually implement global variables. Lua uses a table named _G to store all of the global variables, and we can use the following to list out everything inside of it;">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-05-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-28T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Lua">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-05-28 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-22/">Programming in Lua - Chapter 22</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="the-environment">The Environment</h1>
+<p>Now it&rsquo;s time to talk about <em>global variables</em>. Technically speaking, Lua doesn&rsquo;t actually have any. Why would you want global variables? For the most part they over complicate code, and can lead to messy implementation if caution isn&rsquo;t used. That being said, global variables can also help tremendously if used correctly.</p>
+<p>What it does have, are variables placed within a table called the <strong>global environment</strong>. It&rsquo;s a cheeky way to circumnavigate having to actually implement global variables. Lua uses a table named <code>_G</code> to store all of the global variables, and we can use the following to list out everything inside of it;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> n <span style="color:#66d9ef">in</span> pairs(_G) <span style="color:#66d9ef">do</span> print(n) <span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h2 id="global-variables-with-dynamic-names">Global Variables with Dynamic Names</h2>
+<p>There are instances where we need to ensure we are get or set the value from a global variable. There are a few ways to do this, but the easiest way is to just use the global table;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">-- Get</span>
+</span></span><span style="display:flex;"><span>value <span style="color:#f92672">=</span> _G[varname]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Set</span>
+</span></span><span style="display:flex;"><span>_G[varname] <span style="color:#f92672">=</span> value
+</span></span></code></pre></div><p>The text offers some caution with the above; most often, these calls are unnecessary, and can be accomplished with basic variable assignment.</p>
+<h2 id="global-variable-declarations">Global-Variable Declarations</h2>
+<p>Lua doesn&rsquo;t implicitly need a declaration for a global variable. We can actually use metatables to keep track of any variables. The next two methods can be used to detect accesses to absent keys;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>setmetatable(_G, {
+</span></span><span style="display:flex;"><span>  __newindex <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (_, n)
+</span></span><span style="display:flex;"><span>    error(<span style="color:#e6db74">&#34;attempt to write to undeclared variable &#34;</span> <span style="color:#f92672">..</span> n, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  __index <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (_, n)
+</span></span><span style="display:flex;"><span>    error(<span style="color:#e6db74">&#34;attempt to read undeclared variable &#34;</span> <span style="color:#f92672">..</span> n, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Now, anytime we try to access non-existent global vars..</span>
+</span></span><span style="display:flex;"><span>print(a)
+</span></span><span style="display:flex;"><span>stdin:<span style="color:#ae81ff">1</span>: attempt to read undeclared variable a
+</span></span></code></pre></div><p>Now declaring variables is pretty restricted. We could use <code>rawset</code>, which will ignore the metamethod we just made;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">declare</span> (name, initval)
+</span></span><span style="display:flex;"><span>  rawset(_G, name, initval <span style="color:#f92672">or</span> <span style="color:#66d9ef">false</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>or, we can restrict assignments to global variables <em>only within functions</em>, and then allow free use in the outside of the chunk. This is done with the use of a line from the debug library, <code>debug.getinfo(2, &quot;S&quot;)</code>, which returns the level the metamethod was called on (main area, function area, or C function). Let&rsquo;s rewrite the <code>__newindex</code> metamethod we defined previously;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>__newindex <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (t, n, v)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> w <span style="color:#f92672">=</span> debug.getinfo(<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;S&#34;</span>).what
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> w <span style="color:#f92672">~=</span> <span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#f92672">and</span> w <span style="color:#f92672">~=</span> <span style="color:#e6db74">&#34;C&#34;</span> <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    error(<span style="color:#e6db74">&#34;attempt to write to undeclared variable &#34;</span> <span style="color:#f92672">..</span> n, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  rawset(t, n, v)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Checking for a value is also similar, since we have to use <code>rawget</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> rawget(_G, var) <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  error(<span style="color:#e6db74">&#34;var is undeclared&#34;</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h2 id="non-global-environments">Non-Global Environments</h2>
+<p>Time to explain what&rsquo;s <em>really</em> going on. We start with <em>free names</em>, which is any variable name not already in use by Lua or the chunk you&rsquo;re currently in.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> z <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> y <span style="color:#f92672">+</span> z
+</span></span></code></pre></div><p>In the previous example, the declaration of <code>x</code> was a free name, but <code>z</code> was not since it was in use. There is something happening behind the scenes; both <code>x</code> and <code>y</code> are actually being translated by the compiler to use an environment called <code>_ENV</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> z <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>_ENV.x <span style="color:#f92672">=</span> _ENV.y <span style="color:#f92672">+</span> z
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Which is ACTUALLY read by the compiler as...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> _ENV <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>a value<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">function</span> (...)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> z <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>  _ENV.x <span style="color:#f92672">=</span> _ENV.y <span style="color:#f92672">+</span> z
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Confusing right? <code>_ENV</code> can actually be any value (usually a table), but <code>load</code> helps us configure whatever is being used as the global environment to be used as <code>_ENV</code>.</p>
+<h2 id="using-_env">Using <code>_ENV</code></h2>
+<p>To actually accomplish or test anything from this chapter, using interactive mode isn&rsquo;t going to cut it. All examples should be ran as a single chunk;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>
+</span></span><span style="display:flex;"><span>print(a) <span style="color:#75715e">--&gt; 25</span>
+</span></span><span style="display:flex;"><span>print(_G.a) <span style="color:#75715e">--&gt; 20</span>
+</span></span></code></pre></div><p>While they are usually referring to the same table, <code>_ENV</code> and <code>_G</code> are different. While <code>_G</code> is a global variable without anything special about it, <code>_ENV</code> is actually a local variable that all global accesses pass through. Formally, <code>_ENV</code> refers to the current environment, while <code>_G</code> is still just the global.</p>
+<p>One big reason to use <code>_ENV</code> is the affect your coding environment. If you change the environment, you change a lot. For example, look at the following;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>_ENV <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>print(a) <span style="color:#75715e">--&gt; stdin:4: attempt to call global &#39;print&#39; (a nil value)</span>
+</span></span></code></pre></div><p>Since we reset the environment, we lost all of the global variables and functions, including all built-in functions. We can fix this by including <code>_G</code> inside the new environment declaration;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>_ENV <span style="color:#f92672">=</span> {_G <span style="color:#f92672">=</span> _G}
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>_G.print(_ENV.a, _G.a) <span style="color:#75715e">--&gt; 1    15</span>
+</span></span></code></pre></div><h2 id="environments-and-modules">Environments and Modules</h2>
+<p>If you remember all the way back in Chapter 7, there was talk of modules polluting the global environment. Well, now that we have the power to create enclosed environments, this drawback becomes manageable. All new variables and functions exclusive to that module exist only within it&rsquo;s disclosed environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> M <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>_ENV <span style="color:#f92672">=</span> M
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">add</span> (c1, c2)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> new(c1.r <span style="color:#f92672">+</span> c2.r, c1.i <span style="color:#f92672">+</span> c2.i)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>After we create a new module, we set up the <code>_ENV</code> to become that new table, and now all calls and declarations will be set up inside of <code>M</code>. Pretty useful.</p>
+<h3 id="exercises">Exercises</h3>
+<ol start="2">
+<li>Explain in detail what happens in the following program and what it will print;</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> foo
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> _ENV <span style="color:#f92672">=</span> _ENV
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo</span> () print(X) <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>
+</span></span><span style="display:flex;"><span>_ENV <span style="color:#f92672">=</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>foo()
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-23/">Chapter 23</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/lua/">lua</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

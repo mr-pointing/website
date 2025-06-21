@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" The Linux Kernel In the last chapter, we gained a new perspective on what an Operating System actually does; gives us the ability to use an API to talk to our system hardware and abstracts out all of the obscure and human-intensive tasks. We&rsquo;ll take a look now at where the kernel falls into place in this diagram; not as a separate entity, but a crucial part of the OS.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, linux" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-2/" />
+
+
+    <title>
+        
+            Learning Modern Linux - Chapter 2 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Learning Modern Linux - Chapter 2">
+  <meta itemprop="description" content="The Linux Kernel In the last chapter, we gained a new perspective on what an Operating System actually does; gives us the ability to use an API to talk to our system hardware and abstracts out all of the obscure and human-intensive tasks. We’ll take a look now at where the kernel falls into place in this diagram; not as a separate entity, but a crucial part of the OS.">
+  <meta itemprop="datePublished" content="2025-05-27T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-05-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1631">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Linux">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Learning Modern Linux - Chapter 2">
+  <meta name="twitter:description" content="The Linux Kernel In the last chapter, we gained a new perspective on what an Operating System actually does; gives us the ability to use an API to talk to our system hardware and abstracts out all of the obscure and human-intensive tasks. We’ll take a look now at where the kernel falls into place in this diagram; not as a separate entity, but a crucial part of the OS.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-2/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Learning Modern Linux - Chapter 2">
+  <meta property="og:description" content="The Linux Kernel In the last chapter, we gained a new perspective on what an Operating System actually does; gives us the ability to use an API to talk to our system hardware and abstracts out all of the obscure and human-intensive tasks. We’ll take a look now at where the kernel falls into place in this diagram; not as a separate entity, but a crucial part of the OS.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-05-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-27T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Linux">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-05-27 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-2/">Learning Modern Linux - Chapter 2</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="the-linux-kernel">The Linux Kernel</h1>
+<p>In the last chapter, we gained a new perspective on what an Operating System actually does; gives us the ability to use an API to talk to our system hardware and abstracts out all of the obscure and human-intensive tasks. We&rsquo;ll take a look now at where the kernel falls into place in this diagram; not as a separate entity, but a crucial part of the OS.</p>
+<h2 id="linux-architecture">Linux Architecture</h2>
+<p>The text provides a great diagram of the hierarchy of the Linux architecture;</p>
+
+    <img src="/images/linux_architecture.png"  alt="Linux Architecture"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The above splits our device into three distinct sections; User Space, the Kernel, and Hardware. The last is not super relevant, but we are going to go into deeper details of the first two throughout this text.</p>
+<p>User Space contains all of the programs we interact with on a daily basis, and is subject to further discussion in later chapters. For now, we&rsquo;re going to focus on the main objective of this chapter-understanding the kernel. We can split the kernel into five more distinct categories; <strong>Processes</strong>, <strong>Memory</strong>, <strong>Networking</strong>, <strong>File systems</strong>, and <strong>Devices</strong>.</p>
+<p>A quick thing before we dive deeper into these, sometimes you&rsquo;ll hear user mode versus kernel mode-user mode is a safer albeit slower environment, while kernel mode is a faster but has more potential for danger since you&rsquo;re working with limited abstraction. We will look closer at what you would do with kernel mode when discussing <em>syscalls</em>, which we already defined previously.</p>
+<h2 id="cpu-architectures">CPU Architectures</h2>
+<p>A big drive to use Linux over other OS&rsquo;s is it&rsquo;s ability to run on different CPU architectures. To actually see what architecture your CPU is, you can use <code>lscpu</code> in your terminal;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ lscpu
+</span></span><span style="display:flex;"><span>Architecture:             x86_64
+</span></span><span style="display:flex;"><span>  CPU op-mode<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>:         32-bit, 64-bit
+</span></span><span style="display:flex;"><span>  Address sizes:          <span style="color:#ae81ff">48</span> bits physical, <span style="color:#ae81ff">48</span> bits virtual
+</span></span><span style="display:flex;"><span>  Byte Order:             Little Endian
+</span></span><span style="display:flex;"><span>CPU<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>:                   <span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span>  On-line CPU<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> list:    0-15
+</span></span><span style="display:flex;"><span>Vendor ID:                AuthenticAMD
+</span></span><span style="display:flex;"><span>  Model name:             AMD Ryzen AI <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">350</span> w/ Radeon 860M
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>My machine&rsquo;s CPU Architecture is <code>x86_64</code>, I have 16 CPU cores, and the name of my chip is the <code>AMD Ryzen AI 7 350 w/ Radeon 860M</code>.</p>
+<p>Most devices you&rsquo;ll run into on a common or daily basis is the <strong>x86 Architecture</strong>. Coming from Intel, and eventually licensed to AMD, this chip runs somewhat efficiently in desktops, laptops and servers, with some issues with energy. The text did provide a link to more information on x86, but the link is unfortunately dead.</p>
+<p>The next important distinction is <strong>ARM Architecture</strong>. Made within the family of Reduced Instruction Set Computing (<em>RISC</em>) Architecture, is made to contain less instructions than chips like the x86, therefore becoming faster and using less heat. We see these mostly in smartphones and single-board computers (<em>SBC</em>) like the Raspberry Pi. The text also recommends <a href="https://meltdownattack.com/">this</a> site that goes over Meltdowns and Spectre, some pretty massive exploits affecting modern devices. This should eventually become it&rsquo;s own note.</p>
+<h2 id="kernel-components">Kernel Components</h2>
+<p>These are the five larger blocks that make up the kernel in our diagram. They all work together to achieve a seem-less experience where the, &ldquo;<em>Kernel never breaks user land</em>.&rdquo; Let&rsquo;s discuss each part.</p>
+<h3 id="process-management">Process Management</h3>
+<p>These are all the processes that deal with the distribution of CPU processes, like running or stopping processes. Linux defines it&rsquo;s process architecture in the following (largest to smallest);</p>
+<ol>
+<li><em>Sessions</em>: Container of one or more process groups. Identified by a <em>SID</em>.</li>
+<li><em>Process Groups</em>: One or more processes. Identified by a <em>PGID</em>.</li>
+<li><em>Processes</em>: A collection of resources brought together to produce an executable human-facing application. Identifiable via the <em>PID</em>.</li>
+<li><em>Threads</em>: A process that shares resources with other processes. Identified by <em>TID</em> or <em>TGID</em>.</li>
+<li><em>Tasks</em>: A data structure defined (<code>task_struct</code>) to hold onto all the above information and more (signals, scheduling). Not exposed from the kernel.</li>
+</ol>
+<p>We can go into more detail on some of these in later chapters. For now, let&rsquo;s see if we can use some of what we learned and apply it to an actual command;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ps -j
+</span></span><span style="display:flex;"><span>    PID    PGID     SID TTY          TIME CMD
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">213018</span>  <span style="color:#ae81ff">213018</span>  <span style="color:#ae81ff">213018</span> pts/0    00:00:00 bash
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">213083</span>  <span style="color:#ae81ff">213083</span>  <span style="color:#ae81ff">213018</span> pts/0    00:00:00 ps
+</span></span></code></pre></div><p>We get two returns: the <code>bash</code> shell our terminal is using, and the <code>ps</code> command we used. We can see the PID for each, as well as the PGID and SID. We should notice that since we are using the command in the same session as our bash shell (obviously), our SID is the same. If you want to see all your currently running processes, use <code>pc -a</code>, or <code>pc --help</code> if you want more information.</p>
+<p>There are also states we have to be concerned with; a process is either <em>ready</em>, <em>running</em>, <em>waiting</em>, or <em>terminated</em>. It&rsquo;s a little more complex than that-<a href="https://kerneltalks.com/linux/process-states-in-linux/">this</a> article is a quick and concise look at it.</p>
+<h3 id="memory-management">Memory Management</h3>
+<p>The way memory management works is a tad confusing at first. Each process is given a <strong>page</strong> of <em>virtual</em> memory, that maps to the physical memory. Different pages of virtual can point to the same physical, which is kind of the point of how memory works in Linux (maintaining that balance).</p>
+<p>Modern computing has attempted to keep up with this by implementing a cache called a translation lookaside buffer (<em>TLB</em>) that gives the CPU the page(s) table in need to help find the physical memory address. Linux had a standard of 4 KB for each process, but as of a new version (2.6.3) <em>huge pages</em> are supported with up to 128 TB of possible virtual address space and 64 of physical. You can use <code>proc/meminfo</code> to find out how much RAM you have;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ grep MemTotal /proc/meminfo
+</span></span><span style="display:flex;"><span>MemTotal:       <span style="color:#ae81ff">15627436</span> kB
+</span></span><span style="display:flex;"><span>$ grep VmallocTotal /proc/meminfo
+</span></span><span style="display:flex;"><span>VmallocTotal:   <span style="color:#ae81ff">34359738367</span> kB
+</span></span><span style="display:flex;"><span>$ grep Huge /proc/meminfo
+</span></span><span style="display:flex;"><span>AnonHugePages:         <span style="color:#ae81ff">0</span> kB
+</span></span><span style="display:flex;"><span>ShmemHugePages:        <span style="color:#ae81ff">0</span> kB
+</span></span><span style="display:flex;"><span>FileHugePages:         <span style="color:#ae81ff">0</span> kB
+</span></span><span style="display:flex;"><span>HugePages_Total:       <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>HugePages_Free:        <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>HugePages_Rsvd:        <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>HugePages_Surp:        <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Hugepagesize:       <span style="color:#ae81ff">2048</span> kB
+</span></span><span style="display:flex;"><span>Hugetlb:               <span style="color:#ae81ff">0</span> kB
+</span></span></code></pre></div><h3 id="networking">Networking</h3>
+<p>Like we saw in the diagram, the kernel is responsible for networking functions. This is how the network stack works;</p>
+<ol>
+<li><strong>Sockets</strong></li>
+<li><strong>TCP/UDP</strong></li>
+<li><strong>IP</strong></li>
+</ol>
+<p>Each of these topics are much more detailed; I have notes on here for the bottom two specifically. There is a chapter on this later that will go into more detail. If you want info on your networking, use <code>ip link</code> or <code>ip route</code>.</p>
+<h3 id="filesystems">Filesystems</h3>
+<p>Linux has a unique file system that might be confusing if coming from Windows, but isn&rsquo;t all that different. It&rsquo;s still stored on your hard drive or solid state drive. We&rsquo;ll go over more of the different types of file systems in a later chapter.</p>
+<h3 id="device-drivers">Device Drivers</h3>
+<p>A <em>driver</em> is a set of instructions that sit in the kernel and manage a device&rsquo;s input and output. We have drivers for hardware, GPU&rsquo;s, and many others. To actually understand drivers and how they interact is beyond the scope of this book, but more can be found <a href="https://makelinux.github.io/kernel/map/">here</a>.</p>
+<h3 id="syscalls">Syscalls</h3>
+<p>We&rsquo;ve seen how every part of our device has a corresponding part within the Linux kernel. Everything we do goes back to a system call that interacts with the kernel, producing the <em>syscalls</em> we&rsquo;ve been discussing. They aren&rsquo;t infinite; there are around 300+, and can differ depending on your CPU architecture. These syscalls make use of the <em>C Standard Library</em>, since Linux is written in C.</p>
+<p>Within the kernel is a <code>sys_call_table</code>, that stores pointers for all the system calls within your kernel. Say you wan to open a file; when you write <code>open_file(&quot;filename.txt&quot;)</code>, the function goes to the C standard library. In this moment control is maintained by an exception handler that ensures a return from the kernel before giving back control into user land.</p>
+<p>You can actually see the commands being ran for a certain process using <code>strace</code> (did not come pre-installed in Fedora so I had to download it from my package manager). Be prepared- it&rsquo;s a lot of output, even for a command as simple as <code>ls</code>. All syscalls can be broken down into not only the five categories we previously discussed, but also Time, Signals, and Global syscalls. A full table of the syscalls can be found within the text.</p>
+<h2 id="kernel-extensions">Kernel Extensions</h2>
+<p>If it already works, why not keep building on it? The next few concepts are not necessary for understanding Linux; more of an advanced-type beat. We&rsquo;re certainly not going to be compiling our own kernel, but these should start to peak your curiosity as you become more knowledgeable in Linux.</p>
+<p>We already saw before how easy it is to get our system information. To get the exact version of your current kernel, you can run the following;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ uname -srm
+</span></span><span style="display:flex;"><span>Linux 6.14.6-300.fc42.x86_64 x86_64
+</span></span></code></pre></div><p>Now that we know what kernel version, what can we do with that? Build on top of it! With <strong>Modules</strong>, we are able to load whatever we want as a program into our kernel to be used whenever we like. What makes modules so nice is that we don&rsquo;t have to worry about restarting the machine.</p>
+<p>Since we saw that Linux itself does most of the heavy lifting, why would we need a feature like this? The text offers a great example- drivers. Say Linux detects a driver for your video card, but the manufacturer has a third-party module that runs better; it&rsquo;s just not available on the Linux kernel by default. Modules allow us to use the third-party driver without issue.</p>
+<p>To see what available modules you have access to, run <code>find /lib/modules/$(uname -r) -type f -name '*.ko*'</code>. The output is <em>massive</em>. Want another massive list full of terms you aren&rsquo;t familiar with yet? Run <code>lsmod</code>; this will return all of the modules the kernel actually has loaded on your system. There&rsquo;s also a system called eBPF, which is a pretty recent development and there are still some parts about it even I don&rsquo;t fully understand. The end of the chapter has a slew of good reading materials on eBPF, the kernel, and it&rsquo;s inner workings.</p>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-3/">Chapter 3</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/linux/">linux</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

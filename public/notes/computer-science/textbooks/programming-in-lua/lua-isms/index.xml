@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming in Lua - Chapter 23</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-23/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-23/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;garbage&#34;&gt;Garbage&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 22</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-22/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-22/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;the-environment&#34;&gt;The Environment&lt;/h1&gt;&#xA;&lt;p&gt;Now it&amp;rsquo;s time to talk about &lt;em&gt;global variables&lt;/em&gt;. Technically speaking, Lua doesn&amp;rsquo;t actually have any. Why would you want global variables? For the most part they over complicate code, and can lead to messy implementation if caution isn&amp;rsquo;t used. That being said, global variables can also help tremendously if used correctly.&lt;/p&gt;&#xA;&lt;p&gt;What it does have, are variables placed within a table called the &lt;strong&gt;global environment&lt;/strong&gt;. It&amp;rsquo;s a cheeky way to circumnavigate having to actually implement global variables. Lua uses a table named &lt;code&gt;_G&lt;/code&gt; to store all of the global variables, and we can use the following to list out everything inside of it;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 21</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-21/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-21/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;object-oriented-programming&#34;&gt;Object-Oriented Programming&lt;/h1&gt;&#xA;&lt;p&gt;Like everything in Lua, we can use tables as a stand-in for many different structures. We can accomplish &lt;em&gt;Object-Oriented Programming&lt;/em&gt;, or a method of programming in which all variables and functions belong to objects, using tables (of course). Objects in OOP need an identity (self), a state, operations, life cycles, etc. Lua can accomplish a lot of this using tables.&lt;/p&gt;&#xA;&lt;p&gt;While the verbiage used can become interchangeable, we technically define &lt;em&gt;methods&lt;/em&gt; as functions that belong to objects. The &lt;em&gt;self&lt;/em&gt; as a concept is integral to OOP;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Programming in Lua - Chapter 20</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-20/</link>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-20/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;metatables-and-metamethods&#34;&gt;Metatables and Metamethods&lt;/h1&gt;&#xA;&lt;p&gt;There are a few things that aren&amp;rsquo;t possible within Lua by default, like adding tables, comparing functions, or calling a string. All of this and more is possible with the implementation of &lt;em&gt;metatables&lt;/em&gt;. Metatables give us the ability to give context to unused operators for objects. Metatables have &lt;em&gt;metamethods&lt;/em&gt;, or methods that are within metatables that are called in these new situations.&lt;/p&gt;&#xA;&lt;p&gt;The text refers to metatables as a restricted type of class, but they don&amp;rsquo;t fail to mention that they&amp;rsquo;re even more strict, since the operations are limited. Any value in Lua can have a metatable, but they are split up into tables or userdata who have their own metatables, while all variables share one giant metatable.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Programming in Lua - Chapter 18</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-18/</link>

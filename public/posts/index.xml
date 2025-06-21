@@ -6,8 +6,50 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
         <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>1 Year of Obsidian</title>
+            <link>https://mrpointing.com/posts/1-year-of-obsidian/</link>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/1-year-of-obsidian/</guid>
+            <description>&lt;hr&gt;
+&lt;p&gt;It has been a wild year. It&amp;rsquo;s hard to even think of a time where I didn&amp;rsquo;t have my online notebook as a backup for all of the important information I need on a daily basis. It&amp;rsquo;s moved and changed slightly here and there, but at the end of the day it&amp;rsquo;s consistently been-what I think is the most important part-useful.&lt;/p&gt;
+&lt;p&gt;Some topics have come and gone. After trying out diary entries I realized I don&amp;rsquo;t get the same sense of satisfaction from it as I do when I write in my physical journal, so that came and went. I only lightly use the dictionary portion of my vault that I don&amp;rsquo;t make public. It&amp;rsquo;s mostly words I come across in books that I have to look up and write down to try and not forget it.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<hr>
+<p>It has been a wild year. It&rsquo;s hard to even think of a time where I didn&rsquo;t have my online notebook as a backup for all of the important information I need on a daily basis. It&rsquo;s moved and changed slightly here and there, but at the end of the day it&rsquo;s consistently been-what I think is the most important part-useful.</p>
+<p>Some topics have come and gone. After trying out diary entries I realized I don&rsquo;t get the same sense of satisfaction from it as I do when I write in my physical journal, so that came and went. I only lightly use the dictionary portion of my vault that I don&rsquo;t make public. It&rsquo;s mostly words I come across in books that I have to look up and write down to try and not forget it.</p>
+<p>Computer Science as a topic is through and through mostly what I write about since this platform was originally a place to put my notes for my students. That plan hasn&rsquo;t changed, but I&rsquo;d like to expand eventually.</p>
+<p>Of all the projects I took on, the one&rsquo;s I&rsquo;ll continue with most are the textbook breakdowns and project trackers. My notes on getting <a href="https://www.capricornpokes.com">Capricornpokes</a> finished helped keep track of everything without getting too cluttered or confusing, so that&rsquo;s for sure going to be a part of all my future projects as of right now.</p>
+<p>I don&rsquo;t finish books fast enough for that to actually make a dent in the makeup of my vault, but I hope in a few years time to have more posts under the entertainment tab. Honestly the more I write that I want to change the name to something else but that is a year 2 problem. Here are some fun stats as of <strong><em>June 19th, 2025</em></strong>:</p>
+<ul>
+<li>385 Notes</li>
+<li>407 Files</li>
+<li>21 Attachments</li>
+<li>306 Links</li>
+<li>136,433 words</li>
+<li>13.71 MB</li>
+<li>116 Excalidraw Drawings</li>
+</ul>
+<p>Now the only number I don&rsquo;t really trust there is the word count, due to Excalidraw files skewing that a bit (without them I had 129,650!), but still, not too bad for a first year. Here&rsquo;s a look at my graph view;</p>
+
+    <img src="/images/screenshot_19062025_105026.jpg"  alt="Obsidian screenshot"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>I use the Shiba Inu theme with minor tweaks in the settings to add some color pop on the file explorer and background image. I don&rsquo;t use too many community plugins;</p>
+<ul>
+<li>Templater</li>
+<li>Excalidraw</li>
+<li>Omnisearch</li>
+<li>Style Settings</li>
+<li>Update Time on Edit</li>
+<li>Chesser</li>
+</ul>
+<p>And lastly, of course, I host all my notes using Hugo :)</p>
+]]></content>
+        </item>
         
         <item>
             <title>Blender Donut Tutorial</title>
@@ -123,8 +165,8 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 1. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/&#34;&gt;Learning Git&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 2. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/&#34;&gt;Deep Learning - Math&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 3. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/&#34;&gt;Grokking Algorithms&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 4. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/&#34;&gt;Learning Lua&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 5. Learning Modern Linux&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 4. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/&#34;&gt;Programming in Lua&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 5. &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-1/&#34;&gt;Learning Modern Linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 6. Real World Python&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 7. Impractical Python Projects&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 8. Foundations of Information Security&lt;/li&gt;
@@ -147,8 +189,8 @@
 <li><input checked="" disabled="" type="checkbox"> 1. <a href="https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-1/">Learning Git</a></li>
 <li><input checked="" disabled="" type="checkbox"> 2. <a href="https://mrpointing.com/notes/computer-science/textbooks/deep-learning/deep-learning---preface--chapter-1/">Deep Learning - Math</a></li>
 <li><input checked="" disabled="" type="checkbox"> 3. <a href="https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-1/">Grokking Algorithms</a></li>
-<li><input disabled="" type="checkbox"> 4. <a href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/">Learning Lua</a></li>
-<li><input disabled="" type="checkbox"> 5. Learning Modern Linux</li>
+<li><input checked="" disabled="" type="checkbox"> 4. <a href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-1/">Programming in Lua</a></li>
+<li><input disabled="" type="checkbox"> 5. <a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-1/">Learning Modern Linux</a></li>
 <li><input disabled="" type="checkbox"> 6. Real World Python</li>
 <li><input disabled="" type="checkbox"> 7. Impractical Python Projects</li>
 <li><input disabled="" type="checkbox"> 8. Foundations of Information Security</li>

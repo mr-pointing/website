@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Metatables and Metamethods There are a few things that aren&rsquo;t possible within Lua by default, like adding tables, comparing functions, or calling a string. All of this and more is possible with the implementation of metatables. Metatables give us the ability to give context to unused operators for objects. Metatables have metamethods, or methods that are within metatables that are called in these new situations.
+The text refers to metatables as a restricted type of class, but they don&rsquo;t fail to mention that they&rsquo;re even more strict, since the operations are limited. Any value in Lua can have a metatable, but they are split up into tables or userdata who have their own metatables, while all variables share one giant metatable.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, lua" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-20/" />
+
+
+    <title>
+        
+            Programming in Lua - Chapter 20 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Programming in Lua - Chapter 20">
+  <meta itemprop="description" content="Metatables and Metamethods There are a few things that aren’t possible within Lua by default, like adding tables, comparing functions, or calling a string. All of this and more is possible with the implementation of metatables. Metatables give us the ability to give context to unused operators for objects. Metatables have metamethods, or methods that are within metatables that are called in these new situations.
+The text refers to metatables as a restricted type of class, but they don’t fail to mention that they’re even more strict, since the operations are limited. Any value in Lua can have a metatable, but they are split up into tables or userdata who have their own metatables, while all variables share one giant metatable.">
+  <meta itemprop="datePublished" content="2025-05-23T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-05-23T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1331">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Lua">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Programming in Lua - Chapter 20">
+  <meta name="twitter:description" content="Metatables and Metamethods There are a few things that aren’t possible within Lua by default, like adding tables, comparing functions, or calling a string. All of this and more is possible with the implementation of metatables. Metatables give us the ability to give context to unused operators for objects. Metatables have metamethods, or methods that are within metatables that are called in these new situations.
+The text refers to metatables as a restricted type of class, but they don’t fail to mention that they’re even more strict, since the operations are limited. Any value in Lua can have a metatable, but they are split up into tables or userdata who have their own metatables, while all variables share one giant metatable.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-20/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Programming in Lua - Chapter 20">
+  <meta property="og:description" content="Metatables and Metamethods There are a few things that aren’t possible within Lua by default, like adding tables, comparing functions, or calling a string. All of this and more is possible with the implementation of metatables. Metatables give us the ability to give context to unused operators for objects. Metatables have metamethods, or methods that are within metatables that are called in these new situations.
+The text refers to metatables as a restricted type of class, but they don’t fail to mention that they’re even more strict, since the operations are limited. Any value in Lua can have a metatable, but they are split up into tables or userdata who have their own metatables, while all variables share one giant metatable.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-05-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-23T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Lua">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-05-23 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-20/">Programming in Lua - Chapter 20</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="metatables-and-metamethods">Metatables and Metamethods</h1>
+<p>There are a few things that aren&rsquo;t possible within Lua by default, like adding tables, comparing functions, or calling a string. All of this and more is possible with the implementation of <em>metatables</em>. Metatables give us the ability to give context to unused operators for objects. Metatables have <em>metamethods</em>, or methods that are within metatables that are called in these new situations.</p>
+<p>The text refers to metatables as a restricted type of class, but they don&rsquo;t fail to mention that they&rsquo;re even more strict, since the operations are limited. Any value in Lua can have a metatable, but they are split up into tables or userdata who have their own metatables, while all variables share one giant metatable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>t <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>print(getmetatable(t)) <span style="color:#75715e">--&gt; nil</span>
+</span></span><span style="display:flex;"><span>t1 <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>setmetatable(t, t1)
+</span></span><span style="display:flex;"><span>print(getmetatable(t) <span style="color:#f92672">==</span> t1) <span style="color:#75715e">--&gt; true</span>
+</span></span></code></pre></div><p>We can only set metatables of tables, and the string library has a metatable for strings.</p>
+<h2 id="arithmetic-metamethods">Arithmetic Metamethods</h2>
+<p>We can easily make set union, intersection, and others;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> Set <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Set</span>.<span style="color:#a6e22e">new</span> (l)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> set <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> _, v <span style="color:#66d9ef">in</span> ipairs(l) <span style="color:#66d9ef">do</span> set[v] <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> set
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Set</span>.<span style="color:#a6e22e">union</span> (a, b)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> res <span style="color:#f92672">=</span> Set.new{}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> k <span style="color:#66d9ef">in</span> pairs(a) <span style="color:#66d9ef">do</span> res[k] <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> k <span style="color:#66d9ef">in</span> pairs(b) <span style="color:#66d9ef">do</span> res[k] <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> res
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Set</span>.<span style="color:#a6e22e">intersection</span> (a, b)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> res <span style="color:#f92672">=</span> Set.new{}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> k <span style="color:#66d9ef">in</span> pairs(a) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    res[k] <span style="color:#f92672">=</span> b[k]
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> res
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Set</span>.<span style="color:#a6e22e">tostring</span> (set)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> l <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> e <span style="color:#66d9ef">in</span> pairs(set) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    l[<span style="color:#f92672">#</span>l <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> tostring(e)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;{&#34;</span> <span style="color:#f92672">..</span> table.concat(l, <span style="color:#e6db74">&#39;, &#39;</span>) <span style="color:#f92672">..</span> <span style="color:#e6db74">&#34;}&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> Set
+</span></span></code></pre></div><p>Then, we can modify and some functions;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> mt <span style="color:#f92672">=</span> {} <span style="color:#75715e">-- creates a metatable for sets</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- modify Set.new() which creates sets</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Set</span>.<span style="color:#a6e22e">new</span>(l)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> set <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>  setmetatable(set, mt)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> _, v <span style="color:#66d9ef">in</span> ipairs(l) <span style="color:#66d9ef">do</span> set[v] <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> set
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- now every new set has the same metatable</span>
+</span></span><span style="display:flex;"><span>s1 <span style="color:#f92672">=</span> Set.new{<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>}
+</span></span><span style="display:flex;"><span>s2 <span style="color:#f92672">=</span> Set.new{<span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">1</span>}
+</span></span><span style="display:flex;"><span>print(getmetatable(s1) <span style="color:#f92672">==</span> getmetatable(s2)) <span style="color:#75715e">--&gt; true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- We can create how the addition sign works</span>
+</span></span><span style="display:flex;"><span>mt.__add <span style="color:#f92672">=</span> Set.union
+</span></span><span style="display:flex;"><span>s3 <span style="color:#f92672">=</span> s1 <span style="color:#f92672">+</span> s2
+</span></span><span style="display:flex;"><span>print(Set.tostring(s3))  <span style="color:#75715e">--&gt; {1, 10, 20, 30, 50}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mt.__mul <span style="color:#f92672">==</span> Set.intersection
+</span></span><span style="display:flex;"><span>print(Set.tostring((s1 <span style="color:#f92672">+</span> s2)<span style="color:#f92672">*</span>s1)) <span style="color:#75715e">--&gt; {10, 20, 30, 50}</span>
+</span></span></code></pre></div><p>We could also change for subtraction, float division, floor division, negation, modulo, exponentiation, concatenation, and all bitwise operators.</p>
+<p>Lua will always use the metamethod of an object if that corresponding metatable has a metamethod, then check the second value for a metatable with the same metamethod of the first. If the metamethods are the same, the action will be performed. If not found, an error will be raised. We can prepare for incoming issues like this with the following change;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Set</span>.<span style="color:#a6e22e">union</span> (a, b)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> getmetatable(a) <span style="color:#f92672">~=</span> mt <span style="color:#f92672">or</span> getmetatable(b) <span style="color:#f92672">~=</span> mt <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    error(<span style="color:#e6db74">&#34;Attempt to &#39;add&#39; a set with a non-set value&#34;</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span>rest of code<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><h2 id="relational-metamethods">Relational Metamethods</h2>
+<p>Just like with the mathematical operations above, we can manipulate relational operators as well. Less than, equal to, and less than or equal to. There are no others. We can continue with the previous example with the concept of set containment: <code>a &lt;= b</code> means that <code>a</code> is a subset of <code>b</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>mt.__le <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (a, b) <span style="color:#75715e">-- subset</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> k <span style="color:#66d9ef">in</span> pairs(a) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> b[k] <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mt.__lt <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (a, b) <span style="color:#75715e">-- proper subset</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> a <span style="color:#f92672">&lt;=</span> b <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> (b <span style="color:#f92672">&lt;=</span> a)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mt.__eq <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (a, b) <span style="color:#75715e">-- equality</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> a <span style="color:#f92672">&lt;=</span> b <span style="color:#f92672">and</span> b <span style="color:#f92672">&lt;=</span> a
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h2 id="library-defined-metamethods">Library-Defined Metamethods</h2>
+<p>Since metatables are just regular tables, anyone can use them; this leads to libraries defining and using their own fields within metatables. If we look at a quick example, the <code>print</code> function will use <code>tostring</code> to format output. However, this doesn&rsquo;t always do the thing we want. For a table, we get the following;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>print({}) <span style="color:#75715e">--&gt; table: 0x7f8958fc5e28</span>
+</span></span></code></pre></div><p>What Lua actually does here is check if we have overwritten the <code>__tostring</code> metamethod, and uses that if there is one. Since we&rsquo;ve already written a <code>tostring</code> method for our set example, we can follow suit and do the following;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>mt.__tostring <span style="color:#f92672">=</span> Set.tostring
+</span></span><span style="display:flex;"><span>s1 <span style="color:#f92672">=</span> Set.new{<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
+</span></span><span style="display:flex;"><span>print(s1) <span style="color:#75715e">--&gt; {4, 5, 10}</span>
+</span></span></code></pre></div><p>Not only can we redefine existing functions, we can also set up our metatables to not allow any changes or views. If you give a value to <code>__metatable</code>, both calls to <code>getmetatable</code> and <code>setmetatable</code> will cause issues;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>mt.__metatable <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;None of your beeswax!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>s1 <span style="color:#f92672">=</span> Set.new{}
+</span></span><span style="display:flex;"><span>print(getmetatable(s1)) <span style="color:#75715e">--&gt; None of your beeswax!</span>
+</span></span><span style="display:flex;"><span>setmetatable(s1, {})
+</span></span><span style="display:flex;"><span>  stdin:<span style="color:#ae81ff">1</span>: cannot change protected metatable
+</span></span></code></pre></div><h2 id="table-access-metamethods">Table-Access Metamethods</h2>
+<p>All we&rsquo;ve done so far is change the way Lua interacts with situations that would otherwise raise an error; let&rsquo;s change some of the <strong>behavior</strong> of Lua in otherwise normal circumstances.</p>
+<h3 id="the-__index-metamethod">The <code>__index</code> Metamethod</h3>
+<p>We have seen many times that whenever you are trying to access a field that doesn&rsquo;t exist within a table, we get <code>nil</code> as a result. What&rsquo;s happening behind the scenes is a search for an <code>__index</code> metamethod to provide something to send back. If there isn&rsquo;t, <em>then</em> we get <code>nil</code>.</p>
+<p>The most straightforward example of when we&rsquo;d need this is when wanting object inheritance. The text uses a great example of Window creation (physical windows, not computer windows). We start with the base version;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>prototype <span style="color:#f92672">=</span> {x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>}
+</span></span></code></pre></div><p>Then build out from here;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> mt <span style="color:#f92672">=</span> {} <span style="color:#75715e">-- Create the metatable</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">new</span> (o)
+</span></span><span style="display:flex;"><span>  setmetatable(o, mt)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> o
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mt.__index <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (_, key) <span style="color:#75715e">-- Set up the __index metamethod</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> prototype[key]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>w <span style="color:#f92672">=</span> new{x<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>}
+</span></span><span style="display:flex;"><span>print(w.width) <span style="color:#75715e">--&gt; 100</span>
+</span></span></code></pre></div><p>Lua developers have seen this happen so often they actually developed a shortcut; just set the <code>__index</code> metamethod to the table declaration. Instead of a function, pass in a table;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>mt.__index <span style="color:#f92672">=</span> prototype
+</span></span></code></pre></div><p>This is a fast and easy to read approach. Obviously, a function pass has more flexibility, which we will sometimes need. If you want to access a table without having it reach out to it&rsquo;s <code>__index</code> metamethod, you could use <code>rawget(t, i)</code>, where <code>t</code> is a table and <code>i</code> is the value you&rsquo;re searching for.</p>
+<h3 id="the-__newindex-method">The <code>__newindex</code> method</h3>
+<p>The counterpart for <code>__index</code>, but instead of affecting accesses, <code>__newindex</code> affects table updates. Whenever assigning a value to a table with a new index, the table first looks for <code>__newindex</code>, and calls that instead of assigning. If the metamethod is a table, assignment is done within the table. There is also <code>rawset(t, k, v)</code> which is the equivalent of <code>t[k] = v</code> without using the <code>__newindex</code> metamethod.</p>
+<p>With both metamethods, <code>__index</code> and <code>__newindex</code>, Lua can create read-only tables, default value tables, and helps out with object-oriented programming with it&rsquo;s inheritance.</p>
+<h4 id="tables-with-default-values">Tables with Default Values</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">set_default</span> (t, d)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> mt <span style="color:#f92672">=</span> {__index <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () <span style="color:#66d9ef">return</span> d <span style="color:#66d9ef">end</span>}
+</span></span><span style="display:flex;"><span>  setmetatable(t, mt)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tab <span style="color:#f92672">=</span> {x<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>}
+</span></span><span style="display:flex;"><span>print(tab.x, tab.z) <span style="color:#75715e">--&gt; 10   nil</span>
+</span></span><span style="display:flex;"><span>set_default(tab, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>print(tab.x, tab.z) <span style="color:#75715e">--&gt; 10   0</span>
+</span></span></code></pre></div><p>Now, anytime you try to access a non-existent index in <code>tab</code>, <code>0</code> will be returned. Pretty useful, but can be expensive if you have a lot of default values. Since we hard-coded the <code>0</code> in for the value of <code>d</code>, we are unable to use this metatable for other tables with different default values. If we wanted to use only one metatable, we would have to adjust it accordingly;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">-- If we are not worried about name clashing</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> mt <span style="color:#f92672">=</span> {__index <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (t) <span style="color:#66d9ef">return</span> t.___ <span style="color:#66d9ef">end</span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">set_default</span> (t, d)
+</span></span><span style="display:flex;"><span>  t.___ <span style="color:#f92672">=</span> d
+</span></span><span style="display:flex;"><span>  setmetatable(t, mt)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- If we are worried about name clashing</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> key <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> mt <span style="color:#f92672">=</span> {__index <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (t) <span style="color:#66d9ef">return</span> t[key] <span style="color:#66d9ef">end</span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">set_default</span> (t, d)
+</span></span><span style="display:flex;"><span>  t[key] <span style="color:#f92672">=</span> d
+</span></span><span style="display:flex;"><span>  setmetatable(t, mt)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h3 id="exercises">Exercises</h3>
+<ol>
+<li>Define a metamethod <code>__sub</code> for sets that return the difference of two sets (<code>a - b</code> returns elements from <code>a</code> that are not in <code>b</code>)</li>
+<li>Define a metamethod <code>__len</code> for sets so that <code>#s</code> returns the number of elements in the set <code>s</code></li>
+</ol>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-21/">Chapter 21</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/lua/">lua</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
