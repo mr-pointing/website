@@ -7,15 +7,8 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/notes/computer-science/python/advanced-python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Generators</title>
-      <link>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://wiki.python.org/moin/Generators&#34;&gt;Link&lt;/a&gt; to article 1.&#xA;&lt;a href=&#34;https://realpython.com/introduction-to-python-generators/&#34;&gt;Link&lt;/a&gt; to article 2.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
-    </item>
     <item>
       <title>How .join Works</title>
       <link>https://mrpointing.com/notes/computer-science/python/advanced-python/how-.join-works/</link>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Networking A topic I&rsquo;ve gone over before in a few notes now, so if you want a deeper dive on general topics, see this note. What we&rsquo;re going to look at now is the Linux side of things, and how the Linux protocol deals with connecting to the world wide web. Specifically, the network protocols used and tooling provided.
+Basics Without network connection, everything in the last chapter would be a moot point. There&rsquo;s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, linux" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/" />
+
+
+    <title>
+        
+            Learning Modern Linux - Chapter 7 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Learning Modern Linux - Chapter 7">
+  <meta itemprop="description" content="Networking A topic I’ve gone over before in a few notes now, so if you want a deeper dive on general topics, see this note. What we’re going to look at now is the Linux side of things, and how the Linux protocol deals with connecting to the world wide web. Specifically, the network protocols used and tooling provided.
+Basics Without network connection, everything in the last chapter would be a moot point. There’s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.">
+  <meta itemprop="datePublished" content="2025-08-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-08-06T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1976">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Linux">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Learning Modern Linux - Chapter 7">
+  <meta name="twitter:description" content="Networking A topic I’ve gone over before in a few notes now, so if you want a deeper dive on general topics, see this note. What we’re going to look at now is the Linux side of things, and how the Linux protocol deals with connecting to the world wide web. Specifically, the network protocols used and tooling provided.
+Basics Without network connection, everything in the last chapter would be a moot point. There’s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Learning Modern Linux - Chapter 7">
+  <meta property="og:description" content="Networking A topic I’ve gone over before in a few notes now, so if you want a deeper dive on general topics, see this note. What we’re going to look at now is the Linux side of things, and how the Linux protocol deals with connecting to the world wide web. Specifically, the network protocols used and tooling provided.
+Basics Without network connection, everything in the last chapter would be a moot point. There’s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-08-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-08-06T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Linux">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-08-06 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/">Learning Modern Linux - Chapter 7</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="networking">Networking</h1>
+<p>A topic I&rsquo;ve gone over before in a few notes now, so if you want a deeper dive on general topics, see <a href="https://mrpointing.com/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/">this</a> note. What we&rsquo;re going to look at now is the Linux side of things, and how the Linux protocol deals with connecting to the world wide web. Specifically, the network protocols used and tooling provided.</p>
+<h2 id="basics">Basics</h2>
+<p>Without network connection, everything in the last chapter would be a moot point. There&rsquo;s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.</p>
+<p>Linux also abstracts away parts of networking, making it difficult to diagnose problems. To start with our classifications, let&rsquo;s use categories we&rsquo;re already familiar with. For hardware, we need to have some Ethernet or WiFi card to enable the connection to happen. Then, in Kernel space, we deal with the TCP/IP stack, which we know is how the connection to the internet is processed and connection is safely made. Finally, in User space, we range from simple commands like <code>ip</code>, to full on GUI applications like a web browser.</p>
+<h2 id="the-tcpip-stack">The TCP/IP Stack</h2>
+<p>Made up of 4, sequential layers;</p>
+<ol>
+<li><strong>Link Layer</strong>: Allows hardware and kernel drivers to communicate</li>
+<li><strong>Internet Layer</strong>: Uses IP protocol to route packets</li>
+<li><strong>Transport Layer</strong>: How the end-to-end connection occurs (UDP, TCP)</li>
+<li><strong>Application Layer</strong>: Web, SSH, mail, etc.</li>
+</ol>
+<p>We&rsquo;ll move through each layer to see how each builds upon another, until the payload is a compilation of all four steps.</p>
+<h3 id="the-link-layer">The Link Layer</h3>
+<p>Some terms before we continue; we know a wired connection as Ethernet, a wireless connection as WiFi, a MAC address or <em>media access control</em> address as the unique 48-character identifier for all hardware, and lastly, an <strong>interface</strong> is simply a network connection, physical or not.</p>
+<p>One of the most important parts on the hardware side of the Link layer is your <strong>NIC</strong>, or a <em>network interface controller</em> (or <em>card</em>). This is what actually allows you to connect to a network via Ethernet cable. There are two ways to get info on all NIC&rsquo;s on your system; <code>ifconfig</code> and <code>ip</code>. The former is considered deprecated, so we should be using the latter;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; ip link show
+</span></span><span style="display:flex;"><span>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span style="color:#ae81ff">65536</span> qdisc noqueue state UNKNOWN mode DEFAULT group default qlen <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</span></span><span style="display:flex;"><span>2: wlp192s0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span style="color:#ae81ff">1500</span> qdisc noqueue state UP mode DORMANT group default qlen <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>    link/ether 9a:39:d4:22:8e:1h brd ff:ff:ff:ff:ff:ff permaddr 84:9e:56:9c:a0:7b
+</span></span><span style="display:flex;"><span>    altname wlx849e569ca07b
+</span></span></code></pre></div><p>The first option here, <code>lo</code>, is known as the <em>loopback interface</em>. This is sometimes known as localhost as well. What this allows your device to do is to self reference. Sounds confusing, but this is useful in a few different scenarios. Technically this is managed by the next layer, but I wanted to establish a good definition of this concept before moving on. This loopback interface provides a loopback address, that allows things like pings and transmission of packets all locally, without any leak into your network. If you want to build or host a server on your machine that only you have access too, it&rsquo;s most likely on your loopback address or localhost (most commonly 127.0.0.1).</p>
+<p>Another concept shown above is the <em>maximum transmission unit</em> or <strong>MTU</strong>. This is the maximum byte size for a package. We can see above our loopback interface shows we have a maximum of 65,536 bytes. When looking at option 2, we see the name of our connection (<em>wl</em> for wireless, <em>p192</em> for PCI bus 192, and <em>s0</em> for slot 0) as well as some flags telling us the current status of the network. Since we see <code>UP</code> and <code>MULTICAST</code>, everything seems to be operational.</p>
+<p>Another useful tool in the Link layer toolbox is the <em>Address Resolution Protocol</em> (ARP) which maps out a IP address for each MAC address. This creates the connection between the Link layer which we&rsquo;re on now, to the next layer above, the Internet layer. Again, like most Linux things, there is an older deprecated version and a newer more standard version.</p>
+<p>First up is <code>arp</code>, which returns the cache of mapped MAC addresses on your system. You can even through in the option <code>-n</code> to prevent hostname resolution and show IP addresses instead;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; arp
+</span></span><span style="display:flex;"><span>Address  HWtype  HWaddress           Flags Mask    Iface
+</span></span><span style="display:flex;"><span>_gateway ether   9a:39:d4:22:8e:1h   C             wlp192s0
+</span></span></code></pre></div><p>Next up is <code>ip neigh</code> or <code>ip neighbor</code>, which will do the same thing as <code>arp</code> with a more modern approach. Again, any more details on either of these commands can be found within their man pages.</p>
+<p>Now that I have information on what my NIC is called, I can use the command <code>iw</code> followed by some arguments to learn more about it;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; iw dev wlp192s0 info
+</span></span><span style="display:flex;"><span>Interface wlp192s0
+</span></span><span style="display:flex;"><span>        ifindex <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        wdev 0x1
+</span></span><span style="display:flex;"><span>        addr 9a:39:d4:22:8e:1h
+</span></span><span style="display:flex;"><span>        ssid MyOptimum 118d2b
+</span></span><span style="display:flex;"><span>        type managed
+</span></span><span style="display:flex;"><span>        wiphy <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        channel <span style="color:#ae81ff">149</span> <span style="color:#f92672">(</span><span style="color:#ae81ff">5745</span> MHz<span style="color:#f92672">)</span>, width: <span style="color:#ae81ff">80</span> MHz, center1: <span style="color:#ae81ff">5775</span> MHz
+</span></span><span style="display:flex;"><span>        txpower 3.00 dBm
+</span></span></code></pre></div><p>Now I can easily see the name of my router, as well as some info on the connection itself, like the WiFi frequency. If you want to gather more traffic related information, you can replace <code>info</code> with <code>link</code>.</p>
+<h3 id="the-internet-layer">The Internet Layer</h3>
+<p>This section is going to be technically dense, so strap in. We know already the Internet layer is the second-lowest layer, and does the heavy lifting of routing packets from machine to machine. An assumption we should understand before going forward is that the structure of this layer is designed <em>for</em> instability, meaning the active participants in your network (thin connections) are often changing. This assumption helps alleviate issues with devices that are wireless, or move often changing their local environment/outside connection.</p>
+<p>This layer is also not focused on the performance of that packet transport. If anything, it just wants to ensure it&rsquo;s given the best effort possible, trying to send as many packets as possible. Losing one is no big deal.</p>
+<p>We are also introduced formally to the worldwide standard for identifying devices; IP addresses. <em>Internet Protocol</em> has two versions we should be concerned with; IPv4 and IPv6. Before we go through each, one example should help clear up some of the more technical jargon we&rsquo;re about to face; think of your IP address as a regular old mailing address. I don&rsquo;t have to be concerned with how my mail will get to you or how many methods of transportation it will take to get there; all I need to know is your address, and I can write you a letter from pretty much anywhere in the world.</p>
+<h4 id="ipv4">IPv4</h4>
+<p>The most basic definition of an IPv4 address is a unique 32-bit number combination to identify a host or process acting as a point of communication via TCP/IP. Traditionally these are 4 octets separated by a period.</p>
+<p>One place this IP address is important is inside the <em>IP Header</em>. This is a collection of metadata about a packet being transferred. This was set up by the <strong>IETF</strong>, or the Internet Engineering Task Force, sent out via a document called the <a href="https://datatracker.ietf.org/doc/html/rfc791">RFC 791 - Internet Protocol</a>. This was instituted all the way back in 1981!</p>
+<p>Some of the metadata collected in that header can be see below;</p>
+<ul>
+<li><strong>Source Address</strong>: IP address of the sender</li>
+<li><strong>Destination Address</strong>: IP address of the receiver</li>
+<li><strong>Protocol</strong>: Type of payload (TCP, UDP, or ICMP)</li>
+<li><strong>Time to Live (TTL)</strong>: Maximum amount of time a packet should exist for</li>
+</ul>
+<p>There are definitely other parts that make up that header, but that&rsquo;s not really the focus of this text so let&rsquo;s move on.</p>
+<p>Another important and modern aspect to this layer is <em>Classless Inter-Domain Routing</em>, or <em>CIDR</em>. We understand the internet to be a network of networks, however, each network is not the same. To differentiate between types of networks (private, public, commercial, other networks, etc.), CIDR was implemented. It has two parts; the network address and how bits/IP addresses fit within that range.</p>
+<p><code>10.0.0.0/24</code> is a basic example. Let&rsquo;s math this out; we know an IP address consists of 32 bits. The first 24 bits in this example then is the network, while the remaining 8 bits are all of the available addresses on the network. So, in the above example, IP addresses start at <code>10.0.0.0</code> and go up to <code>10.0.0.255</code> (technically the first and last spot ((<code>.0</code> and <code>.255</code>)) are saved for special purposes).</p>
+<p>Speaking of saved addresses, there are some reserved IPv4 addresses that will come up often. We already took a look at <code>127.0.0.0</code>, but there&rsquo;s also <code>0.0.0.0</code>, which is a non-routable address that can do a lot of things, but most interestingly for us can refer to all IPv4 addresses available on a given machine. If you want to take a quick look at all the IP interfaces, use <code>ip addr show</code>.</p>
+<h4 id="ipv6">IPv6</h4>
+<p>The future of Internet Protocol, this time supporting a hexadecimal representation, 8 groups of 16 bits each, separated by a colon. Unfortunately, this will likely not become the standard for some time due to the shear amount of content using IPv4. The two are also not compatible, leading to an even wider gap.</p>
+<h4 id="internet-control-message-protocol">Internet Control Message Protocol</h4>
+<p>There&rsquo;s an acronym used up above I personally never heard of we glanced right by; <em>ICMP</em>. The Internet Control Message Protocol is used by low-level components to send things like error messages. One useful feature you can use to test if a website is reachable or not is with the command <code>ping</code>. If you want to use something similar with an IPv6, you would have to use <code>ping6</code>.</p>
+<h4 id="routing">Routing</h4>
+<p>How do the packets that we&rsquo;ve been talking about this chapter get delivered? The real meat and potatoes of that process is beyond this text, but it does provide a nice overview of how to get routing info, which is super easy with <code>sudo route -n</code>, returning a table with the following info;</p>
+<ul>
+<li><strong>Destination</strong>: IP Address of the destination of the packet (<code>0.0.0.0</code> means unspecified or unknown)</li>
+<li><strong>Gateway</strong>: Meant for packets not on the same network</li>
+<li><strong>Genmask</strong>: Subnet mask used</li>
+<li><strong>Flags</strong>: Status flags</li>
+<li><strong>Iface</strong>: Network interface used by the packet</li>
+</ul>
+<p>The most modern method of obtaining this info is also <code>sudo ip route</code>, and you can even check for connections with <code>traceroute &lt;website&gt;</code>.</p>
+<h3 id="the-transport-layer">The Transport Layer</h3>
+<p>How do we deal with the packets once they&rsquo;ve been received? That&rsquo;s what the transport layer is for. This layer defines the communication between endpoints.</p>
+<h4 id="ports">Ports</h4>
+<p>A concept many people know about but know little about, <em>ports</em> are an important part of the transport layer. Regardless of the protocol used (we&rsquo;ll come back to that in a second) every connection needs a port. All that makes up a port is a 16-bit number identifying a service available at a given IP address. Since any given machine can have multiple services running at any given time, being able to distinguish between them is crucial.</p>
+<p>Just like IP addresses, we reserve specific ports for different things;</p>
+<ul>
+<li><strong>0 - 1023</strong>: Well known ports, reserved for daemons associated with servers and the like. Requires <code>root</code> permissions for usage.</li>
+<li><strong>1024 - 49151</strong>: Registered ports, managed by the Internet Assigned Numbers Authority (<strong>IANA</strong>)</li>
+<li><strong>49152 - 65535</strong>: Ephemeral ports, these cannot be registered. These are used for temporary ports or private services (internal company stuff)</li>
+</ul>
+<p>To run what&rsquo;s being used by your local machine, run <code>nmap -A localhost</code>. However, to be safe, only run this on your own machine and in the comfort of your own private space.</p>
+<h4 id="tcp">TCP</h4>
+<p>Remember how I said we&rsquo;d come back to protocols? Here we are. <em>Transmission Control Protocol</em>, or <strong>TCP</strong>, is a connection transport layer protocol used in things like HTTP and SSH. It guarantees the deliverance of whatever being sent, and actually re-sends any lost packets.</p>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<h2 id="chapter-resources">Chapter Resources</h2>
+<ul>
+<li><a href="https://cidr.xyz/">Interactive visual CIDR and IP range calculator</a></li>
+<li><a href="https://networkengineering.stackexchange.com/questions/53935/why-are-ipv4-addresses-running-out">Why are IPv4 addresses running out? - Network Engineering Stack Exchange</a></li>
+<li><a href="https://samuel-ricky.medium.com/how-to-interpret-the-output-of-ip-addr-show-8008c7c41dde">How to Read <code>ip addr</code></a></li>
+<li></li>
+</ul>
+<hr>
+<p>Next:</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/linux/">linux</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

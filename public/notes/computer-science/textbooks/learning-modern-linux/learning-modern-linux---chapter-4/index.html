@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="" />
-<meta name="keywords" content="homepage, blog, computerscience" />
+<meta name="description" content=" Access Control Like most things in the world, access is a means of collateral control. There are certain parts of your system you wouldn&rsquo;t want anyone to touch (think of your network settings or startup settings). Let&rsquo;s discuss the means of enforcing access control, how files are ran, and some advanced Linux features for controlling your environment.
+Basics Linux has the ability to have multiple users running on one machine. Each user has a given ID and certain permissions that dictate what that user is capable of. Users own resources, or just files, and launch processes, which use files through a user.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, linux, textbook" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-4/" />
@@ -45,26 +47,35 @@
 
 
   <meta itemprop="name" content="Learning Modern Linux - Chapter 4">
+  <meta itemprop="description" content="Access Control Like most things in the world, access is a means of collateral control. There are certain parts of your system you wouldn’t want anyone to touch (think of your network settings or startup settings). Let’s discuss the means of enforcing access control, how files are ran, and some advanced Linux features for controlling your environment.
+Basics Linux has the ability to have multiple users running on one machine. Each user has a given ID and certain permissions that dictate what that user is capable of. Users own resources, or just files, and launch processes, which use files through a user.">
   <meta itemprop="datePublished" content="2025-06-16T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-06-16T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1548">
   <meta itemprop="image" content="https://mrpointing.com/">
-  <meta itemprop="keywords" content="Computerscience">
+  <meta itemprop="keywords" content="Computerscience,Linux,Textbook">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="Learning Modern Linux - Chapter 4">
+  <meta name="twitter:description" content="Access Control Like most things in the world, access is a means of collateral control. There are certain parts of your system you wouldn’t want anyone to touch (think of your network settings or startup settings). Let’s discuss the means of enforcing access control, how files are ran, and some advanced Linux features for controlling your environment.
+Basics Linux has the ability to have multiple users running on one machine. Each user has a given ID and certain permissions that dictate what that user is capable of. Users own resources, or just files, and launch processes, which use files through a user.">
 
 
 
     <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-4/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Learning Modern Linux - Chapter 4">
+  <meta property="og:description" content="Access Control Like most things in the world, access is a means of collateral control. There are certain parts of your system you wouldn’t want anyone to touch (think of your network settings or startup settings). Let’s discuss the means of enforcing access control, how files are ran, and some advanced Linux features for controlling your environment.
+Basics Linux has the ability to have multiple users running on one machine. Each user has a given ID and certain permissions that dictate what that user is capable of. Users own resources, or just files, and launch processes, which use files through a user.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
     <meta property="article:published_time" content="2025-06-16T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-06-16T00:00:00+00:00">
     <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Textbook">
     <meta property="og:image" content="https://mrpointing.com/">
 
 
@@ -149,6 +160,132 @@
 
             <div class="post-content">
                 <hr>
+<h1 id="access-control">Access Control</h1>
+<p>Like most things in the world, access is a means of collateral control. There are certain parts of your system you <em>wouldn&rsquo;t</em> want anyone to touch (think of your network settings or startup settings). Let&rsquo;s discuss the means of enforcing access control, how files are ran, and some advanced Linux features for controlling your environment.</p>
+<h2 id="basics">Basics</h2>
+<p>Linux has the ability to have multiple users running on one machine. Each user has a given ID and certain <em>permissions</em> that dictate what that user is capable of. Users own <em>resources</em>, or just files, and launch <strong>processes</strong>, which use files through a user.</p>
+<p>This is a simplified version of it, and this is all we need for right now. We should also bring up <em>sandboxing</em>, or the managing of a secured space in which processes can be run without outside influence. Think of virtual machines or containers. If that doesn&rsquo;t ring a bell, we&rsquo;ll talk more in detail about this later.</p>
+<p>The first expansion of our simplified example is how an access even happens. There are many ways and configurations, but there are two we should discuss directly; <strong>Discretionary Access Control</strong> and <strong>Mandatory Access Control</strong>. DAC controls allow users to pass on permissions that are qualified for, while MAC has security levels that are set up by an administrator and are <em>only</em> set by an administrator. Regardless, Linux does follow an &ldquo;all-or-nothing&rdquo; attitude; you are a superuser or you&rsquo;re not. (You&rsquo;ll often see you have to use <code>sudo</code> to pass admin privileges to certain commands).</p>
+<h2 id="users">Users</h2>
+<p>There are two types of users in Linux; <em>system users</em> and <em>regular users</em>. Regular users are the types of accounts are exactly what they sound like, the accounts any regular person would create and use to interact with the kernel through the shell. The system users are actually used by programs either for the operating system or something like networking, to facilitate background processes. Some are even used in the front end for things like database management.</p>
+<p>The breakup between them are more for organization. The way they&rsquo;re managed is through a <strong>UID</strong>, or user ID. Within ID&rsquo;s are groups that are determined by the system. A <code>systemd</code>-powered distro (we&rsquo;ll talk about that later) follow this layout;</p>
+<ul>
+<li>UID 0 = <code>root</code>
+<ul>
+<li><code>root</code> is a superuser that can accomplish any task on the system. <strong><em>NOT</em></strong> a good idea to do major (even minor) things as <code>root</code></li>
+</ul>
+</li>
+<li>UID 1 -&gt; 999 = System users</li>
+<li>UID 65534 = <code>nobody</code>
+<ul>
+<li>Used in networking</li>
+</ul>
+</li>
+<li>UID 1000 -&gt; 65533 and 65536 -&gt; 4294967294 = Regular users</li>
+</ul>
+<p>You can always look up your own UID with <code>id -u</code> in the shell.</p>
+<h3 id="managing-users-locally">Managing Users Locally</h3>
+<p>The most traditional way of doing it, users data exist in their designated files only. All user management data exists within four files;</p>
+<ol>
+<li><code>/etc/passwd</code>: The user database
+<ul>
+<li>Usernames, UIDs, group membership, home directory, login shell</li>
+</ul>
+</li>
+<li><code>/etc/group</code>: The group database</li>
+<li><code>/etc/shadow</code>: The user passwords</li>
+<li><code>/etc/gshadow</code>: The group passwords</li>
+</ol>
+<p>Use <code>cat /etc/passwd</code> to see all your systems users;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cat /etc/passwd
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>richie:x:1000:1000:Richie:/home/richie:/bin/bash
+</span></span><span style="display:flex;"><span>nobody:x:65534:65534:Kernel Overflow User:/:/usr/sbin/nologin
+</span></span><span style="display:flex;"><span>systemd-network:x:192:192:systemd Network Management:/:/usr/bin/nologin
+</span></span></code></pre></div><p>The syntax of the output is the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&lt;username&gt;:&lt;users password&gt;:&lt;UID&gt;:&lt;GID&gt;:&lt;GECOS field&gt;:&lt;home directory&gt;:&lt;login shell&gt;
+</span></span></code></pre></div><p>A few notes about the syntax; the way you could easily tell what is a system and regular user is their login shell. In the above example, I grabbed a few from the very long list of accounts. The two accounts not only have UIDs in the ranges we discussed previously, but also end with <code>nologin</code>, indicating their status.</p>
+<p>The <code>GECOS</code> field usually contains quick contact information about the process or a description of it&rsquo;s purpose. You&rsquo;ll also notice the passwords for all have an <code>x</code>. That&rsquo;s because their encoded and stored in <code>/etc/shadow</code>. Usually only the <code>root</code> user can actually read the <code>shadow</code> file.</p>
+<p>If you want to add a user, it&rsquo;s really easy;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo adduser rp_test
+</span></span></code></pre></div><p>The text has options that follow after this command, but while using Fedora I wasn&rsquo;t given the option. To create a system account you can pass in <code>-r</code>, but you can obviously find the entire list of options using <code>-h</code> or <code>man adduser</code>.</p>
+<p>To see all groups, run;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cat /etc/group
+</span></span></code></pre></div><h3 id="centralized-user-management">Centralized User Management</h3>
+<p>A very quick point, but there is another type of user management. If you had to manage multiple user accounts across multiple machines, doing it all locally is a lot of work. You can accomplish this type of management with the following options;</p>
+<ul>
+<li><strong>Directory Based</strong>: Running an LDAP (lightweight directory access protocol) server either yourself or through a service</li>
+<li><strong>Network Based</strong>: We&rsquo;ll walk through this using <em>Kerberos</em> later</li>
+<li><strong>Config Management Systems</strong>: Systems like Ansible, Puppet, or Saltstack</li>
+</ul>
+<h2 id="permissions">Permissions</h2>
+<p>Permissions are broken down into two types; <em>File Permissions</em> and <em>Process Permissions</em>. One at a time! File permissions get broken down even further into three types of scope for permissions;</p>
+<ol>
+<li><strong>User</strong>: File owner</li>
+<li><strong>Group</strong>: One or more members specifically designated</li>
+<li><strong>Other</strong>: Everyone else</li>
+</ol>
+<p>It gets broken down <em>again</em> when we define the types of access;</p>
+<ol>
+<li><strong>Read or <code>r</code></strong>: Allows user to view contents of a file or contents of a directory</li>
+<li><strong>Write or <code>w</code></strong>: Allows a user to modify and delete a file or create, rename, or delete files within a directory</li>
+<li><strong>Execute or <code>x</code></strong>: Allows a user to execute a file as long as they also have read permissions, or allows a user to access information on files within a directory, allowing commands like <code>cd</code> or <code>ls</code> on it</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ls -al
+</span></span><span style="display:flex;"><span>drwxr-xr-x@  - richie  <span style="color:#ae81ff">9</span> Jun 18:16  .
+</span></span><span style="display:flex;"><span>drwx------@  - richie <span style="color:#ae81ff">26</span> Jun 14:01  ..
+</span></span><span style="display:flex;"><span>drwxr-xr-x@  - richie <span style="color:#ae81ff">16</span> Jun 12:39  bash
+</span></span><span style="display:flex;"><span>drwxr-xr-x@  - richie <span style="color:#ae81ff">23</span> Jun 12:02  cap_pokes
+</span></span><span style="display:flex;"><span>drwxr-xr-x@  - richie <span style="color:#ae81ff">10</span> Jun 12:48  lua
+</span></span><span style="display:flex;"><span>drwxr-xr-x@  - richie <span style="color:#ae81ff">25</span> May 20:06  models
+</span></span><span style="display:flex;"><span>drwxr-xr-x@  - richie <span style="color:#ae81ff">20</span> May 20:34  mr-pointing
+</span></span><span style="display:flex;"><span>drwxr-xr-x@  - richie <span style="color:#ae81ff">15</span> May 20:48  python
+</span></span><span style="display:flex;"><span>.rw-r--r--@ <span style="color:#ae81ff">41</span> richie <span style="color:#ae81ff">20</span> May 12:54  skeys.txt
+</span></span></code></pre></div><p>The first character is the <em>file type</em>. In my system, a regular file is a <code>.</code>, a directory is <code>d</code>, symbolic link is <code>l</code>, and there are some others we might come across that I&rsquo;ll point out if important enough. The next section are the permissions repeated three times for each group. the existence of the letter means that group has that permission. For example, in the file <code>skeys.txt</code>, the User group has read and write permissions, but no executable permissions. Not only that, but the Group and Other groups also can read the file.</p>
+<p>You can also use a numerical representation, sometimes called decimal, to set up permissions. For example; <code>400</code> is read only by owner, while <code>755</code> is full access for owner with read and execute for everyone else. We can change permissions using <code>chmod</code>. Let&rsquo;s say I wanted to make my <code>skeys.txt</code> file executable;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ chmod +x skeys.txt
+</span></span></code></pre></div><p>This will give executable permissions for all groups, unless specified otherwise. You can also use <code>chown</code> to change ownership of a file, or <code>chgrp</code> to change the group.</p>
+<p>Time to talk about process permissions. The makeup of a processes permissions on a given file is similar and simple;</p>
+<ol>
+<li><strong>Real ID</strong>: UID of the user who launched the process</li>
+<li><strong>Effective UID</strong>: Used to determine permissions the process has when accessing shared resources</li>
+<li><strong>Saved set-user-ID</strong>: Used in <code>suid</code> cases where a process gains privileges by switching it&rsquo;s effective UID between the real UID and saved set-user-ID (explored later in <em>Ports</em>)</li>
+<li><strong>Filesystem UID</strong>: Linux specific IDS used for determining permissions for file access. Not normally touched by programs, even the kernel only keeps track of the effective UID and when is changed and replaces it with the filesystem UID. They can be the same but not in all cases.</li>
+</ol>
+<p>Here&rsquo;s a good example of what&rsquo;s happening here; let&rsquo;s say you have a UID of 1000 and you run the command <code>passwd</code>. Since <code>passwd</code> has <code>suid</code> enabled, your effective UID is changed from 1000 to 0 or <code>root</code>.</p>
+<h3 id="advanced-permission-management">Advanced Permission Management</h3>
+<p>While some of this is rather dense for most users, it&rsquo;s still important if you were to ever venture into a professional position in a UNIX workspace. To continue on with more concepts, the Linux kernel&rsquo;s perception of running processes comes in two forms; privileged and unprivileged. Any privileged process has an effective UID of 0 or the <code>root</code> user, and everything else is unprivileged.</p>
+<p>This <em>was</em> the case, but actually changed in the Linux kernel version 2.2, and now <code>root</code> privileges are assigned via units given on a per-thread level, called <em>capabilities</em>. You get to add these capabilities to files at your own discretion. These allow a much more &ldquo;fine-grained&rdquo; approach to permissions.</p>
+<p>One interesting technique is to run <em>Secure computing mode</em>, or <code>seccomp</code>. This is a Linux kernel feature allowing you to restrict the syscalls an process has access too. Not only is this ability able to be tinkered with manually, but most containers support <code>seccomp</code>.</p>
+<h2 id="good-practices">Good Practices</h2>
+<p>To wrap things up, let&rsquo;s look at some best practices you should be aware of;</p>
+<ol>
+<li>Least Privileges
+<ul>
+<li>A person/process should only have necessary permissions to accomplish designated tasks (if an app doesn&rsquo;t need to write, it should just read)</li>
+<li>Avoid running as root (mentioned above!)</li>
+</ul>
+</li>
+<li>Avoid <code>setuid</code>
+<ul>
+<li>Use capabilities instead! (<code>getcap</code> and <code>setcap</code>)</li>
+</ul>
+</li>
+<li>Auditing is a good idea
+<ul>
+<li>We&rsquo;ll get more into this in Chapter 8</li>
+</ul>
+</li>
+</ol>
+<h2 id="chapter-resources">Chapter Resources</h2>
+<ul>
+<li><a href="https://blog.container-solutions.com/linux-capabilities-in-practice">Setting up Capabilities</a></li>
+<li><a href="https://lwn.net/Articles/656307/">seccomp Overview</a></li>
+<li><a href="https://www.redhat.com/en/blog/linux-access-control-lists">Intro to Access Control Lists</a></li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-5/">Chapter 5</a></p>
 
             </div>
         </article>
@@ -161,6 +298,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
         <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/linux/">linux</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
         
     </p>
 

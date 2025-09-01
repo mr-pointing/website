@@ -7,8 +7,64 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computerscience</title>
+      <link>https://mrpointing.com/tags/computerscience/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/computerscience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://mrpointing.com/tags/linux/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Textbook</title>
+      <link>https://mrpointing.com/tags/textbook/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/textbook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>https://mrpointing.com/tags/book/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Magical_realism</title>
+      <link>https://mrpointing.com/tags/magical_realism/</link>
+      <pubDate>Mon, 26 Sep 1988 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/magical_realism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memoir</title>
+      <link>https://mrpointing.com/tags/memoir/</link>
+      <pubDate>Tue, 01 Mar 2005 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/memoir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>History</title>
+      <link>https://mrpointing.com/tags/history/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Western</title>
+      <link>https://mrpointing.com/tags/western/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/western/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Me</title>
       <link>https://mrpointing.com/tags/me/</link>
@@ -24,38 +80,10 @@
       <description></description>
     </item>
     <item>
-      <title>Computerscience</title>
-      <link>https://mrpointing.com/tags/computerscience/</link>
-      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/computerscience/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://mrpointing.com/tags/linux/</link>
-      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Textbook</title>
-      <link>https://mrpointing.com/tags/textbook/</link>
-      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/textbook/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Lua</title>
       <link>https://mrpointing.com/tags/lua/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/lua/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Book</title>
-      <link>https://mrpointing.com/tags/book/</link>
-      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/book/</guid>
       <description></description>
     </item>
     <item>
@@ -126,13 +154,6 @@
       <link>https://mrpointing.com/tags/syntax/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>History</title>
-      <link>https://mrpointing.com/tags/history/</link>
-      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/history/</guid>
       <description></description>
     </item>
     <item>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Chapter 6: Applications, Package Management, and Containers Like most things in computer science, the term application is used in a variety of different settings, and have other names that are often thought to be interchangeable (program, binary, executable). They are all technically different, so that&rsquo;s where we&rsquo;ll start.
+We&rsquo;re also going to look into how Linux systems boot, and systemd. These applications also need to be accessed, and for an enjoyable seamless experience they should be easily installable. We&rsquo;ll look at package managers and how they give users the ability to install applications across different distros and platforms.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, linux" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-6/" />
+
+
+    <title>
+        
+            Learning Modern Linux - Chapter 6 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Learning Modern Linux - Chapter 6">
+  <meta itemprop="description" content="Chapter 6: Applications, Package Management, and Containers Like most things in computer science, the term application is used in a variety of different settings, and have other names that are often thought to be interchangeable (program, binary, executable). They are all technically different, so that’s where we’ll start.
+We’re also going to look into how Linux systems boot, and systemd. These applications also need to be accessed, and for an enjoyable seamless experience they should be easily installable. We’ll look at package managers and how they give users the ability to install applications across different distros and platforms.">
+  <meta itemprop="datePublished" content="2025-07-21T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-07-21T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2342">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Linux">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Learning Modern Linux - Chapter 6">
+  <meta name="twitter:description" content="Chapter 6: Applications, Package Management, and Containers Like most things in computer science, the term application is used in a variety of different settings, and have other names that are often thought to be interchangeable (program, binary, executable). They are all technically different, so that’s where we’ll start.
+We’re also going to look into how Linux systems boot, and systemd. These applications also need to be accessed, and for an enjoyable seamless experience they should be easily installable. We’ll look at package managers and how they give users the ability to install applications across different distros and platforms.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-6/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Learning Modern Linux - Chapter 6">
+  <meta property="og:description" content="Chapter 6: Applications, Package Management, and Containers Like most things in computer science, the term application is used in a variety of different settings, and have other names that are often thought to be interchangeable (program, binary, executable). They are all technically different, so that’s where we’ll start.
+We’re also going to look into how Linux systems boot, and systemd. These applications also need to be accessed, and for an enjoyable seamless experience they should be easily installable. We’ll look at package managers and how they give users the ability to install applications across different distros and platforms.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-07-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-21T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Linux">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-07-21 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-6/">Learning Modern Linux - Chapter 6</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="chapter-6-applications-package-management-and-containers">Chapter 6: Applications, Package Management, and Containers</h1>
+<p>Like most things in computer science, the term <em>application</em> is used in a variety of different settings, and have other names that are often thought to be interchangeable (<em>program</em>, <em>binary</em>, <em>executable</em>). They are all technically different, so that&rsquo;s where we&rsquo;ll start.</p>
+<p>We&rsquo;re also going to look into how Linux systems <strong>boot</strong>, and <code>systemd</code>. These applications also need to be accessed, and for an enjoyable seamless experience they should be easily installable. We&rsquo;ll look at <em>package managers</em> and how they give users the ability to install applications across different distros and platforms.</p>
+<p>We&rsquo;ll finish with <em>containers</em>, how they work, and how to actually manage Linux applications. Pretty important chapter.</p>
+<p>We&rsquo;re also going to need this file. Call it <code>greeter.sh</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>set -o errexit <span style="color:#75715e"># Exits immediately if command fails</span>
+</span></span><span style="display:flex;"><span>set -o errtrace <span style="color:#75715e"># Error traps are inherited</span>
+</span></span><span style="display:flex;"><span>set -o pipefail <span style="color:#75715e"># Pipelines exit status will be the exit status of first command that fails (easier to detect errors)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -s <span style="color:#e6db74">&#34;</span>$name<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    printf <span style="color:#e6db74">&#34;You are awesome!\n&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    printf <span style="color:#e6db74">&#34;Hello %s, you are awesome!&#34;</span> <span style="color:#e6db74">${</span>name<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><p>^870b64</p>
+<h2 id="basics">Basics</h2>
+<p>Apps are essential to Linux fundamental understanding, so we need to be specific with our terminology;</p>
+<ul>
+<li><strong>Program</strong>: Binary file or shell script that Linux is able to run via execution. Sometimes called an <em>executable</em>. Different executable files are called differently based on their language or purpose (shell script, Python script, etc.)</li>
+<li><strong>Process</strong>: An entity that runs from some program, loaded in main memory through the CPU or I/O. Discussed further in a previous chapter</li>
+<li><strong>Daemon</strong>: Short for <em>daemon process</em>, sometimes called a <em>service</em>, runs in the background and accomplishes functions for other processes (printer daemon helps you print)</li>
+<li><strong>Application</strong>: Program including any dependencies. Usually reserved for fully functioning programs with front-ends. Often will be used alongside the &ldquo;lifetime&rdquo; of the program, installation to deletion</li>
+<li><strong>Package</strong>: File containing programs and a configuration intended for distribution to users</li>
+<li><strong>Package Manager</strong>: Program that does the installation, upgrading, and removing of applications into your Linux environment</li>
+<li><strong>Supply Chain</strong>: Producers and distributors of Linux applications</li>
+<li><strong>Booting</strong>: Linux&rsquo;s startup sequence (hardware init., loading kernel, launching daemons, etc.)</li>
+</ul>
+<h2 id="the-linux-startup-process">The Linux Startup Process</h2>
+<p>In order to actually get something done, we&rsquo;re going to need our hardware and software to get along and interact. When booting, this is exactly what&rsquo;s happening. It happens in 5 steps;</p>
+<ol>
+<li>Within modern systems we start with the UEFI grabbing the boot config stored in NVRAM and defining the boot loader. In older systems, a POST test (power on self test) is made, and the BIOS sets up hardware in order to send info to the boot loader</li>
+<li>The boot loader accomplishes it&rsquo;s one job; bootstrap the kernel. All &ldquo;bootstrapping&rdquo; means is starting the program in a basic form, and continuously building on top of it until it&rsquo;s fully functional. There are different types of boot loaders</li>
+<li>Moving onto the kernel, compressed in <code>/boot</code>, needs to be extracted and loaded into main memory. The filesystem (subsystems and drivers included) are loaded and the kernel hands off the next steps to the init system. Technically, the boot process is now over</li>
+<li>Within user space now, the init system launches daemons and is the root process (PID of 1)</li>
+<li>The rest of user space is configured (terminal, shell, GUI, etc.)</li>
+</ol>
+<h2 id="systemd"><code>systemd</code></h2>
+<p>Starting off as just another init system, <code>systemd</code> ended up being involved in many different aspects of your system, from startup to logging and network functions. <code>systemd</code> allows you to define the daemons that get launched, among other things to allow for a more customized startup experience.</p>
+<p>Many of the popular distros use <code>systemd</code>, including the distro I am currently using, Fedora. The switch to <code>systemd</code> is largely because of this open functionality across distros, among the previously mentioned features.</p>
+<h3 id="units">Units</h3>
+<p>Units are how you control <code>systemd</code>, and tell it what to run. These units are broken down by the function it performs or the resources it uses in functioning. The most important types are</p>
+<ul>
+<li><code>service units</code>: How to manage said service/application</li>
+<li><code>target units</code>: Dependencies</li>
+<li><code>mount units</code>: Mount points</li>
+<li><code>timer units</code>: Timers for <code>cron</code> jobs</li>
+</ul>
+<p>There are others featured in the text, but aren&rsquo;t super important for right now. In order for <code>systemd</code> to acknowledge a unit, a unit has to be serialized via a file; it usually looks in one of three main locations;</p>
+<ol>
+<li><code>/lib/systemd/system</code>: Package units</li>
+<li><code>/etc/systemd/system</code>: System admin config units</li>
+<li><code>/run/systemd/system</code>: Runtime modifications</li>
+</ol>
+<h3 id="management-with-systemctl">Management with <code>systemctl</code></h3>
+<p>Like any other system, we need direct control over all of the processes ran by <code>systemd</code>. We can control these via <code>systemctl</code>. There are tons of commands, some you might never use. To get a feel for how to use <code>systemctl</code>, here are a few basic examples;</p>
+<ul>
+<li><code>systemctl enable XXXX.service</code>: Enables a service</li>
+<li><code>systemctl daemon-reload</code>: Reloads all unit files &amp; re-creates dependency tree</li>
+<li><code>systemctl start XXXX.service</code>: Starts a service</li>
+<li><code>systemctl stop XXXX.service</code>: Stops a service</li>
+</ul>
+<p>There are also commands for <code>restart</code>, <code>reload</code>, <code>kill</code>, and <code>status</code>. They work pretty much as expected. There are a few more you should be aware of if you come across them;</p>
+<ul>
+<li><code>bootctl</code>: Lets you check boot loader status and available boot loaders (more info with <code>man bootctl</code>)</li>
+<li><code>timedatectl</code>: Lets you set up time and date info</li>
+<li><code>coredumpctl</code>: Enables processing of saved core dumps (useful when troubleshooting)</li>
+</ul>
+<h3 id="monitoring-with-journalctl">Monitoring with <code>journalctl</code></h3>
+<p>We will go over this in more detail in the next chapter. For now, all you need to know is <code>journalctl</code> is a binary file that all messages sent from <code>systemd</code> components are sent to. Think of it as the <code>systemd</code> log file.</p>
+<h3 id="example-scheduling-greeter">Example: Scheduling Greeter</h3>
+<p>Remember that greeter script we wrote before? You know, <a href="#^870b64">this</a> one? Well, it&rsquo;s time to put it into action. It starts with creating a file called <code>greeter.service</code> and defining a <code>systemd</code> unit file with a type <code>servcice</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>Unit<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Description<span style="color:#f92672">=</span>My Greeting Service
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Type<span style="color:#f92672">=</span>oneshot
+</span></span><span style="display:flex;"><span>ExecStart<span style="color:#f92672">=</span>/home/Code/bash/greeter.sh
+</span></span></code></pre></div><p>Next, we need a <code>timer</code> unit to launch the greeter service, which is done in a new file called <code>greeter.timer</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>Unit<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Description<span style="color:#f92672">=</span>Runs Greeting service at the top of the hour
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Timer<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>OnCalendar<span style="color:#f92672">=</span>hourly
+</span></span></code></pre></div><p>In order for this to work correctly, both of our unit files should be placed inside <code>/run/systemd/system</code>, and depending on your system you might have to manually start it using <code>systemctl start greeter.timer</code>. To check and make sure everything works, run <code>sudo systemctl status greeter.timer</code>. And since this has been mostly set up so we can see how <code>journalctl</code> works, we can check our logs with the following command; <code>journalctl -f -u greeter.service</code>, where <code>-f</code> will follow not just show, and <code>-u</code> allows for the option to pick the exact service.</p>
+<h2 id="linux-application-supply-chains">Linux Application Supply Chains</h2>
+<p>Put simply, these are the organizations and individuals creating and pushing out new or supported products. For software, this gets broken down into three areas;</p>
+<ol>
+<li><strong>Software Maintainers</strong>: Individual developers, open source projects, companies, essentially the people behind the brains of the software</li>
+<li><strong>Repository</strong>: The complete package of the application to be sold. This includes not only the actual app but also the metadata and library of dependencies needed for the app or service to function</li>
+<li><strong>Tooling/Package Manager</strong>: Standardized collection of applications, with the intent to distribute</li>
+</ol>
+<p>Regardless of your distro of choice, your method of retrieving and using applications is generally the same, and will involve all parts of the supply chain.</p>
+<h2 id="package-managers">Package Managers</h2>
+<p>There are three main categories we should understand when it comes to package management;</p>
+<ol>
+<li><strong>Traditional Package Managers</strong>: Broken down further into high level or low level (high level can install update and remove packages)</li>
+<li><strong>Container-based</strong>: Come from a server and cloud computing (more later)</li>
+<li><strong>Modern Package Managers</strong>: Goal of ease-of-use (specifically with installing)</li>
+</ol>
+<p>Usually, there are two main distro families, and their package manager of choice for each; Red Hat (Fedora, CentOS, and more) or Debian-based systems (Ubuntu, Debian, and of course, more). We should also make the obvious yet necessary distinction between the packages and the package managers, since they are completely different.</p>
+<p>The package you retrieve should also make sense for the system you&rsquo;re running it on. It wouldn&rsquo;t make much sense to install a GUI application on a server you&rsquo;ll never interact or use a GUI with.</p>
+<h3 id="rpm-package-manager">RPM Package Manager</h3>
+<p>Coming from the Red Hat company, these are used across many different distros. RPM itself is a low level package manager, which a few high level package managers use like, <code>yum</code>, <code>DNF</code>, and <code>Zypper</code>. These files will end with <code>.rpm</code>, making it clear were they come from. These files contain binaries or source files.</p>
+<p>Using any package manager is relatively the same, but any differences can of course be found using their help pages (pretty much call the command with <code>help</code> or <code>-h</code> after and this will work). If we wanted to install the programming language Go using <code>yum</code>, we could find it using the command <code>yum search golang</code>, and install with <code>yum install golang</code>. After, we can verify our install with <code>yum info golang</code>.</p>
+<h3 id="debian-deb">Debian deb</h3>
+<p>Debian based packages, or <code>.deb</code> files, are very similar to RPM. Ubuntu is a super popular distro, and there are multiple high and low level managers that take advantage of <code>.deb</code> files, like <code>apt</code>. The text walks through using <code>apt</code>, which is incredibly similar to <code>yum</code>.</p>
+<h3 id="language-specific">Language Specific</h3>
+<p>Many languages have their own package managers. Java has <code>maven</code> and <code>nuts</code>, Python has <code>pip</code> and PyPM, C and C++ have a bunch. You get the point.</p>
+<h2 id="containers">Containers</h2>
+<p>A <em>container</em> is a process group of Linux namespaces, cgroups, other optional filesystems to provide a closed environment. These can be small local testing areas, or even interconnected distributed systems (<a href="https://kubernetes.io/">Kubernetes</a>). Due to the mainstream popularity of Docker in 2014, Containers have popped up everywhere and for good reasons. Being able to replicate an environment with minute detail easily without having to redo it constantly is a need many developers wish they had years ago.</p>
+<p>To keep things tip top, standards had to be introduced, which became the Open Container Initiative or <em>OCI</em>. Three specifications had to be clear to be OCI compliant;</p>
+<ol>
+<li><strong>Runtime Specification</strong>: What needs to be done to maintain runtime (power cycle)</li>
+<li><strong>Image Format Specification</strong>: How the container image is constructed</li>
+<li><strong>Distribution Specification</strong>: How the container image is shipped and works</li>
+</ol>
+<h3 id="linux-namespaces">Linux Namespaces</h3>
+<p>I mentioned this before, but what is a Linux namespace exactly? It is basically a system of allowing restriction on the view of resources. Since Linux is all about viewing all resources globally, restricting this can be incredibly helpful.</p>
+<p>Straight from the man page, &ldquo;A namespace wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.&rdquo; Lot going on there, but it&rsquo;s not so complicated. The text reviews some of the available syscalls you can run for creating and gathering info on namespaces. You can view all namespaces on your system with <code>sudo lsns</code>.</p>
+<h3 id="linux-cgroups">Linux cgroups</h3>
+<p>Where namespaces help out with resource visibility, <em>cgroups</em> help organize the process groups, and their resource usage. They show how much RAM is being used or how much CPU time is being taken. Linux maintains two versions in the kernel; v1 and v2, with v1 being supported but will eventually be overtaken by v2 which should be the prime focus.</p>
+<p>The creation of v1 was widely inconsistent. The documentation isn&rsquo;t great, and things were made as they were needed without much thought of longevity. v2&rsquo;s intention was to rewrite all of the wrongs of v1 and keep things consistent. The controllers are specific and match with the namesake, and have clear documentation.</p>
+<h3 id="copy-on-write-filesystems">Copy-on-Write Filesystems</h3>
+<p>Otherwise known as CoW Filesystems, these are systems where instead of making direct copies of files, copies are only made up of pointers to the metadata of the original file. Only upon modification, or &ldquo;Writing&rdquo; to the file, does portions of it get saved and a new prime version of that pointer are created. This concept saves a ton of space and is much faster.</p>
+<h3 id="docker">Docker</h3>
+<p>Like we discussed a little earlier, Docker made running and maintaining containers even easier than ever. While you still need to worry about namespaces, cgroups, and CoW filesystems, Docker makes it incredibly easy to get up and running with very simple commands. Abstracting away most of the complexity, you need to mostly worry about two things in Docker; the <em>image</em> and <em>running container</em>.</p>
+<p>The container image is just a compressed archive file that contains a bunch of metadata on how to set up the environment. Then, the running container is what you command, to either start, stop, kill, or remove. You interact with this docker daemon via CLI (<code>docker run</code>, <code>docker ps</code>, etc.)</p>
+<p>Since I have a textbook on both Docker and Kubernetes, I&rsquo;m going to skip their short walkthrough of setting up the greeter app as a container. It&rsquo;s worth the read, but there are a few things that are glossed over I&rsquo;d like more detail on, so I&rsquo;ll just wait until I get to those other books. The text also offers some alternatives to Docker that are worth looking through.</p>
+<h2 id="modern-package-managers">Modern Package Managers</h2>
+<p>Short section, but I use these enough that I thought I&rsquo;d devote a sentence or too to them. There are <em>newer</em> package managers than the one&rsquo;s we&rsquo;ve discussed. They take use of containers and are used all the time; things like <strong>Snap</strong>, <strong>Flatpak</strong>, and <strong>Homebrew</strong> are some that I use all the time whenever an application I&rsquo;m looking for isn&rsquo;t directly on or available via traditional package managers.</p>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<ul>
+<li>We went over the Linux Startup Process, and how <code>systemd</code> controls and gives us control over our system</li>
+<li>We looked at how Linux applications are maintained via the Supply Chain and Package Managers</li>
+<li>We observed a few package managers, classic and modern</li>
+<li>Took a brief look at how Containers work and why we need them (make replicating environments easy)</li>
+</ul>
+<h2 id="chapter-resources">Chapter Resources</h2>
+<ul>
+<li><a href="https://systemd.io/">Link</a> to more info on <code>systemd</code></li>
+<li><a href="https://opensource.com/article/18/1/analyzing-linux-boot-process">Analyzing the Linux boot process</a></li>
+<li><a href="https://www.crybit.com/linux-boot-process/">Stages of Linux booting process - explanation, step by step tutorial</a></li>
+<li><a href="https://www.linode.com/docs/guides/tools-reference/linux-package-management/">Linux Package Management | Linode Docs</a></li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/">Chapter 7</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/linux/">linux</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

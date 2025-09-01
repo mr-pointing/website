@@ -2,13 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mrpointing.com/tags/computerscience/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/linux/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/textbook/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-6/</loc>
+    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/book/</loc>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/magical_realism/</loc>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/memoir/</loc>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/entertainment/books/the-glass-castle/</loc>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/entertainment/books/the-satanic-verses/</loc>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/history/</loc>
+    <lastmod>2025-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/entertainment/books/in-the-distance/</loc>
+    <lastmod>2025-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/western/</loc>
+    <lastmod>2025-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-5/</loc>
+    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mrpointing.com/posts/1-year-of-obsidian/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/me/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/obsidian/</loc>
@@ -17,25 +65,10 @@
     <loc>https://mrpointing.com/posts/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/computerscience/</loc>
-    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-4/</loc>
     <lastmod>2025-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/</loc>
-    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-3/</loc>
-    <lastmod>2025-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/linux/</loc>
-    <lastmod>2025-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/textbook/</loc>
     <lastmod>2025-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/lua/</loc>
@@ -58,9 +91,6 @@
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/lua-isms/programming-in-lua---chapter-20/</loc>
     <lastmod>2025-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/book/</loc>
-    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/psychological_fiction/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
@@ -107,7 +137,7 @@
     <loc>https://mrpointing.com/tags/fantasy/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/generators/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/python/</loc>
@@ -174,9 +204,6 @@
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/entertainment/books/fateful-triangle/</loc>
-    <lastmod>2025-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/history/</loc>
     <lastmod>2025-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/politics/</loc>

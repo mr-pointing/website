@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Filesystems Some would call this a dry topic, but in Linux and any UNIX based system &ldquo;everything is a file&rdquo;, so you should understand what&rsquo;s going on with files. As the analogy suggests, nearly everything within the kernel is a file (with minor deviations). The filesystem within the kernel defines how each file is laid out.
+Basics Most distros give each user a single filesystem tree starting at / or root. Within each tree is either a directory or file. Easily list all files with ls, change directories with cd, and print your current working directory with cwd. The above are so important and at first, you&rsquo;ll be using them pretty much all the time. Lastly, file systems are implemented in the kernel, rather than user land.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, linux" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-5/" />
+
+
+    <title>
+        
+            Learning Modern Linux - Chapter 5 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Learning Modern Linux - Chapter 5">
+  <meta itemprop="description" content="Filesystems Some would call this a dry topic, but in Linux and any UNIX based system “everything is a file”, so you should understand what’s going on with files. As the analogy suggests, nearly everything within the kernel is a file (with minor deviations). The filesystem within the kernel defines how each file is laid out.
+Basics Most distros give each user a single filesystem tree starting at / or root. Within each tree is either a directory or file. Easily list all files with ls, change directories with cd, and print your current working directory with cwd. The above are so important and at first, you’ll be using them pretty much all the time. Lastly, file systems are implemented in the kernel, rather than user land.">
+  <meta itemprop="datePublished" content="2025-06-28T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-06-28T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1668">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Linux">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Learning Modern Linux - Chapter 5">
+  <meta name="twitter:description" content="Filesystems Some would call this a dry topic, but in Linux and any UNIX based system “everything is a file”, so you should understand what’s going on with files. As the analogy suggests, nearly everything within the kernel is a file (with minor deviations). The filesystem within the kernel defines how each file is laid out.
+Basics Most distros give each user a single filesystem tree starting at / or root. Within each tree is either a directory or file. Easily list all files with ls, change directories with cd, and print your current working directory with cwd. The above are so important and at first, you’ll be using them pretty much all the time. Lastly, file systems are implemented in the kernel, rather than user land.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-5/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Learning Modern Linux - Chapter 5">
+  <meta property="og:description" content="Filesystems Some would call this a dry topic, but in Linux and any UNIX based system “everything is a file”, so you should understand what’s going on with files. As the analogy suggests, nearly everything within the kernel is a file (with minor deviations). The filesystem within the kernel defines how each file is laid out.
+Basics Most distros give each user a single filesystem tree starting at / or root. Within each tree is either a directory or file. Easily list all files with ls, change directories with cd, and print your current working directory with cwd. The above are so important and at first, you’ll be using them pretty much all the time. Lastly, file systems are implemented in the kernel, rather than user land.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-06-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-28T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Linux">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-06-28 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-5/">Learning Modern Linux - Chapter 5</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="filesystems">Filesystems</h1>
+<p>Some would call this a dry topic, but in Linux and any UNIX based system &ldquo;everything is a file&rdquo;, so you should understand what&rsquo;s going on with files. As the analogy suggests, nearly everything within the kernel is a file (with minor deviations). The <em>filesystem</em> within the kernel defines how each file is laid out.</p>
+<h2 id="basics">Basics</h2>
+<p>Most distros give each user a single filesystem tree starting at <code>/</code> or <code>root</code>. Within each tree is either a directory or file. Easily list all files with <code>ls</code>, change directories with <code>cd</code>, and print your current working directory with <code>cwd</code>. The above are so important and at first, you&rsquo;ll be using them pretty much all the time. Lastly, file systems are implemented in the kernel, rather than user land.</p>
+<p>Some more advanced definitions we should be aware of;</p>
+<ul>
+<li>A <em>drive</em> is either a physical hard disk drive (HDD)/solid-state drive (SSD) or an emulated drive.</li>
+<li><em>Partitions</em> are split-up segments of a drive, and <em>volumes</em> are similar but formatted for specific systems</li>
+<li><em>Inodes</em> store metadata about files (size, owner, location, date, permissions). Does <strong>not</strong> store the filename or the actual file content</li>
+<li><em>Super blocks</em> are the section in the beginning of a filesystem that captures the metadata of the filesystem</li>
+</ul>
+<p>To see what drives/partitions/volumes make up your system you can use <code>lsblk --exclude 7</code>. The <code>--exclude 7</code> excludes pseudo devices. After that, you can run <code>findmnt -D -t nosquashfs</code>, which will list out the filesystem of the device minus the read-only compressed <code>squashfs</code> types. Another step down, you can find specific information about a file using <code>stat filename</code>.</p>
+<p>Files can also be linked to one another. There are two main types of links, <em>Hard Links</em> and <em>Symbolic Links</em>. Hard links are only references to inodes, while Symbolic are actually special files with it&rsquo;s contents being a direct link to another file. Creating a link is easy, and we can explore the differences between the two in the following example;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ln something somealias
+</span></span><span style="display:flex;"><span>$ ln something somesoftalias
+</span></span><span style="display:flex;"><span>$ ls -al *alias
+</span></span><span style="display:flex;"><span>.rw-r--r--@ <span style="color:#ae81ff">15</span> richie <span style="color:#ae81ff">10</span> Jun 10:03 somealias
+</span></span><span style="display:flex;"><span>lrwxrwxrwx@  - richie  <span style="color:#ae81ff">5</span> Jul 11:23  somesoftalias -&gt; something
+</span></span><span style="display:flex;"><span>$ stat somealias
+</span></span><span style="display:flex;"><span>  File: somealias
+</span></span><span style="display:flex;"><span>  Size: <span style="color:#ae81ff">15</span>              Blocks: <span style="color:#ae81ff">8</span>          IO Block: <span style="color:#ae81ff">4096</span>   regular file
+</span></span><span style="display:flex;"><span>Device: 0,44    Inode: <span style="color:#ae81ff">415150</span>      Links: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>Access: <span style="color:#f92672">(</span>0644/-rw-r--r--<span style="color:#f92672">)</span> Uid: <span style="color:#f92672">(</span> 1000/  richie<span style="color:#f92672">)</span>   Gid: <span style="color:#f92672">(</span> 1000/  richie<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>$ stat somesoftalias
+</span></span><span style="display:flex;"><span> File: somesoftalias -&gt; something
+</span></span><span style="display:flex;"><span>  Size: <span style="color:#ae81ff">9</span>               Blocks: <span style="color:#ae81ff">8</span>          IO Block: <span style="color:#ae81ff">4096</span>   symbolic link
+</span></span><span style="display:flex;"><span>Device: 0,44    Inode: <span style="color:#ae81ff">488644</span>      Links: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>Access: <span style="color:#f92672">(</span>0777/lrwxrwxrwx<span style="color:#f92672">)</span>  Uid: <span style="color:#f92672">(</span> 1000/  richie<span style="color:#f92672">)</span>   Gid: <span style="color:#f92672">(</span> 1000/  richie<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="virtual-file-system">Virtual File System</h2>
+<p>Linux does something really neat to be able to abstract out all of the syscalls needed to run your system and provide access to all the parts that make it up; the <em>Virtual File System</em>. This system is the main method a user will interact with files on their Linux machine. At it&rsquo;s deepest layer, the VFS is responsible for deciding how to read in a file. Since a file is just a string of bytes, it&rsquo;s the VFS&rsquo;s job to dictate how that file gets accessed.</p>
+<p>There are actually a few filesystems that exist within VFS;</p>
+<ul>
+<li><strong>Local filesystems</strong>: (<code>ext3</code>, <code>XFS</code>, <code>FAT</code>, <code>NTFS</code>) drivers needed to access block devices like HDDs and SSDs</li>
+<li><strong>In-memory filesystems</strong>: (<code>tmpfs</code>) Files that exist in RAM</li>
+<li><strong>Pseudo filesystems</strong>: (<code>procfs</code>) also in RAM but mainly for kernel interfacing/device abstraction</li>
+<li><strong>Networked filesystems</strong>: (<code>NFS</code>) Similar to local, but obviously via a remote device. Covered in more detail in Chapter 7</li>
+</ul>
+<p>There are a ton of syscalls (at least a 100) so learning all of them is not entirely necessary. There are 5 categories we break them down into depending on what resources they&rsquo;re affecting;</p>
+<ul>
+<li><strong>Inodes</strong>: <code>chmod</code>, <code>chown</code>, <code>stat</code></li>
+<li><strong>Files</strong>: <code>open</code>, <code>close</code>, <code>seek</code>, <code>truncate</code>, <code>read</code>, <code>write</code></li>
+<li><strong>Directories</strong>: <code>chdir</code>, <code>getcwd</code>, <code>link</code>, <code>unlink</code>, <code>rename</code>, <code>symlink</code></li>
+<li><strong>Filesystems</strong>: <code>mount</code>, <code>flush</code>, <code>chroot</code></li>
+<li><strong>Others</strong>: <code>nmap</code>, <code>poll</code>, <code>sync</code>, <code>flock</code></li>
+</ul>
+<p>As always, if you come across a command you aren&rsquo;t familiar with, you can run <code>man &lt;command&gt;</code> to get a rundown of proper use cases.</p>
+<h3 id="logical-volume-manager">Logical Volume Manager</h3>
+<p>One downside of partitions is that they&rsquo;re difficult to increase and decrease size. Like most examples, this isn&rsquo;t an everyday issue for a casual user. This doesn&rsquo;t mean that this won&rsquo;t happen to you some day; say you invest in a new Linux machine, and create a basic partition for all of your files. If you didn&rsquo;t designate enough space, getting more would be a real hassle. This is avoided by using a <em>Logical Volume Manager</em>.</p>
+<p>Here&rsquo;s the breakdown, one or more physical volumes (think again of your HDDs or SSDs, even partitions!) create a <em>Volume Group</em>. Each volume group contains one or more <em>Logical Volumes</em>, which are the actual resize-able blocks created and managed via the VG. If you were to run Arch Linux, using a LVM is heavily recommended and something even I&rsquo;ve done before. I&rsquo;d give it an easy-medium difficulty rating, considering it&rsquo;s just a few CLI commands.</p>
+<h3 id="creating-filesystems">Creating Filesystems</h3>
+<p>Creating a new filesystem is straightforward. It takes two parts; making the filesystem and mounting it. The hardest part of the first step is choosing a filesystem format. We&rsquo;ll take a look at those in more detail later, but for now, we can run <code>mkfs -t ext4 /dev/some_vg/some_lv</code>. Here, we used <code>mkfs</code> to make a filesystem, told it to use the <code>ext4</code> format, and told it to create it in a logical volume.</p>
+<p>Next, we mount it, or attach it to a filesystem tree. <code>mount</code> takes in both the device you want to attach too and where in the filesystem tree to place it. However, mounts are only active until the device turns off; in order to make them permanent, you would have to edit the <code>fstab</code> file.</p>
+<h3 id="common-filesystem-layouts">Common Filesystem Layouts</h3>
+<p>How are the files actually stored long term? This is the actual <em>filesystem layout</em>, and there is one readily put in place called the <strong>Filesystem Hierarchy Standard</strong> or FHS. Obviously, you don&rsquo;t have to follow this at all and can place files wherever you like, but for content management sake it&rsquo;s always best practice to stick to the protocol;</p>
+<ul>
+<li><code>bin, sbin</code>: System programs and commands (think of <code>cat</code>, or <code>ls</code>)</li>
+<li><code>boot</code>: Kernel images and related components</li>
+<li><code>dev</code>: Devices like drivers and terminals</li>
+<li><code>etc</code>: System configuration files</li>
+<li><code>home</code>: User home directories</li>
+<li><code>lib</code>: Shared system libraries</li>
+<li><code>mnt, media</code>: Mount points for devices like USB sticks or portable HDDs</li>
+<li><code>opt</code>: Depending on distro, package manager files usually</li>
+<li><code>proc, sys</code>: Kernel interfaces</li>
+<li><code>tmp</code>: Temporary files</li>
+<li><code>usr</code>: User programs that are usually read only</li>
+<li><code>var</code>: User program files, like logs and backups</li>
+</ul>
+<p>If you don&rsquo;t know any of the terms above, don&rsquo;t worry; that&rsquo;s sort of the purpose of the rest of this book.</p>
+<h2 id="pseudo-filesystems">Pseudo Filesystems</h2>
+<p>We&rsquo;ve gone over the filesystem from the view of our base machine; just our standard machines HDD or SDD. What if we want to plug in our external SD card? That&rsquo;s where pseudo filesystems come in. They act like filesystems so we can interact with the content on the device without actually formatting the device. There are actually three major ones Linux has, and we&rsquo;re going to go through each one.</p>
+<h3 id="procfs"><code>procfs</code></h3>
+<p>Inherited from UNIX, originally mean to contain information about running processes, is the first one we&rsquo;ll look at. You&rsquo;ll find two different types of information in here mainly; per-process info with <code>/proc/PID</code> and random info on mounts, networking, memory, up-time, and more. It is honestly kind of a mess, and should be walked through slowly with things like the <code>man</code> pages as a reference.</p>
+<p>It is most often useful when low-level debugging or developing system tooling. Here&rsquo;s an example of getting info on the <code>status</code> command;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cat /proc/self/status | head -10
+</span></span><span style="display:flex;"><span>Name:   cat
+</span></span><span style="display:flex;"><span>Umask:  <span style="color:#ae81ff">0022</span>
+</span></span><span style="display:flex;"><span>State:  R <span style="color:#f92672">(</span>running<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Tgid:   <span style="color:#ae81ff">51878</span>
+</span></span><span style="display:flex;"><span>Ngid:   <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Pid:    <span style="color:#ae81ff">51878</span>
+</span></span><span style="display:flex;"><span>PPid:   <span style="color:#ae81ff">40987</span>
+</span></span><span style="display:flex;"><span>TracerPid:      <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Uid:    <span style="color:#ae81ff">1000</span>    <span style="color:#ae81ff">1000</span>    <span style="color:#ae81ff">1000</span>    <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>Gid:    <span style="color:#ae81ff">1000</span>    <span style="color:#ae81ff">1000</span>    <span style="color:#ae81ff">1000</span>    <span style="color:#ae81ff">1000</span>
+</span></span></code></pre></div><h3 id="sysfs"><code>sysfs</code></h3>
+<p>A much more structured directory, meant to help the kernel retrieve specific information about devices using a standardized layout. The directories are the same for every system;</p>
+<ul>
+<li><code>block/</code>: Symbolic links to discovered block devices</li>
+<li><code>bus/</code>: A directory for sub directories of physical bus types supported by your kernel</li>
+<li><code>class/</code>: Device classes</li>
+<li><code>dev/</code>: Contains a separate <code>block/</code> for block devices and <code>char/</code> for character devices on your system</li>
+<li><code>firmware/</code>: Management of firmware specific attributes</li>
+<li><code>fs/</code>: Sub directories for filesystems</li>
+<li><code>module/</code>: Sub directories for each module loaded in your kernel</li>
+</ul>
+<h3 id="devfs"><code>devfs</code></h3>
+<p>This filesystem is mainly for special device files (devices being a wide range of things from physical to software). Block devices are managed here (drives), Character devices like keyboard streams, and other random Special devices like <code>/dev/null</code>, <code>/dev/random</code>, or <code>/dev/tty</code>.</p>
+<h2 id="regular-files">Regular Files</h2>
+<p>When talking about regular files, there&rsquo;s no trick here. We are talking about the regular old files we see on a daily basis; documents, text files, images, config files, you name it. These files are again, managed by a <em>filesystem</em> type.</p>
+<h3 id="common-filesystems">Common Filesystems</h3>
+<p>While there is no real term for what is a common vs an uncommon filesystem, there is a base amount that are supported right out of the gate within Linux. You can find your machine&rsquo;s supported filesystems by running <code>cat /proc/filesystems</code>. Let&rsquo;s talk about some of the most widely used;</p>
+<ul>
+<li><code>ext4</code>: main default in most distros. Backwards compatible with <code>ext3</code>, and changes are stored using logs in a process called <em>journaling</em>, where file recovery is fast</li>
+<li><code>XFS</code>: Another journaling filesystem used mostly in on workstations in the 90&rsquo;s, but due to it&rsquo;s fast IO streams and large file support it can be found in Red Hat distros</li>
+<li><code>ZFS</code>: Combines a standard filesystem with a volume manager feature</li>
+<li><code>FAT</code>: Mostly used for interoperability between Windows and storage devices</li>
+</ul>
+<h2 id="chapter-review--resources">Chapter Review &amp; Resources</h2>
+<ul>
+<li><code>lsblk</code>: List block devices</li>
+<li><code>fdisk</code>: Manage partitions</li>
+<li><code>blkid</code>: Show block attributes</li>
+<li><code>hwinfo</code>: Show hardware info</li>
+<li><code>file -s</code>: Show filesystem and partition info</li>
+<li><code>stat</code>/<code>df -i</code>/<code>ls -i</code>: Show and list inode/file-related info</li>
+<li>The Virtual File System abstracts the more complex syscalls needed for file management and access to produce a human-readable format</li>
+<li>See existing mounts with <code>mount &lt;-t specific filesystem type&gt;</code></li>
+<li><a href="https://tanelpoder.com/2013/02/21/peeking-into-linux-kernel-land-using-proc-filesystem-for-quickndirty-troubleshooting/">Article</a> on debugging using <code>/proc</code></li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-6/">Chapter 6</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/linux/">linux</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

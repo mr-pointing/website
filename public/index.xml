@@ -7,8 +7,50 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Modern Linux - Chapter 7</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;networking&#34;&gt;Networking&lt;/h1&gt;&#xA;&lt;p&gt;A topic I&amp;rsquo;ve gone over before in a few notes now, so if you want a deeper dive on general topics, see &lt;a href=&#34;https://mrpointing.com/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/&#34;&gt;this&lt;/a&gt; note. What we&amp;rsquo;re going to look at now is the Linux side of things, and how the Linux protocol deals with connecting to the world wide web. Specifically, the network protocols used and tooling provided.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;&#xA;&lt;p&gt;Without network connection, everything in the last chapter would be a moot point. There&amp;rsquo;s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning Modern Linux - Chapter 6</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-6/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-6/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;chapter-6-applications-package-management-and-containers&#34;&gt;Chapter 6: Applications, Package Management, and Containers&lt;/h1&gt;&#xA;&lt;p&gt;Like most things in computer science, the term &lt;em&gt;application&lt;/em&gt; is used in a variety of different settings, and have other names that are often thought to be interchangeable (&lt;em&gt;program&lt;/em&gt;, &lt;em&gt;binary&lt;/em&gt;, &lt;em&gt;executable&lt;/em&gt;). They are all technically different, so that&amp;rsquo;s where we&amp;rsquo;ll start.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re also going to look into how Linux systems &lt;strong&gt;boot&lt;/strong&gt;, and &lt;code&gt;systemd&lt;/code&gt;. These applications also need to be accessed, and for an enjoyable seamless experience they should be easily installable. We&amp;rsquo;ll look at &lt;em&gt;package managers&lt;/em&gt; and how they give users the ability to install applications across different distros and platforms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Glass Castle</title>
+      <link>https://mrpointing.com/notes/entertainment/books/the-glass-castle/</link>
+      <pubDate>Tue, 01 Mar 2005 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/entertainment/books/the-glass-castle/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;What began as a search for a birthday gift for my mother, became a dive deep into the life of Jeannette Walls. In true Richie fashion, I picked the biggest downer I could&amp;rsquo;ve picked for a happy birthday. Knowing nothing about the book, I had saw it a few times show up as a &amp;ldquo;BookTok&amp;rdquo; recommendation, and even appear on my mom&amp;rsquo;s &amp;ldquo;Want to Read&amp;rdquo; list on her Goodreads account. Knowing that there was a book in common the both of us wanted to read, I didn&amp;rsquo;t even bother reading the back before purchasing and gifting it to her.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Satanic Verses</title>
+      <link>https://mrpointing.com/notes/entertainment/books/the-satanic-verses/</link>
+      <pubDate>Mon, 26 Sep 1988 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/entertainment/books/the-satanic-verses/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;What makes you unique from your contemporaries? How does the culmination of all of your past experiences affect your present choices, and what does that mean about the choices you end up making? Are you destined to fall back into the cycle of what has been, or can you throw everything away and start over, and be able to tell the tale of it all?&lt;/p&gt;&#xA;&lt;p&gt;These are the questions I gathered Mr. Rushdie is trying to ask with the Satanic Verses, among other things (should everything that&amp;rsquo;s said from those you trust be taken face value without question?). What sets a Salman Rushdie book apart from the rest, other than me having to heavily reference a dictionary, is it&amp;rsquo;s beautiful presentation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In The Distance</title>
+      <link>https://mrpointing.com/notes/entertainment/books/in-the-distance/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/entertainment/books/in-the-distance/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;While browsing a Strand affiliated pop-up next to central park one spring day not so many weeks ago, a good friend picked this book up and told me it was one of their favorite books. I of course took their opinion seriously, given I&amp;rsquo;ll read, watch, or play just about anything a friend recommends out of principle. It&amp;rsquo;s situations like this very one that makes that principle worth while; this book was amazing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning Modern Linux - Chapter 5</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-5/</link>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-5/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;filesystems&#34;&gt;Filesystems&lt;/h1&gt;&#xA;&lt;p&gt;Some would call this a dry topic, but in Linux and any UNIX based system &amp;ldquo;everything is a file&amp;rdquo;, so you should understand what&amp;rsquo;s going on with files. As the analogy suggests, nearly everything within the kernel is a file (with minor deviations). The &lt;em&gt;filesystem&lt;/em&gt; within the kernel defines how each file is laid out.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;&#xA;&lt;p&gt;Most distros give each user a single filesystem tree starting at &lt;code&gt;/&lt;/code&gt; or &lt;code&gt;root&lt;/code&gt;. Within each tree is either a directory or file. Easily list all files with &lt;code&gt;ls&lt;/code&gt;, change directories with &lt;code&gt;cd&lt;/code&gt;, and print your current working directory with &lt;code&gt;cwd&lt;/code&gt;. The above are so important and at first, you&amp;rsquo;ll be using them pretty much all the time. Lastly, file systems are implemented in the kernel, rather than user land.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>1 Year of Obsidian</title>
       <link>https://mrpointing.com/posts/1-year-of-obsidian/</link>
@@ -21,7 +63,7 @@
       <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-4/</link>
       <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-4/</guid>
-      <description>&lt;hr&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;access-control&#34;&gt;Access Control&lt;/h1&gt;&#xA;&lt;p&gt;Like most things in the world, access is a means of collateral control. There are certain parts of your system you &lt;em&gt;wouldn&amp;rsquo;t&lt;/em&gt; want anyone to touch (think of your network settings or startup settings). Let&amp;rsquo;s discuss the means of enforcing access control, how files are ran, and some advanced Linux features for controlling your environment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;&#xA;&lt;p&gt;Linux has the ability to have multiple users running on one machine. Each user has a given ID and certain &lt;em&gt;permissions&lt;/em&gt; that dictate what that user is capable of. Users own &lt;em&gt;resources&lt;/em&gt;, or just files, and launch &lt;strong&gt;processes&lt;/strong&gt;, which use files through a user.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learning Modern Linux - Chapter 3</title>
@@ -123,10 +165,10 @@
     </item>
     <item>
       <title>Generators</title>
-      <link>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/generators/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://wiki.python.org/moin/Generators&#34;&gt;Link&lt;/a&gt; to article 1.&#xA;&lt;a href=&#34;https://realpython.com/introduction-to-python-generators/&#34;&gt;Link&lt;/a&gt; to article 2.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
+      <guid>https://mrpointing.com/notes/computer-science/python/generators/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://wiki.python.org/moin/Generators&#34;&gt;Link&lt;/a&gt; to article 1.&#xA;&lt;a href=&#34;https://realpython.com/introduction-to-python-generators/&#34;&gt;Link&lt;/a&gt; to article 2.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;what-is-a-generator&#34;&gt;What is a Generator?&lt;/h1&gt;&#xA;&lt;p&gt;Straight from the Python wiki, &lt;em&gt;Generators&lt;/em&gt; are functions built to act like an iterator, which most commonly are used in for loops. Generators were made with the intention to have iterator functions, meaning we could take the following;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;first_n&lt;/span&gt;(n):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    Builds and returns a List&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    num, nums &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, []&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; num &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; n:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        nums&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(num)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        num &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; nums&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sum_of_first_n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum(first_n(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(sum_of_first_n)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Can be remade with the following;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wind and Truth</title>
