@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" And Away We Go: An AI Overview Consider this the master chapter for all basic AI definitions. Everything following this chapter will build off of the points brought up in this chapter. Some foundational stuff right here.
+Again, we should start at the most basic; Artificial Intelligence is the process of training a machine or computer to act like an intelligent human being. This original terminology was first used by John McCarthy in the 1950&rsquo;s!
+" />
+<meta name="keywords" content="homepage, blog, computerscience, AI, machine_learning, textbook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/" />
+
+
+    <title>
+        
+            How AI Works - Chapter 1 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="How AI Works - Chapter 1">
+  <meta itemprop="description" content="And Away We Go: An AI Overview Consider this the master chapter for all basic AI definitions. Everything following this chapter will build off of the points brought up in this chapter. Some foundational stuff right here.
+Again, we should start at the most basic; Artificial Intelligence is the process of training a machine or computer to act like an intelligent human being. This original terminology was first used by John McCarthy in the 1950’s!">
+  <meta itemprop="datePublished" content="2025-09-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-09-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="3061">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,AI,Machine_learning,Textbook">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="How AI Works - Chapter 1">
+  <meta name="twitter:description" content="And Away We Go: An AI Overview Consider this the master chapter for all basic AI definitions. Everything following this chapter will build off of the points brought up in this chapter. Some foundational stuff right here.
+Again, we should start at the most basic; Artificial Intelligence is the process of training a machine or computer to act like an intelligent human being. This original terminology was first used by John McCarthy in the 1950’s!">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="How AI Works - Chapter 1">
+  <meta property="og:description" content="And Away We Go: An AI Overview Consider this the master chapter for all basic AI definitions. Everything following this chapter will build off of the points brought up in this chapter. Some foundational stuff right here.
+Again, we should start at the most basic; Artificial Intelligence is the process of training a machine or computer to act like an intelligent human being. This original terminology was first used by John McCarthy in the 1950’s!">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-09-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-09T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Machine_learning">
+    <meta property="article:tag" content="Textbook">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-09-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/">How AI Works - Chapter 1</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="and-away-we-go-an-ai-overview">And Away We Go: An AI Overview</h1>
+<p>Consider this the master chapter for all basic AI definitions. Everything following this chapter will build off of the points brought up in this chapter. Some foundational stuff right here.</p>
+<p>Again, we should start at the most basic; <em>Artificial Intelligence</em> is the process of training a machine or computer to act like an intelligent human being. This original terminology was first used by John McCarthy in the 1950&rsquo;s!</p>
+<p>Computers are <em>programmed</em> to accomplish tasks, or a <em>program</em>, which is usually encompasses some <em>algorithm</em> that controls to logic of said program. Imagine you own a burger truck, and you have your own special ketchup only you know the ingredients to. That recipe is the algorithm, the construction of the burger sauce is the program, and the workers who make it all happen is the machine (or in this case, model). The workers don&rsquo;t need to fully understand the recipe or even why they are doing whatever they&rsquo;re doing; that understanding is held usually only by the programmer, or in this case you as the owner of the sauce recipe.</p>
+<p>This is the way it&rsquo;s be done for years; programmers will write some code containing an algorithm, the machine will perform the tasks without even considering why it&rsquo;s doing it in the first place. If we had to give anyone credit, it would fall likely onto Alan Turing in the 30&rsquo;s or Charles Babbage (Technically Lovelace also, but we&rsquo;ll get more details later in chapter 2).</p>
+<h2 id="terminology-ai-machine-learning-and-deep-learning">Terminology: AI, Machine Learning, and Deep Learning</h2>
+<p>When beginning, most people will use the above three terms interchangeably. On a surface level, they&rsquo;re not <em>wrong</em>, but they are certainly over simplifying it. The real relationship between all these terms looks something more like this;</p>
+
+    <img src="/images/ai_term_diagram.png"  alt="ai_term_diagram"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Deep learning is a sub-field of machine learning, which is in itself a sub field of artificial intelligence. There&rsquo;s a lot going on in the first circle; we&rsquo;ll call this the <strong>old days</strong>. In the old days of AI, approaches before 1950, are going to be generally ignored by this text. Instead, we&rsquo;ll flesh out the other two terms.</p>
+<p>When we refer to machine learning, we&rsquo;re creating our <em>models</em> using existing, quantifiable data. When we say model, we&rsquo;re talking about a device that takes in input and generates some output. Obviously, this input and output is meaningful in some regard, giving us some information that can be used in real time. Using that input data, we can use the <strong>known</strong> data to produce output for instances where we <strong>don&rsquo;t know</strong> enough about our data. Deep learning on the other hand uses huge models to accomplish tasks otherwise not computable. If the above two terms are confusing, don&rsquo;t stress; we&rsquo;ll get there.</p>
+<p>The terminology even by professionals is largely interchangeable, but you should be able to distinguish between the three. The best way is to think of deep learning as a large neural network (we&rsquo;ll get there I promise), machine learning as models trained by data, and AI as a catchall.</p>
+<h2 id="what-is-a-model">What is a Model?</h2>
+<p>Most commonly associated with machine learning, the model is again that intangible entity that takes in input and produces an output. Sometimes the output is a word or phrase, other times it&rsquo;s a numerical value. These are most often predictions. For example, let&rsquo;s say we wanted to build a model that can determine if a given image is of a dog or not. It can either output &ldquo;dog&rdquo; or &ldquo;not dog&rdquo;, or even a percentage of how confident the model is that the image contains a dog. One of the first uses we&rsquo;ll get to is with <em>Linear Regression</em>, where we&rsquo;ll predict the pricing of houses based on some unique features.</p>
+<p>To continue with definitions, every model has a set of <em>parameters</em> that determine the output from the model. We <em>train</em> a model by setting these parameters accordingly until we get some desirable result. Now, the most confusing part of the training process is that not only do we train on input, but also output. Basically, we are telling our model given this set of inputs, this is what the output should look like. This prepares the model to handle input data where we don&rsquo;t always have all the input information we gathered in our training data.</p>
+<p>Using our Linear Regression example, say we have the following table of data;</p>
+<table>
+  <thead>
+      <tr>
+          <th>Rooms</th>
+          <th>Year Built</th>
+          <th>Square Feet</th>
+          <th>Price</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>3</td>
+          <td>1997</td>
+          <td>4000</td>
+          <td>180,000</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>2007</td>
+          <td>6000</td>
+          <td>380,000</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>2003</td>
+          <td>4500</td>
+          <td>190,000</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>2024</td>
+          <td>10000</td>
+          <td>780,000</td>
+      </tr>
+  </tbody>
+</table>
+<p>If our goal was to make a house price predictor, the first 3 columns (Rooms, Year Built, and Square Feet) would be our input, while the Price would be our output. Now, given we get in a new home, with 4 bedrooms, built in the year 2018, and 7500 square feet of space, how much would that cost? Well, given the previous 4 pieces of data, we could design a model that uses all of the available features to make a mathematical approximation.</p>
+<p>The &ldquo;training&rdquo; portion of a model actually uses little to no programming; the programming, remember, is the set of instructions to run on our data. Often, we don&rsquo;t know what algorithm would best suit for desirable output. One thing we have to note here is the already apparent use of bias; if I don&rsquo;t like the results of my model, can I mess around with my training data until the results suit my agenda? Absolutely. A quote from a British mathematician, &ldquo;Models are <em>always wrong</em>, but some are useful.&rdquo;</p>
+<p>The algorithm for machine learning follows these four steps;</p>
+<ol>
+<li>Collect training data (both input and output)</li>
+<li>Select type of model to train</li>
+<li>Train model and adjust parameters if output is incorrect</li>
+<li>Repeat step 3 until satisfied with performance</li>
+<li>Use the model</li>
+</ol>
+<p>The method we just outlined is called <em>supervised learning</em>, since we know all of the data we are training our model on (sometimes refereed to as <em>labeled data</em>) and are actively making adjustments in the process of training it.</p>
+<h2 id="setosa-vs-versicolor">Setosa vs. Versicolor</h2>
+<p>One of the most popular examples of machine learning, we&rsquo;re given a dataset containing measurements of an Iris flower. The different types of Iris&rsquo; can be classified based on these measurements, and we can define them as either <em>setosa</em> or a <em>versicolor</em>. These are split on the flower petal&rsquo;s length and width. Dating back all the way to the 1930&rsquo;s, this model takes in two inputs and returns one of two outputs, making that model a <em>binary model</em>. If there were more than two species, it would be a <em>multiclass model</em>.</p>
+<h3 id="math-terminology">Math Terminology</h3>
+<p>Math sucks. At least to some people it does; unfortunately it&rsquo;s a key element to computer science as a whole and will directly help us understand AI. Models will almost always use either <em>vectors</em> or <em>matrices</em>. If you want a more detailed overview of some linear algebra, you can visit <a href="https://mrpointing.com/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/">this</a> note. Here&rsquo;s the basic breakdown;</p>
+<ul>
+<li><em>Vector</em>: A set of numbers as a single entity
+<ul>
+<li>Ex. Using our iris flower representation; {4.5, 2.3, 1.3, 0.3}
+<ul>
+<li>Sepal length and width, and petal length and width</li>
+</ul>
+</li>
+<li>Dimensions defined by amount of numbers</li>
+</ul>
+</li>
+<li><em>Matrix</em>: Two-dimensional array of numbers</li>
+</ul>
+<p>We&rsquo;re going to run into these two structures all the time. For example, our iris flower data set is not just a vector, but a matrix of all the iris flowers, with each row being another iris.</p>
+<h2 id="more-model-definitions">More Model Definitions</h2>
+<p>The name we give to our input data in machine learning is <em>features</em>; our Iris dataset has two features, petal length and width. A single entry is known as a <em>sample</em>, or a <em>feature vector</em>. Again, we&rsquo;re working with a binary model, so in our case we&rsquo;re going to get an output of a number of confidence it belongs to a flower species (If confident it&rsquo;s not, that indicates it&rsquo;s the other species!).</p>
+<p>Now, even though collecting data can be a ton of work on it&rsquo;s own, we can&rsquo;t just give a model some data and assume it&rsquo;s going to work all of the time. Quite often, because we don&rsquo;t always understand what decisions a computer decides to make in split micro-second instants, the first time you run a model it will be off. One way to ensure we have some room to test is by using only a percentage of our dataset for training initially, then using the rest for post set-up testing. Something like a 80/20 split makes sense.</p>
+<p>The machine learning term for what we were just talking about is <em>optimization</em>, when engineers fit the data compactly so patterns can be easily recognized. What you really want out to do with your model is have it <em>generalize</em>, or have the model understand the general characteristics of your training set so your test set has good generalization abilities. Confusing, so let&rsquo;s take a look at this using our iris flowers;</p>
+
+    <img src="/images/iris_setosa.png"  alt="iris_setosa"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Taking a look at our scatter plot, we should see a clear pattern; all of the similar flower species are grouped together based on these two features. The special type of model we want to build in this instance is called a <em>classifier</em>, since we want to be our model to tell us which class any new entries fall into.</p>
+<p>Not only is it a classifier, but we also have to end up choosing a type of model. We could go for a <strong>decision tree</strong>, which is like our computer playing 20 questions with each new entry. But, since our features are so basic and we only have two classifications, we can just observe out data set and make a single question our classifier; if the petal length is less than 2.5 cm, it&rsquo;s a class 0 or setosa. Otherwise, it&rsquo;s a class 1 or versacolor.</p>
+<p>For now, this works. If we throw in more data, and it happens to stay correct, then we can confidently say we&rsquo;ve built a properly working classifier. One simple way to disrupt this harmony is to throw in another species; <strong>virginica</strong>. All of a sudden, based on petal length and width, our classifier would become unusable with data points all over the place. It&rsquo;s in this instance we want to go for a decision tree, like the following;</p>
+
+    <img src="/images/iris_decision_tree.png"  alt="iris_decision_tree"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The model we made is good for a very specific purpose. In the grand scheme of things, it&rsquo;s not so complex. One way we can judge complexity is through the ability to classify under more broad conditions. Going back to our dog classifier. Say we train our model on dogs and lizards. If we introduce something that looks like a dog, like maybe a wolf, will our model be able to tell the difference? Probably not, because our model has no prior experience with wolves, and they look an awful lot like a regular dog to most people. If our model can work well &ldquo;in the wild&rdquo;, we&rsquo;ve got a pretty strong model.</p>
+<p>Another example we can refer too is the MNIST dataset, a collection of small integer numbers used to train neural networks on identifying these integers. Since we&rsquo;re identifying images, and we know the images are 28x28 pixels, that makes each image have 784 features (or dimensions). This is obviously a lot more than the 2 features we just looked at, but machine learning can handle it no problem. This is such a simple example, anybody can use open source toolkits (like we&rsquo;re going too later on in the course) to run this themselves.</p>
+<p>For now, let&rsquo;s say we want our model to correctly identify 0, 1, 3, and 9. We&rsquo;ve got a ton of samples; nearly 25,000 images, with around 6,000 for each of our 4 digits. We&rsquo;re going to leave out about 4,000 images, one thousand for each digit. We can make a <strong>confusion matrix</strong> to show this empirical relationship;</p>
+
+    <img src="/images/confusion_matrix.png"  alt="confusion_matrix"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Each row is the actual number label, with each column being the models response. For example; for the digit 0, the model responded correctly 978 times, and incorrectly label a single 0 as a 3, and another as a 9. We can use the diagonal (or where each corresponding matching numbers meet) to get a quick look at whether our data is being read correctly; the diagonal should contain high numbers, while the off diagonal contain small, relatively forgettable numbers.</p>
+<p>Quantified out, this is a 99% approval rate. Pretty good! Except, our issue comes from the inclusion of any other digit. Say we ask it to give us a 4; how would our model respond? The text model get&rsquo;s this as it&rsquo;s answer for 4&rsquo;s:</p>
+<table>
+  <thead>
+      <tr>
+          <th>0</th>
+          <th>1</th>
+          <th>3</th>
+          <th>9</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>48</td>
+          <td>9</td>
+          <td>8</td>
+          <td>917</td>
+      </tr>
+  </tbody>
+</table>
+<p>And then again for 7&rsquo;s:</p>
+<table>
+  <thead>
+      <tr>
+          <th>0</th>
+          <th>1</th>
+          <th>3</th>
+          <th>9</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>19</td>
+          <td>20</td>
+          <td>227</td>
+          <td>762</td>
+      </tr>
+  </tbody>
+</table>
+<p>First off, notice how our models responses don&rsquo;t change even though we&rsquo;ve added another type of input. Because our model was never trained to recognize 4&rsquo;s or 7&rsquo;s, it will <strong>never respond</strong> with those options. It will try to fit whatever new input into one of the already existing classifications.</p>
+<p>Some more definitions for you, if this chapter hasn&rsquo;t been dense enough. We can break down the above example into two terms; <em>interpolation</em> and <em>extrapolation</em>. Interpolation will respond with known output, and extrapolation will push further than what it&rsquo;s been trained on. Let&rsquo;s use an example; say when we trained our models on 0&rsquo;s, all the images were of 0&rsquo;s in neat and straight-up manner. If we were to introduce a slanted or tilted 0, the model will have to interpolate to get the classification correct. If we introduced a 0 with a slash through it (sometimes used to denote between 0 and capital O) the model will have to extrapolate, since it&rsquo;s never been seen and distinguishable enough from a basic tilt or lean.</p>
+<p>Another example we can observe; population between 1950 and 1970. Observe the following graph;</p>
+
+    <img src="/images/population_growth_1950_1970.png"  alt="confusion_matrix"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>This is yet another version of machine learning we will come across this year, but for now I want to focus on those two vocab words we just learned. Since we have the dataset from 1950 to 1970, our model interpolates what the expected population should be, which is compared directly to our actual (the line of best fit). If we wanted to our model to predict the population before 1950 or 1970, it would have to extrapolate.</p>
+<p>If we actually look at the population growth up to today, the above line of best fit is actually quite bad. As the years pass, the expected versus actual value continue to widen, meaning we would need to rerun our model with all of the available data to get a new line of best fit that&rsquo;s more accurate. We call this process <em>curve fitting</em>, which is like a younger cousin to machine learning. In general, we want to avoid extrapolating, and should always prefer interpolating.</p>
+<h2 id="cautionary-tales">Cautionary Tales</h2>
+<p>With great power, comes great responsibility. Again, a point I will stress over and over again, your models have no real thought behind them. A great story from the text; a machine learning researcher tried to uncover reasoning behind neural networks and why models behave the way they do. For his training set, he tried to create a model that tells the difference between wolves and huskies (pretty similar looking animals). The model was pretty good at it&rsquo;s job! It was accurate and that&rsquo;s all that matters, right?</p>
+<p>After taking a closer look at how the model made it&rsquo;s decisions, this assumption becomes moot. Turns out, the training data of all the wolves included snow in the background, while the huskies did not. The model was only deciding it a wolf was a wolf if the picture had snow in the background. Without questioning the means and methods behind a model, one can very quickly accept incorrect information as valid. In other cases, sometimes models pick up on features non-perceivable to the human eye, making understanding near impossible.</p>
+<p>Another phrase to keep in mind when observing model behavior is <strong>&ldquo;Correlation does not imply causation.&rdquo;</strong> Essentially, just because the rooster crows before the sun comes up, does not mean the sun rises purely because of the rooster. Both happen at the same time; they <em>correlate</em> but do not directly affect one another. Our models might learn about data concerning our subjects, but our models will never truly <em>understand</em> our subjects. This has lead to huge issues; Google had a huge issue post release of their AI trained photos app in 2015. The best way to avoid issues like these is to use diverse training data.</p>
+<p>Going back to our numeric example, we want our model to be able to accept any kind of representation that could be considered a digit. That means some 0&rsquo;s that are normal, some slanted, some with slashes through it, etc. Let&rsquo;s make it a little more basic; instead of identifying digits, all it needs to do is tell us if it&rsquo;s a 9 or not. Again, using the same dataset as before, without the inclusion of 4 or 7. we went from a multiclass model to a binary model Running this would give you a pretty good result;</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Not 9</th>
+          <th>9</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Not 9</td>
+          <td>9754</td>
+          <td>23</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>38</td>
+          <td>1362</td>
+      </tr>
+  </tbody>
+</table>
+<p>Some things we can observe from this;</p>
+<ul>
+<li>The new model has 23 <em>false positives</em>, or where the model said a digit was a 9 when it actually wasn&rsquo;t</li>
+<li>The model has 38 <em>false negatives</em>, or when the model said a digit wasn&rsquo;t 9 when it actually was</li>
+</ul>
+<p>We ideally want a model with no false positives or negatives, but often that is impossible. Usually, it&rsquo;s better to prioritize minimizing false negatives; think of a medical use. If testing for cancer, a false positive will warrant a further look until you see there is no cancer. However, a false negative is a <em>missed</em> catch, meaning that person now does not know they have cancer when it was incorrectly caught. It&rsquo;s always going to be depend on what the model is being used for.</p>
+<h1 id="chapter-summary">Chapter Summary</h1>
+<ul>
+<li>Models are trained on datasets, usually made up of many matrices of input and output data.</li>
+<li>The best types of models are trained on a wide variety of data, in order to interpolate data rather than extrapolate</li>
+<li>Bias will show in models; if the training data is biased, so is the model</li>
+<li><strong>Models are always wrong, some are useful</strong></li>
+</ul>
+<h1 id="chapter-resources">Chapter Resources</h1>
+<ul>
+<li><a href="https://www.kaggle.com/datasets/arshid/iris-flower-dataset">The Iris flower dataset</a></li>
+<li><a href="https://www.kaggle.com/datasets/hojjatk/mnist-dataset">The MNIST dataset</a></li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/">Chapter 2</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/ai/">AI</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/machine_learning/">machine_learning</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

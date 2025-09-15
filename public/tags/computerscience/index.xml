@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How AI Works - Chapter 2</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>How AI Works</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;from-sorcery-to-science&#34;&gt;From Sorcery to Science&lt;/h1&gt;&#xA;&lt;h2 id=&#34;by-ronald-t-kneusel&#34;&gt;By Ronald T. Kneusel&lt;/h2&gt;&#xA;&lt;p&gt;Most text&amp;rsquo;s will teach you how to work on or with AI; this is going to teach you what&amp;rsquo;s going on &lt;em&gt;conceptually&lt;/em&gt;. Considered a &amp;ldquo;tree-top&amp;rdquo; approach, we won&amp;rsquo;t get bogged down by math-heavy terminology.&lt;/p&gt;&#xA;&lt;p&gt;The goal of AI has been the same since 1987; simulate intelligent thought and actions via a machine. Believe it or not, AI has been around us almost our entire lives, mostly without us even being able to recognize it. From basic things like word prediction to route navigation, to today&amp;rsquo;s boom of LLM&amp;rsquo;s, AI is everywhere.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How AI Works - Chapter 1</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;and-away-we-go-an-ai-overview&#34;&gt;And Away We Go: An AI Overview&lt;/h1&gt;&#xA;&lt;p&gt;Consider this the master chapter for all basic AI definitions. Everything following this chapter will build off of the points brought up in this chapter. Some foundational stuff right here.&lt;/p&gt;&#xA;&lt;p&gt;Again, we should start at the most basic; &lt;em&gt;Artificial Intelligence&lt;/em&gt; is the process of training a machine or computer to act like an intelligent human being. This original terminology was first used by John McCarthy in the 1950&amp;rsquo;s!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Learning Modern Linux - Chapter 7</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/</link>
@@ -130,9 +151,9 @@
     </item>
     <item>
       <title>Generators</title>
-      <link>https://mrpointing.com/notes/computer-science/python/generators/</link>
+      <link>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/computer-science/python/generators/</guid>
+      <guid>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://wiki.python.org/moin/Generators&#34;&gt;Link&lt;/a&gt; to article 1.&#xA;&lt;a href=&#34;https://realpython.com/introduction-to-python-generators/&#34;&gt;Link&lt;/a&gt; to article 2.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;what-is-a-generator&#34;&gt;What is a Generator?&lt;/h1&gt;&#xA;&lt;p&gt;Straight from the Python wiki, &lt;em&gt;Generators&lt;/em&gt; are functions built to act like an iterator, which most commonly are used in for loops. Generators were made with the intention to have iterator functions, meaning we could take the following;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;first_n&lt;/span&gt;(n):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    Builds and returns a List&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    num, nums &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, []&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; num &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; n:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        nums&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(num)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        num &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; nums&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sum_of_first_n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum(first_n(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(sum_of_first_n)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Can be remade with the following;&lt;/p&gt;</description>
     </item>
     <item>

@@ -2,25 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mrpointing.com/tags/ai/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mrpointing.com/tags/computerscience/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/machine_learning/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/textbook/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/linux/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/notes/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/textbook/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-6/</loc>
@@ -137,7 +152,7 @@
     <loc>https://mrpointing.com/tags/fantasy/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python/generators/</loc>
+    <loc>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/python/</loc>
@@ -246,9 +261,6 @@
     <lastmod>2025-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</loc>
-    <lastmod>2025-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/machine_learning/</loc>
     <lastmod>2025-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-12/</loc>
@@ -385,9 +397,6 @@
   </url><url>
     <loc>https://mrpointing.com/posts/20-textbooks/</loc>
     <lastmod>2025-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/ai/</loc>
-    <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/projects/30-day-coding-challenge/week-4/day-26/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How AI Works on Mr. Pointing</title>
+    <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/</link>
+    <description>Recent content in How AI Works on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How AI Works - Chapter 2</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>How AI Works - Chapter 1</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;and-away-we-go-an-ai-overview&#34;&gt;And Away We Go: An AI Overview&lt;/h1&gt;&#xA;&lt;p&gt;Consider this the master chapter for all basic AI definitions. Everything following this chapter will build off of the points brought up in this chapter. Some foundational stuff right here.&lt;/p&gt;&#xA;&lt;p&gt;Again, we should start at the most basic; &lt;em&gt;Artificial Intelligence&lt;/em&gt; is the process of training a machine or computer to act like an intelligent human being. This original terminology was first used by John McCarthy in the 1950&amp;rsquo;s!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

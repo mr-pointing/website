@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/machine_learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How AI Works - Chapter 2</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>How AI Works</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;from-sorcery-to-science&#34;&gt;From Sorcery to Science&lt;/h1&gt;&#xA;&lt;h2 id=&#34;by-ronald-t-kneusel&#34;&gt;By Ronald T. Kneusel&lt;/h2&gt;&#xA;&lt;p&gt;Most text&amp;rsquo;s will teach you how to work on or with AI; this is going to teach you what&amp;rsquo;s going on &lt;em&gt;conceptually&lt;/em&gt;. Considered a &amp;ldquo;tree-top&amp;rdquo; approach, we won&amp;rsquo;t get bogged down by math-heavy terminology.&lt;/p&gt;&#xA;&lt;p&gt;The goal of AI has been the same since 1987; simulate intelligent thought and actions via a machine. Believe it or not, AI has been around us almost our entire lives, mostly without us even being able to recognize it. From basic things like word prediction to route navigation, to today&amp;rsquo;s boom of LLM&amp;rsquo;s, AI is everywhere.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How AI Works - Chapter 1</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;and-away-we-go-an-ai-overview&#34;&gt;And Away We Go: An AI Overview&lt;/h1&gt;&#xA;&lt;p&gt;Consider this the master chapter for all basic AI definitions. Everything following this chapter will build off of the points brought up in this chapter. Some foundational stuff right here.&lt;/p&gt;&#xA;&lt;p&gt;Again, we should start at the most basic; &lt;em&gt;Artificial Intelligence&lt;/em&gt; is the process of training a machine or computer to act like an intelligent human being. This original terminology was first used by John McCarthy in the 1950&amp;rsquo;s!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Grokking Algorithms - Chapter 13</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/grokking-algorithms/grokking-algorithms---chapter-13/</link>
