@@ -14,10 +14,6 @@ updated: 2025-9-01T12:37
 
 Learn about why you need a Now page [here](https://nownownow.com/about).
 
-## Doing
-
-Learning to become a Tattoo Artist. See my progress [here](https://instagram.com/cd___flash).
-
 ## Listening
 
 I keep one main playlist that constantly add too every few years. My current playlist can be found [here](https://open.spotify.com/playlist/3feDlFqrgP49k8q43rpkip?si=2xnKT7-mTcCSmOrkPe-zJA&pi=u-5Fcl0Ir7QaWk).
