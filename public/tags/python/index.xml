@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Regression</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/linear-regression/</link>
+      <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/linear-regression/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;single-variable&#34;&gt;Single Variable&lt;/h1&gt;&#xA;&lt;p&gt;A great beginner model, &lt;em&gt;Linear Regression&lt;/em&gt; uses input and output features to predict new inputs. There are lots of things we can predict; stock prices, collectibles, cars, you name it. An easy one we can use for now is home prices. Take the following table for example;&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Area&lt;/th&gt;&#xA;          &lt;th&gt;Price&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;1750&lt;/td&gt;&#xA;          &lt;td&gt;465000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2000&lt;/td&gt;&#xA;          &lt;td&gt;545000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2300&lt;/td&gt;&#xA;          &lt;td&gt;570000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2800&lt;/td&gt;&#xA;          &lt;td&gt;595000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;3200&lt;/td&gt;&#xA;          &lt;td&gt;614000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Our objective is to create a model that will correctly price out a new house given we provide a square footage area. We can see a really clear pattern; as the area increase, the price increases. We could easily plot this on a scatter plot and see the correlation. We should also remember from algebra that we can create a line of best fit, that would minimize the amount of error between the expected amount and the actual amount (the price). Sounds, confusing, let&amp;rsquo;s actually see what happens.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Generators</title>
       <link>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</link>

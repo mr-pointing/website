@@ -14,7 +14,7 @@
       <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</guid>
-      <description>&lt;hr&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;why-now-history-of-ai&#34;&gt;Why Now? History of AI&lt;/h1&gt;&#xA;&lt;p&gt;Like we learned in the last chapter, AI has been around for a while. In the grand scheme of things, this &amp;ldquo;while&amp;rdquo; is seen as a blip, still in it&amp;rsquo;s infancy. It certainly did not just appear with ChatGPT. Let&amp;rsquo;s take a look at the landscape that got us here.&lt;/p&gt;&#xA;&lt;h2 id=&#34;types-of-ai&#34;&gt;Types of AI&lt;/h2&gt;&#xA;&lt;p&gt;I know I said we&amp;rsquo;d get a lot of definitions out of the way in the last chapter, but I lied. We have some more to go. AI can fall into two major categories; &lt;em&gt;Symbolic AI&lt;/em&gt; and &lt;em&gt;Connectionism&lt;/em&gt;. Where symbolic AI takes advantage of visual symbols and logical statements to build it&amp;rsquo;s &amp;ldquo;intelligence&amp;rdquo;, connectionism will try to build it&amp;rsquo;s intelligence using a compilation of simpler, smaller components. These are significant because it&amp;rsquo;s how our human brains work. We consider symbolic to be &amp;ldquo;Top-Down&amp;rdquo; (high level tasks getting broken up) and connectionism as &amp;ldquo;Bottom-up&amp;rdquo; (smaller tasks combined to create larger complex tasks).&lt;/p&gt;</description>
     </item>
     <item>
       <title>How AI Works - Chapter 1</title>
