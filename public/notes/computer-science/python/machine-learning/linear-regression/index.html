@@ -51,7 +51,7 @@ Area Price 1750 465000 2000 545000 2300 570000 2800 595000 3200 614000 Our objec
 Area Price 1750 465000 2000 545000 2300 570000 2800 595000 3200 614000 Our objective is to create a model that will correctly price out a new house given we provide a square footage area. We can see a really clear pattern; as the area increase, the price increases. We could easily plot this on a scatter plot and see the correlation. We should also remember from algebra that we can create a line of best fit, that would minimize the amount of error between the expected amount and the actual amount (the price). Sounds, confusing, let’s actually see what happens.">
   <meta itemprop="datePublished" content="2025-09-21T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-21T00:00:00+00:00">
-  <meta itemprop="wordCount" content="686">
+  <meta itemprop="wordCount" content="1084">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,AI,Machine_learning,Python">
 
@@ -240,7 +240,87 @@ Area Price 1750 465000 2000 545000 2300 570000 2800 595000 3200 614000 Our objec
 </span></span></code></pre></div><p>Now that we know what&rsquo;s going on under the hood, we can simply run it as intended;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> reg<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">2500</span>]])
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">571226.20904836</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><h1 id="multiple-variables">Multiple Variables</h1>
+<p>There aren&rsquo;t many situations in real life where only one single variable affects an outcome like price. Most of the time, there are many different variables that we need to consider. To continue using our home example;</p>
+<table>
+  <thead>
+      <tr>
+          <th>Area</th>
+          <th>Bedroom</th>
+          <th>Age</th>
+          <th>Price</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2450</td>
+          <td>2</td>
+          <td>23</td>
+          <td>535000</td>
+      </tr>
+      <tr>
+          <td>2900</td>
+          <td>3</td>
+          <td>18</td>
+          <td>580000</td>
+      </tr>
+      <tr>
+          <td>3100</td>
+          <td></td>
+          <td>20</td>
+          <td>605000</td>
+      </tr>
+      <tr>
+          <td>3400</td>
+          <td>3</td>
+          <td>32</td>
+          <td>583000</td>
+      </tr>
+      <tr>
+          <td>3900</td>
+          <td>4</td>
+          <td>6</td>
+          <td>685000</td>
+      </tr>
+      <tr>
+          <td>4150</td>
+          <td>5</td>
+          <td>7</td>
+          <td>762000</td>
+      </tr>
+  </tbody>
+</table>
+<p>Our original formula for getting price, $y=mx+b$, turns into;</p>
+<ul>
+<li>$price=m_1<em>area+m_2</em>bedrooms+m_3*age+b$</li>
+</ul>
+<p>We should open up a new environment to work in, as well as to get comfortable working and using Python.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> linear_model
+</span></span></code></pre></div><p>This time, we won&rsquo;t need to use a scatter plot since we&rsquo;re using multiple variables (it would need to be a 4-dimensional point!).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;full_houseprices.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>df
+</span></span></code></pre></div><p>When running our new Dataframe, you&rsquo;ll notice that we have a NaN value in our bedrooms column. Totally fine, and part of the lesson. Remember, data is messy. Quite often we are going to have to clean up our data manually, especially if we are working for a company/client. Working with empties is not great, and we should avoid it whenever possible.</p>
+<p>It&rsquo;s really up to us on what we should fill our empties with. For our context, we could use something like the median bedrooms of the dataset, which we could get in a few different ways. Here&rsquo;s an easy way;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>bedrooms<span style="color:#f92672">.</span>median()
+</span></span></code></pre></div><p>We get 3. Great, we can use that. Let&rsquo;s fill all blanks with this value;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>bedrooms <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>bedrooms<span style="color:#f92672">.</span>fillna(df<span style="color:#f92672">.</span>bedrooms<span style="color:#f92672">.</span>median())
+</span></span></code></pre></div><p>Make sure to call <code>df</code> and ensure your values have been entered correctly. Just like before, we&rsquo;re going to fit out model with all the input features and output features. We don&rsquo;t need to create new variables this time;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reg <span style="color:#f92672">=</span> linear_model<span style="color:#f92672">.</span>LinearRegression()
+</span></span><span style="display:flex;"><span>reg<span style="color:#f92672">.</span>fit(df<span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#39;price&#39;</span>, axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;columns&#39;</span>), df<span style="color:#f92672">.</span>price)
+</span></span></code></pre></div><p>To keep things nice and organized, we can begin predicting by passing in the values in order of appearance;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reg<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">3250</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">40</span>]])
+</span></span></code></pre></div><h3 id="exercise">Exercise</h3>
+<p>Given a dataset on hiring stats (<code>hiring_stats.csv</code>), you are going to build a model that will output what each new hire&rsquo;s salary should be. There are three features you should be concerned with; years of experience, written test score, and interview score. Based off of these three, provide a prediction for the following new hires;</p>
+<ul>
+<li>3 years, 8 test score, 7 interview score</li>
+<li>11 years, 9 test score, 10 interview score</li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/">Gradient Descent</a></p>
+
             </div>
         </article>
 

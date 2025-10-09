@@ -8,7 +8,7 @@ tags:
   - python
 title: Linear Regression
 date: 2025-09-21
-updated: 2025-09-23T09:16
+updated: 2025-10-08T19:58
 ---
 
 ---
@@ -113,3 +113,73 @@ Now that we know what's going on under the hood, we can simply run it as intende
 571226.20904836
 ```
 
+# Multiple Variables
+
+There aren't many situations in real life where only one single variable affects an outcome like price. Most of the time, there are many different variables that we need to consider. To continue using our home example;
+
+| Area | Bedroom | Age | Price  |
+| ---- | ------- | --- | ------ |
+| 2450 | 2       | 23  | 535000 |
+| 2900 | 3       | 18  | 580000 |
+| 3100 |         | 20  | 605000 |
+| 3400 | 3       | 32  | 583000 |
+| 3900 | 4       | 6   | 685000 |
+| 4150 | 5       | 7   | 762000 |
+
+Our original formula for getting price, $y=mx+b$, turns into;
+
+- $price=m_1*area+m_2*bedrooms+m_3*age+b$
+
+We should open up a new environment to work in, as well as to get comfortable working and using Python.
+
+```python
+import pandas as pd
+import numpy as np
+from sklearn import linear_model
+```
+
+This time, we won't need to use a scatter plot since we're using multiple variables (it would need to be a 4-dimensional point!).
+
+```python
+df = pd.read_csv('full_houseprices.csv')
+df
+```
+
+When running our new Dataframe, you'll notice that we have a NaN value in our bedrooms column. Totally fine, and part of the lesson. Remember, data is messy. Quite often we are going to have to clean up our data manually, especially if we are working for a company/client. Working with empties is not great, and we should avoid it whenever possible.
+
+It's really up to us on what we should fill our empties with. For our context, we could use something like the median bedrooms of the dataset, which we could get in a few different ways. Here's an easy way;
+
+```python
+df.bedrooms.median()
+```
+
+We get 3. Great, we can use that. Let's fill all blanks with this value;
+
+```python
+df.bedrooms = df.bedrooms.fillna(df.bedrooms.median())
+```
+
+Make sure to call `df` and ensure your values have been entered correctly. Just like before, we're going to fit out model with all the input features and output features. We don't need to create new variables this time;
+
+```python
+reg = linear_model.LinearRegression()
+reg.fit(df.drop('price', axis='columns'), df.price)
+```
+
+To keep things nice and organized, we can begin predicting by passing in the values in order of appearance;
+
+```python
+reg.predict([[3250, 6, 40]])
+```
+
+### Exercise
+
+Given a dataset on hiring stats (`hiring_stats.csv`), you are going to build a model that will output what each new hire's salary should be. There are three features you should be concerned with; years of experience, written test score, and interview score. Based off of these three, provide a prediction for the following new hires;
+
+- 3 years, 8 test score, 7 interview score
+- 11 years, 9 test score, 10 interview score
+
+---
+
+Next:
+[Gradient Descent]({{< ref "Gradient Descent" >}})

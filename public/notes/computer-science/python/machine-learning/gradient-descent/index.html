@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" This one will be a quick one, but it&rsquo;s really important. We know that given an input dataset, and given a function, we can calculate the output. For example, if we have $x=[1, 2, 3]$, and the function $y=3x-2$, we could reasonably figure out the dataset of $y$; $[1, 4, 7]$. Another term for this function, in the case of Machine Learning, is a prediction function.
+Sometimes, we&rsquo;re only given the input and output data. It would be incredibly helpful if we were able to figure out that prediction function, so we can predict unseen input values with precision. We&rsquo;re actually going to continue working with the dataset we began working with in single variable linear regression.
+" />
+<meta name="keywords" content="homepage, blog, computerscience" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/" />
+
+
+    <title>
+        
+            Gradient Descent :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.035c38bd5963f806b4d5c85fa524207296da59d813979f6be51d99d00155ebce.css" integrity="sha256-A1w4vVlj&#43;Aa01chfpSQgcpbaWdgTl59r5R2Z0AFV684=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Gradient Descent">
+  <meta itemprop="description" content="This one will be a quick one, but it’s really important. We know that given an input dataset, and given a function, we can calculate the output. For example, if we have $x=[1, 2, 3]$, and the function $y=3x-2$, we could reasonably figure out the dataset of $y$; $[1, 4, 7]$. Another term for this function, in the case of Machine Learning, is a prediction function.
+Sometimes, we’re only given the input and output data. It would be incredibly helpful if we were able to figure out that prediction function, so we can predict unseen input values with precision. We’re actually going to continue working with the dataset we began working with in single variable linear regression.">
+  <meta itemprop="datePublished" content="2025-10-02T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-10-02T00:00:00+00:00">
+  <meta itemprop="wordCount" content="502">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Gradient Descent">
+  <meta name="twitter:description" content="This one will be a quick one, but it’s really important. We know that given an input dataset, and given a function, we can calculate the output. For example, if we have $x=[1, 2, 3]$, and the function $y=3x-2$, we could reasonably figure out the dataset of $y$; $[1, 4, 7]$. Another term for this function, in the case of Machine Learning, is a prediction function.
+Sometimes, we’re only given the input and output data. It would be incredibly helpful if we were able to figure out that prediction function, so we can predict unseen input values with precision. We’re actually going to continue working with the dataset we began working with in single variable linear regression.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Gradient Descent">
+  <meta property="og:description" content="This one will be a quick one, but it’s really important. We know that given an input dataset, and given a function, we can calculate the output. For example, if we have $x=[1, 2, 3]$, and the function $y=3x-2$, we could reasonably figure out the dataset of $y$; $[1, 4, 7]$. Another term for this function, in the case of Machine Learning, is a prediction function.
+Sometimes, we’re only given the input and output data. It would be incredibly helpful if we were able to figure out that prediction function, so we can predict unseen input values with precision. We’re actually going to continue working with the dataset we began working with in single variable linear regression.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-10-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-02T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-10-02 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/">Gradient Descent</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p>This one will be a quick one, but it&rsquo;s really important. We know that given an input dataset, and given a <em>function</em>, we can calculate the output. For example, if we have $x=[1, 2, 3]$, and the function $y=3x-2$, we could reasonably figure out the dataset of $y$; $[1, 4, 7]$. Another term for this function, in the case of Machine Learning, is a <em>prediction function</em>.</p>
+<p>Sometimes, we&rsquo;re only given the input and output data. It would be incredibly helpful if we were able to figure out that prediction function, so we can predict unseen input values with precision. We&rsquo;re actually going to continue working with the dataset we began working with in single variable linear regression.</p>
+<p>To start, we know that in the last lesson we were able to figure out the predicted price given some input value(s). This time, let&rsquo;s think about it from a graphical standpoint;</p>
+<p>Given this graph, how could we draw a line of best fit?</p>
+
+    <img src="/images/scatter.jpg"  alt="scatter_plot"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Not only did I choose pretty scattered data points, there are many different ways you could try and attempt to draw your <em>line of best fit</em>. However, your main objective is still the same; minimize the amount of error between the predicted and expected amount.</p>
+<p>The above definition actually has a name; it&rsquo;s called <strong>Mean Squared Error</strong>. Here&rsquo;s the formula;</p>
+<p>$mse=\frac{1}{n}\sum^{n}<em>{i=1}(y_i-y</em>{predicted})^2$</p>
+<p>Looks like a lot, but it&rsquo;s not that much. $n$ is the amount of data points we have (in our above example, $n=4$ ) and we&rsquo;re getting the sum of all of the actual values of y versus the expected values of y, squared (we square them to avoid skewed results!). We could <em>also</em> call this formula a <strong>cost function</strong>. There are different types of cost functions, but MSE is a popular one to begin with. We can rewrite the above equation as;</p>
+<p>$mse=\frac{1}{n}\sum^{n}_{i=1}(y_i-(mx_i+b))^2$</p>
+<p>Obviously, guessing and checking every combination of $m$ and $b$ is inefficient and will take you forever. This is where our topic of conversation comes into play. <strong>Gradient Descent</strong> is a machine learning algorithm that calculates the line of best fit for a training data set. Conceptually this is a little weird; if you plot the values of $m$ and $b$ against the MSE (or in this case, cost), you&rsquo;ll actually get a ball-like graph like in the image reference below.</p>
+<p><img alt="gradient descent" src="https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/national/gradient-descent-convex-function.png"></p>
+<p>We start at a point, usually (0,0). We calculate the cost, then reduce the value of $m$ and $b$, and again calculating the cost. We continue to do this until we reach the bottom, or the <em>minima</em>, where the <strong>error is minimum</strong>. That is our answer, or we&rsquo;ll use that $m$ and $b$ for our function.</p>
+<p>How do we calculate the steps we need to take as we travel down? We don&rsquo;t want to miss our minima, and if we&rsquo;re going at a constant rate down, we could eventually miss our minima and never know. A better approach would be to gradually lower the amount decreased as we go on by steps</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://builtin.com/data-science/gradient-descent">https://builtin.com/data-science/gradient-descent</a></li>
+<li><a href="https://www.youtube.com/watch?v=vsWrXfO3wWw&t=202s">https://www.youtube.com/watch?v=vsWrXfO3wWw&t=202s</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 21 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/notes/computer-science/python/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gradient Descent</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/</link>
+      <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;This one will be a quick one, but it&amp;rsquo;s really important. We know that given an input dataset, and given a &lt;em&gt;function&lt;/em&gt;, we can calculate the output. For example, if we have $x=[1, 2, 3]$, and the function $y=3x-2$, we could reasonably figure out the dataset of $y$; $[1, 4, 7]$. Another term for this function, in the case of Machine Learning, is a &lt;em&gt;prediction function&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Sometimes, we&amp;rsquo;re only given the input and output data. It would be incredibly helpful if we were able to figure out that prediction function, so we can predict unseen input values with precision. We&amp;rsquo;re actually going to continue working with the dataset we began working with in single variable linear regression.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Linear Regression</title>
       <link>https://mrpointing.com/notes/computer-science/python/machine-learning/linear-regression/</link>
