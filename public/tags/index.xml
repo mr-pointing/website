@@ -7,13 +7,34 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computerscience</title>
       <link>https://mrpointing.com/tags/computerscience/</link>
-      <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/computerscience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://mrpointing.com/tags/css/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://mrpointing.com/tags/html/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Textbook</title>
+      <link>https://mrpointing.com/tags/textbook/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/textbook/</guid>
       <description></description>
     </item>
     <item>
@@ -28,13 +49,6 @@
       <link>https://mrpointing.com/tags/machine_learning/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/machine_learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Textbook</title>
-      <link>https://mrpointing.com/tags/textbook/</link>
-      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/textbook/</guid>
       <description></description>
     </item>
     <item>
@@ -217,20 +231,6 @@
       <link>https://mrpointing.com/tags/dictionaries/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/dictionaries/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>https://mrpointing.com/tags/css/</link>
-      <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://mrpointing.com/tags/html/</link>
-      <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/html/</guid>
       <description></description>
     </item>
     <item>

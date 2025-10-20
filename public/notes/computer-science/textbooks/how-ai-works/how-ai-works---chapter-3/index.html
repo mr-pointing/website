@@ -6,7 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="" />
+<meta name="description" content=" Classical Models: Old-School Machine Learning Obviously, we need to start with baby steps. No one picks up a new hobby and starts with the most advanced material. We&rsquo;re going to look at 3 of what we call the classical models; neither symbolic nor connectionist AI models that aren&rsquo;t as advanced as any of the neural networks we&rsquo;ll take a peek at in chapter 4.
+Nearest Neighbor This model is so simple, that the training data is the model, meaning there is no training. If you get an unknown input, you classify it to what it&rsquo;s closest too, and that&rsquo;s that. Regardless, they&rsquo;re still super useful, and are a good representation of actual real life data.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, AI, textbook, machine_learning" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -45,20 +47,27 @@
 
 
   <meta itemprop="name" content="How AI Works - Chapter 3">
+  <meta itemprop="description" content="Classical Models: Old-School Machine Learning Obviously, we need to start with baby steps. No one picks up a new hobby and starts with the most advanced material. We’re going to look at 3 of what we call the classical models; neither symbolic nor connectionist AI models that aren’t as advanced as any of the neural networks we’ll take a peek at in chapter 4.
+Nearest Neighbor This model is so simple, that the training data is the model, meaning there is no training. If you get an unknown input, you classify it to what it’s closest too, and that’s that. Regardless, they’re still super useful, and are a good representation of actual real life data.">
   <meta itemprop="datePublished" content="2025-09-30T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-30T00:00:00+00:00">
+  <meta itemprop="wordCount" content="975">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,AI,Textbook,Machine_learning">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="How AI Works - Chapter 3">
+  <meta name="twitter:description" content="Classical Models: Old-School Machine Learning Obviously, we need to start with baby steps. No one picks up a new hobby and starts with the most advanced material. We’re going to look at 3 of what we call the classical models; neither symbolic nor connectionist AI models that aren’t as advanced as any of the neural networks we’ll take a peek at in chapter 4.
+Nearest Neighbor This model is so simple, that the training data is the model, meaning there is no training. If you get an unknown input, you classify it to what it’s closest too, and that’s that. Regardless, they’re still super useful, and are a good representation of actual real life data.">
 
 
 
     <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-3/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="How AI Works - Chapter 3">
+  <meta property="og:description" content="Classical Models: Old-School Machine Learning Obviously, we need to start with baby steps. No one picks up a new hobby and starts with the most advanced material. We’re going to look at 3 of what we call the classical models; neither symbolic nor connectionist AI models that aren’t as advanced as any of the neural networks we’ll take a peek at in chapter 4.
+Nearest Neighbor This model is so simple, that the training data is the model, meaning there is no training. If you get an unknown input, you classify it to what it’s closest too, and that’s that. Regardless, they’re still super useful, and are a good representation of actual real life data.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -152,6 +161,36 @@
 
             <div class="post-content">
                 <hr>
+<h1 id="classical-models-old-school-machine-learning">Classical Models: Old-School Machine Learning</h1>
+<p>Obviously, we need to start with baby steps. No one picks up a new hobby and starts with the most advanced material. We&rsquo;re going to look at 3 of what we call the <em>classical</em> models; neither symbolic nor connectionist AI models that aren&rsquo;t as advanced as any of the neural networks we&rsquo;ll take a peek at in chapter 4.</p>
+<h2 id="nearest-neighbor">Nearest Neighbor</h2>
+<p>This model is so simple, that the training data is the model, meaning there is no training. If you get an unknown input, you classify it to what it&rsquo;s closest too, and that&rsquo;s that. Regardless, they&rsquo;re still super useful, and are a good representation of actual real life data.</p>
+<p>The step up of nearest neighbor is <em>k-nearest neighbor</em>, where <em>k</em> is some number (usually 3, 5, 7, etc.) representing the amount of neighboring data points it will compare against. For unknown input, a voting system is used by the model to decide which of the classes it belongs too. If there&rsquo;s a tie, a random one is selected (resulting in 50/50 shot). Take the following graph for example;</p>
+
+    <img src="/images/knn_pre.png"  alt="knn_pre"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We have three different classifications here. As you can see though, they&rsquo;re pretty intermingled, and it&rsquo;s difficult in some areas what we&rsquo;d classify each as. Now, let&rsquo;s introduce two new shapes; a triangle and a pentagon. Then, we can draw lines to the nearest shapes to help us classify. Let&rsquo;s use three;</p>
+
+    <img src="/images/knn_post.png"  alt="knn_post"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Now we can make our classifications. The triangle belongs to the squares, since it&rsquo;s a clear majority of all three squares. The pentagon belongs to the diamonds, with a 2 to 1 win over the squares. This was also an easy example because we&rsquo;re able to graph it using only two dimensions, meaning it only has 2 features. It&rsquo;s entirely possible to have more though. We can use KNN with our MNIST data set; in that case, it would be a vector of 784 elements for each of the pixels, with 60,000 training examples, or points in space. KNN is unfortunately pretty slow though, since it has to calculate all the distances in the set.</p>
+<p>KNN also has an interesting effect when observing how the amount of data points and dimensions reflects on the models accuracy. If we provide the model with all of the available training data for our MNIST set, we would get close to 99% accuracy. As we decrease the amount of data, obviously it gets worse, but not all that bad. With only <em>60 samples</em>, which may or may not even contain all of the digits available (likely not), you&rsquo;ll get a whopping 66% accuracy. Pretty good, and way better than a random guess.</p>
+<p>There&rsquo;s also this odd phenomena with a data set so large; <strong>the curse of dimensionality</strong>. Basically, the more dimensions there are, the more samples needed for accurate readings. Fortunately, because of the makeup of our dataset, our points will likely be clustered together. 5&rsquo;s look like 5&rsquo;s, and so on, making our classification easier than other data sets. If you want an example of how hard it is to scale KNN to more complex images, the CIFAR-10 data set is comprised of 50,000 images of 10 different classifications (cars, animals, etc.). A model with all 50,000 images is only accurate <strong>35.4%</strong> of the time. Not great.</p>
+<h2 id="decision-trees">Decision Trees</h2>
+<p>We did one of these in chapter one, so let&rsquo;s expand on them a bit more here. Everything starts at a root node, and conditional yes or no questions await each branching path. This is repeated until a final node called a leaf node is found, containing a classification or a label for whatever is getting classified.</p>
+<p>These types of decision trees are what we call <em>deterministic</em>, or stay the same every time upon input. This is often not the most reliable upon complex data, so the need for <em>forests of trees</em> arose. One step further, since each tree is deterministic and we don&rsquo;t want just one of the same tree over and over again, came <strong>random forests</strong>, a foundational concept in machine learning. In this forest of decision trees, each one is randomly constructed of the basic conditional statements making up the original tree. Each random tree has pros and cons, but our inputs have a much higher chance of correct classification in this manner than before.</p>
+<p>Seems like making trees random shouldn&rsquo;t work, or at least shouldn&rsquo;t give you the same answer every time. The reason why it does goes like this; <em>bagging</em>, <em>random feature selection</em>, and <em>ensembling</em>. We start with our training data, and continue to make trees using our data set along with tree-specific training sets created through that bagging process mentioned just above. It&rsquo;s the process of creating a new dataset using <strong>random sampling with replacement</strong> (we might use it more than once, or never!).</p>
+<p>Here&rsquo;s a basic example; we start with $[5, 9, 3, 4, 1, 2]$. Then, we start to make variations of this dataset, like;</p>
+<ul>
+<li>$[3, 4, 4, 9, 5, 5]$</li>
+<li>$[1, 9, 5, 2, 2, 1]$</li>
+<li>$[2, 2, 2, 9, 3, 5]$</li>
+</ul>
+<p>We also call these bootstrapped data. In our case, we want to bootstrap our dataset for each randomly generated decision tree. This leads to the next step; training the tree on a randomly selected set of features. <strong><em>Every single tree in the random forest is trained using a bootstrapped version of your data, using only a subset of that data</em></strong>. If you understand that, you&rsquo;re golden.</p>
+<p>Onto the last part; using the tree by creating an ensemble of the answers provided by each tree. Each tree is going to spit out a value (more often then not, it won&rsquo;t be understandable by a human) that represents a classification. All trees come together to do a majority-wins-type situation, meaning the more trees classify a label, that label will be chosen.</p>
+<h2 id="support-vector-machines">Support Vector Machines</h2>
 
             </div>
         </article>

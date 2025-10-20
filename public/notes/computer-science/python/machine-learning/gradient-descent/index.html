@@ -51,7 +51,7 @@ Sometimes, we&rsquo;re only given the input and output data. It would be incredi
 Sometimes, we’re only given the input and output data. It would be incredibly helpful if we were able to figure out that prediction function, so we can predict unseen input values with precision. We’re actually going to continue working with the dataset we began working with in single variable linear regression.">
   <meta itemprop="datePublished" content="2025-10-02T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-10-02T00:00:00+00:00">
-  <meta itemprop="wordCount" content="502">
+  <meta itemprop="wordCount" content="785">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience">
 
@@ -163,7 +163,7 @@ Sometimes, we’re only given the input and output data. It would be incredibly 
 <p>To start, we know that in the last lesson we were able to figure out the predicted price given some input value(s). This time, let&rsquo;s think about it from a graphical standpoint;</p>
 <p>Given this graph, how could we draw a line of best fit?</p>
 
-    <img src="/images/scatter.jpg"  alt="scatter_plot"  class="center"  style="border-radius: 8px;"  />
+    <img src="/images/screenshot_06102025_083427.jpg"  alt="scatter tree screenshot"  class="center"  style="border-radius: 8px;"  />
 
 
 <p>Not only did I choose pretty scattered data points, there are many different ways you could try and attempt to draw your <em>line of best fit</em>. However, your main objective is still the same; minimize the amount of error between the predicted and expected amount.</p>
@@ -174,10 +174,33 @@ Sometimes, we’re only given the input and output data. It would be incredibly 
 <p>Obviously, guessing and checking every combination of $m$ and $b$ is inefficient and will take you forever. This is where our topic of conversation comes into play. <strong>Gradient Descent</strong> is a machine learning algorithm that calculates the line of best fit for a training data set. Conceptually this is a little weird; if you plot the values of $m$ and $b$ against the MSE (or in this case, cost), you&rsquo;ll actually get a ball-like graph like in the image reference below.</p>
 <p><img alt="gradient descent" src="https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/national/gradient-descent-convex-function.png"></p>
 <p>We start at a point, usually (0,0). We calculate the cost, then reduce the value of $m$ and $b$, and again calculating the cost. We continue to do this until we reach the bottom, or the <em>minima</em>, where the <strong>error is minimum</strong>. That is our answer, or we&rsquo;ll use that $m$ and $b$ for our function.</p>
-<p>How do we calculate the steps we need to take as we travel down? We don&rsquo;t want to miss our minima, and if we&rsquo;re going at a constant rate down, we could eventually miss our minima and never know. A better approach would be to gradually lower the amount decreased as we go on by steps</p>
+<p>How do we calculate the steps we need to take as we travel down? We don&rsquo;t want to miss our minima, and if we&rsquo;re going at a constant rate down, we could eventually miss our minima and never know. A better approach would be to gradually lower the amount decreased as we go on by incrementally smaller steps. How do we know how much to go down by?</p>
+<p>Without going too deep into calculus, we are essentially calculating our slope as we go down. How this is done is using derivatives, which you can find a more detailed description on in the resources below. To calculate the next step, you subtract a <em>learning rate</em> value multiplied by the partial derivative of either $m$ or $b$, depending on which one you&rsquo;re trying to find. Here&rsquo;s a very oversimplified walk through of how this whole procedure works;</p>
+<ol>
+<li>We start by setting a variable for $m$ and $b$, which by default 0 is a fine value</li>
+<li>Set a value for the amount of iterations. We can pick 1000 to now, but we might end up changing that later on</li>
+<li>We need a variable to keep track of the amount of our input values, or $x$</li>
+<li>We need a learning rate value, which for now can be .001</li>
+<li>For each iteration, we need to calculate;
+<ol>
+<li>Y&rsquo;s predicted value, or the current $m * x +$ current $b$</li>
+<li>The cost of each configuration, or $mse$</li>
+<li>The partial derivative of $m$, $-(2/n)<em>sum(x</em>(y-y_{predicted}))$</li>
+<li>The partial derivative of $b$, $-(2/n)*sum(y-y_{predicted})$
+<ol>
+<li>After, we set the new $m$ equal to current $m$ - learning rate * partial derivative of $m$</li>
+<li>We then set new $b$ equal to current $b$ - learning rate * partial derivative of $b$</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>To see where we are at, we can include a nice little print statement to track it for us. Now, we can see if our cost is increasing or decreasing. We want to decrease our cost, so our parameters should be tuned. The more iterations we include, we adjust accordingly.</p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://builtin.com/data-science/gradient-descent">https://builtin.com/data-science/gradient-descent</a></li>
+<li><a href="https://www.mathsisfun.com/calculus/derivatives-introduction.html">https://www.mathsisfun.com/calculus/derivatives-introduction.html</a></li>
+<li><a href="https://www.mathsisfun.com/calculus/derivatives-partial.html">https://www.mathsisfun.com/calculus/derivatives-partial.html</a></li>
 <li><a href="https://www.youtube.com/watch?v=vsWrXfO3wWw&t=202s">https://www.youtube.com/watch?v=vsWrXfO3wWw&t=202s</a></li>
 </ul>
 

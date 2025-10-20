@@ -14,7 +14,7 @@
       <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-3/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-3/</guid>
-      <description>&lt;hr&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;classical-models-old-school-machine-learning&#34;&gt;Classical Models: Old-School Machine Learning&lt;/h1&gt;&#xA;&lt;p&gt;Obviously, we need to start with baby steps. No one picks up a new hobby and starts with the most advanced material. We&amp;rsquo;re going to look at 3 of what we call the &lt;em&gt;classical&lt;/em&gt; models; neither symbolic nor connectionist AI models that aren&amp;rsquo;t as advanced as any of the neural networks we&amp;rsquo;ll take a peek at in chapter 4.&lt;/p&gt;&#xA;&lt;h2 id=&#34;nearest-neighbor&#34;&gt;Nearest Neighbor&lt;/h2&gt;&#xA;&lt;p&gt;This model is so simple, that the training data is the model, meaning there is no training. If you get an unknown input, you classify it to what it&amp;rsquo;s closest too, and that&amp;rsquo;s that. Regardless, they&amp;rsquo;re still super useful, and are a good representation of actual real life data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linear Regression</title>

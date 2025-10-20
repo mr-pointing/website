@@ -3,18 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mrpointing.com/tags/computerscience/</loc>
-    <lastmod>2025-10-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/</loc>
-    <lastmod>2025-10-02T00:00:00+00:00</lastmod>
+    <loc>https://mrpointing.com/tags/css/</loc>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/html/</loc>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/</loc>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-1/</loc>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/</loc>
-    <lastmod>2025-10-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/</loc>
-    <lastmod>2025-10-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/textbook/</loc>
+    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/</loc>
     <lastmod>2025-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/ai/</loc>
@@ -24,9 +39,6 @@
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/machine_learning/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/textbook/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/machine-learning/</loc>
@@ -324,12 +336,6 @@
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/front-end/the-odin-project/advanced-css-selectors/</loc>
-    <lastmod>2025-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/css/</loc>
-    <lastmod>2025-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/html/</loc>
     <lastmod>2025-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/valid-sudoku/</loc>

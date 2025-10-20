@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 19 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;design-and-build-websites&#34;&gt;Design and Build Websites&lt;/h1&gt;&#xA;&lt;h2 id=&#34;by-jon-duckett&#34;&gt;By Jon Duckett&lt;/h2&gt;&#xA;&lt;p&gt;This book is intended for two different types of people; anyone who wants to learn how to design and build websites from scratch, and anyone who wants more control over the appearance of their current website(s). All we&amp;rsquo;re going to need is a browser and text editor. To start, &lt;a href=&#34;https://notepad-plus-plus.org/&#34;&gt;Notepad++&lt;/a&gt; is a perfect editor for what we&amp;rsquo;re going to do.&lt;/p&gt;&#xA;&lt;p&gt;Programming is certainly not the main focus of this text, regardless of the amount of lines we&amp;rsquo;re going to write. Understanding HTML and CSS is of course a language, but one you don&amp;rsquo;t need to be good at advanced mathematics to learn and master. This book will bring you to around 90% of what you&amp;rsquo;ll need in the working field; you might have to Google that remaining 10% if you run into it/a problem you can&amp;rsquo;t fix.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 1</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-1/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;structure&#34;&gt;Structure&lt;/h1&gt;&#xA;&lt;p&gt;What do we make websites for? Mostly for online resources of physical things we need and look for in our daily lives. A main component of everything we use and consume is &lt;em&gt;structured&lt;/em&gt;. The structure of our web page takes on many forms, but for now let&amp;rsquo;s focus on the most basic type; the building blocks that construct almost every web page.&lt;/p&gt;&#xA;&lt;p&gt;When thinking about how we should structure our pages, we can always take a look at real life examples in print media for what you&amp;rsquo;re looking for. In it&amp;rsquo;s most basic form, something like a newspaper, we have a title, heading or two, and sub-paragraphs with images or quotes. That&amp;rsquo;s a great place for us to start.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Advanced CSS Selectors</title>
       <link>https://mrpointing.com/notes/computer-science/front-end/the-odin-project/advanced-css-selectors/</link>
