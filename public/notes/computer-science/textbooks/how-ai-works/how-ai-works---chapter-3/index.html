@@ -51,7 +51,7 @@ Nearest Neighbor This model is so simple, that the training data is the model, m
 Nearest Neighbor This model is so simple, that the training data is the model, meaning there is no training. If you get an unknown input, you classify it to what it’s closest too, and that’s that. Regardless, they’re still super useful, and are a good representation of actual real life data.">
   <meta itemprop="datePublished" content="2025-09-30T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-30T00:00:00+00:00">
-  <meta itemprop="wordCount" content="975">
+  <meta itemprop="wordCount" content="2167">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,AI,Textbook,Machine_learning">
 
@@ -191,6 +191,119 @@ Nearest Neighbor This model is so simple, that the training data is the model, m
 <p>We also call these bootstrapped data. In our case, we want to bootstrap our dataset for each randomly generated decision tree. This leads to the next step; training the tree on a randomly selected set of features. <strong><em>Every single tree in the random forest is trained using a bootstrapped version of your data, using only a subset of that data</em></strong>. If you understand that, you&rsquo;re golden.</p>
 <p>Onto the last part; using the tree by creating an ensemble of the answers provided by each tree. Each tree is going to spit out a value (more often then not, it won&rsquo;t be understandable by a human) that represents a classification. All trees come together to do a majority-wins-type situation, meaning the more trees classify a label, that label will be chosen.</p>
 <h2 id="support-vector-machines">Support Vector Machines</h2>
+<p>Saving the best and most complex for last, <em>support vector machines</em> are not only math intensive, but are also definition intensive. Let&rsquo;s start by laying out some groundwork; a visualization we can use for more clarity.</p>
+
+    <img src="/images/svm_pre.png"  alt="svm_pre"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>In the above example, we can very humanly see that each category is clearly separated; circles and squares. If we wanted to draw a line that separated each classification into it&rsquo;s own designated space where each new entry would be classified correctly, where would that line go? If it&rsquo;s too close to either category, you run the risk of miss-categorizing a potential circle or square.</p>
+<p>Ideally, you probably want the line an equal distance furthest away from each group. This brings us to our first definition; <em>margins</em>. SVM&rsquo;s goal is to <strong>maximize the margin</strong> between our classifications, or the widest separation between classes. For the above example, we can draw a line at the maximum margin;</p>
+
+    <img src="/images/svm_post.png"  alt="svm_post"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We have three lines drawn. The red dotted lines are the maximum boundaries, and the green line is the output of the SVM identifying the maximum distance between each margin. This is essentially what a SVM&rsquo;s objective is. We have some more aspects of this we should learn about before we move on however, and that&rsquo;s how these margins and separating lines are actually found.</p>
+<p>First up; notice how in our boundaries, our line crosses through some points. These are called <em>support vectors</em>, and make up the SV-part of SVM. These are found using an <em>optimization algorithm</em>, which try to find the best solution given some input criteria. In our case, we&rsquo;re trying to find boundaries, so our optimization algorithm should be attempting to find these values.</p>
+<p>The last vocabulary term for this section is that of a <em>kernel</em>- not the popcorn type, but the mathematical type. In this context, kernel refers to the method your SVM uses it&rsquo;s feature vectors. Using our above example as a base, that would be a <strong>linear kernel</strong>, since it uses the training data as is. There are other types, especially if the relationship between your vectors is unclear. The kernel will transform your feature vector into a different representation, likely not as human-readable.</p>
+<p>More generally, machine learning engineers have been aiming at minimizing the features needed by a given model. This process of finding the right amount of feature vectors is also called <em>feature selection</em> or is sometimes referred to as <em>dimensionality reduction</em>. Think of the kernel is SVM as a type of feature selection. The features chosen reflects the effectiveness of the model. In these earlier models we often have to chose what features mean the most to us and make the most sense. This doesn&rsquo;t always work, which is why as machine learning advanced, engineers will often &ldquo;let the data speak for itself.&rdquo;</p>
+<p>Another term we might use for these &ldquo;magic values&rdquo; are called <em>hyperparameters</em>. SVM&rsquo;s might have one or more depending on the kernel used, and neural networks can have <strong>many</strong>. Even with more parameters, the neural networks can often be thought of as easier to use, due to the sheer amount of data neural networks take advantage of and the amount of non-human interpolating done by the model.</p>
+<p>One last point to touch on exclusively about SVM&rsquo;s, is that they&rsquo;re binary classifiers, meaning it&rsquo;s going to be one or the other. But what if we have multiple different types of classes to distinguish from? One method engineers use it to create a SVM for <em>each classification</em>, and training each SVM to correctly identify one of each. Whenever an identification is made, the SVM also passes in a <em>metric</em>, or a unit of confidence. Given a new input, it&rsquo;s fed to each SVM and the result with the highest metric is the correct classification.</p>
+<h2 id="models-in-use">Models in Use</h2>
+<p>So we just learned three brand new types of models. How do they actually fair in the real world? Well, let&rsquo;s test them out. Again, all of these tests are coming directly from the text, so feel free to get more detailed insight there.</p>
+<p>For the next test, we&rsquo;re going to use a dataset of dinosaur footprints. More specifically, we have a little over 1600 images of either Theropod footprints or Ornithischian footprints. Just over 1300 will be used in our training, and over 300 will be left out for our testing. We&rsquo;re going to train <strong>six models</strong>;</p>
+<ul>
+<li>Nearest Neighbor (For K = 1, 3, 7)</li>
+<li>Random Forest with 300 trees</li>
+<li>Linear SVM</li>
+<li>Radial Basis Function SVM</li>
+</ul>
+<p>Here are the results;</p>
+<table>
+  <thead>
+      <tr>
+          <th>Model</th>
+          <th>ACC</th>
+          <th>MCC</th>
+          <th>Train</th>
+          <th>Test</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>RF300</td>
+          <td>83.3</td>
+          <td>0.65</td>
+          <td>1.5823</td>
+          <td>0.0399</td>
+      </tr>
+      <tr>
+          <td>RBF SVM</td>
+          <td>82.4</td>
+          <td>0.64</td>
+          <td>0.9296</td>
+          <td>0.2579</td>
+      </tr>
+      <tr>
+          <td>7-NN</td>
+          <td>80.0</td>
+          <td>0.58</td>
+          <td>0.0004</td>
+          <td>0.0412</td>
+      </tr>
+      <tr>
+          <td>3-NN</td>
+          <td>77.6</td>
+          <td>0.54</td>
+          <td>0.0005</td>
+          <td>0.0437</td>
+      </tr>
+      <tr>
+          <td>1-NN</td>
+          <td>76.1</td>
+          <td>0.50</td>
+          <td>0.0004</td>
+          <td>0.0395</td>
+      </tr>
+      <tr>
+          <td>Linear SVM</td>
+          <td>70.7</td>
+          <td>0.41</td>
+          <td>2.8165</td>
+          <td>0.0007</td>
+      </tr>
+  </tbody>
+</table>
+<p>Obviously, the model column refers to which model is being used. The ACC column is our models accuracy, or the result of the models confusion matrix. The matrix for reference looks something like this;</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Ornithischian</th>
+          <th>Theropod</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Ornithischian</td>
+          <td>TN</td>
+          <td>FP</td>
+      </tr>
+      <tr>
+          <td>Theropod</td>
+          <td>FN</td>
+          <td>TP</td>
+      </tr>
+  </tbody>
+</table>
+<p>Remember, we want to increase the number of TN or True Negatives for the Ornithischian, and the number of TP or True Positives for Theropods. We&rsquo;ll get either a 0 for Ornithischian or a 1 for Theropod. Going back, the Random Forest was the most accurate with correctly labeling 83% of test images. We get this number by adding up TP and TN and dividing by the sum of all four outputs.</p>
+<p>MCC, or <em>Matthews correlation coefficient</em>, works a bit differently but also uses the four numbers of our confusion matrix. It&rsquo;s also thought of to be a better identifier of a model&rsquo;s usefulness than it&rsquo;s accuracy. This time, the range is from -1 to 1. 1 means no mistakes, and -1 is perfectly <em>wrong</em>, meaning you should probably flip your output classifiers and get a perfect 1.</p>
+<p>We also have to take a look at Train and Test times. Each time is how long it took each model to perform each task; training our nearest neighbor models took milliseconds for example, since again the training <em>is</em> the data. We can also make inferences like how short it is to train certain models like KNN but take longer to use, or how longer linear SVM is to train compared to radial.</p>
+<p>The biggest takeaways from a test like this is an expected understanding of performance for when we take a look at the more advanced neural networks of today, and just how useful these models can be regardless of advancements. In the paper this dataset originated from, the actual paleontologists were only correct <em>57% of the time</em>, which is easily beaten by nearly all of the models presented and tested.</p>
+<h1 id="chapter-summary">Chapter Summary</h1>
+<p>To reiterate, these models don&rsquo;t really fall into either category of symbolic or connectionist. They don&rsquo;t really use any logical rules the same way symbolic AI does, and they aren&rsquo;t made up of smaller modules that learn from each other, which means they aren&rsquo;t connectionist either. The best way to consider these models as <strong><em>models that produce functions that fit our data</em></strong>. The function changes depending on the model used, but they almost all produce one (except KNN).</p>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/">Chapter 4</a></p>
 
             </div>
         </article>
