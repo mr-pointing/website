@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/notes/computer-science/python/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Hot Encoding</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Each time we learn a new model, our goal remains slightly the same; build a model that trains on input data to predict accurate output. One thing that has changed with each model is the type of data, or how we use it. This time, we&amp;rsquo;re going to learn how we handle text information, slightly more complicated than numbers.&lt;/p&gt;&#xA;&lt;p&gt;We know that Python doesn&amp;rsquo;t understand English, or any human language for that matter. All it understands is numbers, so anytime we have data that is mostly string data we should and usually have to transfer it into another data type. If our computers have a hard time with words and have an easy time with numbers, it makes sense we should convert all strings into numbers. Well, how could we do that?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Gradient Descent</title>
       <link>https://mrpointing.com/notes/computer-science/python/machine-learning/gradient-descent/</link>

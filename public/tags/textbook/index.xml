@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How AI Works - Chapter 4</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;neural-networks-brain-like-ai&#34;&gt;Neural Networks: Brain-Like AI&lt;/h1&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/</link>

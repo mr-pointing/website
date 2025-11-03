@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Hot Encoding</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Each time we learn a new model, our goal remains slightly the same; build a model that trains on input data to predict accurate output. One thing that has changed with each model is the type of data, or how we use it. This time, we&amp;rsquo;re going to learn how we handle text information, slightly more complicated than numbers.&lt;/p&gt;&#xA;&lt;p&gt;We know that Python doesn&amp;rsquo;t understand English, or any human language for that matter. All it understands is numbers, so anytime we have data that is mostly string data we should and usually have to transfer it into another data type. If our computers have a hard time with words and have an easy time with numbers, it makes sense we should convert all strings into numbers. Well, how could we do that?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How AI Works - Chapter 4</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;neural-networks-brain-like-ai&#34;&gt;Neural Networks: Brain-Like AI&lt;/h1&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/</link>

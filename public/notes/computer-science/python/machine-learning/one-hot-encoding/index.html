@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Each time we learn a new model, our goal remains slightly the same; build a model that trains on input data to predict accurate output. One thing that has changed with each model is the type of data, or how we use it. This time, we&rsquo;re going to learn how we handle text information, slightly more complicated than numbers.
+We know that Python doesn&rsquo;t understand English, or any human language for that matter. All it understands is numbers, so anytime we have data that is mostly string data we should and usually have to transfer it into another data type. If our computers have a hard time with words and have an easy time with numbers, it makes sense we should convert all strings into numbers. Well, how could we do that?
+" />
+<meta name="keywords" content="homepage, blog, computerscience" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/" />
+
+
+    <title>
+        
+            One Hot Encoding :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.78623716c19b6e3da412acb903db12995d096b78cb9fcffec9375c7c45dba15d.css" integrity="sha256-eGI3FsGbbj2kEqy5A9sSmV0Ja3jLn8/&#43;yTdcfEXboV0=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="One Hot Encoding">
+  <meta itemprop="description" content="Each time we learn a new model, our goal remains slightly the same; build a model that trains on input data to predict accurate output. One thing that has changed with each model is the type of data, or how we use it. This time, we’re going to learn how we handle text information, slightly more complicated than numbers.
+We know that Python doesn’t understand English, or any human language for that matter. All it understands is numbers, so anytime we have data that is mostly string data we should and usually have to transfer it into another data type. If our computers have a hard time with words and have an easy time with numbers, it makes sense we should convert all strings into numbers. Well, how could we do that?">
+  <meta itemprop="datePublished" content="2025-10-29T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-10-29T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1094">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="One Hot Encoding">
+  <meta name="twitter:description" content="Each time we learn a new model, our goal remains slightly the same; build a model that trains on input data to predict accurate output. One thing that has changed with each model is the type of data, or how we use it. This time, we’re going to learn how we handle text information, slightly more complicated than numbers.
+We know that Python doesn’t understand English, or any human language for that matter. All it understands is numbers, so anytime we have data that is mostly string data we should and usually have to transfer it into another data type. If our computers have a hard time with words and have an easy time with numbers, it makes sense we should convert all strings into numbers. Well, how could we do that?">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="One Hot Encoding">
+  <meta property="og:description" content="Each time we learn a new model, our goal remains slightly the same; build a model that trains on input data to predict accurate output. One thing that has changed with each model is the type of data, or how we use it. This time, we’re going to learn how we handle text information, slightly more complicated than numbers.
+We know that Python doesn’t understand English, or any human language for that matter. All it understands is numbers, so anytime we have data that is mostly string data we should and usually have to transfer it into another data type. If our computers have a hard time with words and have an easy time with numbers, it makes sense we should convert all strings into numbers. Well, how could we do that?">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-10-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-29T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-10-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/">One Hot Encoding</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p>Each time we learn a new model, our goal remains slightly the same; build a model that trains on input data to predict accurate output. One thing that has changed with each model is the type of data, or how we use it. This time, we&rsquo;re going to learn how we handle text information, slightly more complicated than numbers.</p>
+<p>We know that Python doesn&rsquo;t understand English, or any human language for that matter. All it understands is numbers, so anytime we have data that is mostly string data we should and usually have to transfer it into another data type. If our computers have a hard time with words and have an easy time with numbers, it makes sense we should convert all strings into numbers. Well, how could we do that?</p>
+<p>Let&rsquo;s say we have the following data set;</p>
+<p>Borough,Area,Price
+Brooklyn,2600,550000
+Brooklyn,3000,565000
+Brooklyn,3200,610000
+Brooklyn,3600,680000
+Brooklyn,4000,725000
+Queens,2600,585000
+Queens,2800,615000
+Queens,3300,650000
+Queens,3600,710000
+Manhattan,2600,575000
+Manhattan,2900,600000
+Manhattan,3100,620000
+Manhattan,3600,695000</p>
+<p>The area and price are already numerical, meaning we probably can leave those as is. But what about borough? How do you think we could change our data around to account for this?</p>
+<p>One easy, human way to do this is to give each borough a number. Brooklyn would be 1, Queens would be 2, and Manhattan would be 3. That&rsquo;s not a bad approach, but again we are working with a computer here. Whenever we have simple numerical data like that, the model can sometimes mistake each number for a <em>priority</em>, meaning that the computer will think Brooklyn is a higher priority than Queens, Queens more than Manhattan, and so on.</p>
+<p>Our first definition of the data, we consider the column of boroughs to be a <strong>Categorical Variable</strong>, meaning it can be categorized. These are <em>nominal</em> categoricals; think of an example of colors, ice cream flavors, etc. The categories <em>don&rsquo;t have any relation to one another</em>. The other type of categorical is <em>ordinal</em>, where the categories do relate to one another in some way, almost like a scale. Think of college degrees, adjectives to describe your feelings, etc.</p>
+<p>If we had ordinal categorical variables, we could easily use numerical ordering and just replace each string with it&rsquo;s corresponding number. Unfortunately that won&rsquo;t be possible with nominal variables, so we&rsquo;re going to have to learn about <strong>One Hot Encoding</strong>. In this case, we&rsquo;re going to create three new columns; one for each borough. Then, depending on which borough each row belongs too, there will be a 0 in the corresponding column, and 0 in the rest of them. These will be called <em>dummy variables</em>, and despite their name they&rsquo;re going to help us out a lot.</p>
+<p>Let&rsquo;s get into the code. Make sure you have the above data downloaded as a CSV. Then, load it into your Jupyter notebook file as per usual;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;onehot.csv&#34;</span>)
+</span></span></code></pre></div><p>Pandas actually has a really useful method that allows you to create your dummy variables super fast;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dummies <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>get_dummies(df<span style="color:#f92672">.</span>borough, dtype<span style="color:#f92672">=</span>int)
+</span></span><span style="display:flex;"><span>dummies
+</span></span></code></pre></div><p>Make sure to call dummies to ensure your data looks as expected. The <code>dtype=int</code> is needed to make sure we&rsquo;re getting 1&rsquo;s and 0&rsquo;s instead of Boolean values by default. After you make sure it looks good, we can create a merged dataframe of both the original and new dummies;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>merged <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([df, dummies], axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;columns&#39;</span>)
+</span></span><span style="display:flex;"><span>merged
+</span></span></code></pre></div><p>Make sure your columns match up, and you have a 1 in the correct column for the given row&rsquo;s borough. Now that we have all of our information together, we can drop all of the useless info. For us, that means dropping the <code>borough</code> column, and we&rsquo;re actually also going to drop one of the newly made dummy columns.</p>
+<p>When working with dummy variables, there&rsquo;s this concept called a <em>dummy variable trap</em>, or <em>multi-co-linearity</em>. Essentially, the inclusion of all dummy categories causes issues with the intercept of our function, and technically if we have dummy variables for all other categories, the last one we removed is implied by the absence of any 1 at all. For us, let&rsquo;s drop Manhattan;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>final <span style="color:#f92672">=</span> merged<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#39;borough&#39;</span>, <span style="color:#e6db74">&#39;manhattan&#39;</span>], axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;columns&#39;</span>)
+</span></span><span style="display:flex;"><span>final
+</span></span></code></pre></div><p>Now that we have our data set up the way we want it, let&rsquo;s start to work on our linear regression model;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LinearRegression
+</span></span><span style="display:flex;"><span>reg <span style="color:#f92672">=</span> LinearRegression()
+</span></span></code></pre></div><p>We&rsquo;re also going to have to set up our X and Y. X is going to be all of our data except for <code>price</code>, since that&rsquo;s our Y. We can create those variables easily;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> final<span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#39;price&#39;</span>,axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;columns&#39;</span>)
+</span></span><span style="display:flex;"><span>x
+</span></span></code></pre></div><p>Make sure that looks good, then create Y;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#f92672">=</span> final<span style="color:#f92672">.</span>price
+</span></span><span style="display:flex;"><span>y
+</span></span></code></pre></div><p>Next up we train our model;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reg<span style="color:#f92672">.</span>fit(x,y)
+</span></span></code></pre></div><p>Since we have basically no data, training takes barely a second. Now that we have our model, it&rsquo;s ready to be used. Let&rsquo;s try and predict what it would be like to live in a 3250 sqft home in Queens;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reg<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">3250</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>]])
+</span></span></code></pre></div><p>How about a 4000 sqft home in Manhattan?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reg<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">4000</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>]])
+</span></span></code></pre></div><p>How do we know how accurate our model is? We could predict existing data points to see how accurate it is, but there&rsquo;s an easier way. There&rsquo;s a method each model has that can be used to get a score of between 0 and 1; 1 for most accurate or perfect, 0 for obviously not;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reg<span style="color:#f92672">.</span>score(x, y)
+</span></span></code></pre></div><p>Now, since we did all of that work, let&rsquo;s learn how to do it even easier. This is where one hot encoding comes into play. This might seem a little counter-intuitive since we&rsquo;re about to make numerical representations that have the same issue we ran into in the beginning of this lesson, but stick with me.</p>
+<p>First up, let&rsquo;s make a new dataframe to make sure we&rsquo;re not criss-crossing any data, and bring in a <strong>Label Encoder</strong> that will transform our strings into numbers;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> LabelEncoder
+</span></span><span style="display:flex;"><span>le <span style="color:#f92672">=</span> LabelEncoder()
+</span></span><span style="display:flex;"><span>dfle <span style="color:#f92672">=</span> df
+</span></span><span style="display:flex;"><span>dfle<span style="color:#f92672">.</span>borough <span style="color:#f92672">=</span> le<span style="color:#f92672">.</span>fit_transform(dfle<span style="color:#f92672">.</span>borough)
+</span></span><span style="display:flex;"><span>dfle
+</span></span></code></pre></div><p>Then, we make our x and y variables;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x2 <span style="color:#f92672">=</span> dfle[[<span style="color:#e6db74">&#39;borough&#39;</span>, <span style="color:#e6db74">&#39;area&#39;</span>]]<span style="color:#f92672">.</span>values
+</span></span><span style="display:flex;"><span>x2
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y2 <span style="color:#f92672">=</span> dfle<span style="color:#f92672">.</span>price<span style="color:#f92672">.</span>values
+</span></span><span style="display:flex;"><span>y2
+</span></span></code></pre></div><p>Now that our data is in place, let&rsquo;s perform the One Hot Encoding. We need to create our OHE object and call one of it&rsquo;s methods to fit our new data;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> OneHotEncoder
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.compose <span style="color:#f92672">import</span> ColumnTransformer
+</span></span><span style="display:flex;"><span>ct <span style="color:#f92672">=</span> ColumnTransformer([(<span style="color:#e6db74">&#39;borough&#39;</span>, OneHotEncoder(), [<span style="color:#ae81ff">0</span>])], remainder <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;passthrough&#39;</span>)
+</span></span></code></pre></div><p>This will correctly label our dummy variables as non-ordinal. We can create our new dummy data set by replacing <code>x2</code> using <code>ct</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x2 <span style="color:#f92672">=</span> ct<span style="color:#f92672">.</span>fit_transform(x2)
+</span></span><span style="display:flex;"><span>x2
+</span></span></code></pre></div><p>Just like before, we should drop one of our dummy columns as is best practice;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x2 <span style="color:#f92672">=</span> x2[:,<span style="color:#ae81ff">1</span>:]
+</span></span><span style="display:flex;"><span>x2
+</span></span></code></pre></div><p>Now, just like before, we&rsquo;re good to train our dataset;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reg<span style="color:#f92672">.</span>fit(x2, y2)
+</span></span></code></pre></div><p>And make some predictions.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

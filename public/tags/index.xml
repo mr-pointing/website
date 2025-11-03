@@ -7,13 +7,55 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computerscience</title>
       <link>https://mrpointing.com/tags/computerscience/</link>
-      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/computerscience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>https://mrpointing.com/tags/ai/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine_learning</title>
+      <link>https://mrpointing.com/tags/machine_learning/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/machine_learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Textbook</title>
+      <link>https://mrpointing.com/tags/textbook/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/textbook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>https://mrpointing.com/tags/book/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophy</title>
+      <link>https://mrpointing.com/tags/philosophy/</link>
+      <pubDate>Mon, 01 Jan 1883 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Politics</title>
+      <link>https://mrpointing.com/tags/politics/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/politics/</guid>
       <description></description>
     </item>
     <item>
@@ -31,27 +73,6 @@
       <description></description>
     </item>
     <item>
-      <title>Textbook</title>
-      <link>https://mrpointing.com/tags/textbook/</link>
-      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/textbook/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>https://mrpointing.com/tags/ai/</link>
-      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Machine_learning</title>
-      <link>https://mrpointing.com/tags/machine_learning/</link>
-      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/machine_learning/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Me</title>
       <link>https://mrpointing.com/tags/me/</link>
       <pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate>
@@ -66,17 +87,17 @@
       <description></description>
     </item>
     <item>
+      <title>Classics</title>
+      <link>https://mrpointing.com/tags/classics/</link>
+      <pubDate>Sat, 18 Oct 1851 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/classics/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Linux</title>
       <link>https://mrpointing.com/tags/linux/</link>
       <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Book</title>
-      <link>https://mrpointing.com/tags/book/</link>
-      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/book/</guid>
       <description></description>
     </item>
     <item>
@@ -129,13 +150,6 @@
       <description></description>
     </item>
     <item>
-      <title>Philosophy</title>
-      <link>https://mrpointing.com/tags/philosophy/</link>
-      <pubDate>Mon, 01 Jan 1883 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/philosophy/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Entertainment</title>
       <link>https://mrpointing.com/tags/entertainment/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
@@ -182,13 +196,6 @@
       <link>https://mrpointing.com/tags/syntax/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Politics</title>
-      <link>https://mrpointing.com/tags/politics/</link>
-      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/politics/</guid>
       <description></description>
     </item>
     <item>

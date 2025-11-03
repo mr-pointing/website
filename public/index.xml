@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Hot Encoding</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Each time we learn a new model, our goal remains slightly the same; build a model that trains on input data to predict accurate output. One thing that has changed with each model is the type of data, or how we use it. This time, we&amp;rsquo;re going to learn how we handle text information, slightly more complicated than numbers.&lt;/p&gt;&#xA;&lt;p&gt;We know that Python doesn&amp;rsquo;t understand English, or any human language for that matter. All it understands is numbers, so anytime we have data that is mostly string data we should and usually have to transfer it into another data type. If our computers have a hard time with words and have an easy time with numbers, it makes sense we should convert all strings into numbers. Well, how could we do that?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How AI Works - Chapter 4</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;neural-networks-brain-like-ai&#34;&gt;Neural Networks: Brain-Like AI&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>The Communist Manifesto</title>
+      <link>https://mrpointing.com/notes/entertainment/books/the-communist-manifesto/</link>
+      <pubDate>Mon, 21 Feb 1848 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/entertainment/books/the-communist-manifesto/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 1</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-1/</link>
@@ -43,6 +64,13 @@
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;why-now-history-of-ai&#34;&gt;Why Now? History of AI&lt;/h1&gt;&#xA;&lt;p&gt;Like we learned in the last chapter, AI has been around for a while. In the grand scheme of things, this &amp;ldquo;while&amp;rdquo; is seen as a blip, still in it&amp;rsquo;s infancy. It certainly did not just appear with ChatGPT. Let&amp;rsquo;s take a look at the landscape that got us here.&lt;/p&gt;&#xA;&lt;h2 id=&#34;types-of-ai&#34;&gt;Types of AI&lt;/h2&gt;&#xA;&lt;p&gt;I know I said we&amp;rsquo;d get a lot of definitions out of the way in the last chapter, but I lied. We have some more to go. AI can fall into two major categories; &lt;em&gt;Symbolic AI&lt;/em&gt; and &lt;em&gt;Connectionism&lt;/em&gt;. Where symbolic AI takes advantage of visual symbols and logical statements to build it&amp;rsquo;s &amp;ldquo;intelligence&amp;rdquo;, connectionism will try to build it&amp;rsquo;s intelligence using a compilation of simpler, smaller components. These are significant because it&amp;rsquo;s how our human brains work. We consider symbolic to be &amp;ldquo;Top-Down&amp;rdquo; (high level tasks getting broken up) and connectionism as &amp;ldquo;Bottom-up&amp;rdquo; (smaller tasks combined to create larger complex tasks).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moby Dick</title>
+      <link>https://mrpointing.com/notes/entertainment/books/moby-dick/</link>
+      <pubDate>Sat, 18 Oct 1851 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/entertainment/books/moby-dick/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;What is the reason we write? I&amp;rsquo;m not sure if that&amp;rsquo;s the right way to start this review, but it was something that bothered me the entire time reading Moby Dick. What was the reason for all of this lexical analysis? Was there any benefit to my experience knowing the nitty gritty details of how whales are killed, dissected, and harvested for materials?&lt;/p&gt;&#xA;&lt;p&gt;At first I thought it was meaningless; fluff to drive out the length of the novel. Fortunately, after finishing it and doing some more research, Herman&amp;rsquo;s expansive diatribes are somewhat useful. At the time of publishing (1851) the knowledge of whales and their general species was largely misinformed. You don&amp;rsquo;t have to go research to find that out, Ishmael literally tells you in great detail all of the faults of his modern-day understanding of the great leviathans. Part adventure story of course, but also part learning experience. I started to enjoy the longer chapters a little more when put into that perspective.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How AI Works - Chapter 1</title>
