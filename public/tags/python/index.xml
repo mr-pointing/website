@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 21 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/logistic-regression/</link>
+      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/logistic-regression/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Another regression-type model I see. &amp;ldquo;How does this one differ from Linear Regression?&amp;rdquo; one might ask, and to them I would respond with the type of data we&amp;rsquo;re looking at. So far, all of the data we&amp;rsquo;ve used has given us a numerical output, &lt;em&gt;quantitative data&lt;/em&gt;. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values &lt;em&gt;continuous&lt;/em&gt;. This time, what we&amp;rsquo;re going to want a response of a &lt;em&gt;categorical&lt;/em&gt; type.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Splitting Training and Testing Data</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/splitting-training-and-testing-data/</link>
+      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/splitting-training-and-testing-data/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;As we know from our &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/&#34;&gt;previous lessons&lt;/a&gt;, we should split our data into two types; training and testing. So far, we&amp;rsquo;ve just been using all of our data when making our models. Thankfully, &lt;code&gt;sklearn&lt;/code&gt; can help us out a lot here. Make sure to grab the dataset from classroom and let&amp;rsquo;s dive in.&lt;/p&gt;&#xA;&lt;p&gt;As always, load in your data and our libraries,&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; pd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; plt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;matplotlib inline&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;usedcarprices.csv&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s visualize our data so we can tell what type of model we should use;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Linear Regression</title>
       <link>https://mrpointing.com/notes/computer-science/python/machine-learning/linear-regression/</link>

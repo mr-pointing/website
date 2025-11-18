@@ -6,7 +6,7 @@ tags:
   - classics
 title: Moby Dick
 date: 2025-09-10
-updated: 2025-10-22T08:32
+updated: 2025-11-05T08:15
 author: Herman Melville
 published: 1851-10-18
 pages: "540"
@@ -23,6 +23,6 @@ I didn't come to this conclusion on my own obviously, as I would from time to ti
 
 The comment I received the most when people found out I was reading it was, "Why?" Most people I spoke to about it had rough feelings about the classics, not seeing it as worth it when there are literally hundreds of good, interesting, and **new** books coming out every year. I'm not going to give you any prolific answers here, just the truth. When reading or experiencing anything, and I come across a reference I don't understand, it irks me beyond belief. Moby Dick has been on my want to read list for years purely because it's such a well known book, and the only thing I knew about it was Ahab and the White Whale. The prose, witty quips, and emotion felt through the pages surprised me, and I'm so happy I chose to give it a try.
 
-I'll leave you with my favorite scene. Maybe the third or fourth-to-last chapters, *"The Symphony"*. Here, we reflect along with Ahab on our long journey. We are finally in the area of Moby Dick (even though he's been following us the entire time!) and Ahab is having a personal moment reflecting on how we got here. In that moment of beauty and serenity of the ocean, Ahad ponders what it would be like to turn around, go home and hang it all up. 
+I'll leave you with my favorite scene. Maybe the third or fourth-to-last chapters, *"The Symphony"*. Here, we reflect along with Ahab on our long journey. We are finally in the area of Moby Dick (even though he's been following us the entire time!) and Ahab is having a personal moment reflecting on how we got here. In that moment of beauty and serenity of the ocean, Ahab ponders what it would be like to turn around, go home and hang it all up. 
 
-Ahad reaches out to Starbuck, his closest mate, the one he almost shot and killed when thoughts of insurrection rounded their ugly head. He tells Starbuck about his feelings, giving us my personal favorite quote, **"...Close! stand close to me, Starbuck; let me look into a human eye; it is better than to gaze into sea or sky; better than to gaze upon God."** Nothing is more important in life than the people we surround ourselves with; the people that we've chose to share or very short time on planet Earth with. Ahab realizes this, but, it's clearly not enough, when the White Whale is spotted and the chase begins in earnest. 
+Ahab reaches out to Starbuck, his closest mate, the one he almost shot and killed when thoughts of insurrection rounded their ugly head. He tells Starbuck about his feelings, giving us my personal favorite quote, **"...Close! stand close to me, Starbuck; let me look into a human eye; it is better than to gaze into sea or sky; better than to gaze upon God."** Nothing is more important in life than the people we surround ourselves with; the people that we've chose to share or very short time on planet Earth with. Ahab realizes this, but, it's clearly not enough, when the White Whale is spotted and the chase begins in earnest. 
