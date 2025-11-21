@@ -13,6 +13,8 @@ updated: 2025-11-14T08:27
 
 ---
 
+# Binary Classification
+
 Another regression-type model I see. "How does this one differ from Linear Regression?" one might ask, and to them I would respond with the type of data we're looking at. So far, all of the data we've used has given us a numerical output, _quantitative data_. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values _continuous_. This time, what we're going to want a response of a _categorical_ type.
 
 What are some things we can predict with categorical data? We can create models that determine if text messages are from spam numbers or not, see if they would like a genre of movie, or even someone's vote in a mayoral election. The first two examples are _binary classifications_. The other example would be a _multiclass classification_, which we'll take a look at next time. For now, let's focus on the first.
@@ -149,3 +151,98 @@ sub_df.head()
 Now, it's time to create our dummies. Again, there are two ways to do this; both should be in your notes somewhere. If not, feel free to visit the note on [One Hot Encoding]({{< ref "One Hot Encoding" >}}). One new thing you should learn is when making dummy columns, you can actually pass in a new parameter called `prefix`, which will start each new dummy column with whatever you want. This is helpful if you end up having more than one column you need to encode.
 
 Make sure to concatenate your new tables together, and drop the original column as well as one of the dummy columns you just made. Again, that's all review-able via the OHE not. From here, it should be smooth sailing. Create your training and test split, import and train your model, and make your predictions. Remember, since we have so many entries (3000) we can't easily compare our predictions against our actual categorization, so run `score` on your `X_test` and `y_test` data frames to get an idea of how accurate your model is.
+
+# Multiclass Classification
+
+Just like with Linear Regression, we can expand our model to not just give us binary output of yes and no, to a multiclass classification. Because I like to continue using the same datasets, let's use a dataset very similar to our MNIST dataset, or the handwritten digits. This time, our classification will be one of the nine potential digits. What's nice about this dataset versus the MNIST one is that these feature a lower dimensionality- instead of 28x28, we just have 8x8.
+
+Let's begin with bringing in our dataset and using `matplotlib` to plot it. `sklearn` actually has a digit dataset built into it we can use;
+
+```python
+from sklearn.datasets import load_digits
+import matplotlib.pyplot as plt
+%matplotlib inline
+```
+
+And like most things we import from `sklearn`, we're going to call and create an object that will contain our digits;
+
+```python
+digits = load_digits()
+```
+
+Normally we would call digits to see what's inside, but if you do you're likely not going to recognize what's being shown. Perfectly normal, since `digits` is not a dataframe and we shouldn't treat it like one. If we were doing this research on our own, my first suggestion would be to open up the [documentation](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits) and give it a good glance. We'd learn that we have 1797 samples in our dataset, and it says for each pixel in our image can be anywhere from 0 to 16 (0 for black, 16 for white). How do we actually see these images?
+
+Well, first let's understand how they're given to us. by calling the following;
+
+```python
+dir(digits)
+```
+
+You'll get back the _Returns_ portion of the documentation. `DESCR` returns the description. `data` holds the actual makeup of each image, containing that 0 - 16 value we discussed a moment ago. `feature_names` provides a name for each pixel, `target` will tell you what the actual number is, and finally `image` will return the raw image. A neat way to quickly look at some images would be to use a nice `for` loop;
+
+```python
+for i in range(10):
+   plt.matshow(digits.images[i])
+```
+
+Again just like with linear regression, getting a multiclass version isn't so different than the binary version. Now that we know how our dataset works, we can simply pass in our model and split our data.
+
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+log_model = LogisticRegression(max_iter=1000)
+```
+
+You might have noticed that I included a new parameter to `LogisticRegression()`, called `max_iter`. Essentially, there is a point at which your model is going to create those magical boundaries that keep it from classifying a certain category. There is a point in that process where no matter how many times you add in new data or make minor changes to the boundaries where there's no longer a discernible difference in the output. This point is called _convergence_, and many models reach this point in different ways. By default we have 100 iterations. On my machine, I got a warning telling me that **the max number of iterations was reached without converging**. To alleviate this, we up the iterations to 1000.
+
+```python
+X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.2)
+log_model.fit(X_train, y_train)
+```
+
+Now to measure the accuracy of our model;
+
+```python
+log_model.predict(digits.data[0:5])
+```
+
+```python
+log_model.score(X_test, y_test)
+```
+
+One last thing I'd like to do is introduce another concept we talked about in Chapter 1 of [How AI Works]({{< ref "How AI Works - Chapter 1" >}}), using a confusion matrix. We want to see how confident our model was in predicting digits, so let's set up those predictions and I'll show you how to actually make and visualize your matrix;
+
+```python
+y_predicted = log_model.predict(X_test)
+```
+
+```python
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_predicted)
+cm
+```
+
+We're going to use another new plotting library to make what we call a _heatmap_.
+
+```python
+import seaborn as sn
+plt.figure(figsize = (10, 7))
+sn.heatmap(cm, annot=True)
+plt.xlabel('Predicted')
+plt.ylabel('Truth')
+```
+
+## Exercise
+
+Use `sklearn.datasets` iris flower dataset to train your model using logistic regression. You need to figure out accuracy of your model and use that to predict different samples in your test dataset. In iris dataset there are 150 samples containing following features,
+
+1. Sepal Length
+2. Sepal Width
+3. Petal Length
+4. Petal Width
+
+Using above 4 features you will classify a flower in one of the three categories,
+
+1. Setosa
+2. Versicolour
+3. Virginica

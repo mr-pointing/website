@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content=" Another regression-type model I see. &ldquo;How does this one differ from Linear Regression?&rdquo; one might ask, and to them I would respond with the type of data we&rsquo;re looking at. So far, all of the data we&rsquo;ve used has given us a numerical output, quantitative data. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values continuous. This time, what we&rsquo;re going to want a response of a categorical type.
+<meta name="description" content=" Binary Classification Another regression-type model I see. &ldquo;How does this one differ from Linear Regression?&rdquo; one might ask, and to them I would respond with the type of data we&rsquo;re looking at. So far, all of the data we&rsquo;ve used has given us a numerical output, quantitative data. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values continuous. This time, what we&rsquo;re going to want a response of a categorical type.
 " />
 <meta name="keywords" content="homepage, blog, computerscience, machine_learning, AI, python" />
 <meta name="robots" content="noodp" />
@@ -46,24 +46,24 @@
 
 
   <meta itemprop="name" content="Logistic Regression">
-  <meta itemprop="description" content="Another regression-type model I see. “How does this one differ from Linear Regression?” one might ask, and to them I would respond with the type of data we’re looking at. So far, all of the data we’ve used has given us a numerical output, quantitative data. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values continuous. This time, what we’re going to want a response of a categorical type.">
+  <meta itemprop="description" content="Binary Classification Another regression-type model I see. “How does this one differ from Linear Regression?” one might ask, and to them I would respond with the type of data we’re looking at. So far, all of the data we’ve used has given us a numerical output, quantitative data. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values continuous. This time, what we’re going to want a response of a categorical type.">
   <meta itemprop="datePublished" content="2025-11-05T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-11-05T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1559">
+  <meta itemprop="wordCount" content="2250">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Machine_learning,AI,Python">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="Logistic Regression">
-  <meta name="twitter:description" content="Another regression-type model I see. “How does this one differ from Linear Regression?” one might ask, and to them I would respond with the type of data we’re looking at. So far, all of the data we’ve used has given us a numerical output, quantitative data. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values continuous. This time, what we’re going to want a response of a categorical type.">
+  <meta name="twitter:description" content="Binary Classification Another regression-type model I see. “How does this one differ from Linear Regression?” one might ask, and to them I would respond with the type of data we’re looking at. So far, all of the data we’ve used has given us a numerical output, quantitative data. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values continuous. This time, what we’re going to want a response of a categorical type.">
 
 
 
     <meta property="og:url" content="https://mrpointing.com/notes/computer-science/python/machine-learning/logistic-regression/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Logistic Regression">
-  <meta property="og:description" content="Another regression-type model I see. “How does this one differ from Linear Regression?” one might ask, and to them I would respond with the type of data we’re looking at. So far, all of the data we’ve used has given us a numerical output, quantitative data. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values continuous. This time, what we’re going to want a response of a categorical type.">
+  <meta property="og:description" content="Binary Classification Another regression-type model I see. “How does this one differ from Linear Regression?” one might ask, and to them I would respond with the type of data we’re looking at. So far, all of the data we’ve used has given us a numerical output, quantitative data. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values continuous. This time, what we’re going to want a response of a categorical type.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -158,6 +158,7 @@
 
             <div class="post-content">
                 <hr>
+<h1 id="binary-classification">Binary Classification</h1>
 <p>Another regression-type model I see. &ldquo;How does this one differ from Linear Regression?&rdquo; one might ask, and to them I would respond with the type of data we&rsquo;re looking at. So far, all of the data we&rsquo;ve used has given us a numerical output, <em>quantitative data</em>. We want to predict the price of something in 10 years, or figure out how much a property will cost after a given period of time. We can call these predicted values <em>continuous</em>. This time, what we&rsquo;re going to want a response of a <em>categorical</em> type.</p>
 <p>What are some things we can predict with categorical data? We can create models that determine if text messages are from spam numbers or not, see if they would like a genre of movie, or even someone&rsquo;s vote in a mayoral election. The first two examples are <em>binary classifications</em>. The other example would be a <em>multiclass classification</em>, which we&rsquo;ll take a look at next time. For now, let&rsquo;s focus on the first.</p>
 <p>A common example we can use is a life insurance salesperson. They&rsquo;re given a dataset of people of various ages. We want to see if they&rsquo;re going to purchase life insurance. With this data, you&rsquo;re going to end up with a dataset that&rsquo;s plotted out to look something like this;</p>
@@ -227,6 +228,55 @@
 </span></span><span style="display:flex;"><span>sub_df<span style="color:#f92672">.</span>head()
 </span></span></code></pre></div><p>Now, it&rsquo;s time to create our dummies. Again, there are two ways to do this; both should be in your notes somewhere. If not, feel free to visit the note on <a href="https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/">One Hot Encoding</a>. One new thing you should learn is when making dummy columns, you can actually pass in a new parameter called <code>prefix</code>, which will start each new dummy column with whatever you want. This is helpful if you end up having more than one column you need to encode.</p>
 <p>Make sure to concatenate your new tables together, and drop the original column as well as one of the dummy columns you just made. Again, that&rsquo;s all review-able via the OHE not. From here, it should be smooth sailing. Create your training and test split, import and train your model, and make your predictions. Remember, since we have so many entries (3000) we can&rsquo;t easily compare our predictions against our actual categorization, so run <code>score</code> on your <code>X_test</code> and <code>y_test</code> data frames to get an idea of how accurate your model is.</p>
+<h1 id="multiclass-classification">Multiclass Classification</h1>
+<p>Just like with Linear Regression, we can expand our model to not just give us binary output of yes and no, to a multiclass classification. Because I like to continue using the same datasets, let&rsquo;s use a dataset very similar to our MNIST dataset, or the handwritten digits. This time, our classification will be one of the nine potential digits. What&rsquo;s nice about this dataset versus the MNIST one is that these feature a lower dimensionality- instead of 28x28, we just have 8x8.</p>
+<p>Let&rsquo;s begin with bringing in our dataset and using <code>matplotlib</code> to plot it. <code>sklearn</code> actually has a digit dataset built into it we can use;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.datasets <span style="color:#f92672">import</span> load_digits
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">%</span>matplotlib inline
+</span></span></code></pre></div><p>And like most things we import from <code>sklearn</code>, we&rsquo;re going to call and create an object that will contain our digits;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>digits <span style="color:#f92672">=</span> load_digits()
+</span></span></code></pre></div><p>Normally we would call digits to see what&rsquo;s inside, but if you do you&rsquo;re likely not going to recognize what&rsquo;s being shown. Perfectly normal, since <code>digits</code> is not a dataframe and we shouldn&rsquo;t treat it like one. If we were doing this research on our own, my first suggestion would be to open up the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits">documentation</a> and give it a good glance. We&rsquo;d learn that we have 1797 samples in our dataset, and it says for each pixel in our image can be anywhere from 0 to 16 (0 for black, 16 for white). How do we actually see these images?</p>
+<p>Well, first let&rsquo;s understand how they&rsquo;re given to us. by calling the following;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dir(digits)
+</span></span></code></pre></div><p>You&rsquo;ll get back the <em>Returns</em> portion of the documentation. <code>DESCR</code> returns the description. <code>data</code> holds the actual makeup of each image, containing that 0 - 16 value we discussed a moment ago. <code>feature_names</code> provides a name for each pixel, <code>target</code> will tell you what the actual number is, and finally <code>image</code> will return the raw image. A neat way to quickly look at some images would be to use a nice <code>for</code> loop;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>   plt<span style="color:#f92672">.</span>matshow(digits<span style="color:#f92672">.</span>images[i])
+</span></span></code></pre></div><p>Again just like with linear regression, getting a multiclass version isn&rsquo;t so different than the binary version. Now that we know how our dataset works, we can simply pass in our model and split our data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LogisticRegression
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span>log_model <span style="color:#f92672">=</span> LogisticRegression(max_iter<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>)
+</span></span></code></pre></div><p>You might have noticed that I included a new parameter to <code>LogisticRegression()</code>, called <code>max_iter</code>. Essentially, there is a point at which your model is going to create those magical boundaries that keep it from classifying a certain category. There is a point in that process where no matter how many times you add in new data or make minor changes to the boundaries where there&rsquo;s no longer a discernible difference in the output. This point is called <em>convergence</em>, and many models reach this point in different ways. By default we have 100 iterations. On my machine, I got a warning telling me that <strong>the max number of iterations was reached without converging</strong>. To alleviate this, we up the iterations to 1000.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> train_test_split(digits<span style="color:#f92672">.</span>data, digits<span style="color:#f92672">.</span>target, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>)
+</span></span><span style="display:flex;"><span>log_model<span style="color:#f92672">.</span>fit(X_train, y_train)
+</span></span></code></pre></div><p>Now to measure the accuracy of our model;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>log_model<span style="color:#f92672">.</span>predict(digits<span style="color:#f92672">.</span>data[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">5</span>])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>log_model<span style="color:#f92672">.</span>score(X_test, y_test)
+</span></span></code></pre></div><p>One last thing I&rsquo;d like to do is introduce another concept we talked about in Chapter 1 of <a href="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-1/">How AI Works</a>, using a confusion matrix. We want to see how confident our model was in predicting digits, so let&rsquo;s set up those predictions and I&rsquo;ll show you how to actually make and visualize your matrix;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y_predicted <span style="color:#f92672">=</span> log_model<span style="color:#f92672">.</span>predict(X_test)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> confusion_matrix
+</span></span><span style="display:flex;"><span>cm <span style="color:#f92672">=</span> confusion_matrix(y_test, y_predicted)
+</span></span><span style="display:flex;"><span>cm
+</span></span></code></pre></div><p>We&rsquo;re going to use another new plotting library to make what we call a <em>heatmap</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> seaborn <span style="color:#66d9ef">as</span> sn
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure(figsize <span style="color:#f92672">=</span> (<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">7</span>))
+</span></span><span style="display:flex;"><span>sn<span style="color:#f92672">.</span>heatmap(cm, annot<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Predicted&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Truth&#39;</span>)
+</span></span></code></pre></div><h2 id="exercise-1">Exercise</h2>
+<p>Use <code>sklearn.datasets</code> iris flower dataset to train your model using logistic regression. You need to figure out accuracy of your model and use that to predict different samples in your test dataset. In iris dataset there are 150 samples containing following features,</p>
+<ol>
+<li>Sepal Length</li>
+<li>Sepal Width</li>
+<li>Petal Length</li>
+<li>Petal Width</li>
+</ol>
+<p>Using above 4 features you will classify a flower in one of the three categories,</p>
+<ol>
+<li>Setosa</li>
+<li>Versicolour</li>
+<li>Virginica</li>
+</ol>
 
             </div>
         </article>
