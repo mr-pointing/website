@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Support Vector Machines</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/support-vector-machines/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/support-vector-machines/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;For the theory and more detail on how this model works, go back to &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-3/&#34;&gt;How AI Works - Chapter 3&lt;/a&gt; to freshen up. We only have two concepts to go over before we jump into the code.&lt;/p&gt;&#xA;&lt;p&gt;One concept not touched on in the text is the concept of &lt;strong&gt;Gamma&lt;/strong&gt;. Gamma is a metric that can high or low; the more gamma you have, the less input values you consider when drawing the boundary between points. Usually what you&amp;rsquo;ll have is high gamma approaches having a very loose boundary that follows the flow of your points, while a low gamma approach will have a more rigid approach that might even miss-label some points.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Decision Trees</title>
+      <link>https://mrpointing.com/notes/computer-science/python/machine-learning/decision-trees/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/decision-trees/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Time to start tackling some of the models we discussed in &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-3/&#34;&gt;How AI Works - Chapter 3&lt;/a&gt;. We&amp;rsquo;re going to do this out of order- we&amp;rsquo;ll come back to KNN another day. For now, we can start by building our first &lt;em&gt;Decision Tree&lt;/em&gt;. I&amp;rsquo;m not going to go into too much detail in this note, since we go over it in more detail in the note just above. Instead, let&amp;rsquo;s work through the Python code together so we can begin working on our exercise.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Logistic Regression</title>
       <link>https://mrpointing.com/notes/computer-science/python/machine-learning/logistic-regression/</link>

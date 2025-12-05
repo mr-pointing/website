@@ -1,6 +1,6 @@
 ---
 aliases:
-draft: true
+draft: false
 tags:
   - computerscience
   - AI
@@ -8,21 +8,20 @@ tags:
   - python
 title: Decision Trees
 date: 2025-11-19
-updated: 2025-11-19T12:53
+updated: 2025-12-02T09:10
 ---
 
--------------------------------------------------------------------------------
+---
 
-
-Time to start tackling some of the models we discussed in [How AI Works - Chapter 3]({{< ref "How AI Works - Chapter 3" >}}). We're going to do this out of order- we'll come back to KNN another day. For now, we can start by building our first *Decision Tree*. I'm not going to go into too much detail in this note, since we go over it in more detail in the note just above. Instead, let's work through the Python code together so we can begin working on our exercise.
+Time to start tackling some of the models we discussed in [How AI Works - Chapter 3]({{< ref "How AI Works - Chapter 3" >}}). We're going to do this out of order- we'll come back to KNN another day. For now, we can start by building our first _Decision Tree_. I'm not going to go into too much detail in this note, since we go over it in more detail in the note just above. Instead, let's work through the Python code together so we can begin working on our exercise.
 
 The dataset we're going to use is interesting and worth looking at before we just start using it. Before we move on, let's look at it together, and I want you to try and figure out how your brain would try to split up each categorization. Our objective is to find out which positions in a given company earns a wage of over $100k p/year. How would you begin breaking down your data?
 
-We have a few approaches based on the amount of columns we have. We have three columns; company, job, and degree. One thing to keep in mind is the amount of **Entropy** or randomness each split will give you. 
+We have a few approaches based on the amount of columns we have. We have three columns; company, job, and degree. One thing to keep in mind is the amount of **Entropy** or randomness each split will give you.
 
-Here's a basic example using our dataset; say you broke it down by the company. We have three, Google, Facebook, and ABC Pharma. If we then look at each company, we'd see *everyone* at Facebook makes over $100k. 3 out of 4 at ABC Pharma don't, and about half of Google does. Our Entropy rates are 0, ~.25, and 1. Versus if we broke it down by degree. It's another half split for bachelors and a 6/2 split for masters. We have *more* entropy when we broke it down by category, leading to less information gain versus a high information gain by having a super low entropy.
+Here's a basic example using our dataset; say you broke it down by the company. We have three, Google, Facebook, and ABC Pharma. If we then look at each company, we'd see _everyone_ at Facebook makes over $100k. 3 out of 4 at ABC Pharma don't, and about half of Google does. Our Entropy rates are 0, ~.25, and 1. Versus if we broke it down by degree. It's another half split for bachelors and a 6/2 split for masters. We have _more_ entropy when we broke it down by category, leading to less information gain versus a high information gain by having a super low entropy.
 
-Now that we have a breakdown of the data, let's write some code. 
+Now that we have a breakdown of the data, let's write some code.
 
 ```python
 import pandas as pd
@@ -33,7 +32,7 @@ df.head()
 We should definitely make sure we break up our data into inputs and output;
 
 ```python
-X = df.drop('salary_more_than_100k', axis='columns')
+X = df.drop('salary_more_then_100k', axis='columns')
 X.head()
 ```
 
@@ -52,8 +51,8 @@ le_degree = LabelEncoder()
 
 ```python
 X['company_n'] = le_company.fit_transform(X['company'])
-X['job_n'] = le_company.fit_transform(X['job'])
-X['degree_n'] = le_company.fit_transform(X['degree'])
+X['job_n'] = le_job.fit_transform(X['job'])
+X['degree_n'] = le_degree.fit_transform(X['degree'])
 ```
 
 Make sure to call `X` to ensure everything got in safely. Obviously now that we've done our encoding, we can drop our categorical columns;
@@ -75,10 +74,10 @@ tree_model = tree.DecisionTreeClassifier()
 tree_model.fit(X_train, y_train)
 ```
 
-Now that we've made our model, let's run a prediction and see how accurate our model is. 
+Now that we've made our model, let's run a prediction and see how accurate our model is.
 
 ```python
-model.predict([2, 1, 0]({{< ref "2, 1, 0" >}}))
+tree_model.predict([[2, 1, 0]])
 ```
 
 ```python
@@ -95,3 +94,4 @@ You are going to determine whether or not someone was going to survive the sinki
 4. Fare
 
 Be sure to calculate the score of your model as well.
+

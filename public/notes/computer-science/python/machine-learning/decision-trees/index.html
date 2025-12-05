@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Time to start tackling some of the models we discussed in How AI Works - Chapter 3. We&rsquo;re going to do this out of order- we&rsquo;ll come back to KNN another day. For now, we can start by building our first Decision Tree. I&rsquo;m not going to go into too much detail in this note, since we go over it in more detail in the note just above. Instead, let&rsquo;s work through the Python code together so we can begin working on our exercise.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, AI, machine_learning, python" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/python/machine-learning/decision-trees/" />
+
+
+    <title>
+        
+            Decision Trees :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.42bc4753416907cd4d426f337ec77c315cab5fdcabe850c0ea0a747a2f6744a7.css" integrity="sha256-QrxHU0FpB81NQm8zfsd8MVyrX9yr6FDA6gp0ei9nRKc=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Decision Trees">
+  <meta itemprop="description" content="Time to start tackling some of the models we discussed in How AI Works - Chapter 3. We’re going to do this out of order- we’ll come back to KNN another day. For now, we can start by building our first Decision Tree. I’m not going to go into too much detail in this note, since we go over it in more detail in the note just above. Instead, let’s work through the Python code together so we can begin working on our exercise.">
+  <meta itemprop="datePublished" content="2025-11-19T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-11-19T00:00:00+00:00">
+  <meta itemprop="wordCount" content="577">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,AI,Machine_learning,Python">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Decision Trees">
+  <meta name="twitter:description" content="Time to start tackling some of the models we discussed in How AI Works - Chapter 3. We’re going to do this out of order- we’ll come back to KNN another day. For now, we can start by building our first Decision Tree. I’m not going to go into too much detail in this note, since we go over it in more detail in the note just above. Instead, let’s work through the Python code together so we can begin working on our exercise.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/python/machine-learning/decision-trees/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Decision Trees">
+  <meta property="og:description" content="Time to start tackling some of the models we discussed in How AI Works - Chapter 3. We’re going to do this out of order- we’ll come back to KNN another day. For now, we can start by building our first Decision Tree. I’m not going to go into too much detail in this note, since we go over it in more detail in the note just above. Instead, let’s work through the Python code together so we can begin working on our exercise.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-11-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-19T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Machine_learning">
+    <meta property="article:tag" content="Python">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-11-19 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/python/machine-learning/decision-trees/">Decision Trees</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<p>Time to start tackling some of the models we discussed in <a href="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-3/">How AI Works - Chapter 3</a>. We&rsquo;re going to do this out of order- we&rsquo;ll come back to KNN another day. For now, we can start by building our first <em>Decision Tree</em>. I&rsquo;m not going to go into too much detail in this note, since we go over it in more detail in the note just above. Instead, let&rsquo;s work through the Python code together so we can begin working on our exercise.</p>
+<p>The dataset we&rsquo;re going to use is interesting and worth looking at before we just start using it. Before we move on, let&rsquo;s look at it together, and I want you to try and figure out how your brain would try to split up each categorization. Our objective is to find out which positions in a given company earns a wage of over $100k p/year. How would you begin breaking down your data?</p>
+<p>We have a few approaches based on the amount of columns we have. We have three columns; company, job, and degree. One thing to keep in mind is the amount of <strong>Entropy</strong> or randomness each split will give you.</p>
+<p>Here&rsquo;s a basic example using our dataset; say you broke it down by the company. We have three, Google, Facebook, and ABC Pharma. If we then look at each company, we&rsquo;d see <em>everyone</em> at Facebook makes over $100k. 3 out of 4 at ABC Pharma don&rsquo;t, and about half of Google does. Our Entropy rates are 0, ~.25, and 1. Versus if we broke it down by degree. It&rsquo;s another half split for bachelors and a 6/2 split for masters. We have <em>more</em> entropy when we broke it down by category, leading to less information gain versus a high information gain by having a super low entropy.</p>
+<p>Now that we have a breakdown of the data, let&rsquo;s write some code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;salaries.csv&#34;</span>)
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>head()
+</span></span></code></pre></div><p>We should definitely make sure we break up our data into inputs and output;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#39;salary_more_then_100k&#39;</span>, axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;columns&#39;</span>)
+</span></span><span style="display:flex;"><span>X<span style="color:#f92672">.</span>head()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;salary_more_than_100k&#39;</span>]
+</span></span></code></pre></div><p>As you should notice, we have mostly categorical data. The only numerical data we have is the output, or whether or not they make $100k. This is bad for us, because we&rsquo;re going to have to encode this. We&rsquo;re going to use the <code>LabelEncoder</code> introduced in the latter portion of <a href="https://mrpointing.com/notes/computer-science/python/machine-learning/one-hot-encoding/">One Hot Encoding</a>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> LabelEncoder
+</span></span><span style="display:flex;"><span>le_company <span style="color:#f92672">=</span> LabelEncoder()
+</span></span><span style="display:flex;"><span>le_job <span style="color:#f92672">=</span> LabelEncoder()
+</span></span><span style="display:flex;"><span>le_degree <span style="color:#f92672">=</span> LabelEncoder()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X[<span style="color:#e6db74">&#39;company_n&#39;</span>] <span style="color:#f92672">=</span> le_company<span style="color:#f92672">.</span>fit_transform(X[<span style="color:#e6db74">&#39;company&#39;</span>])
+</span></span><span style="display:flex;"><span>X[<span style="color:#e6db74">&#39;job_n&#39;</span>] <span style="color:#f92672">=</span> le_job<span style="color:#f92672">.</span>fit_transform(X[<span style="color:#e6db74">&#39;job&#39;</span>])
+</span></span><span style="display:flex;"><span>X[<span style="color:#e6db74">&#39;degree_n&#39;</span>] <span style="color:#f92672">=</span> le_degree<span style="color:#f92672">.</span>fit_transform(X[<span style="color:#e6db74">&#39;degree&#39;</span>])
+</span></span></code></pre></div><p>Make sure to call <code>X</code> to ensure everything got in safely. Obviously now that we&rsquo;ve done our encoding, we can drop our categorical columns;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X_final <span style="color:#f92672">=</span> X<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#39;company&#39;</span>,<span style="color:#e6db74">&#39;job&#39;</span>,<span style="color:#e6db74">&#39;degree&#39;</span>], axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;columns&#39;</span>)
+</span></span></code></pre></div><p>This process should start to feel familiar. We processed our data, put it into a format we can use for input and output, and now again like many times now we&rsquo;ll use our input and output to fit our model.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span>X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> train_test_split(X_final, y, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> tree
+</span></span><span style="display:flex;"><span>tree_model <span style="color:#f92672">=</span> tree<span style="color:#f92672">.</span>DecisionTreeClassifier()
+</span></span><span style="display:flex;"><span>tree_model<span style="color:#f92672">.</span>fit(X_train, y_train)
+</span></span></code></pre></div><p>Now that we&rsquo;ve made our model, let&rsquo;s run a prediction and see how accurate our model is.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tree_model<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>]])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tree_model<span style="color:#f92672">.</span>score(X_test, y_test)
+</span></span></code></pre></div><h2 id="exercise">Exercise</h2>
+<p>You are going to determine whether or not someone was going to survive the sinking of the Titanic. You&rsquo;re going to use the following features as your determining factors;</p>
+<ol>
+<li>Pclass</li>
+<li>Sex</li>
+<li>Age</li>
+<li>Fare</li>
+</ol>
+<p>Be sure to calculate the score of your model as well.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/ai/">AI</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/machine_learning/">machine_learning</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true, resetStyles: true });
+    });
+</script>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
