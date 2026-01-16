@@ -8,7 +8,7 @@ tags:
   - textbook
 title: HTML & CSS - Chapter 1
 date: 2025-10-13
-updated: 2025-10-13T21:07
+updated: 2026-01-05T16:05
 ---
 
 -------------------------------------------------------------------------------
@@ -43,3 +43,20 @@ Notice the color difference in the text? That's called *syntax highlighting*; `<
 Three good tags to always start any page is a **head, body, & title**. The `<head>` element acts like the header of a document. It mostly contains metadata about a page, or information not usually seen. Inside there is the `<title>` element, which gives the web page it's name. Then the `<body>` element takes in the rest of the content that gets displayed. When building web pages, we should always think about it as designing how we display and format text boxes.
 
 Copy and paste the above code into a new text file into a Notepad++ document. Then, save the file as a `.html` file. Then, you can open it in any web browser you want. Super nifty.
+
+Well, that's great and all, but most of the things that we are going to want to create are far more complex than just a few tags. What really makes up a webpage? That's a difficult question to answer since really, it can contain whatever you'd like. So then your next line of thinking might be like this; what do *other* people put in their webpages? That's a much easier question to answer.
+
+In order to see how any web page is built, or to see the HTML and CSS that make that page exist, you can hit ***F12*** on your keyboard while viewing nearly any web page. It's definitely a lot to look at for your first time, but the more you do this the more you'll understand it. The problem with websites these days, is that a lot of them contain another programming language, called **JavaScript**. Try to ignore that for now, we'll come back to JavaScript another day. For now, give this a try; do you see a mouse cursor in a little box in the upper left-hand corner of your new F12 view? Click on that, and then hover over anything on your website. If you click it, you'll be directed in the HTML viewport to the line of HTML that made that element exist. Super-duper nifty.
+
+## Summary
+
+- HTML is just text!
+- HTML tags (sometimes called elements) are used to give context and special meaning to specific text
+- Tags come in pairs
+	- The opening tag can contain attributes that provide even more context and special meanings to certain tags (ex. `name = value`)
+- The best way to learn HTML is to learn the tags and when to use them
+
+
+---
+Next: 
+[Chapter 2]({{< ref "HTML & CSS - Chapter 2" >}}) 

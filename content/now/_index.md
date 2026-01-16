@@ -5,7 +5,7 @@ tags:
   - me
 title: Now
 date: 2024-08-17
-updated: 2025-9-01T12:37
+updated: 2026-1-15T12:37
 ---
 
 ---
@@ -24,7 +24,7 @@ You can also find a link to my Discogs [here](https://www.discogs.com/user/binky
 
 Currently Reading:
 
-- _Moby Dick_ by **Herman Melville**
+- _The Idiot_ by **Fyodor Dostoevsky**
 
 You can find my Goodreads [here](https://www.goodreads.com/user/show/119117493).
 
@@ -32,7 +32,7 @@ You can find my Goodreads [here](https://www.goodreads.com/user/show/119117493).
 
 Currently Watching:
 
-- Sakamoto Days
+- Suddenly Amish
 
 You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
 
@@ -40,5 +40,5 @@ You can find my IMDb [here](https://www.imdb.com/user/ur42380257/ratings/).
 
 Currently Playing:
 
-- The Elder Scrolls IV: Oblivion Remastered
-- Path of Exile
+- Diablo 2
+- Mortal Shell

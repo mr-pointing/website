@@ -7,34 +7,13 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI</title>
-      <link>https://mrpointing.com/tags/ai/</link>
-      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Computerscience</title>
-      <link>https://mrpointing.com/tags/computerscience/</link>
-      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/computerscience/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Machine_learning</title>
-      <link>https://mrpointing.com/tags/machine_learning/</link>
-      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/machine_learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://mrpointing.com/tags/python/</link>
-      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/python/</guid>
+      <title>Me</title>
+      <link>https://mrpointing.com/tags/me/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/me/</guid>
       <description></description>
     </item>
     <item>
@@ -42,6 +21,69 @@
       <link>https://mrpointing.com/tags/book/</link>
       <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computerscience</title>
+      <link>https://mrpointing.com/tags/computerscience/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/computerscience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C</title>
+      <link>https://mrpointing.com/tags/c/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://mrpointing.com/tags/css/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://mrpointing.com/tags/html/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Textbook</title>
+      <link>https://mrpointing.com/tags/textbook/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/textbook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>https://mrpointing.com/tags/ai/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine_learning</title>
+      <link>https://mrpointing.com/tags/machine_learning/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/machine_learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syntax</title>
+      <link>https://mrpointing.com/tags/syntax/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/syntax/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://mrpointing.com/tags/python/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/python/</guid>
       <description></description>
     </item>
     <item>
@@ -66,13 +108,6 @@
       <description></description>
     </item>
     <item>
-      <title>Textbook</title>
-      <link>https://mrpointing.com/tags/textbook/</link>
-      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/textbook/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Philosophy</title>
       <link>https://mrpointing.com/tags/philosophy/</link>
       <pubDate>Mon, 01 Jan 1883 00:00:00 +0000</pubDate>
@@ -84,27 +119,6 @@
       <link>https://mrpointing.com/tags/politics/</link>
       <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/politics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>https://mrpointing.com/tags/css/</link>
-      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://mrpointing.com/tags/html/</link>
-      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/html/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Me</title>
-      <link>https://mrpointing.com/tags/me/</link>
-      <pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/me/</guid>
       <description></description>
     </item>
     <item>
@@ -203,13 +217,6 @@
       <link>https://mrpointing.com/tags/documentation/</link>
       <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/documentation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Syntax</title>
-      <link>https://mrpointing.com/tags/syntax/</link>
-      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/syntax/</guid>
       <description></description>
     </item>
     <item>

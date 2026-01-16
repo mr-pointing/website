@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS - Chapter 2</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-2/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-2/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;text&#34;&gt;Text&lt;/h1&gt;&#xA;&lt;p&gt;We said that in the last chapter, all HTML is made up of text. Let&amp;rsquo;s break that down a little further; the tags we use are called &lt;em&gt;markup&lt;/em&gt;. We have two types we&amp;rsquo;ll focus on in this chapter:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Structural Markup&lt;/strong&gt;: tags that control or describe the layout of the content/text&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Semantic Markup&lt;/strong&gt;: tags that control the design of the sentences/text content provided&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll go through a couple of different types of tags and their place in designing our web-pages.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/</link>

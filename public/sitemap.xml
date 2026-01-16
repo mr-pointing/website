@@ -2,32 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mrpointing.com/tags/ai/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
+    <loc>https://mrpointing.com/notes/computer-science/c/</loc>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/computerscience/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/machine_learning/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
+    <loc>https://mrpointing.com/tags/me/</loc>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/book/</loc>
+    <lastmod>2026-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/entertainment/books/it/</loc>
+    <lastmod>2026-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/computerscience/</loc>
+    <lastmod>2026-01-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-3/</loc>
+    <lastmod>2026-01-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/c/</loc>
+    <lastmod>2026-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/css/</loc>
+    <lastmod>2026-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/html/</loc>
+    <lastmod>2026-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-2/</loc>
+    <lastmod>2026-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/c/slop-100---chapter-2/</loc>
+    <lastmod>2026-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/textbook/</loc>
+    <lastmod>2026-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/ai/</loc>
+    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-5/</loc>
+    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/machine_learning/</loc>
+    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/c/slop-100---chapter-1/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/syntax/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/python/</loc>
     <lastmod>2025-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/machine-learning/support-vector-machines/</loc>
     <lastmod>2025-11-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/book/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/sciencefiction/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
@@ -62,9 +101,6 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</loc>
     <lastmod>2025-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/textbook/</loc>
-    <lastmod>2025-10-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/tags/philosophy/</loc>
     <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -73,12 +109,6 @@
   </url><url>
     <loc>https://mrpointing.com/notes/entertainment/books/the-communist-manifesto/</loc>
     <lastmod>2025-10-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/css/</loc>
-    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/html/</loc>
-    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/</loc>
     <lastmod>2025-10-13T00:00:00+00:00</lastmod>
@@ -93,9 +123,6 @@
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/machine-learning/</loc>
-    <lastmod>2025-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/me/</loc>
     <lastmod>2025-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/machine-learning/linear-regression/</loc>
@@ -279,9 +306,6 @@
     <lastmod>2025-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-8/</loc>
-    <lastmod>2025-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/syntax/</loc>
     <lastmod>2025-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-7/</loc>

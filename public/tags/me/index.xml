@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 25 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C</title>
+      <link>https://mrpointing.com/notes/computer-science/c/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/c/</guid>
+      <description>&lt;p&gt;Notes on C programming skills.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Machine Learning</title>
       <link>https://mrpointing.com/notes/computer-science/python/machine-learning/</link>
@@ -119,7 +126,7 @@
       <link>https://mrpointing.com/now/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/now/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-now-page&#34;&gt;What is a Now Page?&lt;/h2&gt;&#xA;&lt;p&gt;Learn about why you need a Now page &lt;a href=&#34;https://nownownow.com/about&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;listening&#34;&gt;Listening&lt;/h2&gt;&#xA;&lt;p&gt;I keep one main playlist that constantly add too every few years. My current playlist can be found &lt;a href=&#34;https://open.spotify.com/playlist/3feDlFqrgP49k8q43rpkip?si=2xnKT7-mTcCSmOrkPe-zJA&amp;pi=u-5Fcl0Ir7QaWk&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can also find a link to my Discogs &lt;a href=&#34;https://www.discogs.com/user/binky_core&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;&#xA;&lt;p&gt;Currently Reading:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;Moby Dick&lt;/em&gt; by &lt;strong&gt;Herman Melville&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can find my Goodreads &lt;a href=&#34;https://www.goodreads.com/user/show/119117493&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;watching&#34;&gt;Watching&lt;/h2&gt;&#xA;&lt;p&gt;Currently Watching:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sakamoto Days&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can find my IMDb &lt;a href=&#34;https://www.imdb.com/user/ur42380257/ratings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;playing&#34;&gt;Playing&lt;/h2&gt;&#xA;&lt;p&gt;Currently Playing:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The Elder Scrolls IV: Oblivion Remastered&lt;/li&gt;&#xA;&lt;li&gt;Path of Exile&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-now-page&#34;&gt;What is a Now Page?&lt;/h2&gt;&#xA;&lt;p&gt;Learn about why you need a Now page &lt;a href=&#34;https://nownownow.com/about&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;listening&#34;&gt;Listening&lt;/h2&gt;&#xA;&lt;p&gt;I keep one main playlist that constantly add too every few years. My current playlist can be found &lt;a href=&#34;https://open.spotify.com/playlist/3feDlFqrgP49k8q43rpkip?si=2xnKT7-mTcCSmOrkPe-zJA&amp;pi=u-5Fcl0Ir7QaWk&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can also find a link to my Discogs &lt;a href=&#34;https://www.discogs.com/user/binky_core&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;&#xA;&lt;p&gt;Currently Reading:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;The Idiot&lt;/em&gt; by &lt;strong&gt;Fyodor Dostoevsky&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can find my Goodreads &lt;a href=&#34;https://www.goodreads.com/user/show/119117493&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;watching&#34;&gt;Watching&lt;/h2&gt;&#xA;&lt;p&gt;Currently Watching:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Suddenly Amish&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can find my IMDb &lt;a href=&#34;https://www.imdb.com/user/ur42380257/ratings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;playing&#34;&gt;Playing&lt;/h2&gt;&#xA;&lt;p&gt;Currently Playing:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Diablo 2&lt;/li&gt;&#xA;&lt;li&gt;Mortal Shell&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Current Obsidian Plugins</title>

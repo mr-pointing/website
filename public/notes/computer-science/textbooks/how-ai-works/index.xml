@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How AI Works - Chapter 5</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-5/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-5/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;convolutional-neural-networks-ai-learns-to-see&#34;&gt;Convolutional Neural Networks: AI Learns to See&lt;/h1&gt;&#xA;&lt;p&gt;While the last chapter toted how advanced neural networks were, they weren&amp;rsquo;t always able to select the correct features, determining the right amount of dimensions, along with their inability to learn, lead to our next topic; &lt;em&gt;Convolutional Neural Networks&lt;/em&gt;. What they do differently than the networks we looked at in the last chapter is they actually generate new representations of their inputs while also being able to classify them. This is called &lt;em&gt;end-to-end learning&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How AI Works - Chapter 4</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</link>
       <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-4/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;neural-networks-brain-like-ai&#34;&gt;Neural Networks: Brain-Like AI&lt;/h1&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;neural-networks-brain-like-ai&#34;&gt;Neural Networks: Brain-Like AI&lt;/h1&gt;&#xA;&lt;p&gt;We must understand going forward that even though we&amp;rsquo;ll liken the brain&amp;rsquo;s neurons to that of connectionist neural networks, they are not the same. Similar, but operate on a totally different level. At a basic level, brain neurons are in an off state until turned on. Artificial neurons are the exact opposite; also containing inputs and outputs but continuously calculating some mathematical function.&lt;/p&gt;&#xA;&lt;p&gt;A good example is that of a light switch versus a dimming switch. The light switch turns on and off, while the dimming switch varies between different states of being on and producing light. These are the biological and artificial in essence, with some slight overlap that we don&amp;rsquo;t need to concern ourselves with.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How AI Works - Chapter 3</title>
