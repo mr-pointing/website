@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS - Chapter 5</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-5/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-5/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;images&#34;&gt;Images&lt;/h1&gt;&#xA;&lt;p&gt;Obviously, there are numerous reasons for why we would want to add images to our web pages. How we integrate and present them well, however, is the most important part, and we&amp;rsquo;re going to learn exactly how to do that in this chapter. The first image you see really sets the tone for the rest of the visit with your sight, so choosing the right type of image is key.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 4</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-4/</link>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-4/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;&#xA;&lt;p&gt;How do we navigate from page to page? Links of course! They&amp;rsquo;re everywhere, and rightfully so. Without links, we&amp;rsquo;d only be able to access pages by typing them into our browser one at a time. That would suck. So today, when you click on a link to something, thank whoever came up with links.&lt;/p&gt;&#xA;&lt;p&gt;This is probably the most complicated tag we&amp;rsquo;ve written, but it&amp;rsquo;s pretty logical. Here&amp;rsquo;s a quick example;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 3</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-3/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-3/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;&#xA;&lt;p&gt;Used nearly everyday in numerous settings, lists help organize and structure data in a neat and sequential way. There are two main types;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordered Lists:&lt;/strong&gt; Where each item in the list is ordered in a specific way based on numbers; think of a recipe, or any other set of instructions.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Unordered Lists:&lt;/strong&gt; Lists that begin with a bullet point where the order of the content doesn&amp;rsquo;t matter.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a third, not so often used type we&amp;rsquo;ll quickly look at towards the end.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 2</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-2/</link>
@@ -43,6 +64,13 @@
       <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-1/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;structure&#34;&gt;Structure&lt;/h1&gt;&#xA;&lt;p&gt;What do we make websites for? Mostly for online resources of physical things we need and look for in our daily lives. A main component of everything we use and consume is &lt;em&gt;structured&lt;/em&gt;. The structure of our web page takes on many forms, but for now let&amp;rsquo;s focus on the most basic type; the building blocks that construct almost every web page.&lt;/p&gt;&#xA;&lt;p&gt;When thinking about how we should structure our pages, we can always take a look at real life examples in print media for what you&amp;rsquo;re looking for. In it&amp;rsquo;s most basic form, something like a newspaper, we have a title, heading or two, and sub-paragraphs with images or quotes. That&amp;rsquo;s a great place for us to start.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impractical Python Projects - Preface</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;playful-programming-activities-to-make-you-smarter&#34;&gt;Playful Programming Activities to Make You Smarter&lt;/h1&gt;&#xA;&lt;h2 id=&#34;by-lee-vaughan&#34;&gt;By Lee Vaughan&lt;/h2&gt;&#xA;&lt;p&gt;Every good preface begins with identifying the audience. I chose this book over Real World Python mostly because of the audience; this text provides a secondary platform, meant for students who&amp;rsquo;ve already had a beginner introduction to the language. I felt while reading Real World that there were too many secondary things I had to explain rather than give Python the full attention it deserves, so here we are. It&amp;rsquo;s not just for students though, but anyone who&amp;rsquo;s curious about conducting their own experiments using coding.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How AI Works - Chapter 3</title>

@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Impractical Python Projects - Chapter 2</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-2/</link>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-2/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;project-2-finding-palingram-spells&#34;&gt;Project #2: Finding Palingram Spells&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Impractical Python Projects - Chapter 1</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-1/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;project-1-generating-pseudonyms&#34;&gt;Project #1: Generating Pseudonyms&lt;/h1&gt;&#xA;&lt;p&gt;A very simple project that we should be able to put together in a few minutes. Here&amp;rsquo;s our objective; &lt;strong&gt;Write a program that creates a name randomly choosing a first and last name from two given lists&lt;/strong&gt;. If you&amp;rsquo;ve solved one or two Coding Bat questions, this should be a breeze. However, it&amp;rsquo;s a good idea to review exactly how we should be approaching a project of any given difficulty.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Support Vector Machines</title>
       <link>https://mrpointing.com/notes/computer-science/python/machine-learning/support-vector-machines/</link>
@@ -36,6 +50,13 @@
       <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/python/machine-learning/splitting-training-and-testing-data/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;As we know from our &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/&#34;&gt;previous lessons&lt;/a&gt;, we should split our data into two types; training and testing. So far, we&amp;rsquo;ve just been using all of our data when making our models. Thankfully, &lt;code&gt;sklearn&lt;/code&gt; can help us out a lot here. Make sure to grab the dataset from classroom and let&amp;rsquo;s dive in.&lt;/p&gt;&#xA;&lt;p&gt;As always, load in your data and our libraries,&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; pd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; plt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;matplotlib inline&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;usedcarprices.csv&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s visualize our data so we can tell what type of model we should use;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impractical Python Projects - Preface</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;playful-programming-activities-to-make-you-smarter&#34;&gt;Playful Programming Activities to Make You Smarter&lt;/h1&gt;&#xA;&lt;h2 id=&#34;by-lee-vaughan&#34;&gt;By Lee Vaughan&lt;/h2&gt;&#xA;&lt;p&gt;Every good preface begins with identifying the audience. I chose this book over Real World Python mostly because of the audience; this text provides a secondary platform, meant for students who&amp;rsquo;ve already had a beginner introduction to the language. I felt while reading Real World that there were too many secondary things I had to explain rather than give Python the full attention it deserves, so here we are. It&amp;rsquo;s not just for students though, but anyone who&amp;rsquo;s curious about conducting their own experiments using coding.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linear Regression</title>

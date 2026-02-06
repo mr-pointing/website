@@ -7,14 +7,35 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/notes/computer-science/textbooks/html--css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS - Chapter 5</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-5/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-5/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;images&#34;&gt;Images&lt;/h1&gt;&#xA;&lt;p&gt;Obviously, there are numerous reasons for why we would want to add images to our web pages. How we integrate and present them well, however, is the most important part, and we&amp;rsquo;re going to learn exactly how to do that in this chapter. The first image you see really sets the tone for the rest of the visit with your sight, so choosing the right type of image is key.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 4</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-4/</link>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-4/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;&#xA;&lt;p&gt;How do we navigate from page to page? Links of course! They&amp;rsquo;re everywhere, and rightfully so. Without links, we&amp;rsquo;d only be able to access pages by typing them into our browser one at a time. That would suck. So today, when you click on a link to something, thank whoever came up with links.&lt;/p&gt;&#xA;&lt;p&gt;This is probably the most complicated tag we&amp;rsquo;ve written, but it&amp;rsquo;s pretty logical. Here&amp;rsquo;s a quick example;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolios</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/portfolios/</link>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/portfolios/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;what-is-a-portfolio&#34;&gt;What is a Portfolio?&lt;/h1&gt;&#xA;&lt;p&gt;Put simply, a portfolio is a collection of work, achievements, projects, and anything else that you might want to show off to the world. Some might think portfolios are only linked to art, but that&amp;rsquo;s only half the picture. People who work in stocks have their own &amp;ldquo;stock portfolios&amp;rdquo; that contain all of the stocks they follow; some athletes keep a highlight reel, which is just a portfolio of videos showing off their best moves. The uses for a portfolio are endless, and the more creative &amp;amp; engaging it is the better impact it will have on those who are looking at it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 3</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-3/</link>
       <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-3/</guid>
-      <description>&lt;hr&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;&#xA;&lt;p&gt;Used nearly everyday in numerous settings, lists help organize and structure data in a neat and sequential way. There are two main types;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordered Lists:&lt;/strong&gt; Where each item in the list is ordered in a specific way based on numbers; think of a recipe, or any other set of instructions.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Unordered Lists:&lt;/strong&gt; Lists that begin with a bullet point where the order of the content doesn&amp;rsquo;t matter.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a third, not so often used type we&amp;rsquo;ll quickly look at towards the end.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTML &amp; CSS - Chapter 2</title>
