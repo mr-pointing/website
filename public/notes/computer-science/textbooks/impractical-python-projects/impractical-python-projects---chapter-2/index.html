@@ -6,7 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content=" Project #2: Finding Palingram Spells" />
+<meta name="description" content=" Project #2: Finding Palingram Spells This project is going to be pretty difficult unless we elaborate on some vocab words. First off, a palindrome is any word that can be spelled the same both forwards and backwards; think of radar, kayak, or madam. The next step up would be if we had an entire sentence that can be spelled the same forwards or backwards, which is called a palingram. The motivation for this project is based off a super hero called Zatanna, who got cursed to only speak and cast spells in palingrams. In order for her to fight as a super-hero, she would need a plethora of palingrams to choose from, like stack cats, or puff up.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, python" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -45,24 +46,24 @@
 
 
   <meta itemprop="name" content="Impractical Python Projects - Chapter 2">
-  <meta itemprop="description" content="Project #2: Finding Palingram Spells">
+  <meta itemprop="description" content="Project #2: Finding Palingram Spells This project is going to be pretty difficult unless we elaborate on some vocab words. First off, a palindrome is any word that can be spelled the same both forwards and backwards; think of radar, kayak, or madam. The next step up would be if we had an entire sentence that can be spelled the same forwards or backwards, which is called a palingram. The motivation for this project is based off a super hero called Zatanna, who got cursed to only speak and cast spells in palingrams. In order for her to fight as a super-hero, she would need a plethora of palingrams to choose from, like stack cats, or puff up.">
   <meta itemprop="datePublished" content="2026-02-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-02-06T00:00:00+00:00">
-  <meta itemprop="wordCount" content="5">
+  <meta itemprop="wordCount" content="1964">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Python">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="Impractical Python Projects - Chapter 2">
-  <meta name="twitter:description" content="Project #2: Finding Palingram Spells">
+  <meta name="twitter:description" content="Project #2: Finding Palingram Spells This project is going to be pretty difficult unless we elaborate on some vocab words. First off, a palindrome is any word that can be spelled the same both forwards and backwards; think of radar, kayak, or madam. The next step up would be if we had an entire sentence that can be spelled the same forwards or backwards, which is called a palingram. The motivation for this project is based off a super hero called Zatanna, who got cursed to only speak and cast spells in palingrams. In order for her to fight as a super-hero, she would need a plethora of palingrams to choose from, like stack cats, or puff up.">
 
 
 
     <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-2/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="Impractical Python Projects - Chapter 2">
-  <meta property="og:description" content="Project #2: Finding Palingram Spells">
+  <meta property="og:description" content="Project #2: Finding Palingram Spells This project is going to be pretty difficult unless we elaborate on some vocab words. First off, a palindrome is any word that can be spelled the same both forwards and backwards; think of radar, kayak, or madam. The next step up would be if we had an entire sentence that can be spelled the same forwards or backwards, which is called a palingram. The motivation for this project is based off a super hero called Zatanna, who got cursed to only speak and cast spells in palingrams. In order for her to fight as a super-hero, she would need a plethora of palingrams to choose from, like stack cats, or puff up.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -156,6 +157,205 @@
             <div class="post-content">
                 <hr>
 <h1 id="project-2-finding-palingram-spells">Project #2: Finding Palingram Spells</h1>
+<p>This project is going to be pretty difficult unless we elaborate on some vocab words. First off, a <em>palindrome</em> is any word that can be spelled the same both forwards and backwards; think of radar, kayak, or madam. The next step up would be if we had an entire sentence that can be spelled the same forwards or backwards, which is called a <em>palingram</em>. The motivation for this project is based off a super hero called Zatanna, who got cursed to only speak and cast spells in palingrams. In order for her to fight as a super-hero, she would need a plethora of palingrams to choose from, like <em>stack cats</em>, or <em>puff up</em>.</p>
+<p>What we&rsquo;re going to do in this project is build a program that will take in a dictionary from the internet and use it to discover palingrams. Then we&rsquo;ll use a new tool set to analyze the performance of our code, followed by how to pick up good &ldquo;aggressive&rdquo; phrases that will work well as spells for Zatanna.</p>
+<h2 id="getting-a-dictionary">Getting a Dictionary</h2>
+<p>When I say dictionary, you probably imagine a book with not only words in it, but things like pronunciations, definitions, and all sorts of things of that nature. However, for the purposes of this project, we&rsquo;re only going to use a file with the actual words in it, nothing else. All of that other stuff will only get in our way, since we&rsquo;re trying to just find palingrams. We&rsquo;re going to follow along with the exact steps the author of this text took, <a href="http://wordlist.aspell.net/12dicts/">here</a>. For an extra challenge, try using one of the other files provided in table 2-1 of the text!</p>
+<h3 id="handling-exceptions">Handling Exceptions</h3>
+<p>Something we&rsquo;ve looked at this year without going into too much detail about is handling exceptions. <em>Exceptions</em> are errors that happen during program execution, like if your program tries to open a file that doesn&rsquo;t exist or have permission to open. To avoid most issues, it&rsquo;s best practice to use a <code>try &amp; except</code> clause whenever opening a file. If you want more detail on how exactly this works, check out <a href="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-7/">The Python Tutorial Notes - Chapter 7</a> &amp; <a href="https://mrpointing.com/notes/computer-science/python/python-tutorial/the-python-tutorial-notes---chapter-8/">The Python Tutorial Notes - Chapter 8</a>.</p>
+<p>The syntax is as follows;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">with</span> open(file) <span style="color:#66d9ef">as</span> in_file:
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e"># Do something</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">IOError</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Error opening </span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">. Terminating program.&#34;</span>)
+</span></span><span style="display:flex;"><span>	sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>One thing I want to point out quickly is that in this specific example, we only hit the exception clause given our error is an Input/Output error, which is why we say <code>IOError</code>. If any other error occurs, it won&rsquo;t be caught.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;Load a text file as a list.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Arguments:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">- Text file name (and directory path, if needed)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Exceptions:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">- IOError if filename not found
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">- A list of all words in a text file in lower case.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Requires:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">- sys
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load</span>(file):
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;&#34;Open a text file &amp; return a list of lower case strings&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">with</span> open(file) <span style="color:#66d9ef">as</span> in_file:
+</span></span><span style="display:flex;"><span>			loaded_txt <span style="color:#f92672">=</span> in_file<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>			loaded_txt <span style="color:#f92672">=</span> [x<span style="color:#f92672">.</span>lower() <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> loaded_txt]
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> loaded_txt
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">IOError</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Error opening </span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">. Terminating program.&#34;</span>)
+</span></span><span style="display:flex;"><span>		sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">1</span>) 
+</span></span></code></pre></div><p>Based on our experience, we know like 90% of this code. I just want to explain the first call with <code>loaded_txt</code>; <code>.read()</code> will read in from the file, <code>.strip()</code> tells the read-in data to delete any leading or trailing whitespace, and <code>.split()</code> actually makes the <code>string</code> being returned into a <code>list</code>, making splits using the newline-character.</p>
+<h2 id="finding-palindromes">Finding Palindromes</h2>
+<p>Now that we have our words, we should perform the easier operation and try to find palindromes before we move onto palingrams. This will be our next objective.</p>
+<p>The strategy is relatively simple in discussion: check every word to see if it&rsquo;s the same both forwards and reversed. How can we do this? Slicing of course! I&rsquo;ve taught you the basics of slicing, now we should use it in a more complex setting. A really easy way to get the reversed version of any word is by slicing like this;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>word <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Loughlin&#34;</span>
+</span></span><span style="display:flex;"><span>print(word[:])
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Loughlin</span>
+</span></span><span style="display:flex;"><span>print(word[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># nilhguoL</span>
+</span></span></code></pre></div><p>Our pseudocode here is also pretty basic:</p>
+<ol>
+<li>Load in the dictionary file</li>
+<li>Initialize a list to hold all palindromes</li>
+<li>Loop through the dictionary file</li>
+<li>Check each loop iterations word against a reversed version of itself
+<ol>
+<li>If they are the same, add that word to the palindrome list</li>
+<li>If they are not, continue the loop</li>
+</ol>
+</li>
+<li>Print the list of palindromes</li>
+</ol>
+<p>I feel like we could write this code on our own, so try to give it a shot without looking at the solution below&hellip;how&rsquo;d it go? Does it work? If no, try again! If you tried again and still missed the mark, don&rsquo;t stress, let&rsquo;s take a look at the texts&rsquo; solution;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;Generates a list of palindromes based off a dictionary file&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> load_dictionary
+</span></span><span style="display:flex;"><span>word_list <span style="color:#f92672">=</span> load_dictionary<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;2of4brif.txt&#39;</span>)
+</span></span><span style="display:flex;"><span>pali_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> word_list:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> len(word) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> word <span style="color:#f92672">==</span> word[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>		pali_list<span style="color:#f92672">.</span>append(word)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Number of plaindromes found: </span><span style="color:#e6db74">{</span>len(pali_list)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#f92672">*</span>pali_list, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>) 
+</span></span></code></pre></div><h2 id="finding-palingrams">Finding Palingrams</h2>
+<p>To keep this from getting a little too complex, we&rsquo;ll just look for two word palingrams. This gives us a nice relationship between our words; one word will be our <em>core</em> word, or the word that set&rsquo;s up for the other word to complete the palindromic-sequence.</p>
+<p>Now, to fully understand how to capture and compare against this core word is a lot of logic, so make sure you&rsquo;re strapped in. We can make some inferences about our core word that will help us better understand how to actually perform our search;</p>
+<ol>
+<li>It can have odd or even number of letters</li>
+<li>One slice of our word (called the contiguous part) spells another word when read backwards
+<ul>
+<li><em>Think of how NURSES has NUR to begin, or RUN backwards!</em></li>
+</ul>
+</li>
+<li>The slice can take up a portion or all of the core word</li>
+<li>The OTHER part of your core word that is not made up of the contiguous part is also a palindromic sequence
+<ul>
+<li><em>Think of how in NURSES, since NUR spells run, SES is also a palindromic sequence!</em></li>
+</ul>
+</li>
+<li>The palindromic sequence <em>can</em> take up a portion or all of the core word</li>
+<li>The palindromic sequence does <strong>not</strong> have to be a real word</li>
+<li>The two parts (contiguous and palindromic) cannot overlap or share letters</li>
+<li>The sequence is reversible</li>
+</ol>
+<p>If you&rsquo;re confused, that&rsquo;s okay, it takes some deep thinking to wrap your whole head around. To add onto the confusion, let&rsquo;s throw in another condition; <em>if the reversed word takes up the whole core word and is NOT a palindrome, it&rsquo;s a <strong>semordnilap</strong>, not a palindrome.</em> A semordnilap is a palindrome that spells a <strong>different</strong> word than when spelled backwards; think of <strong>bats</strong> and <strong>stab</strong>, or <strong>flow</strong> and <strong>wolf</strong>.</p>
+<p>So what we&rsquo;re going to attempt to do is check a word for these sequences. We check each word one letter at a time, both from the end and beginning of the word. If you think about it, if we have a single word with a semordnilap in it, we just need to add the reversed word to the core word to create a palindrome. In <strong>STACK</strong>*, we see that cats is a reversed word in it, and since the <em>k</em> is technically a palindromic-sequence since it&rsquo;s a single word, we can add both stack <em>and</em> cats as a combo to our list of palindromes. Again, totally fine to be slightly confused. I think it will start to make more sense after we think about our pseudocode and finally our code;</p>
+<ol>
+<li>Load our digital dictionary</li>
+<li>Start an empty list to hold our palingrams</li>
+<li>Loop through the list of words
+<ol>
+<li>retrieve the length of the word</li>
+<li>Use a new variable to hold word reversed</li>
+<li>Check to make sure the length is greater than 1
+<ol>
+<li>Begin to loop through the letters of each word
+<ol>
+<li>If the reversed word portion at the front of the core word is in the original word list and the letters after it form a palindromic sequence:
+<ol>
+<li>Append the word and reversed word to palingram list</li>
+</ol>
+</li>
+<li>If the reversed word portion at the end of the core word is in the original word list and the letters before it form a palindromic sequence:
+<ol>
+<li>Append the reversed word and word to palingram list</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Sort palingram list in alphabetical order</li>
+<li>Print all word-pair palingrams from list</li>
+</ol>
+<p>If you are still confused (I know I am) follow along with the code below and try to trace a word or two through it;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;Find all word-pair palingrams in a dictionary file&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> load_dictionary
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>word_list <span style="color:#f92672">=</span> load_dictionary<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;2of4brif.txt&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_palingrams</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;&#34;Find the dictionary palingrams&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	pali_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> word_list:
+</span></span><span style="display:flex;"><span>		end <span style="color:#f92672">=</span> len(word)
+</span></span><span style="display:flex;"><span>		rev_word <span style="color:#f92672">=</span> word[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> end <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(end):
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span> word[i:] <span style="color:#f92672">==</span> rev_word[:end<span style="color:#f92672">-</span>i] <span style="color:#f92672">and</span> rev_word[end<span style="color:#f92672">-</span>i:] <span style="color:#f92672">in</span> word_list:
+</span></span><span style="display:flex;"><span>					pali_list<span style="color:#f92672">.</span>append((word, rev_word[end<span style="color:#f92672">-</span>i:]))
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span> word[:i] <span style="color:#f92672">==</span> rev_word[end<span style="color:#f92672">-</span>i:] <span style="color:#f92672">and</span> rev_word[:end<span style="color:#f92672">-</span>i] <span style="color:#f92672">in</span> word_list:
+</span></span><span style="display:flex;"><span>					pali_list<span style="color:#f92672">.</span>append((rev_word[:end<span style="color:#f92672">-</span>i], word))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> pali_list
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>palingrams <span style="color:#f92672">=</span> find_palingrams()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sort palingrams</span>
+</span></span><span style="display:flex;"><span>palingrams_sorted <span style="color:#f92672">=</span> sorted(palingrams)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Display list of palingrams</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Number of palingrams = </span><span style="color:#e6db74">{</span>len(palingrams_sorted)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> first, second <span style="color:#f92672">in</span> palingrams_sorted:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>first<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{</span>second<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><h2 id="profiling">Profiling</h2>
+<p>Before we decide whether or not the code is successful, we should run some diagnostic testing to see if there are areas in which we can improve. For one, depending on your machine, the process we just wrote can take a good amount of time. On the author&rsquo;s machine, it took about 3 minutes. On my machine, it was probably over a minute. We don&rsquo;t have to settle for approximations; we can run a test ourselves that will not only tell us exactly how long it takes, but also in which areas we are spending the most time so we can see and improve our code.</p>
+<p>We&rsquo;re going to use a library called <code>cProfile</code>, which is built in the C language to run profiles on code. Create a new python file called <code>cprofile_test.py</code> and insert the following code;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> cProfile
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> find_palingrams
+</span></span><span style="display:flex;"><span>cProfile<span style="color:#f92672">.</span>run(<span style="color:#e6db74">&#39;find_palingrams.find_palingrams()&#39;</span>)
+</span></span></code></pre></div><p>Run it and you should get something similar to what I have below;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#ae81ff">62622</span> <span style="color:#66d9ef">function</span> calls in 49.976 seconds
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   Ordered by: standard name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   ncalls  tottime  percall  cumtime  percall filename:lineno<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">1</span>    0.000    0.000   49.976   49.976 &lt;string&gt;:1<span style="color:#f92672">(</span>&lt;module&gt;<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">1</span>   49.969   49.969   49.976   49.976 find_palingrams.py:8<span style="color:#f92672">(</span>find_palingrams<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">1</span>    0.000    0.000   49.976   49.976 <span style="color:#f92672">{</span>built-in method builtins.exec<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">60388</span>    0.005    0.000    0.005    0.000 <span style="color:#f92672">{</span>built-in method builtins.len<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2230</span>    0.001    0.000    0.001    0.000 <span style="color:#f92672">{</span>method <span style="color:#e6db74">&#39;append&#39;</span> of <span style="color:#e6db74">&#39;list&#39;</span> objects<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">1</span>    0.000    0.000    0.000    0.000 <span style="color:#f92672">{</span>method <span style="color:#e6db74">&#39;disable&#39;</span> of <span style="color:#e6db74">&#39;_lsprof.Profiler&#39;</span> objects<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>So I was a little off, my code ran in just under a minute. Pretty good! But we can definitely do better. We see it ran for 49 seconds, and found 2,230 palingrams (we know that&rsquo;s what it is because it says we used the <code>append</code> that many times!). Another way we could find time it took is with <code>time.time()</code>, which should be called before and after we use the function we want to time, like so;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
+</span></span><span style="display:flex;"><span>palingrams <span style="color:#f92672">=</span> find_palingrams()
+</span></span><span style="display:flex;"><span>end_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
+</span></span></code></pre></div><p>So we know from the above that moving through out list is the likely cause of our function taking so long. We want to alleviate that, and one way we can is using a different structure to hold our words in a set instead of a list. We know that sets have a faster lookup time, which is all we&rsquo;re going to do with our list of words. It&rsquo;s actually a really easy fix as far as our code goes, here is <em><strong>just the find_palingram function fixed</strong></em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_palingrams</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;&#34;Find dictionary palingrams.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	pali_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>	words <span style="color:#f92672">=</span> set(word_list)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> words:
+</span></span><span style="display:flex;"><span>		end <span style="color:#f92672">=</span> len(word)
+</span></span><span style="display:flex;"><span>		rev_word <span style="color:#f92672">=</span> word[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> end <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(end):
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span> word[i:] <span style="color:#f92672">==</span> rev_word[:end<span style="color:#f92672">-</span>i] <span style="color:#f92672">and</span> rev_word[end<span style="color:#f92672">-</span>i:] <span style="color:#f92672">in</span> words:
+</span></span><span style="display:flex;"><span>					pali_list<span style="color:#f92672">.</span>append((word, rev_word[end<span style="color:#f92672">-</span>i:]))
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span> word[:i] <span style="color:#f92672">==</span> rev_word[end<span style="color:#f92672">-</span>i:] <span style="color:#f92672">and</span> rev_word[:end<span style="color:#f92672">-</span>i] <span style="color:#f92672">in</span> words:
+</span></span><span style="display:flex;"><span>					pali_list<span style="color:#f92672">.</span>append((rev_word[:end<span style="color:#f92672">-</span>i], word))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> pali_list
+</span></span></code></pre></div><p>Now try running it and see how much faster it gets&hellip;for me, I was able to get it to work in <strong>0.07</strong> seconds! Crazy fast.</p>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-3/">Chapter 3</a></p>
 
             </div>
         </article>

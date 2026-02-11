@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Impractical Python Projects - Chapter 3</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-3/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-3/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;project-3-solving-anagrams&#34;&gt;Project #3: Solving Anagrams&lt;/h1&gt;</description>
+    </item>
     <item>
       <title>Impractical Python Projects - Chapter 2</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-2/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-2/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;project-2-finding-palingram-spells&#34;&gt;Project #2: Finding Palingram Spells&lt;/h1&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;project-2-finding-palingram-spells&#34;&gt;Project #2: Finding Palingram Spells&lt;/h1&gt;&#xA;&lt;p&gt;This project is going to be pretty difficult unless we elaborate on some vocab words. First off, a &lt;em&gt;palindrome&lt;/em&gt; is any word that can be spelled the same both forwards and backwards; think of radar, kayak, or madam. The next step up would be if we had an entire sentence that can be spelled the same forwards or backwards, which is called a &lt;em&gt;palingram&lt;/em&gt;. The motivation for this project is based off a super hero called Zatanna, who got cursed to only speak and cast spells in palingrams. In order for her to fight as a super-hero, she would need a plethora of palingrams to choose from, like &lt;em&gt;stack cats&lt;/em&gt;, or &lt;em&gt;puff up&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impractical Python Projects - Chapter 1</title>
@@ -52,7 +59,7 @@
       <description>&lt;hr&gt;&#xA;&lt;p&gt;As we know from our &lt;a href=&#34;https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/&#34;&gt;previous lessons&lt;/a&gt;, we should split our data into two types; training and testing. So far, we&amp;rsquo;ve just been using all of our data when making our models. Thankfully, &lt;code&gt;sklearn&lt;/code&gt; can help us out a lot here. Make sure to grab the dataset from classroom and let&amp;rsquo;s dive in.&lt;/p&gt;&#xA;&lt;p&gt;As always, load in your data and our libraries,&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; pd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; plt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;matplotlib inline&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;usedcarprices.csv&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s visualize our data so we can tell what type of model we should use;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Impractical Python Projects - Preface</title>
+      <title>Impractical Python Projects</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/</link>
       <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/</guid>

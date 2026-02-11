@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Impractical Python Projects - Chapter 3</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-3/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-3/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;project-3-solving-anagrams&#34;&gt;Project #3: Solving Anagrams&lt;/h1&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 5</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-5/</link>
@@ -66,7 +73,7 @@
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;structure&#34;&gt;Structure&lt;/h1&gt;&#xA;&lt;p&gt;What do we make websites for? Mostly for online resources of physical things we need and look for in our daily lives. A main component of everything we use and consume is &lt;em&gt;structured&lt;/em&gt;. The structure of our web page takes on many forms, but for now let&amp;rsquo;s focus on the most basic type; the building blocks that construct almost every web page.&lt;/p&gt;&#xA;&lt;p&gt;When thinking about how we should structure our pages, we can always take a look at real life examples in print media for what you&amp;rsquo;re looking for. In it&amp;rsquo;s most basic form, something like a newspaper, we have a title, heading or two, and sub-paragraphs with images or quotes. That&amp;rsquo;s a great place for us to start.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Impractical Python Projects - Preface</title>
+      <title>Impractical Python Projects</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/</link>
       <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/</guid>

@@ -7,20 +7,27 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computerscience</title>
       <link>https://mrpointing.com/tags/computerscience/</link>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/computerscience/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
       <link>https://mrpointing.com/tags/python/</link>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Textbook</title>
+      <link>https://mrpointing.com/tags/textbook/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/textbook/</guid>
       <description></description>
     </item>
     <item>
@@ -28,13 +35,6 @@
       <link>https://mrpointing.com/tags/html/</link>
       <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/html/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Textbook</title>
-      <link>https://mrpointing.com/tags/textbook/</link>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/textbook/</guid>
       <description></description>
     </item>
     <item>
