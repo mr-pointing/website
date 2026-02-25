@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Extra Markup There&rsquo;s a lot we left out in the previous chapters. Again, HTML is not a challenging language to pick up and use, but there are some nuances to it we glanced over to just begin writing. In this chapter, we&rsquo;ll quickly go over some of the semi-important things we&rsquo;ve moved past, as well as introduce some more advanced topics before we move into the CSS portion of this course.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, html, textbook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-8/" />
+
+
+    <title>
+        
+            HTML &amp; CSS - Chapter 8 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.42bc4753416907cd4d426f337ec77c315cab5fdcabe850c0ea0a747a2f6744a7.css" integrity="sha256-QrxHU0FpB81NQm8zfsd8MVyrX9yr6FDA6gp0ei9nRKc=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="HTML & CSS - Chapter 8">
+  <meta itemprop="description" content="Extra Markup There’s a lot we left out in the previous chapters. Again, HTML is not a challenging language to pick up and use, but there are some nuances to it we glanced over to just begin writing. In this chapter, we’ll quickly go over some of the semi-important things we’ve moved past, as well as introduce some more advanced topics before we move into the CSS portion of this course.">
+  <meta itemprop="datePublished" content="2026-02-17T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-02-17T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1283">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Html,Textbook">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="HTML & CSS - Chapter 8">
+  <meta name="twitter:description" content="Extra Markup There’s a lot we left out in the previous chapters. Again, HTML is not a challenging language to pick up and use, but there are some nuances to it we glanced over to just begin writing. In this chapter, we’ll quickly go over some of the semi-important things we’ve moved past, as well as introduce some more advanced topics before we move into the CSS portion of this course.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-8/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="HTML & CSS - Chapter 8">
+  <meta property="og:description" content="Extra Markup There’s a lot we left out in the previous chapters. Again, HTML is not a challenging language to pick up and use, but there are some nuances to it we glanced over to just begin writing. In this chapter, we’ll quickly go over some of the semi-important things we’ve moved past, as well as introduce some more advanced topics before we move into the CSS portion of this course.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2026-02-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-17T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Html">
+    <meta property="article:tag" content="Textbook">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2026-02-17 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-8/">HTML &amp; CSS - Chapter 8</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="extra-markup">Extra Markup</h1>
+<p>There&rsquo;s a lot we left out in the previous chapters. Again, HTML is not a challenging language to pick up and use, but there are some nuances to it we glanced over to just begin writing. In this chapter, we&rsquo;ll quickly go over some of the semi-important things we&rsquo;ve moved past, as well as introduce some more advanced topics before we move into the CSS portion of this course.</p>
+<h2 id="version">Version</h2>
+<p>The HTML we&rsquo;ve been writing is technically called HTML5. Each new version on HTML improves upon the last iteration, which is the whole purpose of version management. Before this was XHTML 1.0, and before that was HTML4. HTML5 is a lot looser than the previous versions, and at the time of the text&rsquo;s printing it technically wasn&rsquo;t even finished. The fully complete specification sheet going over all of HTML5 in painful detail can be found <a href="https://www.w3.org/TR/2011/WD-html5-20110405/">here</a>.</p>
+<p>One of the changes that we can really thank HTML5 for was the introduction of an easier DOCTYPE declaration. Like we know from every page we&rsquo;ve written thus far, declaring a <code>DOCTYPE</code> on the first line of any HTML file set&rsquo;s up that file to be read as HTML. In earlier versions, we had to write out exactly which type of standards we were following by linking to them. Here&rsquo;s an example of what it looked like in HTML4;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html PUBLIC
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;-//W3C//DTD HTML 4.01 Transitional//EN&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;http://www.w3.org/TR/html4/loose.dtd&#34;&gt;</span>
+</span></span></code></pre></div><h2 id="comments-ids-and-classes">Comments, IDs, and Classes</h2>
+<p>The first of the extra info, is making a comment. If you&rsquo;ve taken a programming class with me before, you know I like a file to be not only well formatted, but well documented. Going forward, we should leave comments in all of our work explaining who we are, what we&rsquo;re displaying, and leaving info on complex or interesting decisions. Comments are left between the <code>&lt;!--</code> opening and <code>--&gt;</code> closing tag. Again, comments will not show up in the actual web-page but as a part of the text in the file, that can be read by either opening the file up with a text editor (like notepad++) or viewing the developer tool section of your browser.</p>
+<p>Something I should have already mentioned at this point, especially with the last chapter, is the use of the <code>id</code> attribute with HTML elements. This will start to make more sense in the next chapter with the introduction of CSS, but essentially if you want to give an individual element in your web page a unique identifier, the <code>id</code> attribute is the way to go. Here&rsquo;s a standard element with an <code>id</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;beginning&#34;</span>&gt;It was the best of times...&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ending&#34;</span>&gt;...it was the worst of times.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><p>Once we start styling our pages to look nice, we&rsquo;ll find a lot more use for the <code>id</code> attribute. Another way to identify elements is with the <code>class</code> attribute. If <code>id</code> is for individual elements, <code>class</code> is used for multiple elements that should be treated the same. It works the exact same way an <code>id</code> attribute works, but multiple elements will have the same attribute rather than having each one contain a new <code>id</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;There are only some sentences I want to be changed&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;action&#34;</span>&gt;Which ones exactly?&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;I think you&#39;ll be able to tell the difference...&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;action&#34;</span>&gt;...I hope!&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><h2 id="grouping-elements">Grouping Elements</h2>
+<p>We&rsquo;ve discussed this way early on, but we know that some tags create new lines while others don&rsquo;t. We should call any element that creates a new line a <em>block element</em>, and anyone that doesn&rsquo;t an <em>inline element</em>. One thing we haven&rsquo;t touched on is how to actually group elements together into one designated area.</p>
+<p>Up until this point, we&rsquo;ve written our code in either the <code>body</code> of <code>head</code> of our page, mostly the <code>body</code>. Just separating into two general parts is just too messy for most web developers. We should have some way to differentiate parts of our page from one another, especially now that we&rsquo;re about to introduce styling. The best way to do this is to use a <code>div</code> tag. This <code>div</code> acts like a giant block element, that you can put anything inside. Think of it as an extension of your <code>body</code> tag. Want all of the elements of your title and subheadings in one neat section? Place them in a <code>div</code>. Want to ensure your paragraphs have unique spacing from the other sections of your page? Use a <code>div</code> tag. There are so many ways to use it, there is no wrong way (unless your <code>div</code> is the entire page!).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heading&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/logo.gif&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mr. Pointing&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;index.html&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bio.html&#34;</span>&gt;About&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;works.html&#34;</span>&gt;Works&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;contact.html&#34;</span>&gt;Contact&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p>Another tag we might not use that much but you should know about is the <code>span</code> tag. It&rsquo;s almost the exact opposite of a <code>div</code> tag; instead of using it to create a newline block for a list of elements, it&rsquo;s a way of accessing part of your inline elements without having to create a new line or use a different tag you don&rsquo;t necessarily need. Here&rsquo;s a basic example; imagine you want to have some styling set to the class called <code>art</code>, that you only want to affect one word in your <code>p</code> tag.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;Some might say that &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;art&#34;</span>&gt;art&lt;/<span style="color:#f92672">span</span>&gt; is dead. I would argue the contrary!&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><h2 id="outside-and-meta-data">Outside and Meta Data</h2>
+<p>We have some content that exists on another webpage we want to include on our page. A link is fine, but sometimes we can do more. For example, we want to include a Google Map or YouTube video. One nice way to accomplish this is using the <code>iframe</code> element, which will allow you to integrate the content we just brought up into your page. You provide a <code>src</code> attribute, as well as a <code>height</code> and <code>width</code> and you&rsquo;re good to go. Most places nowadays will actually give you a copy/paste portion of code to place in your page, to save you the difficulty of writing it all out from scratch. Fair warning, due to a lot of changes, getting YouTube to work is somewhat challenging as their embed feature never works on my local machine in testing.</p>
+<p>Finally, let&rsquo;s end the chapter on something I&rsquo;ve been hinting at since chapter 1. We only lightly discussed what goes in the <code>head</code> tag. I told you that it mostly contains information about your page, that the user doesn&rsquo;t end up seeing. It can also contain other things, but the main portion of your <code>head</code> tag will contain <code>meta</code> tags. <code>meta</code> tags contain the literal data about your page that is mostly seen by the browser and search engines. The tag itself is a one-liner, meaning it opens and closes in the same tag. There are some attributes we should look at though;</p>
+<ol>
+<li><code>name=&quot;description&quot;</code>: used to pass into the <code>content</code> attribute a short description of your page.</li>
+<li><code>name=&quot;keywords&quot;</code>: used to pass into the <code>content</code> attribute a string of keywords for your site.</li>
+<li><code>name=&quot;robots&quot;</code>: decides whether or not your site will be indexable by search engines. If you don&rsquo;t want your page to be used by engines like Google, use <code>contents=&quot;nofollow&quot;</code>.</li>
+<li><code>http-equiv=&quot;author&quot;</code>: used to pass into the <code>content</code> attribute the name of the author of the page (you!)</li>
+<li><code>http-equiv=&quot;pragma&quot;</code>: used to decide if you want your page cached by the machine&rsquo;s local browser. To not allow it, use <code>content=&quot;no-cache&quot;</code>.</li>
+</ol>
+<h1 id="summary">Summary</h1>
+<ul>
+<li>We are currently on HTML5</li>
+<li>Comments should be used to display important information about choices made on your page</li>
+<li><code>id</code> tags are for unique elements, <code>class</code> tags are for multiple elements</li>
+<li><code>div</code> tags should be used to group block elements together, while <code>span</code> should be used to keep all block elements inline</li>
+<li><code>meta</code> tags describe the information about a page used by a browser and/or search engine</li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/">Chapter 9</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/html/">html</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true, resetStyles: true });
+    });
+</script>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

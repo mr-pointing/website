@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/notes/computer-science/textbooks/html--css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS - Chapter 9</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;flash-video--audio&#34;&gt;Flash, Video &amp;amp; Audio&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 8</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-8/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-8/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;extra-markup&#34;&gt;Extra Markup&lt;/h1&gt;&#xA;&lt;p&gt;There&amp;rsquo;s a lot we left out in the previous chapters. Again, HTML is not a challenging language to pick up and use, but there are some nuances to it we glanced over to just begin writing. In this chapter, we&amp;rsquo;ll quickly go over some of the semi-important things we&amp;rsquo;ve moved past, as well as introduce some more advanced topics before we move into the CSS portion of this course.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 7</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-7/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-7/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;forms&#34;&gt;Forms&lt;/h1&gt;&#xA;&lt;p&gt;Once again, we stumble across another staple of HTML, the &lt;em&gt;form&lt;/em&gt;. We understand any form to be a space where there are boxes or lines that allow user input. These can be in the form of text boxes, drop-down menus, scales, whatever you can think of. Like most HTML elements, the uses are numerous. Whether you&amp;rsquo;re collecting info for a newsletter, or filling out a request form, forms make all of that data collection trivial.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 6</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-6/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-6/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;tables&#34;&gt;Tables&lt;/h1&gt;&#xA;&lt;p&gt;Another staple of HTML pages, tables are used all over the place. Some pages like stock websites or sports information is full of tables, while some might have one or two for a calendar or schedule. Pretty much anytime we have complex data that needs to be displayed, columns and rows are the way to go in most cases. We also call it a &lt;em&gt;grid format&lt;/em&gt;, with each box of the grid being a &lt;em&gt;table cell&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 5</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-5/</link>

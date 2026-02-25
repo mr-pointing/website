@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Tables Another staple of HTML pages, tables are used all over the place. Some pages like stock websites or sports information is full of tables, while some might have one or two for a calendar or schedule. Pretty much anytime we have complex data that needs to be displayed, columns and rows are the way to go in most cases. We also call it a grid format, with each box of the grid being a table cell.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, html" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-6/" />
+
+
+    <title>
+        
+            HTML &amp; CSS - Chapter 6 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.42bc4753416907cd4d426f337ec77c315cab5fdcabe850c0ea0a747a2f6744a7.css" integrity="sha256-QrxHU0FpB81NQm8zfsd8MVyrX9yr6FDA6gp0ei9nRKc=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="HTML & CSS - Chapter 6">
+  <meta itemprop="description" content="Tables Another staple of HTML pages, tables are used all over the place. Some pages like stock websites or sports information is full of tables, while some might have one or two for a calendar or schedule. Pretty much anytime we have complex data that needs to be displayed, columns and rows are the way to go in most cases. We also call it a grid format, with each box of the grid being a table cell.">
+  <meta itemprop="datePublished" content="2026-02-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-02-03T00:00:00+00:00">
+  <meta itemprop="wordCount" content="621">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Html">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="HTML & CSS - Chapter 6">
+  <meta name="twitter:description" content="Tables Another staple of HTML pages, tables are used all over the place. Some pages like stock websites or sports information is full of tables, while some might have one or two for a calendar or schedule. Pretty much anytime we have complex data that needs to be displayed, columns and rows are the way to go in most cases. We also call it a grid format, with each box of the grid being a table cell.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-6/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="HTML & CSS - Chapter 6">
+  <meta property="og:description" content="Tables Another staple of HTML pages, tables are used all over the place. Some pages like stock websites or sports information is full of tables, while some might have one or two for a calendar or schedule. Pretty much anytime we have complex data that needs to be displayed, columns and rows are the way to go in most cases. We also call it a grid format, with each box of the grid being a table cell.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2026-02-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-03T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Textbook">
+    <meta property="article:tag" content="Html">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2026-02-03 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-6/">HTML &amp; CSS - Chapter 6</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="tables">Tables</h1>
+<p>Another staple of HTML pages, tables are used all over the place. Some pages like stock websites or sports information is full of tables, while some might have one or two for a calendar or schedule. Pretty much anytime we have complex data that needs to be displayed, columns and rows are the way to go in most cases. We also call it a <em>grid format</em>, with each box of the grid being a <em>table cell</em>.</p>
+<h2 id="syntax">Syntax</h2>
+<p>Every table starts with a <code>table</code> tag, that acts like our other container-type tags (think of <code>body</code>, <code>head</code>, and <code>ul</code> or <code>ol</code>).  The table is made up of another container type tag, <code>tr</code>, which creates each individual row of the table. Then, for each column, you populate it with a <code>td</code> tag, that you put the content of that table cell into. A bit confusing at first, but here&rsquo;s a basic example;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;1&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;2&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;3&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;2&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;4&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;6&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;3&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;6&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;9&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div><p>Since this is the most complex structure we&rsquo;ve seen so far, be sure to play around with the layout to ensure you understand what&rsquo;s going on. Depending on which browser you&rsquo;re using, you might have table borders, which are just lines that separate each table cell. Some browsers do, some don&rsquo;t. We&rsquo;ll learn how to control the look of our tables in the CSS portion of this text.</p>
+<p>Most of the time, just content in a grid format is not enough. We should properly describe the content in each row and column, with table headers. The best way to do this is a little weird, so let&rsquo;s look at an example first then talk about it;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span>&gt;&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">scope</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;1&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">scope</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;2&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">scope</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;3&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">scope</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;1&lt;/<span style="color:#f92672">th</span>&gt; 
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;1&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;2&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;3&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">scope</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;2&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;2&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;4&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;6&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">scope</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;3&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;3&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;6&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;9&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div><p>So here&rsquo;s what we did; if you couldn&rsquo;t tell already, our table is a multiplication table. We used table headers to describe the number we&rsquo;re multiplying. One thing you should be aware of immediately is that we added a whole row at the beginning full of headers. We even left the first one empty, which is hard to understand why until you see it used, where the top most left cell should ALWAYS be empty when using headers.</p>
+<h2 id="spanning-rows-and-columns">Spanning Rows and Columns</h2>
+<p>These are mostly used in schedule creation, but you might have to make one for your portfolio so we should go over how to do this. If you pass in a special attribute called <code>colspan</code> or <code>rowspan</code> with a number, the table cell will take up that numerical amount of columns or rows, respectfully.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span>&gt;&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span>&gt;9am&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span>&gt;10am&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span>&gt;11am&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span>&gt;12am&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span>&gt;Monday&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">colspan</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span>&gt;Geography&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;Math&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;Art&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">th</span>&gt;Tuesday&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">colspan</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span>&gt;Gym&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">td</span>&gt;Computer Science&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div><h2 id="long-tables">Long Tables</h2>
+<p>If you have enough content that requires maybe 10 or more rows, you might want to consider using a long table. They are set up extremely similar ways, but with a few more tags to keep things organized. We use <code>thead</code> tags to contain the header, <code>tbody</code> to contain the body, and <code>tfoot</code> for the footer or end result of the table. These are best used with calculations, since the footer can act like a summation row.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">thead</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">th</span>&gt;Date&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">th</span>&gt;Income&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">th</span>&gt;Expenditure&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">thead</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tbody</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">th</span>&gt;1st January&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;250&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;36&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">th</span>&gt;2nd January&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;285&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;48&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">&lt;!-- extra content --&gt;</span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">th</span>&gt;31st January&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;129&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;64&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tbody</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">tfoot</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;7824&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">td</span>&gt;1241&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">tfoot</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div><h2 id="summary">Summary</h2>
+<ul>
+<li>Tables should be used to contain grid-formatted content</li>
+<li>Each table is drawn row by row with <code>tr</code></li>
+<li>Each table cell is drawn with <code>td</code></li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-7/">Chapter 7</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/html/">html</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true, resetStyles: true });
+    });
+</script>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

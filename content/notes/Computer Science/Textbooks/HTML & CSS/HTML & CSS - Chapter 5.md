@@ -75,3 +75,4 @@ The above formats mentioned belong to the _bitmap_ family, which means each imag
 ---
 
 Next:
+[Chapter 6]({{< ref "HTML & CSS - Chapter 6" >}})
