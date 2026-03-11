@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Introducing CSS The moment we&rsquo;ve all been waiting for, the chapter on CSS. As we&rsquo;ve seen, the HTML language is efficient but not very pretty. After the next few chapters, you&rsquo;ll have a good sense of how to implement design changes to make your pages more appealing. The hard part is not learning CSS; people rarely memorize it or it&rsquo;s nuances. Rather, the hard part is learning good design. Unfortunately, that cannot be taught as much as it must be acquired by self study. I can show you good and bad, but it&rsquo;s going to take practice to understand how certain attributes work and which are the best to use. Google searches are a must, as people have been using CSS for nearly 30 years, giving you a lot of options for resources.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, css, textbook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-10/" />
+
+
+    <title>
+        
+            HTML &amp; CSS - Chapter 10 :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.42bc4753416907cd4d426f337ec77c315cab5fdcabe850c0ea0a747a2f6744a7.css" integrity="sha256-QrxHU0FpB81NQm8zfsd8MVyrX9yr6FDA6gp0ei9nRKc=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="HTML & CSS - Chapter 10">
+  <meta itemprop="description" content="Introducing CSS The moment we’ve all been waiting for, the chapter on CSS. As we’ve seen, the HTML language is efficient but not very pretty. After the next few chapters, you’ll have a good sense of how to implement design changes to make your pages more appealing. The hard part is not learning CSS; people rarely memorize it or it’s nuances. Rather, the hard part is learning good design. Unfortunately, that cannot be taught as much as it must be acquired by self study. I can show you good and bad, but it’s going to take practice to understand how certain attributes work and which are the best to use. Google searches are a must, as people have been using CSS for nearly 30 years, giving you a lot of options for resources.">
+  <meta itemprop="datePublished" content="2026-03-04T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-03-04T00:00:00+00:00">
+  <meta itemprop="wordCount" content="896">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Css,Textbook">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="HTML & CSS - Chapter 10">
+  <meta name="twitter:description" content="Introducing CSS The moment we’ve all been waiting for, the chapter on CSS. As we’ve seen, the HTML language is efficient but not very pretty. After the next few chapters, you’ll have a good sense of how to implement design changes to make your pages more appealing. The hard part is not learning CSS; people rarely memorize it or it’s nuances. Rather, the hard part is learning good design. Unfortunately, that cannot be taught as much as it must be acquired by self study. I can show you good and bad, but it’s going to take practice to understand how certain attributes work and which are the best to use. Google searches are a must, as people have been using CSS for nearly 30 years, giving you a lot of options for resources.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-10/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="HTML & CSS - Chapter 10">
+  <meta property="og:description" content="Introducing CSS The moment we’ve all been waiting for, the chapter on CSS. As we’ve seen, the HTML language is efficient but not very pretty. After the next few chapters, you’ll have a good sense of how to implement design changes to make your pages more appealing. The hard part is not learning CSS; people rarely memorize it or it’s nuances. Rather, the hard part is learning good design. Unfortunately, that cannot be taught as much as it must be acquired by self study. I can show you good and bad, but it’s going to take practice to understand how certain attributes work and which are the best to use. Google searches are a must, as people have been using CSS for nearly 30 years, giving you a lot of options for resources.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2026-03-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-04T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Css">
+    <meta property="article:tag" content="Textbook">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2026-03-04 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-10/">HTML &amp; CSS - Chapter 10</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="introducing-css">Introducing CSS</h1>
+<p>The moment we&rsquo;ve all been waiting for, the chapter on CSS. As we&rsquo;ve seen, the HTML language is efficient but not very pretty. After the next few chapters, you&rsquo;ll have a good sense of how to implement design changes to make your pages more appealing. The hard part is not learning CSS; people rarely memorize it or it&rsquo;s nuances. Rather, the hard part is learning <em>good</em> design. Unfortunately, that cannot be taught as much as it must be acquired by self study. I can show you good and bad, but it&rsquo;s going to take practice to understand how certain attributes work and which are the best to use. Google searches are a must, as people have been using CSS for nearly 30 years, giving you a lot of options for resources.</p>
+<h2 id="understanding-the-layout">Understanding the Layout</h2>
+<p>Around each HTML element exists a box. Depending on what type of element it is, block level or inline, will determine what the box looks like. What CSS is doing underneath the hood is changing the attributes and design of the box and contents inside the box. We can change the boxes shape, change how it interacts with other boxes, how it formats the content inside of it, change the color of the border or background of that box. There&rsquo;s a ton we can do, depending on which box we&rsquo;re editing.</p>
+<p>We have two parts to a stylesheet; a <strong>selector</strong> and a <strong>declaration</strong>. The <em>selector</em> chooses the elements you&rsquo;ll be changing, and the <em>declaration</em> is the changes being made. Within the declaration, there exists the <em>property</em>, or what attributes of the element you want to change, and the <em>value</em>, or what the actual change will be determined by. If it sounds confusing, take a look at a super basic stylesheet;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-family</span>: Arial;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span><span style="color:#f92672">,</span> <span style="color:#f92672">h2</span><span style="color:#f92672">,</span> <span style="color:#f92672">h3</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-family</span>: Arial;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">purple</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Generally, we want to keep our styles inside a stylesheet, to keep things nice and organized. That being said, we have to tell our HTML file to go get those styles if they aren&rsquo;t written directly into the file;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css/styles.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">h1</span>&gt;First CSS Page&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">p</span>&gt;I hope it looks good...&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h2 id="selectors">Selectors</h2>
+<p>Probably the most confusing portion of CSS, let&rsquo;s do a quick deep dive into how selectors actually work. We have a couple of different ways of using selectors;</p>
+<ul>
+<li><strong>Universal Selectors:</strong> Applies to all elements in a document
+<ul>
+<li><code>* {}</code></li>
+</ul>
+</li>
+<li><strong>Type Selectors:</strong> Matches element names
+<ul>
+<li><code>h1, h2, h3 {}</code></li>
+</ul>
+</li>
+<li><strong>Class Selectors:</strong> Matches elements whose <code>class</code> attribute matches the one selected
+<ul>
+<li><code>.example {}</code></li>
+<li><code>p.other_example {}</code></li>
+</ul>
+</li>
+<li><strong>ID Selectors:</strong> Matches element whose <code>id</code> attribute matches the one selected
+<ul>
+<li><code>#example {}</code></li>
+</ul>
+</li>
+<li><strong>Child Selectors:</strong> Matches elements that is a direct child of another
+<ul>
+<li><code>li&gt;a {}</code>
+<ul>
+<li>Targets any <code>a</code> elements that are children of an <code>li</code> element but no other <code>a</code> elements on the page</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Descendant Selector:</strong> Matches an element that is a descendent of another specified element
+<ul>
+<li><code>p a {}</code>
+<ul>
+<li>Targets any <code>a</code> elements that sit inside a <code>p</code> element regardless of how many other elements are between them</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-c-in-css">The C in CSS</h2>
+<p>Our rules <em>cascade</em>, or take precedence over one another depending on your structure. Let&rsquo;s take the following as an example;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;Potatoes&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;intro&#34;</span>&gt;There are &lt;<span style="color:#f92672">i</span>&gt;dozens&lt;/<span style="color:#f92672">i</span>&gt; of different &lt;<span style="color:#f92672">b</span>&gt;potato&lt;/<span style="color:#f92672">b</span>&gt; varieties.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;They are usually described as early, second early and maincrop potatoes.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">*</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-family</span>: Arial, Verdana, <span style="color:#66d9ef">sans-serif</span>;  
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Courier New&#34;</span>, <span style="color:#66d9ef">monospace</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">i</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">green</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">i</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">red</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">b</span> { 
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">pink</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span> <span style="color:#f92672">b</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">blue</span> <span style="color:#75715e">!important</span>; 
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span> <span style="color:#f92672">b</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">violet</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span>#intro {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">75</span><span style="color:#66d9ef">%</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Some things to help us understand why the above styles are working the way they do. CSS follows a <em>last rule</em> system, meaning the last or more recent line will take precedence over the lines before it. Not only that, but if one selector is more specific than others, that more specific rule will take precedence. For the above example, we would consider <code>h1</code> more specific than <code>*</code>, <code>p b</code> as more specific than just <code>p</code>, and <code>p#intro</code> more than <code>p</code>. Another trick used above is the <code>!important</code> tag, which will tell CSS that that specific element is more specific than others.</p>
+<h2 id="inheritance">Inheritance</h2>
+<p>CSS also has the concept of inheritance inside of it. Meaning, if you pass styles into something like a <code>body</code> selector, most if not all elements inside of the <code>body</code> will be affected. Not all elements and attributes work like this, but most do. You can force inheritance by using the <code>inherit</code> attribute, like in the following example;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-family</span>: Arial, Verdana, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#665544</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#665544</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#efefef</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#66d9ef">inherit</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The last thing I&rsquo;ll bring up is my favorite game to teach you about how CSS selectors work; <a href="https://flukeout.github.io/">CSS Diner!</a>. Really fun and relatively easy to get started with, I often use this as a quick refresher whenever I have a project I&rsquo;ve been working on that I need to use CSS in.</p>
+<h1 id="summary">Summary</h1>
+<ul>
+<li>CSS tells HTML how to change and manipulate the elements on a given page</li>
+<li>Stylesheets can be internal, but <em><strong>should</strong></em> but external</li>
+<li>Rules are made up of selectors and declarations</li>
+<li>Different types of selectors affect elements in different ways</li>
+<li>Declarations are made up of properties and values</li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-11/">Chapter 11</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/css/">css</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true, resetStyles: true });
+    });
+</script>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -7,14 +7,35 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/computerscience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS - Chapter 11</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-11/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-11/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Learning Modern Linux - Chapter 8</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-8/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-8/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;&amp;lt;% tp.file.cursor() %&amp;gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 10</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-10/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-10/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;introducing-css&#34;&gt;Introducing CSS&lt;/h1&gt;&#xA;&lt;p&gt;The moment we&amp;rsquo;ve all been waiting for, the chapter on CSS. As we&amp;rsquo;ve seen, the HTML language is efficient but not very pretty. After the next few chapters, you&amp;rsquo;ll have a good sense of how to implement design changes to make your pages more appealing. The hard part is not learning CSS; people rarely memorize it or it&amp;rsquo;s nuances. Rather, the hard part is learning &lt;em&gt;good&lt;/em&gt; design. Unfortunately, that cannot be taught as much as it must be acquired by self study. I can show you good and bad, but it&amp;rsquo;s going to take practice to understand how certain attributes work and which are the best to use. Google searches are a must, as people have been using CSS for nearly 30 years, giving you a lot of options for resources.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 9</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/</link>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;flash-video--audio&#34;&gt;Flash, Video &amp;amp; Audio&lt;/h1&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;video--audio&#34;&gt;Video &amp;amp; Audio&lt;/h1&gt;&#xA;&lt;p&gt;A large portion of this chapter focuses on older version of browsers and their support/lack-of for &lt;em&gt;Flash&lt;/em&gt;, a type of video format to display media on web pages. HTML5 helps us out a lot by providing a &lt;code&gt;video&lt;/code&gt; tag, which we&amp;rsquo;ll go over in a second. Just wanted to point out again just how fast technology is moving.&lt;/p&gt;&#xA;&lt;p&gt;One thing that hasn&amp;rsquo;t changed is the support for video playback formats. Depending on which you are using, formats like HEVC or WebM could not be supported. It&amp;rsquo;s best to use MP4 formatting, as it is the most widely accepted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTML &amp; CSS - Chapter 8</title>
@@ -98,7 +119,7 @@
       <link>https://mrpointing.com/notes/computer-science/c/slop-100---chapter-2/</link>
       <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/c/slop-100---chapter-2/</guid>
-      <description>&lt;hr&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;conditionals&#34;&gt;Conditionals&lt;/h1&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s say we have the code from last chapter;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; year &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2026&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;This is the year %i&amp;#34;&lt;/span&gt;, year);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To add conditional statements, they look like this;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; year &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2026&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(year &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2026&lt;/span&gt;) {&#x9;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;This is the year %i&amp;#34;&lt;/span&gt;, year);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The usual comparison operators are available, greater than, less than, and so on. You can also use logical operators, like &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; for &lt;em&gt;and&lt;/em&gt;, or &lt;code&gt;||&lt;/code&gt; for &lt;em&gt;or&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How AI Works - Chapter 5</title>

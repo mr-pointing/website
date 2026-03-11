@@ -9,7 +9,7 @@
 <meta name="description" content=" Networking A topic I&rsquo;ve gone over before in a few notes now, so if you want a deeper dive on general topics, see this note. What we&rsquo;re going to look at now is the Linux side of things, and how the Linux protocol deals with connecting to the world wide web. Specifically, the network protocols used and tooling provided.
 Basics Without network connection, everything in the last chapter would be a moot point. There&rsquo;s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.
 " />
-<meta name="keywords" content="homepage, blog, computerscience, textbook, linux" />
+<meta name="keywords" content="homepage, blog, computerscience, textbook, linux, internet" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/" />
@@ -51,9 +51,9 @@ Basics Without network connection, everything in the last chapter would be a moo
 Basics Without network connection, everything in the last chapter would be a moot point. There’s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.">
   <meta itemprop="datePublished" content="2025-08-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-08-06T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1976">
+  <meta itemprop="wordCount" content="4032">
   <meta itemprop="image" content="https://mrpointing.com/">
-  <meta itemprop="keywords" content="Computerscience,Textbook,Linux">
+  <meta itemprop="keywords" content="Computerscience,Textbook,Linux,Internet">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
@@ -76,6 +76,7 @@ Basics Without network connection, everything in the last chapter would be a moo
     <meta property="article:tag" content="Computerscience">
     <meta property="article:tag" content="Textbook">
     <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Internet">
     <meta property="og:image" content="https://mrpointing.com/">
 
 
@@ -249,16 +250,204 @@ Basics Without network connection, everything in the last chapter would be a moo
 <p>To run what&rsquo;s being used by your local machine, run <code>nmap -A localhost</code>. However, to be safe, only run this on your own machine and in the comfort of your own private space.</p>
 <h4 id="tcp">TCP</h4>
 <p>Remember how I said we&rsquo;d come back to protocols? Here we are. <em>Transmission Control Protocol</em>, or <strong>TCP</strong>, is a connection transport layer protocol used in things like HTTP and SSH. It guarantees the deliverance of whatever being sent, and actually re-sends any lost packets.</p>
+<p>The TCP header contains the source port, the destination port, a sequence number used in managing delivery order, an acknowledgement number used alongside the <code>SYN</code> and <code>ACK</code> flags to support the three-way handshake operation, the window size, a checksum, and finally the payload or data of the packet.</p>
+<p>This protocol is known for it&rsquo;s back-and-forth communication between sender and receiver being constant from initialization to termination, meaning it can sometimes take a while. There&rsquo;s also the issue of there being no real security measures in place; you can use Wireshark to collect details on a TCP packet and <code>tshark</code> to inspect the payload itself. In order to implement security, use of the TLS protocol is imperative.</p>
+<h4 id="udp">UDP</h4>
+<p>Unlike TCP, <em>User Datagram Protocol</em> or <strong>UDP</strong> is connection-less. The receiver does not have to acknowledge the received package, called a datagram. Checksums are still implemented to handle integrity issues, and since most common transactions don&rsquo;t require precise retrieval of all bits, it is often preferred to TCP. NTO, DHCP, and DNS use UDP.</p>
+<p>The header of a UDP packet contain the source port (totally optional btw), the destination port, the length (both the header and data), the checksum (ALSO optional!) and finally the data. A lot less than TCP.</p>
+<h3 id="sockets">Sockets</h3>
+<p>A <strong>socket</strong> is a communication interface provided in Linux, meant to be thought of as a distinct point for incoming data with a unique identity. It&rsquo;s a combination of a TCP or UDP port and the IP address. Unless you&rsquo;re working on network-related software, you probably won&rsquo;t have to use and call them, but we should know how to query them. We can use <code>ss -s</code>, with <code>-s</code> meaning summarize, to learn more about our TCP connections;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; ss -s
+</span></span><span style="display:flex;"><span>Total: <span style="color:#ae81ff">1009</span>
+</span></span><span style="display:flex;"><span>TCP:   <span style="color:#ae81ff">26</span> <span style="color:#f92672">(</span>estab 8, closed 9, orphaned 0, timewait 9<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Transport Total     IP        IPv6
+</span></span><span style="display:flex;"><span>RAW       <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">0</span>         <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>UDP       <span style="color:#ae81ff">15</span>        <span style="color:#ae81ff">9</span>         <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>TCP       <span style="color:#ae81ff">17</span>        <span style="color:#ae81ff">10</span>        <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>INET      <span style="color:#ae81ff">33</span>        <span style="color:#ae81ff">19</span>        <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>FRAG      <span style="color:#ae81ff">0</span>         <span style="color:#ae81ff">0</span>         <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><p>You could also call in <code>ss -ulp</code> to call to restrict it just to UDP, listening sockets, and process information. We could also user <code>lsof</code> again, this time to find any open sockets associated with the process you want.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; lsof -c firefox -i udp | head -5
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output doesn&#39;t fit here nicely- try running it yourself!</span>
+</span></span></code></pre></div><h2 id="dns">DNS</h2>
+<p>IP addresses, to be put simply, are not &ldquo;human&rdquo; enough to remember, nor are they worth it. They can be changed as easily as changing a server to host on, meaning we shouldn&rsquo;t be wasting our time to remember them. Instead, we remember websites, which are far easier to think about (<code>https://www.mrpointing.com</code> is just too easy to plug in here). Not only is that easier, but we can usually even leave out the protocol and sub-domain if the site is configured correctly.</p>
+<p>So we basically want our machines to have not only the names of these websites stored, but the IP address as well. There were a few attempts at resolving this, including keeping all name to IP address connections in a giant single file, which if you think about today would just be an monumental undertaking. This lead to the creation of <strong>DNS</strong>, or <em>Domain name space</em>. Essentially, a method of tracking and supporting the connection between a URL and IP address.</p>
+<p>We should understand the actual term of a Domain name space is alike a tree structure, with <code>.</code> denoting the root of the tree, and each node of the tree contains information about a connection. We also have <em>resource records</em> that are the actual payloads within the nodes or leaves, <em>name servers</em> that contain the information about the domain&rsquo;s tree, and <em>resolvers</em>, which carry out the extraction of info from a name server given a client request. Here&rsquo;s a basic walk through of how it works;</p>
+
+    <img src="/images/DNS_workflow.png"  alt="DNS Workflow"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>At the base of DNS, since it&rsquo;s hierarchical, are 13 <a href="https://www.iana.org/domains/root/servers">root servers</a> that sift the records for the <strong>TLD</strong>&rsquo;s, or <em>top-level domains</em>. The TLD decides what the end of your URL will be; the Infrastructure TLD is for things like <code>localhost</code>, the Generic TLD or gTLD is for three or more characters like <code>.org</code> and <code>.com</code>, Country TLD or ccTLD is for two-letter country codes, and Sponsored TLD or sTLD are for private agencies/organizations like <code>.aero</code> or <code>.gov</code>.</p>
+<h3 id="dns-records">DNS Records</h3>
+<p>Within a name server, each record is the type, payload, and other information given for that connection. We sometimes call the full name of our connection as the <em>Fully Qualified Domain Name</em> or <strong>FQDN</strong> as the address of the node in the name server, and the resource record as the payload in the node.</p>
+<p>There are certain types of records, recorded again managed in the name server. Here are some types that might come up;</p>
+<ul>
+<li><strong><code>A</code> records and <code>AAAA</code> records</strong>: IPv4 and IPv6 respectively, maps the host-names to IP address of host</li>
+<li><strong><code>CNAME</code> records</strong>: Canonical name records that provide what&rsquo;s known as an <em>alias</em> of one name to another name</li>
+<li><strong><code>NS</code> records</strong>: Records belonging to the name server the delegate the DNS zone to use</li>
+<li><strong><code>PTR</code> records</strong>: Records that exist entirely as pointers used in reverse DNS lookups, which are also the opposite of <code>A</code> records</li>
+<li><strong><code>SRV</code> records</strong>: Records used for service locating; a discovery mechanism</li>
+<li><strong><code>TXT</code> records</strong>: Records containing machine-readable data for security-related DNS extensions</li>
+</ul>
+<p>These records are stored in text form called the <em>zone file</em> that a name server reads in to integrate into it&rsquo;s local database.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ORIGIN example.com.
+</span></span><span style="display:flex;"><span>$TTL <span style="color:#ae81ff">3600</span>
+</span></span><span style="display:flex;"><span>@   SOA nse.example.com. nsmaster.example.com. <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ae81ff">1234567890</span> ; serial number
+</span></span><span style="display:flex;"><span>	<span style="color:#ae81ff">21600</span>      ; refresh after <span style="color:#ae81ff">6</span> hours
+</span></span><span style="display:flex;"><span>	<span style="color:#ae81ff">3600</span>       ; retry after <span style="color:#ae81ff">1</span> hour
+</span></span><span style="display:flex;"><span>	<span style="color:#ae81ff">604800</span>     ; expire after <span style="color:#ae81ff">1</span> week
+</span></span><span style="display:flex;"><span>	<span style="color:#ae81ff">3600</span> <span style="color:#f92672">)</span>     ; minimum TTL of <span style="color:#ae81ff">1</span> hour
+</span></span><span style="display:flex;"><span>example.com. IN NS     nse
+</span></span><span style="display:flex;"><span>example.com. IN MX     <span style="color:#ae81ff">10</span> mail.example.com.
+</span></span><span style="display:flex;"><span>example.com. IN A      1.2.3.4
+</span></span><span style="display:flex;"><span>nse          IN A      5.6.7.8
+</span></span><span style="display:flex;"><span>www          IN CNAME  example.com.
+</span></span><span style="display:flex;"><span>mail         IN A      9.0.0.9
+</span></span></code></pre></div><p>We can now breakdown any URL into parts. Let&rsquo;s do it with mine; <code>www.mrpointing.com</code>.</p>
+<ul>
+<li><code>.com</code> is the TLD, which for me is managed by Cloudflare</li>
+<li><code>mrpointing.com</code> is a domain I purchased via Cloudflare</li>
+<li><code>www.mrpointing.com</code> is the subdomain I assigned to my site</li>
+</ul>
+<p>Each TLD has it&rsquo;s own resource record, including my domain <code>mrpointing</code>. Within <code>mrpointing</code> is a resource record for <code>www</code>.</p>
+<h3 id="dns-lookups">DNS Lookups</h3>
+<p>Now that we understand how DNS works, we can start to write some queries. The underlying method of these queries is beyond the scope of this class, so we can skip over that and focus on how we&rsquo;re able to run these queries in Linux.</p>
+<p>First up is using <code>host</code> to find both local or global names in either direction;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Look up local IP address</span>
+</span></span><span style="display:flex;"><span>&gt; host -a localhost
+</span></span><span style="display:flex;"><span>Trying <span style="color:#e6db74">&#34;localhost.student-lan.org&#34;</span>
+</span></span><span style="display:flex;"><span>Trying <span style="color:#e6db74">&#34;localhost&#34;</span>
+</span></span><span style="display:flex;"><span>;; -&gt;HEADER&lt;- opcode: QUERY, status: NOERROR, id: <span style="color:#ae81ff">54393</span>
+</span></span><span style="display:flex;"><span>;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>;; QUESTION SECTION:
+</span></span><span style="display:flex;"><span>;localhost.                     IN      ANY
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>;; ANSWER SECTION:
+</span></span><span style="display:flex;"><span>localhost.              <span style="color:#ae81ff">0</span>       IN      A       127.0.0.1
+</span></span><span style="display:flex;"><span>localhost.              <span style="color:#ae81ff">0</span>       IN      AAAA    ::1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Received <span style="color:#ae81ff">71</span> bytes from 127.0.0.53#53 in <span style="color:#ae81ff">0</span> ms
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Look up a FQDN</span>
+</span></span><span style="display:flex;"><span>&gt; host mrpointing.com
+</span></span><span style="display:flex;"><span>mrpointing.com has address 104.21.26.166
+</span></span><span style="display:flex;"><span>mrpointing.com has address 172.67.137.98
+</span></span><span style="display:flex;"><span>mrpointing.com has IPv6 address 2606:4700:3030::ac43:8962
+</span></span><span style="display:flex;"><span>mrpointing.com has IPv6 address 2606:4700:3036::6815:1aa6
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Reverse look up of an IP address to find FQDN</span>
+</span></span><span style="display:flex;"><span>&gt; host 185.199.110.153
+</span></span><span style="display:flex;"><span>153.110.199.185.in-addr.arpa domain name pointer cdn-185-199-110-153.github.com.
+</span></span></code></pre></div><h2 id="application-layer-networking">Application Layer Networking</h2>
+<p>We understand <strong>&ldquo;The Web&rdquo;</strong> as the space where we can access the internet, and it&rsquo;s made up of three main parts;</p>
+<ol>
+<li><strong>URLS</strong>: Uniform Resource Locators, they act as the identity of a website, which we went over just before in DNS</li>
+<li><strong>HTTP</strong>: Hypertext Transfer Protocol, the way in which the application layer interacts with sites</li>
+<li><strong>HTML</strong>: Hyper Text Markup Language, the backbone of nearly every website imaginable</li>
+</ol>
+<p>URIs are generic version of URLs, and are constructed in a way according to RFC 3986. We can better understand how they are made to better understand HTTP URLs;</p>
+
+    <img src="/images/URI_explination.png"  alt="URI Explination"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The user and password portion are completely optional, and are left from days gone. Nowadays, since we use HTTPS, we have no need for them anymore. The scheme is defined usually as either http or https, and the authority is the hierarchical name discussed in the DNS portion of this chapter. It can be a DNS FQDN or an IP address. The default port is :80; in our example we use another port. The path is to locate resources within your site, and queries and fragments are used to carry across data like from forms.</p>
+<p>Obviously, this is not all. We saw the increased use of things like CSS and JavaScript become almost core identifying features of surfing the web. They certainly are nice and make things prettier, but they&rsquo;re not essential to the use and browsing of the internet.</p>
+<p>Let&rsquo;s move through how an HTTP server works. You can actually use Python&rsquo;s built in module <code>http.server</code> to get a server going;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ python3 -m http.server
+</span></span><span style="display:flex;"><span>Serving HTTP on 0.0.0.0 port <span style="color:#ae81ff">8000</span> <span style="color:#f92672">(</span>http://0.0.0.0:8000/<span style="color:#f92672">)</span> ...
+</span></span><span style="display:flex;"><span>127.0.0.1 - - <span style="color:#f92672">[</span>02/Mar/2026 13:37:14<span style="color:#f92672">]</span> <span style="color:#e6db74">&#34;GET / HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> -
+</span></span></code></pre></div><p>Now, from any device on the same network, you can visit the link provided or <code>http://localhost:8000</code> to visit that folder in a web browser. Pretty cool. We could have ran our server via Docker, but I have textbooks on that topic, which I hope to actually get to some day. For now, we can use <code>curl</code> to observe the contents of our new server;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl localhost:8000
+</span></span><span style="display:flex;"><span>&lt;!DOCTYPE HTML&gt;
+</span></span><span style="display:flex;"><span>&lt;html lang<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;head&gt;
+</span></span><span style="display:flex;"><span>&lt;meta charset<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;style type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>:root <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>color-scheme: light dark;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>&lt;/style&gt;
+</span></span><span style="display:flex;"><span>&lt;title&gt;Directory listing <span style="color:#66d9ef">for</span> /&lt;/title&gt;
+</span></span><span style="display:flex;"><span>&lt;/head&gt;
+</span></span><span style="display:flex;"><span>&lt;body&gt;
+</span></span><span style="display:flex;"><span>&lt;h1&gt;Directory listing <span style="color:#66d9ef">for</span> /&lt;/h1&gt;
+</span></span><span style="display:flex;"><span>&lt;hr&gt;
+</span></span><span style="display:flex;"><span>&lt;ul&gt;
+</span></span><span style="display:flex;"><span>&lt;li&gt;&lt;a href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bash/&#34;</span>&gt;bash/&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>&lt;li&gt;&lt;a href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;c/&#34;</span>&gt;c/&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>&lt;li&gt;&lt;a href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cap_pokes/&#34;</span>&gt;cap_pokes/&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>&lt;li&gt;&lt;a href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lua/&#34;</span>&gt;lua/&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>&lt;li&gt;&lt;a href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;models/&#34;</span>&gt;models/&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>&lt;li&gt;&lt;a href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mr-pointing/&#34;</span>&gt;mr-pointing/&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>&lt;li&gt;&lt;a href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;python/&#34;</span>&gt;python/&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>&lt;li&gt;&lt;a href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;skeys.txt&#34;</span>&gt;skeys.txt&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>&lt;/ul&gt;
+</span></span><span style="display:flex;"><span>&lt;hr&gt;
+</span></span><span style="display:flex;"><span>&lt;/body&gt;
+</span></span><span style="display:flex;"><span>&lt;/html&gt;
+</span></span></code></pre></div><h3 id="secure-shell">Secure Shell</h3>
+<p>A topic I&rsquo;ve only recently actually put into practice, <em>secure shell</em> or <strong>SSH</strong> is a protocol for securely connecting to a device on your network. It&rsquo;s pretty easy to set up; while the text uses a pretty intense looking example, all you need to do is ensure your device has SSH enabled, and run <code>ssh user_on_device@device.ip.address</code>.</p>
+<p>I do enjoy the quick tips section though;</p>
+<ul>
+<li>If you have lots of people <code>ssh</code> into your machine, <em>disable password authentication</em> so you can have users create keys you can add to an authorized file</li>
+<li>If you can&rsquo;t see anything when <code>ssh</code> into a machine, run <code>export TERM=xterm</code> with the run command</li>
+</ul>
+<h3 id="file-transfer">File Transfer</h3>
+<p>Another extremely useful and common task to be done, transferring files from one device to another is easily done. When working on remote systems, you can use <code>scp</code>, which works on top of <code>ssh</code>. In the following example, we&rsquo;ll copy a file in our current directory to another machine on our network;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ scp file_to_copy <span style="color:#ae81ff">\ </span>user_2@63.32.106.149:/home/user_2/
+</span></span></code></pre></div><p>We could also use <code>rsync</code>, which is a faster and more convenient method than <code>scp</code>.</p>
+<h3 id="advanced-network-topics">Advanced Network Topics</h3>
+<p>Some more advanced topics that are a bit out of scope of the text, but can be easily Googled for more information.</p>
+<p>First up, running <code>whois</code> to learn more information about a given domain if publicly available;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ whois mrpointing.com
+</span></span><span style="display:flex;"><span>Domain Name: MRPOINTING.COM
+</span></span><span style="display:flex;"><span>   Registry Domain ID: 2905732341_DOMAIN_COM-VRSN
+</span></span><span style="display:flex;"><span>   Registrar WHOIS Server: whois.cloudflare.com
+</span></span><span style="display:flex;"><span>   Registrar URL: http://www.cloudflare.com
+</span></span><span style="display:flex;"><span>   Updated Date: 2025-07-06T04:42:35Z
+</span></span><span style="display:flex;"><span>   Creation Date: 2024-08-05T22:06:15Z
+</span></span><span style="display:flex;"><span>   Registry Expiry Date: 2026-08-05T22:06:15Z
+</span></span><span style="display:flex;"><span>   Registrar: Cloudflare, Inc.
+</span></span><span style="display:flex;"><span>   Registrar IANA ID: <span style="color:#ae81ff">1910</span>
+</span></span><span style="display:flex;"><span>   Registrar Abuse Contact Email: registrar-abuse@cloudflare.com
+</span></span><span style="display:flex;"><span>   Registrar Abuse Contact Phone: +1.6503198930
+</span></span><span style="display:flex;"><span>   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+</span></span><span style="display:flex;"><span>   Name Server: BRADEN.NS.CLOUDFLARE.COM
+</span></span><span style="display:flex;"><span>   Name Server: MALEAH.NS.CLOUDFLARE.COM
+</span></span><span style="display:flex;"><span>   DNSSEC: unsigned
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p><code>tshark</code> and <code>wireshark</code> are software tools used to analyze low-level network traffic. They are command and GUI tools, respectively. <code>tshark</code> is relatively easy to use; <code>sudo tshark -i network_device tcp</code> to only look at TCP traffic, while <code>wireshark</code> is a bit more complicated</p>
 <h2 id="chapter-summary">Chapter Summary</h2>
+<ul>
+<li>4 layers make up the TCP/IP stack: link, internet, network, and application</li>
+<li>Link allows for hardware &amp; kernel drivers to communicate, internet routes the packages, transport delivers the packages, and the application is how we manage/control the delivery</li>
+<li><code>ip address</code> to find my device&rsquo;s Network Interface Card name, or <code>ip route</code> to show ARP table</li>
+<li>Protocols determine how network traffic is dealt with; how to address loss, etc</li>
+<li>IP addresses become complex, and difficult to remember, so we use DNS to link IP addresses to names</li>
+</ul>
 <h2 id="chapter-resources">Chapter Resources</h2>
 <ul>
 <li><a href="https://cidr.xyz/">Interactive visual CIDR and IP range calculator</a></li>
 <li><a href="https://networkengineering.stackexchange.com/questions/53935/why-are-ipv4-addresses-running-out">Why are IPv4 addresses running out? - Network Engineering Stack Exchange</a></li>
 <li><a href="https://samuel-ricky.medium.com/how-to-interpret-the-output-of-ip-addr-show-8008c7c41dde">How to Read <code>ip addr</code></a></li>
-<li></li>
+<li><a href="https://ostechnix.com/disable-ssh-password-authentication-for-specific-user-or-group/">Disable SSH password authentication</a></li>
+<li><a href="https://www.cs.princeton.edu/courses/archive/fall06/cos561/papers/cerf74.pdf">Paper on Packet Network Intercommunication</a></li>
+<li><a href="https://wiki.debian.org/DHCP_Server">Setting up a DHCP Server</a></li>
+<li><a href="https://metebalci.com/blog/hello-ipv6/">IPv4 to IPv6 Short Tutorial</a></li>
+<li><a href="https://www.networkingwithfish.com/understanding-ipv6-7-part-series/">Full Guide on IPv6</a></li>
+<li><a href="https://blog.cloudflare.com/everything-you-ever-wanted-to-know-about-udp-sockets-but-were-afraid-to-ask-part-1/">Blog Post on UDP Sockets</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts">Intro to DNS Terminology &amp; Concepts</a></li>
+<li><a href="https://www.thegeekstuff.com/2014/01/install-dns-server/">Install &amp; Configure DNS Server in Linux</a></li>
+<li><a href="https://goteleport.com/blog/ssh-tunneling-explained/">How SSH Works</a></li>
+<li><a href="https://linuxconfig.org/what-is-dhcp-and-how-to-configure-dhcp-server-in-linux">DHCP Linux Server</a></li>
+<li><a href="https://opensource.com/article/20/1/wireshark-linux-tshark">Setting up Wireshark</a></li>
 </ul>
 <hr>
-<p>Next:</p>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-8/">Chapter 8</a></p>
 
             </div>
         </article>
@@ -273,6 +462,7 @@ Basics Without network connection, everything in the last chapter would be a moo
         <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
         <span class="tag"><a href="https://mrpointing.com/tags/textbook/">textbook</a></span>
         <span class="tag"><a href="https://mrpointing.com/tags/linux/">linux</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/internet/">internet</a></span>
         
     </p>
 

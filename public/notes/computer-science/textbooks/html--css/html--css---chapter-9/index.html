@@ -6,7 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content=" Flash, Video &amp; Audio" />
+<meta name="description" content=" Video &amp; Audio A large portion of this chapter focuses on older version of browsers and their support/lack-of for Flash, a type of video format to display media on web pages. HTML5 helps us out a lot by providing a video tag, which we&rsquo;ll go over in a second. Just wanted to point out again just how fast technology is moving.
+One thing that hasn&rsquo;t changed is the support for video playback formats. Depending on which you are using, formats like HEVC or WebM could not be supported. It&rsquo;s best to use MP4 formatting, as it is the most widely accepted.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, html, textbook" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -45,24 +47,27 @@
 
 
   <meta itemprop="name" content="HTML & CSS - Chapter 9">
-  <meta itemprop="description" content="Flash, Video &amp; Audio">
+  <meta itemprop="description" content="Video &amp; Audio A large portion of this chapter focuses on older version of browsers and their support/lack-of for Flash, a type of video format to display media on web pages. HTML5 helps us out a lot by providing a video tag, which we’ll go over in a second. Just wanted to point out again just how fast technology is moving.
+One thing that hasn’t changed is the support for video playback formats. Depending on which you are using, formats like HEVC or WebM could not be supported. It’s best to use MP4 formatting, as it is the most widely accepted.">
   <meta itemprop="datePublished" content="2026-02-23T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-02-23T00:00:00+00:00">
-  <meta itemprop="wordCount" content="4">
+  <meta itemprop="wordCount" content="219">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Html,Textbook">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="HTML & CSS - Chapter 9">
-  <meta name="twitter:description" content="Flash, Video &amp; Audio">
+  <meta name="twitter:description" content="Video &amp; Audio A large portion of this chapter focuses on older version of browsers and their support/lack-of for Flash, a type of video format to display media on web pages. HTML5 helps us out a lot by providing a video tag, which we’ll go over in a second. Just wanted to point out again just how fast technology is moving.
+One thing that hasn’t changed is the support for video playback formats. Depending on which you are using, formats like HEVC or WebM could not be supported. It’s best to use MP4 formatting, as it is the most widely accepted.">
 
 
 
     <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="HTML & CSS - Chapter 9">
-  <meta property="og:description" content="Flash, Video &amp; Audio">
+  <meta property="og:description" content="Video &amp; Audio A large portion of this chapter focuses on older version of browsers and their support/lack-of for Flash, a type of video format to display media on web pages. HTML5 helps us out a lot by providing a video tag, which we’ll go over in a second. Just wanted to point out again just how fast technology is moving.
+One thing that hasn’t changed is the support for video playback formats. Depending on which you are using, formats like HEVC or WebM could not be supported. It’s best to use MP4 formatting, as it is the most widely accepted.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -156,7 +161,37 @@
 
             <div class="post-content">
                 <hr>
-<h1 id="flash-video--audio">Flash, Video &amp; Audio</h1>
+<h1 id="video--audio">Video &amp; Audio</h1>
+<p>A large portion of this chapter focuses on older version of browsers and their support/lack-of for <em>Flash</em>, a type of video format to display media on web pages. HTML5 helps us out a lot by providing a <code>video</code> tag, which we&rsquo;ll go over in a second. Just wanted to point out again just how fast technology is moving.</p>
+<p>One thing that hasn&rsquo;t changed is the support for video playback formats. Depending on which you are using, formats like HEVC or WebM could not be supported. It&rsquo;s best to use MP4 formatting, as it is the most widely accepted.</p>
+<h2 id="video">Video</h2>
+<p>HTML again provides a logical name for the <code>video</code> tag, our main method of providing local videos. It&rsquo;s technically a container but we should write out the way the next example shows, so we can get a clearer picture of all of the attributes in play here;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">h1</span>&gt;Catjam&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">video</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;videos/cat.mp4&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">poster</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/cat.jpg&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;400&#34;</span> 
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;300&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">preload</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auto&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">loop</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">controls</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">muted</span>
+</span></span><span style="display:flex;"><span>	&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">p</span>&gt;Cat jamming&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">video</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><p>The reason for the <code>p</code> tag is for having content appear if video format is not supported in their browser.</p>
+<h2 id="audio">Audio</h2>
+<p>Same as video content, we can use the <code>audio</code> tag to accomplish our audio goals.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">audio</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;audio/cat-audio.mp3&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">controls</span> <span style="color:#a6e22e">auto-play</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">p</span>&gt;This browser does not support our audio content&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">audio</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-10/">Chapter 10</a></p>
 
             </div>
         </article>

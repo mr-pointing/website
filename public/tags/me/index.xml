@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Linux Tools &amp; Services</title>
+      <link>https://mrpointing.com/posts/my-linux-tools--services/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/posts/my-linux-tools--services/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;After using Linux for over a year now, I can confidently say I almost know what I&amp;rsquo;m doing. There have been many ups and downs, after going through dozens of message boards and text books. I still love this process, even if it gives me crippling anxiety when things aren&amp;rsquo;t going as planned.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m going to go over some, if not all of the Linux specific tools I&amp;rsquo;ve been using along the way. I&amp;rsquo;ll break them down into &lt;em&gt;major&lt;/em&gt; (used everyday, if not once a week) to &lt;em&gt;minor&lt;/em&gt; (somewhat in use or exploring their potential in my workflow). At some point I&amp;rsquo;ll put my dot files on GitHub.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>C</title>
       <link>https://mrpointing.com/notes/computer-science/c/</link>

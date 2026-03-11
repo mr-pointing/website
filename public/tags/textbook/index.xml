@@ -7,14 +7,35 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/textbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS - Chapter 11</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-11/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-11/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Learning Modern Linux - Chapter 8</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-8/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-8/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;&amp;lt;% tp.file.cursor() %&amp;gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 10</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-10/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-10/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;introducing-css&#34;&gt;Introducing CSS&lt;/h1&gt;&#xA;&lt;p&gt;The moment we&amp;rsquo;ve all been waiting for, the chapter on CSS. As we&amp;rsquo;ve seen, the HTML language is efficient but not very pretty. After the next few chapters, you&amp;rsquo;ll have a good sense of how to implement design changes to make your pages more appealing. The hard part is not learning CSS; people rarely memorize it or it&amp;rsquo;s nuances. Rather, the hard part is learning &lt;em&gt;good&lt;/em&gt; design. Unfortunately, that cannot be taught as much as it must be acquired by self study. I can show you good and bad, but it&amp;rsquo;s going to take practice to understand how certain attributes work and which are the best to use. Google searches are a must, as people have been using CSS for nearly 30 years, giving you a lot of options for resources.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 9</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/</link>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;flash-video--audio&#34;&gt;Flash, Video &amp;amp; Audio&lt;/h1&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;video--audio&#34;&gt;Video &amp;amp; Audio&lt;/h1&gt;&#xA;&lt;p&gt;A large portion of this chapter focuses on older version of browsers and their support/lack-of for &lt;em&gt;Flash&lt;/em&gt;, a type of video format to display media on web pages. HTML5 helps us out a lot by providing a &lt;code&gt;video&lt;/code&gt; tag, which we&amp;rsquo;ll go over in a second. Just wanted to point out again just how fast technology is moving.&lt;/p&gt;&#xA;&lt;p&gt;One thing that hasn&amp;rsquo;t changed is the support for video playback formats. Depending on which you are using, formats like HEVC or WebM could not be supported. It&amp;rsquo;s best to use MP4 formatting, as it is the most widely accepted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTML &amp; CSS - Chapter 8</title>

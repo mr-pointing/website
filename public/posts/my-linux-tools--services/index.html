@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" After using Linux for over a year now, I can confidently say I almost know what I&rsquo;m doing. There have been many ups and downs, after going through dozens of message boards and text books. I still love this process, even if it gives me crippling anxiety when things aren&rsquo;t going as planned.
+I&rsquo;m going to go over some, if not all of the Linux specific tools I&rsquo;ve been using along the way. I&rsquo;ll break them down into major (used everyday, if not once a week) to minor (somewhat in use or exploring their potential in my workflow). At some point I&rsquo;ll put my dot files on GitHub.
+" />
+<meta name="keywords" content="homepage, blog, linux, me" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/posts/my-linux-tools--services/" />
+
+
+    <title>
+        
+            My Linux Tools &amp; Services :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.42bc4753416907cd4d426f337ec77c315cab5fdcabe850c0ea0a747a2f6744a7.css" integrity="sha256-QrxHU0FpB81NQm8zfsd8MVyrX9yr6FDA6gp0ei9nRKc=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="My Linux Tools & Services">
+  <meta itemprop="description" content="After using Linux for over a year now, I can confidently say I almost know what I’m doing. There have been many ups and downs, after going through dozens of message boards and text books. I still love this process, even if it gives me crippling anxiety when things aren’t going as planned.
+I’m going to go over some, if not all of the Linux specific tools I’ve been using along the way. I’ll break them down into major (used everyday, if not once a week) to minor (somewhat in use or exploring their potential in my workflow). At some point I’ll put my dot files on GitHub.">
+  <meta itemprop="datePublished" content="2026-02-27T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-02-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="568">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Linux,Me">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="My Linux Tools & Services">
+  <meta name="twitter:description" content="After using Linux for over a year now, I can confidently say I almost know what I’m doing. There have been many ups and downs, after going through dozens of message boards and text books. I still love this process, even if it gives me crippling anxiety when things aren’t going as planned.
+I’m going to go over some, if not all of the Linux specific tools I’ve been using along the way. I’ll break them down into major (used everyday, if not once a week) to minor (somewhat in use or exploring their potential in my workflow). At some point I’ll put my dot files on GitHub.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/posts/my-linux-tools--services/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="My Linux Tools & Services">
+  <meta property="og:description" content="After using Linux for over a year now, I can confidently say I almost know what I’m doing. There have been many ups and downs, after going through dozens of message boards and text books. I still love this process, even if it gives me crippling anxiety when things aren’t going as planned.
+I’m going to go over some, if not all of the Linux specific tools I’ve been using along the way. I’ll break them down into major (used everyday, if not once a week) to minor (somewhat in use or exploring their potential in my workflow). At some point I’ll put my dot files on GitHub.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-27T00:00:00+00:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Me">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2026-02-27 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        3 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://mrpointing.com/posts/my-linux-tools--services/">My Linux Tools &amp; Services</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <hr>
+<p>After using Linux for over a year now, I can confidently say I almost know what I&rsquo;m doing. There have been many ups and downs, after going through dozens of message boards and text books. I still love this process, even if it gives me crippling anxiety when things aren&rsquo;t going as planned.</p>
+<p>I&rsquo;m going to go over some, if not all of the Linux specific tools I&rsquo;ve been using along the way. I&rsquo;ll break them down into <em>major</em> (used everyday, if not once a week) to <em>minor</em> (somewhat in use or exploring their potential in my workflow). At some point I&rsquo;ll put my dot files on GitHub.</p>
+<h1 id="major-tools">Major Tools</h1>
+<h2 id="tmux">Tmux</h2>
+<p>Introduced by a <a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-1/">textbook</a> I was going through, <a href="https://github.com/tmux/tmux/wiki">tmux</a> is a terminal multiplexer, allowing for tab-like behavior in the terminal. My main terminal is <a href="https://sw.kovidgoyal.net/kitty/">kitty</a> which is already full of features, but once I saw how much easier my life would get by having split terminal tabs I was hooked. I used to have three or four terminal instances open at once, that I can now condense to one window and move among my tabs with ease. Not only that, but all of my sessions are saved, so if I accidentally closed my terminal window I can open another and quickly get back to where I was. I don&rsquo;t need to sing it&rsquo;s praises; it&rsquo;s popular for a good reason.</p>
+<h2 id="neovim">Neovim</h2>
+<p>Another incredibly popular tool, <a href="https://neovim.io/">Neovim</a> is a text-editing software built using Vim-motions, a method of maneuvering and editing your files with a focus on not using the mouse. Even after setting up <a href="https://www.lazyvim.org/">LazyVim</a>, which allows for extremely feature-rich plugins, I feel like I&rsquo;ve barely scratched the surface of what&rsquo;s possible with Neovim. There are a few shortcuts and vim-motions I&rsquo;ve adopted into my workflow, but there are still so many I&rsquo;ve not used that, and a couple I still don&rsquo;t fully understand. I&rsquo;ve been trying to just focus on navigation which has helped a lot.</p>
+<h2 id="rmpc">RMPC</h2>
+<p>My main music platform, using <a href="https://www.musicpd.org/">MPD</a> as a music daemon, <a href="https://github.com/mierak/rmpc">RMPC</a> is terminal based music player. It looks great, somewhat easily configurable, and does what I need it to do. To get it work on my keyboard buttons for play and pause took a bit of effort, and eventually lead me to installing <a href="https://github.com/natsukagami/mpd-mpris">mpd-mpris</a> to get it functioning (Framework 13!). I also installed <a href="https://github.com/karlstav/cava">Cava</a> as my visualizer.</p>
+<h1 id="minor-tools">Minor Tools</h1>
+<h2 id="yazi">Yazi</h2>
+<p>A terminal file explorer, <a href="https://yazi-rs.github.io/docs/quick-start/">Yazi</a> is a recently recommended tool I&rsquo;ve been trying to integrate more of. While I mostly use Neovim&rsquo;s Tree Explorer, or the built-in File Explorer, Yazi not only looks nice but again focuses on using the keyboard mostly, which fits into my Vim-esque endeavors.</p>
+<h2 id="btop">btop</h2>
+<p>Another terminal application (really getting into terminal work huh?) I got recently introduced to, <a href="https://github.com/aristocratos/btop">btop</a> is like an upgrade to <a href="https://htop.dev/">htop</a> and other task-manager like software. There&rsquo;s so much going on that I needed to learn a lot more about Linux in general to understand all that is going on here. I still have a decent amount I need to learn about it, but I&rsquo;ve been trying to use it whenever I can.</p>
+<h2 id="clamscan">clamscan</h2>
+<p>Using ClamAV, an antivirus software, I run <code>clamscan</code> on any directories I want to check for any known viruses/malware. Whenever sailing on the seven seas, it&rsquo;s best to ensure all of your booty is plentiful without any unexpected visitors. Running <code>clamscan -r path/to/files</code> works best for me.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/linux/">linux</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/me/">me</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        568 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2026-02-26 19:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+
+            
+            <span class="button next">
+                <a href="https://mrpointing.com/posts/1-year-of-obsidian/">
+                    <span class="button__text">1 Year of Obsidian</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true, resetStyles: true });
+    });
+</script>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

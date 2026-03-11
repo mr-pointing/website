@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Modern Linux - Chapter 7</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-7/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;networking&#34;&gt;Networking&lt;/h1&gt;&#xA;&lt;p&gt;A topic I&amp;rsquo;ve gone over before in a few notes now, so if you want a deeper dive on general topics, see &lt;a href=&#34;https://mrpointing.com/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/&#34;&gt;this&lt;/a&gt; note. What we&amp;rsquo;re going to look at now is the Linux side of things, and how the Linux protocol deals with connecting to the world wide web. Specifically, the network protocols used and tooling provided.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;&#xA;&lt;p&gt;Without network connection, everything in the last chapter would be a moot point. There&amp;rsquo;s no external applications, supply chain past the initial purchase, and connection with the outside world. The tough part about networking is the amount of moving parts between all of the layers.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Introduction to Computer Networking</title>
       <link>https://mrpointing.com/notes/computer-science/internet-and-it/coursera/introduction-to-computer-networking/</link>

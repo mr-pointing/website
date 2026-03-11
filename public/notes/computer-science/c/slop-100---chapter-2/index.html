@@ -6,7 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="" />
+<meta name="description" content=" Conditionals Let&rsquo;s say we have the code from last chapter;
+#include &lt;stdio.h&gt; int main() { int year = 2026; printf(&#34;This is the year %i&#34;, year); return 0; } To add conditional statements, they look like this;
+#include &lt;stdio.h&gt; int main() { int year = 2026; if(year == 2026) {	printf(&#34;This is the year %i&#34;, year); } return 0; } The usual comparison operators are available, greater than, less than, and so on. You can also use logical operators, like &amp;&amp; for and, or || for or.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, c" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -45,20 +48,30 @@
 
 
   <meta itemprop="name" content="SLOP 100 - Chapter 2">
+  <meta itemprop="description" content="Conditionals Let’s say we have the code from last chapter;
+#include &lt;stdio.h&gt; int main() { int year = 2026; printf(&#34;This is the year %i&#34;, year); return 0; } To add conditional statements, they look like this;
+#include &lt;stdio.h&gt; int main() { int year = 2026; if(year == 2026) {	printf(&#34;This is the year %i&#34;, year); } return 0; } The usual comparison operators are available, greater than, less than, and so on. You can also use logical operators, like &amp;&amp; for and, or || for or.">
   <meta itemprop="datePublished" content="2026-01-05T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-01-05T00:00:00+00:00">
+  <meta itemprop="wordCount" content="537">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,C">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="SLOP 100 - Chapter 2">
+  <meta name="twitter:description" content="Conditionals Let’s say we have the code from last chapter;
+#include &lt;stdio.h&gt; int main() { int year = 2026; printf(&#34;This is the year %i&#34;, year); return 0; } To add conditional statements, they look like this;
+#include &lt;stdio.h&gt; int main() { int year = 2026; if(year == 2026) {	printf(&#34;This is the year %i&#34;, year); } return 0; } The usual comparison operators are available, greater than, less than, and so on. You can also use logical operators, like &amp;&amp; for and, or || for or.">
 
 
 
     <meta property="og:url" content="https://mrpointing.com/notes/computer-science/c/slop-100---chapter-2/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="SLOP 100 - Chapter 2">
+  <meta property="og:description" content="Conditionals Let’s say we have the code from last chapter;
+#include &lt;stdio.h&gt; int main() { int year = 2026; printf(&#34;This is the year %i&#34;, year); return 0; } To add conditional statements, they look like this;
+#include &lt;stdio.h&gt; int main() { int year = 2026; if(year == 2026) {	printf(&#34;This is the year %i&#34;, year); } return 0; } The usual comparison operators are available, greater than, less than, and so on. You can also use logical operators, like &amp;&amp; for and, or || for or.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -151,7 +164,111 @@
 
             <div class="post-content">
                 <hr>
-
+<h1 id="conditionals">Conditionals</h1>
+<p>Let&rsquo;s say we have the code from last chapter;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> year <span style="color:#f92672">=</span> <span style="color:#ae81ff">2026</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;This is the year %i&#34;</span>, year);
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>To add conditional statements, they look like this;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> year <span style="color:#f92672">=</span> <span style="color:#ae81ff">2026</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span>(year <span style="color:#f92672">==</span> <span style="color:#ae81ff">2026</span>) {	
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;This is the year %i&#34;</span>, year);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The usual comparison operators are available, greater than, less than, and so on. You can also use logical operators, like <code>&amp;&amp;</code> for <em>and</em>, or <code>||</code> for <em>or</em>.</p>
+<p><code>else if</code> statements and <code>else</code> are written like so;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">24</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Checks for a single digit number
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span>(i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">&gt;=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">9</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is a single digit </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>	} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">99</span> <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">&gt;=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">99</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is two digits long </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>	} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is three digits or more </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Like most if not all languages, these checks are boolean checks, running only if the designated check is true. If false, they are skipped. Up until C23, booleans were not supported as a type, and mostly were 1 for true and 0 for false. They are supported, but due to C being such an old language it&rsquo;s not commonly adopted into code bases and may not be used at all. What SLOP recommends is using C99&rsquo;s <code>stdbool.h</code> library, like so;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdbool.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">bool</span> t <span style="color:#f92672">=</span> true;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">bool</span> f <span style="color:#f92672">=</span> false;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span>(t) {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Variable t is true!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span>(f <span style="color:#f92672">==</span> false) {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Variable f is false!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Exclamation points are used in mostly two ways; <code>!=</code> for not equal to, and <code>!</code> in front of a boolean to make it a <strong>NOT</strong> operator.</p>
+<p>If you have a long chain of <code>if</code> statements, technically the more efficient way to write the check out is using a <code>switch</code> statement instead;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">switch</span>(i) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is 1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>); } <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is 2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>); } <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is 3</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>); } <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is 4</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>); } <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is 5</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>); } <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is something else</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>); } <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Exactly why these are faster is not so important, and for many statements it&rsquo;s even sometimes better to use an if-else statement, but we should know they exist regardless.</p>
+<h1 id="loops">Loops</h1>
+<p>While loops are written as so;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdbool.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span>(i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is %i</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, i);
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">++</span>i;
+</span></span><span style="display:flex;"><span>	} 
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>To clarify, there is a difference between a prefix and postfix operator choice. If you were to print them, the prefix operator will print the number +1, while the postfix will print the original number and increment as the final segment of the line being ran. The prefix operator is faster.</p>
+<p>We can use <em>logical loop statements</em>, like <em>continue</em> or <em>break</em> to skip and end the loop, respectively. The last important structure is the <code>for</code> loop;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdbool.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#f92672">++</span>i) {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;i is %i</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, i);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
             </div>
         </article>
 

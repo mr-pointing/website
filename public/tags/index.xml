@@ -7,41 +7,34 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computerscience</title>
       <link>https://mrpointing.com/tags/computerscience/</link>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/computerscience/</guid>
       <description></description>
     </item>
     <item>
-      <title>Html</title>
-      <link>https://mrpointing.com/tags/html/</link>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/html/</guid>
+      <title>Css</title>
+      <link>https://mrpointing.com/tags/css/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/css/</guid>
       <description></description>
     </item>
     <item>
       <title>Textbook</title>
       <link>https://mrpointing.com/tags/textbook/</link>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/textbook/</guid>
       <description></description>
     </item>
     <item>
-      <title>Python</title>
-      <link>https://mrpointing.com/tags/python/</link>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Me</title>
-      <link>https://mrpointing.com/tags/me/</link>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/me/</guid>
+      <title>Linux</title>
+      <link>https://mrpointing.com/tags/linux/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/linux/</guid>
       <description></description>
     </item>
     <item>
@@ -52,17 +45,52 @@
       <description></description>
     </item>
     <item>
+      <title>Classics</title>
+      <link>https://mrpointing.com/tags/classics/</link>
+      <pubDate>Tue, 01 Jan 1985 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/classics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drama</title>
+      <link>https://mrpointing.com/tags/drama/</link>
+      <pubDate>Fri, 01 Jan 1869 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/drama/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Horror</title>
+      <link>https://mrpointing.com/tags/horror/</link>
+      <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/horror/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Me</title>
+      <link>https://mrpointing.com/tags/me/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/me/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://mrpointing.com/tags/html/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://mrpointing.com/tags/python/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>C</title>
       <link>https://mrpointing.com/tags/c/</link>
       <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/c/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>https://mrpointing.com/tags/css/</link>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/css/</guid>
       <description></description>
     </item>
     <item>
@@ -94,20 +122,6 @@
       <description></description>
     </item>
     <item>
-      <title>Classics</title>
-      <link>https://mrpointing.com/tags/classics/</link>
-      <pubDate>Tue, 01 Jan 1985 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/classics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Horror</title>
-      <link>https://mrpointing.com/tags/horror/</link>
-      <pubDate>Tue, 01 Jan 1991 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/horror/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Philosophy</title>
       <link>https://mrpointing.com/tags/philosophy/</link>
       <pubDate>Mon, 01 Jan 1883 00:00:00 +0000</pubDate>
@@ -122,10 +136,10 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>https://mrpointing.com/tags/linux/</link>
+      <title>Internet</title>
+      <link>https://mrpointing.com/tags/internet/</link>
       <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/linux/</guid>
+      <guid>https://mrpointing.com/tags/internet/</guid>
       <description></description>
     </item>
     <item>
@@ -385,13 +399,6 @@
       <link>https://mrpointing.com/tags/machinelearning/</link>
       <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/machinelearning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Internet</title>
-      <link>https://mrpointing.com/tags/internet/</link>
-      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/internet/</guid>
       <description></description>
     </item>
     <item>

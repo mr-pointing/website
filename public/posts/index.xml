@@ -6,8 +6,37 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
         <atom:link href="https://mrpointing.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>My Linux Tools &amp; Services</title>
+            <link>https://mrpointing.com/posts/my-linux-tools--services/</link>
+            <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+            
+            <guid>https://mrpointing.com/posts/my-linux-tools--services/</guid>
+            <description>&lt;hr&gt;
+&lt;p&gt;After using Linux for over a year now, I can confidently say I almost know what I&amp;rsquo;m doing. There have been many ups and downs, after going through dozens of message boards and text books. I still love this process, even if it gives me crippling anxiety when things aren&amp;rsquo;t going as planned.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to go over some, if not all of the Linux specific tools I&amp;rsquo;ve been using along the way. I&amp;rsquo;ll break them down into &lt;em&gt;major&lt;/em&gt; (used everyday, if not once a week) to &lt;em&gt;minor&lt;/em&gt; (somewhat in use or exploring their potential in my workflow). At some point I&amp;rsquo;ll put my dot files on GitHub.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<hr>
+<p>After using Linux for over a year now, I can confidently say I almost know what I&rsquo;m doing. There have been many ups and downs, after going through dozens of message boards and text books. I still love this process, even if it gives me crippling anxiety when things aren&rsquo;t going as planned.</p>
+<p>I&rsquo;m going to go over some, if not all of the Linux specific tools I&rsquo;ve been using along the way. I&rsquo;ll break them down into <em>major</em> (used everyday, if not once a week) to <em>minor</em> (somewhat in use or exploring their potential in my workflow). At some point I&rsquo;ll put my dot files on GitHub.</p>
+<h1 id="major-tools">Major Tools</h1>
+<h2 id="tmux">Tmux</h2>
+<p>Introduced by a <a href="https://mrpointing.com/notes/computer-science/textbooks/learning-modern-linux/learning-modern-linux---chapter-1/">textbook</a> I was going through, <a href="https://github.com/tmux/tmux/wiki">tmux</a> is a terminal multiplexer, allowing for tab-like behavior in the terminal. My main terminal is <a href="https://sw.kovidgoyal.net/kitty/">kitty</a> which is already full of features, but once I saw how much easier my life would get by having split terminal tabs I was hooked. I used to have three or four terminal instances open at once, that I can now condense to one window and move among my tabs with ease. Not only that, but all of my sessions are saved, so if I accidentally closed my terminal window I can open another and quickly get back to where I was. I don&rsquo;t need to sing it&rsquo;s praises; it&rsquo;s popular for a good reason.</p>
+<h2 id="neovim">Neovim</h2>
+<p>Another incredibly popular tool, <a href="https://neovim.io/">Neovim</a> is a text-editing software built using Vim-motions, a method of maneuvering and editing your files with a focus on not using the mouse. Even after setting up <a href="https://www.lazyvim.org/">LazyVim</a>, which allows for extremely feature-rich plugins, I feel like I&rsquo;ve barely scratched the surface of what&rsquo;s possible with Neovim. There are a few shortcuts and vim-motions I&rsquo;ve adopted into my workflow, but there are still so many I&rsquo;ve not used that, and a couple I still don&rsquo;t fully understand. I&rsquo;ve been trying to just focus on navigation which has helped a lot.</p>
+<h2 id="rmpc">RMPC</h2>
+<p>My main music platform, using <a href="https://www.musicpd.org/">MPD</a> as a music daemon, <a href="https://github.com/mierak/rmpc">RMPC</a> is terminal based music player. It looks great, somewhat easily configurable, and does what I need it to do. To get it work on my keyboard buttons for play and pause took a bit of effort, and eventually lead me to installing <a href="https://github.com/natsukagami/mpd-mpris">mpd-mpris</a> to get it functioning (Framework 13!). I also installed <a href="https://github.com/karlstav/cava">Cava</a> as my visualizer.</p>
+<h1 id="minor-tools">Minor Tools</h1>
+<h2 id="yazi">Yazi</h2>
+<p>A terminal file explorer, <a href="https://yazi-rs.github.io/docs/quick-start/">Yazi</a> is a recently recommended tool I&rsquo;ve been trying to integrate more of. While I mostly use Neovim&rsquo;s Tree Explorer, or the built-in File Explorer, Yazi not only looks nice but again focuses on using the keyboard mostly, which fits into my Vim-esque endeavors.</p>
+<h2 id="btop">btop</h2>
+<p>Another terminal application (really getting into terminal work huh?) I got recently introduced to, <a href="https://github.com/aristocratos/btop">btop</a> is like an upgrade to <a href="https://htop.dev/">htop</a> and other task-manager like software. There&rsquo;s so much going on that I needed to learn a lot more about Linux in general to understand all that is going on here. I still have a decent amount I need to learn about it, but I&rsquo;ve been trying to use it whenever I can.</p>
+<h2 id="clamscan">clamscan</h2>
+<p>Using ClamAV, an antivirus software, I run <code>clamscan</code> on any directories I want to check for any known viruses/malware. Whenever sailing on the seven seas, it&rsquo;s best to ensure all of your booty is plentiful without any unexpected visitors. Running <code>clamscan -r path/to/files</code> works best for me.</p>
+]]></content>
+        </item>
         
         <item>
             <title>1 Year of Obsidian</title>
