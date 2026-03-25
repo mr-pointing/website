@@ -6,7 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="" />
+<meta name="description" content=" Color One of the easiest ways to start making your pages look nice, color can quickly bring together content to look neat and organized. More specifically, choosing a good color scheme is what keeps people on your site rather than a cursory glance. We&rsquo;ll not only look at how to integrate colors, but what good integration of colors looks like.
+By default, the color property changes the color of the text within a given element. We&rsquo;ve already seen this used before, but to specify, we have three main ways of giving CSS a color; RGB values, a HEX code, or a color name.
+" />
 <meta name="keywords" content="homepage, blog, computerscience, css, textbook" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -45,20 +47,27 @@
 
 
   <meta itemprop="name" content="HTML & CSS - Chapter 11">
+  <meta itemprop="description" content="Color One of the easiest ways to start making your pages look nice, color can quickly bring together content to look neat and organized. More specifically, choosing a good color scheme is what keeps people on your site rather than a cursory glance. We’ll not only look at how to integrate colors, but what good integration of colors looks like.
+By default, the color property changes the color of the text within a given element. We’ve already seen this used before, but to specify, we have three main ways of giving CSS a color; RGB values, a HEX code, or a color name.">
   <meta itemprop="datePublished" content="2026-03-11T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-03-11T00:00:00+00:00">
+  <meta itemprop="wordCount" content="568">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Css,Textbook">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="HTML & CSS - Chapter 11">
+  <meta name="twitter:description" content="Color One of the easiest ways to start making your pages look nice, color can quickly bring together content to look neat and organized. More specifically, choosing a good color scheme is what keeps people on your site rather than a cursory glance. We’ll not only look at how to integrate colors, but what good integration of colors looks like.
+By default, the color property changes the color of the text within a given element. We’ve already seen this used before, but to specify, we have three main ways of giving CSS a color; RGB values, a HEX code, or a color name.">
 
 
 
     <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-11/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="HTML & CSS - Chapter 11">
+  <meta property="og:description" content="Color One of the easiest ways to start making your pages look nice, color can quickly bring together content to look neat and organized. More specifically, choosing a good color scheme is what keeps people on your site rather than a cursory glance. We’ll not only look at how to integrate colors, but what good integration of colors looks like.
+By default, the color property changes the color of the text within a given element. We’ve already seen this used before, but to specify, we have three main ways of giving CSS a color; RGB values, a HEX code, or a color name.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -152,6 +161,41 @@
 
             <div class="post-content">
                 <hr>
+<h1 id="color">Color</h1>
+<p>One of the easiest ways to start making your pages look nice, color can quickly bring together content to look neat and organized. More specifically, choosing a good color scheme is what keeps people on your site rather than a cursory glance. We&rsquo;ll not only look at how to integrate colors, but what good integration of colors looks like.</p>
+<p>By default, the <code>color</code> property changes the color of the text within a given element. We&rsquo;ve already seen this used before, but to specify, we have three main ways of giving CSS a color; RGB values, a HEX code, or a color name.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* color name */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">purple</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* hex code */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h2</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#ee3e80</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* rgb value */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: rgb(<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">125</span>, <span style="color:#ae81ff">7</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Pretty self explanatory. One new thing this example goes over is comment codes; unlike HTML, where we write comments between <code>&lt;!-- --&gt;</code>, we write CSS comments between <code>/* */</code>. Comments in CSS are sometimes even more important than HTML, as CSS styles can be hard to understand if you didn&rsquo;t write them yourself.</p>
+<p>Changing the <code>background-color</code> property of a given element will supply the background with said color. We know this makes sense since we know every HTML element is a box; <code>background-color</code> colors in the box.</p>
+<h2 id="understanding-color">Understanding Color</h2>
+<p>Going into depth on how color works is beyond this class, but basically every color on your screen is composed of some combination of red, green, and blue. All three methods of selecting a color provide the same thing; a combination of these three colors. RGB is the most straightforward example of this, since you&rsquo;re literally picking how much of each color you want. Hex codes and color names work the same, with color names being the most limited (only 147 options).</p>
+<p><em>Hue</em> is what we refer to as color, which is affected by saturation and brightness. <em>Saturation</em> refers to how much gray is in a color, and <em>brightness</em> is how much black is in a color. A really important term when designing a page is <strong>contrast</strong>; contrast is the difference between the colors of your foreground and background content. For example, low contrast would have a light color text on a light color background, while high contrast would have a light color text on a very dark background. Keep in mind, text is easiest to read with higher contrast, but <em>too much contrast</em> is bad for long spurts of reading. A medium contrast is best for longer paragraphs.</p>
+<p>Last thing I want to go over is <em>Opacity</em>. Opacity is when you give a color a transparent attribute- making something see through. It&rsquo;s really easy, but wasn&rsquo;t always supported, and still is not supported on older machines;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">p</span>.<span style="color:#a6e22e">one</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: rgb(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">0.5</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>There are two other tags we aren&rsquo;t going to go over, to keep things simple. These are <code>hsl</code> and <code>rgba</code>. If you are interested in learning about these, give them a quick google. The standard three methods of color should be enough for us, but if you need a more complex shade, look into them.</p>
+<h1 id="summary">Summary</h1>
+<ul>
+<li>There are three main ways to place color into your pages; RGB, HEX, or Plain Name.</li>
+<li>Comments are made with an opening and closing tag; <code>/* */</code></li>
+<li>Two main ways to integrate color into your pages; <code>color</code> for text, and <code>background-color</code> for box fill</li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-12/">Chapter 12</a></p>
 
             </div>
         </article>

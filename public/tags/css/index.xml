@@ -7,14 +7,28 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS - Chapter 13</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-13/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-13/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;boxes&#34;&gt;Boxes&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>HTML &amp; CSS - Chapter 12</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-12/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-12/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;text&#34;&gt;Text&lt;/h1&gt;&#xA;&lt;p&gt;Easily what makes up 90% or more of every web page ever, text is integral to the design of a page. Not just text, but using text with the proper font, size, and spacing is everything. In this chapter, we&amp;rsquo;ll take a look at some text terminology, how to edit and format our text, as well as address some best practice uses of text manipulation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;terminology&#34;&gt;Terminology&lt;/h2&gt;&#xA;&lt;p&gt;Before we get into editing, we need to understand some terms that will help us make better decisions. First up, we need to understand that different fonts use a different &lt;em&gt;typeface&lt;/em&gt;, or the details of the font. We consider a &lt;strong&gt;serif&lt;/strong&gt; font to have extra details at the ends of the main strokes of your letter; &lt;strong&gt;sans-serif&lt;/strong&gt; as main strokes without extra flair, and &lt;strong&gt;monospace&lt;/strong&gt;, where the each character of the font is the same width.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 11</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-11/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-11/</guid>
-      <description>&lt;hr&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;color&#34;&gt;Color&lt;/h1&gt;&#xA;&lt;p&gt;One of the easiest ways to start making your pages look nice, color can quickly bring together content to look neat and organized. More specifically, choosing a good color scheme is what keeps people on your site rather than a cursory glance. We&amp;rsquo;ll not only look at how to integrate colors, but what good integration of colors looks like.&lt;/p&gt;&#xA;&lt;p&gt;By default, the &lt;code&gt;color&lt;/code&gt; property changes the color of the text within a given element. We&amp;rsquo;ve already seen this used before, but to specify, we have three main ways of giving CSS a color; RGB values, a HEX code, or a color name.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTML &amp; CSS - Chapter 10</title>

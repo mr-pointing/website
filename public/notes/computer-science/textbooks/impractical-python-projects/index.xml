@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Impractical Python Projects - Chapter 4</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-4/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-4/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
     <item>
       <title>Impractical Python Projects - Chapter 3</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-3/</link>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/impractical-python-projects/impractical-python-projects---chapter-3/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;project-3-solving-anagrams&#34;&gt;Project #3: Solving Anagrams&lt;/h1&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;project-3-solving-anagrams&#34;&gt;Project #3: Solving Anagrams&lt;/h1&gt;&#xA;&lt;p&gt;Another string-based project, this time centered around anagrams. An &lt;em&gt;anagram&lt;/em&gt; is a word that can be spelled using the letters of another word. For example, &lt;strong&gt;Elvis&lt;/strong&gt; creates &lt;em&gt;lives&lt;/em&gt;, &lt;em&gt;evils&lt;/em&gt;, and &lt;em&gt;veils&lt;/em&gt;. We&amp;rsquo;ll complete three projects; finding anagrams from a single word, finding phrase anagrams from your name, and finally end with a Harry Potter Voldemort game.&lt;/p&gt;&#xA;&lt;h2 id=&#34;finding-single-word-anagrams&#34;&gt;Finding Single-Word Anagrams&lt;/h2&gt;&#xA;&lt;p&gt;Just like the last few chapters, the first portion or first project is always the easiest. This one isn&amp;rsquo;t so bad; most of you could write this one without much help if you remember the process from the last chapter. One key part of finding anagrams is that they&amp;rsquo;ll always have the same amount of letters, otherwise it wouldn&amp;rsquo;t be much of anagram. Python doesn&amp;rsquo;t have any built-in operators that will do this for us, so we&amp;rsquo;ll have to write one. We&amp;rsquo;re also going to use the dictionary we used from last chapter, and load it as strings.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impractical Python Projects - Chapter 2</title>

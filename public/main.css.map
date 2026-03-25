@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/richie/Code/mr-pointing/website",
+	"sourceRoot": "/home/richie/Documents/Code/website",
 	"sources": [
 		"themes/mr-p-hello-friend-ng/assets/scss/main.scss",
 		"themes/mr-p-hello-friend-ng/assets/scss/_normalize.scss",

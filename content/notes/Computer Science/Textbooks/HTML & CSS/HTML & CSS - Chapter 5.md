@@ -43,7 +43,7 @@ If you want to have a caption for your image, you should place your image in a `
 ```html
 <figure>
   <img
-    src="images/otters.jpg"
+    src="static/images/otters.jpg"
     alt="Picture of two otters sleeping holding hands"
   />
   <br />

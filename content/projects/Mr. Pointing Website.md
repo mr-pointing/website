@@ -34,7 +34,7 @@ So, I want to make my website using Obsidian to write Markdown files, have Hugo 
 So some updates before I go to bed:
 
 - There's an issue where the images need to be told explicitly, when turned into Hugo Markdown files, that the Excalidraw files are actually markdown files. So those have to be edited manually.
-- All attachments need to be rewritten to not point to a markdown file like obsidian uses, but using Hugo's image reference `{{ $image := resources.Get "images/sunset.jpg" }}`
+- All attachments need to be rewritten to not point to a markdown file like obsidian uses, but using Hugo's image reference `{{ $image := resources.Get "static/images/sunset.jpg" }}`
 
 Find date and repalce with:
 

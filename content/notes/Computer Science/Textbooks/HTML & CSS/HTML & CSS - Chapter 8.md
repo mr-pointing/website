@@ -57,7 +57,7 @@ Up until this point, we've written our code in either the `body` of `head` of ou
 
 ```html
 <div class="heading">
-	<img src="images/logo.gif" alt="Mr. Pointing">
+	<img src="static/images/logo.gif" alt="Mr. Pointing">
 	<ul>
 		<li><a href="index.html">Home</a></li>
 		<li><a href="bio.html">About</a></li>

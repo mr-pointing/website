@@ -32,7 +32,7 @@ $mse=\frac{1}{n}\sum^{n}_{i=1}(y_i-(mx_i+b))^2$
 
 Obviously, guessing and checking every combination of $m$ and $b$ is inefficient and will take you forever. This is where our topic of conversation comes into play. **Gradient Descent** is a machine learning algorithm that calculates the line of best fit for a training data set. Conceptually this is a little weird; if you plot the values of $m$ and $b$ against the MSE (or in this case, cost), you'll actually get a ball-like graph like in the image reference below.
 
-![gradient descent](https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/national/gradient-descent-convex-function.png)
+![gradient descent](https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-static/images/national/gradient-descent-convex-function.png)
 
 We start at a point, usually (0,0). We calculate the cost, then reduce the value of $m$ and $b$, and again calculating the cost. We continue to do this until we reach the bottom, or the _minima_, where the **error is minimum**. That is our answer, or we'll use that $m$ and $b$ for our function.
 

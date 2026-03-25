@@ -26,7 +26,7 @@ HTML again provides a logical name for the `video` tag, our main method of provi
 <body>
 	<h1>Catjam</h1>
 	<video src="videos/cat.mp4"
-		poster="images/cat.jpg"
+		poster="static/images/cat.jpg"
 		width="400" 
 		height="300"
 		preload="auto"
