@@ -80,13 +80,6 @@
       <description>&lt;p&gt;Notes on Front End related topics.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Mr. Pointing</title>
-      <link>https://mrpointing.com/about/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/about/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;who-i-am&#34;&gt;&lt;strong&gt;Who I Am&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;My name is Richard Pointing, a computer science teacher based in Brooklyn, New York. I recently graduated with a Masters in Computer Science, with a focus in Machine Learning and AI.&lt;/p&gt;&#xA;&lt;p&gt;My focus is in Python, but I&amp;rsquo;ve recently been trying to dip my feet in Bash and getting comfortable in Linux. This website is a test to see if I can start doing more things myself (choosing to use Hugo instead of Obsidian Publish).&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Advanced Python</title>
       <link>https://mrpointing.com/notes/computer-science/python/advanced-python/</link>
       <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
@@ -133,7 +126,7 @@
       <link>https://mrpointing.com/now/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/now/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-now-page&#34;&gt;What is a Now Page?&lt;/h2&gt;&#xA;&lt;p&gt;Learn about why you need a Now page &lt;a href=&#34;https://nownownow.com/about&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;listening&#34;&gt;Listening&lt;/h2&gt;&#xA;&lt;p&gt;I keep one main playlist that constantly add too every few years. My current playlist can be found &lt;a href=&#34;https://open.spotify.com/playlist/3feDlFqrgP49k8q43rpkip?si=2xnKT7-mTcCSmOrkPe-zJA&amp;pi=u-5Fcl0Ir7QaWk&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can also find a link to my Discogs &lt;a href=&#34;https://www.discogs.com/user/binky_core&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;&#xA;&lt;p&gt;Currently Reading:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;The Idiot&lt;/em&gt; by &lt;strong&gt;Fyodor Dostoevsky&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can find my Goodreads &lt;a href=&#34;https://www.goodreads.com/user/show/119117493&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;watching&#34;&gt;Watching&lt;/h2&gt;&#xA;&lt;p&gt;Currently Watching:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Suddenly Amish&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can find my IMDb &lt;a href=&#34;https://www.imdb.com/user/ur42380257/ratings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;playing&#34;&gt;Playing&lt;/h2&gt;&#xA;&lt;p&gt;Currently Playing:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Diablo 2&lt;/li&gt;&#xA;&lt;li&gt;Mortal Shell&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-now-page&#34;&gt;What is a Now Page?&lt;/h2&gt;&#xA;&lt;p&gt;Learn about why you need a Now page &lt;a href=&#34;https://nownownow.com/about&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-im-working-on&#34;&gt;What I&amp;rsquo;m Working On&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developing out my Wife&amp;rsquo;s website, &lt;a href=&#34;https://www.capricornpokes.com&#34;&gt;CapricornPokes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Building out my mini home-lab&lt;/li&gt;&#xA;&lt;li&gt;Trying to walk to 2 new places every month&lt;/li&gt;&#xA;&lt;li&gt;Getting back into Jiu-Jitsu&lt;/li&gt;&#xA;&lt;li&gt;Working on my first hardware project, a &lt;a href=&#34;https://mrpointing.com/projects/vinyl-visualizer/&#34;&gt;Vinyl Visualizer&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;listening&#34;&gt;Listening&lt;/h2&gt;&#xA;&lt;p&gt;I keep one main playlist that constantly add too every few years. My current playlist can be found &lt;a href=&#34;https://open.spotify.com/playlist/3feDlFqrgP49k8q43rpkip?si=2xnKT7-mTcCSmOrkPe-zJA&amp;pi=u-5Fcl0Ir7QaWk&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can also find a link to my Discogs &lt;a href=&#34;https://www.discogs.com/user/binky_core&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Current Obsidian Plugins</title>
@@ -155,6 +148,13 @@
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/hugo/</guid>
       <description>&lt;p&gt;Notes on Hugo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mr. Pointing</title>
+      <link>https://mrpointing.com/about/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/about/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;who-i-am&#34;&gt;&lt;strong&gt;Who I Am&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;My name is Richard Pointing, a computer science teacher based in Brooklyn, New York. I&amp;rsquo;ve been teaching for four years, and am self proclaimed jack-of-all-trades, master of some. I love to read, collect vinyl records, and have recently been trying to break into tattooing. You can see my progress for that &lt;a href=&#34;https://instagram.com/cd___flash&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I grew up all over New York, starting in Queens and going to high-school in Long Island. I always knew I had passion- not just for one special task or topic, but for life in general. I do everything I can with as much gusto as I can provide. There&amp;rsquo;s a motto I&amp;rsquo;ve lead my life by; &lt;em&gt;too much but never enough&lt;/em&gt;. My wife would say I love to suffer and make my life harder. I like to say life made me so overpowered, I need to give myself nerfs, otherwise it&amp;rsquo;ll be unfair to everyone else around me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian Help</title>
