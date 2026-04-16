@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content=" Testing Code Link to article.
+While testing in Python can and is a complicated topic, we don&rsquo;t have to go too deep into it while still being able to accomplish a good amount of testing. Obviously, up until this point you should have a basic understanding of the application you created, as building out a good test means using your program as intended, sometimes even more so to be rigorous.
+" />
+<meta name="keywords" content="homepage, blog, computerscience, python, testing" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mrpointing.com/notes/computer-science/python/advanced-python/testing-in-python/" />
+
+
+    <title>
+        
+            Testing in Python :: Mr. Pointing  — Computer Science Teacher
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.42bc4753416907cd4d426f337ec77c315cab5fdcabe850c0ea0a747a2f6744a7.css" integrity="sha256-QrxHU0FpB81NQm8zfsd8MVyrX9yr6FDA6gp0ei9nRKc=">
+
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Testing in Python">
+  <meta itemprop="description" content="Testing Code Link to article.
+While testing in Python can and is a complicated topic, we don’t have to go too deep into it while still being able to accomplish a good amount of testing. Obviously, up until this point you should have a basic understanding of the application you created, as building out a good test means using your program as intended, sometimes even more so to be rigorous.">
+  <meta itemprop="datePublished" content="2026-03-31T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-03-31T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1275">
+  <meta itemprop="image" content="https://mrpointing.com/">
+  <meta itemprop="keywords" content="Computerscience,Python,Testing">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mrpointing.com/">
+  <meta name="twitter:title" content="Testing in Python">
+  <meta name="twitter:description" content="Testing Code Link to article.
+While testing in Python can and is a complicated topic, we don’t have to go too deep into it while still being able to accomplish a good amount of testing. Obviously, up until this point you should have a basic understanding of the application you created, as building out a good test means using your program as intended, sometimes even more so to be rigorous.">
+
+
+
+    <meta property="og:url" content="https://mrpointing.com/notes/computer-science/python/advanced-python/testing-in-python/">
+  <meta property="og:site_name" content="Mr. Pointing">
+  <meta property="og:title" content="Testing in Python">
+  <meta property="og:description" content="Testing Code Link to article.
+While testing in Python can and is a complicated topic, we don’t have to go too deep into it while still being able to accomplish a good amount of testing. Obviously, up until this point you should have a basic understanding of the application you created, as building out a good test means using your program as intended, sometimes even more so to be rigorous.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2026-03-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-31T00:00:00+00:00">
+    <meta property="article:tag" content="Computerscience">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Testing">
+    <meta property="og:image" content="https://mrpointing.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2026-03-31 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                mr. pointing</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/notes">Notes</a></li><li><a href="/now">Now</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mrpointing.com/notes/computer-science/python/advanced-python/testing-in-python/">Testing in Python</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<h1 id="testing-code">Testing Code</h1>
+<p><a href="https://realpython.com/python-testing/">Link</a> to article.</p>
+<p>While testing in Python can and is a complicated topic, we don&rsquo;t have to go too deep into it while still being able to accomplish a good amount of testing. Obviously, up until this point you should have a basic understanding of the application you created, as building out a good test means  using your program as intended, sometimes even more so to be rigorous.</p>
+<h2 id="types-of-testing">Types of Testing</h2>
+<p>Most people when writing any kind of code will stop at some point, run the code, and check to see if what they wrote so far actually runs and makes sense. This <em>is</em> a form of testing, just a more informal approach; this method is known as <strong>exploratory testing</strong>. This approach works, but is not nearly enough to ensure your program is able to stand on it&rsquo;s own two legs. It&rsquo;s informal for a reason, there is no plan in mind just making sure it runs.</p>
+<p>If we wanted to really make sure things are working properly, we should set up a system where we control everything down to a science, and ensure runs pass consistently. However, doing this manually can become a lot quickly. A good project has more than just 1 or 2 things going on. Once you pass 4-5+ things going on at any point, you start to lose track and can easily make mistakes. Why go through the hard work of writing the code when you now have an even more challenging job of tracing it through with 5 or more examples?</p>
+<p>What we just described is considered <strong>Manual testing</strong>. We don&rsquo;t want to manual test past a certain point. We&rsquo;re going to want to move from manual to <strong>Automatic testing</strong>. This way, we&rsquo;ll write out exactly how we expect to interact with our program, as well as anticipate output and check it to see if it&rsquo;s giving out desirable results. We&rsquo;ll write this script using a few modules and functions built directly into Python.</p>
+<p>Before we do that though, let&rsquo;s explore some more terminology that might become more relevant. Each portion of your program you want to test is called a <em>test step</em>, and checking step for a correct response is called <em>test assertion</em>. The collection of multiple test step components is called <strong>integration testing</strong>, and as you can imagine is extremely important when programming, considering how many components are working in tandem. Here arises another problem; say we&rsquo;re testing 10+ components, and one or two fail. How do we know why those specific parts failed? That&rsquo;s not necessarily the integration tests job. This type of job is more up the alley of the <strong>unit test</strong>, or smaller isolated test that operates on a single component.</p>
+<p>The complexity of your test relies on the complexity of your program. For example, let&rsquo;s say we want to ensure the output of a mathematical function like the <code>sum()</code> function. We can write the following as our first simple unit test;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">assert</span> sum([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;Should be 6&#34;</span>
+</span></span></code></pre></div><p>If you ran the above code, nothing should have happened. There&rsquo;s a good reason for this; 1 + 2 + 3 equals 6! If it didn&rsquo;t, then we&rsquo;d have a problem. Try changing one of the numbers to something else, and see what you get. If your numbers do not equal 6, you likely got a traceback <code>AssertionError</code>. That&rsquo;s a good thing, our unit test is working as intended. However,  a single line is not enough once we start testing entire projects. Here&rsquo;s a nice basic skeleton we can use;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_sum</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">assert</span> sum([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;Should be 6&#34;</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>	test_sum()
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;All test cases passed!&#34;</span>)
+</span></span></code></pre></div><p>Save this as something like <code>test_sum.py</code>, and if you run it getting the final print statement you know everything is working as intended. We can even begin to start writing other functions;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_sum</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">assert</span> sum([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;Should be 6&#34;</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_sum_tuple</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">assert</span> sum((<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">==</span> <span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;Should be 6&#34;</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>	test_sum()
+</span></span><span style="display:flex;"><span>	test_sum_tuple()
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;All test cases passed!&#34;</span>)
+</span></span></code></pre></div><h2 id="test-runners">Test Runners</h2>
+<p>Before we get into what a test runner is, the article I&rsquo;m following suggested also looking into <a href="https://mrpointing.com/notes/computer-science/python/advanced-python/testing-with-doctest/">doctest</a> as another option, where you write the tests as part of your module&rsquo;s docstrings. I haven&rsquo;t looked into it as of writing this note, but I&rsquo;m putting is here as a reminder to look into it more later.</p>
+<p>A test runner is just a method of running tests and collecting the output, delivering advice on how to address your problems, or debug. There are multiple options for test runners, but let&rsquo;s start with what&rsquo;s natively built into Python. That would be using <code>unittest</code>. It includes both a testing framework <em>and</em> test runner.</p>
+<p>To start using it, two things must be true;</p>
+<ol>
+<li>Your test cases are placed in classes as methods</li>
+<li>Instead of using <code>assert</code>, you&rsquo;ll use the <code>unittest.TestCase</code> class</li>
+</ol>
+<p>To see exactly how to accomplish this, let&rsquo;s reconfigure that <code>test_sum.py</code> file to use <code>unittest</code> and call it <code>test_sum_unittest.py</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> unittest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestSum</span>(unittest<span style="color:#f92672">.</span>TestCase):
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_sum</span>(self):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>assertEqual(sum([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]), <span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;Should be 6&#34;</span>)
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_sum_tuple</span>(self):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>assertEqual(sum((<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>)), <span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;Should be 6&#34;</span>)
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>	unittest<span style="color:#f92672">.</span>main()
+</span></span></code></pre></div><p>As you can see, since we want to check for equality, we use the <code>assertEqual()</code> method. There&rsquo;s a whole list of asserts <a href="https://docs.python.org/3/library/unittest.html#assert-methods">here</a>, which we&rsquo;ll come back to in a second. As you start to write more complex programs, you&rsquo;ll find more use for more complex asserts than just equality. Now that we&rsquo;ve written out a <code>unittest</code>, run the code and see what you get. You&rsquo;ll see a &ldquo;list&rdquo; of tests; <code>.</code> if it passed and <code>F</code> if it failed. We should only have two items in this list, one <code>.</code> and one <code>F</code>. Be sure to read over the documentation on this if you want more examples.</p>
+<p>There are two other relevant runners, <code>nose2</code> and <code>pytest</code>. What&rsquo;s really nice about these two are the quality of life changes; <code>nose2</code> works on top of <code>unittest</code>, meaning you should learn <code>unittest</code> first before moving onto the other two, on top of <code>pytest</code> being even easier to write. The main draws to learning and using these two are how much easier it is to decipher the error messages for failed tests. As your test cases increase, <code>unittest</code> starts to become harder to parse. Both also have nice discovery methods of finding test cases without having to directly tell the runner where to find them.</p>
+<h2 id="writing-a-python-test">Writing a Python Test</h2>
+<p>Although we&rsquo;ve looked at how to use Python testing, all we&rsquo;ve tested up until this point are built-in functions that should be working regardless of our expected output. Let&rsquo;s build something a little more realistic; we&rsquo;re going to write some code, then build out another testing environment our test cases will live inside of.</p>
+<p>Set up a new project environment (preferably in PyCharm to best follow along but we take what we can get). Let&rsquo;s create our own sum function, in a new file called <code>our_sum.py</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">new_sum</span>(numbers):  
+</span></span><span style="display:flex;"><span>    total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> numbers:  
+</span></span><span style="display:flex;"><span>        total <span style="color:#f92672">+=</span> num  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> total
+</span></span></code></pre></div><p>Now, we should define a main environment to run out tests;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> unittest  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> our_sum <span style="color:#f92672">import</span> new_sum  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestSum</span>(unittest<span style="color:#f92672">.</span>TestCase):  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_list_int</span>(self):  
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Test to see if it can add up a list of integers&#34;&#34;&#34;</span>  
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]  
+</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> new_sum(data)  
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>assertEqual(result, <span style="color:#ae81ff">6</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:  
+</span></span><span style="display:flex;"><span>    unittest<span style="color:#f92672">.</span>main()
+</span></span></code></pre></div><p>What&rsquo;s super nice about running this through PyCharm is how PyCharm will recognize it&rsquo;s trying to run a test, and will actually look a bit different than a normal run. This is an additional layer on top to help you understand the output of your test cases.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mrpointing.com/tags/computerscience/">computerscience</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/python/">python</a></span>
+        <span class="tag"><a href="https://mrpointing.com/tags/testing/">testing</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content" style=>
+            
+            <a href="https://mrpointing.com" style="text-decoration: none;">Richard Pointing</a>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true, resetStyles: true });
+    });
+</script>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on Mr. Pointing</title>
+    <link>https://mrpointing.com/tags/testing/</link>
+    <description>Recent content in Testing on Mr. Pointing</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mrpointing.com/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing with Doctest</title>
+      <link>https://mrpointing.com/notes/computer-science/python/advanced-python/testing-with-doctest/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/advanced-python/testing-with-doctest/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-doctest/&#34;&gt;Link&lt;/a&gt; to article.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Testing in Python</title>
+      <link>https://mrpointing.com/notes/computer-science/python/advanced-python/testing-in-python/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/python/advanced-python/testing-in-python/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;testing-code&#34;&gt;Testing Code&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-testing/&#34;&gt;Link&lt;/a&gt; to article.&lt;/p&gt;&#xA;&lt;p&gt;While testing in Python can and is a complicated topic, we don&amp;rsquo;t have to go too deep into it while still being able to accomplish a good amount of testing. Obviously, up until this point you should have a basic understanding of the application you created, as building out a good test means  using your program as intended, sometimes even more so to be rigorous.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML &amp; CSS - Chapter 14</title>
+      <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-14/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-14/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
     <item>
       <title>HTML &amp; CSS - Chapter 13</title>
       <link>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-13/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-13/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;boxes&#34;&gt;Boxes&lt;/h1&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;boxes&#34;&gt;Boxes&lt;/h1&gt;&#xA;&lt;p&gt;As we know, each of the elements we make has it&amp;rsquo;s own &amp;ldquo;box&amp;rdquo;, or space in which it lives. Controlling your boxes is an integral part of CSS, as most of the styles we&amp;rsquo;ll be making will be control or manipulating these boxes. We&amp;rsquo;re going to look at how to control the dimensions of the boxes, borders, margins &amp;amp; padding, and finally hiding boxes. We&amp;rsquo;ll be positioning our boxes in a later chapter.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTML &amp; CSS - Chapter 12</title>
