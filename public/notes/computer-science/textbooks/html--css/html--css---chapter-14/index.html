@@ -6,7 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="" />
+<meta name="description" content=" Lists, Tables and Forms As we move through the CSS portion of this book, you should start to realize everything we learned in the HTML portion has some CSS style we can apply to it. In this chapter, we&rsquo;ll learn how to start working on our Lists, Tables, and Forms that we learned about in earlier chapters.
+Lists I already know how popular this is going to be based on how many students have already asked questions about this, so strap in. First off, up until this point we&rsquo;ve been calling each list item a number of bullet point. The more accurate name for that item is called a marker, and it can be styled in numerous different ways. The first thing we can do is choose a default style type, using list-stlye-type on our ol or ul. Each list type has different style types;
+" />
 <meta name="keywords" content="homepage, blog, computerscience, css, textbook" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -45,20 +47,27 @@
 
 
   <meta itemprop="name" content="HTML & CSS - Chapter 14">
+  <meta itemprop="description" content="Lists, Tables and Forms As we move through the CSS portion of this book, you should start to realize everything we learned in the HTML portion has some CSS style we can apply to it. In this chapter, we’ll learn how to start working on our Lists, Tables, and Forms that we learned about in earlier chapters.
+Lists I already know how popular this is going to be based on how many students have already asked questions about this, so strap in. First off, up until this point we’ve been calling each list item a number of bullet point. The more accurate name for that item is called a marker, and it can be styled in numerous different ways. The first thing we can do is choose a default style type, using list-stlye-type on our ol or ul. Each list type has different style types;">
   <meta itemprop="datePublished" content="2026-04-10T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-04-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1225">
   <meta itemprop="image" content="https://mrpointing.com/">
   <meta itemprop="keywords" content="Computerscience,Css,Textbook">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mrpointing.com/">
   <meta name="twitter:title" content="HTML & CSS - Chapter 14">
+  <meta name="twitter:description" content="Lists, Tables and Forms As we move through the CSS portion of this book, you should start to realize everything we learned in the HTML portion has some CSS style we can apply to it. In this chapter, we’ll learn how to start working on our Lists, Tables, and Forms that we learned about in earlier chapters.
+Lists I already know how popular this is going to be based on how many students have already asked questions about this, so strap in. First off, up until this point we’ve been calling each list item a number of bullet point. The more accurate name for that item is called a marker, and it can be styled in numerous different ways. The first thing we can do is choose a default style type, using list-stlye-type on our ol or ul. Each list type has different style types;">
 
 
 
     <meta property="og:url" content="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-14/">
   <meta property="og:site_name" content="Mr. Pointing">
   <meta property="og:title" content="HTML & CSS - Chapter 14">
+  <meta property="og:description" content="Lists, Tables and Forms As we move through the CSS portion of this book, you should start to realize everything we learned in the HTML portion has some CSS style we can apply to it. In this chapter, we’ll learn how to start working on our Lists, Tables, and Forms that we learned about in earlier chapters.
+Lists I already know how popular this is going to be based on how many students have already asked questions about this, so strap in. First off, up until this point we’ve been calling each list item a number of bullet point. The more accurate name for that item is called a marker, and it can be styled in numerous different ways. The first thing we can do is choose a default style type, using list-stlye-type on our ol or ul. Each list type has different style types;">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -152,6 +161,246 @@
 
             <div class="post-content">
                 <hr>
+<h1 id="lists-tables-and-forms">Lists, Tables and Forms</h1>
+<p>As we move through the CSS portion of this book, you should start to realize everything we learned in the HTML portion has some CSS style we can apply to it. In this chapter, we&rsquo;ll learn how to start working on our Lists, Tables, and Forms that we learned about in earlier chapters.</p>
+<h2 id="lists">Lists</h2>
+<p>I already know how popular this is going to be based on how many students have already asked questions about this, so strap in. First off, up until this point we&rsquo;ve been calling each list item a number of bullet point. The more accurate name for that item is called a <em>marker</em>, and it can be styled in numerous different ways. The first thing we can do is choose a default style type, using <code>list-stlye-type</code> on our <code>ol</code> or <code>ul</code>. Each list type has different style types;</p>
+<ul>
+<li>Unordered Lists
+<ul>
+<li><code>none</code></li>
+<li><code>disc</code></li>
+<li><code>circle</code></li>
+<li><code>square</code></li>
+</ul>
+</li>
+<li>Ordered Lists
+<ul>
+<li><code>decimal</code></li>
+<li><code>decimal-leading-zero</code></li>
+<li><code>lower-alpha</code></li>
+<li><code>upper-alpha</code></li>
+<li><code>lower-roman</code></li>
+<li><code>upper-roman</code></li>
+</ul>
+</li>
+</ul>
+<p>You also have the option to use an image with <code>list-style-image</code> instead, but use caution as a large image will be compressed and look bad if it has to become so tiny. Also edit the margins on your elements like in the next example to ensure your elements are spaced out properly;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">ul</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">list-style-image</span>: url(<span style="color:#e6db74">&#34;images/star.png&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">li</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We can also position the marker, which mostly helps in two circumstances; if we want to move the markers to where our text sits (like when centering) or choosing how the lines are formatted when moving onto a new line. Use the following example to try out <code>outside</code> and <code>inside</code>;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">ul</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">150</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">li</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ul</span>.<span style="color:#a6e22e">outter</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">list-style-position</span>: <span style="color:#66d9ef">outside</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ul</span>.<span style="color:#a6e22e">inner</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">list-style-position</span>: <span style="color:#66d9ef">inside</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="tables">Tables</h2>
+<p>Editing our tables becomes a lot easier now that we know a good chunk of the styles we&rsquo;d use to edit any common table. Here&rsquo;s a great example. First, write out the HTML and run it to see what it looks like pre-styling to really understand how much heavy lifting CSS can really do;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;First Edition Auctions&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>			 &lt;<span style="color:#f92672">th</span>&gt;Author&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>			 &lt;<span style="color:#f92672">th</span>&gt;Title&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>			 &lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;Reserve Price&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>			 &lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;Current Bid&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>			 &lt;<span style="color:#f92672">td</span>&gt;E.E. Cummings&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>			 &lt;<span style="color:#f92672">td</span>&gt;Tulips <span style="color:#960050;background-color:#1e0010">&amp;</span> Chimneys&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>			 &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;$2,000.00&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>			 &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;$2,642.50&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;even&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span>&gt;Charles d&#39;Orleans&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span>&gt;Poemes&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;$5,866.00&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span>&gt;T.S. Eliot&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span>&gt;Poems 1909 - 1925&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;$1,250.00&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;$8,499.35&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">tr</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;even&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span>&gt;Sylvia Plath&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span>&gt;The Colossus&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>				 &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;money&#34;</span>&gt;$1031.72&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-family</span>: Arial, Verdana, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#111111</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">table</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">600</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">th</span><span style="color:#f92672">,</span> <span style="color:#f92672">td</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">7</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">th</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-transform</span>: <span style="color:#66d9ef">uppercase</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">letter-spacing</span>: <span style="color:#ae81ff">0.1</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">90</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#111111</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#999</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">left</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">tr</span>.<span style="color:#a6e22e">even</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#efefef</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">tr</span>:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#c3e6e5</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">money</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">right</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I implore you to take your time inserting and seeing the changes made with each attribute. I won&rsquo;t harp again how important it is to your learning to actually write these out yourselves. Another attribute we can change concerning our tables are the borders between our cells. Specifically; what happens when we have empty cells? It depends on your browser, but you can tell CSS exactly what you want to happen with it&rsquo;s border by passing in the <code>empty-cells</code> attribute. You can give it a value of <code>show</code> or <code>hide</code>, to show or hide empty cells respectively.</p>
+<p>We can also change the space between our cells, using the the <code>border-spacing</code> attribute. There already is a small space provided by your browser, but now you&rsquo;ll have the ability to pass in a pixel amount for how large you want the spacing between them, like with <code>border-spacing: 5px 15px;</code>. If you want to get rid of all spacing and have cells share the same border, you can use <code>border-collapse: collapse;</code>.</p>
+<h2 id="styling-forms">Styling Forms</h2>
+<p>Something about forms makes the human mind gloss right over them. It&rsquo;s our job as website designers to make engaging forms that people actually want to fill out. The more ugly a form, the less likely someone will fill it out all the way through. The most common things we should focus on styling are;</p>
+<ul>
+<li>Text inputs and text areas</li>
+<li>Submit buttons</li>
+<li>Labels on forms</li>
+</ul>
+<p>The goal here is simple; keep everything uniform while also looking stylish. Uniformity relies on consistency; do all of your labels and boxes line up? Are any randomly in a different area than they should be? Are my boxes large enough for the amount of text I&rsquo;m having my user enter? These are the things you should be asking yourself when designing a form. Let&rsquo;s start with the inputs; here are a bunch of really common styles we can pass onto our inputs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">input</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">120</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#5a5854</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#f2f2f2</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#bdbdbd</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-repeat</span>: <span style="color:#66d9ef">no-repeat</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-position</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">input</span>:<span style="color:#a6e22e">focus</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#ffffff</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#b1e1e4</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">input</span>#email {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-image</span>: url(<span style="color:#e6db74">&#34;images/email.png&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">input</span>#twitter {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-image</span>: url(<span style="color:#e6db74">&#34;images/twitter.png&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">input</span>#web {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-image</span>: url(<span style="color:#e6db74">&#34;images/web.png&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here we edit our <code>input</code> element, the pseudoclass <code>focus</code> on the <code>input</code> element, as well as some unique id&rsquo;s for our <code>input</code> fields. These images work as tiny placeholders so users have an idea of what goes in there even without a label. We will go into a little more detail on background images in chapter 14.</p>
+<p>Next up are styling submit buttons. This example has some higher level concepts we won&rsquo;t touch on for another chapter or two, but it reveals some ideas you will likely want to try out yourself;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">input</span>#submit {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#444444</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-shadow</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#ffffff</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#b2b2b2</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#b9e4e3</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">-webkit-</span><span style="color:#a6e22e">gradient</span>(<span style="color:#66d9ef">linear</span>, <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">top</span>,
+</span></span><span style="display:flex;"><span>			 <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">bottom</span>, <span style="color:#a6e22e">from</span>(<span style="color:#ae81ff">#beeae9</span>), <span style="color:#a6e22e">to</span>(<span style="color:#ae81ff">#a8cfce</span>));
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>:
+</span></span><span style="display:flex;"><span>			 <span style="color:#66d9ef">-moz-</span>linear-gradient(<span style="color:#66d9ef">top</span>, <span style="color:#ae81ff">#beeae9</span>, <span style="color:#ae81ff">#a8cfce</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>:
+</span></span><span style="display:flex;"><span>			 <span style="color:#66d9ef">-o-</span>linear-gradient(<span style="color:#66d9ef">top</span>, <span style="color:#ae81ff">#beeae9</span>, <span style="color:#ae81ff">#a8cfce</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>:
+</span></span><span style="display:flex;"><span>			 <span style="color:#66d9ef">-ms-</span>linear-gradient(<span style="color:#66d9ef">top</span>, <span style="color:#ae81ff">#beeae9</span>, <span style="color:#ae81ff">#a8cfce</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">input</span>#submit:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#333333</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#a4a4a4</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#b2b2b2</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#a0dbc4</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">-webkit-</span><span style="color:#a6e22e">gradient</span>(<span style="color:#66d9ef">linear</span>, <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">top</span>,
+</span></span><span style="display:flex;"><span>			 <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">bottom</span>, <span style="color:#a6e22e">from</span>(<span style="color:#ae81ff">#a8cfce</span>), <span style="color:#a6e22e">to</span>(<span style="color:#ae81ff">#beeae9</span>));
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>:
+</span></span><span style="display:flex;"><span>			 <span style="color:#66d9ef">-moz-</span>linear-gradient(<span style="color:#66d9ef">top</span>, <span style="color:#ae81ff">#a8cfce</span>, <span style="color:#ae81ff">#beeae9</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>:
+</span></span><span style="display:flex;"><span>			 <span style="color:#66d9ef">-o-</span>linear-gradient(<span style="color:#66d9ef">top</span>, <span style="color:#ae81ff">#a8cfce</span>, <span style="color:#ae81ff">#beeae9</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background</span>:
+</span></span><span style="display:flex;"><span>			 <span style="color:#66d9ef">-ms-</span>linear-gradient(<span style="color:#66d9ef">top</span>, <span style="color:#ae81ff">#a8cfce</span>, <span style="color:#ae81ff">#beeae9</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here&rsquo;s another example of styling a form; this time, we&rsquo;ll look at some styles to give us a more interesting fieldset/legend;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">fieldset</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">350</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#dcdcdc</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">right</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">legend</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#efefef</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#dcdcdc</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">left</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-transform</span>: <span style="color:#66d9ef">uppercase</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Let&rsquo;s look at a really common issue, how to align form controls. Say we have the following HTML;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;example.php&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;Name:&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;Email:&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;Gender:&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;radio&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gender&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;male&#34;</span>
+</span></span><span style="display:flex;"><span>			 <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;M&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;male&#34;</span>&gt;Male&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;radio&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gender&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;female&#34;</span>
+</span></span><span style="display:flex;"><span>			 <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;F&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;female&#34;</span>&gt;Female&lt;/<span style="color:#f92672">label</span>&gt;&lt;<span style="color:#f92672">br</span> /&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Register&#34;</span>
+</span></span><span style="display:flex;"><span>			 <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">form</span>&gt;
+</span></span></code></pre></div><p>Here&rsquo;s a really easy way of making sure everything stays nice and styled accordingly;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">div</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#efefef</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding-bottom</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">260</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">title</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">right</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding-right</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">radio-buttons</span> <span style="color:#f92672">label</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">submit</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">right</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="summary">Summary</h1>
+<ul>
+<li>While most CSS properties can be used interchangeably, some styles help change lists, forms, and tables specifically</li>
+<li>List markers are editable</li>
+<li>Table cells can have their borders and spacing styled as well as their content</li>
+<li>Forms are easier to use if form controls are controlled via CSS vertical layout</li>
+</ul>
+<hr>
+<p>Next:
+<a href="https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-15/">Chapter 15</a></p>
 
             </div>
         </article>

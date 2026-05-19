@@ -10,24 +10,24 @@
     <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/entertainment/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Entertainment</title>
-      <link>https://mrpointing.com/notes/entertainment/</link>
+      <title>Books &amp; Entertainment</title>
+      <link>https://mrpointing.com/notes/books/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/entertainment/</guid>
+      <guid>https://mrpointing.com/notes/books/</guid>
       <description>&lt;p&gt;Reflections on books, movies, manga, or anything else fun.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Books</title>
-      <link>https://mrpointing.com/notes/entertainment/books/</link>
+      <link>https://mrpointing.com/notes/books/books/</link>
       <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/entertainment/books/</guid>
+      <guid>https://mrpointing.com/notes/books/books/</guid>
       <description>&lt;p&gt;Reflections on books.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Manga</title>
-      <link>https://mrpointing.com/notes/entertainment/manga/</link>
+      <link>https://mrpointing.com/notes/books/manga/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/notes/entertainment/manga/</guid>
+      <guid>https://mrpointing.com/notes/books/manga/</guid>
       <description>&lt;p&gt;Reflections on manga.&lt;/p&gt;</description>
     </item>
   </channel>

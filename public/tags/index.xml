@@ -7,20 +7,48 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mrpointing.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computerscience</title>
+      <link>https://mrpointing.com/tags/computerscience/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/computerscience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://mrpointing.com/tags/css/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://mrpointing.com/tags/html/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Textbook</title>
+      <link>https://mrpointing.com/tags/textbook/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/textbook/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Book</title>
       <link>https://mrpointing.com/tags/book/</link>
-      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/book/</guid>
       <description></description>
     </item>
     <item>
-      <title>Computerscience</title>
-      <link>https://mrpointing.com/tags/computerscience/</link>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/computerscience/</guid>
+      <title>Fantasy</title>
+      <link>https://mrpointing.com/tags/fantasy/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrpointing.com/tags/fantasy/</guid>
       <description></description>
     </item>
     <item>
@@ -42,20 +70,6 @@
       <link>https://mrpointing.com/tags/testing/</link>
       <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>https://mrpointing.com/tags/css/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Textbook</title>
-      <link>https://mrpointing.com/tags/textbook/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/textbook/</guid>
       <description></description>
     </item>
     <item>
@@ -84,13 +98,6 @@
       <link>https://mrpointing.com/tags/me/</link>
       <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/me/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://mrpointing.com/tags/html/</link>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/html/</guid>
       <description></description>
     </item>
     <item>
@@ -203,13 +210,6 @@
       <link>https://mrpointing.com/tags/entertainment/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
       <guid>https://mrpointing.com/tags/entertainment/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fantasy</title>
-      <link>https://mrpointing.com/tags/fantasy/</link>
-      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://mrpointing.com/tags/fantasy/</guid>
       <description></description>
     </item>
     <item>

@@ -2,28 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mrpointing.com/tags/book/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/tags/computerscience/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/css/</loc>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/html/</loc>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-16/</loc>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-17/</loc>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/</loc>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/</loc>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/</loc>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/textbook/</loc>
+    <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-15/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/book/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/tags/fantasy/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrpointing.com/notes/books/books/mistborn/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/horror/</loc>
     <lastmod>2026-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/let-the-right-one-in/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/notes/</loc>
+    <loc>https://mrpointing.com/notes/books/books/let-the-right-one-in/</loc>
     <lastmod>2026-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/python/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/</loc>
     <lastmod>2026-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/testing/</loc>
@@ -32,13 +56,7 @@
     <loc>https://mrpointing.com/notes/computer-science/python/advanced-python/testing-with-doctest/</loc>
     <lastmod>2026-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/tags/css/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-14/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/textbook/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/advanced-python/testing-in-python/</loc>
@@ -71,10 +89,10 @@
     <loc>https://mrpointing.com/tags/drama/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/fantastic-land/</loc>
+    <loc>https://mrpointing.com/notes/books/books/fantastic-land/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/the-idiot/</loc>
+    <loc>https://mrpointing.com/notes/books/books/the-idiot/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/me/</loc>
@@ -85,9 +103,6 @@
   </url><url>
     <loc>https://mrpointing.com/posts/</loc>
     <lastmod>2026-02-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/html/</loc>
-    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-9/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
@@ -122,7 +137,7 @@
     <loc>https://mrpointing.com/notes/computer-science/c/</loc>
     <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/it/</loc>
+    <loc>https://mrpointing.com/notes/books/books/it/</loc>
     <lastmod>2026-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/html--css---chapter-3/</loc>
@@ -158,16 +173,16 @@
     <loc>https://mrpointing.com/tags/sciencefiction/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/the-man-in-the-high-castle/</loc>
+    <loc>https://mrpointing.com/notes/books/books/the-man-in-the-high-castle/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/machine-learning/decision-trees/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/kokoro/</loc>
+    <loc>https://mrpointing.com/notes/books/books/kokoro/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/perfume/</loc>
+    <loc>https://mrpointing.com/notes/books/books/perfume/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/machine-learning/logistic-regression/</loc>
@@ -188,7 +203,7 @@
     <loc>https://mrpointing.com/tags/politics/</loc>
     <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/the-communist-manifesto/</loc>
+    <loc>https://mrpointing.com/notes/books/books/the-communist-manifesto/</loc>
     <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/html--css/</loc>
@@ -215,7 +230,7 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/how-ai-works---chapter-2/</loc>
     <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/moby-dick/</loc>
+    <loc>https://mrpointing.com/notes/books/books/moby-dick/</loc>
     <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/how-ai-works/</loc>
@@ -239,16 +254,16 @@
     <loc>https://mrpointing.com/tags/memoir/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/the-glass-castle/</loc>
+    <loc>https://mrpointing.com/notes/books/books/the-glass-castle/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/the-satanic-verses/</loc>
+    <loc>https://mrpointing.com/notes/books/books/the-satanic-verses/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/history/</loc>
     <lastmod>2025-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/in-the-distance/</loc>
+    <loc>https://mrpointing.com/notes/books/books/in-the-distance/</loc>
     <lastmod>2025-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/western/</loc>
@@ -293,7 +308,7 @@
     <loc>https://mrpointing.com/tags/psychological_fiction/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/the-secret-history/</loc>
+    <loc>https://mrpointing.com/notes/books/books/the-secret-history/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-17/</loc>
@@ -311,7 +326,7 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/</loc>
     <lastmod>2025-05-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/thus-spoke-zarathustra/</loc>
+    <loc>https://mrpointing.com/notes/books/books/thus-spoke-zarathustra/</loc>
     <lastmod>2025-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-14/</loc>
@@ -320,22 +335,19 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-15/</loc>
     <lastmod>2025-05-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://mrpointing.com/notes/books/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mrpointing.com/notes/computer-science/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/entertainment/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrpointing.com/tags/fantasy/</loc>
-    <lastmod>2025-04-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/advanced-python/generators/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/wind-and-truth/</loc>
+    <loc>https://mrpointing.com/notes/books/books/wind-and-truth/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/real-programming/programming-in-lua---chapter-13/</loc>
@@ -392,7 +404,7 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-7/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/fateful-triangle/</loc>
+    <loc>https://mrpointing.com/notes/books/books/fateful-triangle/</loc>
     <lastmod>2025-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/programming-in-lua/the-basics/programming-in-lua---chapter-6/</loc>
@@ -569,7 +581,7 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-3/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/manga/hikaru-no-go/</loc>
+    <loc>https://mrpointing.com/notes/books/manga/hikaru-no-go/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/manga/</loc>
@@ -659,7 +671,7 @@
     <loc>https://mrpointing.com/projects/30-day-coding-challenge/week-2/day-12/</loc>
     <lastmod>2024-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/rhythm-of-war/</loc>
+    <loc>https://mrpointing.com/notes/books/books/rhythm-of-war/</loc>
     <lastmod>2024-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/projects/30-day-coding-challenge/week-2/</loc>
@@ -716,7 +728,7 @@
     <loc>https://mrpointing.com/notes/computer-science/python/advanced-python/</loc>
     <lastmod>2024-11-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/</loc>
+    <loc>https://mrpointing.com/notes/books/books/</loc>
     <lastmod>2024-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/projects/30-day-coding-challenge/week-1/day-1/</loc>
@@ -737,7 +749,7 @@
     <loc>https://mrpointing.com/tags/arrays/</loc>
     <lastmod>2024-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/dawnshard/</loc>
+    <loc>https://mrpointing.com/notes/books/books/dawnshard/</loc>
     <lastmod>2024-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/classes/</loc>
@@ -752,7 +764,7 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-8/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/ring/</loc>
+    <loc>https://mrpointing.com/notes/books/books/ring/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/internet-and-it/coursera/</loc>
@@ -767,7 +779,7 @@
     <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/flasks-tutorial/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/manga/</loc>
+    <loc>https://mrpointing.com/notes/books/manga/</loc>
     <lastmod>2024-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/deep-learning/deep-learning---chapter-2/</loc>
@@ -788,7 +800,7 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-7/</loc>
     <lastmod>2024-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/do-androids-dream-of-electric-sheep/</loc>
+    <loc>https://mrpointing.com/notes/books/books/do-androids-dream-of-electric-sheep/</loc>
     <lastmod>2024-10-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/internet-and-it/coursera/technical-support-fundamentals/</loc>
@@ -875,13 +887,13 @@
     <loc>https://mrpointing.com/notes/computer-science/leet-and-neet-code-problems/valid-anagram/</loc>
     <lastmod>2024-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/edgedancer/</loc>
+    <loc>https://mrpointing.com/notes/books/books/edgedancer/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-git/learning-git---chapter-5/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/oathbringer/</loc>
+    <loc>https://mrpointing.com/notes/books/books/oathbringer/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/pandas/</loc>
@@ -965,7 +977,7 @@
     <loc>https://mrpointing.com/notes/computer-science/textbooks/learning-git/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/manga/my-hero-academia/</loc>
+    <loc>https://mrpointing.com/notes/books/manga/my-hero-academia/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/internet-and-it/khan-academy/ap-computer-science-principles---unit-2/</loc>
@@ -1064,7 +1076,7 @@
     <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/jinja/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/the-road/</loc>
+    <loc>https://mrpointing.com/notes/books/books/the-road/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/computer-science/python/flask-notes/werkzeug/</loc>
@@ -1103,7 +1115,7 @@
     <loc>https://mrpointing.com/notes/computer-science/python/formatting-percentages/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/words-of-radiance/</loc>
+    <loc>https://mrpointing.com/notes/books/books/words-of-radiance/</loc>
     <lastmod>2024-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/projects/jobany-rosario/</loc>
@@ -1172,13 +1184,13 @@
     <loc>https://mrpointing.com/tags/essays/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/manga/naruto/</loc>
+    <loc>https://mrpointing.com/notes/books/manga/naruto/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/notes/topics-im-interested-in/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mrpointing.com/notes/entertainment/books/you-are-not-expected-to-understand-this/</loc>
+    <loc>https://mrpointing.com/notes/books/books/you-are-not-expected-to-understand-this/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrpointing.com/tags/datatypes/</loc>
